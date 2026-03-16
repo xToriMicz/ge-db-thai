@@ -31,6 +31,7 @@ let charTiers = {};
 let currentTab = "characters";
 let itemPage = 1;
 let itemTotal = 0;
+let suppressPush = false; // prevent pushState during popstate handling
 
 // ── Init ──
 async function init() {
@@ -71,16 +72,27 @@ async function init() {
 
     setupGlobalSearch();
 
-    // Deep link: ?char=slug opens detail, ?q=keyword opens search
+    // Deep link: restore full URL state
+    suppressPush = true;
     const params = new URLSearchParams(location.search);
+    const tabParam = params.get("tab");
+    if (tabParam && tabParam !== "characters") switchTab(tabParam);
+
     const charParam = params.get("char");
     if (charParam) showDetail(charParam);
+    const mapParam = params.get("map");
+    if (mapParam) { if (!tabParam) switchTab("maps"); showMapDetail(mapParam); }
+    const itemParam = params.get("item");
+    if (itemParam) { if (!tabParam) switchTab("items"); showItemDetail(itemParam); }
     const qParam = params.get("q");
     if (qParam) {
       const gs = document.getElementById("global-search");
       gs.value = qParam;
       gs.dispatchEvent(new Event("input"));
     }
+    // Set initial history state
+    replaceUrl(Object.fromEntries(params));
+    suppressPush = false;
   } catch (err) {
     document.getElementById("character-grid").innerHTML =
       `<div class="loading">โหลดข้อมูลไม่สำเร็จ — ${err.message}</div>`;
@@ -105,6 +117,12 @@ function switchTab(tab) {
   if (tab === "maps" && allMaps.length === 0) loadMaps();
   if (tab === "monsters" && allMonsters.length === 0) loadMonsters();
   if (tab === "raids" && allRaids.length === 0) loadRaids();
+
+  // Update URL with tab (only when no modal is open)
+  const modal = document.getElementById("modal");
+  if (modal.classList.contains("hidden")) {
+    pushUrl({ tab: tab !== "characters" ? tab : "" });
+  }
 }
 
 function setupTabs() {
@@ -180,6 +198,7 @@ async function showMapDetail(slug) {
   const modal = document.getElementById("modal");
   const body = document.getElementById("modal-body");
   modal.classList.remove("hidden");
+  pushUrl({ map: slug });
   modal._openedAt = Date.now();
   body.innerHTML = '<div class="loading">กำลังโหลด...</div>';
 
@@ -360,6 +379,8 @@ async function showDetail(slug) {
   const modal = document.getElementById("modal");
   const body = document.getElementById("modal-body");
   modal.classList.remove("hidden");
+
+  pushUrl({ char: slug });
 
   modal._openedAt = Date.now();
   body.innerHTML = '<div class="loading">กำลังโหลด...</div>';
@@ -1075,9 +1096,10 @@ function navigateToItem(nameOrSlug) {
 
 async function showItemDetail(slug) {
   const modal = document.getElementById("modal");
-  const content = document.getElementById("modal-content");
-  content.innerHTML = '<div class="loading">กำลังโหลด...</div>';
+  const body = document.getElementById("modal-body");
+  body.innerHTML = '<div class="loading">กำลังโหลด...</div>';
   modal.classList.remove("hidden");
+  pushUrl({ item: slug });
 
   try {
     const res = await fetch(`/api/items/${slug}`);
@@ -1138,8 +1160,7 @@ async function showItemDetail(slug) {
       `;
     }
 
-    content.innerHTML = `
-      <button class="modal-close" onclick="closeModal()">✕</button>
+    body.innerHTML = `
       <div class="item-detail-header">
         ${imgSrc ? `<img class="item-detail-img" src="${imgSrc}" alt="" onerror="this.style.display='none'">` : ''}
         <div>
@@ -1152,7 +1173,7 @@ async function showItemDetail(slug) {
       ${dropHtml}
     `;
   } catch (err) {
-    content.innerHTML = `<button class="modal-close" onclick="closeModal()">✕</button><div class="loading">ไม่พบข้อมูลไอเทม</div>`;
+    body.innerHTML = `<div class="loading">ไม่พบข้อมูลไอเทม</div>`;
   }
 }
 
@@ -1341,6 +1362,11 @@ function closeModal() {
   // Stop YouTube video
   const iframe = modal.querySelector(".video-embed iframe");
   if (iframe) iframe.src = "";
+  // Replace URL to remove modal params (replace, not push, to avoid back-loop)
+  if (!suppressPush) {
+    const tab = currentTab !== "characters" ? currentTab : "";
+    replaceUrl({ tab });
+  }
 }
 
 document.getElementById("modal").addEventListener("click", (e) => {
@@ -1354,6 +1380,63 @@ document.addEventListener("keydown", (e) => {
     closeModal();
   }
 });
+
+// ── URL State Management ──
+function buildUrl(params) {
+  const url = new URL(location.origin);
+  for (const [k, v] of Object.entries(params)) {
+    if (v && v !== "all" && v !== "characters") url.searchParams.set(k, v);
+  }
+  return url.pathname + url.search;
+}
+
+function pushUrl(params) {
+  if (suppressPush) return;
+  const href = buildUrl(params);
+  if (location.pathname + location.search !== href) {
+    history.pushState(params, "", href);
+  }
+}
+
+function replaceUrl(params) {
+  const href = buildUrl(params);
+  history.replaceState(params, "", href);
+}
+
+function handlePopState() {
+  suppressPush = true;
+  const params = new URLSearchParams(location.search);
+
+  // Close any open modal first
+  const modal = document.getElementById("modal");
+  if (!modal.classList.contains("hidden")) {
+    modal.classList.add("hidden");
+    const iframe = modal.querySelector(".video-embed iframe");
+    if (iframe) iframe.src = "";
+  }
+
+  const charParam = params.get("char");
+  const mapParam = params.get("map");
+  const itemParam = params.get("item");
+  const tabParam = params.get("tab") || "characters";
+
+  if (charParam) {
+    switchTab("characters");
+    showDetail(charParam);
+  } else if (mapParam) {
+    switchTab("maps");
+    showMapDetail(mapParam);
+  } else if (itemParam) {
+    switchTab("items");
+    showItemDetail(itemParam);
+  } else {
+    switchTab(tabParam);
+  }
+
+  suppressPush = false;
+}
+
+window.addEventListener("popstate", handlePopState);
 
 // ── Start ──
 init();
