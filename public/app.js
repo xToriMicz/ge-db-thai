@@ -1029,7 +1029,7 @@ async function doGlobalSearch(q) {
       for (const i of data.items) {
         sections.push(`<div class="gs-item" onclick="document.getElementById('global-results').classList.add('hidden'); navigateToItem('${i.slug}')">
           ${i.image ? `<img src="/img/items/${i.image}" style="width:24px;height:24px;object-fit:contain" onerror="this.style.display='none'">` : ''}
-          <div><span class="gs-item-name">${i.name}</span></div>
+          <div><span class="gs-item-name">${i.name}</span>${i.name_th ? ` <span class="gs-item-th">${i.name_th}</span>` : ''}</div>
           <span class="gs-item-meta">${i.category}${i.level ? ` · Lv.${i.level}` : ''}</span>
         </div>`);
       }

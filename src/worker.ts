@@ -273,7 +273,7 @@ async function handleAPI(request: Request, env: Env): Promise<Response> {
     const [chars, items, maps, monsters, raids] = await Promise.all([
       env.DB.prepare("SELECT slug, display_name, name_th, type, portrait_x, portrait_y, portrait_class, portrait_sheet FROM characters WHERE display_name LIKE ? OR name LIKE ? OR name_th LIKE ? LIMIT 10")
         .bind(like, like, like).all(),
-      env.DB.prepare("SELECT name, slug, category, category_group, level, image FROM items WHERE name LIKE ? OR name_th LIKE ? LIMIT 10")
+      env.DB.prepare("SELECT name, name_th, slug, category, category_group, level, image FROM items WHERE name LIKE ? OR name_th LIKE ? LIMIT 10")
         .bind(like, like).all(),
       env.DB.prepare("SELECT slug, name, name_th, level_range, map_type FROM maps WHERE name LIKE ? OR name_th LIKE ? LIMIT 10")
         .bind(like, like).all(),
