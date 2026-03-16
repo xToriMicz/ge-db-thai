@@ -1,0 +1,287 @@
+{
+  "slug": "Moon",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Barbatos",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Coat",
+    "costume": "None",
+    "gloves": "Gloves Leather",
+    "ring": "Ring",
+    "weapon_costume": "Heart of Barbatos Heart of Barbatos (Event)",
+    "belt": "Belt Leather",
+    "shoes": "Shoes Leather",
+    "artifact": "Selenes Dark Memories Selenes Black Heart Selenes Rose Selenes Protection Selenes Nut Selenes Bolt The Eye of Goddess Moonlight Ring Golden-watch String Toms Doctors Bag",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Reload Bullet",
+    "image": "job_reloadbullet2.jpg",
+    "description": "Speedily reloads the bullets containing Demons power.",
+    "target": "Self-buff",
+    "casting_time": "0 sec.",
+    "cooldown": "25 sec.",
+    "duration": "1 sec.",
+    "sp_cost": "250",
+    "consume_item": "Ancient Star Orb × 2",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration: 60 sec.",
+          "Using [Reload Bullet], [Magazine]s Lv.+25(Max Lv.35)",
+          "A.R.+1",
+          "ATK+10%",
+          "Monster Damage+10%",
+          "Using skill, [Magazine]s level downs"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Barbatos",
+      "equipped_items": "Rifle",
+      "icon_position": {
+        "x": -50,
+        "y": -250
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Barbatos",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.75~15m away",
+        "Splash": "None",
+        "Hits per attack": "3",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "+10%",
+        "Magical DMG": "-25%"
+      },
+      "stats": {
+        "ASPD": "190",
+        "Bonus ATK": "320%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "15",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+15%",
+        "Ignore DEF": "+10%",
+        "Critical": "+15",
+        "Penetration": "5+20",
+        "Immunity": "5+10"
+      },
+      "skills": [
+        {
+          "name": "Merchen",
+          "image": "bbs_merhen.jpg",
+          "description": "Strengthens allys ATK by shooting specially manufactured bullets. But, the devil doesnt trade for free.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "60 sec.",
+          "duration": "390 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "750",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 20 sec."
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 200 sec."
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 220 sec."
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 240 sec."
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 390 sec."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Martus",
+          "image": "bbs_martos.jpg",
+          "description": "Fires diffusing bullets made of Devils claws toward the target and enemies around it.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "0 sec.",
+          "duration": "1.45 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "160",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Lufa",
+          "image": "bbs_lopa.jpg",
+          "description": "Constrains the enemy in the range by shooting the bullets made of Devils claws.",
+          "target": "Up to 5 enemies 18m away and within 8m",
+          "casting_time": "5 sec.",
+          "cooldown": "0 sec.",
+          "duration": "1.5 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "400",
+          "aggro": "121",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 900%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1800%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Over Light Shot",
+          "image": "bbs_overlightshot.jpg",
+          "description": "Shoots Devils bullet that hits the target exactly.",
+          "target": "1 enemy within a range of 18m",
+          "casting_time": "0.6 sec.",
+          "cooldown": "0 sec.",
+          "duration": "2.1 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "980",
+          "aggro": "50",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Grand Pressure",
+          "image": "bbs_grandpressure.jpg",
+          "description": "Fire a bullet to follow the target until the very end, offering eternal rest.",
+          "target": "",
+          "casting_time": "5 sec.",
+          "cooldown": "0 sec.",
+          "duration": "2.52 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "1120",
+          "aggro": "160",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3000%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [DEX]",
+        "[PVP/PVE Maps] Additional 5% DMG according to extra [DEX]",
+        "Ignore additional DEF according to extra [DEX] * 4",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 5 * 50"
+      ],
+      "equipped_items": "Rifle",
+      "icon_position": {
+        "x": -50,
+        "y": -250
+      }
+    }
+  ]
+}

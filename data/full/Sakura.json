@@ -1,0 +1,272 @@
+{
+  "slug": "Sakura",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Drifter",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Leather",
+    "costume": "None",
+    "gloves": "Gloves Leather",
+    "ring": "Ring",
+    "weapon_costume": "Thousand cherry blossoms - Killing demons Thousand cherry blossoms - Killing warriors Thousand Cherry Blossoms - Killing Demons (Event) Thousand Cherry Blossoms - Killing Warriors (Event)",
+    "belt": "Belt Leather",
+    "shoes": "Shoes Leather",
+    "artifact": "None",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Blade Waltz",
+    "image": "job_unsword.jpg",
+    "description": "Get rid of idle thoughts and calm down the restless mind to reach Ultra Instinct.",
+    "target": "Self-buff",
+    "casting_time": "0 sec.",
+    "cooldown": "30 sec.",
+    "duration": "0.6 sec.",
+    "sp_cost": "500",
+    "consume_item": "Ancient Star Orb × 5",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "A.R.+1",
+          "All Stats +3",
+          "Attack SPD+10%",
+          "With skill accuracy except [Thousand cherry blossoms], [Ultra Instinct] is given to you",
+          "With skill accuracy except [Thousand cherry blossoms] in [Ultra Instinct] state, [Ultra Instinct]s Lv. rises."
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Cherry Blossoms Dancing",
+      "equipped_items": "Polearm",
+      "icon_position": {
+        "x": -50,
+        "y": -50
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Cherry Blossoms Dancing",
+      "info": {
+        "Targets": "4 enemies",
+        "Range": "1.75m away",
+        "Splash": "1.1 DMG within  1m range",
+        "Hits per attack": "3",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Shooting DMG": "-20%",
+        "Debuff RES": "-10%"
+      },
+      "stats": {
+        "ASPD": "302",
+        "Bonus ATK": "320%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "20",
+        "EVA": "5",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "Evasion": "+5",
+        "Critical": "+25",
+        "Penetration": "15+25",
+        "Immunity": "5+15"
+      },
+      "skills": [
+        {
+          "name": "Secret Blade- Slash the Moon",
+          "image": "isn_slashmoon.jpg",
+          "description": "Wield the spear like slashing the moon.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "5 sec.",
+          "duration": "2 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "400",
+          "aggro": "215",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Secret Blade-Slash the Phoenix",
+          "image": "isn_slashphoenix.jpg",
+          "description": "Gets rid of an enemy like slashing a phoenix.",
+          "target": "",
+          "casting_time": "0.7 sec.",
+          "cooldown": "14 sec.",
+          "duration": "2 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "540",
+          "aggro": "250",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Flashs Blade-Moon and Flower",
+          "image": "isn_slashflower.jpg",
+          "description": "Destroys nearby enemies with Polearm like slashing whirling cherry blossoms.",
+          "target": "Up to 6 enemies within 7m",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "2.42 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "720",
+          "aggro": "57",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2000%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Flashs Blade-From the Sky",
+          "image": "isn_slashsky.jpg",
+          "description": "Annihilates enemies by slashing them like whirling cherry blossoms.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "18 sec.",
+          "duration": "4 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "940",
+          "aggro": "270",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Flashs Blade-Thousand cherry blossoms",
+          "image": "isn_cherryattack.jpg",
+          "description": "Emits the shock wave like cherry blossoms in full bloom which blow hard.",
+          "target": "Up to 24 enemies within 20m away x 8m width",
+          "casting_time": "5 sec.",
+          "cooldown": "45 sec.",
+          "duration": "3 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "1350",
+          "aggro": "150",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1300%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2600%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [STR]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [STR]",
+        "Ignore additional DEF according to extra [STR] * 4",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Polearm",
+      "icon_position": {
+        "x": -50,
+        "y": -50
+      }
+    }
+  ]
+}

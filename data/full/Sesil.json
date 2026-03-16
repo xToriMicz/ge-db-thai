@@ -1,0 +1,274 @@
+{
+  "slug": "Sesil",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "None",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Coat",
+    "costume": "None",
+    "gloves": "Gloves Leather",
+    "ring": "Ring",
+    "weapon_costume": "None",
+    "belt": "Belt Leather",
+    "shoes": "Shoes Leather",
+    "artifact": "None",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Camouflage Hunter",
+    "image": "job_camouflagehunt.jpg",
+    "description": "When step on it, setup the trap of rain of arrows and become [Silent Move] status. The enemy that steps on trap, becomes [Mortal Wound] status by rate.",
+    "target": "Applied to targeted location",
+    "casting_time": "0 sec.",
+    "cooldown": "40 sec.",
+    "duration": "1.7 sec.",
+    "sp_cost": "300",
+    "consume_item": "Ancient Star Orb × 5",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Silent Move Duration : 30 sec",
+          "Installs [Hunt Trap] in the ground",
+          "Traps A.R. is decided by A.R. and Skill Level of the installer."
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Arch Sting",
+      "equipped_items": "Crossbow",
+      "icon_position": {
+        "x": -400,
+        "y": -400
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Arch Sting",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "14m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Magical DMG": "-20%"
+      },
+      "stats": {
+        "ASPD": "157",
+        "Bonus ATK": "210%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "20",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+13%",
+        "Ignore DEF": "+12%",
+        "Critical": "+15",
+        "Penetration": "30",
+        "Immunity": "10"
+      },
+      "skills": [
+        {
+          "name": "Taming Wolf",
+          "image": "arh_tamingwolf.jpg",
+          "description": "Summons Grey, the wolf tamed for a long time. Attack of Grey blows [Mortal Wound] by fixed probability.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "1.7 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "0",
+          "skill_type": "Build",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Can summon Max 1"
+            },
+            {
+              "level": "Level 10",
+              "value": "Can summon Max 1"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Piercing Arrow",
+          "image": "arh_piercingarrow.jpg",
+          "description": "Concentrate powerful strength onto an arrow to enlarge it and shoots it to pierce everything ahead.",
+          "target": "Up to 7 enemies 19m away and within 6m width",
+          "casting_time": "0.867 sec.",
+          "cooldown": "15 sec.",
+          "duration": "1.366 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "250",
+          "aggro": "140",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1100%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2200%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Force Volley Shot",
+          "image": "arh_forcevolley.jpg",
+          "description": "Shoots lots of arrows in front area fast and widely.",
+          "target": "Up to 10 enemies 17m away and at an angle of 60 degrees",
+          "casting_time": "1.2 sec.",
+          "cooldown": "20 sec.",
+          "duration": "1.366 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "320",
+          "aggro": "160",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Order Point Shot",
+          "image": "arh_orderpoint.jpg",
+          "description": "Aims to shot the enemy quickly and makes it the target that Gray attacks concentratively.",
+          "target": "1 enemy within a range of 15m",
+          "casting_time": "Instant",
+          "cooldown": "18 sec.",
+          "duration": "1.966 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "400",
+          "aggro": "100",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Support Ballista",
+          "image": "arh_supportballista.jpg",
+          "description": "Makes a big Ballista. Ballista launches the attack within the Radius 10m of Cecilles location.",
+          "target": "",
+          "casting_time": "1.7 sec.",
+          "cooldown": "3.5 sec.",
+          "duration": "3.2 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "600",
+          "aggro": "0",
+          "skill_type": "Build",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Can build up to 3 constructions"
+            },
+            {
+              "level": "Level 10",
+              "value": "Can build up to 3 constructions"
+            }
+          ],
+          "special": [
+            "Applies bonus to Ballistas Ability depending on Skill Lv. and DEX",
+            "Applies bonus to Ballistas Ability depending on Skill Lv. and DEX"
+          ]
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [DEX]",
+        "[PVP/PVE Maps] Additional 5% DMG according to extra [DEX]",
+        "Ignore additional DEF according to extra [DEX] * 4",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 5 * 50"
+      ],
+      "equipped_items": "Crossbow",
+      "icon_position": {
+        "x": -400,
+        "y": -400
+      }
+    }
+  ]
+}

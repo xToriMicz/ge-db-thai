@@ -1,0 +1,361 @@
+{
+  "slug": "Angelic",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Calum Gradio",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Coat Robe",
+    "costume": "None",
+    "gloves": "Gloves Leather",
+    "ring": "Ring",
+    "weapon_costume": "Iresh Iresh (Event)",
+    "belt": "Belt Leather",
+    "shoes": "Shoes Leather",
+    "artifact": "Dio Elpides",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Khryselakatos",
+    "image": "job_Khryselakatos.jpg",
+    "description": "Concentrate on the surrounding magic to increase your capabilities.",
+    "target": "1 adjacent enemy",
+    "casting_time": "0.533 sec.",
+    "cooldown": "0 sec.",
+    "duration": "1.533 sec.",
+    "sp_cost": "300",
+    "consume_item": "Ancient Star Orb × 6",
+    "levels": [
+      {
+        "level": "Level 1",
+        "effects": [
+          "[Skopelos]",
+          "Duration: 30 seconds",
+          "A.R. +1",
+          "ATK to Monster +150%",
+          "Penetration +15",
+          "Magical Damage -10%",
+          "ATK increases according to [Critical] value",
+          "[Kribo]",
+          "Duration: 15 secondsUnable to attack while invisible",
+          "SP recovery +20",
+          "DEF -35",
+          "Casting Time +40%",
+          "ATK increases according to [Critical] value",
+          "Cannot use consumables"
+        ]
+      },
+      {
+        "level": "Level 10",
+        "effects": [
+          "[Skopelos]",
+          "Duration: 300 seconds",
+          "A.R. +1",
+          "ATK to Monster +150%",
+          "Penetration +15",
+          "Magical Damage -10%",
+          "ATK increases according to [Critical] value",
+          "[Kribo]",
+          "Duration: 15 seconds",
+          "Unable to attack whileinvisible",
+          "SP recovery +20",
+          "DEF -35",
+          "Casting Time +40%",
+          "ATK increases according to [Critical] value",
+          "Cannot use consumables"
+        ]
+      },
+      {
+        "level": "Level 11",
+        "effects": [
+          "[Skopelos]",
+          "Duration: 330 seconds",
+          "A.R. +1",
+          "ATK to Monster +150%",
+          "Penetration +15",
+          "Magical Damage -10%",
+          "ATK increases according to [Critical] value",
+          "[Kribo]",
+          "Duration: 15 seconds",
+          "Unable to attack whileinvisible",
+          "SP recovery +20",
+          "DEF -35",
+          "Casting Time +40%",
+          "ATK increases according to [Critical] value",
+          "Cannot use consumables"
+        ]
+      },
+      {
+        "level": "Level 12",
+        "effects": [
+          "[Skopelos]",
+          "Duration: 360 seconds",
+          "A.R. +1",
+          "ATK to Monster +150%",
+          "Penetration +15",
+          "Magical Damage -10%",
+          "ATK increases according to [Critical] value",
+          "[Kribo]",
+          "Duration: 15 seconds",
+          "Unable to attack whileinvisible",
+          "SP recovery +20",
+          "DEF -35",
+          "Casting Time +40%",
+          "ATK increases according to [Critical] value",
+          "Cannot use consumables"
+        ]
+      },
+      {
+        "level": "Level 13",
+        "effects": [
+          "[Skopelos]",
+          "Duration: 390 seconds",
+          "A.R. +1",
+          "ATK to Monster +150%",
+          "Penetration +15",
+          "Magical Damage -10%",
+          "ATK increases according to [Critical] value",
+          "[Kribo]",
+          "Duration: 15 seconds",
+          "Unable to attack whileinvisible",
+          "SP recovery +20",
+          "DEF -35",
+          "Casting Time +40%",
+          "ATK increases according to [Critical] value",
+          "Cannot use consumables"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Atalante",
+      "equipped_items": "Crossbow",
+      "icon_position": {
+        "x": -250,
+        "y": -75
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Atalante",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.75~14m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "+15%",
+        "Magical DMG": "-20%"
+      },
+      "stats": {
+        "ASPD": "99",
+        "Bonus ATK": "350%",
+        "MSPD": "1.1",
+        "MSPD Limit": "8.00",
+        "ACC": "25",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "Ignore DEF": "+10%",
+        "Critical": "+10",
+        "Penetration": "5+25",
+        "Immunity": "5+10"
+      },
+      "skills": [
+        {
+          "name": "Latrea",
+          "image": "atlnt_lathraia.jpg",
+          "description": "Shoot the target with an holy trajectory.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "5 sec.",
+          "duration": "1.033 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "220",
+          "aggro": "100",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1600%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3200%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Ptera Angelou",
+          "image": "atlnt_ftera.jpg",
+          "description": "Instantly detonates the lingering magic on the path towards enemies.",
+          "target": "Up to 9 enemies within a 15m x 5m area",
+          "casting_time": "0.366 sec.",
+          "cooldown": "14 sec.",
+          "duration": "2.033 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "350",
+          "aggro": "230",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1000%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Expanish",
+          "image": "atlnt_exfanisi.jpg",
+          "description": "Shoot bolts high into the air to snipe targets from afar.",
+          "target": "",
+          "casting_time": "2.033 sec.",
+          "cooldown": "17 sec.",
+          "duration": "1.7 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "590",
+          "aggro": "358",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Petasteri",
+          "image": "atlnt_peftasteri.jpg",
+          "description": "Shoot multiple holy bolts into the targets body.",
+          "target": "Up to 9 enemies within a 18m x 4m area",
+          "casting_time": "0.566 sec.",
+          "cooldown": "18 sec.",
+          "duration": "2.433 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "600",
+          "aggro": "415",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1400%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2800%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Iokeira",
+          "image": "atlnt_iokheira.jpg",
+          "description": "Forcibly raises magic power and prepares a bomb to fire.",
+          "target": "1 adjacent enemy",
+          "casting_time": "1.033 sec.",
+          "cooldown": "20 sec.",
+          "duration": "1.766 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "610",
+          "aggro": "660",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1600%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3200%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 10% of extra [DEX]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [DEX]",
+        "Ignore additional DEF according to extra [DEX] * 2",
+        "Additional DMG against [PC] + 1x"
+      ],
+      "equipped_items": "Crossbow",
+      "icon_position": {
+        "x": -250,
+        "y": -75
+      }
+    }
+  ]
+}

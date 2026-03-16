@@ -1,0 +1,616 @@
+{
+  "slug": "Nina",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Bloody Navy",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Leather",
+    "costume": "None",
+    "gloves": "Gloves Leather",
+    "ring": "Ring",
+    "weapon_costume": "Specialized Navy Shotgun Specialized Navy Shotgun - Event",
+    "belt": "Belt Leather",
+    "shoes": "Shoes Leather",
+    "artifact": "Strategic Manual - Bloody Navy",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Bow",
+    "image": "job_saluete.jpg",
+    "description": "Before starting a battle, it promotes discipline. ATK will increase, and it instills a weakness to Melee attacks into the enemy.",
+    "target": "Self-buff",
+    "casting_time": "0 sec.",
+    "cooldown": "60 sec.",
+    "duration": "2 sec.",
+    "sp_cost": "100",
+    "consume_item": "Ancient Star Orb × 15",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration : 300s",
+          "D.R. +1",
+          "ATK +10%",
+          "Monster ATK +500%",
+          "100% Chance to inflict [Bloody Salute] with normal attacks",
+          "Increased damage from Melee users while afflicted with [Bloody Salute]",
+          "(In case of [PC], Casting Time +20%)"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Back-Guard",
+      "equipped_items": "Sword",
+      "icon_position": {
+        "x": -50,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Bloody Punisher",
+      "equipped_items": "Sword + Pistol",
+      "icon_position": {
+        "x": -500,
+        "y": -275
+      }
+    },
+    {
+      "stance_name": "Incursio",
+      "equipped_items": "Shotgun",
+      "icon_position": {
+        "x": -150,
+        "y": -75
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Back-Guard",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1.5m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "100",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "14",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+3%",
+        "Block": "+14"
+      },
+      "skills": [
+        {
+          "name": "Deep Straight",
+          "image": "bg_deepstraight.jpg",
+          "description": "Impales the enemy on a sword before delivering a powerful kick.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "0 sec.",
+          "duration": "2.67 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "100",
+          "aggro": "78",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 300%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Earth Tremor",
+          "image": "bg_earthtremor.jpg",
+          "description": "Plunges sword into enemy while airborne.",
+          "target": "Up to 3 adjacent enemies",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "2.2 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "150",
+          "aggro": "68",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 400%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 800%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Penta-Train",
+          "image": "bg_pentatrain.jpg",
+          "description": "A series of aggressive attacks that pushes the enemy back.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "3.4 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "200",
+          "aggro": "105",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 600%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1200%"
+            }
+          ],
+          "special": [
+            "Double Damage to enemies with [",
+            "Double Damage to enemies with ["
+          ]
+        },
+        {
+          "name": "Vortex Slash",
+          "image": "bg_vortexlash.jpg",
+          "description": "Make a series of fast and powerful attacks.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "4.4 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "250",
+          "aggro": "210",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1600%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Sword",
+      "icon_position": {
+        "x": -50,
+        "y": 0
+      }
+    },
+    {
+      "name": "Bloody Punisher",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1.5m away",
+        "Splash": "None",
+        "Hits per attack": "3",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Shooting DMG": "-20%",
+        "Debuff RES": "-10%"
+      },
+      "stats": {
+        "ASPD": "262",
+        "Bonus ATK": "330%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "30",
+        "EVA": "0.4",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "Critical": "+25",
+        "Penetration": "15+15",
+        "Immunity": "10+10"
+      },
+      "skills": [
+        {
+          "name": "A Summary Conviction",
+          "image": "bps_summaryconviction.jpg",
+          "description": "Punishes a helpless ally immediately. The subject will have increased ATK but HP will decrease consistently.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "30 sec.",
+          "duration": "1.8 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "300",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 5 sec."
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 50 sec."
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration : 55 sec."
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration : 60 sec."
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration : 65 sec."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Blood Navy Duo",
+          "image": "bps_bloodynavyduo.jpg",
+          "description": "Summons aBlood Navy soldier and make it fight alongside yourself. Summoned Blood Navy will not attack, but imitates your skills.",
+          "target": "",
+          "casting_time": "1 sec.",
+          "cooldown": "60 sec.",
+          "duration": "3 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "600",
+          "aggro": "0",
+          "skill_type": "Build",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Possible to summon max 1 person"
+            },
+            {
+              "level": "Level 10",
+              "value": "Possible to summon max 1 person"
+            }
+          ],
+          "special": [
+            "According to skill level, ability bonus for Blood Navy",
+            "According to skill level, ability bonus for Blood Navy"
+          ]
+        },
+        {
+          "name": "Bloody Over Range Shot",
+          "image": "bps_bloodyoverrange.jpg",
+          "description": "Subdue an enemy within a long range. the subject will be in [Mortal Wound] state at a certain chance.",
+          "target": "Up to 5 enemies 20m away and within a 5m radius",
+          "casting_time": "1 sec.",
+          "cooldown": "8 sec.",
+          "duration": "3.34 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "250",
+          "aggro": "100",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Wild Flash",
+          "image": "bps_wildslash.jpg",
+          "description": "After subduing a nearby enemy with a pistol, deal a strong attack.",
+          "target": "Up to 6 Enemies nearby",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "3.67 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "175",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1600%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3200%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Blood of Shadow",
+          "image": "bps_bloodofshadow.jpg",
+          "description": "Quickly cut objects within range and fire a pistol.",
+          "target": "Up to 10 enemies 12m away and within 10m radius.",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "3.34 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "350",
+          "aggro": "250",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2000%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4000%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [STR]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [STR]",
+        "Ignore additional DEF according to extra [STR] * 4",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Sword + Pistol",
+      "icon_position": {
+        "x": -500,
+        "y": -275
+      }
+    },
+    {
+      "name": "Incursio",
+      "info": {
+        "Targets": "6 enemies",
+        "Range": "0.1~11m away",
+        "Splash": "100% DMG within  4m range",
+        "Hits per attack": "3",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "+10%",
+        "Shooting DMG": "-10%",
+        "Magical DMG": "-25%",
+        "Debuff RES": "-20%"
+      },
+      "stats": {
+        "ASPD": "227",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "10",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+10%",
+        "Ignore DEF": "+10%",
+        "Critical": "+5",
+        "Penetration": "5+20",
+        "Immunity": "20"
+      },
+      "skills": [
+        {
+          "name": "Eos",
+          "image": "inco_ios.jpg",
+          "description": "Enhance attack capabilities by using the Blood Navys Special Warfare Instructors ability to strengthen the body.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "1.6 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "560",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 300s"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 300s"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Violent Shot",
+          "image": "inco_violentshot.jpg",
+          "description": "Shoot down an enemy within range and knock them down.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "16 sec.",
+          "duration": "1.5 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "760",
+          "aggro": "162",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Grenade Shot",
+          "image": "inco_grenadeshot.jpg",
+          "description": "Launches a shot that causes an explosion onto the designated ground.",
+          "target": "",
+          "casting_time": "1.4 sec.",
+          "cooldown": "18 sec.",
+          "duration": "1.8 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "920",
+          "aggro": "166",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Grenade Buster",
+          "image": "inco_graenadebuster.jpg",
+          "description": "Continuously fire specially designed sharp bullets to a single enemy.",
+          "target": "1 enemy within a maximum range of 10m",
+          "casting_time": "Instant",
+          "cooldown": "23 sec.",
+          "duration": "2.2 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "1050",
+          "aggro": "100",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2000%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Air Burst Dive",
+          "image": "inco_airbustdive.jpg",
+          "description": "Fire and smash the designated area after breaking through enemy lines, causing an explosion.",
+          "target": "",
+          "casting_time": "0.6 sec.",
+          "cooldown": "22 sec.",
+          "duration": "4.8 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "840",
+          "aggro": "166",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2400%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4800%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 7% of extra [DEX]",
+        "[PVP/PVE Maps] Additional 3% DMG according to extra [DEX]",
+        "Ignore additional DEF according to extra [DEX] * 4"
+      ],
+      "equipped_items": "Shotgun",
+      "icon_position": {
+        "x": -150,
+        "y": -75
+      }
+    }
+  ]
+}

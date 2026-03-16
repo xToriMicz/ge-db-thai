@@ -1,0 +1,364 @@
+{
+  "slug": "Heyran",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Avengers from Bristia",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Coat",
+    "costume": "None",
+    "gloves": "Gloves Leather",
+    "ring": "Ring",
+    "weapon_costume": "Bloody Rose Dagger Bloody Rose Dagger (Event)",
+    "belt": "Belt Leather",
+    "shoes": "Shoes Leather",
+    "artifact": "Heyran Pendant Bloody Hair Ribbon Leather Sheath",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Dagger Polish",
+    "image": "job_daggerpolish.jpg",
+    "description": "With a sharpened blade, every normal attack hit inflicts mortal wounds. HP of enemies with active [Enhanced Pierced Wound] decreases gradually in proportion to damage. 1/5 applies to PC.",
+    "target": "Self-buff",
+    "casting_time": "0 sec.",
+    "cooldown": "50 sec.",
+    "duration": "2.033 sec.",
+    "sp_cost": "300",
+    "consume_item": "Ancient Star Orb × 3",
+    "levels": [
+      {
+        "level": "Level 1",
+        "effects": [
+          "Duration 5 Minutes",
+          "Physical Penetration +1",
+          "Casts [Pierced Wound] by 100% as many as hits made with normal ATK",
+          "Every normal attack hit inflicts [Pierced Wound]. Skill attacks have 100% chance to change enemys [Pierced Wound] to [Enhanced Pierced Wound]"
+        ]
+      },
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration 5 Minutes",
+          "Physical Penetration +10",
+          "Casts [Pierced Wound] by 100% as many as hits made with normal ATK",
+          "Every normal attack hit inflicts [Pierced Wound]. Skill attacks have 100% chance to change enemys [Pierced Wound] to [Enhanced Pierced Wound]"
+        ]
+      },
+      {
+        "level": "Level 11",
+        "effects": [
+          "Duration 5 Minutes",
+          "Physical Penetration +11",
+          "A.R. +1",
+          "Casts [Pierced Wound] by 100% as many as hits made with normal ATK",
+          "Every normal attack hit inflicts [Pierced Wound]. Skill attacks have 100% chance to change enemys [Pierced Wound] to [Enhanced Pierced Wound]"
+        ]
+      },
+      {
+        "level": "Level 12",
+        "effects": [
+          "Duration 5 Minutes",
+          "Physical Penetration +12",
+          "A.R. +1",
+          "Casts [Pierced Wound] by 100% as many as hits made with normal ATK",
+          "Every normal attack hit inflicts [Pierced Wound]. Skill attacks have 100% chance to change enemys [Pierced Wound] to [Enhanced Pierced Wound]"
+        ]
+      },
+      {
+        "level": "Level 13",
+        "effects": [
+          "Duration 5 Minutes",
+          "Physical Penetration +13",
+          "A.R. +1",
+          "Casts [Pierced Wound] by 100% as many as hits made with normal ATK",
+          "Every normal attack hit inflicts [Pierced Wound]. Skill attacks have 100% chance to change enemys [Pierced Wound] to [Enhanced Pierced Wound]"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Butterfly Dagger",
+      "equipped_items": "Dagger",
+      "icon_position": {
+        "x": -200,
+        "y": -175
+      }
+    },
+    {
+      "stance_name": "Femme Fatale",
+      "equipped_items": "Dagger + Dagger",
+      "icon_position": {
+        "x": -350,
+        "y": -225
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Butterfly Dagger",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "123",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "equipped_items": "Dagger",
+      "icon_position": {
+        "x": -200,
+        "y": -175
+      }
+    },
+    {
+      "name": "Femme Fatale",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "12m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Magical DMG": "-20%"
+      },
+      "stats": {
+        "ASPD": "153",
+        "Bonus ATK": "300%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "70",
+        "EVA": "20",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+23%",
+        "Ignore DEF": "+12%",
+        "Evasion": "+18",
+        "Critical": "+40",
+        "Penetration": "5+30",
+        "Immunity": "5+10"
+      },
+      "skills": [
+        {
+          "name": "Bloody Dagger",
+          "image": "fmf_bloodydagger.jpg",
+          "description": "Throws bloody blades 4 times to deal a critical wound that does not heal well.",
+          "target": "1 enemy within a range of 10m",
+          "casting_time": "Instant",
+          "cooldown": "8 sec.",
+          "duration": "300 seconds",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "100",
+          "aggro": "120",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 900%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1800%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Fanning Blossom",
+          "image": "fmf_fanningblossom.jpg",
+          "description": "Throws multiple blades within fan-shaped range in front and deals a critical wound that does not heal well.",
+          "target": "Up to 9 enemies 20m away and at an angle of 60 degrees",
+          "casting_time": "0.5 sec.",
+          "cooldown": "10 sec.",
+          "duration": "2.533 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "350",
+          "aggro": "160",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1100%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2200%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Fox Hound",
+          "image": "fmf_foxhound.jpg",
+          "description": "Goes into alert state keeping a sharp mind. Increases ATK, Evasion Rate and Critical Rate.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "45 sec.",
+          "duration": "5 Minutes.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "400",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 5 Minutes."
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 5 Minutes."
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 5 Minutes."
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 5 Minutes."
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 5 Minutes."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Burst Flower",
+          "image": "fmf_burstflower.jpg",
+          "description": "Rotating towards front, throws mutiple blades in circle. Worsens targets critical wound.",
+          "target": "",
+          "casting_time": "1.233 sec.",
+          "cooldown": "15 sec.",
+          "duration": "1.667 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "400",
+          "aggro": "180",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1400%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2800%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Strafe Charge",
+          "image": "fmf_strafecharge.jpg",
+          "description": "Throws beautiful red and white blades and charges to deal a critical blow. Worsens targets critical wound.",
+          "target": "1 enemy within a range of 9m",
+          "casting_time": "Instant",
+          "cooldown": "17 sec.",
+          "duration": "2.7 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "450",
+          "aggro": "200",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5000%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [DEX]",
+        "[PVP/PVE Maps] Additional 5% DMG according to extra [DEX]",
+        "Ignore additional DEF according to extra [DEX] * 4",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 5 * 50"
+      ],
+      "equipped_items": "Dagger + Dagger",
+      "icon_position": {
+        "x": -350,
+        "y": -225
+      }
+    }
+  ]
+}

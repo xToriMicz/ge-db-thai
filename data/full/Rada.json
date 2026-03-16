@@ -1,0 +1,321 @@
+{
+  "slug": "Rada",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Medal of Goddess",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Leather Metal",
+    "costume": "None",
+    "gloves": "Gloves Leather Metal",
+    "ring": "Ring",
+    "weapon_costume": "Glow of Goddess Tartarus of Goddess Glow of Goddess (Event) Tartarus of Goddess (Event)",
+    "belt": "Belt Leather Metal",
+    "shoes": "Shoes Leather Metal",
+    "artifact": "None",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Gaia",
+    "image": "job_gaia.jpg",
+    "description": "Use the power of the overflowing earth to strengthen the body.",
+    "target": "Self-buff",
+    "casting_time": "0 sec.",
+    "cooldown": "15 sec.",
+    "duration": "1.467 sec.",
+    "sp_cost": "100",
+    "consume_item": "Ancient Star Orb × 3",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "In proportion to Max HP, increases A.R., ATK, ATK SPD",
+          "Increases D.R., DEF, IMM +, Debuff RES, Every Attribute RES",
+          "Decreases Knock down time, Casting Time, All damages",
+          "Applies to Max 300,000"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Atlas",
+      "equipped_items": "Rod",
+      "icon_position": {
+        "x": 0,
+        "y": -325
+      }
+    },
+    {
+      "stance_name": "Atlas",
+      "equipped_items": "Staff",
+      "icon_position": {
+        "x": 0,
+        "y": -325
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Atlas",
+      "info": {
+        "Targets": "6 enemies",
+        "Range": "2m away",
+        "Splash": "100% DMG within  1.5m range",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Shooting DMG": "-20%",
+        "Magical DMG": "+10%"
+      },
+      "stats": {
+        "ASPD": "203",
+        "Bonus ATK": "400%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "20",
+        "Fire RES": "10",
+        "Ice RES": "10",
+        "Lightning RES": "10",
+        "Abnormal RES": "15"
+      },
+      "lv25_bonus": {
+        "Penetration": "10+0",
+        "Immunity": "20+0"
+      },
+      "skills": [
+        {
+          "name": "Moras",
+          "image": "atl_morass.jpg",
+          "description": "Summon a bog and curse the enemies on the bog.",
+          "target": "",
+          "casting_time": "0.833 sec.",
+          "cooldown": "12 sec.",
+          "duration": "0.733 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "120",
+          "aggro": "100",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "100% chance of enemy ["
+            },
+            {
+              "level": "Level 10",
+              "value": "100% chance of enemy ["
+            },
+            {
+              "level": "Level 11",
+              "value": "100% chance of enemy ["
+            },
+            {
+              "level": "Level 12",
+              "value": "100% chance of enemy ["
+            },
+            {
+              "level": "Level 13",
+              "value": "100% chance of enemy ["
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Gazer",
+          "image": "atl_geyser.jpg",
+          "description": "It jumps into the middle of the enemy and gives damage to the enemy at the landing point, causing the enemy to attack oneself.",
+          "target": "",
+          "casting_time": "0.4 sec.",
+          "cooldown": "10 sec.",
+          "duration": "1.333 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "200",
+          "aggro": "250",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1600%"
+            },
+            {
+              "level": "Level 11",
+              "value": "АТК: 1760%"
+            },
+            {
+              "level": "Level 12",
+              "value": "АТК: 1920%"
+            },
+            {
+              "level": "Level 13",
+              "value": "АТК: 1920%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Eruption",
+          "image": "atl_eruption.jpg",
+          "description": "Strongly hitting down the ground to damage a wide range of enemies, cause them to attack oneself.",
+          "target": "Up to 8 enemies within a range of 8m",
+          "casting_time": "1.633 sec.",
+          "cooldown": "15 sec.",
+          "duration": "2.233 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "400",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1700%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3400%"
+            },
+            {
+              "level": "Level 11",
+              "value": "АТК: 3740%"
+            },
+            {
+              "level": "Level 12",
+              "value": "АТК: 4080%"
+            },
+            {
+              "level": "Level 13",
+              "value": "АТК: 4080%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Rebound",
+          "image": "atl_rebound.jpg",
+          "description": "Collects the power of the earth to regain physical strength, causing damage to nearby enemies.",
+          "target": "Up to 8 attacks while casting, reuse to finish casting",
+          "casting_time": "0.533 sec.",
+          "cooldown": "25 sec.",
+          "duration": "4.223 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "1070",
+          "aggro": "100",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 900%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1800%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Rahar",
+          "image": "atl_lahar.jpg",
+          "description": "Destroy an enemys body and mind with a powerful blow.",
+          "target": "Up to 3 adjacent enemies",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "3.633 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "780",
+          "aggro": "700",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3000%"
+            },
+            {
+              "level": "Level 11",
+              "value": "АТК: 3300%"
+            },
+            {
+              "level": "Level 12",
+              "value": "АТК: 3600%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [INT]",
+        "[PVP/PVE Maps] Additional 3% DMG according to extra [INT]",
+        "Ignore additional DEF according to extra [INT] * 4",
+        "Additional DMG against Monster according to 3 * 50"
+      ],
+      "equipped_items": "Rod",
+      "icon_position": {
+        "x": 0,
+        "y": -325
+      }
+    }
+  ]
+}

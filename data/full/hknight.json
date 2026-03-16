@@ -1,0 +1,631 @@
+{
+  "slug": "hknight",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Crossed Destinies Justice and Glory",
+    "head": "Justice Glorieux Volonte hair",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Leather Metal",
+    "costume": "Justice Glorieux Volonte",
+    "gloves": "Gloves Leather Metal",
+    "ring": "Ring",
+    "weapon_costume": "None",
+    "belt": "Belt Leather Metal",
+    "shoes": "Shoes Leather Metal",
+    "artifact": "Friend Aus Cross Archbishops Ring",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Holy Aura",
+    "image": "job_holyaura.jpg",
+    "description": "Releases sacred energy to surrounding by praying to heal allies.",
+    "target": "To your 5 characters or squad members within a range of 10m",
+    "casting_time": "0 sec.",
+    "cooldown": "45 sec.",
+    "duration": "1.833 sec.",
+    "sp_cost": "750",
+    "consume_item": "Ancient Star Orb × 2",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Recovers Max HP of targets by 20%"
+        ]
+      },
+      {
+        "level": "Level 11",
+        "effects": [
+          "Recovers Max HP of targets by 25%"
+        ]
+      },
+      {
+        "level": "Level 12",
+        "effects": [
+          "Recovers Max HP of targets by 30%"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Back-Guard",
+      "equipped_items": "Sword",
+      "icon_position": {
+        "x": -50,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Back-Guard",
+      "equipped_items": "Sword + Shield",
+      "icon_position": {
+        "x": -50,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "High-Guard",
+      "equipped_items": "Sword + Shield",
+      "icon_position": {
+        "x": 0,
+        "y": -75
+      }
+    },
+    {
+      "stance_name": "Holy Shielder",
+      "equipped_items": "Sword + Shield",
+      "icon_position": {
+        "x": -400,
+        "y": -325
+      }
+    },
+    {
+      "stance_name": "Back-Guard",
+      "equipped_items": "Blunt + Shield",
+      "icon_position": {
+        "x": -50,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Holy Shielder",
+      "equipped_items": "Blunt + Shield",
+      "icon_position": {
+        "x": -400,
+        "y": -325
+      }
+    },
+    {
+      "stance_name": "Back-Guard",
+      "equipped_items": "Blunt",
+      "icon_position": {
+        "x": -50,
+        "y": 0
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Back-Guard",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1.5m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "100",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "14",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+3%",
+        "Block": "+14"
+      },
+      "skills": [
+        {
+          "name": "Deep Straight",
+          "image": "bg_deepstraight.jpg",
+          "description": "Impales the enemy on a sword before delivering a powerful kick.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "0 sec.",
+          "duration": "2.67 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "100",
+          "aggro": "78",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 300%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Earth Tremor",
+          "image": "bg_earthtremor.jpg",
+          "description": "Plunges sword into enemy while airborne.",
+          "target": "Up to 3 adjacent enemies",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "2.2 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "150",
+          "aggro": "68",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 400%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 800%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Penta-Train",
+          "image": "bg_pentatrain.jpg",
+          "description": "A series of aggressive attacks that pushes the enemy back.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "3.4 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "200",
+          "aggro": "105",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 600%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1200%"
+            }
+          ],
+          "special": [
+            "Double Damage to enemies with [",
+            "Double Damage to enemies with ["
+          ]
+        },
+        {
+          "name": "Vortex Slash",
+          "image": "bg_vortexlash.jpg",
+          "description": "Make a series of fast and powerful attacks.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "4.4 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "250",
+          "aggro": "210",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1600%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Sword",
+      "icon_position": {
+        "x": -50,
+        "y": 0
+      }
+    },
+    {
+      "name": "High-Guard",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1.5m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "130",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "24",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "Block": "+24"
+      },
+      "skills": [
+        {
+          "name": "Slash Down",
+          "image": "hg_slashdown.jpg",
+          "description": "Delivers downward slashes.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "0 sec.",
+          "duration": "2.37 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "100",
+          "aggro": "56",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Guardian",
+          "image": "hg_guardian.jpg",
+          "description": "Focuses on Blocking to improve DEF. Canceled, if Stance changes.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "0 sec.",
+          "duration": "0.2 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "150",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration 10 sec"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration 10 sec"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration 10 sec"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration 10 sec"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration 10 sec"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Pommel",
+          "image": "hg_pommelbeat.jpg",
+          "description": "Strike the head of enemy with the pommel of sword repeatedly. It overwhelms the DEF of small or medium enemies, but is ineffective on large enemies.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "3.78 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "200",
+          "aggro": "117",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 700%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Stunning Skewer",
+          "image": "hg_stunningskewer.jpg",
+          "description": "Stuns the enemy with a blow from the shield before advancing upon him with a sword.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "4.45 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "136",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 900%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1800%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Sword + Shield",
+      "icon_position": {
+        "x": 0,
+        "y": -75
+      }
+    },
+    {
+      "name": "Holy Shielder",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "210",
+        "Bonus ATK": "50%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "50",
+        "EVA": "0",
+        "BLK": "15",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "Block": "+20",
+        "Critical": "+30",
+        "Penetration": "10+5",
+        "Immunity": "15+25"
+      },
+      "skills": [
+        {
+          "name": "Pray",
+          "image": "hs_pray.jpg",
+          "description": "Receives sacred energy by praying.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "40 sec.",
+          "duration": "1.9 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "270",
+          "aggro": "300",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 5 Minutes"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 5 Minutes"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Divine Shield",
+          "image": "hs_divineshield.jpg",
+          "description": "Induces enemies to attack you by pushing them away with a shield. Holy level increases if it is used when the skill level is over 11.",
+          "target": "Up to 8 enemies within a range of 7m",
+          "casting_time": "Instant",
+          "cooldown": "2.5 sec.",
+          "duration": "1.766 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "100",
+          "aggro": "500",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2400%"
+            },
+            {
+              "level": "Level 11",
+              "value": "АТК: 2640%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Sanctuary",
+          "image": "hs_sanctuary.jpg",
+          "description": "Purifies enemies by creating a sanctuary on a targeted area.",
+          "target": "",
+          "casting_time": "1.533 sec.",
+          "cooldown": "15 sec.",
+          "duration": "1.333 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "250",
+          "aggro": "300",
+          "skill_type": "BUILD2",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Creates a sanctuary on a targeted area"
+            },
+            {
+              "level": "Level 10",
+              "value": "Creates a sanctuary on a targeted area"
+            },
+            {
+              "level": "Level 12",
+              "value": "Creates a sanctuary on a targeted area"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Judgment",
+          "image": "hs_judgement.jpg",
+          "description": "Brings sacred judgment rain on a targeted area.",
+          "target": "Up to 6 enemies 10m away and within a 5m radius",
+          "casting_time": "1.033 sec.",
+          "cooldown": "20 sec.",
+          "duration": "2.533 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "400",
+          "aggro": "400",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Heavenly Shield",
+          "image": "hs_heavenlyshield.jpg",
+          "description": "Rapidly increases DEF in a moment with a heavenly shield. Additional DEF increases depending on the level of [Holy] and then [Holy] disappears.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "30 sec.",
+          "duration": "5 Minutes",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "540",
+          "aggro": "500",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 5 Minutes"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 5 Minutes"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 5 Minutes"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 5 Minutes"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 5 Minutes"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [CON]",
+        "Ignore additional DEF according to extra [CON] * 4",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Sword + Shield",
+      "icon_position": {
+        "x": -400,
+        "y": -325
+      }
+    }
+  ]
+}

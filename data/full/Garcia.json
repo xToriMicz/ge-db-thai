@@ -1,0 +1,1858 @@
+{
+  "slug": "Garcia",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "None",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Leather",
+    "costume": "None",
+    "gloves": "Gloves Leather",
+    "ring": "Ring",
+    "weapon_costume": "None",
+    "belt": "Belt Leather",
+    "shoes": "Shoes Leather",
+    "artifact": "Chipped Medal Dom Perignon",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Shadow Trigger",
+    "image": "job_shadowtrigger.jpg",
+    "description": "Change efficiency of ATK and DEF by Autosuggestion.",
+    "target": "Self-buff",
+    "casting_time": "0 sec.",
+    "cooldown": "0 sec.",
+    "duration": "0.2 sec.",
+    "sp_cost": "100",
+    "consume_item": "Mithridart × 3",
+    "levels": [
+      {
+        "level": "Level 1",
+        "effects": [
+          "A.R. +1, ATK 20%",
+          "D.R. +1, DEF +20",
+          "Trigger is changed to another one in use of the skill"
+        ]
+      },
+      {
+        "level": "Level 10",
+        "effects": [
+          "A.R. +1, ATK 20%, Penetration +5",
+          "D.R. +1, DEF +20, IMM +5",
+          "Change to another Trigger when using the skill"
+        ]
+      },
+      {
+        "level": "Level 11",
+        "effects": [
+          "A.R. +1, ATK 20%, Penetration +6",
+          "D.R. +1, DEF +20, IMM +6",
+          "Change to another Trigger when using the skill"
+        ]
+      },
+      {
+        "level": "Level 12",
+        "effects": [
+          "A.R. +1, ATK 20%, Penetration +7",
+          "D.R. +1, DEF +20, IMM +7",
+          "Change to another Trigger when using the skill"
+        ]
+      },
+      {
+        "level": "Level 13",
+        "effects": [
+          "A.R. +1, ATK 20%, Penetration +8",
+          "D.R. +1, DEF +20, IMM +8",
+          "Change to another Trigger when using the skill"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Epee Garde",
+      "equipped_items": "Rapier",
+      "icon_position": {
+        "x": -200,
+        "y": -25
+      }
+    },
+    {
+      "stance_name": "Sabre Garde",
+      "equipped_items": "Rapier",
+      "icon_position": {
+        "x": -50,
+        "y": -125
+      }
+    },
+    {
+      "stance_name": "Advance Garde",
+      "equipped_items": "Rapier + Pistol",
+      "icon_position": {
+        "x": -50,
+        "y": -300
+      }
+    },
+    {
+      "stance_name": "Double-Gun Shot",
+      "equipped_items": "Pistol + Pistol",
+      "icon_position": {
+        "x": 0,
+        "y": -25
+      }
+    },
+    {
+      "stance_name": "Outrage Shot",
+      "equipped_items": "Pistol + Pistol",
+      "icon_position": {
+        "x": -100,
+        "y": -375
+      }
+    },
+    {
+      "stance_name": "Aiming Shot",
+      "equipped_items": "Pistol",
+      "icon_position": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Freestyle Shot",
+      "equipped_items": "Pistol",
+      "icon_position": {
+        "x": -150,
+        "y": -50
+      }
+    },
+    {
+      "stance_name": "Sight Shot",
+      "equipped_items": "Pistol",
+      "icon_position": {
+        "x": -50,
+        "y": -375
+      }
+    },
+    {
+      "stance_name": "Wanted",
+      "equipped_items": "Pistol",
+      "icon_position": {
+        "x": -300,
+        "y": -50
+      }
+    },
+    {
+      "stance_name": "Rapiere",
+      "equipped_items": "Rapier + Rapier",
+      "icon_position": {
+        "x": -150,
+        "y": -425
+      }
+    },
+    {
+      "stance_name": "Necro Legion",
+      "equipped_items": "Rapier + Rod",
+      "icon_position": {
+        "x": -450,
+        "y": -75
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Epee Garde",
+      "info": {
+        "Targets": "2 enemies",
+        "Range": "2m away",
+        "Splash": "0.8 DMG within  1m range",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "170",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+16%",
+        "Critical": "+20"
+      },
+      "skills": [
+        {
+          "name": "Fente",
+          "image": "epe_fente.jpg",
+          "description": "A lightning-quick attack that takes enemies by surprise and pierces him deeply. It has a longer range than other stabbing attacks.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "0 sec.",
+          "duration": "1.85 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "100",
+          "aggro": "92",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 406%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 811%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Sept Etoiles",
+          "image": "epe_septetoile.jpg",
+          "description": "Rapidly pierces enemies and forces him to retreat.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "2.97 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "200",
+          "aggro": "141",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 652%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1304%"
+            }
+          ],
+          "special": [
+            "Double Damage to enemies with [",
+            "Double Damage to enemies with ["
+          ]
+        },
+        {
+          "name": "Balestra Fente",
+          "image": "epe_balestrafente.jpg",
+          "description": "An advanced form of the Fente, accompanied by a surprising leap and powerful lunge.",
+          "target": "Up to 3 enemies 5.5m away and within 3m width",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "3.03 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "250",
+          "aggro": "119",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 513%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1026%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Cent-Ennui",
+          "image": "epe_centennuyer.jpg",
+          "description": "Attacks enemies with a series of violent piercing movements.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "3.5 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "267",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1280%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2560%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Rapier",
+      "icon_position": {
+        "x": -200,
+        "y": -25
+      }
+    },
+    {
+      "name": "Sabre Garde",
+      "info": {
+        "Targets": "2 enemies",
+        "Range": "1.75m away",
+        "Splash": "0.8 DMG within  1m range",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "160",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "15",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+8%",
+        "Evasion": "+15"
+      },
+      "skills": [
+        {
+          "name": "Tete",
+          "image": "sab_tete.jpg",
+          "description": "Strikes enemies with the sword hilt before delivering a damaging slash.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "0 sec.",
+          "duration": "2 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "100",
+          "aggro": "78",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 351%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 702%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Evasion",
+          "image": "sab_evasion.jpg",
+          "description": "Increases Evasion for a while. Canceled, if Stance changes.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "0 sec.",
+          "duration": "0.2 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "150",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration 30 sec"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration 30 sec"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration 30 sec"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration 30 sec"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration 30 sec"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Attaque Compose",
+          "image": "sab_attaquecomposee.jpg",
+          "description": "A rapid series of merciless slashes.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "2.87 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "200",
+          "aggro": "137",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 633%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1266%"
+            }
+          ],
+          "special": [
+            "Additional 50% damage to enemies with [",
+            "Additional 50% damage to enemies with ["
+          ]
+        },
+        {
+          "name": "Esquive Touch",
+          "image": "sab_esquivetouch.jpg",
+          "description": "A series of rapid slashes followed by a powerful stab to finish enemies off.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "3.9 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "274",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1304%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2608%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Rapier",
+      "icon_position": {
+        "x": -50,
+        "y": -125
+      }
+    },
+    {
+      "name": "Advance Garde",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1.25m away",
+        "Splash": "None",
+        "Hits per attack": "3",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "243",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+20%",
+        "Critical": "+10"
+      },
+      "skills": [
+        {
+          "name": "Arme Bullet",
+          "image": "ave_armebullet.jpg",
+          "description": "Shoots 5 times consecutively with the pistol in the left hand. This can be used as a normal attack.",
+          "target": "1 enemy within a range of 8m",
+          "casting_time": "1.433 sec.",
+          "cooldown": "0 sec.",
+          "duration": "1.53 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "undefined",
+          "aggro": "76",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 329%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 658%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Croix Fente",
+          "image": "ave_croixfente.jpg",
+          "description": "Slashes enemy and finishes him off with a powerful stab.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "0 sec.",
+          "duration": "2.37 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "150",
+          "aggro": "105",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 470%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 940%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Entrer en Lices",
+          "image": "ave_entrerenliches.jpg",
+          "description": "Shoots enemies 5 times before stabbing him to his end. Can also be used on airborne enemies.",
+          "target": "Up to 3 adjacent enemies",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "4.53 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "250",
+          "aggro": "198",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 938%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1876%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Mortal Eternity",
+          "image": "ave_morteleternity.jpg",
+          "description": "Slashes enemies mercilessly for 8 hits before finishing with a fatal bullet.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "4.6 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "316",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1530%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3060%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Rapier + Pistol",
+      "icon_position": {
+        "x": -50,
+        "y": -300
+      }
+    },
+    {
+      "name": "Double-Gun Shot",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.5~9m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "200",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "0",
+        "EVA": "5",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+20%",
+        "Ignore DEF": "+2%",
+        "Evasion": "+5"
+      },
+      "skills": [
+        {
+          "name": "Westraid",
+          "image": "fre_westraid.jpg",
+          "description": "Increases your shooting speed but sacrifices accuracy. A change of stance will cause you to lose this effect.",
+          "target": "",
+          "casting_time": "1.133 sec.",
+          "cooldown": "0 sec.",
+          "duration": "1.13 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "150",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 33 sec"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 60 sec"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration : 63 sec"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration : 66 sec"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration : 69 sec"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Bloody Overdrive",
+          "image": "dgs_bloodyoverdrive.jpg",
+          "description": "Fires mercilessly in all directions at surrounding enemies.",
+          "target": "Up to 8 enemies within a range of 7.5m",
+          "casting_time": "1.6 sec.",
+          "cooldown": "10 sec.",
+          "duration": "3.57 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "200",
+          "aggro": "59",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 234%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 468%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Quattro Firing",
+          "image": "dgs_quattrofiring.jpg",
+          "description": "Fires 4 rapid shots at a single enemy.",
+          "target": "1 enemy within a range of 9m",
+          "casting_time": "1.033 sec.",
+          "cooldown": "15 sec.",
+          "duration": "2.07 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "250",
+          "aggro": "131",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 596%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1192%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "R.I.P.",
+          "image": "dgs_restinpeace.jpg",
+          "description": "Fires a series of rapid shots at an enemy with dual pistols.",
+          "target": "1 enemy within a range of 9m",
+          "casting_time": "1 sec.",
+          "cooldown": "20 sec.",
+          "duration": "3.53 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "300",
+          "aggro": "201",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 946%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1892%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Pistol + Pistol",
+      "icon_position": {
+        "x": 0,
+        "y": -25
+      }
+    },
+    {
+      "name": "Outrage Shot",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.5~9m away",
+        "Splash": "None",
+        "Hits per attack": "4",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "213",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "0",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+25%",
+        "Ignore DEF": "+2%"
+      },
+      "skills": [
+        {
+          "name": "Sapping Shots",
+          "image": "ors_sappingshot.jpg",
+          "description": "Fires at enemy (Unable to move the lower half of own body).",
+          "target": "1 enemy within a range of 6m",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "2.37 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "100",
+          "aggro": "114",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 525%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1050%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Octet-stream",
+          "image": "ors_octetstream.jpg",
+          "description": "Fires 8 times consecutively.",
+          "target": "1 enemy within a range of 7m.",
+          "casting_time": "1.033 sec.",
+          "cooldown": "10 sec.",
+          "duration": "2.53 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "200",
+          "aggro": "236",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1132%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2264%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Dancing Revolvers",
+          "image": "ors_dancingrevolver.jpg",
+          "description": "A frenzy of graceful shots at enemies.",
+          "target": "Up to 6 enemies 8m away and within a 4m radius.",
+          "casting_time": "1.367 sec.",
+          "cooldown": "15 sec.",
+          "duration": "3.67 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "250",
+          "aggro": "144",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 673%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1346%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Desperados",
+          "image": "ors_desperados.jpg",
+          "description": "Random shots at enemies.",
+          "target": "1 enemy within a range of 9m",
+          "casting_time": "1.533 sec.",
+          "cooldown": "20 sec.",
+          "duration": "5.53 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "300",
+          "aggro": "241",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1152%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2304%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Pistol + Pistol",
+      "icon_position": {
+        "x": -100,
+        "y": -375
+      }
+    },
+    {
+      "name": "Aiming Shot",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.5~9m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "150",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "50",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+12%",
+        "Ignore DEF": "+2%",
+        "Critical": "+16"
+      },
+      "skills": [
+        {
+          "name": "Plumbullet shot",
+          "image": "aim_plumbulletshot.jpg",
+          "description": "Fires a poisonous bullet.",
+          "target": "1 enemy within a range of 9m",
+          "casting_time": "1.3 sec.",
+          "cooldown": "0 sec.",
+          "duration": "1.23 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "100",
+          "aggro": "31",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 112%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 224%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Double Firing",
+          "image": "aim_doublefiring.jpg",
+          "description": "Fire two rapid shots consecutively.",
+          "target": "1 enemy within a range of 9m",
+          "casting_time": "0.8 sec.",
+          "cooldown": "0 sec.",
+          "duration": "1.6 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "150",
+          "aggro": "57",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 239%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 478%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Snap Shot",
+          "image": "aim_snapshots.jpg",
+          "description": "Shoots 5 targets within a certain area.",
+          "target": "Up to 5 enemies 9m away and within a 3m radius",
+          "casting_time": "0.433 sec.",
+          "cooldown": "15 sec.",
+          "duration": "2.27 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "250",
+          "aggro": "39",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 149%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 298%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Zero-In",
+          "image": "aim_zeroin.jpg",
+          "description": "Fires rapidly at a single enemy.",
+          "target": "1 enemy within a range of 9m",
+          "casting_time": "1 sec.",
+          "cooldown": "20 sec.",
+          "duration": "4.6 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "300",
+          "aggro": "165",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 773%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1546%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Pistol",
+      "icon_position": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "name": "Freestyle Shot",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.5~9m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "130",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "20",
+        "EVA": "5",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+16%",
+        "Ignore DEF": "+2%",
+        "Evasion": "+5",
+        "Critical": "+6"
+      },
+      "skills": [
+        {
+          "name": "Westraid",
+          "image": "fre_westraid.jpg",
+          "description": "Increases your shooting speed but sacrifices accuracy. A change of stance will cause you to lose this effect.",
+          "target": "",
+          "casting_time": "1.133 sec.",
+          "cooldown": "0 sec.",
+          "duration": "1.13 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "150",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 33 sec"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 60 sec"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration : 63 sec"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration : 66 sec"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration : 69 sec"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Triple Firing",
+          "image": "fre_triplefiring.jpg",
+          "description": "A rapid attack of 3 shots.",
+          "target": "1 enemy within a range of 9m",
+          "casting_time": "1 sec.",
+          "cooldown": "7 sec.",
+          "duration": "1.3 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "200",
+          "aggro": "72",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 308%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 616%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Quick and Dead",
+          "image": "fre_quickanddead.jpg",
+          "description": "Fires randomly at a group of enemies.",
+          "target": "Up to 5 enemies 9m away and within a 3m radius",
+          "casting_time": "1 sec.",
+          "cooldown": "14 sec.",
+          "duration": "3.73 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "300",
+          "aggro": "88",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 391%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 782%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Pistol",
+      "icon_position": {
+        "x": -150,
+        "y": -50
+      }
+    },
+    {
+      "name": "Sight Shot",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.5~9m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "153",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "40",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+16%",
+        "Ignore DEF": "+2%",
+        "Critical": "+12"
+      },
+      "skills": [
+        {
+          "name": "Ankle Shot",
+          "image": "sts_ankleshot.jpg",
+          "description": "Shot to ankle of enemy.",
+          "target": "1 enemy within a range of 6m",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "2.03 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "100",
+          "aggro": "77",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 375%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 750%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Barrage Shots",
+          "image": "sts_barrageshot.jpg",
+          "description": "Fires wildly at an area in front of you.",
+          "target": "Up to 6 enemies 7m away and within a 4m radius.",
+          "casting_time": "1.2 sec.",
+          "cooldown": "10 sec.",
+          "duration": "2.33 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "200",
+          "aggro": "88",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 393%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 786%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Clincher",
+          "image": "sts_clincher.jpg",
+          "description": "Fires a critical shot at an enemy.",
+          "target": "1 enemy within a range of 8m",
+          "casting_time": "2.033 sec.",
+          "cooldown": "15 sec.",
+          "duration": "0.8 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "250",
+          "aggro": "138",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 641%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1282%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Surpassing Shot",
+          "image": "sts_exeedshooting.jpg",
+          "description": "Grievous damage on a single enemy.",
+          "target": "1 enemy within a range of 9m",
+          "casting_time": "1.367 sec.",
+          "cooldown": "20 sec.",
+          "duration": "3.9 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "300",
+          "aggro": "191",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 903%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1805%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Pistol",
+      "icon_position": {
+        "x": -50,
+        "y": -375
+      }
+    },
+    {
+      "name": "Wanted",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.5~10.5m away",
+        "Splash": "None",
+        "Hits per attack": "3",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Magical DMG": "-25%"
+      },
+      "stats": {
+        "ASPD": "253",
+        "Bonus ATK": "287%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "0",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "10",
+        "Ice RES": "10",
+        "Lightning RES": "10",
+        "Abnormal RES": "10"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+11%",
+        "Ignore DEF": "+8%",
+        "Evasion": "+10",
+        "Critical": "+20",
+        "Penetration": "5+25",
+        "Immunity": "5+10"
+      },
+      "skills": [
+        {
+          "name": "Sting Bringer",
+          "image": "wtd_stingbringer.jpg",
+          "description": "Quickly targets your enemy to deliver a shot.",
+          "target": "1 enemy within a range of 12m",
+          "casting_time": "0.5 sec.",
+          "cooldown": "6 sec.",
+          "duration": "3.267 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "240",
+          "aggro": "116",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Wanted Action",
+          "image": "wtd_wanted.jpg",
+          "description": "Release all of ability of your body to obtain a [Free] status. It is cancelled when the stance is changed.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "60 sec.",
+          "duration": "5 Minutes.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "440",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 5 Minutes."
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 5 Minutes."
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 5 Minutes."
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 5 Minutes."
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 5 Minutes."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Slider Shot",
+          "image": "wtd_slidershot.jpg",
+          "description": "Slide to the front to control your enemies.",
+          "target": "Up to 6 enemies 10m away and within a 5m radius",
+          "casting_time": "0.782 sec.",
+          "cooldown": "15 sec.",
+          "duration": "3.9 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "340",
+          "aggro": "85",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Escape Shot",
+          "image": "wtd_escapeshot.jpg",
+          "description": "Fling your body backwards to control the attack of an enemy while simultaneously firing a shot.",
+          "target": "1 enemy within a range of 12m",
+          "casting_time": "0.782 sec.",
+          "cooldown": "18 sec.",
+          "duration": "5 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "240",
+          "aggro": "172",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 3000%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 6000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Life Sentence",
+          "image": "wtd_menaceshot.jpg",
+          "description": "Fires a strong shot that can control enemies around you by gathering your body power.",
+          "target": "Up to 6 enemies 12m away and within an 8m radius",
+          "casting_time": "0.93 sec.",
+          "cooldown": "23 sec.",
+          "duration": "3 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "540",
+          "aggro": "461",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 3000%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 6000%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 11% of extra [DEX]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [DEX]",
+        "Ignore additional DEF according to extra [DEX] * 4",
+        "Additional DMG against [PC] + 2x",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Pistol",
+      "icon_position": {
+        "x": -300,
+        "y": -50
+      }
+    },
+    {
+      "name": "Rapiere",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "2m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Shooting DMG": "-10%",
+        "Magical DMG": "-10%",
+        "Debuff RES": "-10%"
+      },
+      "stats": {
+        "ASPD": "157",
+        "Bonus ATK": "300%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "55",
+        "EVA": "0",
+        "BLK": "5",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+25%",
+        "Block": "+30",
+        "Critical": "+19",
+        "Penetration": "25",
+        "Immunity": "5+15"
+      },
+      "skills": [
+        {
+          "name": "Punto",
+          "image": "rpe_punto.jpg",
+          "description": "Attacks the heart of enemy.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "3 sec.",
+          "duration": "1.57 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "240",
+          "aggro": "63",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2400%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4800%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Appel",
+          "image": "rpe_appel.jpg",
+          "description": "Target at weakness of enemy armor and attack for 3 times rapidly.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "5 sec.",
+          "duration": "2.1 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "340",
+          "aggro": "176",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Riposte",
+          "image": "rpe_riposte.jpg",
+          "description": "Attacks the enemy 5 times with the pointy end of a rapier.",
+          "target": "Up to 3 adjacent enemies",
+          "casting_time": "Instant",
+          "cooldown": "5 sec.",
+          "duration": "3 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "440",
+          "aggro": "230",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 3000%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 6000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Ropera",
+          "image": "rpe_ropera.jpg",
+          "description": "Ignores all magical attacks with a certain probability and increases Magic RES, Mind RES and DEF for a while.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "25 sec.",
+          "duration": "30 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "650",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 30 sec."
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 30 sec."
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 30 sec."
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 30 sec."
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 30 sec."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Cut and Thrust",
+          "image": "rpe_cutandthrust.jpg",
+          "description": "Attacks the enemy with rapiers.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "17 sec.",
+          "duration": "3.47 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "540",
+          "aggro": "300",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2371.42%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4742%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [STR]",
+        "[PVP/PVE Maps] Additional 5% DMG according to extra [STR]",
+        "Ignore additional DEF according to extra [STR] * 4",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 5 * 50"
+      ],
+      "equipped_items": "Rapier + Rapier",
+      "icon_position": {
+        "x": -150,
+        "y": -425
+      }
+    },
+    {
+      "name": "Necro Legion",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "2m away",
+        "Splash": "None",
+        "Hits per attack": "3",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "280",
+        "Bonus ATK": "500%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "Penetration": "20+0",
+        "Immunity": "20+0"
+      },
+      "skills": [
+        {
+          "name": "Necromantia",
+          "image": "necrole_necrolegion01.jpg",
+          "description": "Gain strength from disrupting the spirits of the dead. This power doesnt disappear upon death.",
+          "target": "",
+          "casting_time": "1 sec.",
+          "cooldown": "60 sec.",
+          "duration": "300 seconds",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "150",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 300 seconds"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Necire",
+          "image": "necrole_necrolegion02.jpg",
+          "description": "Generates an extremely cold vortex and sends the enemy into the underworld.",
+          "target": "Up to 6m away / Within a radius of 11m / max 13 targets",
+          "casting_time": "2 sec.",
+          "cooldown": "10 sec.",
+          "duration": "3.167 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "300",
+          "aggro": "47",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Styx",
+          "image": "necrole_necrolegion03.jpg",
+          "description": "Summons the river of death that freezes anyone that comes into contact with it.",
+          "target": "Up to 17 enemies within a 13m width, up to 11m away",
+          "casting_time": "2.5 sec.",
+          "cooldown": "16 sec.",
+          "duration": "1.97 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "300",
+          "aggro": "172",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Witch of Endor",
+          "image": "necrole_necrolegion04.jpg",
+          "description": "Call upon the undead army, dragging the enemies into a permanently frozen ground.",
+          "target": "Up to 22 enemies within the surrounding 17m",
+          "casting_time": "3.2 sec.",
+          "cooldown": "30 sec.",
+          "duration": "4 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "540",
+          "aggro": "50",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Odysseus",
+          "image": "necrole_necrolegion05.jpg",
+          "description": "Call upon the inhabitants of the underworld, freezing all living beings.",
+          "target": "",
+          "casting_time": "3.7 sec.",
+          "cooldown": "20 sec.",
+          "duration": "4.43 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "600",
+          "aggro": "204",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 3200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 6400%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [INT]",
+        "[PVP/PVE Maps] Additional 3% DMG according to extra [INT]",
+        "Ignore additional RES according to extra [INT] * 5"
+      ],
+      "equipped_items": "Rapier + Rod",
+      "icon_position": {
+        "x": -450,
+        "y": -75
+      }
+    }
+  ]
+}

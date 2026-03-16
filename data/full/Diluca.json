@@ -1,0 +1,284 @@
+{
+  "slug": "Diluca",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Soul Devastator",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Coat Robe",
+    "costume": "None",
+    "gloves": "Gloves",
+    "ring": "Ring",
+    "weapon_costume": "Spellbook of Crepa Event Spellbook of Crepa",
+    "belt": "Belt",
+    "shoes": "Shoes",
+    "artifact": "Last Apocalypse Dimension Stone",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Xenofluxus",
+    "image": "job_Xenofluxus.jpg",
+    "description": "Imbue yourself with the flow of the rift and raise your abilities to the next level.",
+    "target": "Self-buff",
+    "casting_time": "1.2 sec.",
+    "cooldown": "10 sec.",
+    "duration": "1.066 sec.",
+    "sp_cost": "100",
+    "consume_item": "Ancient Star Orb × 10",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration : 300 seconds",
+          "A.R. +1",
+          "ATK +15%",
+          "Mental Penetration +20"
+        ]
+      },
+      {
+        "level": "Level 11",
+        "effects": [
+          "Duration : 300 seconds",
+          "A.R. +1",
+          "ATK +20%",
+          "Mental Penetration +25"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Crepa",
+      "equipped_items": "Book",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Crepa",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "12m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Shooting DMG": "-10%",
+        "Magical DMG": "-15%",
+        "Debuff RES": "-10%"
+      },
+      "stats": {
+        "ASPD": "193",
+        "Bonus ATK": "300%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "5",
+        "Ice RES": "5",
+        "Lightning RES": "5",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "Penetration": "10+25",
+        "Immunity": "10+0"
+      },
+      "skills": [
+        {
+          "name": "Sordicula",
+          "image": "Crepa_Sordicula.jpg",
+          "description": "Gain power through converting the various rifts around yourself into energy.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "2.6 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "300",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 300 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 300 seconds"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration : 300 seconds"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Exspiro",
+          "image": "Crepa_Exspiro.jpg",
+          "description": "Create a rift on the ground that releases a psionic shockwave.",
+          "target": "Up to 15m away / within a radius of 3m / Max. 3 targets",
+          "casting_time": "1.1 sec.",
+          "cooldown": "12 sec.",
+          "duration": "1.2 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "450",
+          "aggro": "90",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1354%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2708%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Fragmentum",
+          "image": "Crepa_Fragmentum.jpg",
+          "description": "Drop crystallized abyss shards on the enemys heads by opening a rift above them.",
+          "target": "Up to 15m away / within a radius of 4m / Max. 5 targets",
+          "casting_time": "1.033 sec.",
+          "cooldown": "15 sec.",
+          "duration": "1.133 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "650",
+          "aggro": "197",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 920%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1839%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Speculor",
+          "image": "Crepa_Speculor.jpg",
+          "description": "Open several rifts to peer into multiple futures, continuously adjusting each enemys fate.",
+          "target": "Up to 15m away / within a radius of 5m / Max. 8 targets",
+          "casting_time": "2.133 sec.",
+          "cooldown": "30 sec.",
+          "duration": "0 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "970",
+          "aggro": "100",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 824%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1648%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Absentia",
+          "image": "Crepa_Absentia.jpg",
+          "description": "Detonate multiple rifts, completely erasing anything left in the area.",
+          "target": "Up to 14m away / within a radius of 7m / Max. 12 targets",
+          "casting_time": "2.1 sec.",
+          "cooldown": "18 sec.",
+          "duration": "1.133 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "1000",
+          "aggro": "197",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1223%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2446%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 10% of extra [INT]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [INT]",
+        "Ignore additional RES according to extra [INT] * 2",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Book",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    }
+  ]
+}

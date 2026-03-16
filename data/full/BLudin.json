@@ -1,0 +1,383 @@
+{
+  "slug": "BLudin",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Childhood Friend Soul Mate",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Robe",
+    "costume": "None",
+    "gloves": "Gloves",
+    "ring": "Ring",
+    "weapon_costume": "None",
+    "belt": "Belt",
+    "shoes": "Shoes",
+    "artifact": "Fire Crystal",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Fire Blessing",
+    "image": "job_fireblessing1.jpg",
+    "description": "Fire attack ability becomes stronger by receiving the blessing of the spirit of fire.",
+    "target": "Self-buff",
+    "casting_time": "0 sec.",
+    "cooldown": "30 sec.",
+    "duration": "3.365 sec.",
+    "sp_cost": "300",
+    "consume_item": "Ancient Star Orb × 2",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration: 300s",
+          "A.R. +2",
+          "ATK +50%",
+          "Monster ATK +250%",
+          "Fire PEN +15",
+          "Casting Time -15%",
+          "Applies [Student Presidents Boast] to squad members"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Possession Fire",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -50,
+        "y": -100
+      }
+    },
+    {
+      "stance_name": "Possession Fire",
+      "equipped_items": "Fire Bracelet",
+      "icon_position": {
+        "x": -50,
+        "y": -100
+      }
+    },
+    {
+      "stance_name": "Infernal Burn",
+      "equipped_items": "Fire Bracelet",
+      "icon_position": {
+        "x": -400,
+        "y": -450
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Possession Fire",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.5~9m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "170",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "15",
+        "Ice RES": "-25",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [
+        {
+          "name": "Fireball",
+          "image": "pfir_fireball.jpg",
+          "description": "Casts a devastating fireball that incinerates all enemies in its path.",
+          "target": "",
+          "casting_time": "0.9 sec.",
+          "cooldown": "0 sec.",
+          "duration": "1.33 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "60",
+          "aggro": "35",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Burning Hands",
+          "image": "pfir_burninghands.jpg",
+          "description": "Increases Fire RES by imbuing Fire attribute to allies attack.",
+          "target": "",
+          "casting_time": "0.367 sec.",
+          "cooldown": "0 sec.",
+          "duration": "230 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "90",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 110 sec."
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 200 sec."
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 210 sec."
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 220 sec."
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 230 sec."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Flame Ground",
+          "image": "pfir_flameground.jpg",
+          "description": "Sets [Flame Ground] inflicting constant Fire ATK.",
+          "target": "",
+          "casting_time": "2 sec.",
+          "cooldown": "15 sec.",
+          "duration": "1.63 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "180",
+          "aggro": "186",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2400%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -50,
+        "y": -100
+      }
+    },
+    {
+      "name": "Infernal Burn",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "9.5m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "-20%"
+      },
+      "stats": {
+        "ASPD": "157",
+        "Bonus ATK": "370%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "40",
+        "Ice RES": "0",
+        "Lightning RES": "30",
+        "Abnormal RES": "20"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+10%",
+        "Penetration": "5+25",
+        "Immunity": "10"
+      },
+      "skills": [
+        {
+          "name": "Quick Boom",
+          "image": "ifb_quickboom.jpg",
+          "description": "Placing hands on the ground causes explosion in a small range quickly.",
+          "target": "Up to 6 enemies/ 7m away / within a radius of 5m",
+          "casting_time": "Instant",
+          "cooldown": "9 sec.",
+          "duration": "1.567 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "350",
+          "aggro": "50",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1400%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2800%"
+            }
+          ],
+          "special": [
+            "Additionally, ignores the following amount of RES: 10+ (level of [",
+            "Additionally, ignores the following amount of RES: 10+ (level of ["
+          ]
+        },
+        {
+          "name": "Flame Rampage",
+          "image": "ifb_flamerampage.jpg",
+          "description": "Control the reckless flame to concentrate it on one enemy.",
+          "target": "1 enemy within a range of 15m",
+          "casting_time": "1.6 sec.",
+          "cooldown": "12 sec.",
+          "duration": "3.4 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "500",
+          "aggro": "150",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2019%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4038%"
+            }
+          ],
+          "special": [
+            "Additionally, ignores the following amount of RES: 10+ (level of [",
+            "Additionally, ignores the following amount of RES: 10+ (level of ["
+          ]
+        },
+        {
+          "name": "Flame Mallet",
+          "image": "ifb_flamemallet.jpg",
+          "description": "Crushes enemy with a heavy fire impact from top to bottom.",
+          "target": "",
+          "casting_time": "1.4 sec.",
+          "cooldown": "5 sec.",
+          "duration": "2 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "650",
+          "aggro": "180",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2300%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4600%"
+            }
+          ],
+          "special": [
+            "Additionally, ignores the following amount of RES: 10+ (level of [",
+            "Additionally, ignores the following amount of RES: 10+ (level of ["
+          ]
+        },
+        {
+          "name": "Meteo Shower",
+          "image": "ifb_meteorshower.jpg",
+          "description": "Drops countless meteors in the air within a certain range randomly.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "5.6 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "800",
+          "aggro": "80",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2400%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4800%"
+            }
+          ],
+          "special": [
+            "Additionally, ignores the following amount of RES: 10+ (level of [",
+            "Additionally, ignores the following amount of RES: 10+ (level of ["
+          ]
+        },
+        {
+          "name": "Summon Sekhmet",
+          "image": "ifb_summonsekhmet.jpg",
+          "description": "Summoned Sekhmet causes a strong fire storm around it.",
+          "target": "Up to 15 enemies within a range of 10m",
+          "casting_time": "1.7 sec.",
+          "cooldown": "40 sec.",
+          "duration": "2.4 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "1000",
+          "aggro": "200",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5000%"
+            }
+          ],
+          "special": [
+            "Additionally, ignores the following amount of RES: 10+ (level of [",
+            "Additionally, ignores the following amount of RES: 10+ (level of ["
+          ]
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [INT]",
+        "[PVP/PVE Maps] Additional 7% DMG according to extra [INT]",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Fire Bracelet",
+      "icon_position": {
+        "x": -400,
+        "y": -450
+      }
+    }
+  ]
+}

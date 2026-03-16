@@ -1,0 +1,289 @@
+{
+  "slug": "Hatir",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "You must give the order Blessings of the 2026 New Year",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Leather Metal",
+    "costume": "None",
+    "gloves": "Gloves",
+    "ring": "Ring",
+    "weapon_costume": "Tam Kar Tam Kar (Event)",
+    "belt": "Belt",
+    "shoes": "Shoes",
+    "artifact": "Non-partha",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Hatlamak",
+    "image": "job_hatlamak.jpg",
+    "description": "Remember your purpose and calm your mind.",
+    "target": "Apply to yourself without targeting",
+    "casting_time": "0 sec.",
+    "cooldown": "3 sec.",
+    "duration": "2.733 sec.",
+    "sp_cost": "200",
+    "consume_item": "Ancient Star Orb × 5",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration: 500 seconds",
+          "[Defense Stance]",
+          "Defense Rating +1",
+          "Attack power increases by an additional [Health]*0.25 (max 25%)",
+          "Immunity +15, Block +20",
+          "Damage from PC -15%, Damage from Monster -50%",
+          "[Attack Stance]",
+          "Attack Rating +1",
+          "Attack power increases by an additional [Health]*0.5 (max 50%)",
+          "Physical Penetration +15, Strength +10",
+          "Changes to a different trigger each time the skill is used."
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Capiacci",
+      "equipped_items": "Crescent",
+      "icon_position": {
+        "x": -350,
+        "y": -200
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Capiacci",
+      "info": {
+        "Targets": "3 enemies",
+        "Range": "2.5m away",
+        "Splash": "100% DMG within  2.5m range",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "+10%",
+        "Shooting DMG": "-20%"
+      },
+      "stats": {
+        "ASPD": "187",
+        "Bonus ATK": "310%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "30",
+        "EVA": "0",
+        "BLK": "30",
+        "Fire RES": "15",
+        "Ice RES": "15",
+        "Lightning RES": "15",
+        "Abnormal RES": "15"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+20%",
+        "Block": "+10",
+        "Penetration": "10+15",
+        "Immunity": "15+20"
+      },
+      "skills": [
+        {
+          "name": "Tarik",
+          "image": "kop_tahrik.jpg",
+          "description": "Taunts the opponent by scattering sand forward.",
+          "target": "Up to 6 enemies within a 9m x 70 degree range in front",
+          "casting_time": "Instant",
+          "cooldown": "6 sec.",
+          "duration": "2.033 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "150",
+          "aggro": "300",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 832%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1664%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Yeniden Insha",
+          "image": "kop_yenideninsa.jpg",
+          "description": "Free your physical abilities that were being limited.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "30 sec.",
+          "duration": "1.6 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "350",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Grants [Reconstruction] and [Suggestion] to yourself when casting"
+            },
+            {
+              "level": "Level 10",
+              "value": "Grants [Reconstruction] and [Suggestion] to yourself when casting"
+            },
+            {
+              "level": "Level 11",
+              "value": "Grants [Reconstruction] and [Suggestion] to yourself when casting"
+            },
+            {
+              "level": "Level 12",
+              "value": "Grants [Reconstruction] and [Suggestion] to yourself when casting"
+            },
+            {
+              "level": "Level 13",
+              "value": "Grants [Reconstruction] and [Suggestion] to yourself when casting"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Dabrahmas",
+          "image": "kop_davlamas.jpg",
+          "description": "Swing the crescent in a large circle to deter surrounding enemies.",
+          "target": "Up to 8 enemies within 7m",
+          "casting_time": "1 sec.",
+          "cooldown": "12 sec.",
+          "duration": "2.7 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "450",
+          "aggro": "150",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1065%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2130%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Basken",
+          "image": "kop_baskin.jpg",
+          "description": "Provokes by making a surprise charge at the target and then striking them.",
+          "target": "1 enemy within 15m",
+          "casting_time": "0.5 sec.",
+          "cooldown": "25 sec.",
+          "duration": "1.667 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "350",
+          "aggro": "350",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1294%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2588%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Artma",
+          "image": "kop_artma.jpg",
+          "description": "Leap into the air and powerfully strike down the crescent.",
+          "target": "Up to 15 enemies within 10m",
+          "casting_time": "1 sec.",
+          "cooldown": "24 sec.",
+          "duration": "3.267 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "650",
+          "aggro": "200",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1460%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2920%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 10% of extra [STR]",
+        "[PVP/PVE Maps] Additional 1% DMG according to extra [STR]",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Crescent",
+      "icon_position": {
+        "x": -350,
+        "y": -200
+      }
+    }
+  ]
+}

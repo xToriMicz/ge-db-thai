@@ -1,0 +1,776 @@
+{
+  "slug": "Ion",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "None",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Robe",
+    "costume": "None",
+    "gloves": "Gloves",
+    "ring": "Ring",
+    "weapon_costume": "None",
+    "belt": "Belt",
+    "shoes": "Shoes",
+    "artifact": "Candy Shell",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Flare",
+    "image": "oaa_flare.jpg",
+    "description": "Increases Monster Damage, by granting mysterious magical power to team members.",
+    "target": "Family members within a range of 10m",
+    "casting_time": "1.133 sec.",
+    "cooldown": "40 sec.",
+    "duration": "1.13 sec.",
+    "sp_cost": "1250",
+    "consume_item": "Ancient Star Orb × 5",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "300 sec.",
+          "A.R. +1",
+          "Max SP +20%",
+          "Monster ATK +60%",
+          "All RES -15",
+          "Max HP -25%"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Possession Ice",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -100,
+        "y": -100
+      }
+    },
+    {
+      "stance_name": "Possession Ice",
+      "equipped_items": "Ice Bracelet",
+      "icon_position": {
+        "x": -100,
+        "y": -100
+      }
+    },
+    {
+      "stance_name": "Frost",
+      "equipped_items": "Ice Bracelet",
+      "icon_position": {
+        "x": -300,
+        "y": -75
+      }
+    },
+    {
+      "stance_name": "Occult Magic",
+      "equipped_items": "Ice Bracelet",
+      "icon_position": {
+        "x": -50,
+        "y": -475
+      }
+    },
+    {
+      "stance_name": "Elemental Master",
+      "equipped_items": "Ice Bracelet",
+      "icon_position": {
+        "x": -500,
+        "y": -125
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Possession Ice",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.5~9m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "170",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "15",
+        "Lightning RES": "-25",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [
+        {
+          "name": "Freezing Spear",
+          "image": "pice_freezingsphere.jpg",
+          "description": "Creates a magical glacial spear that launches itself at enemies.",
+          "target": "Up to 3 enemies 8m away and within a 1.75m radius",
+          "casting_time": "0.9 sec.",
+          "cooldown": "0 sec.",
+          "duration": "1.33 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "60",
+          "aggro": "42",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Chilling Touch",
+          "image": "pice_chillingtouch.jpg",
+          "description": "Increases Ice RES by imbuing Ice attribute to allies attack.",
+          "target": "",
+          "casting_time": "0.367 sec.",
+          "cooldown": "0 sec.",
+          "duration": "230 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "90",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 110 sec."
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 200 sec."
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 210 sec."
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 220 sec."
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 230 sec."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Frost Cloud",
+          "image": "pice_frostcloud.jpg",
+          "description": "By surrounding them with a cloud of ice, it freezes enemies.",
+          "target": "Up to 6 enemies 8m away and within a 3.5m radius",
+          "casting_time": "2 sec.",
+          "cooldown": "10 sec.",
+          "duration": "1.63 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "120",
+          "aggro": "63",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Deluge",
+          "image": "pice_deluge.jpg",
+          "description": "Sets [Deluge] inflicting constant Ice ATK in the ground.",
+          "target": "",
+          "casting_time": "2 sec.",
+          "cooldown": "15 sec.",
+          "duration": "1.63 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "180",
+          "aggro": "186",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3000%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -100,
+        "y": -100
+      }
+    },
+    {
+      "name": "Frost",
+      "info": {
+        "Targets": "5 enemies",
+        "Range": "0.5~10m away",
+        "Splash": "100% DMG within  3m range",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "227",
+        "Bonus ATK": "270%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "20",
+        "Ice RES": "150",
+        "Lightning RES": "20",
+        "Abnormal RES": "20"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+5%",
+        "Penetration": "5+25",
+        "Immunity": "5+10"
+      },
+      "skills": [
+        {
+          "name": "Frost Shield",
+          "image": "fst_frostshield.jpg",
+          "description": "Creates an ice shield to protect yourself.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "60 sec.",
+          "duration": "1.966 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "300",
+          "aggro": "50",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 120 sec."
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 120 sec."
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration : 120 sec."
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration : 120 sec."
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration : 120 sec."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Circle Frost",
+          "image": "fst_circlefrost.jpg",
+          "description": "Spouts cold wave that surround yourself.",
+          "target": "Up to 15 enemies within a range of 8m",
+          "casting_time": "0.866 sec.",
+          "cooldown": "10 sec.",
+          "duration": "1.6 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "500",
+          "aggro": "150",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 900%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1800%"
+            }
+          ],
+          "special": [
+            "Additionally, ignores the following amount of RES: 20 + (level of [",
+            "Additionally, ignores the following amount of RES: 20 + (level of ["
+          ]
+        },
+        {
+          "name": "Frost Dust",
+          "image": "fst_frostarrow.jpg",
+          "description": "Fire energy of ice to clean the enemies.",
+          "target": "1 enemy within a range of 15m",
+          "casting_time": "2.566 sec.",
+          "cooldown": "7 sec.",
+          "duration": "2.566 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "800",
+          "aggro": "200",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3600%"
+            }
+          ],
+          "special": [
+            "Additionally, ignores the following amount of RES: 20 + (level of [",
+            "Additionally, ignores the following amount of RES: 20 + (level of ["
+          ]
+        },
+        {
+          "name": "Frost Storm",
+          "image": "fst_froststorm.jpg",
+          "description": "Strikes a strong ice storm.",
+          "target": "Up to 15 enemies 8m away and within a 13m radius",
+          "casting_time": "2.566 sec.",
+          "cooldown": "17 sec.",
+          "duration": "2.566 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "1000",
+          "aggro": "230",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2000%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4000%"
+            }
+          ],
+          "special": [
+            "Additionally, ignores the following amount of RES: 20 + (level of [",
+            "Additionally, ignores the following amount of RES: 20 + (level of ["
+          ]
+        },
+        {
+          "name": "Freezing",
+          "image": "fst_freezing.jpg",
+          "description": "Freeze enemies around you immediately.",
+          "target": "",
+          "casting_time": "2.7 sec.",
+          "cooldown": "27 sec.",
+          "duration": "7.532 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "1200",
+          "aggro": "350",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3000%"
+            }
+          ],
+          "special": [
+            "Additionally, ignores the following amount of RES: 10 + (level of [",
+            "Additionally, ignores the following amount of RES: 10 + (level of ["
+          ]
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [INT]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [INT]",
+        "Ignore additional RES according to extra [INT] * 4",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Ice Bracelet",
+      "icon_position": {
+        "x": -300,
+        "y": -75
+      }
+    },
+    {
+      "name": "Occult Magic",
+      "info": {
+        "Targets": "3 enemies",
+        "Range": "0.5~9m away",
+        "Splash": "0.8 DMG within  2m range",
+        "Hits per attack": "2",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Shooting DMG": "+20%",
+        "Magical DMG": "-20%",
+        "Debuff RES": "-10%"
+      },
+      "stats": {
+        "ASPD": "267",
+        "Bonus ATK": "270%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "20",
+        "Ice RES": "20",
+        "Lightning RES": "20",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+10%",
+        "Penetration": "10+25"
+      },
+      "skills": [
+        {
+          "name": "Tenseness",
+          "image": "occ_tenseness.jpg",
+          "description": "Deals damage with strong magnetic wave with attribute of holding weapon.",
+          "target": "Up to 18 enemies within a range of 6m",
+          "casting_time": "Instant",
+          "cooldown": "1 sec.",
+          "duration": "1.33 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "65",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 379.5%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 759%"
+            },
+            {
+              "level": "Level 12",
+              "value": "АТК: 910%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Ice Vrille",
+          "image": "occ_icevrille.jpg",
+          "description": "Creates a sharp ice pick in a straight line to pierce enemies from the bottom.",
+          "target": "Up to 12 enemies 15m away and within 5m width",
+          "casting_time": "2.633 sec.",
+          "cooldown": "12 sec.",
+          "duration": "2.17 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "700",
+          "aggro": "172",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1058.2%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2116%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Breath of Fire",
+          "image": "occ_blastfire.jpg",
+          "description": "Breathes strong fire to targets.",
+          "target": "Up to 20 during casting time",
+          "casting_time": "3.033 sec.",
+          "cooldown": "21 sec.",
+          "duration": "7.54 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "800",
+          "aggro": "103",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 462%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 924%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Electric Bluster",
+          "image": "occ_dynabreath.jpg",
+          "description": "Creates a lightning ball and makes it explode to deal damage to enemy and nearby targets.",
+          "target": "Up to 30 during casting time",
+          "casting_time": "2.7 sec.",
+          "cooldown": "28 sec.",
+          "duration": "3.74 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "900",
+          "aggro": "223",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 541.21%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1082%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Abyss Flare",
+          "image": "occ_abyssflare.jpg",
+          "description": "Concentrate the magic power into a single focal point, and deliver a great punch to the enemies.",
+          "target": "",
+          "casting_time": "6.033 sec.",
+          "cooldown": "65 sec.",
+          "duration": "3.77 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "1000",
+          "aggro": "353",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2415.6%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4831%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [INT]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [INT]",
+        "Ignore additional RES according to extra [INT] * 4",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Ice Bracelet",
+      "icon_position": {
+        "x": -50,
+        "y": -475
+      }
+    },
+    {
+      "name": "Elemental Master",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.5~10m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Shooting DMG": "+10%",
+        "Magical DMG": "-10%",
+        "Debuff RES": "-10%"
+      },
+      "stats": {
+        "ASPD": "120",
+        "Bonus ATK": "320%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "10"
+      },
+      "lv25_bonus": {
+        "Penetration": "10+25",
+        "Immunity": "10"
+      },
+      "skills": [
+        {
+          "name": "Elemental Spirit",
+          "image": "ele_elementalspirits.jpg",
+          "description": "Absorbing elements energy, the body becomes stronger. Canceled in case of Stance change. [Elemental Control] rises to Max 50 and [Elemental Spirit] state appears every 3 levels.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "30 sec.",
+          "duration": "2 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 30 sec"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 30 sec"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Vanishing Flare",
+          "image": "ele_vanishingflare.jpg",
+          "description": "Throws a magic sphere of flame and electricity. The flame explodes and the electricity flows on the ground.",
+          "target": "",
+          "casting_time": "1.7 sec.",
+          "cooldown": "12 sec.",
+          "duration": "1.7 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "500",
+          "aggro": "103",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 894%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1788%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Tornado Flare",
+          "image": "ele_tonadoflare.jpg",
+          "description": "Ice vortex rages and lightning strikes.",
+          "target": "",
+          "casting_time": "2 sec.",
+          "cooldown": "18 sec.",
+          "duration": "2 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "800",
+          "aggro": "160",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1115%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2230%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Misty Claymore",
+          "image": "ele_mistyclaymore.jpg",
+          "description": "The flame explodes in a wide misty place.",
+          "target": "",
+          "casting_time": "1.4 sec.",
+          "cooldown": "22 sec.",
+          "duration": "1.4 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "750",
+          "aggro": "184",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 754%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1508%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Arch Spear",
+          "image": "ele_archsphere.jpg",
+          "description": "Pour the whole power of Flame, Ice and Lightning to the enemy.",
+          "target": "",
+          "casting_time": "3 sec.",
+          "cooldown": "35 sec.",
+          "duration": "3 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "1100",
+          "aggro": "300",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1702%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3404%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [INT]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [INT]",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Ice Bracelet",
+      "icon_position": {
+        "x": -500,
+        "y": -125
+      }
+    }
+  ]
+}

@@ -1,0 +1,878 @@
+{
+  "slug": "Van",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Vanished the demons, Pegadilla Soul Devastator Blessing of Archbishop Blooming Daisy",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Coat Robe",
+    "costume": "None",
+    "gloves": "Gloves",
+    "ring": "Ring",
+    "weapon_costume": "Event Grimoire of Darkness Costume Grimoire of Darkness Costume",
+    "belt": "Belt",
+    "shoes": "Shoes",
+    "artifact": "Black Cape",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Limite",
+    "image": "job_limite.jpg",
+    "description": "Beyond the limits to exert maximum.",
+    "target": "Self-buff",
+    "casting_time": "0 sec.",
+    "cooldown": "60 sec.",
+    "duration": "1.83 sec.",
+    "sp_cost": "400",
+    "consume_item": "Ancient Star Orb × 5",
+    "levels": [
+      {
+        "level": "Level 1",
+        "effects": [
+          "Duration 5 sec",
+          "Decreases damage from all attacks by 1%"
+        ]
+      },
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration 50 sec",
+          "Decreases damage from all attacks by 10%"
+        ]
+      },
+      {
+        "level": "Level 11",
+        "effects": [
+          "Duration 55 sec",
+          "Decreases damage from all attacks by 11%",
+          "D.R. +1"
+        ]
+      },
+      {
+        "level": "Level 12",
+        "effects": [
+          "Duration 60 sec",
+          "Decreases damage from all attacks by 12%",
+          "D.R. +1"
+        ]
+      },
+      {
+        "level": "Level 13",
+        "effects": [
+          "Duration 65 sec",
+          "Decreases damage from all attacks by 13%",
+          "D.R. +1"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Illusionist",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": -75
+      }
+    },
+    {
+      "stance_name": "Anathema",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -100,
+        "y": -325
+      }
+    },
+    {
+      "stance_name": "Illusionist",
+      "equipped_items": "Book",
+      "icon_position": {
+        "x": -150,
+        "y": -75
+      }
+    },
+    {
+      "stance_name": "Anathema",
+      "equipped_items": "Book",
+      "icon_position": {
+        "x": -100,
+        "y": -325
+      }
+    },
+    {
+      "stance_name": "Abyss",
+      "equipped_items": "Book",
+      "icon_position": {
+        "x": -300,
+        "y": -200
+      }
+    },
+    {
+      "stance_name": "Creacion",
+      "equipped_items": "Book",
+      "icon_position": {
+        "x": -450,
+        "y": -225
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Illusionist",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1~10m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "170",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "15"
+      },
+      "lv25_bonus": {},
+      "skills": [
+        {
+          "name": "Sandman",
+          "image": "ilu3_sandmann.jpg",
+          "description": "Put all enemies in a certain range to sleep.",
+          "target": "",
+          "casting_time": "1.167 sec.",
+          "cooldown": "10 sec.",
+          "duration": "1.7 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "60",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "80% chance to inflict ["
+            },
+            {
+              "level": "Level 10",
+              "value": "80% chance to inflict ["
+            },
+            {
+              "level": "Level 11",
+              "value": "80% chance to inflict ["
+            },
+            {
+              "level": "Level 12",
+              "value": "80% chance to inflict ["
+            },
+            {
+              "level": "Level 13",
+              "value": "80% chance to inflict ["
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Magical Piercing",
+          "image": "ilu3_magicalpiercing.jpg",
+          "description": "Reduces Fire/Ice/Lightning/Mental RES to all enemies in a certain area.",
+          "target": "",
+          "casting_time": "1.167 sec.",
+          "cooldown": "10 sec.",
+          "duration": "1.7 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "90",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 16.5 sec."
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 30 sec."
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration : 31.5 sec."
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration : 33 sec."
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration : 34.5 sec."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Ritardi",
+          "image": "ilu3_ritardi.jpg",
+          "description": "Reduces the Movement Speed of enemies.",
+          "target": "",
+          "casting_time": "1.167 sec.",
+          "cooldown": "10 sec.",
+          "duration": "1.7 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "150",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "80% chance to decrease enemys ATK/MOVE Speed -33% for 8.8 sec."
+            },
+            {
+              "level": "Level 10",
+              "value": "80% chance to decrease enemys ATK/MOVE Speed -60% for 16 sec."
+            },
+            {
+              "level": "Level 11",
+              "value": "80% chance to decrease enemys ATK/MOVE Speed -63% for 16.8 sec."
+            },
+            {
+              "level": "Level 12",
+              "value": "80% chance to decrease enemys ATK/MOVE Speed -66% for 17.6 sec."
+            },
+            {
+              "level": "Level 13",
+              "value": "80% chance to decrease enemys ATK/MOVE Speed -69% for 18.4 sec."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Invisible Stalker",
+          "image": "ilu3_invisiblestalker.jpg",
+          "description": "Grant invisibility to allies. An invisible character cannot be attacked until he is detected, but cannot use any skill. After using it, [Skill Standby] buff is applied.",
+          "target": "",
+          "casting_time": "2.633 sec.",
+          "cooldown": "60 sec.",
+          "duration": "1.7 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "180",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 17.5 sec"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 40 sec"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration : 42.5 sec"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration : 45 sec"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration : 47.5 sec"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": -75
+      }
+    },
+    {
+      "name": "Anathema",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1~10m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "170",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "20"
+      },
+      "lv25_bonus": {},
+      "skills": [
+        {
+          "name": "Confusion",
+          "image": "ana2_confusion.jpg",
+          "description": "Disables use of skills by confusing the enemy.",
+          "target": "",
+          "casting_time": "0.9 sec.",
+          "cooldown": "12 sec.",
+          "duration": "1.3 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "100",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "80% chance to inflict ["
+            },
+            {
+              "level": "Level 10",
+              "value": "80% chance to inflict ["
+            },
+            {
+              "level": "Level 11",
+              "value": "80% chance to inflict ["
+            },
+            {
+              "level": "Level 12",
+              "value": "80% chance to inflict ["
+            },
+            {
+              "level": "Level 13",
+              "value": "80% chance to inflict ["
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Enervation",
+          "image": "ana2_enervation.jpg",
+          "description": "Decreases attack speed, Movement Speed and Attack of enemies by 50% for 20 seconds. Natural HP regeneration is halted.",
+          "target": "",
+          "casting_time": "0.9 sec.",
+          "cooldown": "12 sec.",
+          "duration": "1.3 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "150",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "80% chance to inflict ["
+            },
+            {
+              "level": "Level 10",
+              "value": "80% chance to inflict ["
+            },
+            {
+              "level": "Level 11",
+              "value": "80% chance to inflict ["
+            },
+            {
+              "level": "Level 12",
+              "value": "80% chance to inflict ["
+            },
+            {
+              "level": "Level 13",
+              "value": "80% chance to inflict ["
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Curse",
+          "image": "ana2_curse.jpg",
+          "description": "Curse enemies in a certain range and deals triple damage.",
+          "target": "",
+          "casting_time": "0.9 sec.",
+          "cooldown": "12 sec.",
+          "duration": "1.3 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "200",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "80% chance to blow 3 times damage to enemy for 6 sec."
+            },
+            {
+              "level": "Level 10",
+              "value": "80% chance to blow 3 times damage to enemy for 15 sec."
+            },
+            {
+              "level": "Level 11",
+              "value": "80% chance to blow 3 times damage to enemy for 16 sec."
+            },
+            {
+              "level": "Level 12",
+              "value": "80% chance to blow 3 times damage to enemy for 17 sec."
+            },
+            {
+              "level": "Level 13",
+              "value": "80% chance to blow 3 times damage to enemy for 18 sec."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Destruction",
+          "image": "ana2_destruction.jpg",
+          "description": "Dead enemies disappear.",
+          "target": "",
+          "casting_time": "7.8 sec.",
+          "cooldown": "240 sec.",
+          "duration": "5.266 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "1050",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Disappearance of Dead enemies"
+            },
+            {
+              "level": "Level 10",
+              "value": "Disappearance of Dead enemies"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Stone Disease",
+          "image": "ana2_stonedisease.jpg",
+          "description": "Immobilizes target but increases defense of the target.",
+          "target": "",
+          "casting_time": "0.9 sec.",
+          "cooldown": "60 sec.",
+          "duration": "1.63 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "300",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "80% chance to ["
+            },
+            {
+              "level": "Level 10",
+              "value": "80% chance to ["
+            },
+            {
+              "level": "Level 11",
+              "value": "80% chance to ["
+            },
+            {
+              "level": "Level 12",
+              "value": "80% chance to ["
+            },
+            {
+              "level": "Level 13",
+              "value": "80% chance to ["
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -100,
+        "y": -325
+      }
+    },
+    {
+      "name": "Abyss",
+      "info": {
+        "Targets": "4 enemies",
+        "Range": "1.5~12m away",
+        "Splash": "0.5 DMG within  1.5m range",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "143",
+        "Bonus ATK": "280%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "10",
+        "Ice RES": "10",
+        "Lightning RES": "10",
+        "Abnormal RES": "100"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+3%",
+        "Penetration": "25",
+        "Immunity": "3"
+      },
+      "skills": [
+        {
+          "name": "Contract",
+          "image": "abs_contract.jpg",
+          "description": "Increases your body ability with Abyss contract the first power. Cancelled when the stance is changed.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "90 sec.",
+          "duration": "1.7 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "200",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Cast Time -2%"
+            },
+            {
+              "level": "Level 10",
+              "value": "Cast Time -20%"
+            },
+            {
+              "level": "Level 11",
+              "value": "Cast Time -22%"
+            },
+            {
+              "level": "Level 12",
+              "value": "Cast Time -24%"
+            },
+            {
+              "level": "Level 13",
+              "value": "Cast Time -26%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Dealing",
+          "image": "abs_dealing.jpg",
+          "description": "Exchange power of enemy with you by using Abyss contract the second power.",
+          "target": "",
+          "casting_time": "2.666 sec.",
+          "cooldown": "10 sec.",
+          "duration": "1.866 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "100",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 489%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 977%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Sharing",
+          "image": "abs_sharing.jpg",
+          "description": "Deliver damage to major enemies and knock-down them to you with Abyss contract the third power.",
+          "target": "",
+          "casting_time": "4.433 sec.",
+          "cooldown": "15 sec.",
+          "duration": "1.2 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "600",
+          "aggro": "150",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 989%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1978%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Deprave",
+          "image": "abs_deprave.jpg",
+          "description": "Corrupt enemies with Abyss contract the fourth power.",
+          "target": "Up to 15 enemies 12m away and within a 8m radius",
+          "casting_time": "3.933 sec.",
+          "cooldown": "20 sec.",
+          "duration": "4.8 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "800",
+          "aggro": "120",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1210%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2420%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Mass Destruction",
+          "image": "abs_massdestruction.jpg",
+          "description": "Offer a dead spirit sacrifice according to the contract with Abyss.",
+          "target": "",
+          "casting_time": "7.8 sec.",
+          "cooldown": "240 sec.",
+          "duration": "5.266 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "1050",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Disappearance of Dead enemies"
+            },
+            {
+              "level": "Level 10",
+              "value": "Disappearance of Dead enemies"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [INT]",
+        "[PVP/PVE Maps] Additional 5% DMG according to extra [INT]",
+        "Ignore additional RES according to extra [INT] * 4",
+        "Additional DMG against [PC] + 2x",
+        "Additional DMG against Monster according to 5 * 50"
+      ],
+      "equipped_items": "Book",
+      "icon_position": {
+        "x": -300,
+        "y": -200
+      }
+    },
+    {
+      "name": "Creacion",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.5~13m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "143",
+        "Bonus ATK": "400%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "5",
+        "Ice RES": "5",
+        "Lightning RES": "5",
+        "Abnormal RES": "20"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+13%",
+        "Penetration": "5+5",
+        "Immunity": "5+10"
+      },
+      "skills": [
+        {
+          "name": "Podere",
+          "image": "cre_poder.jpg",
+          "description": "Draws a powerful magic based on Abyss power.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "30 sec.",
+          "duration": "130 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "300",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration 10 sec"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration 100 sec"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 110 sec."
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 120 sec."
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 130 sec."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Dominar",
+          "image": "cre_dorminar.jpg",
+          "description": "With the strongly concentrated magic power, strike down the enemy.",
+          "target": "Up to 9 enemies within a range of 10m",
+          "casting_time": "1.37 sec.",
+          "cooldown": "12 sec.",
+          "duration": "1.5 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "90",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Comita",
+          "image": "cre_cometa.jpg",
+          "description": "Shaped into a small sphere of the spirit of darkness and attacks the enemy.",
+          "target": "Up to 9 enemies 13m away and within a 8m radius",
+          "casting_time": "2.67 sec.",
+          "cooldown": "15 sec.",
+          "duration": "1.5 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "450",
+          "aggro": "200",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Orden",
+          "image": "cre_orden.jpg",
+          "description": "Attacks enemy with the spear of Orden shaped into a small sphere.",
+          "target": "Up to 12 enemies 16m away and within 8m",
+          "casting_time": "2.73 sec.",
+          "cooldown": "10 sec.",
+          "duration": "1.8 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "600",
+          "aggro": "100",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1400%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2800%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Espaccio",
+          "image": "cre_espacio.jpg",
+          "description": "Create the ultimate in space and seal the enemys movements.",
+          "target": "Up to 24 enemies within a range of 18m",
+          "casting_time": "4.59 sec.",
+          "cooldown": "50 sec.",
+          "duration": "1sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "800",
+          "aggro": "340",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2000%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4000%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [INT]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [INT]",
+        "Ignore additional RES according to extra [INT] * 4",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Book",
+      "icon_position": {
+        "x": -450,
+        "y": -225
+      }
+    }
+  ]
+}

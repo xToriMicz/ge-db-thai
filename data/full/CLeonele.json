@@ -1,0 +1,731 @@
+{
+  "slug": "CLeonele",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Nobility Military Cadet",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Coat",
+    "costume": "None",
+    "gloves": "Gloves Leather",
+    "ring": "Ring",
+    "weapon_costume": "None",
+    "belt": "Belt Leather",
+    "shoes": "Shoes Leather",
+    "artifact": "Letter of Jesus",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "My Way!",
+    "image": "job_myway.jpg",
+    "description": "Show firm self-confidence about your abilities. As time goes by or upon use of [Extreme Punisher] skills, the effects will be enhanced. This effect disappears on stance change.",
+    "target": "Self-buff",
+    "casting_time": "0 sec.",
+    "cooldown": "30 sec.",
+    "duration": "1.865 sec.",
+    "sp_cost": "300",
+    "consume_item": "Ancient Star Orb × 3",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "[Extreme Punisher] Skill ATK+(5~100%), Penetration+(0~9), Ignores DEF by (0~9%), Casting time -(15~45%),",
+          "Lv.20 of [My Way] buff(A.R.+1) applies, Lv.-1 for each 10 sec. or with [Extreme Punisher] skill accuracy.",
+          "Lower buff level gives more effect except A.R."
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Freestyle Shot",
+      "equipped_items": "Pistol",
+      "icon_position": {
+        "x": -150,
+        "y": -50
+      }
+    },
+    {
+      "stance_name": "Outrage Shot",
+      "equipped_items": "Pistol + Pistol",
+      "icon_position": {
+        "x": -100,
+        "y": -375
+      }
+    },
+    {
+      "stance_name": "Extreme Punisher",
+      "equipped_items": "Pistol + Rifle",
+      "icon_position": {
+        "x": -450,
+        "y": -125
+      }
+    },
+    {
+      "stance_name": "Standing Shot",
+      "equipped_items": "Rifle",
+      "icon_position": {
+        "x": -150,
+        "y": -125
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Freestyle Shot",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.5~9m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "130",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "20",
+        "EVA": "5",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+16%",
+        "Ignore DEF": "+2%",
+        "Evasion": "+5",
+        "Critical": "+6"
+      },
+      "skills": [
+        {
+          "name": "Westraid",
+          "image": "fre_westraid.jpg",
+          "description": "Increases your shooting speed but sacrifices accuracy. A change of stance will cause you to lose this effect.",
+          "target": "",
+          "casting_time": "1.133 sec.",
+          "cooldown": "0 sec.",
+          "duration": "1.13 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "150",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 33 sec"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 60 sec"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration : 63 sec"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration : 66 sec"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration : 69 sec"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Triple Firing",
+          "image": "fre_triplefiring.jpg",
+          "description": "A rapid attack of 3 shots.",
+          "target": "1 enemy within a range of 9m",
+          "casting_time": "1 sec.",
+          "cooldown": "7 sec.",
+          "duration": "1.3 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "200",
+          "aggro": "72",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 308%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 616%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Quick and Dead",
+          "image": "fre_quickanddead.jpg",
+          "description": "Fires randomly at a group of enemies.",
+          "target": "Up to 5 enemies 9m away and within a 3m radius",
+          "casting_time": "1 sec.",
+          "cooldown": "14 sec.",
+          "duration": "3.73 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "300",
+          "aggro": "88",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 391%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 782%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Pistol",
+      "icon_position": {
+        "x": -150,
+        "y": -50
+      }
+    },
+    {
+      "name": "Outrage Shot",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.5~9m away",
+        "Splash": "None",
+        "Hits per attack": "4",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "213",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "0",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+25%",
+        "Ignore DEF": "+2%"
+      },
+      "skills": [
+        {
+          "name": "Sapping Shots",
+          "image": "ors_sappingshot.jpg",
+          "description": "Fires at enemy (Unable to move the lower half of own body).",
+          "target": "1 enemy within a range of 6m",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "2.37 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "100",
+          "aggro": "114",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 525%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1050%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Octet-stream",
+          "image": "ors_octetstream.jpg",
+          "description": "Fires 8 times consecutively.",
+          "target": "1 enemy within a range of 7m.",
+          "casting_time": "1.033 sec.",
+          "cooldown": "10 sec.",
+          "duration": "2.53 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "200",
+          "aggro": "236",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1132%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2264%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Dancing Revolvers",
+          "image": "ors_dancingrevolver.jpg",
+          "description": "A frenzy of graceful shots at enemies.",
+          "target": "Up to 6 enemies 8m away and within a 4m radius.",
+          "casting_time": "1.367 sec.",
+          "cooldown": "15 sec.",
+          "duration": "3.67 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "250",
+          "aggro": "144",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 673%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1346%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Desperados",
+          "image": "ors_desperados.jpg",
+          "description": "Random shots at enemies.",
+          "target": "1 enemy within a range of 9m",
+          "casting_time": "1.533 sec.",
+          "cooldown": "20 sec.",
+          "duration": "5.53 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "300",
+          "aggro": "241",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1152%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2304%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Pistol + Pistol",
+      "icon_position": {
+        "x": -100,
+        "y": -375
+      }
+    },
+    {
+      "name": "Extreme Punisher",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.75~15m away",
+        "Splash": "None",
+        "Hits per attack": "3",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "+10%",
+        "Magical DMG": "-20%"
+      },
+      "stats": {
+        "ASPD": "237",
+        "Bonus ATK": "300%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "0",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+13%",
+        "Ignore DEF": "+6%",
+        "Critical": "+15",
+        "Penetration": "30",
+        "Immunity": "5"
+      },
+      "skills": [
+        {
+          "name": "Back Over Range Shot",
+          "image": "eps_backoverrange.jpg",
+          "description": "Target an object at a long distance to shoot and step back.",
+          "target": "",
+          "casting_time": "1.5 sec.",
+          "cooldown": "8 sec.",
+          "duration": "1.3 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "200",
+          "aggro": "100",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Imagination Reload",
+          "image": "eps_imagenationreroad.jpg",
+          "description": "Moves to the target and its surroundings with reloading motion and attacks at the same time.",
+          "target": "Up to 4 enemies / 15m away / within a 2m radius",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "2.2 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "160",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1600%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3200%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Gun Slash",
+          "image": "eps_gunslash.jpg",
+          "description": "Through tremendous Rapid Fire, after stretching the flame of muzzle and running, attacks enemies as if he mow them.",
+          "target": "Up to 7 enemies 13m away and within 6m width",
+          "casting_time": "1.2 sec.",
+          "cooldown": "16 sec.",
+          "duration": "2.3 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "350",
+          "aggro": "230",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2000%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Shooting Spree",
+          "image": "eps_shootingspree.jpg",
+          "description": "The shoot all enemies around him with a pistol and a rifle in his hands at random.",
+          "target": "Up to 5 enemies within a range of 8m",
+          "casting_time": "0.66 sec.",
+          "cooldown": "18 sec.",
+          "duration": "3.96 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "400",
+          "aggro": "230",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2000%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Bomb the Ripper",
+          "image": "eps_bometheripper.jpg",
+          "description": "Jump back and start attacking enemies continue shooting until landing.",
+          "target": "Up to 6 enemies/ 18m away / within a radius of 5.5m",
+          "casting_time": "1.2 sec.",
+          "cooldown": "23 sec.",
+          "duration": "3.433 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "500",
+          "aggro": "358",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2400%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4800%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [DEX]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [DEX]",
+        "Ignore additional DEF according to extra [DEX] * 4",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Pistol + Rifle",
+      "icon_position": {
+        "x": -450,
+        "y": -125
+      }
+    },
+    {
+      "name": "Standing Shot",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.75~13.5m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "187",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "50",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+8%",
+        "Ignore DEF": "+2%",
+        "Critical": "+9"
+      },
+      "skills": [
+        {
+          "name": "Birdfall",
+          "image": "sta_birdfall.jpg",
+          "description": "A precision strike at an airborne enemy. Enemies on the ground cant be targeted.",
+          "target": "",
+          "casting_time": "0.8 sec.",
+          "cooldown": "0 sec.",
+          "duration": "1.5 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "100",
+          "aggro": "122",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 567%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1134%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Blind Flash",
+          "image": "sta_blindflash.jpg",
+          "description": "Fires flares to reduce enemy accuracy",
+          "target": "",
+          "casting_time": "1.333 sec.",
+          "cooldown": "0 sec.",
+          "duration": "0.97 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "150",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "80% chance of Enemys Accuracy 0 for 11 sec."
+            },
+            {
+              "level": "Level 10",
+              "value": "80% chance of Enemys Accuracy 0 for 20 sec."
+            },
+            {
+              "level": "Level 11",
+              "value": "80% chance of Enemys Accuracy 0 for 21 sec."
+            },
+            {
+              "level": "Level 12",
+              "value": "80% chance of Enemys Accuracy 0 for 22 sec."
+            },
+            {
+              "level": "Level 13",
+              "value": "80% chance of Enemys Accuracy 0 for 23 sec."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Head Shot",
+          "image": "sta_headshot.jpg",
+          "description": "Targets head of enemy with a critical shot.",
+          "target": "1 enemy within a range of 14m",
+          "casting_time": "1.9 sec.",
+          "cooldown": "10 sec.",
+          "duration": "0.97 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "200",
+          "aggro": "60",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 255%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 509%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Undercovering Fire",
+          "image": "sta_undercovering.jpg",
+          "description": "Fires bursts of shots into a dense group of enemies.",
+          "target": "Up to 6 enemies 9m away and within a 2.5m radius",
+          "casting_time": "0.733 sec.",
+          "cooldown": "15 sec.",
+          "duration": "4 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "200",
+          "aggro": "45",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 165%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 330%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Precision Strike",
+          "image": "sta_precisionstrike.jpg",
+          "description": "Aims carefully at enemies, striking him in a critical area.",
+          "target": "1 enemy within a range of 14m",
+          "casting_time": "2.6 sec.",
+          "cooldown": "20 sec.",
+          "duration": "0.77 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "250",
+          "aggro": "84",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 375%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 750%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Rifle",
+      "icon_position": {
+        "x": -150,
+        "y": -125
+      }
+    }
+  ]
+}

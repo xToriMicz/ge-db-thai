@@ -1,0 +1,778 @@
+{
+  "slug": "Meriel",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Astarte Festina Lente",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Robe",
+    "costume": "None",
+    "gloves": "Gloves",
+    "ring": "Ring",
+    "weapon_costume": "Instrumento de Poder Instrumento de Poder (Event)",
+    "belt": "Belt",
+    "shoes": "Shoes",
+    "artifact": "Meriels Music Book for Beginners Il Principe",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Reglaze",
+    "image": "job_reglage.jpg",
+    "description": "Increases magic resistance before entering battle.",
+    "target": "Self-Buff",
+    "casting_time": "0 sec.",
+    "cooldown": "20 sec.",
+    "duration": "2.367 sec.",
+    "sp_cost": "300",
+    "consume_item": "Ancient Star Orb × 10",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration: 300 seconds",
+          "A.R. +1",
+          "D.R. +1",
+          "All RES +20",
+          "Max SP +200",
+          "30% chance to inflict [Note] with normal attacks"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Embrace",
+      "equipped_items": "Lute",
+      "icon_position": {
+        "x": -250,
+        "y": -150
+      }
+    },
+    {
+      "stance_name": "Enhanced Tactics",
+      "equipped_items": "Lute",
+      "icon_position": {
+        "x": -200,
+        "y": -475
+      }
+    },
+    {
+      "stance_name": "Ancient Tactics",
+      "equipped_items": "Lute",
+      "icon_position": {
+        "x": -50,
+        "y": -325
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Embrace",
+      "info": {
+        "Targets": "5 enemies",
+        "Range": "0.5~10m away",
+        "Splash": "100% DMG within  1.5m range",
+        "Hits per attack": "3",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "-15%",
+        "Shooting DMG": "+25%",
+        "Debuff RES": "-10%"
+      },
+      "stats": {
+        "ASPD": "237",
+        "Bonus ATK": "300%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "20"
+      },
+      "lv25_bonus": {
+        "Penetration": "5+15",
+        "Immunity": "10+15"
+      },
+      "skills": [
+        {
+          "name": "Frit",
+          "image": "embrasser_pret.jpg",
+          "description": "Increases HP recovery in proportion to the casters elemental resistance and additional intelligence.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "30 sec.",
+          "duration": "300 seconds",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "400",
+          "aggro": "50",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 300 seconds"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Sekhmets Melody",
+          "image": "embrasser_chaud.jpg",
+          "description": "Play a song inspired by a fiery volcano, converting the infernal melody into power for your allies.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "25 sec.",
+          "duration": "300 seconds",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "600",
+          "aggro": "100",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 300 seconds"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Novias Lullaby",
+          "image": "embrasser_froid.jpg",
+          "description": "Play a song about a freezing tower in a blizzard to instill cold energy into your allies hearts.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "25 sec.",
+          "duration": "300 seconds",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "850",
+          "aggro": "100",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 300 seconds"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Einschievers Elegy",
+          "image": "embrasser_paralyze.jpg",
+          "description": "Play a song written during a fierce thunderstorm to enhance your allies with electric force.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "25 sec.",
+          "duration": "300 seconds",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "1000",
+          "aggro": "100",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 300 seconds"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Laphemir",
+          "image": "embrasser_raffermir.jpg",
+          "description": "Increases attack and defense abilities.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "300 seconds",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "1500",
+          "aggro": "150",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 300 seconds"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 2% of extra [INT]",
+        "[PVP/PVE Maps] Additional 1% DMG according to extra [INT]"
+      ],
+      "equipped_items": "Lute",
+      "icon_position": {
+        "x": -250,
+        "y": -150
+      }
+    },
+    {
+      "name": "Enhanced Tactics",
+      "info": {
+        "Targets": "5 enemies",
+        "Range": "0.5~10m away",
+        "Splash": "100% DMG within  1.5m range",
+        "Hits per attack": "3",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "-15%",
+        "Shooting DMG": "+25%",
+        "Debuff RES": "-10%"
+      },
+      "stats": {
+        "ASPD": "237",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "20"
+      },
+      "lv25_bonus": {
+        "Penetration": "5+15",
+        "Immunity": "10+15"
+      },
+      "skills": [
+        {
+          "name": "Principal",
+          "image": "merielenhtact_skill01.jpg",
+          "description": "Provide basic buffs to team. The power can be doubled according to the circumstances.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "30 sec.",
+          "duration": "2.7 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "600",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 30 sec"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 300 sec"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration : 330 sec"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration : 360 sec"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration : 390 sec"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Melee Enhance",
+          "image": "merielenhtact_skill02.jpg",
+          "description": "Gives the buff that makes Melee Stance attack much stronger.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "3 sec.",
+          "duration": "390 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 30 sec."
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 300 sec."
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 330 sec."
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 360 sec."
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 390 sec."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Magic Enhance",
+          "image": "merielenhtact_skill03.jpg",
+          "description": "Gives the buff that makes Magic Stance attack much stronger.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "3 sec.",
+          "duration": "390 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 30 sec."
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 300 sec."
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 330 sec."
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 360 sec."
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 390 sec."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Shooting Enhance",
+          "image": "merielenhtact_skill04.jpg",
+          "description": "Gives the buff that makes Shoot Stance attack much stronger.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "3 sec.",
+          "duration": "4.067 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration30 sec."
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration300 sec."
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration330 sec."
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration360 sec."
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration390 sec."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Escape Artist",
+          "image": "merielenhtact_skill05.jpg",
+          "description": "Cancel darkness type curse on squad members as well as detect invisibility. Increase resistance of darkness type curse for a given time.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "2 sec.",
+          "duration": "5.334 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "300",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 1.5 secs."
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 15 secs."
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration : 30 secs."
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration : 30 secs."
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration : 30 secs."
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 5% of extra [CON]",
+        "[PVP/PVE Maps] Additional 1% DMG according to extra [CON]"
+      ],
+      "equipped_items": "Lute",
+      "icon_position": {
+        "x": -200,
+        "y": -475
+      }
+    },
+    {
+      "name": "Ancient Tactics",
+      "info": {
+        "Targets": "5 enemies",
+        "Range": "0.5~10m away",
+        "Splash": "100% DMG within  1.5m range",
+        "Hits per attack": "3",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "-15%",
+        "Shooting DMG": "+25%",
+        "Debuff RES": "-10%"
+      },
+      "stats": {
+        "ASPD": "237",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "20"
+      },
+      "lv25_bonus": {
+        "Penetration": "5+15",
+        "Immunity": "10+15"
+      },
+      "skills": [
+        {
+          "name": "Miracle",
+          "image": "merielatact_skill01.jpg",
+          "description": "Execute a tactic that increases the offensive and defensive capacity of the ally.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "30 sec.",
+          "duration": "130 seconds",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "150",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 10 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 100 seconds"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 110 seconds"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 120 seconds"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 130 seconds"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Protecting Booster",
+          "image": "merielatact_skill02.jpg",
+          "description": "Increase the defensive capacity of target ally.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "390 seconds",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 30 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 330 seconds"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 360 seconds"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 390 seconds"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Shearing Booster",
+          "image": "merielatact_skill03.jpg",
+          "description": "Increase the offensive capacity of target ally.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "390 seconds",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 30 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 330 seconds"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 360 seconds"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 390 seconds"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Bartor",
+          "image": "merielatact_skill04.jpg",
+          "description": "Remove all harmful effects and restore HP of all team members.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "4.067 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "150",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Restore 15% of maximum HP"
+            },
+            {
+              "level": "Level 10",
+              "value": "Restore 15% of maximum HP"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Additional Training",
+          "image": "merielatact_skill05.jpg",
+          "description": "Increase skill level by enhancing own tactical capacity.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "50 sec.",
+          "duration": "5.334 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Increase all skills level by enhancing your own tactical capacity."
+            },
+            {
+              "level": "Level 10",
+              "value": "Increase all skills level by enhancing your own tactical capacity."
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 5% of extra [CON]",
+        "[PVP/PVE Maps] Additional 1% DMG according to extra [CON]"
+      ],
+      "equipped_items": "Lute",
+      "icon_position": {
+        "x": -50,
+        "y": -325
+      }
+    }
+  ]
+}

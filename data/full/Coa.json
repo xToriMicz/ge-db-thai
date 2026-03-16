@@ -1,0 +1,537 @@
+{
+  "slug": "Coa",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Guardian Surveillant of Star",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Leather",
+    "costume": "None",
+    "gloves": "Gloves Leather",
+    "ring": "Ring",
+    "weapon_costume": "Wing of Quetzalcoatl Tooth of Quetzalcoatl Legacy of Bornos Legacy of Canopor Wing of Quetzalcoatl (Event) Tooth of Quetzalcoatl (Event)",
+    "belt": "Belt Leather",
+    "shoes": "Shoes Leather",
+    "artifact": "Thick Fur Coat Liberta Castle Roll Book Shoulder Armor of Guardian Dancers Mask",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Esparu",
+    "image": "ddms_asparu.jpg",
+    "description": "Strengthens the body by raising snakes sense to the extreme.",
+    "target": "Self-buff",
+    "casting_time": "0 sec.",
+    "cooldown": "55 sec.",
+    "duration": "0.33 sec.",
+    "sp_cost": "120",
+    "consume_item": "Ancient Star Orb × 10",
+    "levels": [
+      {
+        "level": "Level 1",
+        "effects": [
+          "Duration : 30 sec.",
+          "Move SPD +1%",
+          "Overcoming Limitation of Move SPD 20%",
+          "Casting SPD -2%"
+        ]
+      },
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration : 300sec.",
+          "Move SPD+10%",
+          "Exceeds Move SPD limit by 20%",
+          "In normal attack, [Paralysis Poison]s Lv.+1",
+          "Skill Damage declines in proportion to Move SPD"
+        ]
+      },
+      {
+        "level": "Level 11",
+        "effects": [
+          "Duration : 330sec.",
+          "Move SPD+11%",
+          "Exceeds Move SPD limit by 20%",
+          "In normal attack, [Paralysis Poison]s Lv.+1",
+          "D.R.+1",
+          "Skill Damage declines in proportion to Move SPD"
+        ]
+      },
+      {
+        "level": "Level 12",
+        "effects": [
+          "Duration : 360sec.",
+          "Move SPD+12%",
+          "Exceeds Move SPD limit by 20%",
+          "In normal attack, [Paralysis Poison]s Lv.+1",
+          "D.R.+1",
+          "Skill Damage declines in proportion to Move SPD"
+        ]
+      },
+      {
+        "level": "Level 13",
+        "effects": [
+          "Duration : 390sec.",
+          "Move SPD+13%",
+          "Exceeds Move SPD limit by 20%",
+          "In normal attack, [Paralysis Poison]s Lv.+1",
+          "D.R.+1",
+          "Skill Damage declines in proportion to Move SPD"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Dadamos",
+      "equipped_items": "Knuckle",
+      "icon_position": {
+        "x": -50,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Ancient Arts",
+      "equipped_items": "Knuckle",
+      "icon_position": {
+        "x": -150,
+        "y": -275
+      }
+    },
+    {
+      "stance_name": "Dadamos",
+      "equipped_items": "Leguard",
+      "icon_position": {
+        "x": -50,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Ancient Arts",
+      "equipped_items": "Leguard",
+      "icon_position": {
+        "x": -150,
+        "y": -275
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Dadamos",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1.25m away",
+        "Splash": "None",
+        "Hits per attack": "3",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "-20%",
+        "Shooting DMG": "+10%"
+      },
+      "stats": {
+        "ASPD": "187",
+        "Bonus ATK": "270%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "60",
+        "EVA": "20",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+25%",
+        "Evasion": "+20",
+        "Critical": "+15",
+        "Penetration": "5+25",
+        "Immunity": "5+15"
+      },
+      "skills": [
+        {
+          "name": "Arroar",
+          "image": "ddms_areloa.jpg",
+          "description": "Suppresses snakes power and strengthens Guardians power by circulating the power of Fires Master in the body.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "40 sec.",
+          "duration": "1.1 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "250",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 5 Minutes."
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 5 Minutes."
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration : 5 Minutes."
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration : 5 Minutes."
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration : 5 Minutes."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Kukatao",
+          "image": "ddms_kukatao.jpg",
+          "description": "Shortly dashes to an enemy in front and pushes it after two attacks.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "8 sec.",
+          "duration": "1.93 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "540",
+          "aggro": "435",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Parfata",
+          "image": "ddms_parpata.jpg",
+          "description": "Dashes forward and jump up to trample the enemy with powerful continuous kicks.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "14 sec.",
+          "duration": "3.3 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "560",
+          "aggro": "342",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2000%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Sarmado",
+          "image": "ddms_sarmado.jpg",
+          "description": "Dashes to the front enemy and attackes with fist and jumps up to attack indiscriminately.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "17 sec.",
+          "duration": "3.82 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "540",
+          "aggro": "435",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Pomoru",
+          "image": "ddms_fomoru.jpg",
+          "description": "Dashes to the front enemy and attacks its abdomen with elbow to blow it away with a kick.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "17 sec.",
+          "duration": "3 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "540",
+          "aggro": "435",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5000%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [STR]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [STR]",
+        "Ignore additional DEF according to extra [STR] * 3",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Knuckle",
+      "icon_position": {
+        "x": -50,
+        "y": 0
+      }
+    },
+    {
+      "name": "Ancient Arts",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1.75m away",
+        "Splash": "None",
+        "Hits per attack": "3",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "-25%",
+        "Debuff Chance": "+10%"
+      },
+      "stats": {
+        "ASPD": "187",
+        "Bonus ATK": "300%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "15",
+        "EVA": "10",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+10%",
+        "Evasion": "+10",
+        "Critical": "+5",
+        "Penetration": "5+20",
+        "Immunity": "5+15",
+        "DEF": "5"
+      },
+      "skills": [
+        {
+          "name": "Swift Dash",
+          "image": "aoa2_swiftdash.jpg",
+          "description": "Hit the enemy to the air, and smash it on the floor.",
+          "target": "Up to 3 adjacent enemies",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "1.5 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "560",
+          "aggro": "500",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Dragon Aura",
+          "image": "aoa2_dragonaura.jpg",
+          "description": "Emits the aura of the dragon and nullifies nearby enemies.",
+          "target": "Up to 8 targets within a 10m surrounding radius",
+          "casting_time": "0.7 sec.",
+          "cooldown": "30 sec.",
+          "duration": "2.5 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "100",
+          "aggro": "226",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Titan Break",
+          "image": "aoa2_titanbreak.jpg",
+          "description": "Defeat the enemy with a powerful series of attacks that will defeat even the giant.",
+          "target": "Up to 3 adjacent enemies",
+          "casting_time": "Instant",
+          "cooldown": "12 sec.",
+          "duration": "1.5 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "950",
+          "aggro": "342",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Ultimate Soul",
+          "image": "aoa2_ultmatesoul.jpg",
+          "description": "Connect the ultimate specialty of the Five Books of Martial Arts.",
+          "target": "1 adjacent enemy",
+          "casting_time": "0.6 sec.",
+          "cooldown": "30 sec.",
+          "duration": "4.9 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "1050",
+          "aggro": "444",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Additional Rage",
+          "image": "aoa2_additionalrage.jpg",
+          "description": "Muster the strength by borrowing strength from the gods.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "30 sec.",
+          "duration": "1.133 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "650",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 300 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 300 seconds"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration : 300 seconds"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration : 300 seconds"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration : 300 seconds"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [STR]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [STR]",
+        "Ignore additional DEF according to extra [STR] * 2",
+        "Additional DMG against [PC] + 2x",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Knuckle",
+      "icon_position": {
+        "x": -150,
+        "y": -275
+      }
+    }
+  ]
+}

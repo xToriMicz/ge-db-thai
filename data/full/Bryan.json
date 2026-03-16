@@ -1,0 +1,311 @@
+{
+  "slug": "Bryan",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Esoterica of Valeron",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Leather",
+    "costume": "None",
+    "gloves": "Gloves Leather",
+    "ring": "Ring",
+    "weapon_costume": "None",
+    "belt": "Belt Leather",
+    "shoes": "Shoes Leather",
+    "artifact": "Koko Hand Mirror Last Apocalypse Auxiliary Hammer for Repairing",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Sharpened Blade",
+    "image": "job_sharpenblade.jpg",
+    "description": "Putting an edge on a weapon and increase Physical ATK of fellows.",
+    "target": "All allies of melee type within the range of 8m.",
+    "casting_time": "0 sec.",
+    "cooldown": "60 sec.",
+    "duration": "4 sec.",
+    "sp_cost": "750",
+    "consume_item": "Ancient Star Orb × 5",
+    "levels": [
+      {
+        "level": "Level 1",
+        "effects": [
+          "Duration : 130 sec",
+          "Physical ATK +1%",
+          "Physical Penetration +1"
+        ]
+      },
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration : 400 sec",
+          "Physical ATK +10%",
+          "Physical Penetration +10"
+        ]
+      },
+      {
+        "level": "Level 11",
+        "effects": [
+          "Duration : 430 sec",
+          "Physical ATK +11%",
+          "Physical Penetration +11"
+        ]
+      },
+      {
+        "level": "Level 12",
+        "effects": [
+          "Duration : 460 sec",
+          "Physical ATK +12%",
+          "Physical Penetration +12"
+        ]
+      },
+      {
+        "level": "Level 13",
+        "effects": [
+          "Duration : 490 sec",
+          "Physical ATK +13%",
+          "Physical Penetration +13"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Savage",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -450,
+        "y": -325
+      }
+    },
+    {
+      "stance_name": "Savage",
+      "equipped_items": "Knuckle",
+      "icon_position": {
+        "x": -450,
+        "y": -325
+      }
+    },
+    {
+      "stance_name": "Wild Hammer",
+      "equipped_items": "Knuckle",
+      "icon_position": {
+        "x": -450,
+        "y": -350
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Savage",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "360",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "40",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "Additional DMG against [PC] + 1x"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -450,
+        "y": -325
+      }
+    },
+    {
+      "name": "Wild Hammer",
+      "info": {
+        "Targets": "4 enemies",
+        "Range": "1.5m away",
+        "Splash": "0.8 DMG within  2m range",
+        "Hits per attack": "1",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "-10%",
+        "Magical DMG": "-10%"
+      },
+      "stats": {
+        "ASPD": "360",
+        "Bonus ATK": "300%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "30",
+        "EVA": "0",
+        "BLK": "5",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+15%",
+        "Critical": "+20",
+        "Penetration": "5+25",
+        "Immunity": "5+10"
+      },
+      "skills": [
+        {
+          "name": "Fierce Blow",
+          "image": "wh_fierceblow.jpg",
+          "description": "Vertically down the big hammer to hit a fierce blow.",
+          "target": "Up to 6 Enemies nearby",
+          "casting_time": "Instant",
+          "cooldown": "7 sec.",
+          "duration": "2.066 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "150",
+          "aggro": "100",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Upper Swing",
+          "image": "wh_upperswing.jpg",
+          "description": "Hit up a hammer nortically and make the enemy fly highly.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "2.033 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "200",
+          "aggro": "89",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1900%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3800%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Seismic wave",
+          "image": "wh_seismicwave.jpg",
+          "description": "Cause a strong seismic waves with hitting the ground.",
+          "target": "Up to 12 enemies 15m away and within 10m",
+          "casting_time": "3 sec.",
+          "cooldown": "20 sec.",
+          "duration": "3.266 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "350",
+          "aggro": "150",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 700%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Pulverize",
+          "image": "wh_pulverize.jpg",
+          "description": "Grind all the enemies around by using the centrifugal force of the hammer.",
+          "target": "Up to 9 enemies within a range of 6m",
+          "casting_time": "3 sec.",
+          "cooldown": "25 sec.",
+          "duration": "4.833 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "320",
+          "aggro": "200",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Rampage",
+          "image": "wh_rampage.jpg",
+          "description": "It attacks a brutal attack with a hammer to one target.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "25 sec.",
+          "duration": "7.2 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "400",
+          "aggro": "250",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5000%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [STR]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [STR]",
+        "Ignore additional DEF according to extra [STR] * 4",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Knuckle",
+      "icon_position": {
+        "x": -450,
+        "y": -350
+      }
+    }
+  ]
+}

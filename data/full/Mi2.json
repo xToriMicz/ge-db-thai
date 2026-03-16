@@ -1,0 +1,315 @@
+{
+  "slug": "Mi2",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Andre Boutique Full moon",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Leather",
+    "costume": "None",
+    "gloves": "Gloves Leather",
+    "ring": "Ring",
+    "weapon_costume": "Event Fleuret Glacier of Spirit Costume Fleuret Glacier of Spirit Costume Griffe de Glace Event Griffe de Glace",
+    "belt": "Belt Leather",
+    "shoes": "Shoes Leather",
+    "artifact": "Elegant Corsage",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Boost Magic",
+    "image": "job_boostmagic_mi2.jpg",
+    "description": "Increases magical attacks of every squad member based on a great magical knowledge.",
+    "target": "None",
+    "casting_time": "1.5 sec.",
+    "cooldown": "30 sec.",
+    "duration": "0.83 sec.",
+    "sp_cost": "500",
+    "consume_item": "Ancient Star Orb × 5",
+    "levels": [
+      {
+        "level": "Level 1",
+        "effects": [
+          "Duration : 5 Minutes",
+          "Magical ATK +1%",
+          "Fire, Ice, Lightning, Mental Penetration +1",
+          "For [Karjalainen], [Designer Karjalainen]",
+          "D.R. +1",
+          "Maximum HP +20%",
+          "Immunity +30"
+        ]
+      },
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration : 5 Minutes",
+          "Magical ATK +10%",
+          "Fire, Ice, Lightning, Mental Penetration +10",
+          "For [Karjalainen], [Designer Karjalainen]",
+          "D.R. +1",
+          "Maximum HP +20%",
+          "Immunity +30"
+        ]
+      },
+      {
+        "level": "Level 11",
+        "effects": [
+          "Duration : 5 Minutes",
+          "Magical ATK +11%",
+          "Fire, Ice, Lightning, Mental Penetration +11",
+          "For [Karjalainen], [Designer Karjalainen]",
+          "D.R. +1",
+          "Maximum HP +20%",
+          "Immunity +30"
+        ]
+      },
+      {
+        "level": "Level 12",
+        "effects": [
+          "Duration : 5 Minutes",
+          "Magical ATK +12%",
+          "Fire, Ice, Lightning, Mental Penetration +12",
+          "For [Karjalainen], [Designer Karjalainen]",
+          "D.R. +1",
+          "Maximum HP +20%",
+          "Immunity +30"
+        ]
+      },
+      {
+        "level": "Level 13",
+        "effects": []
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Glacial Garde",
+      "equipped_items": "Rapier",
+      "icon_position": {
+        "x": -150,
+        "y": -450
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Glacial Garde",
+      "info": {
+        "Targets": "5 enemies",
+        "Range": "2.7m away",
+        "Splash": "0.7 DMG within  2.5m range",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Shooting DMG": "+10%",
+        "Magical DMG": "-10%"
+      },
+      "stats": {
+        "ASPD": "160",
+        "Bonus ATK": "350%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "20",
+        "EVA": "10",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "50",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+10%",
+        "Evasion": "+13",
+        "Penetration": "10+10",
+        "Immunity": "5+10"
+      },
+      "skills": [
+        {
+          "name": "Tempete de Neige",
+          "image": "glg_templetedeneige.jpg",
+          "description": "Cover the sword with the energy of ice for battle.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "3.2 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "450",
+          "aggro": "50",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Apply ["
+            },
+            {
+              "level": "Level 10",
+              "value": "Apply ["
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Verglasi",
+          "image": "glg_verglace.jpg",
+          "description": "Create a path with ice, then quickly approach and attack the enemy.",
+          "target": "Up to 4 enemies 10m away and within a 3m radius",
+          "casting_time": "0.6666 sec.",
+          "cooldown": "5 sec.",
+          "duration": "1.0666 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "480",
+          "aggro": "75",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 900%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1800%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Aiguille Surface",
+          "image": "glg_aiguilledesurface.jpg",
+          "description": "Ice spikes rise from the ground, knocking enemies down towards the caster.",
+          "target": "Up to 6 enemies 15m away and within 4m",
+          "casting_time": "1.2 sec.",
+          "cooldown": "14 sec.",
+          "duration": "1.8333 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "750",
+          "aggro": "90",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Tourbillon",
+          "image": "glg_tourbillon.jpg",
+          "description": "Creates an ice vortex that attracts nearby enemies and attacks them.",
+          "target": "",
+          "casting_time": "1.4333 sec.",
+          "cooldown": "16 sec.",
+          "duration": "2.7333 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "600",
+          "aggro": "120",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Innovable Grele",
+          "image": "glg_inombrablegrele.jpg",
+          "description": "Blow sharp ice crystals towards the target.",
+          "target": "Up to 3 enemies 12m away and within 2.5m radius",
+          "casting_time": "1.2 sec.",
+          "cooldown": "20 sec.",
+          "duration": "2.0333 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "900",
+          "aggro": "165",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2400%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4800%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 10% of extra [STR]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [STR]",
+        "Ignore additional DEF according to extra [STR] * 4",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Rapier",
+      "icon_position": {
+        "x": -150,
+        "y": -450
+      }
+    }
+  ]
+}

@@ -1,0 +1,936 @@
+{
+  "slug": "CatherineREAL",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Always. Thank you. I will protect the familys peace!",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Coat Robe Leather",
+    "costume": "None",
+    "gloves": "Gloves Leather",
+    "ring": "Ring",
+    "weapon_costume": "None",
+    "belt": "Belt Leather",
+    "shoes": "Shoes Leather",
+    "artifact": "Red Hairband Hair of Catherine Leather Sheath",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Doll Curse",
+    "image": "job_ayemaam.jpg",
+    "description": "Send a curse to the designated target.",
+    "target": "AOE Target",
+    "casting_time": "0 sec.",
+    "cooldown": "30 sec.",
+    "duration": "2.07 sec.",
+    "sp_cost": "400",
+    "consume_item": "Ancient Star Orb × 1",
+    "levels": [
+      {
+        "level": "Level 1",
+        "effects": [
+          "Duration : 3 sec",
+          "100% chance to inflict [Curse of Doll]"
+        ]
+      },
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration : 30 sec",
+          "100% chance to inflict [Curse of Doll]"
+        ]
+      },
+      {
+        "level": "Level 11",
+        "effects": [
+          "Duration : 33 sec",
+          "100% chance to inflict [Curse of Doll]"
+        ]
+      },
+      {
+        "level": "Level 12",
+        "effects": [
+          "Duration : 36 sec",
+          "100% chance to inflict [Curse of Doll]"
+        ]
+      },
+      {
+        "level": "Level 13",
+        "effects": [
+          "Duration : 39 sec",
+          "100% chance to inflict [Curse of Doll]"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Marionette",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": 0,
+        "y": -275
+      }
+    },
+    {
+      "stance_name": "Marionette",
+      "equipped_items": "Controller",
+      "icon_position": {
+        "x": 0,
+        "y": -275
+      }
+    },
+    {
+      "stance_name": "Puppet Master",
+      "equipped_items": "Controller",
+      "icon_position": {
+        "x": -350,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Enhanced Tactics",
+      "equipped_items": "Controller",
+      "icon_position": {
+        "x": -200,
+        "y": -475
+      }
+    },
+    {
+      "stance_name": "Ancient Tactics",
+      "equipped_items": "Controller",
+      "icon_position": {
+        "x": -50,
+        "y": -325
+      }
+    },
+    {
+      "stance_name": "Enhanced Tactics",
+      "equipped_items": "Rosario",
+      "icon_position": {
+        "x": -200,
+        "y": -475
+      }
+    },
+    {
+      "stance_name": "Ancient Tactics",
+      "equipped_items": "Rosario",
+      "icon_position": {
+        "x": -50,
+        "y": -325
+      }
+    },
+    {
+      "stance_name": "Marionette",
+      "equipped_items": "Pendant",
+      "icon_position": {
+        "x": 0,
+        "y": -275
+      }
+    },
+    {
+      "stance_name": "Puppet Master",
+      "equipped_items": "Pendant",
+      "icon_position": {
+        "x": -350,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Enhanced Tactics",
+      "equipped_items": "Pendant",
+      "icon_position": {
+        "x": -200,
+        "y": -475
+      }
+    },
+    {
+      "stance_name": "Ancient Tactics",
+      "equipped_items": "Pendant",
+      "icon_position": {
+        "x": -50,
+        "y": -325
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Marionette",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.1~15m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "150",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [
+        {
+          "name": "Walter Control",
+          "image": "mar_controlwalter.jpg",
+          "description": "Summons the Marionette [Walter] who possesses a fire melee attack.",
+          "target": "Up to 4 can be controlled simultaneously",
+          "casting_time": "1.167 sec.",
+          "cooldown": "5 sec.",
+          "duration": "1.37 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "100",
+          "aggro": "0",
+          "skill_type": "Build",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Up to 4 can be controlled simultaneously"
+            },
+            {
+              "level": "Level 10",
+              "value": "Up to 4 can be controlled simultaneously"
+            }
+          ],
+          "special": [
+            "ATK bonus depends on skill level",
+            "ATK bonus depends on skill level"
+          ]
+        },
+        {
+          "name": "Lloyd Control",
+          "image": "mar_controllloyd.jpg",
+          "description": "Summons the Marionette [Lloyd] who fires a rifle.",
+          "target": "Up to 4 can be controlled simultaneously",
+          "casting_time": "1.167 sec.",
+          "cooldown": "5 sec.",
+          "duration": "1.37 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "150",
+          "aggro": "0",
+          "skill_type": "Build",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Up to 4 can be controlled simultaneously"
+            },
+            {
+              "level": "Level 10",
+              "value": "Up to 4 can be controlled simultaneously"
+            }
+          ],
+          "special": [
+            "ATK bonus depends on skill level",
+            "ATK bonus depends on skill level"
+          ]
+        },
+        {
+          "name": "Helena Control",
+          "image": "mar_controlhelena.jpg",
+          "description": "Summons the Marionette [Helena] who possesses a physical melee attack.",
+          "target": "Up to 3 can be controlled simultaneously",
+          "casting_time": "1.167 sec.",
+          "cooldown": "5 sec.",
+          "duration": "1.37 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "200",
+          "aggro": "0",
+          "skill_type": "Build",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Up to 3 can be controlled simultaneously"
+            },
+            {
+              "level": "Level 10",
+              "value": "Up to 3 can be controlled simultaneously"
+            }
+          ],
+          "special": [
+            "ATK bonus depends on skill level",
+            "ATK bonus depends on skill level"
+          ]
+        },
+        {
+          "name": "Sasha Control",
+          "image": "mar_controlsasha.jpg",
+          "description": "Summons the Marionette [Sasha] who casts lightning spells on enemies.",
+          "target": "Up to 3 can be controlled simultaneously",
+          "casting_time": "1.167 sec.",
+          "cooldown": "5 sec.",
+          "duration": "1.37 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "200",
+          "aggro": "0",
+          "skill_type": "Build",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Up to 3 can be controlled simultaneously"
+            },
+            {
+              "level": "Level 10",
+              "value": "Up to 3 can be controlled simultaneously"
+            }
+          ],
+          "special": [
+            "ATK bonus depends on skill level",
+            "ATK bonus depends on skill level"
+          ]
+        },
+        {
+          "name": "Victor Control",
+          "image": "mar_controlvictor.jpg",
+          "description": "Summons the Marionette [Victor] who possesses a physical melee attack.",
+          "target": "Up to 3 can be controlled simultaneously",
+          "casting_time": "1.167 sec.",
+          "cooldown": "10 sec.",
+          "duration": "1.37 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "300",
+          "aggro": "0",
+          "skill_type": "Build",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Up to 3 can be controlled simultaneously"
+            },
+            {
+              "level": "Level 10",
+              "value": "Up to 3 can be controlled simultaneously"
+            }
+          ],
+          "special": [
+            "ATK bonus depends on skill level",
+            "ATK bonus depends on skill level"
+          ]
+        }
+      ],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": 0,
+        "y": -275
+      }
+    },
+    {
+      "name": "Puppet Master",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.1~15m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Debuff RES": "-30%"
+      },
+      "stats": {
+        "ASPD": "267",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "Penetration": "5+10",
+        "Immunity": "5+10"
+      },
+      "skills": [
+        {
+          "name": "Cheer Up",
+          "image": "pm_cheerup.jpg",
+          "description": "Cheers up your summoned dolls to recover HP and increase their combat ability. This cant be duplicated to increase the combat ability.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "3 sec.",
+          "duration": "2.07 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "300",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Increases ATK, DEF and ATK SPD of the doll depending on skill level"
+            },
+            {
+              "level": "Level 10",
+              "value": "Increases ATK and ATK SPD of the doll depending on skill level"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Mighty Victor Control",
+          "image": "pm_mightyvictor.jpg",
+          "description": "Summon Mighty Victor. The frequency of using skills will increase by cheering up.",
+          "target": "",
+          "casting_time": "0.2 sec.",
+          "cooldown": "0.5 sec.",
+          "duration": "1.37 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Available to summon maximum 3 at the same time"
+            },
+            {
+              "level": "Level 10",
+              "value": "Available to summon maximum 3 at the same time"
+            }
+          ],
+          "special": [
+            "Provides bonus ability to the doll according to skill level and SEN stats.",
+            "Provides bonus ability to the doll according to skill level and SEN stats."
+          ]
+        },
+        {
+          "name": "Crown Lloyd Control",
+          "image": "pm_crownlloyd.jpg",
+          "description": "Summon Crown Lloyd. The frequency of using skills will increase by cheering up.",
+          "target": "",
+          "casting_time": "0.2 sec.",
+          "cooldown": "0.5 sec.",
+          "duration": "1.37 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Available to summon maximum 3 at the same time"
+            },
+            {
+              "level": "Level 10",
+              "value": "Available to summon maximum 3 at the same time"
+            }
+          ],
+          "special": [
+            "Provides bonus ability to the doll according to skill level and SEN stats.",
+            "Provides bonus ability to the doll according to skill level and SEN stats."
+          ]
+        },
+        {
+          "name": "Lady Sasha Control",
+          "image": "pm_ladysasha.jpg",
+          "description": "Summon Lady Sasha. The frequency of using skills will increase by cheering up.",
+          "target": "",
+          "casting_time": "0.2 sec.",
+          "cooldown": "0.5 sec.",
+          "duration": "1.37 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Available to summon maximum 3 at the same time"
+            },
+            {
+              "level": "Level 10",
+              "value": "Available to summon maximum 3 at the same time"
+            }
+          ],
+          "special": [
+            "Provides bonus ability to the doll according to skill level and SEN stats.",
+            "Provides bonus ability to the doll according to skill level and SEN stats."
+          ]
+        },
+        {
+          "name": "Morale Booster",
+          "image": "pm_nightmare.jpg",
+          "description": "Catherine increases the abiltiies of allies and summoned units.",
+          "target": "",
+          "casting_time": "0.2 sec.",
+          "cooldown": "3 sec.",
+          "duration": "1.67 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "1000",
+          "aggro": "49",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "For your Family:"
+            },
+            {
+              "level": "Level 10",
+              "value": "For your Family:"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Controller",
+      "icon_position": {
+        "x": -350,
+        "y": 0
+      }
+    },
+    {
+      "name": "Enhanced Tactics",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.1~1m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "+20%",
+        "Shooting DMG": "-10%",
+        "Magical DMG": "-10%",
+        "Debuff RES": "-30%"
+      },
+      "stats": {
+        "ASPD": "150",
+        "Bonus ATK": "0%",
+        "MSPD": "1.1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "5",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "20"
+      },
+      "lv25_bonus": {
+        "Evasion": "+20",
+        "Immunity": "5+10"
+      },
+      "skills": [
+        {
+          "name": "Principal",
+          "image": "eta_principal.jpg",
+          "description": "Provide basic buffs to team. The power can be doubled according to the circumstances.",
+          "target": "",
+          "casting_time": "1.133 sec.",
+          "cooldown": "30 sec.",
+          "duration": "1.13 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "600",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 30 sec"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 300 sec"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration : 330 sec"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration : 360 sec"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration : 390 sec"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Melee Enhance",
+          "image": "eta_meleeenhancement.jpg",
+          "description": "Gives the buff that makes Melee Stance attack much stronger.",
+          "target": "",
+          "casting_time": "1.133 sec.",
+          "cooldown": "3 sec.",
+          "duration": "390 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 30 sec."
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 300 sec."
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 330 sec."
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 360 sec."
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 390 sec."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Magic Enhance",
+          "image": "eta_magicenhancement.jpg",
+          "description": "Gives the buff that makes Magic Stance attack much stronger.",
+          "target": "",
+          "casting_time": "1.133 sec.",
+          "cooldown": "3 sec.",
+          "duration": "390 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 30 sec."
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 300 sec."
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 330 sec."
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 360 sec."
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 390 sec."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Shooting Enhance",
+          "image": "eta_shootingenhancement.jpg",
+          "description": "Gives the buff that makes Shoot Stance attack much stronger.",
+          "target": "",
+          "casting_time": "1.133 sec.",
+          "cooldown": "3 sec.",
+          "duration": "1.13 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration30 sec."
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration300 sec."
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration330 sec."
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration360 sec."
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration390 sec."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Escape Artist",
+          "image": "eta_escapeartist.jpg",
+          "description": "Cancel darkness type curse on squad members as well as detect invisibility. Increase resistance of darkness type curse for a given time.",
+          "target": "",
+          "casting_time": "1.133 sec.",
+          "cooldown": "2 sec.",
+          "duration": "1.13 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "300",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 1.5 secs."
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 15 secs."
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration : 30 secs."
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration : 30 secs."
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration : 30 secs."
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Controller",
+      "icon_position": {
+        "x": -200,
+        "y": -475
+      }
+    },
+    {
+      "name": "Ancient Tactics",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.1~1m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "+10%",
+        "Shooting DMG": "-10%",
+        "Magical DMG": "-15%",
+        "Debuff RES": "-10%"
+      },
+      "stats": {
+        "ASPD": "150",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "20"
+      },
+      "lv25_bonus": {
+        "Immunity": "10+20"
+      },
+      "skills": [
+        {
+          "name": "Miracle",
+          "image": "aot_miracle.jpg",
+          "description": "Execute a tactic that increases the offensive and defensive capacity of the ally.",
+          "target": "",
+          "casting_time": "0.866 sec.",
+          "cooldown": "30 sec.",
+          "duration": "130 seconds",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "150",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 10 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 100 seconds"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 110 seconds"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 120 seconds"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 130 seconds"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Protecting Booster",
+          "image": "aot_caenopy.jpg",
+          "description": "Increase the defensive capacity of target ally.",
+          "target": "",
+          "casting_time": "0.866 sec.",
+          "cooldown": "10 sec.",
+          "duration": "390 seconds",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 30 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 330 seconds"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 360 seconds"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 390 seconds"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Shearing Booster",
+          "image": "aot_siaringbooster.jpg",
+          "description": "Increase the offensive capacity of target ally.",
+          "target": "",
+          "casting_time": "0.866 sec.",
+          "cooldown": "10 sec.",
+          "duration": "390 seconds",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 30 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 330 seconds"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 360 seconds"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 390 seconds"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Bartor",
+          "image": "aot_bartor.jpg",
+          "description": "Remove all harmful effects and restore HP of all team members.",
+          "target": "",
+          "casting_time": "0.866 sec.",
+          "cooldown": "20 sec.",
+          "duration": "1.6 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "150",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Restore 15% of maximum HP"
+            },
+            {
+              "level": "Level 10",
+              "value": "Restore 15% of maximum HP"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Additional Training",
+          "image": "aot_Additionaltraing.jpg",
+          "description": "Increase skill level by enhancing own tactical capacity.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "50 sec.",
+          "duration": "1.033 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Increase all skills level by enhancing your own tactical capacity."
+            },
+            {
+              "level": "Level 10",
+              "value": "Increase all skills level by enhancing your own tactical capacity."
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 2% of extra [None]"
+      ],
+      "equipped_items": "Controller",
+      "icon_position": {
+        "x": -50,
+        "y": -325
+      }
+    }
+  ]
+}

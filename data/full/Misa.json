@@ -1,0 +1,274 @@
+{
+  "slug": "Misa",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Deus Machina The Void",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Coat",
+    "costume": "None",
+    "gloves": "Gloves Leather",
+    "ring": "Ring",
+    "weapon_costume": "Electric Buster Electric Buster (Event)",
+    "belt": "Belt Leather",
+    "shoes": "Shoes Leather",
+    "artifact": "Pigeon Brooch Ice Fox Statue Castle Roll Book",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Winding Up",
+    "image": "job_windup.jpg",
+    "description": "Accelerates every related speed by winding the clock spring.",
+    "target": "Self-buff",
+    "casting_time": "0 sec.",
+    "cooldown": "25 sec.",
+    "duration": "1.77 sec.",
+    "sp_cost": "250",
+    "consume_item": "Ancient Star Orb × 3",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "A.R.+1",
+          "[Winding Up]s Lv.+5.",
+          "Move SPD per level +1%",
+          "Attack SPD per level +1%",
+          "Casting time per level -1%",
+          "Accuracy per level -1",
+          "Up to Max Lv.30."
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Railgun",
+      "equipped_items": "Cannon",
+      "icon_position": {
+        "x": 0,
+        "y": -450
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Railgun",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "15m away",
+        "Splash": "None",
+        "Hits per attack": "5",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Magical DMG": "-25%"
+      },
+      "stats": {
+        "ASPD": "413",
+        "Bonus ATK": "300%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "10",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+13%",
+        "Ignore DEF": "+10%",
+        "Critical": "+15",
+        "Penetration": "5+25",
+        "Immunity": "5+25"
+      },
+      "skills": [
+        {
+          "name": "Los Cremor",
+          "image": "lig_losclaymore.jpg",
+          "description": "Installs the electric mines that can explode with casters signal.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "5 sec.",
+          "duration": "0.7 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "100",
+          "aggro": "150",
+          "skill_type": "Build",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Installs up to 5 simultaneously"
+            },
+            {
+              "level": "Level 10",
+              "value": "Installs up to 5 simultaneously"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "La Peurini",
+          "image": "lig_laflenie.jpg",
+          "description": "Fires beam to cause an explosion.",
+          "target": "",
+          "casting_time": "1.2 sec.",
+          "cooldown": "9 sec.",
+          "duration": "1.1 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "340",
+          "aggro": "150",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Popularna",
+          "image": "lig_forfurana.jpg",
+          "description": "Destroy enemies by shooting a series of Particle beams to numbers of targets.",
+          "target": "",
+          "casting_time": "0.7 sec.",
+          "cooldown": "14 sec.",
+          "duration": "1.23 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "750",
+          "aggro": "90",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Machina Buster",
+          "image": "lig_machinaburster.jpg",
+          "description": "Shoots strong beams to the targets in the front straight orbit.",
+          "target": "Up to 7 enemies 20m away and within 8m width",
+          "casting_time": "5 sec.",
+          "cooldown": "32 sec.",
+          "duration": "1.03 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "1250",
+          "aggro": "34",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "EMP-0314",
+          "image": "lig_empatk.jpg",
+          "description": "Receiving strong particle wave from Misas mechanical parts, it emits the wave. Everyone including enemy/ally/caster within the skill range falls into the [Discharge] state.",
+          "target": "Up to 15 enemies within a range of 10m",
+          "casting_time": "5 sec.",
+          "cooldown": "60 sec.",
+          "duration": "2.3 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "1500",
+          "aggro": "200",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3000%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [DEX]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [DEX]",
+        "Ignore additional DEF according to extra [DEX] * 4",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Cannon",
+      "icon_position": {
+        "x": 0,
+        "y": -450
+      }
+    }
+  ]
+}

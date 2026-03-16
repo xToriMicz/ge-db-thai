@@ -1,0 +1,451 @@
+{
+  "slug": "Beretta",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Shall we start hunting? Blessings of the 2026 New Year",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Coat Leather",
+    "costume": "None",
+    "gloves": "Gloves",
+    "ring": "Ring",
+    "weapon_costume": "Cartona Thalia Event Cartona Thalia",
+    "belt": "Belt",
+    "shoes": "Shoes",
+    "artifact": "Old Military Uniform",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Provision",
+    "image": "job_provvisione.jpg",
+    "description": "Prepare to hunt enemies with Kartona.",
+    "target": "Applies to self without targeting",
+    "casting_time": "0 sec.",
+    "cooldown": "30 sec.",
+    "duration": "1.333 sec.",
+    "sp_cost": "500",
+    "consume_item": "Ancient Star Orb × 10",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration: 600 seconds",
+          "Attack Rating +1",
+          "Attack +60%",
+          "Attack against monsters +30%",
+          "Physical Penetration +30"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Taliar",
+      "equipped_items": "Pistol",
+      "icon_position": {
+        "x": -350,
+        "y": -225
+      }
+    },
+    {
+      "stance_name": "Kachar",
+      "equipped_items": "Pistol",
+      "icon_position": {
+        "x": -350,
+        "y": -250
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Taliar",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "15m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "+20%",
+        "Shooting DMG": "-20%",
+        "Magical DMG": "-25%",
+        "Debuff RES": "-10%"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "300%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "10",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+10%",
+        "Ignore DEF": "+5%",
+        "Critical": "+20",
+        "Penetration": "15+20",
+        "Immunity": "5+15"
+      },
+      "skills": [
+        {
+          "name": "Illusion",
+          "image": "tal_elusi.jpg",
+          "description": "Leaps in place and spins around to evade enemy attacks.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "2 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "300",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "When cast, ["
+            },
+            {
+              "level": "Level 10",
+              "value": "When cast, ["
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Incruise",
+          "image": "tal_incrusio.jpg",
+          "description": "Moves forward and fires a shot at the spot it passes through.",
+          "target": "Up to 10 enemies within a 10m forward x 4m wide range",
+          "casting_time": "Instant",
+          "cooldown": "6 sec.",
+          "duration": "2.4 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "150",
+          "aggro": "40",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1060%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2120%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Confuzion",
+          "image": "tal_confusione.jpg",
+          "description": "Indiscriminately attacks nearby enemies.",
+          "target": "Up to 12 enemies within 9m",
+          "casting_time": "0.6 sec.",
+          "cooldown": "18 sec.",
+          "duration": "1.766 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "450",
+          "aggro": "80",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1680%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3360%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Kapitombo",
+          "image": "tal_capitombolo.jpg",
+          "description": "Attacks enemies in front, then uses them as a stepping stone to move backward.",
+          "target": "Up to 8 enemies within a 6m forward x 6m wide range",
+          "casting_time": "0.733 sec.",
+          "cooldown": "7.5 sec.",
+          "duration": "1.766 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "150",
+          "aggro": "60",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1220%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2440%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Inner Bilith",
+          "image": "tal_inabilita.jpg",
+          "description": "Slices the enemys wrists and ankles sequentially, then shoots the enemys insides.",
+          "target": "1 enemy within a maximum range of 9m",
+          "casting_time": "Instant",
+          "cooldown": "25 sec.",
+          "duration": "3 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "400",
+          "aggro": "100",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1420%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2840%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "Additional DMG against Monster according to 3 * 50"
+      ],
+      "equipped_items": "Pistol",
+      "icon_position": {
+        "x": -350,
+        "y": -225
+      }
+    },
+    {
+      "name": "Kachar",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "15m away",
+        "Splash": "0 DMG within  0m range",
+        "Hits per attack": "3",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "+10%",
+        "Shooting DMG": "-10%",
+        "Magical DMG": "-30%",
+        "Debuff RES": "-10%"
+      },
+      "stats": {
+        "ASPD": "183",
+        "Bonus ATK": "350%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "30",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+8%",
+        "Ignore DEF": "+10%",
+        "Critical": "+25",
+        "Penetration": "15+25",
+        "Immunity": "5+10"
+      },
+      "skills": [
+        {
+          "name": "Convergen",
+          "image": "cac_convergen.jpg",
+          "description": "Close your eyes Focuses the mind and stimulates the sense of battle.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "30 sec.",
+          "duration": "600 seconds",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "300",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "When cast, removes stealth from enemies within 17m and inflicts ["
+            },
+            {
+              "level": "Level 10",
+              "value": "When cast, removes stealth from enemies within 17m and inflicts ["
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Splendor",
+          "image": "cac_splendido.jpg",
+          "description": "Swivels the Cartona in a flashy manner and fires.",
+          "target": "Up to 8 enemies within a 10m x 60 degree range in front",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "2.933 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "200",
+          "aggro": "40",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1040%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2080%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Singoro",
+          "image": "cac_singolo.jpg",
+          "description": "Rapidly fires a deadly shot.",
+          "target": "1 enemy within a maximum range of 17m",
+          "casting_time": "1.166 sec.",
+          "cooldown": "2.5 sec.",
+          "duration": "1.166 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "200",
+          "aggro": "60",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1530%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3060%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Scopi",
+          "image": "cac_scoppi.jpg",
+          "description": "Throws an explosive into the air and shoots it to detonate.",
+          "target": "",
+          "casting_time": "0.733 sec.",
+          "cooldown": "25 sec.",
+          "duration": "1.433 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "600",
+          "aggro": "80",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1410%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2820%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Sonico",
+          "image": "cac_sonico.jpg",
+          "description": "Fires three bullets so fast they are invisible to the eye and attack.",
+          "target": "",
+          "casting_time": "1.733 sec.",
+          "cooldown": "31 sec.",
+          "duration": "1.933 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "750",
+          "aggro": "100",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1370%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2740%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Pistol",
+      "icon_position": {
+        "x": -350,
+        "y": -250
+      }
+    }
+  ]
+}

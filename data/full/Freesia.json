@@ -1,0 +1,285 @@
+{
+  "slug": "Freesia",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Outlaw of the Ocean New Year Blessing",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Leather",
+    "costume": "None",
+    "gloves": "Gloves",
+    "ring": "Ring",
+    "weapon_costume": "Live Again Event Live Again",
+    "belt": "Belt",
+    "shoes": "Shoes",
+    "artifact": "Unbound Freedom",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Bird Set Free",
+    "image": "job_birdsetfree.jpg",
+    "description": "Freesia calms her mind and prepares for battle.",
+    "target": "Self-buff",
+    "casting_time": "2.033 sec.",
+    "cooldown": "30 sec.",
+    "duration": "1.133 sec.",
+    "sp_cost": "500",
+    "consume_item": "Ancient Star Orb × 10",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration: 600 seconds",
+          "A.R. +1",
+          "ATK +50%",
+          "Monster ATK +100%",
+          "DEF increases in proportion to own [STR]",
+          "Immunity increases in proportion to own [STR]",
+          "Accuracy +10",
+          "Movement Speed +10%"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Natural Freedom",
+      "equipped_items": "Sabre",
+      "icon_position": {
+        "x": -250,
+        "y": -475
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Natural Freedom",
+      "info": {
+        "Targets": "4 enemies",
+        "Range": "2m away",
+        "Splash": "100% DMG within  2m range",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "+10%",
+        "Shooting DMG": "-10%",
+        "Magical DMG": "-10%",
+        "Debuff RES": "-10%"
+      },
+      "stats": {
+        "ASPD": "203",
+        "Bonus ATK": "340%",
+        "MSPD": "1.1",
+        "MSPD Limit": "8.50",
+        "ACC": "50",
+        "EVA": "0",
+        "BLK": "20",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "Block": "+10",
+        "Penetration": "20+10",
+        "Immunity": "5+10"
+      },
+      "skills": [
+        {
+          "name": "Endless Ocean",
+          "image": "nf_endlessocean.jpg",
+          "description": "Gathers surrounding power and converts it into her own.",
+          "target": "",
+          "casting_time": "1.833 sec.",
+          "cooldown": "30 sec.",
+          "duration": "600 seconds",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "50",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 600 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 600 seconds"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 600 seconds"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 600 seconds"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Thrash",
+          "image": "nf_thrash.jpg",
+          "description": "Freesia jumps high and slams down at the target point and its surroundings.",
+          "target": "",
+          "casting_time": "1.366 sec.",
+          "cooldown": "12 sec.",
+          "duration": "2.6 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "150",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1400%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2800%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Air Slash",
+          "image": "nf_airslash.jpg",
+          "description": "Swiftly slashes around, dealing damage to enemies.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "6 sec.",
+          "duration": "1.833 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "450",
+          "aggro": "100",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1700%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Fury Swipes",
+          "image": "nf_furyswipes.jpg",
+          "description": "Freesia wildly swings her sword towards the target.",
+          "target": "",
+          "casting_time": "1.033 sec.",
+          "cooldown": "18 sec.",
+          "duration": "3.533 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "550",
+          "aggro": "150",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Over the Ocean",
+          "image": "nf_overtheocean.jpg",
+          "description": "Freesia sends a sword wave forward, sweeping away all enemies.",
+          "target": "",
+          "casting_time": "2.033 sec.",
+          "cooldown": "15 sec.",
+          "duration": "1.933 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "600",
+          "aggro": "150",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2600%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5200%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 7% of extra [STR]",
+        "[PVP/PVE Maps] Additional 6% DMG according to extra [STR]",
+        "Ignore additional DEF according to extra [STR] * 4",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Sabre",
+      "icon_position": {
+        "x": -250,
+        "y": -475
+      }
+    }
+  ]
+}

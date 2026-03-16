@@ -1,0 +1,282 @@
+{
+  "slug": "Aether",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Astarte",
+    "head": "None",
+    "earring": "Earring",
+    "face": "Aethers 2023 Fiesta Glasses",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Coat",
+    "costume": "None",
+    "gloves": "Gloves Leather",
+    "ring": "Ring",
+    "weapon_costume": "Facade Event Facade",
+    "belt": "Belt Leather",
+    "shoes": "Shoes Leather",
+    "artifact": "Guardians Brooch",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Aergia",
+    "image": "job_aergia.jpg",
+    "description": "Activate a part of Atlas; the Power of Pioneering.",
+    "target": "Self-buff",
+    "casting_time": "0 sec.",
+    "cooldown": "15 sec.",
+    "duration": "1 sec.",
+    "sp_cost": "300",
+    "consume_item": "Ancient Star Orb × 5",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration : 5 Minutes",
+          "A.R. +1",
+          "ATK +200%",
+          "Critical Damage +65%",
+          "DEX +10",
+          "ATK against monsters increases in proportion to Critical Damage"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Sentinel",
+      "equipped_items": "Rifle",
+      "icon_position": {
+        "x": -200,
+        "y": -150
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Sentinel",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.75~15m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "+20%",
+        "Magical DMG": "-30%"
+      },
+      "stats": {
+        "ASPD": "190",
+        "Bonus ATK": "310%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "30",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "Ignore DEF": "+10%",
+        "Critical": "+5",
+        "Penetration": "5+25",
+        "Immunity": "5+25"
+      },
+      "skills": [
+        {
+          "name": "Barrett",
+          "image": "sentn_barrett.jpg",
+          "description": "Fires strengthened bullets by empowering the subjects observed within range.",
+          "target": "3 enemies within 21m, 2m radius",
+          "casting_time": "Instant",
+          "cooldown": "11 sec.",
+          "duration": "1.366 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "330",
+          "aggro": "160",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Strategic Concealment",
+          "image": "sentn_strategic.jpg",
+          "description": "Using Atlas power, travels short distances quickly and empowers weapons.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "0.933 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "460",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Evade every attack during the skills animation"
+            },
+            {
+              "level": "Level 10",
+              "value": "Evade every attack during the skills animation"
+            },
+            {
+              "level": "Level 11",
+              "value": "Evade every attack during the skills animation"
+            },
+            {
+              "level": "Level 12",
+              "value": "Evade every attack during the skills animation"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Wildfire",
+          "image": "sentn_wildfire.jpg",
+          "description": "Amplifies the elemental properties of specially designed magic bullets and detonates them on the ground.",
+          "target": "Up to 6 enemies 11m away and within a 3m radius",
+          "casting_time": "1.033 sec.",
+          "cooldown": "20 sec.",
+          "duration": "1.7 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "500",
+          "aggro": "358",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Artillery",
+          "image": "sentn_atillery.jpg",
+          "description": "Create a huge sphere by activating Atlas power of pioneering and detonates it near the target. The debris created from the explosion subsequently inflicts damage.",
+          "target": "Up to 10 enemies within 19m, 5m radius",
+          "casting_time": "1.7 sec.",
+          "cooldown": "14 sec.",
+          "duration": "1.366 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "530",
+          "aggro": "458",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Fusillade",
+          "image": "sentn_fusillade.jpg",
+          "description": "Activate the ultimate power of Atlas, then fire at the target in unison.",
+          "target": "",
+          "casting_time": "2.033 sec.",
+          "cooldown": "25 sec.",
+          "duration": "3.033 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "610",
+          "aggro": "560",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5000%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 10% of extra [DEX]",
+        "[PVP/PVE Maps] Additional 3% DMG according to extra [DEX]",
+        "Ignore additional DEF according to extra [DEX] * 3",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 3 * 50"
+      ],
+      "equipped_items": "Rifle",
+      "icon_position": {
+        "x": -200,
+        "y": -150
+      }
+    }
+  ]
+}

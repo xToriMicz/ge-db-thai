@@ -1,0 +1,274 @@
+{
+  "slug": "Kei",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Surveillant of Star Shadow Javelin Lucias Appreciation Plaque",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Leather Metal",
+    "costume": "None",
+    "gloves": "Gloves Leather Metal",
+    "ring": "Ring",
+    "weapon_costume": "None",
+    "belt": "Belt Leather Metal",
+    "shoes": "Shoes Leather Metal",
+    "artifact": "Ruby of Red Flame",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Geas",
+    "image": "job_gias.jpg",
+    "description": "In the name of the god, he gives a transcendent power by making a commitment to protect himself. However, if you violate Geas, you are also given a curse.",
+    "target": "Self-buff",
+    "casting_time": "0 sec.",
+    "cooldown": "30 sec.",
+    "duration": "2.633 sec.",
+    "sp_cost": "750",
+    "consume_item": "Ancient Star Orb × 5",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration: 300sec.",
+          "A.R.+1",
+          "D.R.+1",
+          "ATK+50%",
+          "Casting time -25%",
+          "In Normal attack, enemys [Aggravation of Scar] Lv.+1",
+          "Knock-down time -30%"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Gae Bulg",
+      "equipped_items": "Javelin",
+      "icon_position": {
+        "x": -500,
+        "y": -450
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Gae Bulg",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.1~1.5m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Shooting DMG": "-10%",
+        "Magical DMG": "+10%"
+      },
+      "stats": {
+        "ASPD": "210",
+        "Bonus ATK": "260%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "30",
+        "EVA": "0",
+        "BLK": "0.2",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "Block": "+250",
+        "Penetration": "5+20",
+        "Immunity": "5+15"
+      },
+      "skills": [
+        {
+          "name": "Discordia",
+          "image": "gbg_discordia.jpg",
+          "description": "Throwing the Javelin to enemy quickly.",
+          "target": "",
+          "casting_time": "0.5 sec.",
+          "cooldown": "7 sec.",
+          "duration": "2.13 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "540",
+          "aggro": "130",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 900%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1800%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Fuga",
+          "image": "gbg_fuga.jpg",
+          "description": "Instantly retreat back and release the various abnormal states applied to him.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "1.44 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "2000",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "HP 2,000 is consumed"
+            },
+            {
+              "level": "Level 10",
+              "value": "HP 2,000 is consumed"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Velate",
+          "image": "gbg_verrite.jpg",
+          "description": "Rotate in place and push all enemies around.",
+          "target": "Up to 8 enemies around 7m",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "2.73 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "650",
+          "aggro": "43",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1600%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3200%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Collen",
+          "image": "gbg_coren.jpg",
+          "description": "Stabbing enemy in front long with a Javeli.",
+          "target": "Up to 5 enemies 13m away and within 4m width",
+          "casting_time": "5 sec.",
+          "cooldown": "20 sec.",
+          "duration": "3 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "160",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 700%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Canis",
+          "image": "gbg_canis.jpg",
+          "description": "Throws a Javelin containing magical power toward enemies and cause an explowion.",
+          "target": "",
+          "casting_time": "1.6 sec.",
+          "cooldown": "25 sec.",
+          "duration": "2.94 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "1000",
+          "aggro": "500",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5600%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [STR]",
+        "[PVP/PVE Maps] Additional 3% DMG according to extra [STR]",
+        "Ignore additional DEF according to extra [STR] * 8",
+        "Additional DMG against [PC] + 0.5x",
+        "Additional DMG against Monster according to 7 * 50"
+      ],
+      "equipped_items": "Javelin",
+      "icon_position": {
+        "x": -500,
+        "y": -450
+      }
+    }
+  ]
+}

@@ -1,0 +1,625 @@
+{
+  "slug": "Laura",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "None",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Coat",
+    "costume": "None",
+    "gloves": "Gloves Leather",
+    "ring": "Ring",
+    "weapon_costume": "None",
+    "belt": "Belt Leather",
+    "shoes": "Shoes Leather",
+    "artifact": "None",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Justice",
+    "image": "job_justice.jpg",
+    "description": "Obtain Gods Blessing to increase your power and magic resistance dramatically.",
+    "target": "Self-buff",
+    "casting_time": "0 sec.",
+    "cooldown": "10 sec.",
+    "duration": "1.23 sec.",
+    "sp_cost": "100",
+    "consume_item": "Ancient Star Orb × 2",
+    "levels": [
+      {
+        "level": "Level 1",
+        "effects": [
+          "Duration 300 sec",
+          "Magic RES +1",
+          "Movement Speed +1%",
+          "Movement Speed Limit +10%",
+          "[PvP] Ignores magic skill damage that exceeds your Max HP",
+          "[PvE] Reduces magic skill damage by 50%"
+        ]
+      },
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration 300 sec",
+          "Magic RES +10",
+          "Movement Speed +10%",
+          "Movement Speed Limit +10%",
+          "[PvP] Ignores magic skill damage that exceeds your Max HP",
+          "[PvE] Reduces magic skill damage by 50%"
+        ]
+      },
+      {
+        "level": "Level 11",
+        "effects": [
+          "Duration 300 sec",
+          "Magic RES +11",
+          "Movement Speed +11%",
+          "Movement Speed Limit +10%",
+          "[PvP] Ignores magic skill damage that exceeds your Max HP",
+          "[PvE] Reduces magic skill damage by 50%",
+          "A.R. +1"
+        ]
+      },
+      {
+        "level": "Level 12",
+        "effects": [
+          "Duration 300 sec",
+          "Magic RES +12",
+          "Movement Speed +12%",
+          "Movement Speed Limit +10%",
+          "[PvP] Ignores magic skill damage that exceeds your Max HP",
+          "[PvE] Reduces magic skill damage by 50%",
+          "A.R. +1"
+        ]
+      },
+      {
+        "level": "Level 13",
+        "effects": [
+          "Duration 300 sec",
+          "Magic RES +13",
+          "Movement Speed +13%",
+          "Movement Speed Limit +10%",
+          "[PvP] Ignores magic skill damage that exceeds your Max HP",
+          "[PvE] Reduces magic skill damage by 50%",
+          "A.R. +1"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Aiming Shot",
+      "equipped_items": "Pistol",
+      "icon_position": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Sight Shot",
+      "equipped_items": "Pistol",
+      "icon_position": {
+        "x": -50,
+        "y": -375
+      }
+    },
+    {
+      "stance_name": "Saint Shot",
+      "equipped_items": "Pistol",
+      "icon_position": {
+        "x": -400,
+        "y": -425
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Aiming Shot",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.5~9m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "150",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "50",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+12%",
+        "Ignore DEF": "+2%",
+        "Critical": "+16"
+      },
+      "skills": [
+        {
+          "name": "Plumbullet shot",
+          "image": "aim_plumbulletshot.jpg",
+          "description": "Fires a poisonous bullet.",
+          "target": "1 enemy within a range of 9m",
+          "casting_time": "1.3 sec.",
+          "cooldown": "0 sec.",
+          "duration": "1.23 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "100",
+          "aggro": "31",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 112%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 224%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Double Firing",
+          "image": "aim_doublefiring.jpg",
+          "description": "Fire two rapid shots consecutively.",
+          "target": "1 enemy within a range of 9m",
+          "casting_time": "0.8 sec.",
+          "cooldown": "0 sec.",
+          "duration": "1.6 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "150",
+          "aggro": "57",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 239%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 478%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Snap Shot",
+          "image": "aim_snapshots.jpg",
+          "description": "Shoots 5 targets within a certain area.",
+          "target": "Up to 5 enemies 9m away and within a 3m radius",
+          "casting_time": "0.433 sec.",
+          "cooldown": "15 sec.",
+          "duration": "2.27 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "250",
+          "aggro": "39",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 149%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 298%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Zero-In",
+          "image": "aim_zeroin.jpg",
+          "description": "Fires rapidly at a single enemy.",
+          "target": "1 enemy within a range of 9m",
+          "casting_time": "1 sec.",
+          "cooldown": "20 sec.",
+          "duration": "4.6 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "300",
+          "aggro": "165",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 773%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1546%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Pistol",
+      "icon_position": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "name": "Sight Shot",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.5~9m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "153",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "40",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+16%",
+        "Ignore DEF": "+2%",
+        "Critical": "+12"
+      },
+      "skills": [
+        {
+          "name": "Ankle Shot",
+          "image": "sts_ankleshot.jpg",
+          "description": "Shot to ankle of enemy.",
+          "target": "1 enemy within a range of 6m",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "2.03 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "100",
+          "aggro": "77",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 375%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 750%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Barrage Shots",
+          "image": "sts_barrageshot.jpg",
+          "description": "Fires wildly at an area in front of you.",
+          "target": "Up to 6 enemies 7m away and within a 4m radius.",
+          "casting_time": "1.2 sec.",
+          "cooldown": "10 sec.",
+          "duration": "2.33 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "200",
+          "aggro": "88",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 393%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 786%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Clincher",
+          "image": "sts_clincher.jpg",
+          "description": "Fires a critical shot at an enemy.",
+          "target": "1 enemy within a range of 8m",
+          "casting_time": "2.033 sec.",
+          "cooldown": "15 sec.",
+          "duration": "0.8 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "250",
+          "aggro": "138",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 641%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1282%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Surpassing Shot",
+          "image": "sts_exeedshooting.jpg",
+          "description": "Grievous damage on a single enemy.",
+          "target": "1 enemy within a range of 9m",
+          "casting_time": "1.367 sec.",
+          "cooldown": "20 sec.",
+          "duration": "3.9 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "300",
+          "aggro": "191",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 903%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1805%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Pistol",
+      "icon_position": {
+        "x": -50,
+        "y": -375
+      }
+    },
+    {
+      "name": "Saint Shot",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "10.5m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Magical DMG": "-30%",
+        "Debuff RES": "-20%"
+      },
+      "stats": {
+        "ASPD": "253",
+        "Bonus ATK": "300%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "0",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "10",
+        "Ice RES": "10",
+        "Lightning RES": "10",
+        "Abnormal RES": "10"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+11%",
+        "Ignore DEF": "+9%",
+        "Evasion": "+15",
+        "Critical": "+10",
+        "Penetration": "5+25",
+        "Immunity": "5+15"
+      },
+      "skills": [
+        {
+          "name": "Back Dash Encounter",
+          "image": "ss_backdashencounter.jpg",
+          "description": "Quickly evade while continuing to shoot at the enemy",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "2.43 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "116",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1600%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3200%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Promise",
+          "image": "ss_promise.jpg",
+          "description": "In response to an earnest prayer to God, your physical abilities improve dramatically. You gain strong resistance to magic spells but become vulnerable to melee attacks.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "1 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "650",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "ATK +5%"
+            },
+            {
+              "level": "Level 10",
+              "value": "ATK +50%"
+            },
+            {
+              "level": "Level 11",
+              "value": "ATK +55%"
+            },
+            {
+              "level": "Level 12",
+              "value": "ATK +60%"
+            },
+            {
+              "level": "Level 13",
+              "value": "ATK +65%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Saint Strike",
+          "image": "ss_saintstrike.jpg",
+          "description": "Fires at the enemies ahead in a relaxed posture.",
+          "target": "Up to 6 enemies 13m away and at an angle of 90 degrees",
+          "casting_time": "0.867 sec.",
+          "cooldown": "15 sec.",
+          "duration": "2.8 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "440",
+          "aggro": "116",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Rage of Saint",
+          "image": "ss_punishment.jpg",
+          "description": "Defeat a small group of enemies with the power of Gods rage",
+          "target": "",
+          "casting_time": "0.7 sec.",
+          "cooldown": "17 sec.",
+          "duration": "2.8 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "750",
+          "aggro": "172",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Punishment",
+          "image": "ss_rageofsaint.jpg",
+          "description": "Inflict Gods punishment upon the enemy forces.",
+          "target": "Up to 9 enemieswithin a radius of 8m and up to 12m away",
+          "casting_time": "0.9 sec.",
+          "cooldown": "23 sec.",
+          "duration": "3.1 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "800",
+          "aggro": "461",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 3000%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 6000%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [DEX]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [DEX]",
+        "Ignore additional DEF according to extra [DEX] * 4",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Pistol",
+      "icon_position": {
+        "x": -400,
+        "y": -425
+      }
+    }
+  ]
+}

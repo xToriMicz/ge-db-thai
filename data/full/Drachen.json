@@ -1,0 +1,293 @@
+{
+  "slug": "Drachen",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Astarte Honorary Ailys Investigator",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Leather Metal",
+    "costume": "None",
+    "gloves": "Gloves Leather",
+    "ring": "Ring",
+    "weapon_costume": "Astarte Espada Astarte Espada (Event) Astarte Escudo Astarte Escudo (Event)",
+    "belt": "Belt Leather",
+    "shoes": "Shoes Leather",
+    "artifact": "Guardians Brooch Brooch of Darkness",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Euphrokrisia",
+    "image": "job_ypokrisia.jpg",
+    "description": "Before entering battle, Draken enhances his physical abilities to feel excitement. Each use changes the efficiency of attack or defense.",
+    "target": "Self-buff",
+    "casting_time": "0.367 sec.",
+    "cooldown": "0 sec.",
+    "duration": "1.7 sec.",
+    "sp_cost": "200",
+    "consume_item": "Ancient Star Orb × 10",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration: 300 seconds",
+          "[Euphrokrisia - Dealer] ATK +50%, HP +10, Penetration +10, Penetration increases by 1 per 20 total [HP]",
+          "[Euphrokrisia - Tanker] ATK +25%, HP +10, IMM +10, Immunity increases by 1 per 25 total [HP]",
+          "Buff toggles on skill reuse"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Zilea",
+      "equipped_items": "Sword",
+      "icon_position": {
+        "x": -250,
+        "y": -175
+      }
+    },
+    {
+      "stance_name": "Zilea",
+      "equipped_items": "Sword + Shield",
+      "icon_position": {
+        "x": -250,
+        "y": -175
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Zilea",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.1~2m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "-20%",
+        "Shooting DMG": "-20%",
+        "Magical DMG": "+10%",
+        "Debuff RES": "-10%"
+      },
+      "stats": {
+        "ASPD": "177",
+        "Bonus ATK": "250%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "30",
+        "EVA": "0",
+        "BLK": "5",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "Block": "+25",
+        "Critical": "+20",
+        "Penetration": "5+15",
+        "Immunity": "5+20"
+      },
+      "skills": [
+        {
+          "name": "Iroas",
+          "image": "zilia_iroas.jpg",
+          "description": "Temporarily raises the defense of allies using the [Power of Protection] granted by Atlas.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "35 sec.",
+          "duration": "3.034 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "1000",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "[Draken]: Duration: 300 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "[Draken]: Duration: 300 seconds"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Taurus",
+          "image": "zilia_tavros.jpg",
+          "description": "Throw a shield while moving quickly and slice the surrounding area.",
+          "target": "Up to 3 enemies up to 6m ahead and within a 3m range",
+          "casting_time": "0.367 sec.",
+          "cooldown": "13 sec.",
+          "duration": "2.134 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "660",
+          "aggro": "500",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1600%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3200%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Euphrotasos",
+          "image": "zilia_ypotasso.jpg",
+          "description": "Deliver a strong blow to the enemy.",
+          "target": "",
+          "casting_time": "5 sec.",
+          "cooldown": "16 sec.",
+          "duration": "2.034 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "860",
+          "aggro": "650",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2000%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Timos",
+          "image": "zilia_thymos.jpg",
+          "description": "Strike the enemy with a shield, then slash them.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "8 sec.",
+          "duration": "2.1 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "480",
+          "aggro": "500",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Anaphix",
+          "image": "zilia_anaptyxi.jpg",
+          "description": "Protects nearby allies using the [Power of Protection] granted by Atlas. Stacks with Miracle.",
+          "target": "",
+          "casting_time": "1.034 sec.",
+          "cooldown": "80 sec.",
+          "duration": "65 seconds",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "1500",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 5 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 50 seconds"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 55 seconds"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 60 seconds"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 65 seconds"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 2% of extra [STR]",
+        "[PVP/PVE Maps] Additional 3% DMG according to extra [STR]",
+        "Ignore additional DEF according to extra [STR] * 3",
+        "Additional DMG against Monster according to 3 * 50"
+      ],
+      "equipped_items": "Sword",
+      "icon_position": {
+        "x": -250,
+        "y": -175
+      }
+    }
+  ]
+}

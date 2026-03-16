@@ -1,0 +1,268 @@
+{
+  "slug": "Lilly",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Pure Lamb Brothers and sisters, rise again...",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Robe",
+    "costume": "None",
+    "gloves": "Gloves",
+    "ring": "Ring",
+    "weapon_costume": "Fleudelis Costume The Foolish Nuns Scripture Event Foolish Nuns Scripture Fleudelis Costume Fleudelis Costume",
+    "belt": "Belt",
+    "shoes": "Shoes",
+    "artifact": "The Suspicious Sects Cross",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Prayer of the Gentle Lamb",
+    "image": "job_invoke.jpg",
+    "description": "Pleading to not lose her way, she regains her faith.",
+    "target": "Self-buff (no target required)",
+    "casting_time": "1.033 sec.",
+    "cooldown": "15 sec.",
+    "duration": "2.133 sec.",
+    "sp_cost": "400",
+    "consume_item": "Ancient Star Orb × 7",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration 300 seconds",
+          "Attack Rating +1",
+          "ATK +20%",
+          "ATK against Monsters +50%",
+          "Psychic Penetration +15"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Sleeping Nun",
+      "equipped_items": "Book",
+      "icon_position": {
+        "x": -350,
+        "y": -125
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Sleeping Nun",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.5~12m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "-10%",
+        "Shooting DMG": "+10%",
+        "Magical DMG": "-5%"
+      },
+      "stats": {
+        "ASPD": "137",
+        "Bonus ATK": "270%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "50",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "Penetration": "15+15",
+        "Immunity": "10+5"
+      },
+      "skills": [
+        {
+          "name": "Heretic Interrogation",
+          "image": "restnun_inquisition.jpg",
+          "description": "Designates the enemy as a target for interrogation.",
+          "target": "1 enemy within 8m",
+          "casting_time": "Instant",
+          "cooldown": "6 sec.",
+          "duration": "1.7 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "250",
+          "aggro": "50",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 700%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Flames of Testimony",
+          "image": "restnun_flames.jpg",
+          "description": "Launches the Flames of Testimony forward.",
+          "target": "Up to 5 enemies within a 17m x 5m area in front.",
+          "casting_time": "1.233 sec.",
+          "cooldown": "7.5 sec.",
+          "duration": "1.433 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "300",
+          "aggro": "50",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Thorny Path of Suffering",
+          "image": "restnun_thorn.jpg",
+          "description": "Summons a field of thorns imbued with restless power, inflicting suffering on enemies.",
+          "target": "",
+          "casting_time": "2.033 sec.",
+          "cooldown": "40 sec.",
+          "duration": "6 seconds",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "1720",
+          "aggro": "0",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1180%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2360%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Iron Maiden",
+          "image": "restnun_irongirl.jpg",
+          "description": "Summons an Iron Maiden and thorny iron, inflicting continuous damage.",
+          "target": "Up to 10 attacks during cast time",
+          "casting_time": "2.7 sec.",
+          "cooldown": "25 sec.",
+          "duration": "10.663 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "1210",
+          "aggro": "0",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 150%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 300%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Gentle Lambs Guillotine",
+          "image": "restnun_scaffold.jpg",
+          "description": "Summons a giant guillotine to execute targets.",
+          "target": "",
+          "casting_time": "4.033 sec.",
+          "cooldown": "60 sec.",
+          "duration": "3.033 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "1980",
+          "aggro": "150",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1320%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2640%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Book",
+      "icon_position": {
+        "x": -350,
+        "y": -125
+      }
+    }
+  ]
+}

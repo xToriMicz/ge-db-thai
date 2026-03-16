@@ -1,0 +1,275 @@
+{
+  "slug": "Nicol",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Legion Special Force Happy Miracle Winter Honorary Ailys Investigator",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Leather Metal",
+    "costume": "None",
+    "gloves": "Gloves Leather Metal",
+    "ring": "Ring",
+    "weapon_costume": "Leon Blanca Event Leon Blanca",
+    "belt": "Belt Leather Metal",
+    "shoes": "Shoes Leather Metal",
+    "artifact": "Field Supply",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Determinacion",
+    "image": "job_determination.jpg",
+    "description": "Temporarily use special drugs to enhance physical abilities.",
+    "target": "Self-buff",
+    "casting_time": "0 sec.",
+    "cooldown": "15 sec.",
+    "duration": "2.533 sec.",
+    "sp_cost": "300",
+    "consume_item": "Ancient Star Orb × 10",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration: 300s",
+          "A.R. +1",
+          "D.R. +1",
+          "ATK +50%",
+          "Monster ATK +175%",
+          "Debuff Immunity"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Ariete",
+      "equipped_items": "Crescent",
+      "icon_position": {
+        "x": -200,
+        "y": -200
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Ariete",
+      "info": {
+        "Targets": "5 enemies",
+        "Range": "2.5m away",
+        "Splash": "100% DMG within  2.5m range",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "-10%",
+        "Shooting DMG": "-10%",
+        "Magical DMG": "-10%",
+        "Debuff Chance": "+10%"
+      },
+      "stats": {
+        "ASPD": "170",
+        "Bonus ATK": "300%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "40",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+10%",
+        "Penetration": "5+10",
+        "Immunity": "15+20"
+      },
+      "skills": [
+        {
+          "name": "Carga",
+          "image": "Ariete_carga.jpg",
+          "description": "Improve the defense of nearby allies by issuing a charge command.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "30 sec.",
+          "duration": "300s",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "300",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 300s"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 300s"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Lenador",
+          "image": "Ariete_lenador.jpg",
+          "description": "Swipe your Crescent to knock back nearby enemies.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "1.866 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "450",
+          "aggro": "50",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "El Barida",
+          "image": "Ariete_elbarida.jpg",
+          "description": "Charges violently to attack the enemies, knocking them back.",
+          "target": "",
+          "casting_time": "0.466 sec.",
+          "cooldown": "12 sec.",
+          "duration": "1.866 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "500",
+          "aggro": "81",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Base Descartes",
+          "image": "Ariete_basedescarte.jpg",
+          "description": "Attacks with a powerful slash that shakes the ground under the enemys feet.",
+          "target": "",
+          "casting_time": "1.033 sec.",
+          "cooldown": "15 sec.",
+          "duration": "3.533 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "650",
+          "aggro": "91",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Estaccada de Leon",
+          "image": "Ariete_estacadadeleon.jpg",
+          "description": "A powerful slash attack that overwhelms all nearby enemies.",
+          "target": "Up to 8 targets within a 10m surrounding radius",
+          "casting_time": "0.433 sec.",
+          "cooldown": "15 sec.",
+          "duration": "3.233 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "650",
+          "aggro": "130",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 3000%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 6000%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 10% of extra [STR]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [STR]",
+        "Ignore additional DEF according to extra [STR] * 5",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Crescent",
+      "icon_position": {
+        "x": -200,
+        "y": -200
+      }
+    }
+  ]
+}

@@ -1,0 +1,1370 @@
+{
+  "slug": "Dietrich",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Contractor Lucias Appreciation Plaque",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Leather",
+    "costume": "None",
+    "gloves": "Gloves Leather",
+    "ring": "Ring",
+    "weapon_costume": "Lord-of-Death Lord-of-Death (Event) Diogmos Event Diogmos",
+    "belt": "Belt Leather",
+    "shoes": "Shoes Leather",
+    "artifact": "Chain of Vindictive Spirit Golden-watch String Toms Doctors Bag",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Grim-Ripper",
+    "image": "job_summon_grim1.jpg",
+    "description": "With the power of Black Reaper, ATK is increased and HP and SP are rapidly amplified. However, Max HP will decreased and items cant be used due to the Reapers Curse that comes with it.",
+    "target": "Self-buff",
+    "casting_time": "0 sec.",
+    "cooldown": "80 sec.",
+    "duration": "1.5 sec.",
+    "sp_cost": "300",
+    "consume_item": "Magical Orb × 10",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration 60 secs.",
+          "ATK +20%",
+          "Max HP -15% (Affects the increasement given by the Item)",
+          "Recovers HP by 10% and SP by 30% per sec.",
+          "Cant use items"
+        ]
+      },
+      {
+        "level": "Level 11",
+        "effects": [
+          "Duration 60 secs.",
+          "ATK +20%",
+          "Physical Penetration +10",
+          "Max HP -15% (Affects the increasement given by the Item)",
+          "Recovers HP by 10% and SP by 30% per sec.",
+          "cant use items"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Advance Garde of Grim",
+      "equipped_items": "Rapier + Pistol",
+      "icon_position": {
+        "x": -50,
+        "y": -300
+      }
+    },
+    {
+      "stance_name": "Main-Gauche Garde of Grim",
+      "equipped_items": "Rapier + Main Gauche",
+      "icon_position": {
+        "x": -100,
+        "y": -75
+      }
+    },
+    {
+      "stance_name": "Grim Guard",
+      "equipped_items": "Sabre",
+      "icon_position": {
+        "x": -50,
+        "y": -150
+      }
+    },
+    {
+      "stance_name": "Heaven or Hell of Grim",
+      "equipped_items": "Sabre + Pistol",
+      "icon_position": {
+        "x": -150,
+        "y": -150
+      }
+    },
+    {
+      "stance_name": "Epee Garde of Grim",
+      "equipped_items": "Rapier",
+      "icon_position": {
+        "x": -200,
+        "y": -25
+      }
+    },
+    {
+      "stance_name": "Lord-of-Death",
+      "equipped_items": "Rapier",
+      "icon_position": null
+    },
+    {
+      "stance_name": "Rapiere of Grim",
+      "equipped_items": "Rapier + Rapier",
+      "icon_position": {
+        "x": -150,
+        "y": -425
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Advance Garde of Grim",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1.25m away",
+        "Splash": "None",
+        "Hits per attack": "3",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "243",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+20%",
+        "Critical": "+10"
+      },
+      "skills": [
+        {
+          "name": "Arme Bullet",
+          "image": "ave2_armebullet.jpg",
+          "description": "Shoots 5 times consecutively with the pistol in the left hand. This can be used as a normal attack.",
+          "target": "1 enemy within a range of 8m",
+          "casting_time": "1.433 sec.",
+          "cooldown": "0 sec.",
+          "duration": "1.53 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "undefined",
+          "aggro": "79",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 344%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 688%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Soul of Grim",
+          "image": "mg2_soulofgrim.jpg",
+          "description": "Sell your soul to the devil. This increases ATK, ATK SPD and Critical Rate.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "0 sec.",
+          "duration": "1.2 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "100",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration 114 sec"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration 600 sec"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration 654 sec"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration 708 sec"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration 762 sec"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Croix Fente",
+          "image": "ave2_croixfente.jpg",
+          "description": "Slashes enemy and finishes him off with a powerful stab.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "0 sec.",
+          "duration": "2.37 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "150",
+          "aggro": "109",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 494%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 988%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Entrer en Lices",
+          "image": "ave2_entrerenliches.jpg",
+          "description": "Shoots enemies 5 times before stabbing him to his end. Can also be used on airborne enemies.",
+          "target": "Up to 3 adjacent enemies",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "4.53 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "250",
+          "aggro": "208",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 986%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1972%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Mortal Eternity",
+          "image": "ave2_morteleternity.jpg",
+          "description": "Slashes enemies mercilessly for 8 hits before finishing with a fatal bullet.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "4.6 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "336",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1629%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3258%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Rapier + Pistol",
+      "icon_position": {
+        "x": -50,
+        "y": -300
+      }
+    },
+    {
+      "name": "Main-Gauche Garde of Grim",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1.25m away",
+        "Splash": "None",
+        "Hits per attack": "3",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "208",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "10",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+15%",
+        "Block": "+10",
+        "Critical": "+10"
+      },
+      "skills": [
+        {
+          "name": "Contre Attaques",
+          "image": "man2_contreattaque.jpg",
+          "description": "Attacks twice with Main-Gauche.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "0 sec.",
+          "duration": "2.3 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "100",
+          "aggro": "107",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 481%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 961%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Soul of Grim",
+          "image": "mg2_soulofgrim.jpg",
+          "description": "Sell your soul to the devil. This increases ATK, ATK SPD and Critical Rate.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "0 sec.",
+          "duration": "1.2 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "100",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration 114 sec"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration 600 sec"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration 654 sec"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration 708 sec"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration 762 sec"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Eclabousser",
+          "image": "man2_eclabousser.jpg",
+          "description": "Stabs and slashes enemies alternately with a dagger and a rapier.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "3 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "200",
+          "aggro": "178",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 836%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1672%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "LArc en Ciel",
+          "image": "man2_larcenciel.jpg",
+          "description": "Slash enemies and follows with a flying upward thrust. Allows you to attack monsters in the air.",
+          "target": "Up to 3 adjacent enemies",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "3.2 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "250",
+          "aggro": "118",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 535%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1070%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Parade Riposte",
+          "image": "man2_paraderiposte.jpg",
+          "description": "Allows you to fend off enemy attacks and retaliate 8 with a combination of slashes and stabs.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "3.27 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "239",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1139%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2278%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Rapier + Main Gauche",
+      "icon_position": {
+        "x": -100,
+        "y": -75
+      }
+    },
+    {
+      "name": "Grim Guard",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1.75m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "115",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+25%",
+        "Critical": "+8"
+      },
+      "skills": [
+        {
+          "name": "Crescent Moon",
+          "image": "mg2_crescentmoon.jpg",
+          "description": "Swings a sword in a moon-shaped arc to bring enemies down.",
+          "target": "1 enemy within a range of 6m",
+          "casting_time": "Instant",
+          "cooldown": "0 sec.",
+          "duration": "1.67 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "150",
+          "aggro": "48",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 189%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 378%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Soul of Grim",
+          "image": "mg2_soulofgrim.jpg",
+          "description": "Sell your soul to the devil. This increases ATK, ATK SPD and Critical Rate.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "0 sec.",
+          "duration": "1.2 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "100",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration 114 sec"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration 600 sec"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration 654 sec"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration 708 sec"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration 762 sec"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Grind Cutter",
+          "image": "mg2_grindcutter.jpg",
+          "description": "Swings a sabre in a powerful whirling motion.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "2.23 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "200",
+          "aggro": "91",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 401%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 802%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Assassinate",
+          "image": "mg2_assassinate.jpg",
+          "description": "Confuses enemies with swift pierces before dealing a critical attack.",
+          "target": "Up to 5 enemies 4m away and within 3m width",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "2.37 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "63",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 254%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 508%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Sabre",
+      "icon_position": {
+        "x": -50,
+        "y": -150
+      }
+    },
+    {
+      "name": "Heaven or Hell of Grim",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.1~1.25m away",
+        "Splash": "None",
+        "Hits per attack": "3",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "280",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+30%",
+        "Critical": "+6"
+      },
+      "skills": [
+        {
+          "name": "Pistol Shot",
+          "image": "hoh2_pistolshot.jpg",
+          "description": "Shoots 5 times consecutively with the pistol in the left hand. This can be used as a normal attack.",
+          "target": "1 enemy within a range of 8m",
+          "casting_time": "Instant",
+          "cooldown": "0 sec.",
+          "duration": "2.4 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "undefined",
+          "aggro": "79",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 346%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 692%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Soul of Grim",
+          "image": "mg2_soulofgrim.jpg",
+          "description": "Sell your soul to the devil. This increases ATK, ATK SPD and Critical Rate.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "0 sec.",
+          "duration": "1.2 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "100",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration 114 sec"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration 600 sec"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration 654 sec"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration 708 sec"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration 762 sec"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Deadly Infinitum",
+          "image": "hoh2_deadlyinfinitum.jpg",
+          "description": "Slashes enemies mercilessly before finishing him off with a shot.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "4.19 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "200",
+          "aggro": "192",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 905%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1810%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Grind Cutter",
+          "image": "mg2_grindcutter.jpg",
+          "description": "Swings a sabre in a powerful whirling motion.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "2.23 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "200",
+          "aggro": "91",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 401%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 802%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Into The Hell",
+          "image": "hoh2_intothehell.jpg",
+          "description": "Fires a series of pistol shots at an enemy and advance upon him with a blade.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "4.2 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "137",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 567%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1134%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Sabre + Pistol",
+      "icon_position": {
+        "x": -150,
+        "y": -150
+      }
+    },
+    {
+      "name": "Epee Garde of Grim",
+      "info": {
+        "Targets": "2 enemies",
+        "Range": "2m away",
+        "Splash": "0.8 DMG within  1m range",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "170",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+16%",
+        "Critical": "+20"
+      },
+      "skills": [
+        {
+          "name": "Fente",
+          "image": "epe2_fente.jpg",
+          "description": "A lightning-quick attack that takes enemies by surprise and pierces him deeply. It has a longer range than other stabbing attacks.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "0 sec.",
+          "duration": "1.85 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "100",
+          "aggro": "99",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 440%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 880%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Soul of Grim",
+          "image": "mg2_soulofgrim.jpg",
+          "description": "Sell your soul to the devil. This increases ATK, ATK SPD and Critical Rate.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "0 sec.",
+          "duration": "1.2 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "100",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration 114 sec"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration 600 sec"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration 654 sec"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration 708 sec"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration 762 sec"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Sept Etoiles",
+          "image": "epe2_septetoile.jpg",
+          "description": "Rapidly pierces enemies and forces him to retreat.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "2.97 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "200",
+          "aggro": "152",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 706%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1412%"
+            }
+          ],
+          "special": [
+            "Double Damage to enemies with [",
+            "Double Damage to enemies with ["
+          ]
+        },
+        {
+          "name": "Balestra Fente",
+          "image": "epe2_balestrafente.jpg",
+          "description": "An advanced form of the Fente, accompanied by a surprising leap and powerful lunge.",
+          "target": "Up to 3 enemies 5.5m away and within 3m width",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "3.03 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "250",
+          "aggro": "128",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 556%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1112%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Cent-Ennui",
+          "image": "epe2_centennuyer.jpg",
+          "description": "Attacks enemies with a series of violent piercing movements.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "3.5 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "288",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1387%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2774%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Rapier",
+      "icon_position": {
+        "x": -200,
+        "y": -25
+      }
+    },
+    {
+      "name": "Lord-of-Death",
+      "info": {
+        "Targets": "5 enemies",
+        "Range": "2m away",
+        "Splash": "0.8 DMG within  1.5m range",
+        "Hits per attack": "3",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "-10%",
+        "Shooting DMG": "-20%",
+        "Magical DMG": "+20%"
+      },
+      "stats": {
+        "ASPD": "210",
+        "Bonus ATK": "300%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "40",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+15%",
+        "Evasion": "+10",
+        "Critical": "+10",
+        "Penetration": "5+25",
+        "Immunity": "20"
+      },
+      "skills": [
+        {
+          "name": "Moisson",
+          "image": "grp_moisson.jpg",
+          "description": "Can strengthen your own ATK with enemys blood.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "1.6 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "170",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Envolee",
+          "image": "grp_envol.jpg",
+          "description": "Rushes to the designated spot and causes the wind.",
+          "target": "",
+          "casting_time": "0.366 sec.",
+          "cooldown": "5 sec.",
+          "duration": "2.2 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "200",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1600%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3200%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Frapper",
+          "image": "grp_frapper.jpg",
+          "description": "Summons Grim Reapers sickle to kill the enemy in front.",
+          "target": "Up to 6 enemies 9m away and within 3m width",
+          "casting_time": "Instant",
+          "cooldown": "5 sec.",
+          "duration": "1.9 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "172",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Enchaine",
+          "image": "grp_enchaine.jpg",
+          "description": "Ties enemies around you with Chain-of-Bondage to draw them around you.",
+          "target": "Up to 10 around 12m",
+          "casting_time": "2.4 sec.",
+          "cooldown": "30 sec.",
+          "duration": "1.033 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "800",
+          "aggro": "300",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Lamour",
+          "image": "grp_lamort.jpg",
+          "description": "Presents the target an inevitable death.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "4 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "600",
+          "aggro": "200",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 3000%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 6000%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [STR]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [STR]",
+        "Ignore additional DEF according to extra [STR] * 3",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Rapier",
+      "icon_position": null
+    },
+    {
+      "name": "Rapiere of Grim",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "2m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Shooting DMG": "-10%",
+        "Magical DMG": "-10%",
+        "Debuff Chance": "+10%"
+      },
+      "stats": {
+        "ASPD": "157",
+        "Bonus ATK": "250%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "55",
+        "EVA": "0",
+        "BLK": "5",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+25%",
+        "Block": "+30",
+        "Critical": "+19",
+        "Penetration": "25",
+        "Immunity": "5+15"
+      },
+      "skills": [
+        {
+          "name": "Soul of Grim",
+          "image": "mg2_soulofgrim.jpg",
+          "description": "Sell your soul to the devil. This increases ATK, ATK SPD and Critical Rate.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "0 sec.",
+          "duration": "1.2 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "100",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration 114 sec"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration 600 sec"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration 654 sec"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration 708 sec"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration 762 sec"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Appel",
+          "image": "rpe2_appel.jpg",
+          "description": "When it is offguard, attacks the enemy thrice.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "5 sec.",
+          "duration": "2.1 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "340",
+          "aggro": "176",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1239.44%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2478%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Riposte",
+          "image": "rpe2_riposte.jpg",
+          "description": "Attacks the enemy 5 times with the pointy end of a rapier.",
+          "target": "Up to 3 adjacent enemies",
+          "casting_time": "Instant",
+          "cooldown": "5 sec.",
+          "duration": "3 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "440",
+          "aggro": "230",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1477.7%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2955%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Ropera",
+          "image": "rpe2_ropera.jpg",
+          "description": "Ignores all magical attacks with a certain probability and increases Magic RES, Mind RES and DEF for a while.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "25 sec.",
+          "duration": "30 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "650",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2371.4%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4742%"
+            },
+            {
+              "level": "Level 11",
+              "value": "АТК: 5217%"
+            },
+            {
+              "level": "Level 12",
+              "value": "АТК: 5691%"
+            },
+            {
+              "level": "Level 13",
+              "value": "АТК: 5691%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Cut and Thrust",
+          "image": "rpe2_cutandthrust.jpg",
+          "description": "Attacks the enemy with rapiers.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "17 sec.",
+          "duration": "3.47 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "540",
+          "aggro": "300",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2571.42%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5142%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [STR]",
+        "[PVP/PVE Maps] Additional 5% DMG according to extra [STR]",
+        "Ignore additional DEF according to extra [STR] * 4",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 5 * 50"
+      ],
+      "equipped_items": "Rapier + Rapier",
+      "icon_position": {
+        "x": -150,
+        "y": -425
+      }
+    }
+  ]
+}

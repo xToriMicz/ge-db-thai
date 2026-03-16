@@ -1,0 +1,278 @@
+{
+  "slug": "Kurt2",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "None",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Leather",
+    "costume": "None",
+    "gloves": "Gloves",
+    "ring": "Ring",
+    "weapon_costume": "None",
+    "belt": "Belt",
+    "shoes": "Shoes",
+    "artifact": "None",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Paracal",
+    "image": "job_parakal.jpg",
+    "description": "Kurt unleashes the power of the Wraith in earnest. The [Seal of Death] effect does not stack with the [Speculor] effect.",
+    "target": "Applies to oneself without target designation.",
+    "casting_time": "0 sec.",
+    "cooldown": "20 sec.",
+    "duration": "1.833 sec.",
+    "sp_cost": "250",
+    "consume_item": "Ancient Star Orb × 10",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration: 444 seconds",
+          "Attack Rating +1",
+          "ATK +30%",
+          "ATK against monsters +50%",
+          "Physical Penetration +15",
+          "Movement Speed +10%",
+          "Movement Speed Limit +1.00",
+          "On skill hit, enemy [Seal of Death] +1 level (max 5 levels)",
+          "Ignores abnormal state resistance"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "+",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Bernante",
+      "equipped_items": "Sabre +",
+      "icon_position": {
+        "x": -350,
+        "y": -100
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "+",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Bernante",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "2.5m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "-10%",
+        "Shooting DMG": "-20%",
+        "Magical DMG": "+10%",
+        "Debuff RES": "-10%"
+      },
+      "stats": {
+        "ASPD": "177",
+        "Bonus ATK": "290%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "50",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+11%",
+        "Critical": "+20",
+        "Penetration": "5+25",
+        "Immunity": "5+10"
+      },
+      "skills": [
+        {
+          "name": "Dike",
+          "image": "brnt_dike.jpg",
+          "description": "After a quick attack, unleashes the Wraiths energy on the target.",
+          "target": "Up to 4 enemies within a 3m radius",
+          "casting_time": "Instant",
+          "cooldown": "12 sec.",
+          "duration": "2.033 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "180",
+          "aggro": "0",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 640%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1280%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Desmos",
+          "image": "brnt_desmos.jpg",
+          "description": "Attacks by binding enemies at the designated point.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "14 sec.",
+          "duration": "2.033 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "320",
+          "aggro": "0",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 690%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1380%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Appareo",
+          "image": "brnt_aphaireo.jpg",
+          "description": "Quickly slashes nearby enemies with a wide swing of the saber.",
+          "target": "Up to 4x damage based on [",
+          "casting_time": "1.033 sec.",
+          "cooldown": "18 sec.",
+          "duration": "1.533 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "550",
+          "aggro": "0",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 880%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1760%"
+            }
+          ],
+          "special": [
+            "Additional [",
+            "Additional ["
+          ]
+        },
+        {
+          "name": "Ekdicesis",
+          "image": "brnt_ekdikesis.jpg",
+          "description": "Summons a part of the world of the dead through Charon.",
+          "target": "Up to 8 enemies within a 13m x 6m range in front",
+          "casting_time": "1.366 sec.",
+          "cooldown": "8.5 sec.",
+          "duration": "2.366 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "750",
+          "aggro": "0",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 834%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1668%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Katakrima",
+          "image": "brnt_katakrmia.jpg",
+          "description": "Delivers a powerful blow and judges the target.",
+          "target": "",
+          "casting_time": "0.05 sec.",
+          "cooldown": "26 sec.",
+          "duration": "2.1 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "900",
+          "aggro": "0",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1745%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3490%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Sabre +",
+      "icon_position": {
+        "x": -350,
+        "y": -100
+      }
+    }
+  ]
+}

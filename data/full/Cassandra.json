@@ -1,0 +1,285 @@
+{
+  "slug": "Cassandra",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Homunculus Medal Special GE 19th Anniversary Commemorative Medal",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Metal",
+    "costume": "None",
+    "gloves": "Gloves Leather Metal",
+    "ring": "Ring",
+    "weapon_costume": "Paavalie of Belluna Favalier of Beluna (Event)",
+    "belt": "Belt Leather Metal",
+    "shoes": "Shoes Leather Metal",
+    "artifact": "Fragment of Broken Necklace",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "[Ratio]",
+    "image": "job_ratio.jpg",
+    "description": "Weakens enemys DEF by using Quiritatios ancient knowledges.",
+    "target": "Self-buff",
+    "casting_time": "0 sec.",
+    "cooldown": "0 sec.",
+    "duration": "0.2 sec.",
+    "sp_cost": "100",
+    "consume_item": "Mithridart × 5",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "D.R.+1",
+          "Attack SPD+10%",
+          "Immunity+8",
+          "In normal attack, Activates [Quiritatios Scar] in a certain probability"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Filo",
+      "equipped_items": "Polearm",
+      "icon_position": {
+        "x": -50,
+        "y": -225
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Filo",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "2.5m away",
+        "Splash": "0 DMG within  0m range",
+        "Hits per attack": "3",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "-20%",
+        "Shooting DMG": "-20%",
+        "Magical DMG": "+10%",
+        "Debuff RES": "-10%"
+      },
+      "stats": {
+        "ASPD": "260",
+        "Bonus ATK": "300%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "20",
+        "EVA": "5",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "Evasion": "+5",
+        "Critical": "+25",
+        "Penetration": "15+10",
+        "Immunity": "5+15"
+      },
+      "skills": [
+        {
+          "name": "Rapu",
+          "image": "pir_rafur.jpg",
+          "description": "Strengthens friendly forces by spreading Quiritatios ancient knowledges.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "5 Minutes.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "560",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 5 Minutes."
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 5 Minutes."
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 5 Minutes."
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 5 Minutes."
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 5 Minutes."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Corona",
+          "image": "pir_corona.jpg",
+          "description": "Blows away the enemy to the sky by putting out Herculean strength.",
+          "target": "Up to 3 adjacent enemies",
+          "casting_time": "Instant",
+          "cooldown": "6 sec.",
+          "duration": "1.2 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "780",
+          "aggro": "342",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Rudlomo",
+          "image": "pir_ludromo.jpg",
+          "description": "Creates the shock wave by wielding Polearm to strike the ground with Herculean strength.",
+          "target": "Up to 5 enemies 12m away and within 4m width",
+          "casting_time": "1 sec.",
+          "cooldown": "20 sec.",
+          "duration": "1.6 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "940",
+          "aggro": "250",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2400%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4800%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Matimo",
+          "image": "pir_martimo.jpg",
+          "description": "Strikes a powerful blow to the close enemy by wielding Polearm.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "2.9 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "1050",
+          "aggro": "270",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2350%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4700%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Equiltario",
+          "image": "pir_equiltario.jpg",
+          "description": "Makes a powerful attack by focusing on the mind and leaping to the target.",
+          "target": "",
+          "casting_time": "1.1 sec.",
+          "cooldown": "17 sec.",
+          "duration": "1.9 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "1280",
+          "aggro": "270",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5000%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [STR]",
+        "[PVP/PVE Maps] Additional 5% DMG according to extra [STR]",
+        "Ignore additional DEF according to extra [STR] * 4",
+        "Additional DMG against Monster according to 5 * 50"
+      ],
+      "equipped_items": "Polearm",
+      "icon_position": {
+        "x": -50,
+        "y": -225
+      }
+    }
+  ]
+}

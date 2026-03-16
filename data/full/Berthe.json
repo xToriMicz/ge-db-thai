@@ -1,0 +1,504 @@
+{
+  "slug": "Berthe",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Crossed Destinies Soul Mate Seer of Souls Pure Lamb",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Coat Robe",
+    "costume": "None",
+    "gloves": "Gloves",
+    "ring": "Ring",
+    "weapon_costume": "None",
+    "belt": "Belt",
+    "shoes": "Shoes",
+    "artifact": "Skull necklace",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Possession",
+    "image": "tha_possession.jpg",
+    "description": "Allow a soul to possess and strengthen you.",
+    "target": "Self-buff",
+    "casting_time": "0 sec.",
+    "cooldown": "30 sec.",
+    "duration": "1.833 sec.",
+    "sp_cost": "500",
+    "consume_item": "Ancient Star Orb × 5",
+    "levels": [
+      {
+        "level": "Level 1",
+        "effects": [
+          "A.R. +2",
+          "D.R. +2",
+          "Debuff Immunity",
+          "ATK +40%",
+          "Monster Damage +100%",
+          "Mental Penetration +50",
+          "Received Physical Damage -30%",
+          "Received Ranged Damage +10%",
+          "HP and SP Regeneration +100"
+        ]
+      },
+      {
+        "level": "Level 10",
+        "effects": [
+          "A.R. +2",
+          "D.R. +2",
+          "Debuff Immunity",
+          "ATK +40%",
+          "Monster Damage +100%",
+          "Mental Penetration +50",
+          "Received Physical Damage -30%",
+          "Received Ranged Damage +10%",
+          "HP and SP Regeneration +1000"
+        ]
+      },
+      {
+        "level": "Level 11",
+        "effects": [
+          "A.R. +2",
+          "D.R. +2",
+          "Debuff Immunity",
+          "ATK +40%",
+          "Monster Damage +100%",
+          "Mental Penetration +50",
+          "Received Physical Damage -30%",
+          "Received Ranged Damage +10%",
+          "HP and SP Regeneration +1100"
+        ]
+      },
+      {
+        "level": "Level 12",
+        "effects": [
+          "A.R. +2",
+          "D.R. +2",
+          "Debuff Immunity",
+          "ATK +40%",
+          "Monster Damage +100%",
+          "Mental Penetration +50",
+          "Received Physical Damage -30%",
+          "Received Ranged Damage +10%",
+          "HP and SP Regeneration +1200"
+        ]
+      },
+      {
+        "level": "Level 13",
+        "effects": [
+          "A.R. +2",
+          "D.R. +2",
+          "Debuff Immunity",
+          "ATK +40%",
+          "Monster Damage +100%",
+          "Mental Penetration +50",
+          "Received Physical Damage -30%",
+          "Received Ranged Damage +10%",
+          "HP and SP Regeneration +1300"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Illusionist",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": -75
+      }
+    },
+    {
+      "stance_name": "Illusionist",
+      "equipped_items": "Staff",
+      "icon_position": {
+        "x": -150,
+        "y": -75
+      }
+    },
+    {
+      "stance_name": "Thanatos",
+      "equipped_items": "Book",
+      "icon_position": {
+        "x": -450,
+        "y": -75
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Illusionist",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1~10m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "170",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "15"
+      },
+      "lv25_bonus": {},
+      "skills": [
+        {
+          "name": "Sandman",
+          "image": "ilu2_sandmann.jpg",
+          "description": "Put all enemies in a certain range to sleep.",
+          "target": "",
+          "casting_time": "1.167 sec.",
+          "cooldown": "10 sec.",
+          "duration": "1 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "60",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "80% chance to inflict ["
+            },
+            {
+              "level": "Level 10",
+              "value": "80% chance to inflict ["
+            },
+            {
+              "level": "Level 11",
+              "value": "80% chance to inflict ["
+            },
+            {
+              "level": "Level 12",
+              "value": "80% chance to inflict ["
+            },
+            {
+              "level": "Level 13",
+              "value": "80% chance to inflict ["
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Magical Piercing",
+          "image": "ilu2_magicalpiercing.jpg",
+          "description": "Reduces Fire/Ice/Lightning/Mental RES to all enemies in a certain area.",
+          "target": "",
+          "casting_time": "1.167 sec.",
+          "cooldown": "10 sec.",
+          "duration": "1 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "90",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 16.5 sec."
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 30 sec."
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration : 31.5 sec."
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration : 33 sec."
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration : 34.5 sec."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Ritardi",
+          "image": "ilu2_ritardi.jpg",
+          "description": "Reduces the Movement Speed of enemies.",
+          "target": "",
+          "casting_time": "1.167 sec.",
+          "cooldown": "10 sec.",
+          "duration": "1 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "150",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "80% chance to decrease enemys ATK/MOVE Speed -33% for 8.8 sec."
+            },
+            {
+              "level": "Level 10",
+              "value": "80% chance to decrease enemys ATK/MOVE Speed -60% for 16 sec."
+            },
+            {
+              "level": "Level 11",
+              "value": "80% chance to decrease enemys ATK/MOVE Speed -63% for 16.8 sec."
+            },
+            {
+              "level": "Level 12",
+              "value": "80% chance to decrease enemys ATK/MOVE Speed -66% for 17.6 sec."
+            },
+            {
+              "level": "Level 13",
+              "value": "80% chance to decrease enemys ATK/MOVE Speed -69% for 18.4 sec."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Invisible Stalker",
+          "image": "ilu2_invisiblestalker.jpg",
+          "description": "Grant invisibility to allies. An invisible character cannot be attacked until he is detected, but cannot use any skill. After using it, [Skill Standby] buff is applied.",
+          "target": "",
+          "casting_time": "2.633 sec.",
+          "cooldown": "60 sec.",
+          "duration": "1.63 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "180",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 17.5 sec"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 40 sec"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration : 42.5 sec"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration : 45 sec"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration : 47.5 sec"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": -75
+      }
+    },
+    {
+      "name": "Thanatos",
+      "info": {
+        "Targets": "4 enemies",
+        "Range": "1.5~11m away",
+        "Splash": "0.5 DMG within  1.5m range",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "143",
+        "Bonus ATK": "330%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "20"
+      },
+      "lv25_bonus": {
+        "Penetration": "10+15",
+        "Immunity": "5+5"
+      },
+      "skills": [
+        {
+          "name": "Necromancy",
+          "image": "tha_necromancy.jpg",
+          "description": "Summon a Soul from the world of dead people to protect Berthe.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "5 sec.",
+          "duration": "2.033 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "200",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Possible to summon 3 simultaneously"
+            },
+            {
+              "level": "Level 10",
+              "value": "Possible to summon 3 simultaneously"
+            }
+          ],
+          "special": [
+            "Ability bonus of Soul, given by skill level and INT",
+            "Ability bonus of Soul, given by skill level and INT"
+          ]
+        },
+        {
+          "name": "Soul Burn",
+          "image": "job_soulburn.jpg",
+          "description": "Skill attack increases because of the remaining mental power. This effect is removed on stance change.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "30 sec.",
+          "duration": "390 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "250",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 30 sec."
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 300 sec."
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 330 sec."
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 360 sec."
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 390 sec."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Acheron",
+          "image": "tha_acheron.jpg",
+          "description": "Summon the River of Death in front of you to attack the enemy.",
+          "target": "Up to 7 enemies 15m away and within 6.",
+          "casting_time": "1 sec.",
+          "cooldown": "15 sec.",
+          "duration": "1.7 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "172",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3000%"
+            }
+          ],
+          "special": [
+            "Additionally, ignores the following amount of RES: 20 + (level of [",
+            "Additionally, ignores the following amount of RES: 20 + (level of ["
+          ]
+        },
+        {
+          "name": "Back of the Dead",
+          "image": "tha_beckofthedead.jpg",
+          "description": "Summon the dead people from the underground and grab the ankles of the enemy.",
+          "target": "",
+          "casting_time": "2 sec.",
+          "cooldown": "20 sec.",
+          "duration": "3.2 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "500",
+          "aggro": "100",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1400%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2800%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Soul Explosion",
+          "image": "tha_soulexplosion.jpg",
+          "description": "Gather the power of the surrounding floating souls and create a big chain explosion.",
+          "target": "",
+          "casting_time": "3 sec.",
+          "cooldown": "40 sec.",
+          "duration": "5.033 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "700",
+          "aggro": "198",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2000%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4000%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [INT]",
+        "[PVP/PVE Maps] Additional 5% DMG according to extra [INT]",
+        "Ignore additional RES according to extra [INT] * 4",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 5 * 50"
+      ],
+      "equipped_items": "Book",
+      "icon_position": {
+        "x": -450,
+        "y": -75
+      }
+    }
+  ]
+}

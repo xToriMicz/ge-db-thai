@@ -1,0 +1,635 @@
+{
+  "slug": "Levin",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "None",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Leather",
+    "costume": "None",
+    "gloves": "Gloves Leather",
+    "ring": "Ring",
+    "weapon_costume": "None",
+    "belt": "Belt Leather",
+    "shoes": "Shoes Leather",
+    "artifact": "None",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Devotion",
+    "image": "job_devotion.jpg",
+    "description": "Receives some of targets damage by sacrificing ones self.",
+    "target": "1 of your characters nearby",
+    "casting_time": "0 sec.",
+    "cooldown": "45 sec.",
+    "duration": "2.88 sec.",
+    "sp_cost": "200",
+    "consume_item": "Ancient Star Orb × 5",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration : 5 Minutes",
+          "A.R. +1",
+          "D.R, +1",
+          "ATK +25%",
+          "Immunity +15",
+          "STR +10",
+          "Def +15",
+          "All damage -10%"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Back-Guard",
+      "equipped_items": "Sword",
+      "icon_position": {
+        "x": -50,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Desire",
+      "equipped_items": "Sword",
+      "icon_position": {
+        "x": -400,
+        "y": -300
+      }
+    },
+    {
+      "stance_name": "Lunacy",
+      "equipped_items": "Sword",
+      "icon_position": {
+        "x": -400,
+        "y": -300
+      }
+    },
+    {
+      "stance_name": "Desire",
+      "equipped_items": "Sword + Special Bracelet",
+      "icon_position": {
+        "x": -400,
+        "y": -300
+      }
+    },
+    {
+      "stance_name": "Lunacy",
+      "equipped_items": "Sword + Special Bracelet",
+      "icon_position": {
+        "x": -400,
+        "y": -300
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Back-Guard",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1.5m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "100",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "14",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+3%",
+        "Block": "+14"
+      },
+      "skills": [
+        {
+          "name": "Deep Straight",
+          "image": "bg_deepstraight.jpg",
+          "description": "Impales the enemy on a sword before delivering a powerful kick.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "0 sec.",
+          "duration": "2.67 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "100",
+          "aggro": "78",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 300%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Earth Tremor",
+          "image": "bg_earthtremor.jpg",
+          "description": "Plunges sword into enemy while airborne.",
+          "target": "Up to 3 adjacent enemies",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "2.2 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "150",
+          "aggro": "68",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 400%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 800%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Penta-Train",
+          "image": "bg_pentatrain.jpg",
+          "description": "A series of aggressive attacks that pushes the enemy back.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "3.4 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "200",
+          "aggro": "105",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 600%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1200%"
+            }
+          ],
+          "special": [
+            "Double Damage to enemies with [",
+            "Double Damage to enemies with ["
+          ]
+        },
+        {
+          "name": "Vortex Slash",
+          "image": "bg_vortexlash.jpg",
+          "description": "Make a series of fast and powerful attacks.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "4.4 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "250",
+          "aggro": "210",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1600%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Sword",
+      "icon_position": {
+        "x": -50,
+        "y": 0
+      }
+    },
+    {
+      "name": "Desire",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Shooting DMG": "-20%",
+        "Magical DMG": "-10%",
+        "Debuff RES": "-10%"
+      },
+      "stats": {
+        "ASPD": "158",
+        "Bonus ATK": "290%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "40",
+        "EVA": "0",
+        "BLK": "10",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+13%",
+        "Block": "+10",
+        "Critical": "+25",
+        "Penetration": "10+15",
+        "Immunity": "5+15"
+      },
+      "skills": [
+        {
+          "name": "Red Crescent",
+          "image": "blg_redcrescent.jpg",
+          "description": "Slashes the air horizontally and creates a crescentic red sword energy to attack enemies.",
+          "target": "Up to 8 enemies 10m away and within 10m",
+          "casting_time": "0.54 sec.",
+          "cooldown": "10 sec.",
+          "duration": "1.033 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "120",
+          "aggro": "99",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Bloody Weapon",
+          "image": "blg_bloodweapon.jpg",
+          "description": "Imbues a bloody magic into your sword but it is cancelled once the stance is changed.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "60 sec.",
+          "duration": "2.7 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "200",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Applies level 1 ["
+            },
+            {
+              "level": "Level 10",
+              "value": "Applies level 10 ["
+            },
+            {
+              "level": "Level 11",
+              "value": "Applies level 11 ["
+            },
+            {
+              "level": "Level 12",
+              "value": "Applies level 12 ["
+            },
+            {
+              "level": "Level 13",
+              "value": "Applies level 13 ["
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Blood Stain",
+          "image": "blg_bloodstain.jpg",
+          "description": "Makes a lot of wounds on an enemys body using a sword then absorbs the enemys life with magic. Improves DEF by using the absorbed vitality. [Mental magic attribute]",
+          "target": "",
+          "casting_time": "0.21 sec.",
+          "cooldown": "20 sec.",
+          "duration": "2.533 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "256",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Support for Blood",
+          "image": "blg_thirstforblood.jpg",
+          "description": "Takes away vitalities of enemies in surroundings with a blood starved sword. Enhances DEF by using the absorbed vitalities.",
+          "target": "Up to 7 enemies within a range of 7m.",
+          "casting_time": "0.96 sec.",
+          "cooldown": "15 sec.",
+          "duration": "2.4 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "400",
+          "aggro": "215",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2300%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Heart Burst",
+          "image": "blg_burstofheart.jpg",
+          "description": "Takes out enemys heart and breaks it with magic.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "3.3 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "500",
+          "aggro": "354",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2400%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4800%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [STR]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [STR]",
+        "Ignore additional DEF according to extra [STR] * 4",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Sword",
+      "icon_position": {
+        "x": -400,
+        "y": -300
+      }
+    },
+    {
+      "name": "Lunacy",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "9m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "-20%",
+        "Magical DMG": "-10%"
+      },
+      "stats": {
+        "ASPD": "158",
+        "Bonus ATK": "360%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "20",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+30%",
+        "Penetration": "40+13",
+        "Immunity": "10+20"
+      },
+      "skills": [
+        {
+          "name": "Dark Emission",
+          "image": "lunacy_Lunacy01.jpg",
+          "description": "Strike the enemy with darkness emitted from the left hand.",
+          "target": "",
+          "casting_time": "1 sec.",
+          "cooldown": "10 sec.",
+          "duration": "2.03 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "200",
+          "aggro": "62",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Insane Ferocity",
+          "image": "lunacy_Lunacy02.jpg",
+          "description": "Gather potent ferocious energy reinforced by your own insanity.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "2.7 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "200",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 300 sec."
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 300 sec."
+            }
+          ],
+          "special": [
+            "Additional DMG to [Human] type enemy +50%",
+            "Additional DMG to [Human] type enemy +50%"
+          ]
+        },
+        {
+          "name": "Bloody Arc",
+          "image": "lunacy_Lunacy03.jpg",
+          "description": "Attacks the enemy forces ahead by emitting dark magic.",
+          "target": "",
+          "casting_time": "1.2 sec.",
+          "cooldown": "15 sec.",
+          "duration": "1.033 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "120",
+          "aggro": "99",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2600%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5200%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Encased in Blood",
+          "image": "lunacy_Lunacy04.jpg",
+          "description": "Creates a swirl of blood that swallows the surrounding enemies.",
+          "target": "",
+          "casting_time": "2.5 sec.",
+          "cooldown": "18 sec.",
+          "duration": "2.4 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "400",
+          "aggro": "215",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Lunatic Disaster",
+          "image": "lunacy_Lunacy05.jpg",
+          "description": "Focus your increasing madness into magical power that annihilates nearby enemies.",
+          "target": "",
+          "casting_time": "2.8 sec.",
+          "cooldown": "22 sec.",
+          "duration": "4.2 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "900",
+          "aggro": "350",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 3200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 6400%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 10% of extra [INT]",
+        "[PVP/PVE Maps] Additional 3% DMG according to extra [INT]",
+        "Ignore additional RES according to extra [INT] * 4",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Sword",
+      "icon_position": {
+        "x": -400,
+        "y": -300
+      }
+    }
+  ]
+}

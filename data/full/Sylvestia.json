@@ -1,0 +1,426 @@
+{
+  "slug": "Sylvestia",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Festina Lente",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Robe Leather",
+    "costume": "None",
+    "gloves": "Gloves",
+    "ring": "Ring",
+    "weapon_costume": "Tonarita Bianca Event Tonarita Bianca",
+    "belt": "Belt",
+    "shoes": "Shoes",
+    "artifact": "Il Principe",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Danza dell Espine",
+    "image": "job_danzadellespine.jpg",
+    "description": "Prepare to match the elegance of a waltz with a sword in hand. Additional stats are granted based on the type of armor equipped.",
+    "target": "Self-Buff",
+    "casting_time": "0 sec.",
+    "cooldown": "25 sec.",
+    "duration": "3.2 sec.",
+    "sp_cost": "750",
+    "consume_item": "Ancient Star Orb × 27",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration: 300s",
+          "A.R. +1",
+          "ATK +20%",
+          "When wearing [Leather Armor]",
+          "Additional Damage to [Heavy Armor] type enemy PCs +30%",
+          "Additional Damage to [Light Armor] type enemy PCs +20%",
+          "Additional Damage to [Soft Armor] type enemy PCs +10%",
+          "When wearing [Robe]",
+          "Movement Speed +20%",
+          "Movement Speed Limit +2.00",
+          "ATK against Monsters +50%",
+          "IMM +10",
+          "Immune to debuffs"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Copriere",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -300,
+        "y": -350
+      }
+    },
+    {
+      "stance_name": "Copriere",
+      "equipped_items": "Rapier",
+      "icon_position": {
+        "x": -300,
+        "y": -350
+      }
+    },
+    {
+      "stance_name": "Ofurento",
+      "equipped_items": "Rapier",
+      "icon_position": {
+        "x": -300,
+        "y": -300
+      }
+    },
+    {
+      "stance_name": "Rafinata",
+      "equipped_items": "Rapier",
+      "icon_position": {
+        "x": -300,
+        "y": -325
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Copriere",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "143",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [STR]",
+        "[PVP/PVE Maps] Additional 3% DMG according to extra [STR]",
+        "Ignore additional DEF according to extra [STR] * 4",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 5 * 50"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -300,
+        "y": -350
+      }
+    },
+    {
+      "name": "Ofurento",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1.5m away",
+        "Splash": "None",
+        "Hits per attack": "3",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "-10%",
+        "Magical DMG": "-10%"
+      },
+      "stats": {
+        "ASPD": "203",
+        "Bonus ATK": "250%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "50",
+        "EVA": "10",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+10%",
+        "Block": "+125",
+        "Evasion": "+10",
+        "Critical": "+10",
+        "Immunity": "10"
+      },
+      "skills": [
+        {
+          "name": "Spara nel Ferro",
+          "image": "ofrt_sparanelferro.jpg",
+          "description": "Draw the sword at a speed too fast for the eye to follow and attack the enemy.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "7.5 sec.",
+          "duration": "0.866 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "350",
+          "aggro": "50",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Rotame",
+          "image": "ofrt_rottame.jpg",
+          "description": "Block melee or ranged attacks and switch to [Rafinata] stance upon a successful counter.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "16 sec.",
+          "duration": "2.7 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "515",
+          "aggro": "75",
+          "skill_type": "COUNTER",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Radopiare",
+          "image": "ofrt_raddoppiare.jpg",
+          "description": "Draw the rapier hidden in the scabbard and take an attack stance against the enemy. Switch to [Rafinata] stance on hit.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "17 sec.",
+          "duration": "2 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "570",
+          "aggro": "90",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5000%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [STR]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [STR]",
+        "Ignore additional DEF according to extra [STR] * 4",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 5 * 50"
+      ],
+      "equipped_items": "Rapier",
+      "icon_position": {
+        "x": -300,
+        "y": -300
+      }
+    },
+    {
+      "name": "Rafinata",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1.5m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "-10%",
+        "Shooting DMG": "+10%",
+        "Debuff RES": "-10%"
+      },
+      "stats": {
+        "ASPD": "170",
+        "Bonus ATK": "285%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "40",
+        "EVA": "0",
+        "BLK": "10",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+16%",
+        "Block": "+10",
+        "Critical": "+10",
+        "Penetration": "5+20",
+        "Immunity": "15"
+      },
+      "skills": [
+        {
+          "name": "Parare il Punto",
+          "image": "rfnt_parareilpunto.jpg",
+          "description": "Stab a nearby enemy twice deeply, then push them away with an umbrella.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "12 sec.",
+          "duration": "2.433 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "50",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Parate Taliando",
+          "image": "rfnt_paratetagliando.jpg",
+          "description": "Straighten your posture, then dash forward with a rapier thrust.",
+          "target": "",
+          "casting_time": "0.967 sec.",
+          "cooldown": "16 sec.",
+          "duration": "1.166 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "450",
+          "aggro": "75",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Spara Pinete",
+          "image": "rfnt_sparafinte.jpg",
+          "description": "Leap into the designated area and perform a mixed attack with two swords. Reuse the skill during the casting time to perform an additional variant attack [Spara Terzo].",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "23 sec.",
+          "duration": "2.2 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "650",
+          "aggro": "0",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2600%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5200%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Score del Tempo",
+          "image": "rfnt_scorreredeltempo.jpg",
+          "description": "Perform a series of stabbing attacks on a nearby enemy, then quickly move behind them and strike their vital spot with your left elbow. Reuse the skill during the casting time to perform an additional variant attack [Score Quarte].",
+          "target": "Up to 3 enemies within 4m radius in the designated direction",
+          "casting_time": "Instant",
+          "cooldown": "26 sec.",
+          "duration": "2.366 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "950",
+          "aggro": "0",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2760%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5520%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Permare Tirato",
+          "image": "rfnt_fermaretiratore.jpg",
+          "description": "Focus all your mind and deliver a fatal blow to the opponent.",
+          "target": "",
+          "casting_time": "1.766 sec.",
+          "cooldown": "37 sec.",
+          "duration": "2.766 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "1270",
+          "aggro": "165",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5600%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [STR]",
+        "[PVP/PVE Maps] Additional 5% DMG according to extra [STR]",
+        "Ignore additional DEF according to extra [STR] * 4",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 5 * 50"
+      ],
+      "equipped_items": "Rapier",
+      "icon_position": {
+        "x": -300,
+        "y": -325
+      }
+    }
+  ]
+}

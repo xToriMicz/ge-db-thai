@@ -1,0 +1,433 @@
+{
+  "slug": "Spirit",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "None",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Robe",
+    "costume": "None",
+    "gloves": "Gloves",
+    "ring": "Ring",
+    "weapon_costume": "None",
+    "belt": "Belt",
+    "shoes": "Shoes",
+    "artifact": "None",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Tierra Fertil",
+    "image": "flo_tierrafertil.jpg",
+    "description": "Makes the HP/SP of characters and summons recover fast. Doesnt stack with any other recovery buffs.",
+    "target": "In your character or squad member within a range of 10m, summoned object each max .",
+    "casting_time": "1.198 sec.",
+    "cooldown": "30 sec.",
+    "duration": "2 sec.",
+    "sp_cost": "300",
+    "consume_item": "Ancient Star Orb × 5",
+    "levels": [
+      {
+        "level": "Level 1",
+        "effects": [
+          "Duration: 30 sec.",
+          "[Squad Members] HP Recover +750 per second, SP Recover +150 per second, Mental Penetration +10; At Lv. 11, INT +1",
+          "[Summoned Creatures] ATK +100%, ATK SPD +75%, DEF +50",
+          "[Rose, The Spirit] A.R. +1, Penetration +15, Monster Damage +50%, Magical ATK +20%, INT +5"
+        ]
+      },
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration: 300 sec.",
+          "[Squad Members] HP Recover +750 per second, SP Recover +150 per second, Mental Penetration +10; At Lv. 11, INT +1",
+          "[Summoned Creatures] ATK +100%, ATK SPD +75%, DEF +50",
+          "[Rose, The Spirit] A.R. +1, Penetration +15, Monster Damage +50%, Magical ATK +20%, INT +5"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Elemental Lord",
+      "equipped_items": "Special Bracelet",
+      "icon_position": {
+        "x": -50,
+        "y": -175
+      }
+    },
+    {
+      "stance_name": "Floresta",
+      "equipped_items": "Special Bracelet + Special Bracelet",
+      "icon_position": {
+        "x": -400,
+        "y": 0
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Elemental Lord",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.5~9m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "227",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "15",
+        "Ice RES": "15",
+        "Lightning RES": "15",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [
+        {
+          "name": "Hell Breath",
+          "image": "efir_hellbreath.jpg",
+          "description": "To set enemies ablaze, it causes a jet of flame to burst forth from your hands.",
+          "target": "Up to 6 enemies 6m away and at an angle of 80 degrees",
+          "casting_time": "1.433 sec.",
+          "cooldown": "0 sec.",
+          "duration": "2.7 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "80",
+          "aggro": "67",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1300%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Absolute Zero",
+          "image": "eice_absolutezero.jpg",
+          "description": "Powerful ice attack to one enemy.",
+          "target": "1 enemy within a range of 8m",
+          "casting_time": "1.433 sec.",
+          "cooldown": "10 sec.",
+          "duration": "2.7 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "160",
+          "aggro": "184",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Chain Lightning",
+          "image": "elgt_chainlightning.jpg",
+          "description": "Conjure forth a bolt of chain lightning that leaps from one enemy to the next, inflicting lightning damage on the target and surrounding enemies.",
+          "target": "",
+          "casting_time": "1.433 sec.",
+          "cooldown": "18 sec.",
+          "duration": "2.7 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "160",
+          "aggro": "90",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Elemental Strife",
+          "image": "loe_elementalstrife.jpg",
+          "description": "To conjure forth a devastatingly potent attack, it combines the unique characteristics of the 3 elements.",
+          "target": "Up to 12 enemies within a range of 8m",
+          "casting_time": "Instant",
+          "cooldown": "60 sec.",
+          "duration": "4.67 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "67",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1400%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2800%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Special Bracelet",
+      "icon_position": {
+        "x": -50,
+        "y": -175
+      }
+    },
+    {
+      "name": "Floresta",
+      "info": {
+        "Targets": "4 enemies",
+        "Range": "0.5~9m away",
+        "Splash": "0.8 DMG within  2m range",
+        "Hits per attack": "2",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Shooting DMG": "+10%",
+        "Magical DMG": "-10%",
+        "Debuff RES": "-10%"
+      },
+      "stats": {
+        "ASPD": "153",
+        "Bonus ATK": "400%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "20",
+        "Ice RES": "20",
+        "Lightning RES": "20",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+10%",
+        "Penetration": "10+25"
+      },
+      "skills": [
+        {
+          "name": "Rise Rodia",
+          "image": "flo_raizrodia.jpg",
+          "description": "Summons the root of the tree to give damage. Drags down flying enemies to the ground and holds them. Gives a continuous damage.",
+          "target": "Up to 6 enemies 10m away and within a 6m radius",
+          "casting_time": "1.716 sec.",
+          "cooldown": "10 sec.",
+          "duration": "1.26 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "200",
+          "aggro": "50",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 948.67%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1897%"
+            },
+            {
+              "level": "Level 11",
+              "value": "АТК: 2087%"
+            },
+            {
+              "level": "Level 12",
+              "value": "АТК: 2276%"
+            },
+            {
+              "level": "Level 13",
+              "value": "АТК: 2276%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Floral Breeze",
+          "image": "flo_floralbreeze.jpg",
+          "description": "Blows out blade leaves to the enemy.",
+          "target": "Up to 12 enemies 15m away and at an angle of 80 degrees",
+          "casting_time": "1.452 sec.",
+          "cooldown": "15 sec.",
+          "duration": "3.834 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "300",
+          "aggro": "60",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2174.2%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4348%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Floral Twister",
+          "image": "flo_floraltwister.jpg",
+          "description": "Rotates so fast and attacks enemies nearby with blade leaves.",
+          "target": "Up to 12 enemies within a range of 7m.",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "6.435 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "550",
+          "aggro": "70",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 3000%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 6000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Final Mantara",
+          "image": "flo_aquimantara.jpg",
+          "description": "Summons Mantara. It will wither if it gets to far from the Rose Spirit.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "5.397 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "600",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "One can be summoned at the same time"
+            },
+            {
+              "level": "Level 10",
+              "value": "One can be summoned at the same time"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Rose, The Heart",
+          "image": "job_roseheart.jpg",
+          "description": "Summons to targeted location",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "60 sec.",
+          "duration": "4.917 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "800",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "One can be summoned at the same time"
+            },
+            {
+              "level": "Level 10",
+              "value": "One can be summoned at the same time"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [INT]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [INT]",
+        "Ignore additional RES according to extra [INT] * 4",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Special Bracelet + Special Bracelet",
+      "icon_position": {
+        "x": -400,
+        "y": 0
+      }
+    }
+  ]
+}

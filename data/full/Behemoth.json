@@ -1,0 +1,282 @@
+{
+  "slug": "Behemoth",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Behemoths Wrath Duadine",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Leather",
+    "costume": "None",
+    "gloves": "Gloves",
+    "ring": "Ring",
+    "weapon_costume": "Elite Bracelet of Behemoth Costume Siucoatle Event Siucoatl",
+    "belt": "Belt",
+    "shoes": "Shoes",
+    "artifact": "Enochs Book",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Ebediot",
+    "image": "job_ebediot.jpg",
+    "description": "Ignites a fire that others cannot digest, and [Ebediot] increases in level when the duration ends. After ignition ends and the extreme heat state is entered, it transitions to [Ashayokar].",
+    "target": "Self-Buff",
+    "casting_time": "1.033 sec.",
+    "cooldown": "0.5 sec.",
+    "duration": "1.766 sec.",
+    "sp_cost": "750",
+    "consume_item": "Ancient Star Orb × 27",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "[Ebediot]",
+          "Duration: 300",
+          "A.R. +1",
+          "ATK +20%",
+          "Monster ATK +100%",
+          "Max Fire RES +10",
+          "Ice Resistance -30",
+          "Ignores enemy monster RES by 150",
+          "[Ashayokar]",
+          "Duration: 300s",
+          "D.R. +1",
+          "IMM +15",
+          "Special Effects:",
+          "- Absorb Fire-Attribute skills as HP (except from other [Behemoth])",
+          "- 10% Chance to inflict [Burn] on attacker."
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Darvaza",
+      "equipped_items": "Fire Bracelet",
+      "icon_position": {
+        "x": -300,
+        "y": -375
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Darvaza",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.5~8m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "-10%",
+        "Shooting DMG": "+20%",
+        "Magical DMG": "-20%"
+      },
+      "stats": {
+        "ASPD": "203",
+        "Bonus ATK": "350%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "50",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "30",
+        "Ice RES": "20",
+        "Lightning RES": "10",
+        "Abnormal RES": "10"
+      },
+      "lv25_bonus": {
+        "Penetration": "10+15",
+        "Immunity": "10+5"
+      },
+      "skills": [
+        {
+          "name": "Ar Almak",
+          "image": "dwz_aralmak.jpg",
+          "description": "Emits flames that burn the enemy.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "6 sec.",
+          "duration": "1.466 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "250",
+          "aggro": "50",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1600%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3200%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Ar Giryan",
+          "image": "dwz_argyryan.jpg",
+          "description": "Burns enemies in front with a wall of fire.",
+          "target": "",
+          "casting_time": "1.7 sec.",
+          "cooldown": "15 sec.",
+          "duration": "2.366 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "680",
+          "aggro": "100",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Ereyani Er",
+          "image": "dwz_ereyanyer.jpg",
+          "description": "Focuses the power of the beast lord and launches a concentrated attack on the designated enemy.",
+          "target": "",
+          "casting_time": "1.033 sec.",
+          "cooldown": "6 sec.",
+          "duration": "3.766 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "1050",
+          "aggro": "125",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Kul Urmag",
+          "image": "dwz_kulurmag.jpg",
+          "description": "Turns everything around the caster to ashes. However, [Kul Urden] cannot overlap with [Pollute Water] and [Taabu].",
+          "target": "",
+          "casting_time": "1.2 sec.",
+          "cooldown": "18 sec.",
+          "duration": "3.3 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "1800",
+          "aggro": "150",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Yakairan Et",
+          "image": "dwz_yakylanet.jpg",
+          "description": "Burns everything around with the beast lords flames.",
+          "target": "",
+          "casting_time": "1.7 sec.",
+          "cooldown": "28 sec.",
+          "duration": "2.2 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "2300",
+          "aggro": "150",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 3200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 6400%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [INT]",
+        "[PVP/PVE Maps] Additional 6% DMG according to extra [INT]",
+        "Ignore additional RES according to extra [INT] * 4",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Fire Bracelet",
+      "icon_position": {
+        "x": -300,
+        "y": -375
+      }
+    }
+  ]
+}

@@ -1,0 +1,1921 @@
+{
+  "slug": "Angie",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "None",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Leather",
+    "costume": "None",
+    "gloves": "Gloves Leather",
+    "ring": "Ring",
+    "weapon_costume": "None",
+    "belt": "Belt Leather",
+    "shoes": "Shoes Leather",
+    "artifact": "Talt Hammer",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Gatling Empowerment",
+    "image": "job_fastbuild.jpg",
+    "description": "With your knowledge about gatling structures, you can increase the shooting power of your team members and allow yourself to build fast.",
+    "target": "Self-buff",
+    "casting_time": "0 sec.",
+    "cooldown": "5 sec.",
+    "duration": "2 sec.",
+    "sp_cost": "400",
+    "consume_item": "Ancient Star Orb × 3",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration : 300 sec",
+          "For Angie, Casting Time -50%",
+          "For your team, the following applies:",
+          "A.R. +1",
+          "Critical Rate, Critical Damage and Monster Damage +10%",
+          "Shooting attack damage +20%",
+          "Received Physical Damage -20%",
+          "Received Magical Damage +20%",
+          "Ignore DEF +5%",
+          "All Stats +3"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Install Trap",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": -175
+      }
+    },
+    {
+      "stance_name": "Construction",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": 0,
+        "y": -175
+      }
+    },
+    {
+      "stance_name": "Defensive Construction",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": 0,
+        "y": -175
+      }
+    },
+    {
+      "stance_name": "Install Trap",
+      "equipped_items": "Tool",
+      "icon_position": {
+        "x": -150,
+        "y": -175
+      }
+    },
+    {
+      "stance_name": "Construction",
+      "equipped_items": "Tool",
+      "icon_position": {
+        "x": 0,
+        "y": -175
+      }
+    },
+    {
+      "stance_name": "Defensive Construction",
+      "equipped_items": "Tool",
+      "icon_position": {
+        "x": 0,
+        "y": -175
+      }
+    },
+    {
+      "stance_name": "Architecture",
+      "equipped_items": "Tool",
+      "icon_position": {
+        "x": -300,
+        "y": -325
+      }
+    },
+    {
+      "stance_name": "Ancient Tactics",
+      "equipped_items": "Tool",
+      "icon_position": {
+        "x": -50,
+        "y": -325
+      }
+    },
+    {
+      "stance_name": "Plow-Guard",
+      "equipped_items": "Great Sword",
+      "icon_position": {
+        "x": 0,
+        "y": -100
+      }
+    },
+    {
+      "stance_name": "Roof-Guard",
+      "equipped_items": "Great Sword",
+      "icon_position": {
+        "x": 0,
+        "y": -125
+      }
+    },
+    {
+      "stance_name": "Sidewinder",
+      "equipped_items": "Great Sword",
+      "icon_position": {
+        "x": 0,
+        "y": -300
+      }
+    },
+    {
+      "stance_name": "Hanging Guard",
+      "equipped_items": "Great Sword",
+      "icon_position": {
+        "x": -100,
+        "y": -425
+      }
+    },
+    {
+      "stance_name": "Ancient Slayer",
+      "equipped_items": "Great Sword",
+      "icon_position": {
+        "x": -150,
+        "y": -250
+      }
+    },
+    {
+      "stance_name": "Blast Guard",
+      "equipped_items": "Great Sword",
+      "icon_position": {
+        "x": -250,
+        "y": -375
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Install Trap",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.1~1m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "150",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [
+        {
+          "name": "Detection",
+          "image": "trp_detection.jpg",
+          "description": "Reveals invisible characters and locates hidden objects.",
+          "target": "",
+          "casting_time": "1.133 sec.",
+          "cooldown": "0 sec.",
+          "duration": "1.13 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "50",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Transparency Detecting"
+            },
+            {
+              "level": "Level 10",
+              "value": "Transparency Detecting"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Critical Disease",
+          "image": "trp_criticaldisease.jpg",
+          "description": "Builds a trap that releases a poisonous cloud of smoke when triggered.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "4 sec.",
+          "duration": "2 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "75",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Build Critical Disease"
+            },
+            {
+              "level": "Level 10",
+              "value": "Build Critical Disease"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Invisible String",
+          "image": "trp_invisiblestring.jpg",
+          "description": "Set a booby trap that deals Physical Damage to enemies. (Also applicable to flying monsters.)",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "6 sec.",
+          "duration": "2 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "75",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Build Invisible String"
+            },
+            {
+              "level": "Level 10",
+              "value": "Build Invisible String"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Explosion",
+          "image": "trp_explosion.jpg",
+          "description": "Sets an explosive trap that blocks attacks from several enemies at the same time.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "8 sec.",
+          "duration": "2 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "100",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Build Explosion"
+            },
+            {
+              "level": "Level 10",
+              "value": "Build Explosion"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": -175
+      }
+    },
+    {
+      "name": "Construction",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.1~15m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "150",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [
+        {
+          "name": "Fence Construction",
+          "image": "con_buildfence.jpg",
+          "description": "Builds a fence that obstructs enemy movement and prevents them from advancing.",
+          "target": "Up to 6 fences simultaneously",
+          "casting_time": "10 sec.",
+          "cooldown": "0 sec.",
+          "duration": "0.33 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "150",
+          "aggro": "0",
+          "skill_type": "Build",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Up to 6 fences simultaneously"
+            },
+            {
+              "level": "Level 10",
+              "value": "Up to 6 fences simultaneously"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Cannon-Turret Const.",
+          "image": "con_buildturret.jpg",
+          "description": "Constructs a cannon-turret that automatically attacks enemies.",
+          "target": "Up to 6 fences simultaneously",
+          "casting_time": "10 sec.",
+          "cooldown": "2 sec.",
+          "duration": "0.33 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "200",
+          "aggro": "0",
+          "skill_type": "Build",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Up to 6 fences simultaneously"
+            },
+            {
+              "level": "Level 10",
+              "value": "Up to 6 fences simultaneously"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Safety Ward Const.",
+          "image": "con_buildsafetyward.jpg",
+          "description": "Creates a protective ward that defends the characters within.",
+          "target": "Up to 3 fences simultaneously",
+          "casting_time": "10 sec.",
+          "cooldown": "4 sec.",
+          "duration": "0.33 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "250",
+          "aggro": "0",
+          "skill_type": "Build",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Up to 3 fences simultaneously"
+            },
+            {
+              "level": "Level 10",
+              "value": "Up to 3 fences simultaneously"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Regen. Ward Const.",
+          "image": "con_buildregenward.jpg",
+          "description": "Creates a regenerative ward that continuously restores the HP of characters within.",
+          "target": "Up to 3 fences simultaneously",
+          "casting_time": "10 sec.",
+          "cooldown": "6 sec.",
+          "duration": "0.33 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "250",
+          "aggro": "0",
+          "skill_type": "Build",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Up to 3 fences simultaneously"
+            },
+            {
+              "level": "Level 10",
+              "value": "Up to 3 fences simultaneously"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "S.C.-Turret Const.",
+          "image": "con_buildturret.jpg",
+          "description": "Builds a Siegecannon-Turret that is able to attack several enemies simultaneously.",
+          "target": "Up to 3 fences simultaneously",
+          "casting_time": "10 sec.",
+          "cooldown": "8 sec.",
+          "duration": "0.33 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "300",
+          "aggro": "0",
+          "skill_type": "Build",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Up to 3 fences simultaneously"
+            },
+            {
+              "level": "Level 10",
+              "value": "Up to 3 fences simultaneously"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": 0,
+        "y": -175
+      }
+    },
+    {
+      "name": "Defensive Construction",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.1~15m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "150",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [
+        {
+          "name": "Fence Construction",
+          "image": "con_buildfence.jpg",
+          "description": "Builds a fence that obstructs enemy movement and prevents them from advancing.",
+          "target": "Up to 6 fences simultaneously",
+          "casting_time": "10 sec.",
+          "cooldown": "0 sec.",
+          "duration": "0.33 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "150",
+          "aggro": "0",
+          "skill_type": "Build",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Up to 6 fences simultaneously"
+            },
+            {
+              "level": "Level 10",
+              "value": "Up to 6 fences simultaneously"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Spike Trap",
+          "image": "cony_buildspiketrap.jpg",
+          "description": "Constructs a trap which fires a sharp projectile.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "2 sec.",
+          "duration": "2 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "50",
+          "aggro": "0",
+          "skill_type": "Build",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Build Spike Trap"
+            },
+            {
+              "level": "Level 10",
+              "value": "Build Spike Trap"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Rotating Blade Const.",
+          "image": "cony_buildrotateblade1.jpg",
+          "description": "Manufactures a whirling sword that attacks adjacent enemies.",
+          "target": "Up to 5 fences simultaneously",
+          "casting_time": "10 sec.",
+          "cooldown": "4 sec.",
+          "duration": "0.33 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "250",
+          "aggro": "0",
+          "skill_type": "Build",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Up to 5 fences simultaneously"
+            },
+            {
+              "level": "Level 10",
+              "value": "Up to 5 fences simultaneously"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Concen. Ward Const.",
+          "image": "cony_buildsteamward.jpg",
+          "description": "Constructs a ward that increases power.",
+          "target": "Up to 3 fences simultaneously",
+          "casting_time": "10 sec.",
+          "cooldown": "8 sec.",
+          "duration": "0.33 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "250",
+          "aggro": "0",
+          "skill_type": "Build",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Up to 3 fences simultaneously"
+            },
+            {
+              "level": "Level 10",
+              "value": "Up to 3 fences simultaneously"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Great RB Construction",
+          "image": "cony_buildrotateblade2.jpg",
+          "description": "Manufactures a whirling sword that attacks adjacent ground and airborne enemies.",
+          "target": "Up to 3 fences simultaneously",
+          "casting_time": "10 sec.",
+          "cooldown": "10 sec.",
+          "duration": "0.33 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "300",
+          "aggro": "0",
+          "skill_type": "Build",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Up to 3 fences simultaneously"
+            },
+            {
+              "level": "Level 10",
+              "value": "Up to 3 fences simultaneously"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": 0,
+        "y": -175
+      }
+    },
+    {
+      "name": "Architecture",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.1~15m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "150",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "Penetration": "5+15",
+        "Immunity": "5+10"
+      },
+      "skills": [
+        {
+          "name": "Defensive Tool",
+          "image": "dsr_repairtool.jpg",
+          "description": "Builds a structure which recovers HP of nearby structures. Only 1 unit available.",
+          "target": "",
+          "casting_time": "10 sec.",
+          "cooldown": "60 sec.",
+          "duration": "0.33 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "1000",
+          "aggro": "0",
+          "skill_type": "Build",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Increases structure HP recovery and frequency of recovery according to DEX stats"
+            },
+            {
+              "level": "Level 10",
+              "value": "Increases structure HP recovery and frequency of recovery according to DEX stats"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Enhanced Rotating Blade Build",
+          "image": "gst_improvedrotateblade.jpg",
+          "description": "Builds an enhanced rotating blade which can use a stronger attack. Only 3 units available.",
+          "target": "",
+          "casting_time": "10 sec.",
+          "cooldown": "30 sec.",
+          "duration": "2 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "1000",
+          "aggro": "0",
+          "skill_type": "Build",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Level 10"
+            },
+            {
+              "level": "Level 10",
+              "value": "<img src=\"./images/Skills/arc_detectionward.jpg\""
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Detection Ward Construction",
+          "image": "arc_detectionward.jpg",
+          "description": "Builds a ward which can detect nearby invisible enemy and flying enemies. Only 3 units available.",
+          "target": "",
+          "casting_time": "10 sec.",
+          "cooldown": "30 sec.",
+          "duration": "0.33 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "1000",
+          "aggro": "0",
+          "skill_type": "Build",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Cancel invisible status of enemy when it detects and also inflicts ["
+            },
+            {
+              "level": "Level 10",
+              "value": "Cancel invisible status of enemy when it detects and also inflicts ["
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Electric Punisher Construction",
+          "image": "dsr_antiairgun.jpg",
+          "description": "Builds a turret which recognizes an enemy to shoot an electronic ray of light. Only 3 unit available.",
+          "target": "",
+          "casting_time": "10 sec.",
+          "cooldown": "60 sec.",
+          "duration": "0.33 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "1000",
+          "aggro": "0",
+          "skill_type": "Build",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Increases the chance to use [Electric Punisher] skill according to DEX stats"
+            },
+            {
+              "level": "Level 10",
+              "value": "Increases the chance to use [Electric Punisher] skill according to DEX stats"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Regenerator Construction",
+          "image": "arc_interruptionward.jpg",
+          "description": "Builds a ward which recovers HP of nearby friendly force quickly. Only 1 unit available.",
+          "target": "",
+          "casting_time": "10 sec.",
+          "cooldown": "60 sec.",
+          "duration": "0.33 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "1000",
+          "aggro": "0",
+          "skill_type": "Build",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Increases HP recovery, frequency of recovery according to DEX stats"
+            },
+            {
+              "level": "Level 10",
+              "value": "Increases HP recovery, frequency of recovery according to DEX stats"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Tool",
+      "icon_position": {
+        "x": -300,
+        "y": -325
+      }
+    },
+    {
+      "name": "Ancient Tactics",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.1~1m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "+10%",
+        "Shooting DMG": "-10%",
+        "Magical DMG": "-15%",
+        "Debuff RES": "-10%"
+      },
+      "stats": {
+        "ASPD": "150",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "20"
+      },
+      "lv25_bonus": {
+        "Immunity": "10+20"
+      },
+      "skills": [
+        {
+          "name": "Miracle",
+          "image": "aot_miracle.jpg",
+          "description": "Execute a tactic that increases the offensive and defensive capacity of the ally.",
+          "target": "",
+          "casting_time": "0.866 sec.",
+          "cooldown": "30 sec.",
+          "duration": "130 seconds",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "150",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 10 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 100 seconds"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 110 seconds"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 120 seconds"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 130 seconds"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Protecting Booster",
+          "image": "aot_caenopy.jpg",
+          "description": "Increase the defensive capacity of target ally.",
+          "target": "",
+          "casting_time": "0.866 sec.",
+          "cooldown": "10 sec.",
+          "duration": "390 seconds",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 30 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 330 seconds"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 360 seconds"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 390 seconds"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Shearing Booster",
+          "image": "aot_siaringbooster.jpg",
+          "description": "Increase the offensive capacity of target ally.",
+          "target": "",
+          "casting_time": "0.866 sec.",
+          "cooldown": "10 sec.",
+          "duration": "390 seconds",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 30 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 330 seconds"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 360 seconds"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 390 seconds"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Bartor",
+          "image": "aot_bartor.jpg",
+          "description": "Remove all harmful effects and restore HP of all team members.",
+          "target": "",
+          "casting_time": "0.866 sec.",
+          "cooldown": "20 sec.",
+          "duration": "1.6 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "150",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Restore 15% of maximum HP"
+            },
+            {
+              "level": "Level 10",
+              "value": "Restore 15% of maximum HP"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Additional Training",
+          "image": "aot_Additionaltraing.jpg",
+          "description": "Increase skill level by enhancing own tactical capacity.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "50 sec.",
+          "duration": "1.033 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Increase all skills level by enhancing your own tactical capacity."
+            },
+            {
+              "level": "Level 10",
+              "value": "Increase all skills level by enhancing your own tactical capacity."
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 2% of extra [None]"
+      ],
+      "equipped_items": "Tool",
+      "icon_position": {
+        "x": -50,
+        "y": -325
+      }
+    },
+    {
+      "name": "Plow-Guard",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.25~1.75m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "10",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+15%",
+        "Block": "+10",
+        "Critical": "+10"
+      },
+      "skills": [
+        {
+          "name": "Charge",
+          "image": "pg_charge.jpg",
+          "description": "Charges enemies down with a sword.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "0 sec.",
+          "duration": "3.3 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "100",
+          "aggro": "56",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 225%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 450%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Vertical Slash",
+          "image": "pg_verticalslash.jpg",
+          "description": "A powerful downward slash. It inflicts triple damage on large monsters and Double Damage on smaller ones.",
+          "target": "1 adjacent enemy",
+          "casting_time": "1.333 sec.",
+          "cooldown": "10 sec.",
+          "duration": "1.7 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "200",
+          "aggro": "56",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 214%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 428%"
+            },
+            {
+              "level": "Level 11",
+              "value": "АТК: 470%"
+            },
+            {
+              "level": "Level 12",
+              "value": "АТК: 513%"
+            },
+            {
+              "level": "Level 13",
+              "value": "АТК: 513%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Skyliner",
+          "image": "pg_skyliner.jpg",
+          "description": "Slashes across a group of enemies.",
+          "target": "Up to 6 Enemies nearby",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "2.93 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "250",
+          "aggro": "50",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 190%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 380%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Fury",
+          "image": "rg_fury.jpg",
+          "description": "Maximises Attack SPD by using whole bodys energy. Canceled, if Stance changes.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "1.2 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "300",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 17.5 sec"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 40 sec"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration : 42.5 sec"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration : 45 sec"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration : 47.5 sec"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Great Sword",
+      "icon_position": {
+        "x": 0,
+        "y": -100
+      }
+    },
+    {
+      "name": "Roof-Guard",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.1~1.5m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "158",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+30%",
+        "Critical": "+6"
+      },
+      "skills": [
+        {
+          "name": "Dread Worm",
+          "image": "rg_dreadworm.jpg",
+          "description": "Brandishes a sword in a sweeping motion, striking terror into the hearts of your enemies.",
+          "target": "Up to 5 enemies 9m away and within 3m width",
+          "casting_time": "2 sec.",
+          "cooldown": "10 sec.",
+          "duration": "1.77 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "200",
+          "aggro": "41",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 150%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 300%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Genocide",
+          "image": "rg_genocide.jpg",
+          "description": "Advances upon enemies with 7 consecutive slashes.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "3.73 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "250",
+          "aggro": "111",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 493%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 986%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Fury",
+          "image": "rg_fury.jpg",
+          "description": "Maximises Attack SPD by using whole bodys energy. Canceled, if Stance changes.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "1.2 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "300",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 17.5 sec"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 40 sec"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration : 42.5 sec"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration : 45 sec"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration : 47.5 sec"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Great Sword",
+      "icon_position": {
+        "x": 0,
+        "y": -125
+      }
+    },
+    {
+      "name": "Sidewinder",
+      "info": {
+        "Targets": "4 enemies",
+        "Range": "0.1~1.5m away",
+        "Splash": "0.8 DMG within  1.5m range",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "325",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+15%",
+        "Critical": "+6"
+      },
+      "skills": [
+        {
+          "name": "Sweet Dreamer",
+          "image": "tg_sweetdreamer.jpg",
+          "description": "Swing a sword in an ascending arc and drive enemies to the sky.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "0 sec.",
+          "duration": "2.03 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "100",
+          "aggro": "89",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 315%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 630%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Ultimate Dash",
+          "image": "sw_ultimatedash.jpg",
+          "description": "A forceful charge that sweeps enemies away.",
+          "target": "Up to 5 enemies 5.6m away and within 3m width",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "2.43 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "200",
+          "aggro": "57",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 230%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 459%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Decision",
+          "image": "sw_decision.jpg",
+          "description": "Leaps and strikes enemies in mid-air.",
+          "target": "Up to 5 adjacent enemies",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "2.07 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "131",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 604%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1208%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Great Sword",
+      "icon_position": {
+        "x": 0,
+        "y": -300
+      }
+    },
+    {
+      "name": "Hanging Guard",
+      "info": {
+        "Targets": "4 enemies",
+        "Range": "0.1~1.5m away",
+        "Splash": "0.75 DMG within  1m range",
+        "Hits per attack": "1",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Shooting DMG": "-20%",
+        "Magical DMG": "+10%"
+      },
+      "stats": {
+        "ASPD": "223",
+        "Bonus ATK": "290%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "50",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+23%",
+        "Critical": "+13",
+        "Penetration": "15+20",
+        "Immunity": "5+15"
+      },
+      "skills": [
+        {
+          "name": "Shell Breaker",
+          "image": "hgg_shellbreaker.jpg",
+          "description": "Can smash enemys armor easily by using the heavy weight of sword. But Attack SPD and ATK to Soft Armor decrease. Canceled, if Stance changes.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "5 sec.",
+          "duration": "2.033 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "300",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Damage +60% to Heavy Armor, +20% Light Armor"
+            },
+            {
+              "level": "Level 10",
+              "value": "Damage +60% to Heavy Armor, +20% Light Armor"
+            },
+            {
+              "level": "Level 11",
+              "value": "A.R. +1"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Carnage",
+          "image": "hgg_carnage.jpg",
+          "description": "Attacks the enemy by creating a rush of rubble with the great sword.",
+          "target": "Up to 9 enemies 6m away and within a 5m radius",
+          "casting_time": "1.333 sec.",
+          "cooldown": "10 sec.",
+          "duration": "2.4 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "340",
+          "aggro": "57",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Slaughter",
+          "image": "hgg_slaughter.jpg",
+          "description": "Attacks the enemy 4 times with a great sword.",
+          "target": "Up to 5 adjacent enemies",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "4.03 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "440",
+          "aggro": "116",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Volition",
+          "image": "hgg_volition.jpg",
+          "description": "Plunges sword into enemy while airborne.",
+          "target": "Up to 6 Enemies nearby",
+          "casting_time": "Instant",
+          "cooldown": "5 sec.",
+          "duration": "2.7 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "540",
+          "aggro": "75",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Ruthless",
+          "image": "hgg_ruthless.jpg",
+          "description": "Attacks the enemy with weight of the sword.",
+          "target": "Up to 3 adjacent enemies",
+          "casting_time": "Instant",
+          "cooldown": "17 sec.",
+          "duration": "3.43 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "650",
+          "aggro": "170",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5000%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [STR]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [STR]",
+        "Ignore additional DEF according to extra [STR] * 4",
+        "Additional DMG against [PC] + 2x",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Great Sword",
+      "icon_position": {
+        "x": -100,
+        "y": -425
+      }
+    },
+    {
+      "name": "Ancient Slayer",
+      "info": {
+        "Targets": "4 enemies",
+        "Range": "2.5m away",
+        "Splash": "0.75 DMG within  2.7m range",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Shooting DMG": "-15%",
+        "Magical DMG": "+15%"
+      },
+      "stats": {
+        "ASPD": "187",
+        "Bonus ATK": "280%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "50",
+        "EVA": "0",
+        "BLK": "10",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+13%",
+        "Block": "+5",
+        "Penetration": "20+15",
+        "Immunity": "5+10",
+        "DEF": "5"
+      },
+      "skills": [
+        {
+          "name": "Berserker",
+          "image": "berserknessgs.jpg",
+          "description": "Improve your ATK and Block ability by awakening your indomitable fighting spirit. However, your speed will decrease. Removed on Stance change.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "30 sec.",
+          "duration": "1.533 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "340",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 150 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 150 seconds"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration : 150 seconds"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration : 150 seconds"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration : 150 seconds"
+            }
+          ],
+          "special": [
+            "Additional Damage of all skill attack doubles against [",
+            "Additional Damage of all skill attack doubles against [",
+            "Additional Damage of all skill attack doubles against [",
+            "Additional Damage of all skill attack doubles against [",
+            "Additional Damage of all skill attack doubles against ["
+          ]
+        },
+        {
+          "name": "Arc Down",
+          "image": "arcdowngs.jpg",
+          "description": "Strike the enemy down with a big arc.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "5 sec.",
+          "duration": "2.2 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "550",
+          "aggro": "58",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1600%"
+            }
+          ],
+          "special": [
+            "Additional damage doubles if the enemy is affected by one of the following debuffs:",
+            "Additional damage doubles if the enemy is affected by one of the following debuffs:"
+          ]
+        },
+        {
+          "name": "Dragona Bash",
+          "image": "dragonabashgs.jpg",
+          "description": "Approach and strike the enemy with great force.",
+          "target": "Up to 5 enemies 12m away and within 3 width",
+          "casting_time": "1.533 sec.",
+          "cooldown": "14 sec.",
+          "duration": "4.033 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "800",
+          "aggro": "98",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Fly and Crush",
+          "image": "flyandcrushgs.jpg",
+          "description": "Jump high and strike the enemy from above.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "18 sec.",
+          "duration": "2.2 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "720",
+          "aggro": "74",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 900%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1800%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Additional Destruction",
+          "image": "addestructiongs.jpg",
+          "description": "Cut all enemies in a row down with a strong and splendid slash.",
+          "target": "Up to 5 enemies 6m away and within a 5m radius",
+          "casting_time": "Instant",
+          "cooldown": "27 sec.",
+          "duration": "3.7 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "1040",
+          "aggro": "145",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2000%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4000%"
+            }
+          ],
+          "special": [
+            "Additional damage doubles if the enemy is affected by a debuff from the following groups:",
+            "Additional damage doubles if the enemy is affected by a debuff from the following groups:"
+          ]
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [STR]",
+        "[PVP/PVE Maps] Additional 6% DMG according to extra [STR]",
+        "Ignore additional DEF according to extra [STR] * 1",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 1 * 50"
+      ],
+      "equipped_items": "Great Sword",
+      "icon_position": {
+        "x": -150,
+        "y": -250
+      }
+    },
+    {
+      "name": "Blast Guard",
+      "info": {
+        "Targets": "4 enemies",
+        "Range": "0.1~1.5m away",
+        "Splash": "0.8 DMG within  2m range",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "-10%",
+        "Shooting DMG": "-10%"
+      },
+      "stats": {
+        "ASPD": "280",
+        "Bonus ATK": "340%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "50",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+22%",
+        "Critical": "+12",
+        "Penetration": "35+13",
+        "Immunity": "10+20"
+      },
+      "skills": [
+        {
+          "name": "Blast Preparation",
+          "image": "bgd_Blastguardskl01.jpg",
+          "description": "Improve your destructive power by equipping your great sword with explosives to be detonated upon launching an attack.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "300 seconds",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 300 seconds"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Blast Voltage",
+          "image": "bgd_Blastguardskl02.jpg",
+          "description": "Smash the great sword onto the ground, creating an explosive shock.",
+          "target": "Up to 8 surrounding enemies",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "2.7 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "540",
+          "aggro": "75",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1150%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2300%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Blast Chain",
+          "image": "bgd_Blastguardskl03.jpg",
+          "description": "Cause a chain explosion through consecutive strikes.",
+          "target": "Up to 3 adjacent enemies",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "3.63 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "450",
+          "aggro": "164",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1550%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3100%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Blast Swinger",
+          "image": "bgd_Blastguardskl04.jpg",
+          "description": "Blast enemies away with a big swing from your great sword.",
+          "target": "Up to 4m away / within a radius of 5m / Max. 6 targets",
+          "casting_time": "Instant",
+          "cooldown": "12 sec.",
+          "duration": "2.93 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "550",
+          "aggro": "146",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Blast Device",
+          "image": "bgd_Blastguardskl05.jpg",
+          "description": "Large amounts of explosives are detonated at once through continuous attacks, causing a huge explosion.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "6.57 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "650",
+          "aggro": "223",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 3350%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 6700%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 7% of extra [STR]",
+        "[PVP/PVE Maps] Additional 3% DMG according to extra [STR]",
+        "Ignore additional DEF according to extra [STR] * 3",
+        "Ignore additional RES according to extra [STR] * 3"
+      ],
+      "equipped_items": "Great Sword",
+      "icon_position": {
+        "x": -250,
+        "y": -375
+      }
+    }
+  ]
+}

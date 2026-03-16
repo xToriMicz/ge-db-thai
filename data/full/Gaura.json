@@ -1,0 +1,293 @@
+{
+  "slug": "Gaura",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "New Year Blessing Love and Resentment",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Leather",
+    "costume": "None",
+    "gloves": "Gloves",
+    "ring": "Ring",
+    "weapon_costume": "Tri-Eine Event Tri-Eine",
+    "belt": "Belt",
+    "shoes": "Shoes",
+    "artifact": "Ship in a Bottle",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Comina Pontus",
+    "image": "job_cominapontus.jpg",
+    "description": "Finds calm amidst the waves of battle, but becomes vulnerable to electric magic damage.",
+    "target": "Self-Buff",
+    "casting_time": "1.7 sec.",
+    "cooldown": "30 sec.",
+    "duration": "1.366 sec.",
+    "sp_cost": "700",
+    "consume_item": "Ancient Star Orb × 22",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration: 240 seconds",
+          "A.R. +1",
+          "ATK against monsters +40%",
+          "Increases physical penetration by 1 for every 20% ATK against monsters",
+          "Electric magic damage taken +10%",
+          "Strengthens [Lindemary] stance skills",
+          "Deals 2x skill damage to monsters in [Berlonia Plena] state (5x if large)"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -300,
+        "y": -250
+      }
+    },
+    {
+      "stance_name": "Lindemary",
+      "equipped_items": "Polearm",
+      "icon_position": {
+        "x": -300,
+        "y": -275
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.1~9m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "177",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [STR]",
+        "[PVP/PVE Maps] Additional 3% DMG according to extra [STR]"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -300,
+        "y": -250
+      }
+    },
+    {
+      "name": "Lindemary",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.1~2m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Shooting DMG": "-20%",
+        "Magical DMG": "+15%"
+      },
+      "stats": {
+        "ASPD": "220",
+        "Bonus ATK": "320%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "40",
+        "EVA": "0",
+        "BLK": "5",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "Block": "+5",
+        "Critical": "+20",
+        "Penetration": "10+10",
+        "Immunity": "5+5"
+      },
+      "skills": [
+        {
+          "name": "Vienis",
+          "image": "ldm_viennis.jpg",
+          "description": "Marks a distant enemy with the Ice Butterfly. The marked target is put in [Berlonia] state.",
+          "target": "",
+          "casting_time": "0.7 sec.",
+          "cooldown": "7.5 sec.",
+          "duration": "2.033 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "350",
+          "aggro": "40",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2400%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4800%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Felipeze",
+          "image": "ldm_philipez.jpg",
+          "description": "Leaps to a designated point and attacks enemies within range. On hit, the caster receives a [Destruido] buff proportional to skill level and becomes invincible for 1 second.",
+          "target": "",
+          "casting_time": "5 sec.",
+          "cooldown": "12 sec.",
+          "duration": "1.533 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "550",
+          "aggro": "70",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2700%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5400%"
+            },
+            {
+              "level": "Level 11",
+              "value": "АТК: 5940%"
+            },
+            {
+              "level": "Level 12",
+              "value": "АТК: 6480%"
+            },
+            {
+              "level": "Level 13",
+              "value": "АТК: 6480%"
+            }
+          ],
+          "special": [
+            "Additional damage increases up to 8x at maximum casting",
+            "Additional damage increases up to 8x at maximum casting",
+            "Additional damage increases up to 8x at maximum casting",
+            "Additional damage increases up to 8x at maximum casting",
+            "Additional damage increases up to 8x at maximum casting"
+          ]
+        },
+        {
+          "name": "Shinyuata",
+          "image": "ldm_sinnuata.jpg",
+          "description": "Attacks the enemies in front with the Ice Butterfly.",
+          "target": "Up to 5 enemies within a 7m x 120° area in front",
+          "casting_time": "1.033 sec.",
+          "cooldown": "15 sec.",
+          "duration": "2.466 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "630",
+          "aggro": "150",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 3010%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 6020%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Dimarie",
+          "image": "ldm_dimariae.jpg",
+          "description": "Attacks surrounding enemies like a crashing wave.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "19 sec.",
+          "duration": "3.366 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "750",
+          "aggro": "300",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2140%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4280%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Karkiola",
+          "image": "ldm_carrchiola.jpg",
+          "description": "Annihilates enemies within range. If Gaura in a calm state is within the range, grants beneficial effects to squad members in the skill area.",
+          "target": "",
+          "casting_time": "1.233 sec.",
+          "cooldown": "20 sec.",
+          "duration": "4.233 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "1200",
+          "aggro": "350",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2660%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5320%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [STR]",
+        "[PVP/PVE Maps] Additional 3% DMG according to extra [STR]",
+        "Ignore additional DEF according to extra [STR] * 4",
+        "Additional DMG against Monster according to 5 * 50"
+      ],
+      "equipped_items": "Polearm",
+      "icon_position": {
+        "x": -300,
+        "y": -275
+      }
+    }
+  ]
+}

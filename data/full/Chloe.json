@@ -1,0 +1,474 @@
+{
+  "slug": "Chloe",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Killer of the Ten Nobles Frost Crown Love and Resentment Judge, I still...",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Coat Leather",
+    "costume": "None",
+    "gloves": "Gloves Leather",
+    "ring": "Ring",
+    "weapon_costume": "Aqua Crystal Aqua Crystal (Event) [Costume] Chloes Insight [Costume] Chloes Melody [Costume] Chloes Wish [Costume] Chloes Affection [Costume] Chloes Riddle [Costume] Chloes Wisdom",
+    "belt": "Belt Leather",
+    "shoes": "Shoes Leather",
+    "artifact": "Leviathans Scale Ship in a Bottle",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Shud",
+    "image": "job_sude.jpg",
+    "description": "Empower those who follow you.",
+    "target": "None",
+    "casting_time": "0 sec.",
+    "cooldown": "30 sec.",
+    "duration": "1.7 sec.",
+    "sp_cost": "550",
+    "consume_item": "Ancient Star Orb × 10",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration: 360 seconds",
+          "ATK +5%",
+          "ATK SPD +5%",
+          "ATK Damage against monster +10%",
+          "A.R. +1"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Domination of Glacier",
+      "equipped_items": "Ice Bracelet",
+      "icon_position": {
+        "x": -150,
+        "y": -300
+      }
+    },
+    {
+      "stance_name": "Castigo",
+      "equipped_items": "Ice Bracelet",
+      "icon_position": {
+        "x": -150,
+        "y": -325
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "153",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Domination of Glacier",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "10m away",
+        "Splash": "None",
+        "Hits per attack": "3",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "-10%",
+        "Shooting DMG": "+20%",
+        "Debuff RES": "-30%"
+      },
+      "stats": {
+        "ASPD": "254",
+        "Bonus ATK": "300%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "50",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "Penetration": "10+20",
+        "Immunity": "5+10"
+      },
+      "skills": [
+        {
+          "name": "Blizzard Storm",
+          "image": "dog_snowstorm.jpg",
+          "description": "Makes the body move slowly due to the snow storm.",
+          "target": "",
+          "casting_time": "2.1 sec.",
+          "cooldown": "12 sec.",
+          "duration": "4.008 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "300",
+          "aggro": "221",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1070.4%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2140%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Ice Lance",
+          "image": "dog_icicle.jpg",
+          "description": "Pierces enemy by throwing a sharp icy spear.",
+          "target": "1 enemy within a range of 15m",
+          "casting_time": "5 sec.",
+          "cooldown": "10 sec.",
+          "duration": "2.7 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "50",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 196.5%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 393%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Thorn Ground",
+          "image": "dog_thornfield.jpg",
+          "description": "Creates Icy thorns on the ground that inflicts painful wounds.",
+          "target": "",
+          "casting_time": "5 sec.",
+          "cooldown": "20 sec.",
+          "duration": "3.433 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "72",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 176.4%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 352%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Bless of Water",
+          "image": "dog_snowflake.jpg",
+          "description": "Give the team members the blessing of water.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "4.933 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "600",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 360 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 360 seconds"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration : 360 seconds"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration : 360 seconds"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration : 360 seconds"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Fall Water",
+          "image": "dog_icebreaker.jpg",
+          "description": "Throws a giant block of ice to shock the target.",
+          "target": "Up to 19 enemies 15m away and within a 10m radius",
+          "casting_time": "2.8 sec.",
+          "cooldown": "30 sec.",
+          "duration": "2.7 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "1000",
+          "aggro": "197",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1715.99%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3431%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [INT]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [INT]",
+        "Ignore additional RES according to extra [INT] * 4",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Ice Bracelet",
+      "icon_position": {
+        "x": -150,
+        "y": -300
+      }
+    },
+    {
+      "name": "Castigo",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.5~12m away",
+        "Splash": "None",
+        "Hits per attack": "5",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "-20%",
+        "Shooting DMG": "+20%",
+        "Debuff RES": "-30%"
+      },
+      "stats": {
+        "ASPD": "187",
+        "Bonus ATK": "400%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "50",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "Penetration": "10+25",
+        "Immunity": "10+10"
+      },
+      "skills": [
+        {
+          "name": "Lensa",
+          "image": "cstg_lanzar.jpg",
+          "description": "Create multiple ice spheres and project them onto the ground.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "8 sec.",
+          "duration": "2.1 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "650",
+          "aggro": "197",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Oppression",
+          "image": "cstg_opresion.jpg",
+          "description": "The Magic Weapon Delphineus draws sacred water from the Temples to enhance its ability.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "30 sec.",
+          "duration": "1.7 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "1050",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 360 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 360 seconds"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration : 360 seconds"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration : 360 seconds"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration : 360 seconds"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Lagrima",
+          "image": "cstg_lagrima.jpg",
+          "description": "Freeze the groundwater up and attack the enemy.",
+          "target": "Up to 8 enemies 14m away and within a 4m radius",
+          "casting_time": "2.2 sec.",
+          "cooldown": "18 sec.",
+          "duration": "1.5 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "1150",
+          "aggro": "60",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Seto",
+          "image": "cstg_ceto.jpg",
+          "description": "Create multiple chunks of ice and drop them around.",
+          "target": "Up to 18 enemies within a range of 12m",
+          "casting_time": "2.7 sec.",
+          "cooldown": "32 sec.",
+          "duration": "1.9 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "1250",
+          "aggro": "452",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Tomb of Arakshar",
+          "image": "cstg_tombofarc.jpg",
+          "description": "Create multiple chunks of ice and shoot them to one target.",
+          "target": "1 enemy within a range of 16m",
+          "casting_time": "2.5 sec.",
+          "cooldown": "9 sec.",
+          "duration": "1.2 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "1550",
+          "aggro": "245",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 3000%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 6000%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 10% of extra [INT]",
+        "[PVP/PVE Maps] Additional 6% DMG according to extra [INT]",
+        "Ignore additional RES according to extra [INT] * 2",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Ice Bracelet",
+      "icon_position": {
+        "x": -150,
+        "y": -325
+      }
+    }
+  ]
+}

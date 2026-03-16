@@ -1,0 +1,678 @@
+{
+  "slug": "Veil",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "None",
+    "head": "None",
+    "earring": "Earring",
+    "face": "Dandy glasses",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Coat",
+    "costume": "None",
+    "gloves": "Gloves Leather",
+    "ring": "Ring",
+    "weapon_costume": "None",
+    "belt": "Belt Leather",
+    "shoes": "Shoes Leather",
+    "artifact": "Mustache Comb",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Edge",
+    "image": "job_Edge.jpg",
+    "description": "Uses brisant sharp bolts that specially crafted.",
+    "target": "Self-buff",
+    "casting_time": "0 sec.",
+    "cooldown": "90 sec.",
+    "duration": "1 sec.",
+    "sp_cost": "500",
+    "consume_item": "Ancient Star Orb × 5",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration 120 sec",
+          "Increases normal attack damage to an enemy in a far distance",
+          "Additional Damage by extra [DEX] * 0.5% is applied in proportion to distance (Max. +400%)",
+          "Skills ignore 80 DEF",
+          "Damage x1.5"
+        ]
+      },
+      {
+        "level": "Level 11",
+        "effects": [
+          "Duration 120 sec",
+          "Increases normal attack damage to an enemy in a far distance",
+          "Additional Damage by extra [DEX] * 0.5% is applied in proportion to distance (Max. +400%)",
+          "Skills ignore 80 DEF",
+          "Damage x1.5",
+          "A.R. +1"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Sagitta",
+      "equipped_items": "Crossbow",
+      "icon_position": {
+        "x": -100,
+        "y": -400
+      }
+    },
+    {
+      "stance_name": "Ancient Bolt",
+      "equipped_items": "Crossbow",
+      "icon_position": {
+        "x": -200,
+        "y": -350
+      }
+    },
+    {
+      "stance_name": "Twin Sting",
+      "equipped_items": "Crossbow + Crossbow",
+      "icon_position": {
+        "x": -350,
+        "y": -475
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Sagitta",
+      "info": {
+        "Targets": "6 enemies",
+        "Range": "0.75~13.5m away",
+        "Splash": "100% DMG within  1.8m range",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "220",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "30",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+25%",
+        "Ignore DEF": "+2%",
+        "Critical": "+8",
+        "Penetration": "25"
+      },
+      "skills": [
+        {
+          "name": "Hawkeye",
+          "image": "sgt_hawkeye.jpg",
+          "description": "Watch enemies with better eyesight.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "0 sec.",
+          "duration": "1.03 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "100",
+          "aggro": "0",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 330 sec"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 600 sec"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration : 630 sec"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration : 660 sec"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration : 690 sec"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Submachine Shot",
+          "image": "sgt_submachineshots.jpg",
+          "description": "Fires at a cluster of enemies.",
+          "target": "",
+          "casting_time": "1.033 sec.",
+          "cooldown": "15 sec.",
+          "duration": "2.9 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "150",
+          "aggro": "138",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 640%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1280%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Hold Shot",
+          "image": "sgt_holdshots.jpg",
+          "description": "Stop enemies from moving.",
+          "target": "1 enemy within a range of 10m",
+          "casting_time": "0.433 sec.",
+          "cooldown": "15 sec.",
+          "duration": "1.1 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "200",
+          "aggro": "96",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 429%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 858%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Burst Shot",
+          "image": "sgt_burstshots.jpg",
+          "description": "Ignites scattered gunpowder on the enemies, engulfing them in an explosion of flames.",
+          "target": "Up to 15 enemies within a range of 7.5m",
+          "casting_time": "0.9 sec.",
+          "cooldown": "60 sec.",
+          "duration": "2.23 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "250",
+          "aggro": "73",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 314%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 628%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Silent Move",
+          "image": "sgt_silentmove.jpg",
+          "description": "Stealthily approach enemies.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "30 sec.",
+          "duration": "1.2 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "300",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 10.2 sec"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 30 sec"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration : 32.2 sec"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration : 34.4 sec"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration : 36.6 sec"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Crossbow",
+      "icon_position": {
+        "x": -100,
+        "y": -400
+      }
+    },
+    {
+      "name": "Ancient Bolt",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "15m away",
+        "Splash": "None",
+        "Hits per attack": "3",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "+10%",
+        "Magical DMG": "-25%"
+      },
+      "stats": {
+        "ASPD": "153",
+        "Bonus ATK": "350%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "30",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+10%",
+        "Ignore DEF": "+12%",
+        "Critical": "+10",
+        "Penetration": "10+25",
+        "Immunity": "5+5"
+      },
+      "skills": [
+        {
+          "name": "Tactical Movement",
+          "image": "aov_tacticalmove.jpg",
+          "description": "Quickly penetrates enemy lines, inflicting critical wounds.",
+          "target": "Up to 5 enemies 12m forward and within 3m width",
+          "casting_time": "0.333 sec.",
+          "cooldown": "4 sec.",
+          "duration": "1.366 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "350",
+          "aggro": "30",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1077%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2154%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Direct Fire",
+          "image": "aov_directfire.jpg",
+          "description": "Drives special bolts into the same point on the enemy four times.",
+          "target": "1 enemy within 15m range",
+          "casting_time": "Instant",
+          "cooldown": "11 sec.",
+          "duration": "2.7 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "800",
+          "aggro": "120",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1317%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2634%"
+            }
+          ],
+          "special": [
+            "Additional Scorched",
+            "Additional Scorched"
+          ]
+        },
+        {
+          "name": "Bolt Rain",
+          "image": "aov_voltrain.jpg",
+          "description": "Launches a wide-range bolt attack to the front.",
+          "target": "Up to 8 enemies within 16m forward x 60-degree range",
+          "casting_time": "1.2 sec.",
+          "cooldown": "15 sec.",
+          "duration": "2.2 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "750",
+          "aggro": "100",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1455%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2910%"
+            }
+          ],
+          "special": [
+            "Additional Scorched",
+            "Additional Scorched"
+          ]
+        },
+        {
+          "name": "Boom and Zoom",
+          "image": "aov_boomandzoom.jpg",
+          "description": "Attacks surrounding enemies and quickly disappears.",
+          "target": "",
+          "casting_time": "0.333 sec.",
+          "cooldown": "11 sec.",
+          "duration": "2.63 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "800",
+          "aggro": "0",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 760%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1520%"
+            }
+          ],
+          "special": [
+            "Additional defense ignored based on the difference between casters attack rating and enemy PCs defense rating (maximum 100).",
+            "Additional defense ignored based on the difference between casters attack rating and enemy PCs defense rating (maximum 100)."
+          ]
+        },
+        {
+          "name": "Additional Scorched",
+          "image": "aov_scorched.jpg",
+          "description": "Attacks a wide area, gaining buffs proportional to the number of enemies hit.",
+          "target": "Up to 10 enemies within 8.5m range",
+          "casting_time": "0.866 sec.",
+          "cooldown": "27 sec.",
+          "duration": "3.133 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "1000",
+          "aggro": "50",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1518%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3036%"
+            }
+          ],
+          "special": [
+            "Additional Scorched",
+            "Additional Scorched"
+          ]
+        }
+      ],
+      "lv25_bonus_extra": [
+        "Additional DMG against Monster according to 3 * 50"
+      ],
+      "equipped_items": "Crossbow",
+      "icon_position": {
+        "x": -200,
+        "y": -350
+      }
+    },
+    {
+      "name": "Twin Sting",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.75~13m away",
+        "Splash": "None",
+        "Hits per attack": "6",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Magical DMG": "-20%"
+      },
+      "stats": {
+        "ASPD": "303",
+        "Bonus ATK": "300%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "10",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "Ignore DEF": "+9%",
+        "Penetration": "25",
+        "Immunity": "5"
+      },
+      "skills": [
+        {
+          "name": "Eye of Wolf",
+          "image": "tws_wolfeye.jpg",
+          "description": "Outclasses enemy by its ice-cold eye like wolfs.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "60 sec.",
+          "duration": "1 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "650",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 300 sec"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 300sec"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration : 300sec"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration : 300sec"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration : 300sec"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Wire Shot",
+          "image": "tws_wireshot.jpg",
+          "description": "Ties up the movement of enemy by shooting 2 wired bolts.",
+          "target": "Up to 6 enemies 12m away and within 4m radius",
+          "casting_time": "0.833 sec.",
+          "cooldown": "60 sec.",
+          "duration": "1.5 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "250",
+          "aggro": "50",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Butterfly",
+          "image": "tws_butterfly.jpg",
+          "description": "Flies up like a butterfly and spins fast to shoot bolts.",
+          "target": "Up to 12 enemies within a range of 5m",
+          "casting_time": "0.833 sec.",
+          "cooldown": "20 sec.",
+          "duration": "2.7 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "340",
+          "aggro": "132",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Dead Zone",
+          "image": "tws_deadzone.jpg",
+          "description": "Fires alot of unavoidable bolts.",
+          "target": "",
+          "casting_time": "1.8 sec.",
+          "cooldown": "30 sec.",
+          "duration": "4 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "540",
+          "aggro": "210",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2400%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4800%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Just One",
+          "image": "tws_justone.jpg",
+          "description": "Delivers concentrated fire on only one enemy.",
+          "target": "1 enemy within a range of 17m",
+          "casting_time": "0.633 sec.",
+          "cooldown": "25 sec.",
+          "duration": "4 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "540",
+          "aggro": "234",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 3000%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 6000%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [DEX]",
+        "[PVP/PVE Maps] Additional 5% DMG according to extra [DEX]",
+        "Ignore additional DEF according to extra [DEX] * 4",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 5 * 50"
+      ],
+      "equipped_items": "Crossbow + Crossbow",
+      "icon_position": {
+        "x": -350,
+        "y": -475
+      }
+    }
+  ]
+}

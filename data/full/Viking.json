@@ -1,0 +1,847 @@
+{
+  "slug": "Viking",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "None",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Leather Metal",
+    "costume": "None",
+    "gloves": "Gloves Leather Metal",
+    "ring": "Ring",
+    "weapon_costume": "None",
+    "belt": "Belt Leather Metal",
+    "shoes": "Shoes Leather Metal",
+    "artifact": "Pirate Flag",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Ancestor",
+    "image": "prc_ancester.jpg",
+    "description": "Improve ATK by using the ancestors power.",
+    "target": "Self-buff",
+    "casting_time": "0 sec.",
+    "cooldown": "60 sec.",
+    "duration": "2.57 sec.",
+    "sp_cost": "400",
+    "consume_item": "Ancient Star Orb × 5",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration: 450 sec.",
+          "ATK +50%",
+          "Critical Damage+50%",
+          "Monster ATK +50%",
+          "STR +10.",
+          "HP +30",
+          "Lhotes power increases additionally depending on his right-hand weapon:",
+          "[Sword] A.R. +1, ATK +15%, Monster Damage +5%, Critical Damage +5%, Movement SPD limit +5%",
+          "[Blunt] A.R. +1, ATK +10%, Monster Damage +15%, Critical Damage +15%, ATK SPD -15%, Movement SPD limit +5%",
+          "[Sabre] A.R. +1, ATK +5%, Monster Damage +5%, Critical Damage +25%, Movement SPD limit +10%"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Back-Guard",
+      "equipped_items": "Blunt",
+      "icon_position": {
+        "x": -50,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Back-Guard",
+      "equipped_items": "Blunt + Shield",
+      "icon_position": {
+        "x": -50,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Defender",
+      "equipped_items": "Blunt + Shield",
+      "icon_position": {
+        "x": -100,
+        "y": -300
+      }
+    },
+    {
+      "stance_name": "Combatant",
+      "equipped_items": "Blunt + Blunt",
+      "icon_position": {
+        "x": -100,
+        "y": -450
+      }
+    },
+    {
+      "stance_name": "Piracy",
+      "equipped_items": "Blunt + Blunt",
+      "icon_position": {
+        "x": -350,
+        "y": -400
+      }
+    },
+    {
+      "stance_name": "Piracy",
+      "equipped_items": "Blunt + Sword",
+      "icon_position": {
+        "x": -350,
+        "y": -400
+      }
+    },
+    {
+      "stance_name": "Piracy",
+      "equipped_items": "Blunt + Sabre",
+      "icon_position": {
+        "x": -350,
+        "y": -400
+      }
+    },
+    {
+      "stance_name": "Piracy",
+      "equipped_items": "Sword + Blunt",
+      "icon_position": {
+        "x": -350,
+        "y": -400
+      }
+    },
+    {
+      "stance_name": "Piracy",
+      "equipped_items": "Sword + Sword",
+      "icon_position": {
+        "x": -350,
+        "y": -400
+      }
+    },
+    {
+      "stance_name": "Piracy",
+      "equipped_items": "Sword + Sabre",
+      "icon_position": {
+        "x": -350,
+        "y": -400
+      }
+    },
+    {
+      "stance_name": "Piracy",
+      "equipped_items": "Sabre + Blunt",
+      "icon_position": {
+        "x": -350,
+        "y": -400
+      }
+    },
+    {
+      "stance_name": "Piracy",
+      "equipped_items": "Sabre + Sword",
+      "icon_position": {
+        "x": -350,
+        "y": -400
+      }
+    },
+    {
+      "stance_name": "Piracy",
+      "equipped_items": "Sabre + Sabre",
+      "icon_position": {
+        "x": -350,
+        "y": -400
+      }
+    },
+    {
+      "stance_name": "Back-Guard",
+      "equipped_items": "Sword",
+      "icon_position": {
+        "x": -50,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Back-Guard",
+      "equipped_items": "Sabre",
+      "icon_position": {
+        "x": -50,
+        "y": 0
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Back-Guard",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1.5m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "100",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "14",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+3%",
+        "Block": "+14"
+      },
+      "skills": [
+        {
+          "name": "Deep Straight",
+          "image": "bg_deepstraight.jpg",
+          "description": "Impales the enemy on a sword before delivering a powerful kick.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "0 sec.",
+          "duration": "2.67 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "100",
+          "aggro": "78",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 300%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Earth Tremor",
+          "image": "bg_earthtremor.jpg",
+          "description": "Plunges sword into enemy while airborne.",
+          "target": "Up to 3 adjacent enemies",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "2.2 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "150",
+          "aggro": "68",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 400%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 800%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Penta-Train",
+          "image": "bg_pentatrain.jpg",
+          "description": "A series of aggressive attacks that pushes the enemy back.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "3.4 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "200",
+          "aggro": "105",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 600%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1200%"
+            }
+          ],
+          "special": [
+            "Double Damage to enemies with [",
+            "Double Damage to enemies with ["
+          ]
+        },
+        {
+          "name": "Vortex Slash",
+          "image": "bg_vortexlash.jpg",
+          "description": "Make a series of fast and powerful attacks.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "4.4 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "250",
+          "aggro": "210",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1600%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Blunt",
+      "icon_position": {
+        "x": -50,
+        "y": 0
+      }
+    },
+    {
+      "name": "Defender",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1.5m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "143",
+        "Bonus ATK": "50%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "25",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "Block": "+25"
+      },
+      "skills": [
+        {
+          "name": "Dull Attack",
+          "image": "dfd_dullattack.jpg",
+          "description": "Strike the head of enemy head with a blunt weapon.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "0 sec.",
+          "duration": "1.6 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "100",
+          "aggro": "48",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 198%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 396%"
+            }
+          ],
+          "special": [
+            "Additional 50% damage to enemies with [",
+            "Additional 50% damage to enemies with ["
+          ]
+        },
+        {
+          "name": "Complete Protection",
+          "image": "dfd_completeprotection.jpg",
+          "description": "Can use Blocking beyond Max. But, cant use skill. Movement Speed and Magic RES decreases. Canceled, if Stance changes.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "0.2 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "200",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration 10 sec"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration 10 sec"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration 10 sec"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration 10 sec"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration 10 sec"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Tremendous",
+          "image": "dfd_tremendous.jpg",
+          "description": "Shears multiple opponents in a single powerful swing.",
+          "target": "Up to 5 adjacent enemies",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "2.7 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "250",
+          "aggro": "75",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 318%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 636%"
+            }
+          ],
+          "special": [
+            "Additional 50% damage to enemies with [",
+            "Additional 50% damage to enemies with ["
+          ]
+        },
+        {
+          "name": "Massive Charge",
+          "image": "dfd_massivecharge.jpg",
+          "description": "Attacks enemies with a shield and then charging at him with a blunt weapon.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "4.07 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "224",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1065%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2130%"
+            }
+          ],
+          "special": [
+            "Additional 50% damage to enemies with [",
+            "Additional 50% damage to enemies with ["
+          ]
+        }
+      ],
+      "equipped_items": "Blunt + Shield",
+      "icon_position": {
+        "x": -100,
+        "y": -300
+      }
+    },
+    {
+      "name": "Combatant",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1.5m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "173",
+        "Bonus ATK": "20%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "70",
+        "EVA": "0",
+        "BLK": "15",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+20%",
+        "Block": "+15",
+        "Critical": "+10"
+      },
+      "skills": [
+        {
+          "name": "Battle Smash",
+          "image": "cbt_battlesmash.jpg",
+          "description": "Use a blunt weapon to deliver a strong blow toward head of enemy.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "5 sec.",
+          "duration": "2.03 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "100",
+          "aggro": "83",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 421.7%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 843%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Rolling Thunder",
+          "image": "cbt_rollsofthunder.jpg",
+          "description": "Attacks enemy with magical power.",
+          "target": "Up to 7 enemies within a range of 7m.",
+          "casting_time": "1.5 sec.",
+          "cooldown": "30 sec.",
+          "duration": "1.57 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "150",
+          "aggro": "36",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 139%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 278%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Shoulder Charge",
+          "image": "cbt_shouldercharge.jpg",
+          "description": "Charges an enemy with a brutal shoulder tackle.",
+          "target": "Up to 4 enemies / 7m away / within a 2m radius",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "1.7 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "200",
+          "aggro": "84",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 414.9%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 829%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Throwing Axe",
+          "image": "cbt_throwingaxe.jpg",
+          "description": "Hurls a throwing weapon at your enemy.",
+          "target": "1 enemy within a range of 7.5m",
+          "casting_time": "Instant",
+          "cooldown": "30 sec.",
+          "duration": "1.77 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "250",
+          "aggro": "94",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 471.95%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 943%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Windstorm",
+          "image": "cbt_windstorm.jpg",
+          "description": "Brandishes a blunt weapon to attack the enemy.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "3.6 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "222",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1201.13%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2402%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Blunt + Blunt",
+      "icon_position": {
+        "x": -100,
+        "y": -450
+      }
+    },
+    {
+      "name": "Piracy",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "3",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Shooting DMG": "-25%",
+        "Magical DMG": "+10%"
+      },
+      "stats": {
+        "ASPD": "217",
+        "Bonus ATK": "260%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "40",
+        "EVA": "0",
+        "BLK": "20",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "Block": "+15",
+        "Critical": "+10",
+        "Penetration": "15+25",
+        "Immunity": "10+15"
+      },
+      "skills": [
+        {
+          "name": "Sacrifice",
+          "image": "job_sacrifice.jpg",
+          "description": "Collect the lightning power and release it to push the surrounding enemies away.",
+          "target": "Up to 7 enemies within a range of 10m.",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "2.433 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "1000",
+          "aggro": "250",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Transfix",
+          "image": "prc_transfix.jpg",
+          "description": "Rushes to enemy and push it holding blunts on both hands.",
+          "target": "Up to 14 enemies 12m away and within 3m width",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "2.733 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "150",
+          "aggro": "84",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Top of Sail",
+          "image": "prc_topofsail.jpg",
+          "description": "Instantly jumps and puts foot down to knock down enemies nearby.",
+          "target": "",
+          "casting_time": "0.466 sec.",
+          "cooldown": "3.5 sec.",
+          "duration": "3.066 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "300",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Judgement of Thor",
+          "image": "prc_judofthor.jpg",
+          "description": "Creates shock wave by throwing a blunt toward an enemy position.",
+          "target": "Up to 7 enemies 12m away and within a 5m radius",
+          "casting_time": "5 sec.",
+          "cooldown": "15 sec.",
+          "duration": "1.733 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "500",
+          "aggro": "172",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1100%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2200%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Bone Crash",
+          "image": "prc_bonecrash.jpg",
+          "description": "Gives Critical Damage to enemy by gathering rage of inner side.",
+          "target": "Up to 16 attacks during casting time",
+          "casting_time": "1.633 sec.",
+          "cooldown": "30 sec.",
+          "duration": "6.366 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "600",
+          "aggro": "40",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1000%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [STR]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [STR]",
+        "Ignore additional DEF according to extra [STR] * 4",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Blunt + Blunt",
+      "icon_position": {
+        "x": -350,
+        "y": -400
+      }
+    }
+  ]
+}

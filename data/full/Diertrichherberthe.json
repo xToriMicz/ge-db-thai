@@ -1,0 +1,491 @@
+{
+  "slug": "Diertrichherberthe",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "None",
+    "head": "None",
+    "earring": "Earring",
+    "face": "Square Brillo Solar Sunglasses Event Square Brillo Solar Sunglasses",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Leather",
+    "costume": "None",
+    "gloves": "Gloves Leather",
+    "ring": "Ring",
+    "weapon_costume": "None",
+    "belt": "Belt Leather",
+    "shoes": "Shoes Leather",
+    "artifact": "None",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Viertus",
+    "image": "job_virtus.jpg",
+    "description": "It circulates a potential fighting spirit and makes keen to surroundings",
+    "target": "Self-buff",
+    "casting_time": "0 sec.",
+    "cooldown": "45 sec.",
+    "duration": "4.033 sec.",
+    "sp_cost": "750",
+    "consume_item": "Ancient Star Orb × 5",
+    "levels": [
+      {
+        "level": "Level 1",
+        "effects": [
+          "Duration : 5 Minutes.",
+          "ATK +25%",
+          "HP Recover + 150",
+          "SP Recover + 20",
+          "When attacked, if the attack is over the current HP, damage will decrease by 30%",
+          "[PvE only]",
+          "Normal attack damage increases by (4% of extra [STR])",
+          "Skill damage increases by (4% of extra [STR])"
+        ]
+      },
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration : 5 Minutes.",
+          "ATK +25%",
+          "HP Recover + 1500",
+          "SP Recover + 200",
+          "When attacked, if the attack is over the current HP, damage will decrease by 30%",
+          "[PvE only]",
+          "Normal attack damage increases by (4% of extra [STR])",
+          "Skill damage increases by (4% of extra [STR])"
+        ]
+      },
+      {
+        "level": "Level 11",
+        "effects": [
+          "Duration : 5 Minutes.",
+          "ATK +25%",
+          "A.R. +1",
+          "HP Recover + 1650",
+          "SP Recover + 220",
+          "When attacked, if the attack is over the current HP, damage will decrease by 30%",
+          "[PvE only]",
+          "Normal attack damage increases by (4% of extra [STR])",
+          "Skill damage increases by (4% of extra [STR])"
+        ]
+      },
+      {
+        "level": "Level 12",
+        "effects": [
+          "Duration : 5 Minutes.",
+          "ATK +25%",
+          "A.R. +1",
+          "HP Recover + 1800",
+          "SP Recover + 240",
+          "When attacked, if the attack is over the current HP, damage will decrease by 30%",
+          "[PvE only]",
+          "Normal attack damage increases by (4% of extra [STR])",
+          "Skill damage increases by (4% of extra [STR])"
+        ]
+      },
+      {
+        "level": "Level 13",
+        "effects": [
+          "Duration : 5 Minutes.",
+          "ATK +25%",
+          "A.R. +1",
+          "HP Recover + 1950",
+          "SP Recover + 260",
+          "When attacked, if the attack is over the current HP, damage will decrease by 30%",
+          "[PvE only]",
+          "Normal attack damage increases by (4% of extra [STR])",
+          "Skill damage increases by (4% of extra [STR])"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Back-Guard",
+      "equipped_items": "Sword",
+      "icon_position": {
+        "x": -50,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Fretensis",
+      "equipped_items": "Sword",
+      "icon_position": {
+        "x": -500,
+        "y": -225
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Back-Guard",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1.5m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "100",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "14",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+3%",
+        "Block": "+14"
+      },
+      "skills": [
+        {
+          "name": "Deep Straight",
+          "image": "bg_deepstraight.jpg",
+          "description": "Impales the enemy on a sword before delivering a powerful kick.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "0 sec.",
+          "duration": "2.67 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "100",
+          "aggro": "78",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 300%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Earth Tremor",
+          "image": "bg_earthtremor.jpg",
+          "description": "Plunges sword into enemy while airborne.",
+          "target": "Up to 3 adjacent enemies",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "2.2 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "150",
+          "aggro": "68",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 400%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 800%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Penta-Train",
+          "image": "bg_pentatrain.jpg",
+          "description": "A series of aggressive attacks that pushes the enemy back.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "3.4 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "200",
+          "aggro": "105",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 600%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1200%"
+            }
+          ],
+          "special": [
+            "Double Damage to enemies with [",
+            "Double Damage to enemies with ["
+          ]
+        },
+        {
+          "name": "Vortex Slash",
+          "image": "bg_vortexlash.jpg",
+          "description": "Make a series of fast and powerful attacks.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "4.4 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "250",
+          "aggro": "210",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1600%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Sword",
+      "icon_position": {
+        "x": -50,
+        "y": 0
+      }
+    },
+    {
+      "name": "Fretensis",
+      "info": {
+        "Targets": "4 enemies",
+        "Range": "1.5m away",
+        "Splash": "100% DMG within  2m range",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Shooting DMG": "-20%",
+        "Magical DMG": "+10%"
+      },
+      "stats": {
+        "ASPD": "158",
+        "Bonus ATK": "250%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "30",
+        "EVA": "0",
+        "BLK": "10",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+35%",
+        "Block": "+15",
+        "Critical": "+25",
+        "Penetration": "5+25",
+        "Immunity": "5+10"
+      },
+      "skills": [
+        {
+          "name": "Chartio",
+          "image": "prt_sartia.jpg",
+          "description": "With a lower posture, it throws down an enemy.",
+          "target": "Up to 3 adjacent enemies",
+          "casting_time": "Instant",
+          "cooldown": "8 sec.",
+          "duration": "2.47 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "280",
+          "aggro": "186",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Wish",
+          "image": "prt_wish.jpg",
+          "description": "Focus intrinsic power on the sword.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "45 sec.",
+          "duration": "1.8 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "650",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration 5 Minutes."
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration 5 Minutes."
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration 5 Minutes."
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration 5 Minutes."
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration 5 Minutes."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Teneritas",
+          "image": "prt_teneritas.jpg",
+          "description": "With a temperate and continous attack, it overpowers enemies.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "18 sec.",
+          "duration": "4.3 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "900",
+          "aggro": "175",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Fairy",
+          "image": "prt_fairyel.jpg",
+          "description": "Cutting through enemys vital point with extreme speed.",
+          "target": "Up to 7 enemies 11m away and within 5m width",
+          "casting_time": "0.867 sec.",
+          "cooldown": "20 sec.",
+          "duration": "3.93 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "750",
+          "aggro": "159",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Elthalion",
+          "image": "prt_eltarion.jpg",
+          "description": "Using invisible blade of a sword, it attacks enemies ahead fatally.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "25 sec.",
+          "duration": "3.93 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "800",
+          "aggro": "256",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2300%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4600%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [STR]",
+        "[PVP/PVE Maps] Additional 5% DMG according to extra [STR]",
+        "Ignore additional DEF according to extra [STR] * 3",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 5 * 50"
+      ],
+      "equipped_items": "Sword",
+      "icon_position": {
+        "x": -500,
+        "y": -225
+      }
+    }
+  ]
+}

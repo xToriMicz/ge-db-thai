@@ -1,0 +1,273 @@
+{
+  "slug": "Valkyrie",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Valkyries Wing Shadow Javelin",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Leather",
+    "costume": "None",
+    "gloves": "Gloves Leather",
+    "ring": "Ring",
+    "weapon_costume": "Aradwha Aradwha (Event)",
+    "belt": "Belt Leather",
+    "shoes": "Shoes Leather",
+    "artifact": "Brisingamen",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Gullin",
+    "image": "job_gullin.jpg",
+    "description": "Strengthens herself with the power as Valkyrie, even though its weak.",
+    "target": "Self-buff",
+    "casting_time": "0 sec.",
+    "cooldown": "0 sec.",
+    "duration": "2.367 sec.",
+    "sp_cost": "750",
+    "consume_item": "Ancient Star Orb × 2",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "1. [Queens Wrath] Increases ATK, decreases defense; with a successful skill, inflicts [Aradwhas Curse]",
+          "2. [Queens Coldness] Increases defense, decreases ATK; with a successful skill, inflicts [Valkyries Curse]",
+          "Re-use this skill to switch between these buffs"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Geirskogul",
+      "equipped_items": "Javelin",
+      "icon_position": {
+        "x": -100,
+        "y": -125
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Geirskogul",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1.5m away",
+        "Splash": "None",
+        "Hits per attack": "4",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "+10%",
+        "Shooting DMG": "-25%",
+        "Magical DMG": "-15%",
+        "Debuff RES": "-10%"
+      },
+      "stats": {
+        "ASPD": "237",
+        "Bonus ATK": "230%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "25",
+        "EVA": "0",
+        "BLK": "5",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+15%",
+        "Block": "+10",
+        "Penetration": "5+25",
+        "Immunity": "10+25"
+      },
+      "skills": [
+        {
+          "name": "Kashta",
+          "image": "gei_kasta.jpg",
+          "description": "Causes an explosion by throwing the Magical Spear.",
+          "target": "Up to 3 enemies 1m~10m away and within a 2m radius",
+          "casting_time": "Instant",
+          "cooldown": "1 sec.",
+          "duration": "1.76 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "120",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Hoog",
+          "image": "gei_hugg.jpg",
+          "description": "Stabs the target consecutively and move forward.",
+          "target": "Up to 7 enemies 13m away and within a 2m radius",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "3.93 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "450",
+          "aggro": "250",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Pastier",
+          "image": "gei_fasthet.jpg",
+          "description": "Wields the Javelin to protect herself from long-ranged attacks and then swings it again to attack.",
+          "target": "Up to 13 enemies within a 6m radius",
+          "casting_time": "1.1 sec.",
+          "cooldown": "30 sec.",
+          "duration": "0.367 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "550",
+          "aggro": "300",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2000%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Ginnung",
+          "image": "gei_ginnun.jpg",
+          "description": "Leaps toward the designated target and then brings the Javelin down on it.",
+          "target": "Up to 8 enemies Max 18m away and within a 6.5m radius",
+          "casting_time": "1.433 sec.",
+          "cooldown": "3.5 sec.",
+          "duration": "2.9 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "600",
+          "aggro": "200",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 3000%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 6000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Fimbul",
+          "image": "gei_fimbul.jpg",
+          "description": "Endows the Javelin with Valkyries power and throw it towards the target.",
+          "target": "Up to 8 enemies 1~12m away and within a 8m radius",
+          "casting_time": "2.167 sec.",
+          "cooldown": "25 sec.",
+          "duration": "3.2 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "700",
+          "aggro": "200",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 3000%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 6000%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [STR]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [STR]",
+        "Ignore additional DEF according to extra [STR] * 4",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Javelin",
+      "icon_position": {
+        "x": -100,
+        "y": -125
+      }
+    }
+  ]
+}

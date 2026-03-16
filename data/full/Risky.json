@@ -1,0 +1,275 @@
+{
+  "slug": "Risky",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Spirit of Arsene A lazy afternoon of reading",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Robe",
+    "costume": "None",
+    "gloves": "Gloves",
+    "ring": "Ring",
+    "weapon_costume": "None",
+    "belt": "Belt",
+    "shoes": "Shoes",
+    "artifact": "None",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Key Card",
+    "image": "job_keycard.jpg",
+    "description": "Mix decks and pick a card. According to which kind of deck you picked,",
+    "target": "Self-buff",
+    "casting_time": "5 sec.",
+    "cooldown": "7 sec.",
+    "duration": "2.033 sec.",
+    "sp_cost": "450",
+    "consume_item": "Ancient Star Orb × 5",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration : 5 Minutes.",
+          "[Speedy Celine] A.R.+1, ATK SPD +30%, Additional damage to enemy PC with normal attack in proportion to Max HP",
+          "[Mario of Strength] A.R.+1, ATK +30%, ATK SPD -20%",
+          "[Tricky Frost] A.R.+1, Skill Casting Time -20%",
+          "[Sharp Helena] A.R.+1, Mental Penetration +15",
+          "[Cool-headed Emily] A.R.+1, Received Skill Damage -15%",
+          "[Fortune Card] A.R.+2, ATK +50%, ATK SPD +30%, Mental Penetration +15, Received Skill Damage -10%, Casting time -20%"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Trick",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -500,
+        "y": -75
+      }
+    },
+    {
+      "stance_name": "Manipulation",
+      "equipped_items": "Special Bracelet",
+      "icon_position": {
+        "x": -500,
+        "y": -100
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Trick",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "11m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "187",
+        "Bonus ATK": "90%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "10"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+10%"
+      },
+      "skills": [],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -500,
+        "y": -75
+      }
+    },
+    {
+      "name": "Manipulation",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "11m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "-10%",
+        "Shooting DMG": "+10%"
+      },
+      "stats": {
+        "ASPD": "187",
+        "Bonus ATK": "320%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "10"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+10%",
+        "Penetration": "10+10",
+        "Immunity": "5+5"
+      },
+      "skills": [
+        {
+          "name": "One Card",
+          "image": "mani_onecard.jpg",
+          "description": "It occurs an explosion with throwing a magic card.",
+          "target": "Up to 5 enemies 12m away and within a 4m radius",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "1.8 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "450",
+          "aggro": "160",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1400%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2800%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Hidden Card",
+          "image": "mani_hiddencard.jpg",
+          "description": "It throws the card that is filled with the secret skill of Arsene Four Devas. The summoned Four Devas will disappear after the attack.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "2.433 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "0",
+          "skill_type": "Build",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Random summon of the Four Devas"
+            },
+            {
+              "level": "Level 10",
+              "value": "Random summon of the Four Devas"
+            }
+          ],
+          "special": [
+            "According to the skill level and INT, the bonus ability of the Four Devas will be applied.",
+            "According to the skill level and INT, the bonus ability of the Four Devas will be applied."
+          ]
+        },
+        {
+          "name": "Card Manipulation",
+          "image": "mani_cardmanipulation.jpg",
+          "description": "It leads to death for one enemy with throwing countless cards.",
+          "target": "1 enemy within a range of 14m",
+          "casting_time": "1.65 sec.",
+          "cooldown": "15 sec.",
+          "duration": "3.266 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "800",
+          "aggro": "200",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Spread Shot",
+          "image": "mani_spreadshot.jpg",
+          "description": "It throws a lot of cards to enemies and attacks randomly.",
+          "target": "",
+          "casting_time": "1.2 sec.",
+          "cooldown": "20 sec.",
+          "duration": "2.2 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "750",
+          "aggro": "116",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2400%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4800%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Silent Dancing",
+          "image": "mani_silentdancing.jpg",
+          "description": "It attacks ememies with throwing invisible cards.",
+          "target": "Up to 15 enemies within a range of 8m",
+          "casting_time": "1 sec.",
+          "cooldown": "30 sec.",
+          "duration": "4.033 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "1050",
+          "aggro": "128",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5600%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [INT]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [INT]",
+        "Ignore additional RES according to extra [INT] * 3",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Special Bracelet",
+      "icon_position": {
+        "x": -500,
+        "y": -100
+      }
+    }
+  ]
+}

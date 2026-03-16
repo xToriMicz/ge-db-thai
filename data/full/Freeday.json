@@ -1,0 +1,510 @@
+{
+  "slug": "Freeday",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "None",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Coat",
+    "costume": "None",
+    "gloves": "Gloves Leather",
+    "ring": "Ring",
+    "weapon_costume": "None",
+    "belt": "Belt Leather",
+    "shoes": "Shoes Leather",
+    "artifact": "None",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Encore",
+    "image": "job_encor.jpg",
+    "description": "Reply to the cry of people for an Encore!",
+    "target": "Self-buff",
+    "casting_time": "1.033 sec.",
+    "cooldown": "45 sec.",
+    "duration": "2.83 sec.",
+    "sp_cost": "300",
+    "consume_item": "Ancient Star Orb × 5",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration : 20 seconds",
+          "+1 Skill Level",
+          "[Rio] A.R. +2"
+        ]
+      },
+      {
+        "level": "Level 11",
+        "effects": [
+          "Duration : 35 secs.",
+          "All Stance skill Lv.+1"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Serenade",
+      "equipped_items": "Lute",
+      "icon_position": {
+        "x": 0,
+        "y": -400
+      }
+    },
+    {
+      "stance_name": "Rocking",
+      "equipped_items": "Lute",
+      "icon_position": {
+        "x": -350,
+        "y": -200
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Serenade",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.1~15m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "203",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "15"
+      },
+      "lv25_bonus": {},
+      "skills": [
+        {
+          "name": "Shining Ballade",
+          "image": "ser_shiningballade.jpg",
+          "description": "Increased ATK, ATK SPD and Movement Speed to all team members.",
+          "target": "",
+          "casting_time": "1.033 sec.",
+          "cooldown": "15 sec.",
+          "duration": "2.83 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "200",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 165 sec"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 300 sec"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration : 315 sec"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration : 330 sec"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration : 345 sec"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Endurance Melody",
+          "image": "ser_endurancemelody.jpg",
+          "description": "Slight DEF Increase of team and decrease damage from physical attack.",
+          "target": "",
+          "casting_time": "1.033 sec.",
+          "cooldown": "15 sec.",
+          "duration": "2.83 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "200",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 165 sec"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 300 sec"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration : 315 sec"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration : 330 sec"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration : 345 sec"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Spell-break Rhythm",
+          "image": "ser_rhythmofspellbreak.jpg",
+          "description": "Increases Debuff RES of all team members and decreases damage from magical attacks.",
+          "target": "",
+          "casting_time": "1.033 sec.",
+          "cooldown": "15 sec.",
+          "duration": "2.83 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "200",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 165 sec"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 300 sec"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration : 315 sec"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration : 330 sec"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration : 345 sec"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Orpheus",
+          "image": "ser_orpheus.jpg",
+          "description": "Beckons a soul back to the living world with earthly hymns. Resurrects a character who is incapable of combat.",
+          "target": "",
+          "casting_time": "1.533 sec.",
+          "cooldown": "60 sec.",
+          "duration": "3.37 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "2500",
+          "aggro": "0",
+          "skill_type": "Healing",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Heals 5% of HP after Resurrection"
+            },
+            {
+              "level": "Level 10",
+              "value": "Heals 50% of HP after Resurrection"
+            },
+            {
+              "level": "Level 11",
+              "value": "Heals 55% of HP after Resurrection"
+            },
+            {
+              "level": "Level 12",
+              "value": "Heals 60% of HP after Resurrection"
+            },
+            {
+              "level": "Level 13",
+              "value": "Heals 65% of HP after Resurrection"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Lute",
+      "icon_position": {
+        "x": 0,
+        "y": -400
+      }
+    },
+    {
+      "name": "Rocking",
+      "info": {
+        "Targets": "4 enemies",
+        "Range": "0.5~10m away",
+        "Splash": "100% DMG within  3m range",
+        "Hits per attack": "2",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "160",
+        "Bonus ATK": "410%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "10",
+        "Ice RES": "10",
+        "Lightning RES": "10",
+        "Abnormal RES": "75"
+      },
+      "lv25_bonus": {
+        "Penetration": "15+25",
+        "Immunity": "10+10"
+      },
+      "skills": [
+        {
+          "name": "Chromatic",
+          "image": "rck_chromatic.jpg",
+          "description": "(Event) Teaching Practicing Day 13",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "60 sec.",
+          "duration": "195 sec",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "750",
+          "aggro": "100",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 15 sec"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 150 sec"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 165 sec"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 180 sec"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 195 sec"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Arounding",
+          "image": "rck_arounding.jpg",
+          "description": "Protects character itself by releasing soft sound wave.",
+          "target": "Up to 5 enemies 6m away",
+          "casting_time": "Instant",
+          "cooldown": "12 sec.",
+          "duration": "3.634 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "200",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1100%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2200%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Power Stroke",
+          "image": "rck_powerstroke.jpg",
+          "description": "Incapacitates enemies by powerful stroke.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "2.7 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "400",
+          "aggro": "300",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1400%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2800%"
+            },
+            {
+              "level": "Level 11",
+              "value": "АТК: 3080%"
+            },
+            {
+              "level": "Level 12",
+              "value": "АТК: 3360%"
+            },
+            {
+              "level": "Level 13",
+              "value": "АТК: 3360%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Accelerando",
+          "image": "rck_accelerando.jpg",
+          "description": "Makes attack stronger using accelerando playing styles.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "18 sec.",
+          "duration": "3.2 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "500",
+          "aggro": "400",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3000%"
+            },
+            {
+              "level": "Level 11",
+              "value": "АТК: 3300%"
+            },
+            {
+              "level": "Level 12",
+              "value": "АТК: 3600%"
+            },
+            {
+              "level": "Level 13",
+              "value": "АТК: 3600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Finishing",
+          "image": "rck_finishing.jpg",
+          "description": "Gives strong damage by finishing the end of a fabulous play.",
+          "target": "Up to 10 enemies 8m away.",
+          "casting_time": "3.467 sec.",
+          "cooldown": "25 sec.",
+          "duration": "1.6 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "800",
+          "aggro": "500",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2400%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4800%"
+            },
+            {
+              "level": "Level 11",
+              "value": "АТК: 5280%"
+            },
+            {
+              "level": "Level 12",
+              "value": "АТК: 5760%"
+            },
+            {
+              "level": "Level 13",
+              "value": "АТК: 5760%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [INT]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [INT]",
+        "Ignore additional RES according to extra [INT] * 4",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Lute",
+      "icon_position": {
+        "x": -350,
+        "y": -200
+      }
+    }
+  ]
+}

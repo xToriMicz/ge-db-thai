@@ -1,0 +1,284 @@
+{
+  "slug": "Stia",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Please dont forgive me",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Coat",
+    "costume": "None",
+    "gloves": "Gloves",
+    "ring": "Ring",
+    "weapon_costume": "None",
+    "belt": "Belt",
+    "shoes": "Shoes",
+    "artifact": "Surra Zarka",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Saphar",
+    "image": "job_safar.jpg",
+    "description": "Strengthens the shooting abilities of nearby allies who have become lax by restoring their mental state.",
+    "target": "My character within 6m range",
+    "casting_time": "0.1 sec.",
+    "cooldown": "60 sec.",
+    "duration": "2.5 sec.",
+    "sp_cost": "600",
+    "consume_item": "Ancient Star Orb × 10",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration: 300 seconds",
+          "[Stia] unlimited",
+          "Attack Grade +1",
+          "Shooting Attack Power +15%",
+          "Monster Attack Power +15%",
+          "If [Stia], doubles all effects except Attack Grade"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Kaladir",
+      "equipped_items": "Rod",
+      "icon_position": {
+        "x": -350,
+        "y": -25
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Kaladir",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.5~15m away",
+        "Splash": "None",
+        "Hits per attack": "3",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "+20%",
+        "Magical DMG": "-10%",
+        "Debuff RES": "-10%"
+      },
+      "stats": {
+        "ASPD": "195",
+        "Bonus ATK": "230%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "70",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+40%",
+        "Ignore DEF": "+8%",
+        "Critical": "+5",
+        "Penetration": "10+20",
+        "Immunity": "5+10"
+      },
+      "skills": [
+        {
+          "name": "Tamaman Seren",
+          "image": "kalad_seren.jpg",
+          "description": "Strengthens the shooting combat capabilities of nearby allies, wishing for victory and peace.",
+          "target": "",
+          "casting_time": "0.1 sec.",
+          "cooldown": "60 sec.",
+          "duration": "300 seconds",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "600",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 300 seconds"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Haruka",
+          "image": "kalad_harka.jpg",
+          "description": "Fires two ice arrows in succession, tearing through the enemys body.",
+          "target": "1 enemy within 15m range",
+          "casting_time": "Instant",
+          "cooldown": "1 sec.",
+          "duration": "1.2 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "250",
+          "aggro": "50",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 480%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 960%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Kirda",
+          "image": "kalad_kirdah.jpg",
+          "description": "Creates an icy zone that freezes the enemys heart, inflicting damage.",
+          "target": "",
+          "casting_time": "0.6 sec.",
+          "cooldown": "1 sec.",
+          "duration": "1.5 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "350",
+          "aggro": "50",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 714%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1428%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Arcdamu Nasrul",
+          "image": "kalad_nasir.jpg",
+          "description": "Mourning the king she served, she fires a fatal ice arrow at the enemy.",
+          "target": "1 enemy within 18m range",
+          "casting_time": "1 sec.",
+          "cooldown": "20 sec.",
+          "duration": "1.9 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "10",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 300%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Uhdika A Stia",
+          "image": "kalad_stia.jpg",
+          "description": "Launches an ice spear formed to honor someone, piercing the enemys body.",
+          "target": "1 enemy within 15m range",
+          "casting_time": "4 sec.",
+          "cooldown": "25 sec.",
+          "duration": "2.52 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "800",
+          "aggro": "160",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 690%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1380%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Rod",
+      "icon_position": {
+        "x": -350,
+        "y": -25
+      }
+    }
+  ]
+}

@@ -1,0 +1,878 @@
+{
+  "slug": "Neo10",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Flag of Pioneering",
+    "head": "Spring Hair - Neo",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Leather",
+    "costume": "2022 Spring Costume",
+    "gloves": "Gloves Leather",
+    "ring": "Ring",
+    "weapon_costume": "Event Crimson Blade Costume Istion Bracelet costume (Event) Crimson Blade Costume Istion Bracelet Costume",
+    "belt": "Belt Leather",
+    "shoes": "Shoes Leather",
+    "artifact": "None",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Reditum",
+    "image": "job_reditum.jpg",
+    "description": "Infuse the power of spirit on sword. In [Reditum] status, if skill attack succeeded, turn to [Whisper of Spirit] status.",
+    "target": "Self-buff",
+    "casting_time": "0 sec.",
+    "cooldown": "0 sec.",
+    "duration": "0.2 sec.",
+    "sp_cost": "750",
+    "consume_item": "Ancient Star Orb × 5",
+    "levels": [
+      {
+        "level": "Level 1",
+        "effects": [
+          "Duration: 15 sec",
+          "ATK +1%",
+          "Penetration +1",
+          "Block +1"
+        ]
+      },
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration : 150 sec",
+          "ATK +10%",
+          "Penetration +10",
+          "Block +10"
+        ]
+      },
+      {
+        "level": "Level 11",
+        "effects": [
+          "Duration : 165 sec",
+          "ATK +11%",
+          "Penetration +11",
+          "Block +11",
+          "A.R. +1"
+        ]
+      },
+      {
+        "level": "Level 12",
+        "effects": [
+          "Duration : 180 sec",
+          "ATK +12%",
+          "Penetration +12",
+          "Block +12",
+          "A.R. +1"
+        ]
+      },
+      {
+        "level": "Level 13",
+        "effects": [
+          "Duration : 195 sec",
+          "ATK +13%",
+          "Penetration +13",
+          "Block +13",
+          "A.R. +1"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Back-Guard",
+      "equipped_items": "Sword",
+      "icon_position": {
+        "x": -50,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Equites",
+      "equipped_items": "Sword",
+      "icon_position": {
+        "x": 0,
+        "y": -425
+      }
+    },
+    {
+      "stance_name": "Istion",
+      "equipped_items": "Sword",
+      "icon_position": {
+        "x": -500,
+        "y": -200
+      }
+    },
+    {
+      "stance_name": "Legacy",
+      "equipped_items": "Sword",
+      "icon_position": {
+        "x": -450,
+        "y": -25
+      }
+    },
+    {
+      "stance_name": "Istion",
+      "equipped_items": "Sword + Special Bracelet",
+      "icon_position": {
+        "x": -500,
+        "y": -200
+      }
+    },
+    {
+      "stance_name": "Istion",
+      "equipped_items": "Sword + Lightning Bracelet",
+      "icon_position": {
+        "x": -500,
+        "y": -200
+      }
+    },
+    {
+      "stance_name": "Istion",
+      "equipped_items": "Sword + Fire Bracelet",
+      "icon_position": {
+        "x": -500,
+        "y": -200
+      }
+    },
+    {
+      "stance_name": "Istion",
+      "equipped_items": "Sword + Ice Bracelet",
+      "icon_position": {
+        "x": -500,
+        "y": -200
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Back-Guard",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1.5m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "100",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "14",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+3%",
+        "Block": "+14"
+      },
+      "skills": [
+        {
+          "name": "Deep Straight",
+          "image": "bg_deepstraight.jpg",
+          "description": "Impales the enemy on a sword before delivering a powerful kick.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "0 sec.",
+          "duration": "2.67 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "100",
+          "aggro": "78",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 300%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Earth Tremor",
+          "image": "bg_earthtremor.jpg",
+          "description": "Plunges sword into enemy while airborne.",
+          "target": "Up to 3 adjacent enemies",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "2.2 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "150",
+          "aggro": "68",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 400%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 800%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Penta-Train",
+          "image": "bg_pentatrain.jpg",
+          "description": "A series of aggressive attacks that pushes the enemy back.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "3.4 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "200",
+          "aggro": "105",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 600%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1200%"
+            }
+          ],
+          "special": [
+            "Double Damage to enemies with [",
+            "Double Damage to enemies with ["
+          ]
+        },
+        {
+          "name": "Vortex Slash",
+          "image": "bg_vortexlash.jpg",
+          "description": "Make a series of fast and powerful attacks.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "4.4 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "250",
+          "aggro": "210",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1600%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Sword",
+      "icon_position": {
+        "x": -50,
+        "y": 0
+      }
+    },
+    {
+      "name": "Equites",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1.25m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Shooting DMG": "-20%",
+        "Magical DMG": "-20%",
+        "Debuff RES": "-15%"
+      },
+      "stats": {
+        "ASPD": "147",
+        "Bonus ATK": "300%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "40",
+        "EVA": "0",
+        "BLK": "20",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+23%",
+        "Block": "+20",
+        "Critical": "+10",
+        "Penetration": "5+25",
+        "Immunity": "5+15"
+      },
+      "skills": [
+        {
+          "name": "Golpe",
+          "image": "eqt_golpe.jpg",
+          "description": "Brandishes a sword toward the enemy.",
+          "target": "Up to 3 adjacent enemies",
+          "casting_time": "Instant",
+          "cooldown": "3 sec.",
+          "duration": "2.02 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "240",
+          "aggro": "105",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Valentia",
+          "image": "eqt_valentia.jpg",
+          "description": "Strikes the lower half of the enemy to cripple it.",
+          "target": "Up to 6 enemies within a range of 3m",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "2.67 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "340",
+          "aggro": "60",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 900%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1800%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Bless",
+          "image": "eqt_blessedness.jpg",
+          "description": "Can give the sword a sacred power to penetrate enemys armor. Canceled, if Stance changes.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "90 sec.",
+          "duration": "1.23 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "650",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "ATK+3%"
+            },
+            {
+              "level": "Level 10",
+              "value": "ATK+30%"
+            },
+            {
+              "level": "Level 11",
+              "value": "ATK+33%"
+            },
+            {
+              "level": "Level 12",
+              "value": "ATK+36%"
+            },
+            {
+              "level": "Level 13",
+              "value": "ATK+39%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Agil",
+          "image": "eqt_agil.jpg",
+          "description": "Cuts the enemy twice and proceeds to stab it with a backward stroke.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "3.53 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "440",
+          "aggro": "224",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Centella",
+          "image": "eqt_centella.jpg",
+          "description": "Damages the enemy with speed.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "17 sec.",
+          "duration": "3.91 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "540",
+          "aggro": "260",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2300%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4600%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [STR]",
+        "[PVP/PVE Maps] Additional 5% DMG according to extra [STR]",
+        "Ignore additional DEF according to extra [STR] * 4",
+        "Additional DMG against [PC] + 2x",
+        "Additional DMG against Monster according to 5 * 50"
+      ],
+      "equipped_items": "Sword",
+      "icon_position": {
+        "x": 0,
+        "y": -425
+      }
+    },
+    {
+      "name": "Istion",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "0 DMG within  0m range",
+        "Hits per attack": "3",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Shooting DMG": "-20%",
+        "Magical DMG": "-10%",
+        "Debuff RES": "-10%"
+      },
+      "stats": {
+        "ASPD": "260",
+        "Bonus ATK": "280%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "30",
+        "EVA": "0",
+        "BLK": "10",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+15%",
+        "Block": "+15",
+        "Critical": "+25",
+        "Penetration": "10+15",
+        "Immunity": "5+15"
+      },
+      "skills": [
+        {
+          "name": "Metid",
+          "image": "ist_metendo.jpg",
+          "description": "Slash 3 times with sword and smash with left hand that infused by the power of spirit.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "5 sec.",
+          "duration": "2.673 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "250",
+          "aggro": "180",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1100%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2200%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Bol Rune",
+          "image": "ist_bolum.jpg",
+          "description": "Stimulate the scattered power of spirit in the air and pull all the surrounding enemies.(Magic Attribute)",
+          "target": "Up to 7 enemies within a range of 10m",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "2.95 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "450",
+          "aggro": "245",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1600%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3200%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Volphir",
+          "image": "ist_volpire.jpg",
+          "description": "Slash the road that spirit left and make explosion.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "4.7 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "750",
+          "aggro": "170",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2000%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Ebram",
+          "image": "ist_evram.jpg",
+          "description": "Shed power of spirit on the ground and make explosion.(Magic Attribute)",
+          "target": "Up to 8 enemies 9m away and within 8m radius",
+          "casting_time": "1.5 sec.",
+          "cooldown": "30 sec.",
+          "duration": "4.2 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "1250",
+          "aggro": "350",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Elemental Whisper",
+          "image": "ist_elementalwhisper.jpg",
+          "description": "With the elemental power, it whisphers the eternal rest to enemy.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "7.67 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "650",
+          "aggro": "170",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 3000%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 6000%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [STR]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [STR]",
+        "Ignore additional DEF according to extra [STR] * 4",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Sword",
+      "icon_position": {
+        "x": -500,
+        "y": -200
+      }
+    },
+    {
+      "name": "Legacy",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.1~1m away",
+        "Splash": "None",
+        "Hits per attack": "3",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "-15%",
+        "Shooting DMG": "-25%",
+        "Magical DMG": "-20%"
+      },
+      "stats": {
+        "ASPD": "200",
+        "Bonus ATK": "290%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "10",
+        "EVA": "0",
+        "BLK": "30",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+20%",
+        "Block": "+30",
+        "Penetration": "20+15",
+        "Immunity": "10+20"
+      },
+      "skills": [
+        {
+          "name": "Beginning",
+          "image": "swj_beginningstory.jpg",
+          "description": "The start of the story, raises power of allies to the limit and carries the souls into battle.",
+          "target": "",
+          "casting_time": "1 sec.",
+          "cooldown": "20 sec.",
+          "duration": "1.6 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "Ancient Star Orb x 1undefined",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 300s"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 300s"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration : 300s"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration : 300s"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration : 300s"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Sharp Consecutive",
+          "image": "swj_sharpconsecutive.jpg",
+          "description": "Hits the opponent sharply.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "3.5 sec.",
+          "duration": "2.42 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "200",
+          "aggro": "150",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 900%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1800%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Battlefield Tactician",
+          "image": "swj_battlefieldtact.jpg",
+          "description": "In the battlefield, a stratagy is given to improve allies.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "12 sec.",
+          "duration": "1.9 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "450",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 300s"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 300s"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Sevens",
+          "image": "swj_sevens.jpg",
+          "description": "Seven ruthless and brilliant slashes towards the enemy.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "17 sec.",
+          "duration": "3.73 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "700",
+          "aggro": "150",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2250%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4500%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Astral Sword",
+          "image": "swj_astralsword.jpg",
+          "description": "An utimate sword skill that sends the myriad of astral swords towards all of enemies.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "2.7 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "800",
+          "aggro": "150",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2000%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4000%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [STR]",
+        "[PVP/PVE Maps] Additional 1% DMG according to extra [STR]",
+        "Ignore additional DEF according to extra [STR] * 3",
+        "Additional DMG against [PC] + 1x"
+      ],
+      "equipped_items": "Sword",
+      "icon_position": {
+        "x": -450,
+        "y": -25
+      }
+    }
+  ]
+}

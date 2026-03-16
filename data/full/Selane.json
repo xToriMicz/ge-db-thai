@@ -1,0 +1,409 @@
+{
+  "slug": "Selane",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Frost Crown",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Robe",
+    "costume": "None",
+    "gloves": "Gloves",
+    "ring": "Ring",
+    "weapon_costume": "Frozen Spire Bracelet Frozen Spire Bracelet - Event",
+    "belt": "Belt",
+    "shoes": "Shoes",
+    "artifact": "Token of Maid Soul Stone of Old Novia Soul Stone of Novia Selenes Protection Full Moon Piercing The Eye of Goddess Moonlight Ring Locket of Goddess Cold Auracite",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Frigid",
+    "image": "job_frigid.jpg",
+    "description": "Condenses cold energy to increase ATK.",
+    "target": "Self-buff",
+    "casting_time": "0 sec.",
+    "cooldown": "0 sec.",
+    "duration": "0 sec.",
+    "sp_cost": "600",
+    "consume_item": "Ancient Star Orb × 8",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "ATK +75%",
+          "ATK to Monsters +150%",
+          "Ice Penetration +20",
+          "Casting time -10%",
+          "Attack SPD -20%",
+          "INT +25",
+          "Max targets of AoE skill attacks +12",
+          "A.R.+1",
+          "Reusing it, Buff is canceled."
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Possession Ice",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -100,
+        "y": -100
+      }
+    },
+    {
+      "stance_name": "Possession Ice",
+      "equipped_items": "Ice Bracelet",
+      "icon_position": {
+        "x": -100,
+        "y": -100
+      }
+    },
+    {
+      "stance_name": "Maiden of Glacier",
+      "equipped_items": "Ice Bracelet + Ice Bracelet",
+      "icon_position": {
+        "x": -400,
+        "y": -50
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Possession Ice",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.5~9m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "170",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "15",
+        "Lightning RES": "-25",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [
+        {
+          "name": "Freezing Spear",
+          "image": "pice_freezingsphere.jpg",
+          "description": "Creates a magical glacial spear that launches itself at enemies.",
+          "target": "Up to 3 enemies 8m away and within a 1.75m radius",
+          "casting_time": "0.9 sec.",
+          "cooldown": "0 sec.",
+          "duration": "1.33 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "60",
+          "aggro": "42",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Chilling Touch",
+          "image": "pice_chillingtouch.jpg",
+          "description": "Increases Ice RES by imbuing Ice attribute to allies attack.",
+          "target": "",
+          "casting_time": "0.367 sec.",
+          "cooldown": "0 sec.",
+          "duration": "230 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "90",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 110 sec."
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 200 sec."
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 210 sec."
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 220 sec."
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 230 sec."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Frost Cloud",
+          "image": "pice_frostcloud.jpg",
+          "description": "By surrounding them with a cloud of ice, it freezes enemies.",
+          "target": "Up to 6 enemies 8m away and within a 3.5m radius",
+          "casting_time": "2 sec.",
+          "cooldown": "10 sec.",
+          "duration": "1.63 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "120",
+          "aggro": "63",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Deluge",
+          "image": "pice_deluge.jpg",
+          "description": "Sets [Deluge] inflicting constant Ice ATK in the ground.",
+          "target": "",
+          "casting_time": "2 sec.",
+          "cooldown": "15 sec.",
+          "duration": "1.63 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "180",
+          "aggro": "186",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3000%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -100,
+        "y": -100
+      }
+    },
+    {
+      "name": "Maiden of Glacier",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.5~10m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Shooting DMG": "+15%",
+        "Magical DMG": "-20%",
+        "Debuff Chance": "+10%"
+      },
+      "stats": {
+        "ASPD": "225",
+        "Bonus ATK": "300%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "10",
+        "Ice RES": "50",
+        "Lightning RES": "-50",
+        "Abnormal RES": "20"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+13%",
+        "Penetration": "5+25",
+        "Immunity": "10"
+      },
+      "skills": [
+        {
+          "name": "Snow Storm",
+          "image": "mog_snowstorm.jpg",
+          "description": "Makes the body move slowly due to the snow storm.",
+          "target": "",
+          "casting_time": "2.1 sec.",
+          "cooldown": "12 sec.",
+          "duration": "6.732 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "300",
+          "aggro": "221",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 3000%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 6000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Icicle",
+          "image": "mog_icicle.jpg",
+          "description": "Pierces enemy by throwing a sharp icy spear.",
+          "target": "1 enemy within a range of 15m",
+          "casting_time": "5 sec.",
+          "cooldown": "10 sec.",
+          "duration": "2.7 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "50",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 196.5%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 393%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Thorn Field",
+          "image": "mog_thornfield.jpg",
+          "description": "Creates Icy thorns on the ground that inflicts painful wounds.",
+          "target": "",
+          "casting_time": "5 sec.",
+          "cooldown": "20 sec.",
+          "duration": "3.433 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "72",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 176.4%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 352%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Snowflake",
+          "image": "mog_snowflake.jpg",
+          "description": "Protects the body using cold snowflakes.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "4.933 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "600",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 45 sec"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 180 sec"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration : 195 sec"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration : 210 sec"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration : 225 sec"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Ice Breaker",
+          "image": "mog_icebreaker.jpg",
+          "description": "Throws a giant block of ice to shock the target.",
+          "target": "Up to 19 enemies / 15m away / within 6m radius",
+          "casting_time": "2.8 sec.",
+          "cooldown": "30 sec.",
+          "duration": "2.7 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "1000",
+          "aggro": "197",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1715.99%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3431%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 6% of extra [INT]",
+        "[PVP/PVE Maps] Additional 3% DMG according to extra [INT]",
+        "Ignore additional RES according to extra [INT] * 4",
+        "Additional DMG against Monster according to 3 * 50"
+      ],
+      "equipped_items": "Ice Bracelet + Ice Bracelet",
+      "icon_position": {
+        "x": -400,
+        "y": -50
+      }
+    }
+  ]
+}

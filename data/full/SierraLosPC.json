@@ -1,0 +1,1190 @@
+{
+  "slug": "SierraLosPC",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "None",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Robe",
+    "costume": "None",
+    "gloves": "Gloves",
+    "ring": "Ring",
+    "weapon_costume": "Event Elemental Broomstick Costume Elemental Broomstick Costume",
+    "belt": "Belt",
+    "shoes": "Shoes",
+    "artifact": "None",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Nature",
+    "image": "job_nature.jpg",
+    "description": "Maximizes your own ability by stabilizing your body and soul through the energy of nature.",
+    "target": "Self-buff",
+    "casting_time": "0 sec.",
+    "cooldown": "60 sec.",
+    "duration": "3.2 sec.",
+    "sp_cost": "300",
+    "consume_item": "Ancient Star Orb × 5",
+    "levels": [
+      {
+        "level": "Level 1",
+        "effects": [
+          "Duration : 30 sec",
+          "ATK +2%",
+          "Casting Time -6%"
+        ]
+      },
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration : 300 sec",
+          "ATK +20%",
+          "Casting Time -15%"
+        ]
+      },
+      {
+        "level": "Level 11",
+        "effects": [
+          "Duration : 330 sec.",
+          "ATK +22%/Magic Penetration +10",
+          "Casting time -16%",
+          "A.R. +1"
+        ]
+      },
+      {
+        "level": "Level 12",
+        "effects": [
+          "Duration : 360 sec.",
+          "ATK +24%/Magic Penetration +10",
+          "Casting time -17%",
+          "A.R. +2"
+        ]
+      },
+      {
+        "level": "Level 13",
+        "effects": [
+          "Duration : 390 sec.",
+          "ATK +26%/Magic Penetration +10",
+          "Casting time -18%",
+          "A.R. +2"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "First Aid",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -50,
+        "y": -50
+      }
+    },
+    {
+      "stance_name": "ESP",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": 0,
+        "y": -50
+      }
+    },
+    {
+      "stance_name": "First Aid",
+      "equipped_items": "Rod",
+      "icon_position": {
+        "x": -50,
+        "y": -50
+      }
+    },
+    {
+      "stance_name": "ESP",
+      "equipped_items": "Rod",
+      "icon_position": {
+        "x": 0,
+        "y": -50
+      }
+    },
+    {
+      "stance_name": "Pythonisse",
+      "equipped_items": "Rod",
+      "icon_position": {
+        "x": -400,
+        "y": -200
+      }
+    },
+    {
+      "stance_name": "Serpentis",
+      "equipped_items": "Rod",
+      "icon_position": {
+        "x": -300,
+        "y": -200
+      }
+    },
+    {
+      "stance_name": "Ancient Tactics",
+      "equipped_items": "Rod",
+      "icon_position": {
+        "x": -50,
+        "y": -325
+      }
+    },
+    {
+      "stance_name": "Innate",
+      "equipped_items": "Special Bracelet",
+      "icon_position": {
+        "x": -150,
+        "y": -400
+      }
+    },
+    {
+      "stance_name": "Ancient Tactics",
+      "equipped_items": "Special Bracelet",
+      "icon_position": {
+        "x": -50,
+        "y": -325
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "First Aid",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.1~1m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "150",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "5",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "20"
+      },
+      "lv25_bonus": {
+        "Evasion": "+5"
+      },
+      "skills": [
+        {
+          "name": "Recover",
+          "image": "aid_recover.jpg",
+          "description": "Cure various abnormal disease that might afflict team members.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "30 sec.",
+          "duration": "1.5 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "25",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Cure abnormal status, ["
+            },
+            {
+              "level": "Level 10",
+              "value": "Cure abnormal status, ["
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Resuscitation",
+          "image": "aid_resuscitation.jpg",
+          "description": "Heals a character who is incapable of combat.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "0 sec.",
+          "duration": "1.5 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "25",
+          "aggro": "0",
+          "skill_type": "Healing",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Restores HP by 5% after resurrection"
+            },
+            {
+              "level": "Level 10",
+              "value": "Restores HP by 50% after resurrection"
+            },
+            {
+              "level": "Level 11",
+              "value": "Restores HP by 55% after resurrection"
+            },
+            {
+              "level": "Level 12",
+              "value": "Restores HP by 60% after resurrection"
+            },
+            {
+              "level": "Level 13",
+              "value": "Restores HP by 65% after resurrection"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Cure All",
+          "image": "aid_cureall.jpg",
+          "description": "Restores HP of an ally by large amount.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "0 sec.",
+          "duration": "1.5 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "50",
+          "aggro": "0",
+          "skill_type": "Healing",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Level 10"
+            },
+            {
+              "level": "Level 10",
+              "value": "<img src=\"./images/Skills/aid_masscure.jpg\""
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Mass Cure",
+          "image": "aid_masscure.jpg",
+          "description": "Fully recover HP of all team members.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "0 sec.",
+          "duration": "1.5 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "100",
+          "aggro": "0",
+          "skill_type": "Healing",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Level 10"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -50,
+        "y": -50
+      }
+    },
+    {
+      "name": "ESP",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1~10m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "170",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "25"
+      },
+      "lv25_bonus": {},
+      "skills": [
+        {
+          "name": "Spiritual Shield",
+          "image": "esp_spiritualshield.jpg",
+          "description": "Grants the allies powerful Mental Protection",
+          "target": "",
+          "casting_time": "1 sec.",
+          "cooldown": "0 sec.",
+          "duration": "345 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "60",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 165 sec."
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 300 sec."
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 315 sec."
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 330 sec."
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 345 sec."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Anti-Magic Shell",
+          "image": "esp_antimagicshell.jpg",
+          "description": "Grants the allies powerful Elemental Protection.",
+          "target": "",
+          "casting_time": "1 sec.",
+          "cooldown": "0 sec.",
+          "duration": "345 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "90",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 165 sec."
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 300 sec."
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 315 sec."
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 330 sec."
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 345 sec."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Protection Field",
+          "image": "esp_protectionfield.jpg",
+          "description": "Grants a powerful defensive field to friendly forces. However you cant use items.",
+          "target": "",
+          "casting_time": "1 sec.",
+          "cooldown": "0 sec.",
+          "duration": "1.1 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "120",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 18 sec"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 45 sec"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration : 48 sec"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration : 51 sec"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration : 54 sec"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Dispel Magic",
+          "image": "esp_dispellmagic.jpg",
+          "description": "Removes all buffs and curses on team members and on all enemies around you and decreases SP Recovery for a while.",
+          "target": "",
+          "casting_time": "2.633 sec.",
+          "cooldown": "20 sec.",
+          "duration": "1.63 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "180",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Removes all buffs/curses"
+            },
+            {
+              "level": "Level 10",
+              "value": "Removes all buffs/curses"
+            },
+            {
+              "level": "Level 11",
+              "value": "Removes all buffs/curses"
+            },
+            {
+              "level": "Level 12",
+              "value": "Removes all buffs/curses"
+            },
+            {
+              "level": "Level 13",
+              "value": "Removes all buffs/curses"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": 0,
+        "y": -50
+      }
+    },
+    {
+      "name": "Pythonisse",
+      "info": {
+        "Targets": "4 enemies",
+        "Range": "1~10m away",
+        "Splash": "100% DMG within  2m range",
+        "Hits per attack": "2",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Shooting DMG": "+20%",
+        "Magical DMG": "-20%",
+        "Debuff RES": "-10%"
+      },
+      "stats": {
+        "ASPD": "227",
+        "Bonus ATK": "247%",
+        "MSPD": "1.15",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+10%",
+        "Penetration": "10+20",
+        "Immunity": "10+5"
+      },
+      "skills": [
+        {
+          "name": "Sound of Ground",
+          "image": "pyt_soundofground.jpg",
+          "description": "Blocks enemys movement with power of the ground.",
+          "target": "Up to 5 enemies 10m away and within a 5m radius",
+          "casting_time": "1.2 sec.",
+          "cooldown": "1 sec.",
+          "duration": "1.3 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "500",
+          "aggro": "65",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Arrow of Min.",
+          "image": "pyt_arrowofmind.jpg",
+          "description": "Shapes the anger caused by enemies that bullies friends in the form of arrows to inflict Magical Damage on enemy.",
+          "target": "",
+          "casting_time": "2 sec.",
+          "cooldown": "10 sec.",
+          "duration": "1.866 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "350",
+          "aggro": "172",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Wavering Fire",
+          "image": "pyt_waveringfire.jpg",
+          "description": "Creates a fire wall while breaking through the middle of an enemy camp.",
+          "target": "Up to 8 enemies 15m away and within a 7m width",
+          "casting_time": "0.5 sec.",
+          "cooldown": "15 sec.",
+          "duration": "2.233 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "800",
+          "aggro": "103",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1600%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3200%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Ice Field",
+          "image": "pyt_frostfierce.jpg",
+          "description": "Forms power of ice by using cool-headedness and casts the power to enemies.",
+          "target": "",
+          "casting_time": "2.366 sec.",
+          "cooldown": "22 sec.",
+          "duration": "1.566 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "900",
+          "aggro": "223",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2100%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4200%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Tornado Storm",
+          "image": "pyt_tornadostorm.jpg",
+          "description": "Inflicts great damage to enemies coming to you by creating a whirlwind and a lightning.",
+          "target": "Up to 12 enemies within 10m away.",
+          "casting_time": "3.633 sec.",
+          "cooldown": "40 sec.",
+          "duration": "2.333 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "1000",
+          "aggro": "353",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5000%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [INT]",
+        "[PVP/PVE Maps] Additional 5% DMG according to extra [INT]",
+        "Ignore additional RES according to extra [INT] * 4",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 5 * 50"
+      ],
+      "equipped_items": "Rod",
+      "icon_position": {
+        "x": -400,
+        "y": -200
+      }
+    },
+    {
+      "name": "Serpentis",
+      "info": {
+        "Targets": "4 enemies",
+        "Range": "1~10m away",
+        "Splash": "100% DMG within  2m range",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Debuff RES": "-10%"
+      },
+      "stats": {
+        "ASPD": "157",
+        "Bonus ATK": "320%",
+        "MSPD": "1.15",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+45%",
+        "Penetration": "30+13",
+        "Immunity": "10+20"
+      },
+      "skills": [
+        {
+          "name": "Thunderwave",
+          "image": "spt_serpentisskl01.jpg",
+          "description": "Fly into the enemys forces at a tremendous speed, resembling a thunderbolt.",
+          "target": "Up to 15m ahead within a 2m range / Max. 5 targets",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "2 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "400",
+          "aggro": "103",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Sound of Earthquake",
+          "image": "spt_serpentisskl02.jpg",
+          "description": "Attack enemies with the rumbling voice of the earth.",
+          "target": "Up to 13m away / within a radius of 4m / Max. 10 targets",
+          "casting_time": "1.2 sec.",
+          "cooldown": "15 sec.",
+          "duration": "1 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "500",
+          "aggro": "65",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1600%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3200%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Blizzard",
+          "image": "spt_serpentisskl03.jpg",
+          "description": "Invite the surrounding enemy forces to their doom within an extremely cold blizzard.",
+          "target": "",
+          "casting_time": "3 sec.",
+          "cooldown": "18 sec.",
+          "duration": "2 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "600",
+          "aggro": "353",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Blazing Field",
+          "image": "spt_serpentisskl04.jpg",
+          "description": "Burning flames come forth from your fierce inner emotions, launching themselves at the enemy forces.",
+          "target": "",
+          "casting_time": "3 sec.",
+          "cooldown": "20 sec.",
+          "duration": "1.25 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "800",
+          "aggro": "223",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Arrow of the Elements",
+          "image": "spt_serpentisskl05.jpg",
+          "description": "The ultimate magic spell. Combine the power of the five elements and decimate the enemy.",
+          "target": "",
+          "casting_time": "3 sec.",
+          "cooldown": "25 sec.",
+          "duration": "2 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "1000",
+          "aggro": "172",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 3200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 6400%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 5% of extra [INT]",
+        "[PVP/PVE Maps] Additional 3% DMG according to extra [INT]",
+        "Ignore additional RES according to extra [INT] * 2"
+      ],
+      "equipped_items": "Rod",
+      "icon_position": {
+        "x": -300,
+        "y": -200
+      }
+    },
+    {
+      "name": "Ancient Tactics",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.1~9m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "+10%",
+        "Shooting DMG": "-10%",
+        "Magical DMG": "-15%",
+        "Debuff RES": "-10%"
+      },
+      "stats": {
+        "ASPD": "170",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "20"
+      },
+      "lv25_bonus": {
+        "Immunity": "10+20"
+      },
+      "skills": [
+        {
+          "name": "Miracle",
+          "image": "aot_miraclerodstaff.jpg",
+          "description": "Execute a tactic that increases the offensive and defensive capacity of the ally.",
+          "target": "",
+          "casting_time": "0.866 sec.",
+          "cooldown": "30 sec.",
+          "duration": "130 seconds",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "150",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 10 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 100 seconds"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 110 seconds"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 120 seconds"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 130 seconds"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Protecting Booster",
+          "image": "aot_caenopyrodstaff.jpg",
+          "description": "Increase the defensive capacity of target ally.",
+          "target": "",
+          "casting_time": "0.866 sec.",
+          "cooldown": "10 sec.",
+          "duration": "390 seconds",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 30 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 330 seconds"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 360 seconds"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 390 seconds"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Shearing Booster",
+          "image": "aot_siaringboosterrodstaff.jpg",
+          "description": "Increase the offensive capacity of target ally.",
+          "target": "",
+          "casting_time": "0.866 sec.",
+          "cooldown": "10 sec.",
+          "duration": "390 seconds",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 30 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 330 seconds"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 360 seconds"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 390 seconds"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Bartor",
+          "image": "aot_bartorrodstaff.jpg",
+          "description": "Remove all harmful effects and restore HP of all team members.",
+          "target": "",
+          "casting_time": "0.866 sec.",
+          "cooldown": "20 sec.",
+          "duration": "1.6 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "150",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Restore 15% of maximum HP"
+            },
+            {
+              "level": "Level 10",
+              "value": "Restore 15% of maximum HP"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Additional Training",
+          "image": "aot_Additionaltraing.jpg",
+          "description": "Increase skill level by enhancing own tactical capacity.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "50 sec.",
+          "duration": "1.033 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Increase all skills level by enhancing your own tactical capacity."
+            },
+            {
+              "level": "Level 10",
+              "value": "Increase all skills level by enhancing your own tactical capacity."
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 2% of extra [None]"
+      ],
+      "equipped_items": "Rod",
+      "icon_position": {
+        "x": -50,
+        "y": -325
+      }
+    },
+    {
+      "name": "Innate",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "12m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "-10%",
+        "Shooting DMG": "+10%",
+        "Debuff RES": "-10%"
+      },
+      "stats": {
+        "ASPD": "203",
+        "Bonus ATK": "300%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "Penetration": "10+15",
+        "Immunity": "10+10"
+      },
+      "skills": [
+        {
+          "name": "Bluebird",
+          "image": "inat_bluebirds.jpg",
+          "description": "Through communion with nature, summon a magic bird that attacks the enemy.",
+          "target": "Up to 16 enemies 12m away and within a 9m radius",
+          "casting_time": "1.166 sec.",
+          "cooldown": "5 sec.",
+          "duration": "1.1 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "480",
+          "aggro": "288",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 700%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Dawn",
+          "image": "inat_dawn.jpg",
+          "description": "Punish evil people with the energy of dawn light.",
+          "target": "Up to 99 allies 12m away and within a 10m radius",
+          "casting_time": "1.933 sec.",
+          "cooldown": "10 sec.",
+          "duration": "1.466 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "550",
+          "aggro": "288",
+          "skill_type": "Healing",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Apply ["
+            },
+            {
+              "level": "Level 10",
+              "value": "Apply ["
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Firmament",
+          "image": "inat_firmament.jpg",
+          "description": "Punish evil people with the energy of the sky.",
+          "target": "Up to 6 enemies 12m away and within 6m",
+          "casting_time": "3.033 sec.",
+          "cooldown": "10 sec.",
+          "duration": "1.6 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "640",
+          "aggro": "288",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Marigold",
+          "image": "inat_marigold.jpg",
+          "description": "Resonate with nature and bloom countless magical flowers.",
+          "target": "Up to 24 allies within a 12m radius",
+          "casting_time": "2.367 sec.",
+          "cooldown": "45 sec.",
+          "duration": "1.933 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "720",
+          "aggro": "288",
+          "skill_type": "Healing",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Apply ["
+            },
+            {
+              "level": "Level 10",
+              "value": "Apply ["
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Heart of Sierra",
+          "image": "inat_heartofsierra.jpg",
+          "description": "Sierras power of the warm and powerful heart is fully expressed.",
+          "target": "Up to 24 squad members 10m away and within a 10m radius",
+          "casting_time": "2.833 sec.",
+          "cooldown": "18 sec.",
+          "duration": "2.333 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "1050",
+          "aggro": "288",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3000%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [INT]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [INT]",
+        "Ignore additional RES according to extra [INT] * 4",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Special Bracelet",
+      "icon_position": {
+        "x": -150,
+        "y": -400
+      }
+    }
+  ]
+}

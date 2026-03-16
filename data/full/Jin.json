@@ -1,0 +1,483 @@
+{
+  "slug": "Jin",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Drifter White Winter",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Leather",
+    "costume": "None",
+    "gloves": "Gloves Leather",
+    "ring": "Ring",
+    "weapon_costume": "None",
+    "belt": "Belt Leather",
+    "shoes": "Shoes Leather",
+    "artifact": "Leather Sheath",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Oriental Zodiacs Ninjutsu",
+    "image": "job_zodiachandsign.jpg",
+    "description": "Make gestures with your hands to grant yourself the power of the 12 oriental zodiacs.",
+    "target": "Self-buff",
+    "casting_time": "1.133 sec.",
+    "cooldown": "30 sec.",
+    "duration": "1.63 sec.",
+    "sp_cost": "300",
+    "consume_item": "Ancient Star Orb × 7",
+    "levels": [
+      {
+        "level": "Level 1",
+        "effects": [
+          "Duration: 30sec.",
+          "ATK+7%",
+          "Attack SPD+6%",
+          "Penetration+6",
+          "Evasion+3",
+          "Critical rate+3",
+          "A.R.+1",
+          "Critical Damage+75%"
+        ]
+      },
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration: 300sec.",
+          "ATK+25%",
+          "Attack SPD+15%",
+          "Penetration+15",
+          "Evasion+12",
+          "Critical rate+12",
+          "A.R.+1",
+          "Critical Damage+75%"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Death Shadow Ninjutsu",
+      "equipped_items": "Dagger",
+      "icon_position": {
+        "x": -450,
+        "y": -50
+      }
+    },
+    {
+      "stance_name": "Ninja Arts: Higashini",
+      "equipped_items": "Dagger",
+      "icon_position": {
+        "x": -100,
+        "y": -400
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Death Shadow Ninjutsu",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Shooting DMG": "+10%",
+        "Magical DMG": "-20%"
+      },
+      "stats": {
+        "ASPD": "117",
+        "Bonus ATK": "150%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "50",
+        "EVA": "15",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+25%",
+        "Evasion": "+25",
+        "Critical": "+35",
+        "Penetration": "5+25",
+        "Immunity": "5+10"
+      },
+      "skills": [
+        {
+          "name": "Death Shadow Flash",
+          "image": "dsn_shadowgleam.jpg",
+          "description": "Fly past the enemy and swing a dagger at them to attack.",
+          "target": "Up to 5 enemies 12m away and within 7m width",
+          "casting_time": "Instant",
+          "cooldown": "8 sec.",
+          "duration": "2.933 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "200",
+          "aggro": "80",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 600%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1200%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Throat Piercing",
+          "image": "dsn_silencenilddle.jpg",
+          "description": "While making a backflip, throw a dagger that makes the enemy speechless.",
+          "target": "1 enemy within a range of 9m",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "2.4 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "280",
+          "aggro": "90",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 400%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 800%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Shadow Teleport",
+          "image": "dsn_shadowflash.jpg",
+          "description": "Open the gate of space and time and teleport to a designated location to [Hide].",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "27 sec.",
+          "duration": "0.6 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "400",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Ignore all attacks while moving"
+            },
+            {
+              "level": "Level 10",
+              "value": "Ignore all attacks while moving"
+            },
+            {
+              "level": "Level 11",
+              "value": "Ignore all attacks while moving"
+            },
+            {
+              "level": "Level 12",
+              "value": "Ignore all attacks while moving"
+            },
+            {
+              "level": "Level 13",
+              "value": "Ignore all attacks while moving"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Water Flakes Rising Circle",
+          "image": "dsn_floodearthquake.jpg",
+          "description": "Stamp your feet to damage the enemys feet. Sprays of water are created and cause additional damage.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "17 sec.",
+          "duration": "2.134 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "340",
+          "aggro": "120",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Extensive Fetter Circle",
+          "image": "dsn_sealsheave.jpg",
+          "description": "Cause damage to surrounding enemies and set up the Fetter Circle. The enemies in the Circle might become affected by [Hold].",
+          "target": "Up to 9 enemies/ 10m away / within a radius of 6m",
+          "casting_time": "1.6 sec.",
+          "cooldown": "37 sec.",
+          "duration": "2.5 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "300",
+          "aggro": "250",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1625%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3250%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [STR]",
+        "Ignore additional DEF according to extra [STR] * 4",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Dagger",
+      "icon_position": {
+        "x": -450,
+        "y": -50
+      }
+    },
+    {
+      "name": "Ninja Arts: Higashini",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "4",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "-15%",
+        "Shooting DMG": "-15%",
+        "Magical DMG": "-20%"
+      },
+      "stats": {
+        "ASPD": "117",
+        "Bonus ATK": "250%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "50",
+        "EVA": "15",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+25%",
+        "Evasion": "+25",
+        "Critical": "+55",
+        "Penetration": "15+15",
+        "Immunity": "10+20"
+      },
+      "skills": [
+        {
+          "name": "Fox Trickery",
+          "image": "fsy_miserablefantasma.jpg",
+          "description": "Seal the person to the ground using a foxs seal",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "2.17 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "440",
+          "aggro": "111",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 900%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1800%"
+            }
+          ],
+          "special": [
+            "Additional stats increase in proportion to [",
+            "Additional stats increase in proportion to ["
+          ]
+        },
+        {
+          "name": "Fox Contract",
+          "image": "fsy_sealsheave.jpg",
+          "description": "Create a contract with the spirits of the fox to deal damage to enemy",
+          "target": "",
+          "casting_time": "1 sec.",
+          "cooldown": "20 sec.",
+          "duration": "2.5 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "300",
+          "aggro": "250",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1300%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Fox Mischief",
+          "image": "fsy_stunt.jpg",
+          "description": "Send a surprise by throwing a firery smoke bomb at enemy.",
+          "target": "",
+          "casting_time": "0.5 sec.",
+          "cooldown": "20 sec.",
+          "duration": "3.03 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "440",
+          "aggro": "58",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Fox Strike",
+          "image": "fsy_strike.jpg",
+          "description": "Strike at your enemy with the spirit of foxes.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "2.4 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "440",
+          "aggro": "111",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Fox Spirit",
+          "image": "fsy_bailesoleares.jpg",
+          "description": "Use the power of foxes to decimate the enemys body.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "25 sec.",
+          "duration": "4.44 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "200",
+          "aggro": "247",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5600%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 10% of extra [STR]",
+        "[PVP/PVE Maps] Additional 1% DMG according to extra [STR]",
+        "Ignore additional DEF according to extra [STR] * 4"
+      ],
+      "equipped_items": "Dagger",
+      "icon_position": {
+        "x": -100,
+        "y": -400
+      }
+    }
+  ]
+}

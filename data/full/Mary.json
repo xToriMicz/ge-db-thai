@@ -1,0 +1,601 @@
+{
+  "slug": "Mary",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Classe Alta",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Coat",
+    "costume": "None",
+    "gloves": "Gloves Leather",
+    "ring": "Ring",
+    "weapon_costume": "Event Cluster of Spirit Costume Cluster of Spirit Costume",
+    "belt": "Belt Leather",
+    "shoes": "Shoes Leather",
+    "artifact": "Broom of Maid",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Cleaning Time",
+    "image": "job_cleaningtime.jpg",
+    "description": "Due to a sense of duty to clean the area around, ATK increases. But, Attack SPD decreases so as to clean it throughly.",
+    "target": "Self-buff",
+    "casting_time": "0 sec.",
+    "cooldown": "50 sec.",
+    "duration": "1.366 sec.",
+    "sp_cost": "400",
+    "consume_item": "Ancient Star Orb × 3",
+    "levels": [
+      {
+        "level": "Level 1",
+        "effects": [
+          "ATK +2%",
+          "ATK toward monster +1%",
+          "ATK SPD -2%",
+          "Removes the buff in reuse"
+        ]
+      },
+      {
+        "level": "Level 10",
+        "effects": [
+          "ATK +20%",
+          "ATK toward monster +10%",
+          "ATK SPD -20%",
+          "Removes the buff in reuse"
+        ]
+      },
+      {
+        "level": "Level 11",
+        "effects": [
+          "ATK +22%",
+          "ATK toward monster +11%",
+          "ATK SPD -22%",
+          "Removes the buff in reuse",
+          "AR. +1"
+        ]
+      },
+      {
+        "level": "Level 12",
+        "effects": [
+          "ATK +24%",
+          "ATK toward monster +12%",
+          "ATK SPD -24%",
+          "Removes the buff in reuse",
+          "AR. +1"
+        ]
+      },
+      {
+        "level": "Level 13",
+        "effects": [
+          "ATK +26%",
+          "ATK toward monster +13%",
+          "ATK SPD -26%",
+          "Removes the buff in reuse",
+          "AR. +1"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Shotgun Blaster",
+      "equipped_items": "Shotgun",
+      "icon_position": {
+        "x": -100,
+        "y": -125
+      }
+    },
+    {
+      "stance_name": "Gigantic Blaster",
+      "equipped_items": "Shotgun",
+      "icon_position": {
+        "x": -100,
+        "y": -350
+      }
+    },
+    {
+      "stance_name": "Sweeper",
+      "equipped_items": "Shotgun",
+      "icon_position": {
+        "x": -300,
+        "y": -375
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Shotgun Blaster",
+      "info": {
+        "Targets": "5 enemies",
+        "Range": "0.1~11.25m away",
+        "Splash": "100% DMG within  1.75m range",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "190",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "20",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+12%",
+        "Ignore DEF": "+2%",
+        "Critical": "+6"
+      },
+      "skills": [
+        {
+          "name": "Menace Shot",
+          "image": "sht_menaceshot.jpg",
+          "description": "Strikes terror into enemies by firing a blank cartridge into the air.",
+          "target": "Up to 15 enemies within a range of 8m",
+          "casting_time": "1.5 sec.",
+          "cooldown": "0 sec.",
+          "duration": "0.83 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "100",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "66% chance to ["
+            },
+            {
+              "level": "Level 10",
+              "value": "66% chance to ["
+            },
+            {
+              "level": "Level 11",
+              "value": "66% chance to ["
+            },
+            {
+              "level": "Level 12",
+              "value": "66% chance to ["
+            },
+            {
+              "level": "Level 13",
+              "value": "66% chance to ["
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Implosion",
+          "image": "sht_implosion.jpg",
+          "description": "At immediate enemy, it fires a powerful shot.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "3.3 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "200",
+          "aggro": "149",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 680%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1360%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Claymore",
+          "image": "sht_claymore.jpg",
+          "description": "Fires a powerful shot at a distant enemy.",
+          "target": "Up to 8 enemies 12m away and within a radius of 3m",
+          "casting_time": "1.5 sec.",
+          "cooldown": "20 sec.",
+          "duration": "1.8 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "76",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 324%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 648%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Shotgun",
+      "icon_position": {
+        "x": -100,
+        "y": -125
+      }
+    },
+    {
+      "name": "Gigantic Blaster",
+      "info": {
+        "Targets": "5 enemies",
+        "Range": "0.1~11.25m away",
+        "Splash": "100% DMG within  2m range",
+        "Hits per attack": "2",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "203",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "20",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+16%",
+        "Ignore DEF": "+2%",
+        "Critical": "+10"
+      },
+      "skills": [
+        {
+          "name": "Glitter",
+          "image": "gtb_glitter.jpg",
+          "description": "Light-speed buckshots at enemies.",
+          "target": "Up to 3 enemies 8m away and within a 3m radius.",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "2.1 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "100",
+          "aggro": "91",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 438%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 876%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Blowback",
+          "image": "gtb_blowback.jpg",
+          "description": "Fires an explosive shot that blows enemies away.",
+          "target": "Up to 6 enemies 9m away and within a 3m radius",
+          "casting_time": "1.367 sec.",
+          "cooldown": "20 sec.",
+          "duration": "1.2 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "200",
+          "aggro": "117",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 498%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 996%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Bullet Slug",
+          "image": "gtb_slugbullet.jpg",
+          "description": "Critical attack with Buckshots.",
+          "target": "Up to 6 enemies 10m away and within a 3m radius",
+          "casting_time": "1.367 sec.",
+          "cooldown": "25 sec.",
+          "duration": "1.2 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "250",
+          "aggro": "116",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 523%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1046%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Steel Baton",
+          "image": "gtb_stealbaton.jpg",
+          "description": "Attack enemy with Iron Buckshots.",
+          "target": "Up to 6 enemies 11m away and within a 3m radius.",
+          "casting_time": "1.7 sec.",
+          "cooldown": "30 sec.",
+          "duration": "1.2 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "155",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 710%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1420%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Shotgun",
+      "icon_position": {
+        "x": -100,
+        "y": -350
+      }
+    },
+    {
+      "name": "Sweeper",
+      "info": {
+        "Targets": "5 enemies",
+        "Range": "0.1~10m away",
+        "Splash": "100% DMG within  2.2m range",
+        "Hits per attack": "2",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Magical DMG": "-20%",
+        "Debuff RES": "-20%"
+      },
+      "stats": {
+        "ASPD": "223",
+        "Bonus ATK": "300%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "25",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+25%",
+        "Ignore DEF": "+9%",
+        "Critical": "+17",
+        "Penetration": "5+25",
+        "Immunity": "10"
+      },
+      "skills": [
+        {
+          "name": "Floor Cleaner",
+          "image": "swp_warningshot.jpg",
+          "description": "To the front floor to threaten the enemy, it fires a shot widely.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "2.866 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "500",
+          "aggro": "128",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1100%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2200%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Clean Up",
+          "image": "swp_cleanup.jpg",
+          "description": "Turn one round at nearby place and fire a powerful shot to clean the place.",
+          "target": "Up to 10 enemies within a range of 10m",
+          "casting_time": "1.2 sec.",
+          "cooldown": "15 sec.",
+          "duration": "8.566 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "400",
+          "aggro": "166",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Order of Lady",
+          "image": "swp_ladiesorder.jpg",
+          "description": "Readjust shooting position quickly after receiving an order from the lady.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "1.366 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "750",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration 5 Minutes."
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration 5 Minutes."
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration 5 Minutes."
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration 5 Minutes."
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration 5 Minutes."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Tidy Road",
+          "image": "swp_tidyroad.jpg",
+          "description": "Fires a shot like cleaning the front road in a wide range and clean it nicely.",
+          "target": "Up to 10 enemies 15m away and within 13m width",
+          "casting_time": "1.2 sec.",
+          "cooldown": "20 sec.",
+          "duration": "3.7 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "650",
+          "aggro": "186",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Quadruple Action",
+          "image": "swp_quadrupleaction.jpg",
+          "description": "Shots 4 poweful buckshots to target.",
+          "target": "",
+          "casting_time": "2 sec.",
+          "cooldown": "25 sec.",
+          "duration": "7.033 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "500",
+          "aggro": "220",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3600%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 11% of extra [DEX]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [DEX]",
+        "Ignore additional DEF according to extra [DEX] * 4",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Shotgun",
+      "icon_position": {
+        "x": -300,
+        "y": -375
+      }
+    }
+  ]
+}

@@ -1,0 +1,285 @@
+{
+  "slug": "NarRare",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Guardian",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Leather Metal",
+    "costume": "None",
+    "gloves": "Gloves Leather Metal",
+    "ring": "Ring",
+    "weapon_costume": "Descent of Inuit Claw Descent of Inuit Claw (Event)",
+    "belt": "Belt Leather Metal",
+    "shoes": "Shoes Leather Metal",
+    "artifact": "Shoulder Armor of Guardian",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Grizz Roar",
+    "image": "job_Grizzlowroar.jpg",
+    "description": "Boosts oneself by shouting out loud with the strength of Ursus.",
+    "target": "Apply to yourself.",
+    "casting_time": "0 sec.",
+    "cooldown": "30 sec.",
+    "duration": "1.7 sec.",
+    "sp_cost": "560",
+    "consume_item": "Ancient Star Orb × 10",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration: 300 seconds",
+          "HP +10",
+          "Knockdown Duration: -20%",
+          "Natural HP Recovery +1000",
+          "Enhace Ursus stance skills"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Ursus",
+      "equipped_items": "Crescent",
+      "icon_position": {
+        "x": -100,
+        "y": -425
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Ursus",
+      "info": {
+        "Targets": "5 enemies",
+        "Range": "2.5m away",
+        "Splash": "100% DMG within  2.5m range",
+        "Hits per attack": "1",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "-10%",
+        "Shooting DMG": "-30%",
+        "Magical DMG": "+25%",
+        "Debuff Chance": "+10%"
+      },
+      "stats": {
+        "ASPD": "153",
+        "Bonus ATK": "300%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "20",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "Penetration": "5+10",
+        "Immunity": "15+20"
+      },
+      "skills": [
+        {
+          "name": "Grizzly Shock",
+          "image": "urs_Kodiakshock.jpg",
+          "description": "Swing your crescent around to attack the enemy.",
+          "target": "Up to 3 adjacent enemies",
+          "casting_time": "Instant",
+          "cooldown": "5 sec.",
+          "duration": "1.8 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "340",
+          "aggro": "300",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Tibetanus Demilune",
+          "image": "urs_thibetanusdemilune.jpg",
+          "description": "Hack the Crescent on the floor and blow up an enemy within range.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "12 sec.",
+          "duration": "2.533 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "560",
+          "aggro": "300",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1400%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2800%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Ortus Quake",
+          "image": "urs_ortusquake.jpg",
+          "description": "Jump into the air and hit the ground, knocking the enemy over.",
+          "target": "Up to 12 enemies within a range of 8m",
+          "casting_time": "1 sec.",
+          "cooldown": "20 sec.",
+          "duration": "1.4 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "720",
+          "aggro": "300",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Descent of Inuit",
+          "image": "urs_Descentinuit.jpg",
+          "description": "Use Inuits power to raise resistance to enemy attacks.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "60 sec.",
+          "duration": "1.866 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "760",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 4 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 40 seconds"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration : 44 seconds"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration : 48 seconds"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration : 52 seconds"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Arcturus Advent",
+          "image": "urs_Arctoadvent.jpg",
+          "description": "Use Inuits power to attack the enemy consecutively.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "18 sec.",
+          "duration": "3.2 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "820",
+          "aggro": "350",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2300%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4600%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [CON]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [CON]",
+        "Ignore additional DEF according to extra [CON] * 6",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Crescent",
+      "icon_position": {
+        "x": -100,
+        "y": -425
+      }
+    }
+  ]
+}

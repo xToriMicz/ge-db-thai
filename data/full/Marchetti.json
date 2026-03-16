@@ -1,0 +1,572 @@
+{
+  "slug": "Marchetti",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "None",
+    "head": "None",
+    "earring": "Earring",
+    "face": "Marchettis Glasses",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Coat Robe",
+    "costume": "None",
+    "gloves": "Gloves",
+    "ring": "Ring",
+    "weapon_costume": "Cube Costume Bristia Cube Costume Event Conviction of Spirit Costume Conviction of Spirit Costume Eliminator Eliminator (Event) Bristia Cube Costume",
+    "belt": "Belt",
+    "shoes": "Shoes",
+    "artifact": "Fountain Pen Iron Bar with a Button",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Fast Thinking",
+    "image": "job_fastthinking.jpg",
+    "description": "Can focus on thinking to make a judgement quickly.",
+    "target": "Self-buff",
+    "casting_time": "0 sec.",
+    "cooldown": "5 sec.",
+    "duration": "1.83 sec.",
+    "sp_cost": "120",
+    "consume_item": "Ancient Star Orb × 1",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration: 5 Minutes.",
+          "A.R. +1",
+          "Monster Damage +40%",
+          "Cast Time -30%",
+          "Penetration +20."
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Psychokinesis",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -200,
+        "y": -100
+      }
+    },
+    {
+      "stance_name": "Psychokinesis",
+      "equipped_items": "Rod",
+      "icon_position": {
+        "x": -200,
+        "y": -100
+      }
+    },
+    {
+      "stance_name": "Gravity",
+      "equipped_items": "Rod",
+      "icon_position": {
+        "x": -500,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Distortion Cube",
+      "equipped_items": "Cube",
+      "icon_position": {
+        "x": -350,
+        "y": -125
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Psychokinesis",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1~10m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "170",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [
+        {
+          "name": "Strike Back",
+          "image": "psy_strikesback.jpg",
+          "description": "Blows an enemy away with a powerful psychokinetic attack.",
+          "target": "1 enemy within a range of 10m",
+          "casting_time": "1.8 sec.",
+          "cooldown": "0 sec.",
+          "duration": "1.6 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "60",
+          "aggro": "84",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 358%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 716%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Web",
+          "image": "psy_web.jpg",
+          "description": "Immobilize all enemies within range by pinning them to the ground.",
+          "target": "Up to 6 enemies 5.5m away and within a 4m radius",
+          "casting_time": "1 sec.",
+          "cooldown": "15 sec.",
+          "duration": "1.1 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "120",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "80% chance to ["
+            },
+            {
+              "level": "Level 10",
+              "value": "80% chance to ["
+            },
+            {
+              "level": "Level 11",
+              "value": "80% chance to ["
+            },
+            {
+              "level": "Level 12",
+              "value": "80% chance to ["
+            },
+            {
+              "level": "Level 13",
+              "value": "80% chance to ["
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Earthquake",
+          "image": "psy_earthquake.jpg",
+          "description": "Throws enemies violently into the air by creating a powerful earthquake.",
+          "target": "",
+          "casting_time": "1.633 sec.",
+          "cooldown": "12 sec.",
+          "duration": "1.67 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "150",
+          "aggro": "64",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 216%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 432%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Apocalypse",
+          "image": "psy_apocalypse.jpg",
+          "description": "Concentrates all dark energy in the area into a powerful attack that consumes everything in its path.",
+          "target": "",
+          "casting_time": "2.633 sec.",
+          "cooldown": "22.5 sec.",
+          "duration": "1.63 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "180",
+          "aggro": "43",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 157%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 314%"
+            },
+            {
+              "level": "Level 11",
+              "value": "АТК: 345%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -200,
+        "y": -100
+      }
+    },
+    {
+      "name": "Gravity",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.5~6m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "-20%",
+        "Magical DMG": "-10%"
+      },
+      "stats": {
+        "ASPD": "197",
+        "Bonus ATK": "360%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+30%",
+        "Penetration": "45+13",
+        "Immunity": "10+20"
+      },
+      "skills": [
+        {
+          "name": "Transcend Time",
+          "image": "gravi_Gravityskl01.jpg",
+          "description": "Increase your own capabilities through the ancient orb from long millennia ago.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "300 seconds",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "750",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 300 seconds"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Atroph Magnetic Field",
+          "image": "gravi_Gravityskl02.jpg",
+          "description": "Attack enemies with a strong magnetic field.",
+          "target": "Up to 14 enemies within the surrounding 14m",
+          "casting_time": "2.5 sec.",
+          "cooldown": "25 sec.",
+          "duration": "1.5 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "450",
+          "aggro": "200",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Planetoid Pressure",
+          "image": "gravi_Gravityskl03.jpg",
+          "description": "Generate a planetoids of rock to crush enemy forces.",
+          "target": "Up to 10m away / within a range of 14m / Max. 16 targets",
+          "casting_time": "2.8 sec.",
+          "cooldown": "10 sec.",
+          "duration": "1.833 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "700",
+          "aggro": "128",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2400%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4800%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Universe Attraction",
+          "image": "gravi_Gravityskl04.jpg",
+          "description": "Form a huge gravitational field that draws enemies towards its center.",
+          "target": "Up to 24 enemies within the surrounding 19m",
+          "casting_time": "3.6 sec.",
+          "cooldown": "40 sec.",
+          "duration": "2.033 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "800",
+          "aggro": "135",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Galaxy Collapse",
+          "image": "gravi_Gravityskl05.jpg",
+          "description": "Form a gravitational field both above and below, crushing the enemy forces caught within.",
+          "target": "Up to 6m away / within a radius of 12m / Max. 18 targets",
+          "casting_time": "4.2 sec.",
+          "cooldown": "60 sec.",
+          "duration": "2.7 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "900",
+          "aggro": "245",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 3200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 6400%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 10% of extra [INT]",
+        "[PVP/PVE Maps] Additional 3% DMG according to extra [INT]",
+        "Ignore additional RES according to extra [INT] * 4",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Rod",
+      "icon_position": {
+        "x": -500,
+        "y": 0
+      }
+    },
+    {
+      "name": "Distortion Cube",
+      "info": {
+        "Targets": "3 enemies",
+        "Range": "0.5~11m away",
+        "Splash": "100% DMG within  2m range",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "197",
+        "Bonus ATK": "380%",
+        "MSPD": "1.1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "15"
+      },
+      "lv25_bonus": {
+        "Penetration": "5+25",
+        "Immunity": "5+10"
+      },
+      "skills": [
+        {
+          "name": "Crystal Prison",
+          "image": "cub_cristalprison.jpg",
+          "description": "Locks up targets within the radius in a prison made of crystal.",
+          "target": "Up to 6 enemies 10m away and within a 6m radius",
+          "casting_time": "1.166 sec.",
+          "cooldown": "10 sec.",
+          "duration": "2.266 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "300",
+          "aggro": "20",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Force Field",
+          "image": "cub_forcefield.jpg",
+          "description": "Cubes power controls the gravity to raise the enemies highly.",
+          "target": "Up to 6 enemies 10m away and within a 6m radius",
+          "casting_time": "1.533 sec.",
+          "cooldown": "15 sec.",
+          "duration": "2.133 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "450",
+          "aggro": "25",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Dimension Territory",
+          "image": "cub_absoluteterritory.jpg",
+          "description": "Creates a wide space distortion at the designated point.",
+          "target": "",
+          "casting_time": "1.7 sec.",
+          "cooldown": "25 sec.",
+          "duration": "2.866 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "600",
+          "aggro": "35",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1400%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2800%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Ashen Grave",
+          "image": "cub_landcrimer.jpg",
+          "description": "Cubes power cracks the ground and creates magma to burn everything around.",
+          "target": "Up to 10 enemies 12m away within a 8m radius",
+          "casting_time": "5.566 sec.",
+          "cooldown": "30 sec.",
+          "duration": "1.766 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "950",
+          "aggro": "40",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2000%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Lightning Cube",
+          "image": "cub_flarecube.jpg",
+          "description": "Gathers electromagnestism from the air and strikes it on the designated point.",
+          "target": "",
+          "casting_time": "4.7 sec.",
+          "cooldown": "20 sec.",
+          "duration": "3.233 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "700",
+          "aggro": "30",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1100%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2200%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [INT]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [INT]",
+        "Ignore additional RES according to extra [INT] * 4",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Cube",
+      "icon_position": {
+        "x": -350,
+        "y": -125
+      }
+    }
+  ]
+}

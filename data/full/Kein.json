@@ -1,0 +1,276 @@
+{
+  "slug": "Kein",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Spirit of Arsene",
+    "head": "Halloween Hair - Kein",
+    "earring": "Earring",
+    "face": "Keins Glasses",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Leather",
+    "costume": "2021 Halloween Costume",
+    "gloves": "Gloves Leather",
+    "ring": "Ring",
+    "weapon_costume": "Broken Pierrot Event Broken Pierrot",
+    "belt": "Belt Leather",
+    "shoes": "Shoes Leather",
+    "artifact": "Leather Sheath",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Aspel",
+    "image": "job_aspel.jpg",
+    "description": "Relieves tension by greeting the audience before the stage performance.",
+    "target": "None",
+    "casting_time": "0 sec.",
+    "cooldown": "30 sec.",
+    "duration": "1.9 sec.",
+    "sp_cost": "500",
+    "consume_item": "Ancient Star Orb × 10",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "A.R. +1",
+          "ATK +10%",
+          "Critical +15",
+          "Evasion +15"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Flamenco",
+      "equipped_items": "Dagger",
+      "icon_position": {
+        "x": -150,
+        "y": -350
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Flamenco",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1.5m away",
+        "Splash": "None",
+        "Hits per attack": "3",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "-20%",
+        "Shooting DMG": "+10%"
+      },
+      "stats": {
+        "ASPD": "197",
+        "Bonus ATK": "300%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "25",
+        "EVA": "5",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "Evasion": "+15",
+        "Critical": "+15",
+        "Penetration": "5+25",
+        "Immunity": "15"
+      },
+      "skills": [
+        {
+          "name": "Avius",
+          "image": "flc2_abus.jpg",
+          "description": "Make preparatory moves before the performance. As the dance progresses after the preparatory movement, additional effects can be acquired.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "60 sec.",
+          "duration": "300 seconds",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "620",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 300 seconds"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Tortazo",
+          "image": "flc2_tortazo.jpg",
+          "description": "Leap in place, spin, and slash down enemies to attack the vital point. Cast [Tortazo Impact] or an even more powerful [Tortazo Strike] at a 33% chance when re-casting the skill.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "6 sec.",
+          "duration": "1.05 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "560",
+          "aggro": "286",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 974%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1948%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Elba",
+          "image": "flc2_elevar.jpg",
+          "description": "Slash the enemys stomach with four brilliant, consecutive cuts. Cast [Elba Impact] or an even more powerful [Elba Strike] at a 33% chance when re-casting the skill.",
+          "target": "1 adjacent enemy",
+          "casting_time": "0.9 sec.",
+          "cooldown": "9 sec.",
+          "duration": "0.86 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "840",
+          "aggro": "297",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1368%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2736%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Corriente",
+          "image": "flc2_corient.jpg",
+          "description": "Move forward and slash the enemy by swinging the dagger like youre dancing. Cast [Corriente Impact] or an even more powerful [Corriente Strike] at a 33% chance when re-casting the skill.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "12 sec.",
+          "duration": "1.6 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "1050",
+          "aggro": "200",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1614%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3228%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Amarrer",
+          "image": "flc2_amare.jpg",
+          "description": "Flash to the designated ground and mangle the enemy at a fast speed. Cast [Amarrer Impact] or an even more powerful [Amarrer Strike] at a 33% chance when re-casting the skill.",
+          "target": "Up to 5 adjacent enemies",
+          "casting_time": "1.4 sec.",
+          "cooldown": "10 sec.",
+          "duration": "1.5 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "1250",
+          "aggro": "342",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1833%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3665%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [STR]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [STR]",
+        "Ignore additional DEF according to extra [STR] * 3",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Dagger",
+      "icon_position": {
+        "x": -150,
+        "y": -350
+      }
+    }
+  ]
+}

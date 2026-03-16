@@ -1,0 +1,284 @@
+{
+  "slug": "Ronera",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Seer of Souls What you see isnt everything",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Coat",
+    "costume": "None",
+    "gloves": "Gloves",
+    "ring": "Ring",
+    "weapon_costume": "Rosanera Event Rosanera",
+    "belt": "Belt",
+    "shoes": "Shoes",
+    "artifact": "Custodia",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Di Anima",
+    "image": "job_dianima.jpg",
+    "description": "Loads souls into the gun, imbuing the attack with souls.",
+    "target": "Self-buff (no target required)",
+    "casting_time": "0 sec.",
+    "cooldown": "0 sec.",
+    "duration": "2.133 sec.",
+    "sp_cost": "550",
+    "consume_item": "Ancient Star Orb × 25",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration: 300 seconds",
+          "[Di Anima], [Di Fantasma] shared",
+          "Attack Grade +1",
+          "Attack Power +50%",
+          "Monster Attack Power +50%",
+          "[Di Anima]",
+          "Skill attribute changes to Psychokinesis",
+          "Psychokinesis Penetration +25",
+          "Accuracy +25",
+          "Shooting Damage Taken +10%",
+          "Melee Damage Taken -10%",
+          "[Di Fantasma]",
+          "Physical Penetration +25",
+          "Max Critical +10",
+          "Critical Damage +20%",
+          "Melee Damage Taken +10%",
+          "Magic Damage Taken -10%",
+          "Changes to different triggers with each skill use"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Anima",
+      "equipped_items": "Rifle",
+      "icon_position": {
+        "x": -350,
+        "y": 0
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Anima",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.75~15m away",
+        "Splash": "None",
+        "Hits per attack": "4",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "+20%",
+        "Shooting DMG": "-10%",
+        "Magical DMG": "-25%",
+        "Debuff RES": "-10%"
+      },
+      "stats": {
+        "ASPD": "200",
+        "Bonus ATK": "300%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "50",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+5%",
+        "Critical": "+15",
+        "Penetration": "10+20",
+        "Immunity": "5+10"
+      },
+      "skills": [
+        {
+          "name": "Silar",
+          "image": "anm_celare.jpg",
+          "description": "Turns her body into a spirit, instantly moving to a designated point.",
+          "target": "",
+          "casting_time": "1.6 sec.",
+          "cooldown": "20 sec.",
+          "duration": "1.9 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "250",
+          "aggro": "50",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 320%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 640%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Riposo",
+          "image": "anm_riposo.jpg",
+          "description": "Drains souls from the target and absorbs them.",
+          "target": "",
+          "casting_time": "1.033 sec.",
+          "cooldown": "6 sec.",
+          "duration": "1.766 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "400",
+          "aggro": "100",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 660%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1320%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Parade",
+          "image": "anm_palude.jpg",
+          "description": "Creates a swamp of ghosts and inflicts continuous damage at the designated point. However, [Malediz] does not stack with [Suhae], [Kul Uden], [Polluted Water], [Taabu].",
+          "target": "",
+          "casting_time": "1.7 sec.",
+          "cooldown": "18 sec.",
+          "duration": "10.433 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "950",
+          "aggro": "150",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 110%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 220%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Sparo",
+          "image": "anm_sparo.jpg",
+          "description": "Launches souls at the designated target at high speed.",
+          "target": "1 enemy within 20m range",
+          "casting_time": "Instant",
+          "cooldown": "6 sec.",
+          "duration": "1.933 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "450",
+          "aggro": "50",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 710%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1420%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Concentra",
+          "image": "anm_concentrare.jpg",
+          "description": "Launches a final soul-piercing shot.",
+          "target": "",
+          "casting_time": "5.133 sec.",
+          "cooldown": "33 sec.",
+          "duration": "2.033 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "1100",
+          "aggro": "200",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 770%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1540%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Rifle",
+      "icon_position": {
+        "x": -350,
+        "y": 0
+      }
+    }
+  ]
+}

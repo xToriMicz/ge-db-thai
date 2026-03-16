@@ -1,0 +1,285 @@
+{
+  "slug": "Aisha",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Medal of Goddess Frost Crown Love and Resentment Judge, I still...",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Coat Robe",
+    "costume": "None",
+    "gloves": "Gloves",
+    "ring": "Ring",
+    "weapon_costume": "Glow of Goddess Tartarus of Goddess Halloween Staff Costume Halloween Staff Costume (Event) Glow of Goddess (Event) Tartarus of Goddess (Event) Halloween Spirit Staff",
+    "belt": "Belt",
+    "shoes": "Shoes",
+    "artifact": "None",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Daydream",
+    "image": "job_daydream.jpg",
+    "description": "She looks sleeping standing. Shes strong in the dream.",
+    "target": "Self-buff",
+    "casting_time": "0 sec.",
+    "cooldown": "20 sec.",
+    "duration": "0.642 sec.",
+    "sp_cost": "200",
+    "consume_item": "Ancient Star Orb × 5",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration: 180sec.",
+          "A.R.+1",
+          "D.R.+1",
+          "ATK+50%",
+          "Monster Damage+50%",
+          "DEF increases in proportion to own INT",
+          "Immunity increases in proportion to own INT",
+          "Move SPD -20%"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Tal Lasa",
+      "equipped_items": "Rod",
+      "icon_position": {
+        "x": -50,
+        "y": -75
+      }
+    },
+    {
+      "stance_name": "Tal Lasa",
+      "equipped_items": "Staff",
+      "icon_position": {
+        "x": -50,
+        "y": -75
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Tal Lasa",
+      "info": {
+        "Targets": "5 enemies",
+        "Range": "10m away",
+        "Splash": "100% DMG within  4m range",
+        "Hits per attack": "3",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "-20%",
+        "Debuff RES": "-20%"
+      },
+      "stats": {
+        "ASPD": "260",
+        "Bonus ATK": "370%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "Penetration": "5+25",
+        "Immunity": "5+25"
+      },
+      "skills": [
+        {
+          "name": "Carya",
+          "image": "tls_karia.jpg",
+          "description": "Shoots sharp icicles to the enemy.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "1.6 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "590",
+          "aggro": "160",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Tutana",
+          "image": "tls_totana.jpg",
+          "description": "Summons Water column that springs straightly in the front.",
+          "target": "Up to 7 enemies 15m away and within 6.",
+          "casting_time": "1.6 sec.",
+          "cooldown": "15 sec.",
+          "duration": "1.43 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "720",
+          "aggro": "172",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Water Wave",
+          "image": "tls_waterwave.jpg",
+          "description": "Shoots the strong Water spouts to the target and surrounding enemies.",
+          "target": "",
+          "casting_time": "1.43 sec.",
+          "cooldown": "18 sec.",
+          "duration": "1.6 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "880",
+          "aggro": "223",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Rain Over",
+          "image": "tls_rainover.jpg",
+          "description": "Fills the designated ground with ice storms.",
+          "target": "",
+          "casting_time": "1.9 sec.",
+          "cooldown": "32 sec.",
+          "duration": "5.58 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "950",
+          "aggro": "195",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1000%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Aeve",
+          "image": "tls_ave.jpg",
+          "description": "Causes Ice gusts sweeping the nearby enemies.",
+          "target": "Up to 12 enemies within 10m away.",
+          "casting_time": "5 sec.",
+          "cooldown": "32 sec.",
+          "duration": "2.3 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "1050",
+          "aggro": "200",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1400%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2800%"
+            }
+          ],
+          "special": [
+            "Additional Damage increase at max. casting",
+            "Additional Damage increase at max. casting"
+          ]
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [INT]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [INT]",
+        "Ignore additional RES according to extra [INT] * 4",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Rod",
+      "icon_position": {
+        "x": -50,
+        "y": -75
+      }
+    }
+  ]
+}

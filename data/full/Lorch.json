@@ -1,0 +1,766 @@
+{
+  "slug": "Lorch",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Pioneering Supporters Hot Summer 2024 Hot Summer(Steam)",
+    "head": "None",
+    "earring": "Earring",
+    "face": "Circle glasses Nose glasses",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Coat Leather",
+    "costume": "None",
+    "gloves": "Gloves Leather",
+    "ring": "Ring",
+    "weapon_costume": "GPSG Event GPSG",
+    "belt": "Belt Leather",
+    "shoes": "Shoes Leather",
+    "artifact": "Pocket Watch Lorchs Letter",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Infiltration",
+    "image": "job_infiltration.jpg",
+    "description": "Improves hunting efficiency by attacking monsters weak point. Doesnt stack with [Vanguard Formation].",
+    "target": "All allies within the range of 8m.",
+    "casting_time": "1.133 sec.",
+    "cooldown": "60 sec.",
+    "duration": "1.13 sec.",
+    "sp_cost": "500",
+    "consume_item": "Ancient Star Orb × 5",
+    "levels": [
+      {
+        "level": "Level 1",
+        "effects": [
+          "Duration: 150 sec.",
+          "ATK +2%",
+          "ATK against monsters +1%",
+          "Accuracy+1"
+        ]
+      },
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration: 150 sec.",
+          "ATK +20%",
+          "ATK against monsters +10%",
+          "Accuracy+10"
+        ]
+      },
+      {
+        "level": "Level 11",
+        "effects": [
+          "Duration: 150 sec.",
+          "ATK +22%",
+          "ATK against monsters +11%",
+          "Accuracy+11",
+          "DEX +1"
+        ]
+      },
+      {
+        "level": "Level 12",
+        "effects": [
+          "Duration: 150 sec.",
+          "ATK +24%",
+          "ATK against monsters +12%",
+          "Accuracy+12",
+          "DEX +1"
+        ]
+      },
+      {
+        "level": "Level 13",
+        "effects": [
+          "Duration: 150 sec.",
+          "ATK +26%",
+          "ATK against monsters +13%",
+          "Accuracy+13",
+          "DEX +1"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Install Trap",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": -175
+      }
+    },
+    {
+      "stance_name": "Hunting Blaster",
+      "equipped_items": "Shotgun",
+      "icon_position": {
+        "x": -100,
+        "y": -125
+      }
+    },
+    {
+      "stance_name": "Gigantic Blaster",
+      "equipped_items": "Shotgun",
+      "icon_position": {
+        "x": -100,
+        "y": -350
+      }
+    },
+    {
+      "stance_name": "Dual Blaster",
+      "equipped_items": "Shotgun",
+      "icon_position": {
+        "x": -250,
+        "y": -125
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Install Trap",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.1~1m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "150",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [
+        {
+          "name": "Detection",
+          "image": "trp_detection.jpg",
+          "description": "Reveals invisible characters and locates hidden objects.",
+          "target": "",
+          "casting_time": "1.133 sec.",
+          "cooldown": "0 sec.",
+          "duration": "1.13 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "50",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Transparency Detecting"
+            },
+            {
+              "level": "Level 10",
+              "value": "Transparency Detecting"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Critical Disease",
+          "image": "trp_criticaldisease.jpg",
+          "description": "Builds a trap that releases a poisonous cloud of smoke when triggered.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "4 sec.",
+          "duration": "2 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "75",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Build Critical Disease"
+            },
+            {
+              "level": "Level 10",
+              "value": "Build Critical Disease"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Invisible String",
+          "image": "trp_invisiblestring.jpg",
+          "description": "Set a booby trap that deals Physical Damage to enemies. (Also applicable to flying monsters.)",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "6 sec.",
+          "duration": "2 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "75",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Build Invisible String"
+            },
+            {
+              "level": "Level 10",
+              "value": "Build Invisible String"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Explosion",
+          "image": "trp_explosion.jpg",
+          "description": "Sets an explosive trap that blocks attacks from several enemies at the same time.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "8 sec.",
+          "duration": "2 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "100",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Build Explosion"
+            },
+            {
+              "level": "Level 10",
+              "value": "Build Explosion"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": -175
+      }
+    },
+    {
+      "name": "Hunting Blaster",
+      "info": {
+        "Targets": "5 enemies",
+        "Range": "0.1~11.25m away",
+        "Splash": "100% DMG within  1.75m range",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "190",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "15",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+12%",
+        "Ignore DEF": "+2%",
+        "Critical": "+6"
+      },
+      "skills": [
+        {
+          "name": "Menace Shot",
+          "image": "sht_menaceshot.jpg",
+          "description": "Strikes terror into enemies by firing a blank cartridge into the air.",
+          "target": "Up to 15 enemies within a range of 8m",
+          "casting_time": "1.5 sec.",
+          "cooldown": "0 sec.",
+          "duration": "0.83 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "100",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "66% chance to ["
+            },
+            {
+              "level": "Level 10",
+              "value": "66% chance to ["
+            },
+            {
+              "level": "Level 11",
+              "value": "66% chance to ["
+            },
+            {
+              "level": "Level 12",
+              "value": "66% chance to ["
+            },
+            {
+              "level": "Level 13",
+              "value": "66% chance to ["
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Critical Disease",
+          "image": "trp_criticaldisease.jpg",
+          "description": "Builds a trap that releases a poisonous cloud of smoke when triggered.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "4 sec.",
+          "duration": "2 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "75",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Build Critical Disease"
+            },
+            {
+              "level": "Level 10",
+              "value": "Build Critical Disease"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Implosion",
+          "image": "sht_implosion.jpg",
+          "description": "At immediate enemy, it fires a powerful shot.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "3.3 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "200",
+          "aggro": "149",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 680%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1360%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Explosion",
+          "image": "trp_explosion.jpg",
+          "description": "Sets an explosive trap that blocks attacks from several enemies at the same time.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "8 sec.",
+          "duration": "2 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "100",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Build Explosion"
+            },
+            {
+              "level": "Level 10",
+              "value": "Build Explosion"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Claymore",
+          "image": "sht_claymore.jpg",
+          "description": "Fires a powerful shot at a distant enemy.",
+          "target": "Up to 8 enemies 12m away and within a radius of 3m",
+          "casting_time": "1.5 sec.",
+          "cooldown": "20 sec.",
+          "duration": "1.8 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "76",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 324%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 648%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Shotgun",
+      "icon_position": {
+        "x": -100,
+        "y": -125
+      }
+    },
+    {
+      "name": "Gigantic Blaster",
+      "info": {
+        "Targets": "5 enemies",
+        "Range": "0.1~11.25m away",
+        "Splash": "100% DMG within  2m range",
+        "Hits per attack": "2",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "203",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "20",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+16%",
+        "Ignore DEF": "+2%",
+        "Critical": "+10"
+      },
+      "skills": [
+        {
+          "name": "Glitter",
+          "image": "gtb_glitter.jpg",
+          "description": "Light-speed buckshots at enemies.",
+          "target": "Up to 3 enemies 8m away and within a 3m radius.",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "2.1 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "100",
+          "aggro": "91",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 438%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 876%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Blowback",
+          "image": "gtb_blowback.jpg",
+          "description": "Fires an explosive shot that blows enemies away.",
+          "target": "Up to 6 enemies 9m away and within a 3m radius",
+          "casting_time": "1.367 sec.",
+          "cooldown": "20 sec.",
+          "duration": "1.2 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "200",
+          "aggro": "117",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 498%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 996%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Bullet Slug",
+          "image": "gtb_slugbullet.jpg",
+          "description": "Critical attack with Buckshots.",
+          "target": "Up to 6 enemies 10m away and within a 3m radius",
+          "casting_time": "1.367 sec.",
+          "cooldown": "25 sec.",
+          "duration": "1.2 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "250",
+          "aggro": "116",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 523%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1046%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Steel Baton",
+          "image": "gtb_stealbaton.jpg",
+          "description": "Attack enemy with Iron Buckshots.",
+          "target": "Up to 6 enemies 11m away and within a 3m radius.",
+          "casting_time": "1.7 sec.",
+          "cooldown": "30 sec.",
+          "duration": "1.2 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "155",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 710%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1420%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Shotgun",
+      "icon_position": {
+        "x": -100,
+        "y": -350
+      }
+    },
+    {
+      "name": "Dual Blaster",
+      "info": {
+        "Targets": "5 enemies",
+        "Range": "0.1~10.5m away",
+        "Splash": "100% DMG within  2.2m range",
+        "Hits per attack": "2",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Magical DMG": "-25%"
+      },
+      "stats": {
+        "ASPD": "203",
+        "Bonus ATK": "300%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "25",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+20%",
+        "Ignore DEF": "+9%",
+        "Penetration": "5+25",
+        "Immunity": "5+10"
+      },
+      "skills": [
+        {
+          "name": "Camouflage",
+          "image": "db_camouflage.jpg",
+          "description": "Blend into the surrounding environment. Movement Speed will be very slow while Camouflage is active.",
+          "target": "",
+          "casting_time": "1.133 sec.",
+          "cooldown": "60 sec.",
+          "duration": "1.13 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "750",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Inflicts ["
+            },
+            {
+              "level": "Level 10",
+              "value": "Inflicts ["
+            },
+            {
+              "level": "Level 11",
+              "value": "Inflicts ["
+            },
+            {
+              "level": "Level 12",
+              "value": "Inflicts ["
+            },
+            {
+              "level": "Level 13",
+              "value": "Inflicts ["
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Expoison",
+          "image": "db_expoison.jpg",
+          "description": "Spread biological waste at a wide range and damage enemies.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "5 sec.",
+          "duration": "2 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "850",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Expoison"
+            },
+            {
+              "level": "Level 10",
+              "value": "Expoison"
+            },
+            {
+              "level": "Level 11",
+              "value": "Expoison"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Encounter Stroke",
+          "image": "sb_encounterstroke.jpg",
+          "description": "Cause maximum damage to enemies. cant damage enemies in midair.",
+          "target": "Up to 5 enemies 5m away and within a 3m radius",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "2.1 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "440",
+          "aggro": "162",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3600%"
+            },
+            {
+              "level": "Level 11",
+              "value": "АТК: 3960%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Wire Prisoner",
+          "image": "db_wireprisoner.jpg",
+          "description": "Set invisible wire traps at long range. Enemies cant move if caught in the traps.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "5 sec.",
+          "duration": "2 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "850",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Wire Prisoner"
+            },
+            {
+              "level": "Level 10",
+              "value": "Wire Prisoner"
+            },
+            {
+              "level": "Level 11",
+              "value": "Wire Prisoner"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Blow Impact",
+          "image": "sb_blowimpact.jpg",
+          "description": "Shoot buckshot at a long range. Enemies will fly..",
+          "target": "",
+          "casting_time": "1.5 sec.",
+          "cooldown": "17 sec.",
+          "duration": "1.8 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "750",
+          "aggro": "166",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2600%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5200%"
+            },
+            {
+              "level": "Level 11",
+              "value": "АТК: 5720%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [DEX]",
+        "[PVP/PVE Maps] Additional 5% DMG according to extra [DEX]",
+        "Ignore additional DEF according to extra [DEX] * 4",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 5 * 50"
+      ],
+      "equipped_items": "Shotgun",
+      "icon_position": {
+        "x": -250,
+        "y": -125
+      }
+    }
+  ]
+}

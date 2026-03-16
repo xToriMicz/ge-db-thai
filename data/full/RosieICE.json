@@ -1,0 +1,283 @@
+{
+  "slug": "RosieICE",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Frost Crown With a Cool Mind Blessings of the 2026 New Year",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Robe Leather",
+    "costume": "None",
+    "gloves": "Gloves",
+    "ring": "Ring",
+    "weapon_costume": "Glacier Event Glacier",
+    "belt": "Belt",
+    "shoes": "Shoes",
+    "artifact": "Broken Hanbok Norigae",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Frosty",
+    "image": "job_frosty.jpg",
+    "description": "Freely wield the frost-covered sword.",
+    "target": "Self-buff (no target required)",
+    "casting_time": "0 sec.",
+    "cooldown": "30 sec.",
+    "duration": "2.333 sec.",
+    "sp_cost": "300",
+    "consume_item": "Ancient Star Orb × 20",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration: 600 seconds",
+          "Attack Rating +1",
+          "Normal attacks and skill attacks are converted to ice attributes",
+          "[Blizzard] status removed and [Blizzard] immunity",
+          "[Frosty Weapon] stance skills can be used",
+          "[Additional effects based on equipped armor]",
+          "When wearing [Robe], attack damage against monsters +70%",
+          "When wearing [Leather Armor], attack damage +50%"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Ice Control",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Frost Weapon",
+      "equipped_items": "Sword",
+      "icon_position": {
+        "x": -350,
+        "y": -325
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Ice Control",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "4m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "170",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Frost Weapon",
+      "info": {
+        "Targets": "6 enemies",
+        "Range": "6m away",
+        "Splash": "100% DMG within  3m range",
+        "Hits per attack": "2",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Shooting DMG": "-20%",
+        "Magical DMG": "-20%",
+        "Debuff RES": "-10%"
+      },
+      "stats": {
+        "ASPD": "177",
+        "Bonus ATK": "390%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "50",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "Penetration": "10+20",
+        "Immunity": "10+5"
+      },
+      "skills": [
+        {
+          "name": "Coldness",
+          "image": "fw_coldness.jpg",
+          "description": "Amplifies the coldness of the weapon.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "25 sec.",
+          "duration": "600 seconds",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "300",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 600 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 600 seconds"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 600 seconds"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 600 seconds"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 600 seconds"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Rapid Ice",
+          "image": "fw_rapidice.jpg",
+          "description": "Retreats and rapidly fires a frosted weapon at enemies in front.",
+          "target": "Up to 8 enemies within a 12m front x 4m width",
+          "casting_time": "Instant",
+          "cooldown": "9 sec.",
+          "duration": "2.6 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "250",
+          "aggro": "45",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 900%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1800%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Blizzard Shift",
+          "image": "fw_blizzardjump.jpg",
+          "description": "Moves instantly and attacks nearby enemies.",
+          "target": "",
+          "casting_time": "1.333 sec.",
+          "cooldown": "9 sec.",
+          "duration": "2 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "550",
+          "aggro": "85",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Frost Penta Sword",
+          "image": "fw_frostpentasword.jpg",
+          "description": "Explodes the cold energy of five connected weapons to attack nearby enemies.",
+          "target": "",
+          "casting_time": "1.7 sec.",
+          "cooldown": "22 sec.",
+          "duration": "2.133 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "650",
+          "aggro": "120",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2250%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4500%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Frost Trajectory",
+          "image": "fw_frosttrajectory.jpg",
+          "description": "Rapidly attacks enemies with an unpredictable trajectory.",
+          "target": "Up to 15 enemies within a 15m front x 8m width",
+          "casting_time": "1.266 sec.",
+          "cooldown": "18 sec.",
+          "duration": "2.4 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "750",
+          "aggro": "105",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2110%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4220%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "Additional DMG against Monster according to 3 * 50"
+      ],
+      "equipped_items": "Sword",
+      "icon_position": {
+        "x": -350,
+        "y": -325
+      }
+    }
+  ]
+}

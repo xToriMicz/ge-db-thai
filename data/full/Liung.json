@@ -1,0 +1,599 @@
+{
+  "slug": "Liung",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Blooming Daisy",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Leather",
+    "costume": "None",
+    "gloves": "Gloves Leather",
+    "ring": "Ring",
+    "weapon_costume": "None",
+    "belt": "Belt Leather",
+    "shoes": "Shoes Leather",
+    "artifact": "Chungs Hairpin Dancers Mask",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Full Moon",
+    "image": "job_fullmoon.jpg",
+    "description": "You can feel deeper bloodthirsty energy of enemy by the full moon.",
+    "target": "Self-buff",
+    "casting_time": "0 sec.",
+    "cooldown": "20 sec.",
+    "duration": "0.51 sec.",
+    "sp_cost": "200",
+    "consume_item": "Ancient Star Orb × 3",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration: 5 Minutes.",
+          "Buff level of [Full Moon] is increased according to the number of enemies within 10m.",
+          "Level is increased by 1 in case the enemy is a monster.",
+          "Level is increased by 3 in case the enemy is a player.",
+          "Level can be increased up to 10.",
+          "DEF +4, IMM +2 per level of [Full Moon]",
+          "A.R. +1",
+          "D.R. +1"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Martial Arts Book-Chap. of Earth",
+      "equipped_items": "Knuckle",
+      "icon_position": {
+        "x": -50,
+        "y": -200
+      }
+    },
+    {
+      "stance_name": "Dominate the Sky",
+      "equipped_items": "Knuckle",
+      "icon_position": {
+        "x": -350,
+        "y": -300
+      }
+    },
+    {
+      "stance_name": "Possession Lightning",
+      "equipped_items": "Lightning Bracelet",
+      "icon_position": {
+        "x": -150,
+        "y": -100
+      }
+    },
+    {
+      "stance_name": "Dominate the Sky",
+      "equipped_items": "Lightning Bracelet",
+      "icon_position": {
+        "x": -350,
+        "y": -300
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Martial Arts Book-Chap. of Earth",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.75m away",
+        "Splash": "None",
+        "Hits per attack": "3",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "215",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "10",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+15%",
+        "Block": "+10",
+        "Critical": "+10"
+      },
+      "skills": [
+        {
+          "name": "Blazing Uppercut",
+          "image": "mag_blazingupper.jpg",
+          "description": "A powerful punch as quick as an ascending hawk.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "0 sec.",
+          "duration": "1.67 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "150",
+          "aggro": "82",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 341%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 682%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Lionheart",
+          "image": "mag_lionheart.jpg",
+          "description": "Terrifies enemies with the roars of a lion.",
+          "target": "Up to 5 enemies within a range of 4m",
+          "casting_time": "2 sec.",
+          "cooldown": "15 sec.",
+          "duration": "1.5 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "250",
+          "aggro": "76",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 319%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 638%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Atomic Phoenix Bomber",
+          "image": "mag_atomicphoenixbomber.jpg",
+          "description": "Shatters the soul of enemies.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "2 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "222",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1011%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2022%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [STR]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [STR]",
+        "Ignore additional DEF according to extra [STR] * 4",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Knuckle",
+      "icon_position": {
+        "x": -50,
+        "y": -200
+      }
+    },
+    {
+      "name": "Dominate the Sky",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "143",
+        "Bonus ATK": "270%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "30",
+        "EVA": "20",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+5%",
+        "Evasion": "+20",
+        "Critical": "+10",
+        "Penetration": "20",
+        "Immunity": "5+15"
+      },
+      "skills": [
+        {
+          "name": "Lightning Spear",
+          "image": "nrn_lightningspear.jpg",
+          "description": "Lightning Spear. Penetrates and attacks enemies by strong strike.",
+          "target": "Up to 6 enemies 13m away and within 9m width",
+          "casting_time": "0.867 sec.",
+          "cooldown": "7 sec.",
+          "duration": "0.5 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "150",
+          "aggro": "50",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 850%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1700%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Rush",
+          "image": "nrn_inundated.jpg",
+          "description": "Turns to Rush statue by forming magnetic fiel.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "0.41 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "50",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 5 Minutes."
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 5 Minutes."
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration : 5 Minutes."
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration : 5 Minutes."
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration : 5 Minutes."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Bondage",
+          "image": "nrn_thealdom.jpg",
+          "description": "Creates strong magnetic field on the ground to hold enemies.",
+          "target": "Up to 7 enemies within a range of 10m",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "0.6 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "450",
+          "aggro": "245",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1300%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2600%"
+            },
+            {
+              "level": "Level 11",
+              "value": "АТК: 2860%"
+            },
+            {
+              "level": "Level 12",
+              "value": "АТК: 3120%"
+            },
+            {
+              "level": "Level 13",
+              "value": "АТК: 3120%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Thunder Wave",
+          "image": "nrn_lightningwave.jpg",
+          "description": "Belches energy to the front with thunderous roar",
+          "target": "Up to 12 enemies 18m away and at an angle of 80 degrees",
+          "casting_time": "3 sec.",
+          "cooldown": "18 sec.",
+          "duration": "2.4 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "96",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2300%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Lightning Bomb",
+          "image": "nrn_lightningwolf.jpg",
+          "description": "Plants lightning ball to enemy then detonates with strong strike.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "22 sec.",
+          "duration": "4 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "600",
+          "aggro": "177",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2600%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5200%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [INT]",
+        "[PVP/PVE Maps] Additional 5% DMG according to extra [INT]",
+        "Ignore additional RES according to extra [INT] * 4",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 5 * 50"
+      ],
+      "equipped_items": "Knuckle",
+      "icon_position": {
+        "x": -350,
+        "y": -300
+      }
+    },
+    {
+      "name": "Possession Lightning",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.5~9m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "170",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "0",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "-25",
+        "Ice RES": "0",
+        "Lightning RES": "15",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [
+        {
+          "name": "Lightning",
+          "image": "plgt_lightning.jpg",
+          "description": "Strikes an enemy with a bolt of lightning.",
+          "target": "1 enemy within a range of 10m",
+          "casting_time": "0.9 sec.",
+          "cooldown": "0 sec.",
+          "duration": "1.33 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "60",
+          "aggro": "61",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1100%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2200%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Electric Charger",
+          "image": "plgt_electriccharger.jpg",
+          "description": "Increases Lightning RES by imbuing Lightning attribute to allies attack.",
+          "target": "",
+          "casting_time": "0.367 sec.",
+          "cooldown": "0 sec.",
+          "duration": "230 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "90",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 110 sec."
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 200 sec."
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 210 sec."
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 220 sec."
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 230 sec."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Shock Wave",
+          "image": "plgt_shockwaves.jpg",
+          "description": "Electrocutes surrounding enemies by an electrical field.",
+          "target": "Up to 7 enemies within a range of 5m",
+          "casting_time": "2.967 sec.",
+          "cooldown": "15 sec.",
+          "duration": "1.53 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "120",
+          "aggro": "0",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "100% chance to inflict ["
+            },
+            {
+              "level": "Level 10",
+              "value": "100% chance to inflict ["
+            },
+            {
+              "level": "Level 11",
+              "value": "100% chance to inflict ["
+            },
+            {
+              "level": "Level 12",
+              "value": "100% chance to inflict ["
+            },
+            {
+              "level": "Level 13",
+              "value": "100% chance to inflict ["
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Tornado Holding",
+          "image": "plgt_tornado.jpg",
+          "description": "Summon a [Tornado] to bombard enemies with lightning attacks.",
+          "target": "",
+          "casting_time": "2 sec.",
+          "cooldown": "15 sec.",
+          "duration": "1.63 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "180",
+          "aggro": "186",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2400%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Lightning Bracelet",
+      "icon_position": {
+        "x": -150,
+        "y": -100
+      }
+    }
+  ]
+}

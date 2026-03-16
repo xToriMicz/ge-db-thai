@@ -1,0 +1,849 @@
+{
+  "slug": "Natalie",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Pavluchenk Sister",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Leather",
+    "costume": "None",
+    "gloves": "Gloves Leather",
+    "ring": "Ring",
+    "weapon_costume": "None",
+    "belt": "Belt Leather",
+    "shoes": "Shoes Leather",
+    "artifact": "Mittens Friendly Looking Picture Primus",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Shadow Trigger",
+    "image": "job_shadowtrigger.jpg",
+    "description": "Change efficiency of ATK and DEF by Autosuggestion.",
+    "target": "Self-buff",
+    "casting_time": "0 sec.",
+    "cooldown": "0 sec.",
+    "duration": "0.2 sec.",
+    "sp_cost": "100",
+    "consume_item": "Mithridart × 3",
+    "levels": [
+      {
+        "level": "Level 1",
+        "effects": [
+          "A.R. +1, ATK 20%",
+          "D.R. +1, DEF +20",
+          "Trigger is changed to another one in use of the skill"
+        ]
+      },
+      {
+        "level": "Level 10",
+        "effects": [
+          "A.R. +1, ATK 20%, Penetration +5",
+          "D.R. +1, DEF +20, IMM +5",
+          "Change to another Trigger when using the skill"
+        ]
+      },
+      {
+        "level": "Level 11",
+        "effects": [
+          "A.R. +1, ATK 20%, Penetration +6",
+          "D.R. +1, DEF +20, IMM +6",
+          "Change to another Trigger when using the skill"
+        ]
+      },
+      {
+        "level": "Level 12",
+        "effects": [
+          "A.R. +1, ATK 20%, Penetration +7",
+          "D.R. +1, DEF +20, IMM +7",
+          "Change to another Trigger when using the skill"
+        ]
+      },
+      {
+        "level": "Level 13",
+        "effects": [
+          "A.R. +1, ATK 20%, Penetration +8",
+          "D.R. +1, DEF +20, IMM +8",
+          "Change to another Trigger when using the skill"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Defending Guard",
+      "equipped_items": "Sword",
+      "icon_position": {
+        "x": -150,
+        "y": -200
+      }
+    },
+    {
+      "stance_name": "Equites",
+      "equipped_items": "Sword",
+      "icon_position": {
+        "x": 0,
+        "y": -425
+      }
+    },
+    {
+      "stance_name": "Defending Shot",
+      "equipped_items": "Rifle",
+      "icon_position": {
+        "x": -200,
+        "y": -200
+      }
+    },
+    {
+      "stance_name": "Flintlock",
+      "equipped_items": "Rifle",
+      "icon_position": {
+        "x": -200,
+        "y": -425
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Defending Guard",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1.5m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "105",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "22",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+3%",
+        "Block": "+19"
+      },
+      "skills": [
+        {
+          "name": "Slash Down",
+          "image": "dfg_slashdown.jpg",
+          "description": "Delivers downward slashes.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "0 sec.",
+          "duration": "2.37 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "100",
+          "aggro": "68",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 291%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 582%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Guardian",
+          "image": "dfg_guardian.jpg",
+          "description": "Greatly increases the chances of blocking an attack of an enemy.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "0 sec.",
+          "duration": "0.2 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "150",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration 10 sec"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration 10 sec"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration 10 sec"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration 10 sec"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration 10 sec"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Earth Tremor",
+          "image": "dfg_earthtremor.jpg",
+          "description": "Plunges sword into enemy while airborne.",
+          "target": "Up to 3 adjacent enemies",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "2.2 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "200",
+          "aggro": "68",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 288%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 576%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Stunning Skewer",
+          "image": "dfg_stunningskewer.jpg",
+          "description": "Stuns the enemy with a blow from the shield before advancing upon him with a sword.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "3.28 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "128",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 587%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1174%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Sword",
+      "icon_position": {
+        "x": -150,
+        "y": -200
+      }
+    },
+    {
+      "name": "Equites",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1.25m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Shooting DMG": "-20%",
+        "Magical DMG": "-20%",
+        "Debuff RES": "-15%"
+      },
+      "stats": {
+        "ASPD": "147",
+        "Bonus ATK": "300%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "40",
+        "EVA": "0",
+        "BLK": "20",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+23%",
+        "Block": "+20",
+        "Critical": "+10",
+        "Penetration": "5+25",
+        "Immunity": "5+15"
+      },
+      "skills": [
+        {
+          "name": "Golpe",
+          "image": "eqt_golpe.jpg",
+          "description": "Brandishes a sword toward the enemy.",
+          "target": "Up to 3 adjacent enemies",
+          "casting_time": "Instant",
+          "cooldown": "3 sec.",
+          "duration": "2.02 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "240",
+          "aggro": "105",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Valentia",
+          "image": "eqt_valentia.jpg",
+          "description": "Strikes the lower half of the enemy to cripple it.",
+          "target": "Up to 6 enemies within a range of 3m",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "2.67 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "340",
+          "aggro": "60",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 900%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1800%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Bless",
+          "image": "eqt_blessedness.jpg",
+          "description": "Can give the sword a sacred power to penetrate enemys armor. Canceled, if Stance changes.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "90 sec.",
+          "duration": "1.23 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "650",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "ATK+3%"
+            },
+            {
+              "level": "Level 10",
+              "value": "ATK+30%"
+            },
+            {
+              "level": "Level 11",
+              "value": "ATK+33%"
+            },
+            {
+              "level": "Level 12",
+              "value": "ATK+36%"
+            },
+            {
+              "level": "Level 13",
+              "value": "ATK+39%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Agil",
+          "image": "eqt_agil.jpg",
+          "description": "Cuts the enemy twice and proceeds to stab it with a backward stroke.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "3.53 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "440",
+          "aggro": "224",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Centella",
+          "image": "eqt_centella.jpg",
+          "description": "Damages the enemy with speed.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "17 sec.",
+          "duration": "3.91 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "540",
+          "aggro": "260",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2300%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4600%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [STR]",
+        "[PVP/PVE Maps] Additional 5% DMG according to extra [STR]",
+        "Ignore additional DEF according to extra [STR] * 4",
+        "Additional DMG against [PC] + 2x",
+        "Additional DMG against Monster according to 5 * 50"
+      ],
+      "equipped_items": "Sword",
+      "icon_position": {
+        "x": 0,
+        "y": -425
+      }
+    },
+    {
+      "name": "Defending Shot",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.75~13.5m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "187",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "50",
+        "EVA": "0",
+        "BLK": "15",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+5%",
+        "Ignore DEF": "+2%",
+        "Block": "+10",
+        "Critical": "+4"
+      },
+      "skills": [
+        {
+          "name": "Birdfall",
+          "image": "dfs_birdfall.jpg",
+          "description": "A precision strike at an airborne enemy. Enemies on the ground cant be targeted.",
+          "target": "",
+          "casting_time": "0.8 sec.",
+          "cooldown": "0 sec.",
+          "duration": "1.5 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "100",
+          "aggro": "122",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 567%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1134%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Guardian",
+          "image": "dfg_guardian.jpg",
+          "description": "Greatly increases the chances of blocking an attack of an enemy.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "0 sec.",
+          "duration": "0.2 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "150",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration 10 sec"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration 10 sec"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration 10 sec"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration 10 sec"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration 10 sec"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Head Shot",
+          "image": "dfs_headshot.jpg",
+          "description": "Targets head of enemy with a critical shot.",
+          "target": "1 enemy within a range of 14m",
+          "casting_time": "1.9 sec.",
+          "cooldown": "10 sec.",
+          "duration": "0.97 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "200",
+          "aggro": "64",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 278%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 556%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Undercovering Fire",
+          "image": "dfs_undercovering.jpg",
+          "description": "Fires bursts of shots into a dense group of enemies.",
+          "target": "",
+          "casting_time": "0.733 sec.",
+          "cooldown": "15 sec.",
+          "duration": "4 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "250",
+          "aggro": "41",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 141%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 282%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Precision Strike",
+          "image": "dfs_precisionstrike.jpg",
+          "description": "Aims carefully at enemies, striking him in a critical area.",
+          "target": "1 enemy within a range of 14m",
+          "casting_time": "2.6 sec.",
+          "cooldown": "20 sec.",
+          "duration": "0.77 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "84",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 375%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 750%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Rifle",
+      "icon_position": {
+        "x": -200,
+        "y": -200
+      }
+    },
+    {
+      "name": "Flintlock",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.75~15m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Shooting DMG": "-20%",
+        "Magical DMG": "-20%"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "300%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "40",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+15%",
+        "Ignore DEF": "+10%",
+        "Critical": "+17",
+        "Penetration": "5+25",
+        "Immunity": "10"
+      },
+      "skills": [
+        {
+          "name": "Shootdown Shot",
+          "image": "flr_shootdown.jpg",
+          "description": "A precision strike at an airborne enemy. Enemies on the ground cant be targeted.",
+          "target": "",
+          "casting_time": "0.233 sec.",
+          "cooldown": "3 sec.",
+          "duration": "1.17 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "340",
+          "aggro": "90",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1100%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2200%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Swift Shot",
+          "image": "flr_swiftshot.jpg",
+          "description": "Aims and shoots with deadly speed and accuracy.",
+          "target": "Up to 3 enemies 16m away and within a 3m radius",
+          "casting_time": "0.367 sec.",
+          "cooldown": "6 sec.",
+          "duration": "1.33 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "340",
+          "aggro": "57",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Penetration Shot",
+          "image": "flr_penetrationshot.jpg",
+          "description": "Shoots down the enemies in front of you.",
+          "target": "Up to 6 enemies 15m away and within 9m width",
+          "casting_time": "0.867 sec.",
+          "cooldown": "8 sec.",
+          "duration": "1.2 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "440",
+          "aggro": "34",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Target Check",
+          "image": "flr_checktargets.jpg",
+          "description": "Confirms the enemy you are going to attack.",
+          "target": "Up to 6 enemies 15m away and within 8m radius",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "0.87 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "650",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "100% chance of Enemys ["
+            },
+            {
+              "level": "Level 10",
+              "value": "100% chance of Enemys ["
+            },
+            {
+              "level": "Level 11",
+              "value": "100% chance of Enemys ["
+            },
+            {
+              "level": "Level 12",
+              "value": "100% chance of Enemys ["
+            },
+            {
+              "level": "Level 13",
+              "value": "100% chance of Enemys ["
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Accuracy Shot",
+          "image": "flr_accuracyshot.jpg",
+          "description": "Adopts a stable pose and shoots the enemy.",
+          "target": "1 enemy within a range of 17m",
+          "casting_time": "1.5 sec.",
+          "cooldown": "18 sec.",
+          "duration": "1.3 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "540",
+          "aggro": "108",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1600%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3200%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [DEX]",
+        "[PVP/PVE Maps] Additional 5% DMG according to extra [DEX]",
+        "Ignore additional DEF according to extra [DEX] * 4",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 5 * 50"
+      ],
+      "equipped_items": "Rifle",
+      "icon_position": {
+        "x": -200,
+        "y": -425
+      }
+    }
+  ]
+}

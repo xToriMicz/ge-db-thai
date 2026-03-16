@@ -1,0 +1,939 @@
+{
+  "slug": "Rosa",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Bahia Mascot",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Coat",
+    "costume": "None",
+    "gloves": "Gloves",
+    "ring": "Ring",
+    "weapon_costume": "Evils Affection Pierce of Vengeance Evils Affection Life-Belt Costume Life-Belt Costume (Event) Prospe Rosario Costume [Costume] Stellas Blessing",
+    "belt": "Belt",
+    "shoes": "Shoes",
+    "artifact": "None",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Relax",
+    "image": "job_relax.jpg",
+    "description": "Take a Big Breathe in and out to control the mind.",
+    "target": "Self-buff",
+    "casting_time": "0 sec.",
+    "cooldown": "60 sec.",
+    "duration": "2.83 sec.",
+    "sp_cost": "300",
+    "consume_item": "Ancient Star Orb × 5",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration: 300s (120s for others except Rosa)",
+          "[For Rosa]",
+          "ATK +50%",
+          "Monster ATK +100%",
+          "Reset all cooldowns",
+          "All Skill Level +1",
+          "[For Others]",
+          "ATK +10%",
+          "Monster ATK +10%"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Serenade",
+      "equipped_items": "Lute",
+      "icon_position": {
+        "x": 0,
+        "y": -400
+      }
+    },
+    {
+      "stance_name": "Folclore",
+      "equipped_items": "Lute",
+      "icon_position": {
+        "x": -400,
+        "y": -100
+      }
+    },
+    {
+      "stance_name": "Enhanced Tactics",
+      "equipped_items": "Lute",
+      "icon_position": {
+        "x": -200,
+        "y": -475
+      }
+    },
+    {
+      "stance_name": "Ancient Tactics",
+      "equipped_items": "Lute",
+      "icon_position": {
+        "x": -50,
+        "y": -325
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Serenade",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.1~15m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "203",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "15"
+      },
+      "lv25_bonus": {},
+      "skills": [
+        {
+          "name": "Shining Ballade",
+          "image": "ser_shiningballade.jpg",
+          "description": "Increased ATK, ATK SPD and Movement Speed to all team members.",
+          "target": "",
+          "casting_time": "1.033 sec.",
+          "cooldown": "15 sec.",
+          "duration": "2.83 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "200",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 165 sec"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 300 sec"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration : 315 sec"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration : 330 sec"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration : 345 sec"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Endurance Melody",
+          "image": "ser_endurancemelody.jpg",
+          "description": "Slight DEF Increase of team and decrease damage from physical attack.",
+          "target": "",
+          "casting_time": "1.033 sec.",
+          "cooldown": "15 sec.",
+          "duration": "2.83 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "200",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 165 sec"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 300 sec"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration : 315 sec"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration : 330 sec"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration : 345 sec"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Spell-break Rhythm",
+          "image": "ser_rhythmofspellbreak.jpg",
+          "description": "Increases Debuff RES of all team members and decreases damage from magical attacks.",
+          "target": "",
+          "casting_time": "1.033 sec.",
+          "cooldown": "15 sec.",
+          "duration": "2.83 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "200",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 165 sec"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 300 sec"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration : 315 sec"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration : 330 sec"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration : 345 sec"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Orpheus",
+          "image": "ser_orpheus.jpg",
+          "description": "Beckons a soul back to the living world with earthly hymns. Resurrects a character who is incapable of combat.",
+          "target": "",
+          "casting_time": "1.533 sec.",
+          "cooldown": "60 sec.",
+          "duration": "3.37 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "2500",
+          "aggro": "0",
+          "skill_type": "Healing",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Heals 5% of HP after Resurrection"
+            },
+            {
+              "level": "Level 10",
+              "value": "Heals 50% of HP after Resurrection"
+            },
+            {
+              "level": "Level 11",
+              "value": "Heals 55% of HP after Resurrection"
+            },
+            {
+              "level": "Level 12",
+              "value": "Heals 60% of HP after Resurrection"
+            },
+            {
+              "level": "Level 13",
+              "value": "Heals 65% of HP after Resurrection"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Lute",
+      "icon_position": {
+        "x": 0,
+        "y": -400
+      }
+    },
+    {
+      "name": "Folclore",
+      "info": {
+        "Targets": "3 enemies",
+        "Range": "0.1~9m away",
+        "Splash": "0.75 DMG within  2m range",
+        "Hits per attack": "3",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Shooting DMG": "-10%",
+        "Magical DMG": "-10%",
+        "Debuff RES": "-30%"
+      },
+      "stats": {
+        "ASPD": "193",
+        "Bonus ATK": "300%",
+        "MSPD": "1.1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "20"
+      },
+      "lv25_bonus": {
+        "Immunity": "5+10"
+      },
+      "skills": [
+        {
+          "name": "Calypso",
+          "image": "ctm_Bluegrass.jpg",
+          "description": "Improves team members Move SPD and Move SPD limit with exciting performance.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "30 sec.",
+          "duration": "5 minutes (missions only).",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "300",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 6 sec"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 15 sec"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 16 sec"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 17 sec"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 18 sec"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Bolero",
+          "image": "ctm_cowboymusic.jpg",
+          "description": "The sweet play increases Max HP/SP of all team members.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "30 sec.",
+          "duration": "5.19 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "550",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration15 sec."
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration150 sec."
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration180 sec."
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration210 sec."
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration240 sec."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Ranchera",
+          "image": "ctm_westernswing.jpg",
+          "description": "Improves the combat ability of all team members with the comfortable play. Not applied with [Flare] and [Barsel] simultaneously.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "60 sec.",
+          "duration": "5 Minutes.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "750",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 5 Minutes."
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 5 Minutes."
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 5 Minutes."
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 5 Minutes."
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 5 Minutes."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Cancion",
+          "image": "ctm_honkytonk.jpg",
+          "description": "Familiar songs raise the teams fighting spirit.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "30 sec.",
+          "duration": "2 sec per buff level",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "550",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 2 sec per buff level"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 2 sec per buff level"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Climax",
+          "image": "ctm_climax.jpg",
+          "description": "Play reaches its climax while the atmosphere is on high.",
+          "target": "Up to 7 enemies within a range of 8m",
+          "casting_time": "Instant",
+          "cooldown": "45 sec.",
+          "duration": "4.5 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "750",
+          "aggro": "100",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 300%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 600%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[PVP/PVE Maps] Additional 5% DMG according to extra [INT]",
+        "Ignore additional RES according to extra [INT] * 4",
+        "Additional DMG against Monster according to 5 * 50"
+      ],
+      "equipped_items": "Lute",
+      "icon_position": {
+        "x": -400,
+        "y": -100
+      }
+    },
+    {
+      "name": "Enhanced Tactics",
+      "info": {
+        "Targets": "3 enemies",
+        "Range": "0.1~9m away",
+        "Splash": "0.75 DMG within  2m range",
+        "Hits per attack": "3",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Shooting DMG": "-10%",
+        "Magical DMG": "-10%",
+        "Debuff RES": "-30%"
+      },
+      "stats": {
+        "ASPD": "193",
+        "Bonus ATK": "0%",
+        "MSPD": "1.1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "20"
+      },
+      "lv25_bonus": {
+        "Immunity": "5+10"
+      },
+      "skills": [
+        {
+          "name": "Principal",
+          "image": "eta5_principal.jpg",
+          "description": "Provide basic buffs to team. The power can be doubled according to the circumstances.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "45 sec.",
+          "duration": "3.06 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "600",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 30 sec"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 300 sec"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration : 330 sec"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration : 360 sec"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration : 390 sec"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Melee Enhance",
+          "image": "eta5_meleeenhancement.jpg",
+          "description": "Gives the buff that makes Melee Stance attack much stronger.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "8 sec.",
+          "duration": "390 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 30 sec."
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 300 sec."
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 330 sec."
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 360 sec."
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 390 sec."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Magic Enhance",
+          "image": "eta5_magicenhancement.jpg",
+          "description": "Gives the buff that makes Magic Stance attack much stronger.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "8 sec.",
+          "duration": "390 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 30 sec."
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 300 sec."
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 330 sec."
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 360 sec."
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 390 sec."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Shooting Enhance",
+          "image": "eta5_shootingenhancement.jpg",
+          "description": "Gives the buff that makes Shoot Stance attack much stronger.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "8 sec.",
+          "duration": "3.06 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration30 sec."
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration300 sec."
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration330 sec."
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration360 sec."
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration390 sec."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Escape Artist",
+          "image": "eta5_escapeartist.jpg",
+          "description": "Cancel darkness type curse on squad members as well as detect invisibility. Increase resistance of darkness type curse for a given time.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "2 sec.",
+          "duration": "3.06 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "300",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 1.5 secs."
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 15 secs."
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration : 30 secs."
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration : 30 secs."
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration : 30 secs."
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Lute",
+      "icon_position": {
+        "x": -200,
+        "y": -475
+      }
+    },
+    {
+      "name": "Ancient Tactics",
+      "info": {
+        "Targets": "3 enemies",
+        "Range": "0.1~9m away",
+        "Splash": "0.75 DMG within  2m range",
+        "Hits per attack": "3",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "+10%",
+        "Shooting DMG": "-10%",
+        "Magical DMG": "-15%",
+        "Debuff RES": "-10%"
+      },
+      "stats": {
+        "ASPD": "150",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "20"
+      },
+      "lv25_bonus": {
+        "Immunity": "10+20"
+      },
+      "skills": [
+        {
+          "name": "Miracle",
+          "image": "aot_miraclelute.jpg",
+          "description": "Execute a tactic that increases the offensive and defensive capacity of the ally.",
+          "target": "",
+          "casting_time": "0.866 sec.",
+          "cooldown": "30 sec.",
+          "duration": "130 seconds",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "150",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 10 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 100 seconds"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 110 seconds"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 120 seconds"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 130 seconds"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Protecting Booster",
+          "image": "aot_caenopylute.jpg",
+          "description": "Increase the defensive capacity of target ally.",
+          "target": "",
+          "casting_time": "0.866 sec.",
+          "cooldown": "10 sec.",
+          "duration": "390 seconds",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 30 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 330 seconds"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 360 seconds"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 390 seconds"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Shearing Booster",
+          "image": "aot_siaringboosterlute.jpg",
+          "description": "Increase the offensive capacity of target ally.",
+          "target": "",
+          "casting_time": "0.866 sec.",
+          "cooldown": "10 sec.",
+          "duration": "390 seconds",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 30 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 330 seconds"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 360 seconds"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 390 seconds"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Bartor",
+          "image": "aot_bartorlute.jpg",
+          "description": "Remove all harmful effects and restore HP of all team members.",
+          "target": "",
+          "casting_time": "0.866 sec.",
+          "cooldown": "20 sec.",
+          "duration": "1.6 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "150",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Restore 15% of maximum HP"
+            },
+            {
+              "level": "Level 10",
+              "value": "Restore 15% of maximum HP"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Additional Training",
+          "image": "aot_Additionaltraing.jpg",
+          "description": "Increase skill level by enhancing own tactical capacity.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "50 sec.",
+          "duration": "1.033 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Increase all skills level by enhancing your own tactical capacity."
+            },
+            {
+              "level": "Level 10",
+              "value": "Increase all skills level by enhancing your own tactical capacity."
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 2% of extra [None]"
+      ],
+      "equipped_items": "Lute",
+      "icon_position": {
+        "x": -50,
+        "y": -325
+      }
+    }
+  ]
+}

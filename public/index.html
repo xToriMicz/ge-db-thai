@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GE Database Thai — ฐานข้อมูล Granado Espada ภาษาไทย</title>
+  <meta name="description" content="ฐานข้อมูล Granado Espada ภาษาไทย — ตัวละคร 292 ตัว, ไอเทม 10,500+, แผนที่ 123, มอนสเตอร์ 630, เรด 130 พร้อมชื่อไทย">
+  <meta name="keywords" content="Granado Espada, GE, ฐานข้อมูล, database, ตัวละคร, สแตนซ์, สกิล, อาวุธ, เกราะ, ภาษาไทย, Thai">
+  <meta name="author" content="GE Database Thai">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ge.makeloops.xyz/">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.json">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ge.makeloops.xyz/">
+  <meta property="og:title" content="GE Database Thai — ฐานข้อมูล Granado Espada ภาษาไทย">
+  <meta property="og:description" content="ฐานข้อมูล Granado Espada ภาษาไทย — 292 ตัวละคร, 4,700 สกิล, 10,000+ ไอเทม, 123 แผนที่, 630 มอนสเตอร์, 130 เรด">
+  <meta property="og:image" content="https://ge.makeloops.xyz/images/og-cover.png">
+  <meta property="og:locale" content="th_TH">
+  <meta property="og:site_name" content="GE Database Thai">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="GE Database Thai — ฐานข้อมูล Granado Espada ภาษาไทย">
+  <meta name="twitter:description" content="ฐานข้อมูล Granado Espada ภาษาไทย — 292 ตัวละคร, 4,700 สกิล, 10,000+ ไอเทม, 123 แผนที่, 630 มอนสเตอร์, 130 เรด">
+  <meta name="twitter:image" content="https://ge.makeloops.xyz/images/og-cover.png">
+
+  <!-- Theme & PWA -->
+  <meta name="theme-color" content="#0d1117">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "GE Database Thai",
+    "alternateName": "ฐานข้อมูล Granado Espada ภาษาไทย",
+    "url": "https://ge.makeloops.xyz/",
+    "description": "ฐานข้อมูล Granado Espada ภาษาไทย — ตัวละคร 292 ตัว, สแตนซ์ 1,900+",
+    "inLanguage": "th",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://ge.makeloops.xyz/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;600;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header id="header">
+    <div class="container">
+      <h1><span class="logo-ge">GE</span> Database <span class="logo-th">Thai</span></h1>
+      <p class="subtitle">ฐานข้อมูล Granado Espada ภาษาไทย</p>
+      <div class="global-search-wrap">
+        <input type="text" id="global-search" placeholder="🔍 ค้นหาทุกอย่าง — ตัวละคร, ไอเทม, แผนที่, มอนสเตอร์, เรด..." autocomplete="off">
+        <div id="global-results" class="global-results hidden"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Tab Navigation -->
+  <nav id="tab-nav">
+    <div class="container">
+      <div class="tab-row">
+        <button class="tab active" data-tab="characters">ตัวละคร</button>
+        <button class="tab" data-tab="items">ไอเทม</button>
+        <button class="tab" data-tab="maps">แผนที่</button>
+        <button class="tab" data-tab="monsters">มอนสเตอร์</button>
+        <button class="tab" data-tab="raids">เรด</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Stats Bar -->
+  <div id="stats-bar">
+    <div class="container stats-row">
+      <div class="stat"><span id="stat-chars">—</span> ตัวละคร</div>
+      <div class="stat"><span id="stat-stances">—</span> สแตนซ์</div>
+      <div class="stat"><span id="stat-skills">—</span> สกิล</div>
+      <div class="stat"><span id="stat-maps">—</span> แผนที่</div>
+      <div class="stat"><span id="stat-items">—</span> ไอเทม</div>
+      <div class="stat"><span id="stat-monsters">—</span> มอนสเตอร์</div>
+      <div class="stat"><span id="stat-bosses">—</span> บอส</div>
+      <div class="stat"><span id="stat-raids">—</span> เรด</div>
+      <div class="stat"><span id="stat-basic">—</span> Basic</div>
+      <div class="stat"><span id="stat-recruit">—</span> Recruit</div>
+      <div class="stat"><span id="stat-cash">—</span> Cash</div>
+    </div>
+  </div>
+
+  <!-- Filters -->
+  <div id="filters">
+    <div class="container">
+      <div class="search-box">
+        <input type="text" id="search" placeholder="🔍 ค้นหาตัวละคร..." autocomplete="off">
+      </div>
+      <div class="filter-row">
+        <div class="filter-group">
+          <label>เรียงตาม</label>
+          <select id="sort-by">
+            <option value="newest">ใหม่ล่าสุด</option>
+            <option value="name-asc">ชื่อ A-Z</option>
+            <option value="name-desc">ชื่อ Z-A</option>
+            <option value="type">ประเภท</option>
+            <option value="rating">คะแนนสูงสุด</option>
+            <option value="tier">Tier สูงสุด</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label>เซิร์ฟเวอร์</label>
+          <select id="filter-server">
+            <option value="all">ทั้งหมด</option>
+            <option value="thai">เซิฟไทย</option>
+            <option value="official">Official</option>
+            <option value="unofficial">Unofficial</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label>ประเภท</label>
+          <select id="filter-type">
+            <option value="all">ทั้งหมด</option>
+            <option value="basic">Basic</option>
+            <option value="recruit">Recruitable</option>
+            <option value="cash">Cash Shop</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label>เกราะ</label>
+          <select id="filter-armor">
+            <option value="all">ทั้งหมด</option>
+            <option value="coat">Coat</option>
+            <option value="leather">Leather</option>
+            <option value="metal">Metal</option>
+            <option value="robe">Robe</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label>อาวุธ</label>
+          <select id="filter-weapon">
+            <option value="all">ทั้งหมด</option>
+            <optgroup label="Melee">
+              <option value="sword">Sword</option>
+              <option value="sabre">Sabre</option>
+              <option value="rap">Rapier</option>
+              <option value="gs">Great Sword</option>
+              <option value="pole">Polearm</option>
+              <option value="dag">Dagger</option>
+              <option value="blunt">Blunt</option>
+              <option value="knuckle">Knuckle</option>
+              <option value="tonfa">Tonfa</option>
+              <option value="jav">Javelin</option>
+              <option value="crescent">Crescent</option>
+              <option value="shield">Shield</option>
+            </optgroup>
+            <optgroup label="Shooting">
+              <option value="pistol">Pistol</option>
+              <option value="rifle">Rifle</option>
+              <option value="cannon">Cannon</option>
+              <option value="xbow">Crossbow</option>
+              <option value="shotgun">Shotgun</option>
+              <option value="ibr">Heavy Rifle</option>
+            </optgroup>
+            <optgroup label="Magic">
+              <option value="rod">Rod</option>
+              <option value="staff">Staff</option>
+              <option value="firebrac">Fire Bracelet</option>
+              <option value="icebrac">Ice Bracelet</option>
+              <option value="lightbrac">Lightning Bracelet</option>
+              <option value="elebrac">Elemental Bracelet</option>
+              <option value="rosario">Rosario</option>
+              <option value="magscroll">Magic Scroll</option>
+              <option value="cube">Cube</option>
+            </optgroup>
+          </select>
+        </div>
+      </div>
+      <div class="result-count">แสดง <span id="result-count">0</span> ตัวละคร</div>
+    </div>
+  </div>
+
+  <!-- Character Grid -->
+  <main id="main">
+    <div class="container">
+      <div id="character-grid" class="character-grid">
+        <div class="loading">กำลังโหลดข้อมูล...</div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Items Section (hidden by default) -->
+  <section id="items-section" class="hidden">
+    <div id="items-filters">
+      <div class="container">
+        <div class="search-box">
+          <input type="text" id="item-search" placeholder="🔍 ค้นหาไอเทม..." autocomplete="off">
+        </div>
+        <div class="filter-row">
+          <div class="filter-group">
+            <label>กลุ่ม</label>
+            <select id="filter-item-group">
+              <option value="all">ทั้งหมด</option>
+              <option value="weapon-melee">อาวุธระยะประชิด</option>
+              <option value="weapon-ranged">อาวุธระยะไกล</option>
+              <option value="weapon-magic">อาวุธเวทมนตร์</option>
+              <option value="armor">เกราะ</option>
+              <option value="accessory">เครื่องประดับ</option>
+              <option value="ring">แหวน</option>
+              <option value="costume">คอสตูม</option>
+              <option value="misc">อื่นๆ</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label>หมวดหมู่</label>
+            <select id="filter-item-category">
+              <option value="all">ทั้งหมด</option>
+            </select>
+          </div>
+        </div>
+        <div class="result-count">แสดง <span id="item-result-count">0</span> / <span id="item-total-count">0</span> ไอเทม</div>
+      </div>
+    </div>
+    <div class="container" style="padding:20px 16px 40px">
+      <div id="item-grid" class="item-grid">
+        <div class="loading">กำลังโหลดข้อมูล...</div>
+      </div>
+      <div id="item-pagination" class="pagination"></div>
+    </div>
+  </section>
+
+  <!-- Maps Section (hidden by default) -->
+  <section id="maps-section" class="hidden">
+    <div id="maps-filters">
+      <div class="container">
+        <div class="search-box">
+          <input type="text" id="map-search" placeholder="🔍 ค้นหาแผนที่..." autocomplete="off">
+        </div>
+        <div class="filter-row">
+          <div class="filter-group">
+            <label>ประเภท</label>
+            <select id="filter-map-type">
+              <option value="all">ทั้งหมด</option>
+              <option value="Field">Field</option>
+              <option value="City">City</option>
+              <option value="Mission">Mission</option>
+              <option value="PK Disabled">PK Disabled</option>
+            </select>
+          </div>
+        </div>
+        <div class="result-count">แสดง <span id="map-result-count">0</span> แผนที่</div>
+      </div>
+    </div>
+    <div class="container" style="padding:20px 16px 40px">
+      <div id="map-grid" class="map-grid">
+        <div class="loading">กำลังโหลดข้อมูล...</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Monsters Section (hidden by default) -->
+  <section id="monsters-section" class="hidden">
+    <div id="monsters-filters">
+      <div class="container">
+        <div class="search-box">
+          <input type="text" id="mob-search" placeholder="🔍 ค้นหามอนสเตอร์..." autocomplete="off">
+        </div>
+        <div class="filter-row">
+          <div class="filter-group">
+            <label>เผ่าพันธุ์</label>
+            <select id="filter-race">
+              <option value="all">ทั้งหมด</option>
+              <option value="Human">Human</option>
+              <option value="Wildlife">Wildlife</option>
+              <option value="Undead">Undead</option>
+              <option value="Golem">Golem</option>
+              <option value="Demon">Demon</option>
+              <option value="Misc">Misc</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label>ประเภท</label>
+            <select id="filter-boss">
+              <option value="all">ทั้งหมด</option>
+              <option value="yes">บอสเท่านั้น</option>
+            </select>
+          </div>
+        </div>
+        <div class="result-count">แสดง <span id="mob-result-count">0</span> มอนสเตอร์</div>
+      </div>
+    </div>
+    <div class="container" style="padding:20px 16px 40px">
+      <div id="mob-grid" class="mob-grid">
+        <div class="loading">กำลังโหลดข้อมูล...</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Raids Section (hidden by default) -->
+  <section id="raids-section" class="hidden">
+    <div id="raids-filters">
+      <div class="container">
+        <div class="search-box">
+          <input type="text" id="raid-search" placeholder="🔍 ค้นหาเรด..." autocomplete="off">
+        </div>
+        <div class="filter-row">
+          <div class="filter-group">
+            <label>เผ่าพันธุ์</label>
+            <select id="filter-raid-race">
+              <option value="all">ทั้งหมด</option>
+              <option value="Human">Human</option>
+              <option value="Wildlife">Wildlife</option>
+              <option value="Undead">Undead</option>
+              <option value="Golem">Golem</option>
+              <option value="Demon">Demon</option>
+              <option value="Misc">Misc</option>
+            </select>
+          </div>
+        </div>
+        <div class="result-count">แสดง <span id="raid-result-count">0</span> เรด</div>
+      </div>
+    </div>
+    <div class="container" style="padding:20px 16px 40px">
+      <div id="raid-grid" class="raid-grid">
+        <div class="loading">กำลังโหลดข้อมูล...</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Character Detail Modal -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>GE Database Thai — ข้อมูลจาก <a href="https://ge-db.site" target="_blank">ge-db.site</a></p>
+      <p class="footer-sub">สร้างด้วย Cloudflare Workers + D1 | Jingjing Oracle</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js');
+    }
+  </script>
+</body>
+</html>

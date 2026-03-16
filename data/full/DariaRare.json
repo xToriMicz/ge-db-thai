@@ -1,0 +1,279 @@
+{
+  "slug": "DariaRare",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Pavluchenk Sister Ending of the year",
+    "head": "None",
+    "earring": "Earring",
+    "face": "Crusader Daria Summer Sunglass Crusader Daria Summer Sunglass (Event) Crusader Daria Glass",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Leather Metal",
+    "costume": "None",
+    "gloves": "Gloves Leather Metal",
+    "ring": "Ring",
+    "weapon_costume": "Sanctuary of Barisada Sanctuary of Barisada (Event)",
+    "belt": "Belt Leather Metal",
+    "shoes": "Shoes Leather Metal",
+    "artifact": "None",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Heroic Instinct",
+    "image": "berserknessgs.jpg",
+    "description": "Heighten the body and mind to perfect unison, allowing for a limit break. Lasts until your location changes.",
+    "target": "Self-buff",
+    "casting_time": "0 sec.",
+    "cooldown": "25 sec.",
+    "duration": "1.23 sec.",
+    "sp_cost": "300",
+    "consume_item": "Ancient Star Orb × 3",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "A.R. +1",
+          "D.R. +1",
+          "ATK +50%",
+          "IMM +10",
+          "STR +10",
+          "HP +10",
+          "Ignores debuff RES",
+          "Damage received from PC -25%",
+          "Skill damage x2",
+          "Skill damage increases by (1% of extra [STR]) additionally",
+          "At Lv. 12, stats gained from accessories x2"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Barisada",
+      "equipped_items": "Sword",
+      "icon_position": {
+        "x": 0,
+        "y": -200
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Barisada",
+      "info": {
+        "Targets": "5 enemies",
+        "Range": "1.75m away",
+        "Splash": "1.2 DMG within  2m range",
+        "Hits per attack": "3",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Shooting DMG": "-20%",
+        "Magical DMG": "+10%"
+      },
+      "stats": {
+        "ASPD": "302",
+        "Bonus ATK": "300%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "10",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+35%",
+        "Block": "+15",
+        "Critical": "+25",
+        "Penetration": "5+25",
+        "Immunity": "5+15"
+      },
+      "skills": [
+        {
+          "name": "Layered",
+          "image": "bsd_laeyerd.jpg",
+          "description": "Improves combat efficiency by embodying the legendary sword [Barisada]. Lasts until your location changes.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "28 sec.",
+          "duration": "1.39 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "300",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "A.R. +1"
+            },
+            {
+              "level": "Level 10",
+              "value": "A.R. +1"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Kira",
+          "image": "bsd_kira.jpg",
+          "description": "Quickly defeat nearby enemies. After using the skill, when reusing [Kira] [Pales] [Kaleidor] [Prea], casts [Kira Smash] [Kira Strike] [Kira Slash] [Kira Burst].",
+          "target": "Up to 5 adjacent enemies",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "2.03 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "560",
+          "aggro": "342",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 984%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1968%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Pales",
+          "image": "bsd_pales.jpg",
+          "description": "Break the enemy ahead and cut it twice. After using the skill, when reusing [Pales], casts [Pales Crash].",
+          "target": "Up to 7 enemies, 11m in front, within 6m width",
+          "casting_time": "0.45 sec.",
+          "cooldown": "17 sec.",
+          "duration": "1.43 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "750",
+          "aggro": "159",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1492.5%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2985%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Kaleidor",
+          "image": "bsd_kaledor.jpg",
+          "description": "Attacks a nearby enemy with 6 fatal continuous attacks. After using the skill, when reusing [Kira] [Pales] [Kaleidor] skill, casts [Kaleidor Burst] [Kaleidor Smash] [Kaleidor Slash] [Kaleidor Strike]",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "17 sec.",
+          "duration": "2.32 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "540",
+          "aggro": "260",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1449%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2898%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Prea",
+          "image": "bsd_praer.jpg",
+          "description": "Releases accumulated Fighting Spirit of Barisada to the front enemy and destroys them. Possible to use only in [Holy Sword] state.",
+          "target": "Up to 36 enemies, 23m in the front and at an angle of 90 degrees",
+          "casting_time": "2.75 sec.",
+          "cooldown": "50 sec.",
+          "duration": "1.75 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "2250",
+          "aggro": "350",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 458%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 916%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [STR]",
+        "[PVP/PVE Maps] Additional 3% DMG according to extra [STR]",
+        "Ignore additional DEF according to extra [STR] * 4",
+        "Additional DMG against Monster according to 3 * 50"
+      ],
+      "equipped_items": "Sword",
+      "icon_position": {
+        "x": 0,
+        "y": -200
+      }
+    }
+  ]
+}

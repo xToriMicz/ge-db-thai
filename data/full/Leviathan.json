@@ -1,0 +1,275 @@
+{
+  "slug": "Leviathan",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Leviathans Ire Master of the Abyss Ill sweep them all away!",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Robe",
+    "costume": "None",
+    "gloves": "Gloves",
+    "ring": "Ring",
+    "weapon_costume": "Elite Bracelet of Leviathan Costume Dernier Mer Event Dernier Mer",
+    "belt": "Belt",
+    "shoes": "Shoes",
+    "artifact": "Leviathans Scale Enochs Book Remains of Water",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Fontemar",
+    "image": "job_fontemar.jpg",
+    "description": "Leviathan synchronizes part of its power with the sea.",
+    "target": "Self-Buff",
+    "casting_time": "0 sec.",
+    "cooldown": "0 sec.",
+    "duration": "2.133 sec.",
+    "sp_cost": "550",
+    "consume_item": "Ancient Star Orb × 14",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "A.R. +1",
+          "ATK +25%",
+          "Monster ATK +30%",
+          "Ice Penetration +15",
+          "Fire Resistance +20",
+          "Lightning Resistance -20",
+          "Movement Speed -30%",
+          "Buff removed when reused"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Pluros",
+      "equipped_items": "Ice Bracelet",
+      "icon_position": {
+        "x": -300,
+        "y": -425
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Pluros",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.5~12m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "-10%",
+        "Shooting DMG": "+10%",
+        "Magical DMG": "-10%"
+      },
+      "stats": {
+        "ASPD": "187",
+        "Bonus ATK": "350%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "20",
+        "Ice RES": "20",
+        "Lightning RES": "-20",
+        "Abnormal RES": "10"
+      },
+      "lv25_bonus": {
+        "Penetration": "10+15",
+        "Immunity": "5+10"
+      },
+      "skills": [
+        {
+          "name": "Pol Caer",
+          "image": "flur_polcaer.jpg",
+          "description": "Creates a water path in the air at the designated location.",
+          "target": "",
+          "casting_time": "1.833 sec.",
+          "cooldown": "7.5 sec.",
+          "duration": "2.066 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "350",
+          "aggro": "50",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Dia Belle",
+          "image": "flur_diawelle.jpg",
+          "description": "Moves with the waves, engulfing enemies.",
+          "target": "Up to 14 enemies within a 15m range and 7m width in front.",
+          "casting_time": "3.533 sec.",
+          "cooldown": "18 sec.",
+          "duration": "3.6 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "1200",
+          "aggro": "100",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2600%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5200%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Feolia",
+          "image": "flur_peolia.jpg",
+          "description": "Creates a violent vortex, dealing continuous damage at the casters location.",
+          "target": "",
+          "casting_time": "3.033 sec.",
+          "cooldown": "14 sec.",
+          "duration": "1.366 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "650",
+          "aggro": "125",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Aelros",
+          "image": "flur_aelos.jpg",
+          "description": "Creates a storm-like wave rushing from both sides.",
+          "target": "Up to 18 enemies within a 18m range and 8m width in front.",
+          "casting_time": "4.367 sec.",
+          "cooldown": "22 sec.",
+          "duration": "2.9 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "1650",
+          "aggro": "125",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2730%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5460%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "El Debora",
+          "image": "flur_eldevora.jpg",
+          "description": "Unleashes the power of the sea monster, devastating the surrounding area and creating a [Flood Zone].",
+          "target": "Up to 24 enemies within a 16m range.",
+          "casting_time": "4.7 sec.",
+          "cooldown": "25 sec.",
+          "duration": "4.366 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "2100",
+          "aggro": "150",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 3200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 6400%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [INT]",
+        "[PVP/PVE Maps] Additional 8% DMG according to extra [INT]",
+        "Ignore additional RES according to extra [INT] * 6",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Ice Bracelet",
+      "icon_position": {
+        "x": -300,
+        "y": -425
+      }
+    }
+  ]
+}

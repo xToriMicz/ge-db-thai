@@ -1,0 +1,286 @@
+{
+  "slug": "Rosie",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Killer of the Ten Nobles Frost Crown Pioneer of Stars An opportunity that has returned! The Legend Pioneering Legend With a Cool Mind Blessings of the 2026 New Year",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Leather",
+    "costume": "None",
+    "gloves": "Gloves Leather",
+    "ring": "Ring",
+    "weapon_costume": "Blue Moon Blue Moon (Event) Glacier Event Glacier",
+    "belt": "Belt Leather",
+    "shoes": "Shoes Leather",
+    "artifact": "Hanbok Norigae Broken Hanbok Norigae",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Link",
+    "image": "job_link.jpg",
+    "description": "Amplifies the potential of the weapons.",
+    "target": "Self-buff",
+    "casting_time": "0 sec.",
+    "cooldown": "30 sec.",
+    "duration": "2.333 sec.",
+    "sp_cost": "300",
+    "consume_item": "Ancient Star Orb × 20",
+    "levels": [
+      {
+        "level": "Level 1",
+        "effects": [
+          "None"
+        ]
+      },
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration : 600 seconds",
+          "A.R. +1",
+          "ATK +30%",
+          "Monster ATK +100%",
+          "Physical PEN +15",
+          "Movement Speed +5%",
+          "Cast Time -25%"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Control",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Soul Weapon",
+      "equipped_items": "Sword",
+      "icon_position": {
+        "x": -200,
+        "y": -125
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Control",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "4m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "170",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Soul Weapon",
+      "info": {
+        "Targets": "6 enemies",
+        "Range": "6m away",
+        "Splash": "100% DMG within  3m range",
+        "Hits per attack": "1",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "-10%",
+        "Shooting DMG": "+10%",
+        "Magical DMG": "-10%",
+        "Debuff RES": "-10%"
+      },
+      "stats": {
+        "ASPD": "180",
+        "Bonus ATK": "290%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "50",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "Critical": "+10",
+        "Penetration": "10+25",
+        "Immunity": "5+25"
+      },
+      "skills": [
+        {
+          "name": "Soul Weapon",
+          "image": "SWeapon_Soulweapon.jpg",
+          "description": "Strengthens the bond with your weapons.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "30 sec.",
+          "duration": "2.2 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "300",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 360 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 360 seconds"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration : 360 seconds"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Rapid Throw",
+          "image": "SWeapon_skill2.jpg",
+          "description": "Retreat and make a quick jump attack.",
+          "target": "Up to 5 enemies 12m away and within 3 width",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "2.633 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "250",
+          "aggro": "73",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 811%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1622%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Blink Jump",
+          "image": "SWeapon_skill3.jpg",
+          "description": "Move instantly and attack the enemies around yourself.",
+          "target": "Up to 8 enemies 12m away and within a 6m radius",
+          "casting_time": "1.366 sec.",
+          "cooldown": "5 sec.",
+          "duration": "2.033 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "550",
+          "aggro": "95",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1522%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3044%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Deadly Penta Sword",
+          "image": "SWeapon_skill4.jpg",
+          "description": "Attack surrounding enemies by detonating the energy within the five linked weapons.",
+          "target": "Up to 10 enemies within a range of 10m",
+          "casting_time": "1.733 sec.",
+          "cooldown": "15 sec.",
+          "duration": "2.166 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "650",
+          "aggro": "56",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2233%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4466%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Deadly Trajectory",
+          "image": "SWeapon_skill5.jpg",
+          "description": "Attack the enemy quickly with an unpredictable trajectory.",
+          "target": "Up to 10 enemies 12m away and within 8m width",
+          "casting_time": "1.3 sec.",
+          "cooldown": "15 sec.",
+          "duration": "2.4 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "750",
+          "aggro": "73",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1944%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3888%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 10% of extra [STR]",
+        "[PVP/PVE Maps] Additional 3% DMG according to extra [STR]",
+        "Ignore additional DEF according to extra [STR] * 4",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 3 * 50"
+      ],
+      "equipped_items": "Sword",
+      "icon_position": {
+        "x": -200,
+        "y": -125
+      }
+    }
+  ]
+}

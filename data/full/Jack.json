@@ -1,0 +1,1154 @@
+{
+  "slug": "Jack",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "None",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Leather",
+    "costume": "None",
+    "gloves": "Gloves Leather",
+    "ring": "Ring",
+    "weapon_costume": "None",
+    "belt": "Belt Leather",
+    "shoes": "Shoes Leather",
+    "artifact": "Stained Mark of Engineer Element Talt Hammer",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Destroyer Mode",
+    "image": "job_buildreinforce.jpg",
+    "description": "Increases the ATK SPD of your own structure by changing the mode, however, DEF will decrease. It will be cancelled when you re-use it.",
+    "target": "Structure within 20m",
+    "casting_time": "0 sec.",
+    "cooldown": "30 sec.",
+    "duration": "2 sec.",
+    "sp_cost": "400",
+    "consume_item": "Ancient Star Orb × 2",
+    "levels": [
+      {
+        "level": "Level 1",
+        "effects": [
+          "The ATK SPD of nearby structure +1%",
+          "DEF -2"
+        ]
+      },
+      {
+        "level": "Level 10",
+        "effects": [
+          "The ATK SPD of nearby structure +10%",
+          "DEF -20"
+        ]
+      },
+      {
+        "level": "Level 11",
+        "effects": [
+          "The ATK SPD of nearby structure +11%",
+          "DEF -22",
+          "Penetration +2"
+        ]
+      },
+      {
+        "level": "Level 12",
+        "effects": [
+          "The ATK SPD of nearby structure +12%",
+          "DEF -24",
+          "Penetration +4"
+        ]
+      },
+      {
+        "level": "Level 13",
+        "effects": [
+          "The ATK SPD of nearby structure +13%",
+          "DEF -26",
+          "Penetration +6"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Install Trap",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": -175
+      }
+    },
+    {
+      "stance_name": "Construction",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": 0,
+        "y": -175
+      }
+    },
+    {
+      "stance_name": "Blandir Cruz",
+      "equipped_items": "Polearm",
+      "icon_position": {
+        "x": -200,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Penetrar Cruz",
+      "equipped_items": "Polearm",
+      "icon_position": {
+        "x": -200,
+        "y": -75
+      }
+    },
+    {
+      "stance_name": "Mighty Cruz",
+      "equipped_items": "Polearm",
+      "icon_position": {
+        "x": 0,
+        "y": -375
+      }
+    },
+    {
+      "stance_name": "Tronada Cruz",
+      "equipped_items": "Polearm",
+      "icon_position": {
+        "x": -250,
+        "y": -225
+      }
+    },
+    {
+      "stance_name": "Install Trap",
+      "equipped_items": "Tool",
+      "icon_position": {
+        "x": -150,
+        "y": -175
+      }
+    },
+    {
+      "stance_name": "Construction",
+      "equipped_items": "Tool",
+      "icon_position": {
+        "x": 0,
+        "y": -175
+      }
+    },
+    {
+      "stance_name": "Destroyer",
+      "equipped_items": "Tool",
+      "icon_position": {
+        "x": -300,
+        "y": -275
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Install Trap",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.1~1m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "150",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [
+        {
+          "name": "Detection",
+          "image": "trp_detection.jpg",
+          "description": "Reveals invisible characters and locates hidden objects.",
+          "target": "",
+          "casting_time": "1.133 sec.",
+          "cooldown": "0 sec.",
+          "duration": "1.13 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "50",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Transparency Detecting"
+            },
+            {
+              "level": "Level 10",
+              "value": "Transparency Detecting"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Critical Disease",
+          "image": "trp_criticaldisease.jpg",
+          "description": "Builds a trap that releases a poisonous cloud of smoke when triggered.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "4 sec.",
+          "duration": "2 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "75",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Build Critical Disease"
+            },
+            {
+              "level": "Level 10",
+              "value": "Build Critical Disease"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Invisible String",
+          "image": "trp_invisiblestring.jpg",
+          "description": "Set a booby trap that deals Physical Damage to enemies. (Also applicable to flying monsters.)",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "6 sec.",
+          "duration": "2 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "75",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Build Invisible String"
+            },
+            {
+              "level": "Level 10",
+              "value": "Build Invisible String"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Explosion",
+          "image": "trp_explosion.jpg",
+          "description": "Sets an explosive trap that blocks attacks from several enemies at the same time.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "8 sec.",
+          "duration": "2 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "100",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Build Explosion"
+            },
+            {
+              "level": "Level 10",
+              "value": "Build Explosion"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": -175
+      }
+    },
+    {
+      "name": "Construction",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.1~15m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "150",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [
+        {
+          "name": "Fence Construction",
+          "image": "con_buildfence.jpg",
+          "description": "Builds a fence that obstructs enemy movement and prevents them from advancing.",
+          "target": "Up to 6 fences simultaneously",
+          "casting_time": "10 sec.",
+          "cooldown": "0 sec.",
+          "duration": "0.33 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "150",
+          "aggro": "0",
+          "skill_type": "Build",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Up to 6 fences simultaneously"
+            },
+            {
+              "level": "Level 10",
+              "value": "Up to 6 fences simultaneously"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Cannon-Turret Const.",
+          "image": "con_buildturret.jpg",
+          "description": "Constructs a cannon-turret that automatically attacks enemies.",
+          "target": "Up to 6 fences simultaneously",
+          "casting_time": "10 sec.",
+          "cooldown": "2 sec.",
+          "duration": "0.33 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "200",
+          "aggro": "0",
+          "skill_type": "Build",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Up to 6 fences simultaneously"
+            },
+            {
+              "level": "Level 10",
+              "value": "Up to 6 fences simultaneously"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Safety Ward Const.",
+          "image": "con_buildsafetyward.jpg",
+          "description": "Creates a protective ward that defends the characters within.",
+          "target": "Up to 3 fences simultaneously",
+          "casting_time": "10 sec.",
+          "cooldown": "4 sec.",
+          "duration": "0.33 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "250",
+          "aggro": "0",
+          "skill_type": "Build",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Up to 3 fences simultaneously"
+            },
+            {
+              "level": "Level 10",
+              "value": "Up to 3 fences simultaneously"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Regen. Ward Const.",
+          "image": "con_buildregenward.jpg",
+          "description": "Creates a regenerative ward that continuously restores the HP of characters within.",
+          "target": "Up to 3 fences simultaneously",
+          "casting_time": "10 sec.",
+          "cooldown": "6 sec.",
+          "duration": "0.33 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "250",
+          "aggro": "0",
+          "skill_type": "Build",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Up to 3 fences simultaneously"
+            },
+            {
+              "level": "Level 10",
+              "value": "Up to 3 fences simultaneously"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "S.C.-Turret Const.",
+          "image": "con_buildturret.jpg",
+          "description": "Builds a Siegecannon-Turret that is able to attack several enemies simultaneously.",
+          "target": "Up to 3 fences simultaneously",
+          "casting_time": "10 sec.",
+          "cooldown": "8 sec.",
+          "duration": "0.33 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "300",
+          "aggro": "0",
+          "skill_type": "Build",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Up to 3 fences simultaneously"
+            },
+            {
+              "level": "Level 10",
+              "value": "Up to 3 fences simultaneously"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": 0,
+        "y": -175
+      }
+    },
+    {
+      "name": "Blandir Cruz",
+      "info": {
+        "Targets": "4 enemies",
+        "Range": "0.5~2m away",
+        "Splash": "0.75 DMG within  2m range",
+        "Hits per attack": "1",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "170",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "10",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+25%",
+        "Block": "+10",
+        "Critical": "+10"
+      },
+      "skills": [
+        {
+          "name": "Blandir Cadena",
+          "image": "bla_blandircadena.jpg",
+          "description": "Drives enemies back with unrelenting pierces and slashes.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "0 sec.",
+          "duration": "3.95 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "100",
+          "aggro": "115",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 522%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1044%"
+            }
+          ],
+          "special": [
+            "Additional 50% damage to enemies with [",
+            "Additional 50% damage to enemies with ["
+          ]
+        },
+        {
+          "name": "Gigante Marcha",
+          "image": "bla_gigantemarcha.jpg",
+          "description": "Drives back enemies with the whirling of your weapon.",
+          "target": "Up to 5 adjacent enemies",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "3.93 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "200",
+          "aggro": "83",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 364%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 728%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Tierra Choque",
+          "image": "bla_tierrachoque.jpg",
+          "description": "By slamming your weapon to the ground, it creates a devastating shock wave.",
+          "target": "Up to 5 adjacent enemies",
+          "casting_time": "1.367 sec.",
+          "cooldown": "20 sec.",
+          "duration": "1.57 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "109",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 481%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 961%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Polearm",
+      "icon_position": {
+        "x": -200,
+        "y": 0
+      }
+    },
+    {
+      "name": "Penetrar Cruz",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.5~2.5m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "145",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+25%",
+        "Critical": "+16"
+      },
+      "skills": [
+        {
+          "name": "Harpoon",
+          "image": "pen_arpon.jpg",
+          "description": "Thrusts spear upwards to attack airborne enemies. Ineffective on enemies on the ground.",
+          "target": "1 adjacent airborne enemy",
+          "casting_time": "Instant",
+          "cooldown": "0 sec.",
+          "duration": "2.63 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "100",
+          "aggro": "137",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 631%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1262%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Falange Locura",
+          "image": "pen_palanxlocura.jpg",
+          "description": "A series of stabs and pierces with a spear.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "3.72 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "200",
+          "aggro": "112",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 496%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 992%"
+            }
+          ],
+          "special": [
+            "Additional 50% damage to enemies with [",
+            "Additional 50% damage to enemies with ["
+          ]
+        },
+        {
+          "name": "Ciento Penetrar",
+          "image": "pen_cientopenetrar.jpg",
+          "description": "Charges through a group of enemies with lightning speed.",
+          "target": "Up to 5 enemies 10m away and within 3m width",
+          "casting_time": "1.2 sec.",
+          "cooldown": "20 sec.",
+          "duration": "2 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "56",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 206%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 412%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Polearm",
+      "icon_position": {
+        "x": -200,
+        "y": -75
+      }
+    },
+    {
+      "name": "Mighty Cruz",
+      "info": {
+        "Targets": "5 enemies",
+        "Range": "0.5~2m away",
+        "Splash": "0.85 DMG within  2m range",
+        "Hits per attack": "1",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "170",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "10",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+30%",
+        "Block": "+10",
+        "Critical": "+12"
+      },
+      "skills": [
+        {
+          "name": "Sharp Scythe",
+          "image": "mc_sharpscythe.jpg",
+          "description": "A running sweep for legs of the enemies.",
+          "target": "Up to 5 enemies 6m away and within 3m width",
+          "casting_time": "Instant",
+          "cooldown": "7 sec.",
+          "duration": "2.17 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "150",
+          "aggro": "63",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 270%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 540%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Energy Boom",
+          "image": "mc_energeticboom.jpg",
+          "description": "Brandish weapon to accumulate energy, then deliver an explosive stab to enemies.",
+          "target": "Up to 6 Enemies nearby",
+          "casting_time": "1.367 sec.",
+          "cooldown": "10 sec.",
+          "duration": "1.6 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "200",
+          "aggro": "122",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 552%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1104%"
+            }
+          ],
+          "special": [
+            "Additional 50% damage to enemies with [",
+            "Additional 50% damage to enemies with ["
+          ]
+        },
+        {
+          "name": "Savage hash",
+          "image": "mc_savagehash.jpg",
+          "description": "Slashes mercilessly at one enemy.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "3.97 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "250",
+          "aggro": "270",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1298%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2596%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Demonic Discharge",
+          "image": "mc_demonicdischarge.jpg",
+          "description": "Frontal slashing flurry with a spear at multiple enemies.",
+          "target": "Up to 6 Enemies nearby",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "3.3 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "139",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 633%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1266%"
+            }
+          ],
+          "special": [
+            "Additional 50% damage to enemies with [",
+            "Additional 50% damage to enemies with ["
+          ]
+        }
+      ],
+      "equipped_items": "Polearm",
+      "icon_position": {
+        "x": 0,
+        "y": -375
+      }
+    },
+    {
+      "name": "Tronada Cruz",
+      "info": {
+        "Targets": "5 enemies",
+        "Range": "0.1~1.5m away",
+        "Splash": "0.8 DMG within  2m range",
+        "Hits per attack": "1",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Shooting DMG": "-20%",
+        "Magical DMG": "+10%"
+      },
+      "stats": {
+        "ASPD": "223",
+        "Bonus ATK": "270%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "40",
+        "EVA": "0",
+        "BLK": "5",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+30%",
+        "Block": "+5",
+        "Critical": "+16",
+        "Penetration": "5+25",
+        "Immunity": "5+10"
+      },
+      "skills": [
+        {
+          "name": "Rueda Ventana",
+          "image": "tor_ruedaventana.jpg",
+          "description": "Holds the spear long and rotates once to cause tornado. Destruido does not apply.",
+          "target": "Up to 6 enemies within a range of 5m",
+          "casting_time": "Instant",
+          "cooldown": "5 sec.",
+          "duration": "2.37 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "240",
+          "aggro": "57",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 275%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 550%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Destruido",
+          "image": "tor_destruido.jpg",
+          "description": "Gather power for a strong attack. This effect is removed on stance change.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "5 sec.",
+          "duration": "1.2 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "650",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Skill ATK+52%"
+            },
+            {
+              "level": "Level 10",
+              "value": "Skill ATK+75%"
+            },
+            {
+              "level": "Level 11",
+              "value": "Skill ATK+300%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Tornado Shock",
+          "image": "tor_tornadochoque.jpg",
+          "description": "Ignore additional DEF by (extra [",
+          "target": "Up to 5 adjacent enemies",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "4.07 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "340",
+          "aggro": "118",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 955%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1910%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Tronada",
+          "image": "tor_tronada.jpg",
+          "description": "Continually attack one enemy and fling him into the air.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "4.13 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "440",
+          "aggro": "211",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Levantar",
+          "image": "tor_levantar.jpg",
+          "description": "Spiraling attack that employs centrifugal force to attack enemies in front, flinging them into the air",
+          "target": "Up to 5 adjacent enemies",
+          "casting_time": "Instant",
+          "cooldown": "25 sec.",
+          "duration": "2.97 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "440",
+          "aggro": "180",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1498%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2996%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [STR]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [STR]",
+        "Ignore additional DEF according to extra [STR] * 4",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Polearm",
+      "icon_position": {
+        "x": -250,
+        "y": -225
+      }
+    },
+    {
+      "name": "Destroyer",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.1~15m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "150",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "Penetration": "5+10",
+        "Immunity": "5+10"
+      },
+      "skills": [
+        {
+          "name": "Defensive Tool",
+          "image": "dsr_repairtool.jpg",
+          "description": "Builds a structure which recovers HP of nearby structures. Only 1 unit available.",
+          "target": "",
+          "casting_time": "10 sec.",
+          "cooldown": "60 sec.",
+          "duration": "0.33 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "1000",
+          "aggro": "0",
+          "skill_type": "Build",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Increases structure HP recovery and frequency of recovery according to DEX stats"
+            },
+            {
+              "level": "Level 10",
+              "value": "Increases structure HP recovery and frequency of recovery according to DEX stats"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Enhanced Cannon-Turret Build",
+          "image": "dsr_improvedcannonturret.jpg",
+          "description": "Builds an enhanced cannon-turret which can use a stronger attack. Only 3 units available.",
+          "target": "",
+          "casting_time": "10 sec.",
+          "cooldown": "30 sec.",
+          "duration": "0.33 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "1000",
+          "aggro": "0",
+          "skill_type": "Build",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Level 10"
+            },
+            {
+              "level": "Level 10",
+              "value": "<img src=\"./images/Skills/dsr_spikearea.jpg\""
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Spike Gatling Construction",
+          "image": "dsr_spikearea.jpg",
+          "description": "Builds a turret which recognizes an enemy to shoot an ice piece quickly. Only 3 units available.",
+          "target": "",
+          "casting_time": "10 sec.",
+          "cooldown": "30 sec.",
+          "duration": "0.33 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "1000",
+          "aggro": "0",
+          "skill_type": "Build",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Level 10"
+            },
+            {
+              "level": "Level 10",
+              "value": "<img src=\"./images/Skills/dsr_antiairgun.jpg\""
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Electric Punisher Construction",
+          "image": "dsr_antiairgun.jpg",
+          "description": "Builds a turret which recognizes an enemy to shoot an electronic ray of light. Only 3 unit available.",
+          "target": "",
+          "casting_time": "10 sec.",
+          "cooldown": "60 sec.",
+          "duration": "0.33 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "1000",
+          "aggro": "0",
+          "skill_type": "Build",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Increases the chance to use [Electric Punisher] skill according to DEX stats"
+            },
+            {
+              "level": "Level 10",
+              "value": "Increases the chance to use [Electric Punisher] skill according to DEX stats"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Buster Cannon Construction",
+          "image": "dsr_bustercannon.jpg",
+          "description": "Builds a turret which throws a strong bomb. Only 1 unit available.",
+          "target": "",
+          "casting_time": "10 sec.",
+          "cooldown": "60 sec.",
+          "duration": "0.33 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "1000",
+          "aggro": "0",
+          "skill_type": "Build",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Increases the chance to use [Blazing Buster] skill according to DEX stats"
+            },
+            {
+              "level": "Level 10",
+              "value": "Increases the chance to use [Blazing Buster] skill according to DEX stats"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Tool",
+      "icon_position": {
+        "x": -300,
+        "y": -275
+      }
+    }
+  ]
+}

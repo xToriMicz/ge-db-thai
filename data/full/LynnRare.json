@@ -1,0 +1,489 @@
+{
+  "slug": "LynnRare",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "None",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Leather Metal",
+    "costume": "None",
+    "gloves": "Gloves Leather Metal",
+    "ring": "Ring",
+    "weapon_costume": "None",
+    "belt": "Belt Leather Metal",
+    "shoes": "Shoes Leather Metal",
+    "artifact": "Panfilos Lunch",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Protect Armor",
+    "image": "job_protectarmor.jpg",
+    "description": "The will of protecting someone precious permeates into the armor. DEF attribute will be enhanced.",
+    "target": "Self-buff",
+    "casting_time": "0 sec.",
+    "cooldown": "60 sec.",
+    "duration": "2.033 sec.",
+    "sp_cost": "750",
+    "consume_item": "Ancient Star Orb × 2",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration : 300 sec.",
+          "A.R. +1",
+          "D.R. +1",
+          "DEF +10",
+          "IMM +10",
+          "Every damage -10%"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Imperial Guardian",
+      "equipped_items": "Great Sword",
+      "icon_position": {
+        "x": -450,
+        "y": -400
+      }
+    },
+    {
+      "stance_name": "Ancient Slayer",
+      "equipped_items": "Great Sword",
+      "icon_position": {
+        "x": -150,
+        "y": -250
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Imperial Guardian",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "3",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Shooting DMG": "-20%",
+        "Debuff RES": "-10%"
+      },
+      "stats": {
+        "ASPD": "260",
+        "Bonus ATK": "300%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "40",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "Critical": "+15",
+        "Penetration": "5+25",
+        "Immunity": "10+10"
+      },
+      "skills": [
+        {
+          "name": "Imperial Smash",
+          "image": "ifg_imfailsmash.jpg",
+          "description": "You can smash enemies using the side of a great sword.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "5 sec.",
+          "duration": "2.133 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "180",
+          "aggro": "180",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 600%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1200%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Consilium",
+          "image": "ifg_consilium.jpg",
+          "description": "Strengthen physical abilities by raising fighting spirit.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "50 sec.",
+          "duration": "1.8 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "300",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 30 sec"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 300 sec"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration : 330 sec"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration : 360 sec"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration : 390 sec"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Crispo",
+          "image": "ifg_crispo.jpg",
+          "description": "You can smash enemies containing the fighting spirit in the sword.",
+          "target": "Up to 10 enemies 14m away and within 6m",
+          "casting_time": "1.533 sec.",
+          "cooldown": "12 sec.",
+          "duration": "1.97 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "600",
+          "aggro": "172",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Fides",
+          "image": "ifg_fides.jpg",
+          "description": "While cutting disabled enemies quickly, it causes explosion",
+          "target": "Up to 7 enemies 9m away and within 9m",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "3.93 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "750",
+          "aggro": "159",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1700%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Pull Closure",
+          "image": "ifg_pullclosure.jpg",
+          "description": "It releases the fighting spirit to enemies around.",
+          "target": "Up to 8 enemies around 10m",
+          "casting_time": "1.667 sec.",
+          "cooldown": "23 sec.",
+          "duration": "3.833 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "750",
+          "aggro": "128",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2400%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4800%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [STR]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [STR]",
+        "Ignore additional DEF according to extra [STR] * 1",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Great Sword",
+      "icon_position": {
+        "x": -450,
+        "y": -400
+      }
+    },
+    {
+      "name": "Ancient Slayer",
+      "info": {
+        "Targets": "4 enemies",
+        "Range": "2.5m away",
+        "Splash": "0.75 DMG within  2.7m range",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Shooting DMG": "-15%",
+        "Magical DMG": "+15%"
+      },
+      "stats": {
+        "ASPD": "187",
+        "Bonus ATK": "280%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "50",
+        "EVA": "0",
+        "BLK": "10",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+13%",
+        "Block": "+5",
+        "Penetration": "20+15",
+        "Immunity": "5+10",
+        "DEF": "5"
+      },
+      "skills": [
+        {
+          "name": "Berserker",
+          "image": "berserknessl.jpg",
+          "description": "Improve your ATK and Block ability by awakening your indomitable fighting spirit. However, your speed will decrease. Removed on Stance change.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "30 sec.",
+          "duration": "1.533 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "340",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 150 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 150 seconds"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration : 150 seconds"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration : 150 seconds"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration : 150 seconds"
+            }
+          ],
+          "special": [
+            "Additional Damage of all skill attack doubles against [",
+            "Additional Damage of all skill attack doubles against [",
+            "Additional Damage of all skill attack doubles against [",
+            "Additional Damage of all skill attack doubles against [",
+            "Additional Damage of all skill attack doubles against ["
+          ]
+        },
+        {
+          "name": "Arc Down",
+          "image": "arcdownl.jpg",
+          "description": "Strike the enemy down with a big arc.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "5 sec.",
+          "duration": "2.2 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "550",
+          "aggro": "58",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1600%"
+            }
+          ],
+          "special": [
+            "Additional damage doubles if the enemy is affected by one of the following debuffs:",
+            "Additional damage doubles if the enemy is affected by one of the following debuffs:"
+          ]
+        },
+        {
+          "name": "Dragona Bash",
+          "image": "dragonabashl.jpg",
+          "description": "Approach and strike the enemy with great force.",
+          "target": "Up to 5 enemies 12m away and within 3 width",
+          "casting_time": "1.533 sec.",
+          "cooldown": "14 sec.",
+          "duration": "4.033 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "800",
+          "aggro": "98",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Fly and Crush",
+          "image": "flyandcrushl.jpg",
+          "description": "Jump high and strike the enemy from above.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "18 sec.",
+          "duration": "2.2 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "720",
+          "aggro": "74",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 900%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1800%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Additional Destruction",
+          "image": "addestructionl.jpg",
+          "description": "Cut all enemies in a row down with a strong and splendid slash.",
+          "target": "Up to 5 enemies 6m away and within a 5m radius",
+          "casting_time": "Instant",
+          "cooldown": "27 sec.",
+          "duration": "3.7 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "1040",
+          "aggro": "145",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2000%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4000%"
+            }
+          ],
+          "special": [
+            "Additional damage doubles if the enemy is affected by a debuff from the following groups:",
+            "Additional damage doubles if the enemy is affected by a debuff from the following groups:"
+          ]
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [STR]",
+        "[PVP/PVE Maps] Additional 6% DMG according to extra [STR]",
+        "Ignore additional DEF according to extra [STR] * 1",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 1 * 50"
+      ],
+      "equipped_items": "Great Sword",
+      "icon_position": {
+        "x": -150,
+        "y": -250
+      }
+    }
+  ]
+}

@@ -1,0 +1,315 @@
+{
+  "slug": "Dolores",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Blessing of the Storm Honorable Baselrane Soul Mate Full moon",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Robe",
+    "costume": "None",
+    "gloves": "Gloves",
+    "ring": "Ring",
+    "weapon_costume": "Attencion de Baselrane - D Attencion de Baselrane - D (Event)",
+    "belt": "Belt",
+    "shoes": "Shoes",
+    "artifact": "Sewing Kit Mer Libre",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Right now, Lorraine!",
+    "image": "job_nowlorraine.jpg",
+    "description": "Dolores is delighted by thinking that will dance with Lorraine together. She opens the power of potential thunder and lightning.",
+    "target": "Self-buff",
+    "casting_time": "0 sec.",
+    "cooldown": "60 sec.",
+    "duration": "1.83 sec.",
+    "sp_cost": "400",
+    "consume_item": "Ancient Star Orb × 5",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration: 120sec.",
+          "ATK+100%",
+          "Lightning Penetration+10",
+          "A.R.+1",
+          "Using with Lorraine, Lightning Penetration+15"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Dancing Magic",
+      "equipped_items": "Lightning Bracelet",
+      "icon_position": {
+        "x": -450,
+        "y": -300
+      }
+    },
+    {
+      "stance_name": "Electronic Hare",
+      "equipped_items": "Lightning Bracelet + Book",
+      "icon_position": {
+        "x": -450,
+        "y": -250
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Dancing Magic",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "10m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "303",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+10%"
+      },
+      "skills": [],
+      "equipped_items": "Lightning Bracelet",
+      "icon_position": {
+        "x": -450,
+        "y": -300
+      }
+    },
+    {
+      "name": "Electronic Hare",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.5~10m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "303",
+        "Bonus ATK": "330%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "15",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+10%",
+        "Penetration": "5+25",
+        "Immunity": "10"
+      },
+      "skills": [
+        {
+          "name": "Gigantic Hare",
+          "image": "elh_gigantichare.jpg",
+          "description": "She makes cute rabbit doll, Hare, gigantic.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "3.033 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "0",
+          "skill_type": "Build",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Possible to summon max 1"
+            },
+            {
+              "level": "Level 10",
+              "value": "Possible to summon max 1"
+            }
+          ],
+          "special": [
+            "According to the value of skill level and intelligence, Hares ability bonus",
+            "According to the value of skill level and intelligence, Hares ability bonus"
+          ]
+        },
+        {
+          "name": "Call Hare",
+          "image": "elh_callhare.jpg",
+          "description": "Calling Hare ones surroundings. It makes Hare plays [Rabbit Yelling]",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "3.033 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Teleporting Hare ones position"
+            },
+            {
+              "level": "Level 10",
+              "value": "Teleporting Hare ones position"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Magic Earthquake",
+          "image": "elh_magicearthquake.jpg",
+          "description": "Struck the ground with hands soaked the magnetic field leads to a strong earthquake. It makes Hare plays [Rabbit Earthquake].",
+          "target": "Up to 10 enemies within a range of 10m",
+          "casting_time": "0.866 sec.",
+          "cooldown": "15 sec.",
+          "duration": "1.533 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "400",
+          "aggro": "128",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Frenzied Thunder",
+          "image": "elh_frenzythunder.jpg",
+          "description": "Pulling thunder and lightning together and swelling them to enemy. It make Hare plays [Frenzy Rabbit].",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "2.633 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "700",
+          "aggro": "189",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Crazy Dance",
+          "image": "elh_crazydance.jpg",
+          "description": "Striking down the powerful lightning symbolizes the dance in a whide range of areas. It make Hare plays [Frenzy Rabbit].",
+          "target": "Up to 15 enemies 12m away and within a 8m radius",
+          "casting_time": "3 sec.",
+          "cooldown": "30 sec.",
+          "duration": "4.033 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "950",
+          "aggro": "240",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2400%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4800%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [INT]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [INT]",
+        "Ignore additional RES according to extra [INT] * 4",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Lightning Bracelet + Book",
+      "icon_position": {
+        "x": -450,
+        "y": -250
+      }
+    }
+  ]
+}

@@ -1,0 +1,485 @@
+{
+  "slug": "Ralph",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "None",
+    "head": "None",
+    "earring": "Earring",
+    "face": "Monocle",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Leather",
+    "costume": "None",
+    "gloves": "Gloves Leather",
+    "ring": "Ring",
+    "weapon_costume": "None",
+    "belt": "Belt Leather",
+    "shoes": "Shoes Leather",
+    "artifact": "None",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Silent Move",
+    "image": "sgt_silentmove.jpg",
+    "description": "Stealthily approach enemies.",
+    "target": "Self-buff",
+    "casting_time": "0 sec.",
+    "cooldown": "30 sec.",
+    "duration": "1.2 sec.",
+    "sp_cost": "300",
+    "consume_item": "Magical Orb × 10",
+    "levels": [
+      {
+        "level": "Level 1",
+        "effects": [
+          "Duration : 10.2 sec",
+          "Decreases Magical damage by 3%"
+        ]
+      },
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration : 30 sec",
+          "Decreases Magical damage by 30%"
+        ]
+      },
+      {
+        "level": "Level 11",
+        "effects": [
+          "Duration : 32.2 sec",
+          "Decreases Magical damage by 33%"
+        ]
+      },
+      {
+        "level": "Level 12",
+        "effects": [
+          "Duration : 34.4 sec",
+          "Decreases Magical damage by 36%"
+        ]
+      },
+      {
+        "level": "Level 13",
+        "effects": [
+          "Duration : 36.6 sec",
+          "Decreases Magical damage by 39%"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Sharp Shooter",
+      "equipped_items": "Crossbow",
+      "icon_position": {
+        "x": -300,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Shining Sting",
+      "equipped_items": "Crossbow",
+      "icon_position": {
+        "x": -250,
+        "y": -475
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Sharp Shooter",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.75~13m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "220",
+        "Bonus ATK": "200%",
+        "MSPD": "1.05",
+        "MSPD Limit": "8.00",
+        "ACC": "30",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+10%",
+        "Ignore DEF": "+2%",
+        "Critical": "+8",
+        "Penetration": "8"
+      },
+      "skills": [
+        {
+          "name": "Sharp Eyes",
+          "image": "sgt2_hawkeye.jpg",
+          "description": "Watch enemies with better eyesight.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "0 sec.",
+          "duration": "1.03 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "100",
+          "aggro": "0",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 330 sec"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 600 sec"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration : 630 sec"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration : 660 sec"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration : 690 sec"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Sharp Bolt",
+          "image": "alt2_poisonvolt.jpg",
+          "description": "Target the weakness of an enemy by firing a vital bolt.",
+          "target": "1 enemy within a range of 12m",
+          "casting_time": "1.367 sec.",
+          "cooldown": "0 sec.",
+          "duration": "0.87 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "150",
+          "aggro": "42",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Slow Bolt",
+          "image": "alt2_explosionvolt.jpg",
+          "description": "To reduce the movement of an enemy, it fires a bolt.",
+          "target": "Up to 5 enemies 12m away and within a 2m radius",
+          "casting_time": "1.367 sec.",
+          "cooldown": "10 sec.",
+          "duration": "0.87 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "200",
+          "aggro": "47",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 600%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1200%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Wise Shots",
+          "image": "alt2_fanwiseshots.jpg",
+          "description": "Fires several arrows that spread out gradually, much like a fan.",
+          "target": "Up to 8 enemies 14m away and at an angle of 120 degrees",
+          "casting_time": "1.367 sec.",
+          "cooldown": "15 sec.",
+          "duration": "0.87 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "250",
+          "aggro": "35",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 900%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1800%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Sharp Judgement",
+          "image": "alt2_darkjudgement.jpg",
+          "description": "Attacks the enemy by firing a bolt that can seal the actions of enemy.",
+          "target": "1 enemy within a range of 12m",
+          "casting_time": "2.033 sec.",
+          "cooldown": "20 sec.",
+          "duration": "0.87 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "300",
+          "aggro": "130",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2400%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "Ignore additional DEF according to extra [None] * 4"
+      ],
+      "equipped_items": "Crossbow",
+      "icon_position": {
+        "x": -300,
+        "y": 0
+      }
+    },
+    {
+      "name": "Shining Sting",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.75~15m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Shooting DMG": "-20%",
+        "Magical DMG": "-20%"
+      },
+      "stats": {
+        "ASPD": "220",
+        "Bonus ATK": "280%",
+        "MSPD": "1.05",
+        "MSPD Limit": "8.00",
+        "ACC": "25",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+15%",
+        "Ignore DEF": "+10%",
+        "Critical": "+9",
+        "Penetration": "25",
+        "Immunity": "10"
+      },
+      "skills": [
+        {
+          "name": "Shining Machine Shot",
+          "image": "sgt2_submachineshots.jpg",
+          "description": "Fires at a cluster of enemies.",
+          "target": "",
+          "casting_time": "0.933 sec.",
+          "cooldown": "15 sec.",
+          "duration": "2.9 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "150",
+          "aggro": "138",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Shining Burst",
+          "image": "sgt2_burstshots.jpg",
+          "description": "Ignites scattered gunpowder on the enemies, engulfing them in an explosion of flames.",
+          "target": "Up to 15 enemies within a range of 7.5m",
+          "casting_time": "0.8 sec.",
+          "cooldown": "30 sec.",
+          "duration": "2.23 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "250",
+          "aggro": "73",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2400%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4800%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Shining Breaker",
+          "image": "sst2_heartbreaker.jpg",
+          "description": "To stop the heart of an enemy from beating, it uses fatal poison bolts.",
+          "target": "1 enemy within a range of 13m",
+          "casting_time": "1.1 sec.",
+          "cooldown": "20 sec.",
+          "duration": "1.23 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "340",
+          "aggro": "48",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Shining Inferno",
+          "image": "sst2_backstepinferno.jpg",
+          "description": "Scatter gunpowder in an area and retreat, igniting the gunpowder to create a sea of fire.",
+          "target": "",
+          "casting_time": "0.767 sec.",
+          "cooldown": "22 sec.",
+          "duration": "2.63 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "540",
+          "aggro": "134",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 3000%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 6000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Shining Dawn",
+          "image": "sst2_shadowdawn.jpg",
+          "description": "Find vital points of enemy and fire 3 bolts at them with uncanny accuracy.",
+          "target": "1 enemy within a range of 18m",
+          "casting_time": "1.4 sec.",
+          "cooldown": "25 sec.",
+          "duration": "1.57 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "540",
+          "aggro": "185",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 3000%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 6000%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [DEX]",
+        "[PVP/PVE Maps] Additional 3% DMG according to extra [DEX]",
+        "Ignore additional DEF according to extra [DEX] * 4",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 3 * 50"
+      ],
+      "equipped_items": "Crossbow",
+      "icon_position": {
+        "x": -250,
+        "y": -475
+      }
+    }
+  ]
+}

@@ -1,0 +1,725 @@
+{
+  "slug": "Kano2",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Bloody Navy",
+    "head": "None",
+    "earring": "Earring",
+    "face": "Commander Glasses",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Robe",
+    "costume": "None",
+    "gloves": "Gloves",
+    "ring": "Ring",
+    "weapon_costume": "None",
+    "belt": "Belt",
+    "shoes": "Shoes",
+    "artifact": "None",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Fast Reading",
+    "image": "job_speedreading.jpg",
+    "description": "Quickly reads important parts of the encyclopedia.",
+    "target": "Self-buff",
+    "casting_time": "0 sec.",
+    "cooldown": "30 sec.",
+    "duration": "3 sec.",
+    "sp_cost": "100",
+    "consume_item": "Ancient Star Orb × 15",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration : 300 sec.",
+          "Monster Damage +50%",
+          "Penetration +10",
+          "Casting time -10%",
+          "A.R. +1",
+          "Increases Skill damage by (7% of extra [INT]); every 3rd skill gains double the effect against monsters",
+          "Ignore monster RES by (10% of extra [INT])"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Mythos",
+      "equipped_items": "Book",
+      "icon_position": {
+        "x": -500,
+        "y": -325
+      }
+    },
+    {
+      "stance_name": "Enhanced Tactics",
+      "equipped_items": "Book",
+      "icon_position": {
+        "x": -200,
+        "y": -475
+      }
+    },
+    {
+      "stance_name": "Ancient Tactics",
+      "equipped_items": "Book",
+      "icon_position": {
+        "x": -50,
+        "y": -325
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Mythos",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.1~12m away",
+        "Splash": "None",
+        "Hits per attack": "3",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "-20%"
+      },
+      "stats": {
+        "ASPD": "227",
+        "Bonus ATK": "400%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "10",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "Block": "+10",
+        "Penetration": "10+20",
+        "Immunity": "5+10"
+      },
+      "skills": [
+        {
+          "name": "Barrier of Ogma",
+          "image": "mts_ogmashield.jpg",
+          "description": "Increases allies defense ability using the barrier of Ogma which kept away a invasion of titans.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "30 sec.",
+          "duration": "2.11 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "600",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 300 sec."
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 300 sec."
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration : 300 sec."
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration : 300 sec."
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration : 300 sec."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Belloys Hellfire",
+          "image": "mts_bellroyfire.jpg",
+          "description": "Exterminates the enemy using Belloys Hellfire which burned the wings of the gods.",
+          "target": "Up to 6 targets within a radius of 5.5m and up to 8m away",
+          "casting_time": "2.55 sec.",
+          "cooldown": "10 sec.",
+          "duration": "3.155 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "450",
+          "aggro": "200",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 525%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1050%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Ruidens Holy Sword",
+          "image": "mts_luidensword.jpg",
+          "description": "A godly knight destroyed the corps of the dead with this sword. Use it to penetrate a line of enemies.",
+          "target": "Up to 8 enemies 15m away and within a 5m range",
+          "casting_time": "1.748 sec.",
+          "cooldown": "17 sec.",
+          "duration": "4.074 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "700",
+          "aggro": "172",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 854%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1707%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Morians Holy Grail",
+          "image": "mts_morianholygrail.jpg",
+          "description": "This was once used by the Goddess of Death who was angry about souls avoiding their deadly fate. Soaks all enemies in a designated area.",
+          "target": "Up to 12 targets within a radius of 6m and up to 8m away",
+          "casting_time": "2.248 sec.",
+          "cooldown": "25 sec.",
+          "duration": "4.766 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "950",
+          "aggro": "200",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 927%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1854%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Nefyres Tsunami",
+          "image": "mts_neperewave.jpg",
+          "description": "In Bristias myths, Nefyre fights the God of Wind, Genos, endlessly and makes storms. Recreate Nefyres Tsunami to wipe out enemies.",
+          "target": "Up to 18 enemies 22m away and within a 18m range",
+          "casting_time": "3.298 sec.",
+          "cooldown": "55 sec.",
+          "duration": "5.333 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "1200",
+          "aggro": "172",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1645%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3290%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [INT]",
+        "[PVP/PVE Maps] Additional 5% DMG according to extra [INT]",
+        "Ignore additional RES according to extra [INT] * 3",
+        "Additional DMG against Monster according to 5 * 50"
+      ],
+      "equipped_items": "Book",
+      "icon_position": {
+        "x": -500,
+        "y": -325
+      }
+    },
+    {
+      "name": "Enhanced Tactics",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.1~1m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "+20%",
+        "Shooting DMG": "-10%",
+        "Magical DMG": "-10%",
+        "Debuff RES": "-30%"
+      },
+      "stats": {
+        "ASPD": "150",
+        "Bonus ATK": "0%",
+        "MSPD": "1.1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "20"
+      },
+      "lv25_bonus": {
+        "Immunity": "5+10"
+      },
+      "skills": [
+        {
+          "name": "Principal",
+          "image": "eta6_principal.jpg",
+          "description": "Provide basic buffs to team. The power can be doubled according to the circumstances.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "45 sec.",
+          "duration": "1.53 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "600",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 30 sec"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 300 sec"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration : 330 sec"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration : 360 sec"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration : 390 sec"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Melee Enhance",
+          "image": "eta6_meleeenhancement.jpg",
+          "description": "Gives the buff that makes Melee Stance attack much stronger.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "8 sec.",
+          "duration": "390 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 30 sec."
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 300 sec."
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 330 sec."
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 360 sec."
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 390 sec."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Magic Enhance",
+          "image": "eta6_magicenhancement.jpg",
+          "description": "Gives the buff that makes Magic Stance attack much stronger.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "8 sec.",
+          "duration": "390 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 30 sec."
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 300 sec."
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 330 sec."
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 360 sec."
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 390 sec."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Shooting Enhance",
+          "image": "eta6_shootingenhancement.jpg",
+          "description": "Gives the buff that makes Shoot Stance attack much stronger.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "8 sec.",
+          "duration": "1.53 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration30 sec."
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration300 sec."
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration330 sec."
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration360 sec."
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration390 sec."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Escape Artist",
+          "image": "eta6_escapeartist.jpg",
+          "description": "Cancel darkness type curse on squad members as well as detect invisibility. Increase resistance of darkness type curse for a given time.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "2 sec.",
+          "duration": "1.53 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "300",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 1.5 secs."
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 15 secs."
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration : 30 secs."
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration : 30 secs."
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration : 30 secs."
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Book",
+      "icon_position": {
+        "x": -200,
+        "y": -475
+      }
+    },
+    {
+      "name": "Ancient Tactics",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.1~9m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "+10%",
+        "Shooting DMG": "-10%",
+        "Magical DMG": "-15%",
+        "Debuff RES": "-10%"
+      },
+      "stats": {
+        "ASPD": "170",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "20"
+      },
+      "lv25_bonus": {
+        "Immunity": "10+20"
+      },
+      "skills": [
+        {
+          "name": "Miracle",
+          "image": "aot_miraclerodstaff.jpg",
+          "description": "Execute a tactic that increases the offensive and defensive capacity of the ally.",
+          "target": "",
+          "casting_time": "0.866 sec.",
+          "cooldown": "30 sec.",
+          "duration": "130 seconds",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "150",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 10 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 100 seconds"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 110 seconds"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 120 seconds"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 130 seconds"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Protecting Booster",
+          "image": "aot_caenopyrodstaff.jpg",
+          "description": "Increase the defensive capacity of target ally.",
+          "target": "",
+          "casting_time": "0.866 sec.",
+          "cooldown": "10 sec.",
+          "duration": "390 seconds",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 30 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 330 seconds"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 360 seconds"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 390 seconds"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Shearing Booster",
+          "image": "aot_siaringboosterrodstaff.jpg",
+          "description": "Increase the offensive capacity of target ally.",
+          "target": "",
+          "casting_time": "0.866 sec.",
+          "cooldown": "10 sec.",
+          "duration": "390 seconds",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 30 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 330 seconds"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 360 seconds"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 390 seconds"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Bartor",
+          "image": "aot_bartorrodstaff.jpg",
+          "description": "Remove all harmful effects and restore HP of all team members.",
+          "target": "",
+          "casting_time": "0.866 sec.",
+          "cooldown": "20 sec.",
+          "duration": "1.6 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "150",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Restore 15% of maximum HP"
+            },
+            {
+              "level": "Level 10",
+              "value": "Restore 15% of maximum HP"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Additional Training",
+          "image": "aot_Additionaltraing.jpg",
+          "description": "Increase skill level by enhancing own tactical capacity.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "50 sec.",
+          "duration": "1.033 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Increase all skills level by enhancing your own tactical capacity."
+            },
+            {
+              "level": "Level 10",
+              "value": "Increase all skills level by enhancing your own tactical capacity."
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 2% of extra [None]"
+      ],
+      "equipped_items": "Book",
+      "icon_position": {
+        "x": -50,
+        "y": -325
+      }
+    }
+  ]
+}

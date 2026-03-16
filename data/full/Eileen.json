@@ -1,0 +1,337 @@
+{
+  "slug": "Eileen",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Honorary Teacher Late Autumn Archives",
+    "head": "None",
+    "earring": "Earring",
+    "face": "Glasses of Teacher",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Leather",
+    "costume": "None",
+    "gloves": "Gloves Leather",
+    "ring": "Ring",
+    "weapon_costume": "None",
+    "belt": "Belt Leather",
+    "shoes": "Shoes Leather",
+    "artifact": "Goddess of Wind",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Mind Steal",
+    "image": "job_mindstill.jpg",
+    "description": "Can burn enemys SP to cause fatal injuries.",
+    "target": "Self-buff",
+    "casting_time": "0 sec.",
+    "cooldown": "35 sec.",
+    "duration": "1.83 sec.",
+    "sp_cost": "120",
+    "consume_item": "Ancient Star Orb × 10",
+    "levels": [
+      {
+        "level": "Level 1",
+        "effects": [
+          "A.R.+2",
+          "ATK+1%",
+          "Accuracy+1",
+          "Casting time -3%",
+          "With normal attack, [Black Cross Mark] is applied to the enemy",
+          "Increase [INT]in proportion to Lightning Penetration",
+          "Increase normal attack damage by 2% of extra [INT]"
+        ]
+      },
+      {
+        "level": "Level 10",
+        "effects": [
+          "A.R.+2",
+          "ATK+10%",
+          "Accuracy+10",
+          "Casting time -30%",
+          "With normal attack, [Black Cross Mark] is applied to the enemy",
+          "Increase [INT]in proportion to Lightning Penetration",
+          "Increase normal attack damage by 2% of extra [INT]"
+        ]
+      },
+      {
+        "level": "Level 11",
+        "effects": [
+          "A.R.+2",
+          "ATK+11%",
+          "Casting time -33%",
+          "Accuracy+11",
+          "With normal attack, [Black Cross Mark] is applied to the enemy",
+          "Increase [INT]in proportion to Lightning Penetration",
+          "Increase normal attack damage by 2% of extra [INT]"
+        ]
+      },
+      {
+        "level": "Level 12",
+        "effects": [
+          "A.R.+2",
+          "ATK+12%",
+          "Casting time -36%",
+          "Accuracy+12",
+          "With normal attack, [Black Cross Mark] is applied to the enemy",
+          "Increase [INT]in proportion to Lightning Penetration",
+          "Increase normal attack damage by 2% of extra [INT]"
+        ]
+      },
+      {
+        "level": "Level 13",
+        "effects": [
+          "A.R.+2",
+          "ATK 13%",
+          "Accuracy +13",
+          "With normal attack, impose [Black Cross Mark] on enemy"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Rogue Slash",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": 0,
+        "y": -225
+      }
+    },
+    {
+      "stance_name": "Black Cat",
+      "equipped_items": "Lightning Bracelet",
+      "icon_position": {
+        "x": 0,
+        "y": -225
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Rogue Slash",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": 0,
+        "y": -225
+      }
+    },
+    {
+      "name": "Black Cat",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "6m away",
+        "Splash": "None",
+        "Hits per attack": "4",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "-10%",
+        "Shooting DMG": "+10%",
+        "Magical DMG": "-20%",
+        "Debuff Chance": "+10%"
+      },
+      "stats": {
+        "ASPD": "213",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+25%",
+        "Block": "+10",
+        "Penetration": "10+25",
+        "Immunity": "5+25"
+      },
+      "skills": [
+        {
+          "name": "Storm Blitz",
+          "image": "blc_stormbltz.jpg",
+          "description": "Summons Lightning sphere to increase combat efficiency.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "5 sec.",
+          "duration": "2.133 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "200",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Can summon Max 3 simultaneously"
+            },
+            {
+              "level": "Level 10",
+              "value": "Can summon Max 3 simultaneously"
+            }
+          ],
+          "special": [
+            "According to the skill level and the intelligence value, spheres bonus ability appears",
+            "According to the skill level and the intelligence value, spheres bonus ability appears"
+          ]
+        },
+        {
+          "name": "Lightning Shield",
+          "image": "blc_lightningshield.jpg",
+          "description": "With a shield containing Lightnings condensed power, protects the body and increases Lightning ATK.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "7 sec.",
+          "duration": "360 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "250",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 360 sec."
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 360 sec."
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 360 sec."
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 360 sec."
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 360 sec."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Lightning Saber",
+          "image": "blc_lightningshabel.jpg",
+          "description": "The stem of the Lightning that rushes on the ground flows forward.",
+          "target": "Up to 9 enemies 15m away and within 7m width",
+          "casting_time": "2 sec.",
+          "cooldown": "11 sec.",
+          "duration": "1.9 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "81",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1345%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2690%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Sharp Lightning",
+          "image": "blc_sharplighting.jpg",
+          "description": "Shoots the stem of a lightning stem that is emitted chained around a specified object.",
+          "target": "",
+          "casting_time": "2.5 sec.",
+          "cooldown": "25 sec.",
+          "duration": "7.32 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "680",
+          "aggro": "200",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 715%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1430%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Lightning Storm",
+          "image": "blc_lightningstorm.jpg",
+          "description": "Controls the spheres of lightning and sends them onto enemies near yourself.",
+          "target": "Up to 15 enemies within a range of 12m",
+          "casting_time": "3.233 sec.",
+          "cooldown": "28 sec.",
+          "duration": "5.133 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "1000",
+          "aggro": "225",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1845%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3690%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [INT]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [INT]",
+        "Ignore additional DEF according to extra [INT] * 4",
+        "Ignore additional RES according to extra [INT] * 4",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Lightning Bracelet",
+      "icon_position": {
+        "x": 0,
+        "y": -225
+      }
+    }
+  ]
+}

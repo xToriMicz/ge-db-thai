@@ -1,0 +1,287 @@
+{
+  "slug": "EileenRare",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Honorary Teacher An opportunity that has returned! Late Autumn Archives",
+    "head": "None",
+    "earring": "Earring",
+    "face": "Glasses of Teacher",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Robe",
+    "costume": "None",
+    "gloves": "Gloves",
+    "ring": "Ring",
+    "weapon_costume": "None",
+    "belt": "Belt",
+    "shoes": "Shoes",
+    "artifact": "Goddess of Wind",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Majesty",
+    "image": "job_majesty.jpg",
+    "description": "It shows the different dignity of the royal family.",
+    "target": "Self-buff",
+    "casting_time": "0 sec.",
+    "cooldown": "30 sec.",
+    "duration": "1.83 sec.",
+    "sp_cost": "120",
+    "consume_item": "Ancient Star Orb × 10",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration 300 sec.",
+          "A.R. +1",
+          "Max SP +1000",
+          "Casting time -5%",
+          "Increase [INT] in proportion to [Lightning Penetration]",
+          "Increases normal attack damage by 1% of extra [INT]"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Chocolat",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": 0,
+        "y": -250
+      }
+    },
+    {
+      "stance_name": "Aurel Lupus",
+      "equipped_items": "Lightning Bracelet",
+      "icon_position": {
+        "x": 0,
+        "y": -250
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Chocolat",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": 0,
+        "y": -250
+      }
+    },
+    {
+      "name": "Aurel Lupus",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "12m away",
+        "Splash": "None",
+        "Hits per attack": "3",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "-10%",
+        "Shooting DMG": "+10%",
+        "Magical DMG": "-20%",
+        "Debuff Chance": "+10%"
+      },
+      "stats": {
+        "ASPD": "157",
+        "Bonus ATK": "300%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "Block": "+10",
+        "Penetration": "10+25",
+        "Immunity": "5+10"
+      },
+      "skills": [
+        {
+          "name": "Aurel Shock",
+          "image": "als_aurelshork.jpg",
+          "description": "Instantly shoots lightning and thunder towards the enemy 3 times.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "5 sec.",
+          "duration": "2.466 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "50",
+          "aggro": "30",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 499%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 998%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Aurel Shield",
+          "image": "als_aurelshield.jpg",
+          "description": "A condensed shield of lightning and thunder is wrapped around the body, dramatically increasing ATK.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "7 sec.",
+          "duration": "360 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "250",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 360 sec."
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 360 sec."
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 360 sec."
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 360 sec."
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 360 sec."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Aurel Schabel",
+          "image": "als_aurelshabel.jpg",
+          "description": "The stem of the Lightning that rushes on the ground flows forward.",
+          "target": "Up to 9 enemies 15m away and within 7m width",
+          "casting_time": "2 sec.",
+          "cooldown": "11 sec.",
+          "duration": "1.9 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "81",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1345%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2690%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Sharp Sphere",
+          "image": "als_sharpspear.jpg",
+          "description": "Shoots the stem of a lightning stem that is emitted chained around a specified object.",
+          "target": "",
+          "casting_time": "2.5 sec.",
+          "cooldown": "25 sec.",
+          "duration": "7.32 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "680",
+          "aggro": "200",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 715%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1430%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Laspina",
+          "image": "als_laspina.jpg",
+          "description": "Controls the spheres of lightning and sends them onto enemies near yourself.",
+          "target": "Up to 15 enemies within a range of 12m",
+          "casting_time": "2.5 sec.",
+          "cooldown": "28 sec.",
+          "duration": "5.133 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "1000",
+          "aggro": "225",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1845%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3690%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [INT]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [INT]",
+        "Ignore additional DEF according to extra [INT] * 4",
+        "Ignore additional RES according to extra [INT] * 4",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Lightning Bracelet",
+      "icon_position": {
+        "x": 0,
+        "y": -250
+      }
+    }
+  ]
+}

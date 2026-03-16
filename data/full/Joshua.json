@@ -1,0 +1,317 @@
+{
+  "slug": "Joshua",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Honorary Teacher Honorable Baselrane",
+    "head": "None",
+    "earring": "Earring",
+    "face": "Glasses of Wiz Aurelion Sereni Glasses of Teacher",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Robe",
+    "costume": "None",
+    "gloves": "Gloves",
+    "ring": "Ring",
+    "weapon_costume": "Almanac of Magic Event Almanac of Magic",
+    "belt": "Belt",
+    "shoes": "Shoes",
+    "artifact": "Primus",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Velmas",
+    "image": "job_imaneti.jpg",
+    "description": "Improves the squad members Magic combat ability by utilizing the magic chain reaction through alchemy.",
+    "target": "Family and Squad members within a range of 10m",
+    "casting_time": "0 sec.",
+    "cooldown": "30 sec.",
+    "duration": "1.865 sec.",
+    "sp_cost": "500",
+    "consume_item": "Ancient Star Orb × 5",
+    "levels": [
+      {
+        "level": "Level 1",
+        "effects": [
+          "Duration: 5 Minnutes.",
+          "Magical ATK +2%",
+          "Casting time -1%",
+          "Applies Lv. 1 [Blessing of Gold] to squad",
+          "(Lv. 5 for Joshua/Queen Sereni Joshua; 12 [Squad Buff Pts.] and PvE only)",
+          "For Joshua/Queen Sereni Joshua, A.R. +1 and Fire Penetration +15 additionally"
+        ]
+      },
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration: 5 Minnutes.",
+          "Magical ATK +20%",
+          "Casting time -10%",
+          "Applies Lv. 1 [Blessing of Gold] to squad",
+          "(Lv. 5 for Joshua/Queen Sereni Joshua; 12 [Squad Buff Pts.] and PvE only)",
+          "For Joshua/Queen Sereni Joshua, A.R. +1 and Fire Penetration +15 additionally"
+        ]
+      },
+      {
+        "level": "Level 11",
+        "effects": [
+          "Duration: 5 Minnutes.",
+          "Magical ATK +22%",
+          "Casting time -12%",
+          "Applies Lv. 1 [Blessing of Gold] to squad",
+          "(Lv. 5 for Joshua/Queen Sereni Joshua; 12 [Squad Buff Pts.] and PvE only)",
+          "INT +1",
+          "For Joshua/Queen Sereni Joshua, A.R. +1 and Fire Penetration +15 additionally"
+        ]
+      },
+      {
+        "level": "Level 12",
+        "effects": [
+          "Duration: 5 Minnutes.",
+          "Magical ATK +24%",
+          "Casting time -14%",
+          "Applies Lv. 1 [Blessing of Gold] to squad",
+          "(Lv. 5 for Joshua/Queen Sereni Joshua; 12 [Squad Buff Pts.] and PvE only)",
+          "INT +1",
+          "For Joshua/Queen Sereni Joshua, A.R. +1 and Fire Penetration +15 additionally"
+        ]
+      },
+      {
+        "level": "Level 13",
+        "effects": [
+          "Duration: 5 Minnutes.",
+          "Magical ATK +26%",
+          "Casting time -16%",
+          "Applies Lv. 1 [Blessing of Gold] to squad",
+          "(Lv. 5 for Joshua/Queen Sereni Joshua; 12 [Squad Buff Pts.] and PvE only)",
+          "INT +1",
+          "For Joshua/Queen Sereni Joshua, A.R. +1 and Fire Penetration +15 additionally"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Sereni",
+      "equipped_items": "Book",
+      "icon_position": {
+        "x": 0,
+        "y": -75
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Sereni",
+      "info": {
+        "Targets": "5 enemies",
+        "Range": "1~11m away",
+        "Splash": "0.8 DMG within  2m range",
+        "Hits per attack": "2",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "303",
+        "Bonus ATK": "300%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "20",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "Penetration": "10+20",
+        "Immunity": "5+10"
+      },
+      "skills": [
+        {
+          "name": "Pell Arkis",
+          "image": "sel_pellarkis.jpg",
+          "description": "Alchemy creates a golden spark and launches it towards the enemy.",
+          "target": "Up to 3 enemies 10m away and within a 3m radius",
+          "casting_time": "Instant",
+          "cooldown": "9 sec.",
+          "duration": "2.2 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "450",
+          "aggro": "64",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 894%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1788%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Pell Pochainar",
+          "image": "sel_pellpochainar.jpg",
+          "description": "Alchemy creates a chain of gold that binds the enemy.",
+          "target": "",
+          "casting_time": "2 sec.",
+          "cooldown": "17 sec.",
+          "duration": "1.5 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "560",
+          "aggro": "80",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 945%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1889%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Pell Lavasolt",
+          "image": "sel_pellavasolt.jpg",
+          "description": "Alchemy creates golden lava that explodes the ground.",
+          "target": "",
+          "casting_time": "1.94 sec.",
+          "cooldown": "20 sec.",
+          "duration": "5.49 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "560",
+          "aggro": "200",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1285%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2570%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Pell Sollast",
+          "image": "sel_pellsollast.jpg",
+          "description": "Through alchemy, it creates a large number of gold flame spheres, concentrating them on one enemy.",
+          "target": "1 enemy within a range of 15m",
+          "casting_time": "2.48 sec.",
+          "cooldown": "12 sec.",
+          "duration": "1.8 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "500",
+          "aggro": "60",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1459%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2918%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Pell Aurel Tornado",
+          "image": "sel_pelltonado.jpg",
+          "description": "Alchemy generates golden blast and crushes the designated surface.",
+          "target": "",
+          "casting_time": "2.07 sec.",
+          "cooldown": "28 sec.",
+          "duration": "9.335 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "820",
+          "aggro": "200",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1264%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2528%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [INT]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [INT]",
+        "Ignore additional RES according to extra [INT] * 3",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Book",
+      "icon_position": {
+        "x": 0,
+        "y": -75
+      }
+    }
+  ]
+}

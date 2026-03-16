@@ -1,0 +1,275 @@
+{
+  "slug": "Isaac",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Honorable Baselrane",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Coat Robe",
+    "costume": "None",
+    "gloves": "Gloves",
+    "ring": "Ring",
+    "weapon_costume": "Almanac of Magic Event Almanac of Magic",
+    "belt": "Belt",
+    "shoes": "Shoes",
+    "artifact": "Sewing Kit",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "En Ode",
+    "image": "job_enordre.jpg",
+    "description": "Find the right spell in the Grimoire and recite it.",
+    "target": "None",
+    "casting_time": "0 sec.",
+    "cooldown": "15 sec.",
+    "duration": "2.533 sec.",
+    "sp_cost": "540",
+    "consume_item": "Ancient Star Orb × 10",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration: 600 seconds",
+          "A.R. +1",
+          "ATK against monster +50%",
+          "Mental Penetration +30",
+          "Casting Time -20%"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Leporine",
+      "equipped_items": "Book",
+      "icon_position": {
+        "x": -150,
+        "y": -425
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Leporine",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "12m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Shooting DMG": "-10%",
+        "Magical DMG": "-15%",
+        "Debuff RES": "-10%"
+      },
+      "stats": {
+        "ASPD": "193",
+        "Bonus ATK": "300%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "5",
+        "Ice RES": "5",
+        "Lightning RES": "5",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "Penetration": "10+25",
+        "Immunity": "10+25"
+      },
+      "skills": [
+        {
+          "name": "Army Brute",
+          "image": "lpr_amibrute.jpg",
+          "description": "Summons to targeted location",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "0 sec.",
+          "duration": "2.3 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "720",
+          "aggro": "0",
+          "skill_type": "Build",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Can summon Max. 1"
+            },
+            {
+              "level": "Level 10",
+              "value": "Can summon Max. 1"
+            }
+          ],
+          "special": [
+            "Additional bonus to Brutes stats according to Isaacs INT",
+            "Additional bonus to Brutes stats according to Isaacs INT"
+          ]
+        },
+        {
+          "name": "Ce Enemi",
+          "image": "lpr_ceennemie.jpg",
+          "description": "Cast a magic attack on the enemy and have Brute attack the enemy.",
+          "target": "1 enemy within a range of 15m",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "2.1 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "480",
+          "aggro": "30",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Le Gentiles",
+          "image": "lpr_legentillesse.jpg",
+          "description": "Cast a powerful magic attack at the enemy ahead.",
+          "target": "Up to 8 enemies 15m away and within 6m",
+          "casting_time": "2.033 sec.",
+          "cooldown": "14 sec.",
+          "duration": "2.033 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "750",
+          "aggro": "50",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Honore",
+          "image": "lpr_honore.jpg",
+          "description": "Confirm the works performance with powerful magic attacks.",
+          "target": "Up to 6 enemies 15m away and within a 6m radius",
+          "casting_time": "2.8 sec.",
+          "cooldown": "16 sec.",
+          "duration": "12.0666 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "860",
+          "aggro": "45",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Determine",
+          "image": "lpr_determine.jpg",
+          "description": "Cast a powerful ultimate skill.",
+          "target": "1 enemy within a range of 17m",
+          "casting_time": "2.766 sec.",
+          "cooldown": "22 sec.",
+          "duration": "2.633 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "1000",
+          "aggro": "80",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 3000%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 6000%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [INT]",
+        "[PVP/PVE Maps] Additional 5% DMG according to extra [INT]",
+        "Ignore additional RES according to extra [INT] * 3",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Book",
+      "icon_position": {
+        "x": -150,
+        "y": -425
+      }
+    }
+  ]
+}

@@ -1,0 +1,847 @@
+{
+  "slug": "Leona2",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Ending of the year",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Leather",
+    "costume": "None",
+    "gloves": "Gloves Leather",
+    "ring": "Ring",
+    "weapon_costume": "None",
+    "belt": "Belt Leather",
+    "shoes": "Shoes Leather",
+    "artifact": "Ring of Queen Crest of Vernier",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Consolidacion",
+    "image": "rse1_consolidacion.jpg",
+    "description": "Switching to the attack position and changing a defensive posture to maximize own ability to fight with other characters.",
+    "target": "Apply to yourself.",
+    "casting_time": "0 sec.",
+    "cooldown": "0 sec.",
+    "duration": "1.865 sec.",
+    "sp_cost": "100",
+    "consume_item": "Ancient Star Orb × 5",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Armas : D.R. +1, STR +15, Received Player damage -20%, ATK +20%, Physical Penetration +20, DEF +20, Block +20, IMM +5",
+          "Armadura : A.R. +1, AGI +30, Received monster damage -20%, ATK +50%, Monster damage +150%, Ignore DEF +10%, Accuracy +20",
+          "Changed to another Trigger when using the skill."
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Secreto",
+      "equipped_items": "Sword",
+      "icon_position": {
+        "x": -450,
+        "y": -450
+      }
+    },
+    {
+      "stance_name": "Secreto",
+      "equipped_items": "Sabre",
+      "icon_position": {
+        "x": -450,
+        "y": -450
+      }
+    },
+    {
+      "stance_name": "Rosa Secreta",
+      "equipped_items": "Sword + Sabre",
+      "icon_position": {
+        "x": -450,
+        "y": -475
+      }
+    },
+    {
+      "stance_name": "Soul Secreta",
+      "equipped_items": "Sword + Sabre",
+      "icon_position": {
+        "x": -500,
+        "y": -450
+      }
+    },
+    {
+      "stance_name": "Ignis",
+      "equipped_items": "Sword + Sabre",
+      "icon_position": {
+        "x": -500,
+        "y": -425
+      }
+    },
+    {
+      "stance_name": "Rosa Secreta",
+      "equipped_items": "Sabre + Sword",
+      "icon_position": {
+        "x": -450,
+        "y": -475
+      }
+    },
+    {
+      "stance_name": "Soul Secreta",
+      "equipped_items": "Sabre + Sword",
+      "icon_position": {
+        "x": -500,
+        "y": -450
+      }
+    },
+    {
+      "stance_name": "Ignis",
+      "equipped_items": "Sabre + Sword",
+      "icon_position": {
+        "x": -500,
+        "y": -425
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Secreto",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1.25m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "230",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+30%",
+        "Critical": "+25",
+        "Penetration": "10+15",
+        "Immunity": "10"
+      },
+      "skills": [
+        {
+          "name": "Try Slash",
+          "image": "sec1_trislash.jpg",
+          "description": "Consecutive triple combo wind pressure attack.",
+          "target": "1 enemy within a range of 10m",
+          "casting_time": "Instant",
+          "cooldown": "5 sec.",
+          "duration": "2.33 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "100",
+          "aggro": "96",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Half Divide",
+          "image": "sec1_halfdivide.jpg",
+          "description": "Swings a sword in a moon-shaped arc to bring enemies down.",
+          "target": "1 enemy within a range of 10m",
+          "casting_time": "Instant",
+          "cooldown": "7 sec.",
+          "duration": "1.67 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "150",
+          "aggro": "47",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1400%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2800%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Juggler Cut",
+          "image": "sec1_jugularcut.jpg",
+          "description": "A forceful charge that sweeps enemies away.",
+          "target": "Up to 5 enemies 8m away and within 2m width",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "2.13 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "200",
+          "aggro": "52",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Cutting Earth",
+          "image": "sec1_cuttingearth.jpg",
+          "description": "Plunges sword into enemy while airborne.",
+          "target": "Up to 3 adjacent enemies",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "2.2 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "250",
+          "aggro": "68",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2000%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Violeta",
+          "image": "sec1_violetta.jpg",
+          "description": "A slashing attack to multiple enemies.",
+          "target": "Up to 3 adjacent enemies",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "2.97 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "118",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4400%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Sword",
+      "icon_position": {
+        "x": -450,
+        "y": -450
+      }
+    },
+    {
+      "name": "Rosa Secreta",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1.5m away",
+        "Splash": "None",
+        "Hits per attack": "3",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Shooting DMG": "-20%"
+      },
+      "stats": {
+        "ASPD": "163",
+        "Bonus ATK": "300%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "20",
+        "EVA": "0",
+        "BLK": "10",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "Penetration": "5+20",
+        "Immunity": "5+15"
+      },
+      "skills": [
+        {
+          "name": "Calmese",
+          "image": "rse1_calmese.jpg",
+          "description": "Blowing hard to put a firm commitment to the mind and body, it gives the concentration that can penetrate a solid armor.",
+          "target": "",
+          "casting_time": "0.7 sec.",
+          "cooldown": "45 sec.",
+          "duration": "5 Minutes",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "200",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 5 Minutes"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 5 Minutes"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 5 Minutes"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 5 Minutes"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Corte Achilles",
+          "image": "rse1_corteaquiles.jpg",
+          "description": "Cutting off the enemys Achilles heel with a quick move, it makes them unmovable temporarily.",
+          "target": "Up to 6 enemies 12m away and within 6m",
+          "casting_time": "0.5 sec.",
+          "cooldown": "15 sec.",
+          "duration": "2.166 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "159",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Ilardo Paharo",
+          "image": "rse1_hiladopajaro.jpg",
+          "description": "You can sweep enemies without hesitation even in the middle of enemies.",
+          "target": "Up to 8 enemies around 6.5m",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "3.5 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "250",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Sable Bolar",
+          "image": "rse1_sablevolar.jpg",
+          "description": "Gives own power to the sabre and divides enemy in half.",
+          "target": "Up to 4 enemies within max range 10m",
+          "casting_time": "5 sec.",
+          "cooldown": "20 sec.",
+          "duration": "0.866 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "100",
+          "aggro": "160",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Corriente Estella",
+          "image": "rse1_corrienteestelar.jpg",
+          "description": "It makes enemies neuter with 12 times of attack.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "4.7 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "500",
+          "aggro": "170",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5600%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [STR]",
+        "[PVP/PVE Maps] Additional 3% DMG according to extra [STR]",
+        "Ignore additional DEF according to extra [STR] * 1",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 3 * 50"
+      ],
+      "equipped_items": "Sword + Sabre",
+      "icon_position": {
+        "x": -450,
+        "y": -475
+      }
+    },
+    {
+      "name": "Soul Secreta",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1.5m away",
+        "Splash": "None",
+        "Hits per attack": "3",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "+10%"
+      },
+      "stats": {
+        "ASPD": "163",
+        "Bonus ATK": "310%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "30",
+        "EVA": "0",
+        "BLK": "30",
+        "Fire RES": "5",
+        "Ice RES": "5",
+        "Lightning RES": "5",
+        "Abnormal RES": "15"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+20%",
+        "Penetration": "15+15",
+        "Immunity": "10+20"
+      },
+      "skills": [
+        {
+          "name": "Flor Del Alma",
+          "image": "rse1_calmese.jpg",
+          "description": "Gather the souls of the magical roses into your blade to increase your strength and resilience.",
+          "target": "",
+          "casting_time": "0.7 sec.",
+          "cooldown": "45 sec.",
+          "duration": "5 Minutes",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "200",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 5 Minutes"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 5 Minutes"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Perforacion",
+          "image": "srs_flammevolar02.jpg",
+          "description": "Gives stength to ones sword and pierces the heart of the enemy.",
+          "target": "3 enemy within max range 12m",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "0.866 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "400",
+          "aggro": "160",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 750%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1500%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Corte Rapido",
+          "image": "srs_terrepression02.jpg",
+          "description": "Hold back portion of spear and stab long and fastly.",
+          "target": "1 enemy within a range of 9m",
+          "casting_time": "0.9 sec.",
+          "cooldown": "20 sec.",
+          "duration": "2 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "250",
+          "aggro": "120",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 700%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Salto de Petalo",
+          "image": "srs_argentorage.jpg",
+          "description": "Attack enemies around you by turning quickly and jump to make a strong explosion.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "3.33 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "500",
+          "aggro": "193",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Varias Veces",
+          "image": "srs_sforzando.jpg",
+          "description": "Stab enemy several times with Main-Gauche and finish the attack with a sword.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "12 sec.",
+          "duration": "3.97 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "500",
+          "aggro": "239",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1250%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2500%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 10% of extra [STR]",
+        "[PVP/PVE Maps] Additional 1% DMG according to extra [STR]",
+        "Additional DMG against [PC] + 1x"
+      ],
+      "equipped_items": "Sword + Sabre",
+      "icon_position": {
+        "x": -500,
+        "y": -450
+      }
+    },
+    {
+      "name": "Ignis",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.1~1.5m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "-10%",
+        "Magical DMG": "+10%"
+      },
+      "stats": {
+        "ASPD": "200",
+        "Bonus ATK": "280%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "20",
+        "EVA": "0",
+        "BLK": "5",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+10%",
+        "Ignore DEF": "+5%",
+        "Block": "+10",
+        "Penetration": "5+20",
+        "Immunity": "5+15"
+      },
+      "skills": [
+        {
+          "name": "Ignis Roar",
+          "image": "ignis_ignisroar.jpg",
+          "description": "Use the power of god Ignisia to empower yourself.",
+          "target": "",
+          "casting_time": "1 sec.",
+          "cooldown": "15 sec.",
+          "duration": "1.8 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "250",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 300s"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 300s"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Ignis Cyclone",
+          "image": "ignis_igniscyclone.jpg",
+          "description": "Burn the surrounding area with Ignisias powerful flames",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "12 sec.",
+          "duration": "2.667 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "350",
+          "aggro": "100",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3000%"
+            }
+          ],
+          "special": [
+            "Additional 1x DMG if enemy is inflicted with [",
+            "Additional 1x DMG if enemy is inflicted with ["
+          ]
+        },
+        {
+          "name": "Ignis Ustum",
+          "image": "ignis_ignisjustum.jpg",
+          "description": "Quick and deadly flame strikes towards the opponents vital areas.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "16 sec.",
+          "duration": "2.533 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "450",
+          "aggro": "150",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1700%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3400%"
+            }
+          ],
+          "special": [
+            "Additional 1x DMG if enemy is inflicted with [",
+            "Additional 1x DMG if enemy is inflicted with ["
+          ]
+        },
+        {
+          "name": "Ignis Irae",
+          "image": "ignis_ignisirae.jpg",
+          "description": "Flaming leap towards the enemy",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "22 sec.",
+          "duration": "3.633 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "550",
+          "aggro": "0",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4400%"
+            }
+          ],
+          "special": [
+            "Additional 1x DMG if enemy is inflicted with [",
+            "Additional 1x DMG if enemy is inflicted with ["
+          ]
+        },
+        {
+          "name": "Ignis Precis",
+          "image": "ignis_ignisprecis.jpg",
+          "description": "Precise hits towards the enemys waist to burn their stomach",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "25 sec.",
+          "duration": "2.833 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "600",
+          "aggro": "155",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 3000%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 6000%"
+            }
+          ],
+          "special": [
+            "Additional 1x DMG if enemy is inflicted with [",
+            "Additional 1x DMG if enemy is inflicted with ["
+          ]
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 10% of extra [AGI]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [AGI]",
+        "Ignore additional DEF according to extra [AGI] * 1",
+        "Ignore additional RES according to extra [AGI] * 1"
+      ],
+      "equipped_items": "Sword + Sabre",
+      "icon_position": {
+        "x": -500,
+        "y": -425
+      }
+    }
+  ]
+}

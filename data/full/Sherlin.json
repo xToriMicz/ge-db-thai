@@ -1,0 +1,676 @@
+{
+  "slug": "Sherlin",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "None",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Robe",
+    "costume": "None",
+    "gloves": "Gloves",
+    "ring": "Ring",
+    "weapon_costume": "Witch Craft Costume",
+    "belt": "Belt",
+    "shoes": "Shoes",
+    "artifact": "Treasure Golem Piece",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Fire Aura",
+    "image": "trg_treasureready.jpg",
+    "description": "ATK and Fire Penetration are increased by channeling the power of fire. This makes Fire Golem cast [Fire Aura].",
+    "target": "Self-buff",
+    "casting_time": "0 sec.",
+    "cooldown": "30 sec.",
+    "duration": "2.6 sec.",
+    "sp_cost": "500",
+    "consume_item": "Ancient Star Orb × 5",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration : 300 sec.",
+          "A.R.+1",
+          "ATK +50%",
+          "Monster ATK +200%",
+          "Fire Penetration +30",
+          "Casting Time -50%",
+          "Fire Golem: [Fire Aura]",
+          "With normal attack, imposes [Stamp of Hellfires] on enemy."
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Possession Fire",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -50,
+        "y": -100
+      }
+    },
+    {
+      "stance_name": "Possession Fire",
+      "equipped_items": "Fire Bracelet",
+      "icon_position": {
+        "x": -50,
+        "y": -100
+      }
+    },
+    {
+      "stance_name": "Possession Fire",
+      "equipped_items": "Fire Bracelet + Fire Bracelet",
+      "icon_position": {
+        "x": -50,
+        "y": -100
+      }
+    },
+    {
+      "stance_name": "Evocation Fire",
+      "equipped_items": "Fire Bracelet + Fire Bracelet",
+      "icon_position": {
+        "x": -50,
+        "y": -25
+      }
+    },
+    {
+      "stance_name": "Inferno",
+      "equipped_items": "Book",
+      "icon_position": {
+        "x": -350,
+        "y": -350
+      }
+    },
+    {
+      "stance_name": "Hestia",
+      "equipped_items": "Book",
+      "icon_position": {
+        "x": -500,
+        "y": -350
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Possession Fire",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.5~9m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "170",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "15",
+        "Ice RES": "-25",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [
+        {
+          "name": "Fireball",
+          "image": "pfir_fireball.jpg",
+          "description": "Casts a devastating fireball that incinerates all enemies in its path.",
+          "target": "",
+          "casting_time": "0.9 sec.",
+          "cooldown": "0 sec.",
+          "duration": "1.33 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "60",
+          "aggro": "35",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Burning Hands",
+          "image": "pfir_burninghands.jpg",
+          "description": "Increases Fire RES by imbuing Fire attribute to allies attack.",
+          "target": "",
+          "casting_time": "0.367 sec.",
+          "cooldown": "0 sec.",
+          "duration": "230 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "90",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 110 sec."
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 200 sec."
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 210 sec."
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 220 sec."
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 230 sec."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Flame Ground",
+          "image": "pfir_flameground.jpg",
+          "description": "Sets [Flame Ground] inflicting constant Fire ATK.",
+          "target": "",
+          "casting_time": "2 sec.",
+          "cooldown": "15 sec.",
+          "duration": "1.63 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "180",
+          "aggro": "186",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2400%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -50,
+        "y": -100
+      }
+    },
+    {
+      "name": "Evocation Fire",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.5~9m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "227",
+        "Bonus ATK": "200%",
+        "MSPD": "0.5",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "30",
+        "Ice RES": "-50",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [
+        {
+          "name": "Hell Breath",
+          "image": "efir_hellbreath.jpg",
+          "description": "To set enemies ablaze, it causes a jet of flame to burst forth from your hands.",
+          "target": "Up to 6 enemies 6m away and at an angle of 80 degrees",
+          "casting_time": "1.433 sec.",
+          "cooldown": "0 sec.",
+          "duration": "2.7 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "80",
+          "aggro": "67",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1300%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Infernal Flames",
+          "image": "efir_infernalflames.jpg",
+          "description": "A pillar of Flames of Hell blazes up from the ground, incinerating all enemies within range.",
+          "target": "Up to 8 enemies within a range of 5m",
+          "casting_time": "2.967 sec.",
+          "cooldown": "7.5 sec.",
+          "duration": "1.53 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "160",
+          "aggro": "97",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1400%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2800%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Meteor Strike",
+          "image": "efir_meteostrikes.jpg",
+          "description": "Brings a blazing meteor down upon the heads of your enemies.",
+          "target": "",
+          "casting_time": "7 sec.",
+          "cooldown": "20 sec.",
+          "duration": "2.47 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "240",
+          "aggro": "216",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4400%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Fire Bracelet + Fire Bracelet",
+      "icon_position": {
+        "x": -50,
+        "y": -25
+      }
+    },
+    {
+      "name": "Inferno",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.5~10m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "303",
+        "Bonus ATK": "300%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+10%",
+        "Penetration": "20",
+        "Immunity": "10"
+      },
+      "skills": [
+        {
+          "name": "Fire Golem Control",
+          "image": "job_firegolem.jpg",
+          "description": "Summoned to the designated area",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "3.033 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "0",
+          "skill_type": "Build",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Available to summon maximum 1"
+            },
+            {
+              "level": "Level 10",
+              "value": "Available to summon maximum 1 at the same time"
+            }
+          ],
+          "special": [
+            "Provides bonus ability to the Golem according to skill level and INT stats",
+            "Provides bonus ability to the Golem according to skill level and INT stats"
+          ]
+        },
+        {
+          "name": "Call Giant",
+          "image": "trg_fireshoot.jpg",
+          "description": "Lets Fire Golem enforce [Lava Flare] by summoning it.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "3.033 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Teleports Fire Golem to your location."
+            },
+            {
+              "level": "Level 10",
+              "value": "Teleports Fire Golem to your location."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Flame Road",
+          "image": "trg_firestomp.jpg",
+          "description": "Creates a flame road by concentlating the power of fire to feet and stamping on the ground. This lets Fire Golem enforce [Lava Clapper].",
+          "target": "Up to 10 enemies 15m away and within 7m width",
+          "casting_time": "2.1 sec.",
+          "cooldown": "15 sec.",
+          "duration": "2.333 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "400",
+          "aggro": "128",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1100%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2200%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Fire Flower",
+          "image": "trg_magmasplash.jpg",
+          "description": "Detonates by making sparks to a targeted enemy. This lets Fire Golem enforce [Lava Spire].",
+          "target": "Up to 5 enemies 12m away and within 3m radius",
+          "casting_time": "2.1 sec.",
+          "cooldown": "3.5 sec.",
+          "duration": "2.333 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "700",
+          "aggro": "189",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Lava Explosion",
+          "image": "trg_treasurebreath.jpg",
+          "description": "Burns enemies by making flame to a wide range. This lets Fire Golem enforce [Meteo].",
+          "target": "Up to 7 enemies 12m away and within 6m radius",
+          "casting_time": "2.1 sec.",
+          "cooldown": "35 sec.",
+          "duration": "2.333 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "800",
+          "aggro": "240",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3000%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [INT]",
+        "[PVP/PVE Maps] Additional 5% DMG according to extra [INT]",
+        "Ignore additional RES according to extra [INT] * 4",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 5 * 50"
+      ],
+      "equipped_items": "Book",
+      "icon_position": {
+        "x": -350,
+        "y": -350
+      }
+    },
+    {
+      "name": "Hestia",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.5~9m away",
+        "Splash": "0 DMG within  0m range",
+        "Hits per attack": "2",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "-20%",
+        "Shooting DMG": "+20%",
+        "Magical DMG": "-10%",
+        "Debuff RES": "-10%"
+      },
+      "stats": {
+        "ASPD": "267",
+        "Bonus ATK": "300%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "20",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "Penetration": "25+13",
+        "Immunity": "10+20"
+      },
+      "skills": [
+        {
+          "name": "Burning Tempest",
+          "image": "eom_infernoblow.jpg",
+          "description": "Quickly creates a fiery tornado, symbolizing Hestias intent.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "1.2 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "820",
+          "aggro": "200",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Fire Meteor",
+          "image": "eom_icingblaze.jpg",
+          "description": "A flaming meteorite descends from the sky, symbolizing Hestias lamentation.",
+          "target": "Up to 6 enemies within 13m x 4m wide",
+          "casting_time": "1 sec.",
+          "cooldown": "20 sec.",
+          "duration": "3 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "400",
+          "aggro": "121",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Flame Shock",
+          "image": "eom_flamshock.jpg",
+          "description": "Instantly compress the magical power into a flame and detonate it, symbolizing Hestias jealousy.",
+          "target": "Up to 8 enemies within 12 meters around",
+          "casting_time": "Instant",
+          "cooldown": "35 sec.",
+          "duration": "1.833 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "800",
+          "aggro": "250",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 3200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 6400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Fiery Stardust",
+          "image": "eom_flamestar.jpg",
+          "description": "Small fireballs resembling stars dancing in the night sky fall upon your foes, symbolizing Hestias hatred.",
+          "target": "1 enemy within a range of 12m",
+          "casting_time": "1.2 sec.",
+          "cooldown": "20 sec.",
+          "duration": "1.833 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "800",
+          "aggro": "180",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 3500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 7000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Scalding End",
+          "image": "eom_endfrum.jpg",
+          "description": "Surround the enemies with flames to extinguish their lives, symbolizing Hestias desperation.",
+          "target": "Up to 10 enemies 12m away within a 8m radius",
+          "casting_time": "3 sec.",
+          "cooldown": "45 sec.",
+          "duration": "2.8 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "1000",
+          "aggro": "353",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 3800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 7600%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 4% of extra [INT]",
+        "[PVP/PVE Maps] Additional 3% DMG according to extra [INT]",
+        "Ignore additional RES according to extra [INT] * 4",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Book",
+      "icon_position": {
+        "x": -500,
+        "y": -350
+      }
+    }
+  ]
+}

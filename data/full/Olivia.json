@@ -1,0 +1,999 @@
+{
+  "slug": "Olivia",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "None",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Leather",
+    "costume": "None",
+    "gloves": "Gloves Leather",
+    "ring": "Ring",
+    "weapon_costume": "Shwarz Messer Shaten Faust",
+    "belt": "Belt Leather",
+    "shoes": "Shoes Leather",
+    "artifact": "The Old Postcard Dancers Mask",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Heavy Stalker",
+    "image": "job_heavystalker.jpg",
+    "description": "Decreases ATK SPD but increases ATK to turn around.",
+    "target": "Self-buff",
+    "casting_time": "0 sec.",
+    "cooldown": "5 sec.",
+    "duration": "1.033 sec.",
+    "sp_cost": "300",
+    "consume_item": "Ancient Star Orb × 5",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "ATK +50%",
+          "A.R. +1",
+          "Penetration +10",
+          "Increases ATK against monster in proportion to extra [STR] (extra [STR] * 1%, Max. 200%)",
+          "Buff Removed when used again"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Escrima",
+      "equipped_items": "Dagger",
+      "icon_position": {
+        "x": -200,
+        "y": -175
+      }
+    },
+    {
+      "stance_name": "Combat Assault",
+      "equipped_items": "Dagger",
+      "icon_position": {
+        "x": -350,
+        "y": -425
+      }
+    },
+    {
+      "stance_name": "Dobalada corte",
+      "equipped_items": "Dagger + Dagger",
+      "icon_position": {
+        "x": -100,
+        "y": -150
+      }
+    },
+    {
+      "stance_name": "Raid Assault",
+      "equipped_items": "Dagger + Dagger",
+      "icon_position": {
+        "x": -150,
+        "y": -350
+      }
+    },
+    {
+      "stance_name": "Combat Assault",
+      "equipped_items": "Dagger + Knuckle",
+      "icon_position": {
+        "x": -350,
+        "y": -425
+      }
+    },
+    {
+      "stance_name": "Combat Assault",
+      "equipped_items": "Knuckle",
+      "icon_position": {
+        "x": -350,
+        "y": -425
+      }
+    },
+    {
+      "stance_name": "Ancient Arts",
+      "equipped_items": "Knuckle",
+      "icon_position": {
+        "x": -150,
+        "y": -275
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Escrima",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.1~1m away",
+        "Splash": "None",
+        "Hits per attack": "3",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "198",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "15",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+15%",
+        "Evasion": "+15",
+        "Critical": "+20"
+      },
+      "skills": [
+        {
+          "name": "Cortar en Recta",
+          "image": "esc_rajarenrecta.jpg",
+          "description": "Impale enemies on your blade and rend him apart. Reduces defence of enemies.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "0 sec.",
+          "duration": "2.42 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "100",
+          "aggro": "98",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 434%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 868%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Dagger Venenosa",
+          "image": "esc_dagavenenosa.jpg",
+          "description": "Applies venom on a dagger. Each subsequent attack can inflict Poisoning on enemy.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "0 sec.",
+          "duration": "1.5 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "150",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 33 sec"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 60 sec"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration : 63 sec"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration : 66 sec"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration : 69 sec"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Baile Soleares",
+          "image": "esc_bailesoleares.jpg",
+          "description": "A series of powerful slashes.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "4.44 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "200",
+          "aggro": "247",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1179%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2358%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Ventaja Ligera",
+          "image": "esc_ligeraventaja.jpg",
+          "description": "Allows you to break through enemy lines with powerful slashes.",
+          "target": "Up to 5 enemies 8m away and within 3m width",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "3.33 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "250",
+          "aggro": "73",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 309%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 618%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Sierra Ilimitada",
+          "image": "esc_ilimitadasierra.jpg",
+          "description": "Strikes suddenly to catch enemies unawares.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "2.74 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "216",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1023%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2046%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Dagger",
+      "icon_position": {
+        "x": -200,
+        "y": -175
+      }
+    },
+    {
+      "name": "Combat Assault",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.1~1m away",
+        "Splash": "None",
+        "Hits per attack": "4",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Debuff RES": "-20%"
+      },
+      "stats": {
+        "ASPD": "187",
+        "Bonus ATK": "270%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "40",
+        "EVA": "0",
+        "BLK": "10",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+20%",
+        "Block": "+25",
+        "Critical": "+25",
+        "Penetration": "10+25",
+        "Immunity": "5+10"
+      },
+      "skills": [
+        {
+          "name": "Counter",
+          "image": "cbs_counter.jpg",
+          "description": "Evades enemys physical attack or improves Skill attack. Canceled, if Stance changes.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "10 sec",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "300",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 10 sec"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 10 sec"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 10 sec"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Preparation",
+          "image": "cbs_preparation.jpg",
+          "description": "Waits a chance of decisive blow while accumulating the damage blown to enemy. Canceled, if Stance changes.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "30 sec.",
+          "duration": "1.033 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "550",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Accumulates 20% of attack damage."
+            },
+            {
+              "level": "Level 10",
+              "value": "Accumulates 20% of attack damage."
+            },
+            {
+              "level": "Level 11",
+              "value": "Accumulates Attack damage by 100%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Cut Upper",
+          "image": "cbs_crossattack.jpg",
+          "description": "Hit 3 times with dagger and strikes with strong Uppercut.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "8 sec.",
+          "duration": "1.9 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "300",
+          "aggro": "210",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Vortex Spear",
+          "image": "cbs_voltexpear.jpg",
+          "description": "Spins fast at a ground to block the enemies movement and rushes to attack.",
+          "target": "Up to 8 enemies within 4m radius to a selected direction",
+          "casting_time": "1.033 sec.",
+          "cooldown": "12 sec.",
+          "duration": "1.666 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "400",
+          "aggro": "178",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2400%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4800%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Shooting Blow",
+          "image": "cbs_oneinchblow.jpg",
+          "description": "Rushes forward and strikes with strong body blow. You can release the accumulated damage.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "23 sec.",
+          "duration": "1.9 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "500",
+          "aggro": "132",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2300%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4600%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 11% of extra [STR]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [STR]",
+        "Ignore additional DEF according to extra [STR] * 4",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Dagger",
+      "icon_position": {
+        "x": -350,
+        "y": -425
+      }
+    },
+    {
+      "name": "Dobalada corte",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.1~1m away",
+        "Splash": "None",
+        "Hits per attack": "4",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "220",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+20%",
+        "Critical": "+16"
+      },
+      "skills": [
+        {
+          "name": "Devolver Ataque",
+          "image": "dob_attaquedevolver.jpg",
+          "description": "Attacks enemies with a series of lightning quick slashes.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "0 sec.",
+          "duration": "3.27 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "100",
+          "aggro": "179",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 841%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1682%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Dagger Venenosa",
+          "image": "esc_dagavenenosa.jpg",
+          "description": "Applies venom on a dagger. Each subsequent attack can inflict Poisoning on enemy.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "0 sec.",
+          "duration": "1.5 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "150",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 33 sec"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 60 sec"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration : 63 sec"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration : 66 sec"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration : 69 sec"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Viento Fantasma",
+          "image": "dob_vientoincierta.jpg",
+          "description": "Hurls two daggers at enemies.",
+          "target": "1 enemy within a range of 8m",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "2.73 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "200",
+          "aggro": "175",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 832%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1664%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Baile de Guerra",
+          "image": "dob_guerradebaile.jpg",
+          "description": "Drives enemies back by whirling through the air with a set of double daggers.",
+          "target": "Up to 8 enemies 7.2m away and within 3m width",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "2.77 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "250",
+          "aggro": "123",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 565%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1130%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Miembro Invisible",
+          "image": "dob_miembrofantasma.jpg",
+          "description": "Hurls daggers at surrounding enemies.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "4.8 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "300",
+          "aggro": "155",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 731%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1462%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Dagger + Dagger",
+      "icon_position": {
+        "x": -100,
+        "y": -150
+      }
+    },
+    {
+      "name": "Raid Assault",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.1~1m away",
+        "Splash": "None",
+        "Hits per attack": "4",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "187",
+        "Bonus ATK": "300%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "5",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+25%",
+        "Block": "+5",
+        "Critical": "+25"
+      },
+      "skills": [
+        {
+          "name": "Belladonna",
+          "image": "ras_belladonna.jpg",
+          "description": "Quickly attack twice and moves behind enemy to inflict a mortal wound.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "0 sec.",
+          "duration": "2.7 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "100",
+          "aggro": "172",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 833%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1666%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Girandole",
+          "image": "ras_girandole.jpg",
+          "description": "Spin around and fire shots at multiple targets around you.",
+          "target": "Up to 6 enemies 9m away.",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "2.17 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "200",
+          "aggro": "68",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 305%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 610%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Sonic Slice",
+          "image": "ras_sonicslice.jpg",
+          "description": "Allows you to break through enemy lines with quick bounds and powerful slashes.",
+          "target": "Up to 8 enemies 7.2m away and within 3m width",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "2.37 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "250",
+          "aggro": "126",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 585%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1170%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Feral Tooth",
+          "image": "ras_feraltooth.jpg",
+          "description": "A ferocious rampage, resembling a fierce beast attacking with its teeth.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "5.57 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "330",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1592%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3184%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Dagger + Dagger",
+      "icon_position": {
+        "x": -150,
+        "y": -350
+      }
+    },
+    {
+      "name": "Ancient Arts",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1.75m away",
+        "Splash": "None",
+        "Hits per attack": "3",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "-25%",
+        "Debuff Chance": "+10%"
+      },
+      "stats": {
+        "ASPD": "187",
+        "Bonus ATK": "300%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "15",
+        "EVA": "10",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+10%",
+        "Evasion": "+10",
+        "Critical": "+5",
+        "Penetration": "5+20",
+        "Immunity": "5+15",
+        "DEF": "5"
+      },
+      "skills": [
+        {
+          "name": "Swift Dash",
+          "image": "aoa2_swiftdash.jpg",
+          "description": "Hit the enemy to the air, and smash it on the floor.",
+          "target": "Up to 3 adjacent enemies",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "1.5 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "560",
+          "aggro": "500",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Dragon Aura",
+          "image": "aoa2_dragonaura.jpg",
+          "description": "Emits the aura of the dragon and nullifies nearby enemies.",
+          "target": "Up to 8 targets within a 10m surrounding radius",
+          "casting_time": "0.7 sec.",
+          "cooldown": "30 sec.",
+          "duration": "2.5 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "100",
+          "aggro": "226",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Titan Break",
+          "image": "aoa2_titanbreak.jpg",
+          "description": "Defeat the enemy with a powerful series of attacks that will defeat even the giant.",
+          "target": "Up to 3 adjacent enemies",
+          "casting_time": "Instant",
+          "cooldown": "12 sec.",
+          "duration": "1.5 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "950",
+          "aggro": "342",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Ultimate Soul",
+          "image": "aoa2_ultmatesoul.jpg",
+          "description": "Connect the ultimate specialty of the Five Books of Martial Arts.",
+          "target": "1 adjacent enemy",
+          "casting_time": "0.6 sec.",
+          "cooldown": "30 sec.",
+          "duration": "4.9 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "1050",
+          "aggro": "444",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Additional Rage",
+          "image": "aoa2_additionalrage.jpg",
+          "description": "Muster the strength by borrowing strength from the gods.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "30 sec.",
+          "duration": "1.133 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "650",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 300 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 300 seconds"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration : 300 seconds"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration : 300 seconds"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration : 300 seconds"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [STR]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [STR]",
+        "Ignore additional DEF according to extra [STR] * 2",
+        "Additional DMG against [PC] + 2x",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Knuckle",
+      "icon_position": {
+        "x": -150,
+        "y": -275
+      }
+    }
+  ]
+}

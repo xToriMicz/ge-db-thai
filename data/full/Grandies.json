@@ -1,0 +1,1110 @@
+{
+  "slug": "Grandies",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Traveler from Calming Shore Traveler from Lion City 18th Anniversary Ten Nobles of Vespanola Sands of Guilt Devouring Beast Blazing Ignis Renaulds Lover Moonlit Chill Samhains Fire They are Gods: Tea Party They are Gods: Athena Frozen Forever",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Leather Metal",
+    "costume": "None",
+    "gloves": "Gloves Leather Metal",
+    "ring": "Ring",
+    "weapon_costume": "None",
+    "belt": "Belt Leather Metal",
+    "shoes": "Shoes Leather Metal",
+    "artifact": "Baby Cap",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Kings Majesty",
+    "image": "job_groundwave.jpg",
+    "description": "Remember the time you walked through the pioneering front.",
+    "target": "Self-buff",
+    "casting_time": "1 sec.",
+    "cooldown": "60 sec.",
+    "duration": "1.9 sec.",
+    "sp_cost": "100",
+    "consume_item": "Mithridart × 5",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration : 5 Minutes",
+          "A.R. +1 (Only in PvE)",
+          "D.R. +1",
+          "ATK +50% (100% in PvE)",
+          "DEF +15 (25 in PvE)",
+          "IMM +10 (200% in PvE)",
+          "Penetration +15 (Only in PvE)"
+        ]
+      },
+      {
+        "level": "Level 11",
+        "effects": [
+          "Duration : 5 Minutes",
+          "A.R. +1 (Only in PvE)",
+          "D.R. +1",
+          "ATK +50% (100% in PvE)",
+          "DEF +15 (25 in PvE)",
+          "IMM +10 (200% in PvE)",
+          "Penetration +15 (Only in PvE)"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Back-Guard",
+      "equipped_items": "Sword",
+      "icon_position": {
+        "x": -50,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Soul bringer",
+      "equipped_items": "Sword + Main Gauche",
+      "icon_position": {
+        "x": -250,
+        "y": -350
+      }
+    },
+    {
+      "stance_name": "Tail-Guard",
+      "equipped_items": "Great Sword",
+      "icon_position": {
+        "x": -200,
+        "y": -125
+      }
+    },
+    {
+      "stance_name": "Sidewinder",
+      "equipped_items": "Great Sword",
+      "icon_position": {
+        "x": 0,
+        "y": -300
+      }
+    },
+    {
+      "stance_name": "Soul Guard",
+      "equipped_items": "Great Sword",
+      "icon_position": {
+        "x": -250,
+        "y": -375
+      }
+    },
+    {
+      "stance_name": "Ancient Slayer",
+      "equipped_items": "Great Sword",
+      "icon_position": {
+        "x": -150,
+        "y": -250
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Back-Guard",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1.5m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "100",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "14",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+3%",
+        "Block": "+14"
+      },
+      "skills": [
+        {
+          "name": "Deep Straight",
+          "image": "bg_deepstraight.jpg",
+          "description": "Impales the enemy on a sword before delivering a powerful kick.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "0 sec.",
+          "duration": "2.67 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "100",
+          "aggro": "78",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 300%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Earth Tremor",
+          "image": "bg_earthtremor.jpg",
+          "description": "Plunges sword into enemy while airborne.",
+          "target": "Up to 3 adjacent enemies",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "2.2 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "150",
+          "aggro": "68",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 400%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 800%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Penta-Train",
+          "image": "bg_pentatrain.jpg",
+          "description": "A series of aggressive attacks that pushes the enemy back.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "3.4 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "200",
+          "aggro": "105",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 600%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1200%"
+            }
+          ],
+          "special": [
+            "Double Damage to enemies with [",
+            "Double Damage to enemies with ["
+          ]
+        },
+        {
+          "name": "Vortex Slash",
+          "image": "bg_vortexlash.jpg",
+          "description": "Make a series of fast and powerful attacks.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "4.4 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "250",
+          "aggro": "210",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1600%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Sword",
+      "icon_position": {
+        "x": -50,
+        "y": 0
+      }
+    },
+    {
+      "name": "Soul bringer",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.1~1.25m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Shooting DMG": "-20%",
+        "Magical DMG": "+10%",
+        "Debuff RES": "-20%"
+      },
+      "stats": {
+        "ASPD": "163",
+        "Bonus ATK": "267%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "40",
+        "EVA": "0",
+        "BLK": "10",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+20%",
+        "Block": "+10",
+        "Critical": "+20",
+        "Penetration": "25",
+        "Immunity": "5+15"
+      },
+      "skills": [
+        {
+          "name": "King Spirit",
+          "image": "sbg_kingspirit.jpg",
+          "description": "Can use skill at a high speed, as ATK increases rapidly. Canceled, if Stance changes.",
+          "target": "",
+          "casting_time": "1 sec.",
+          "cooldown": "75 sec.",
+          "duration": "5 Minutes.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 5 Minutes."
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 5 Minutes."
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 5 Minutes."
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 5 Minutes."
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 5 Minutes."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Crescendo",
+          "image": "sbg_crescendo.jpg",
+          "description": "Stab enemy several times with Main-Gauche and finish the attack with a sword.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "3.97 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "450",
+          "aggro": "239",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2000%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Blink Blow",
+          "image": "sbg_blinkblow.jpg",
+          "description": "Make a wind rushing towards enemies and attack them.",
+          "target": "",
+          "casting_time": "1.233 sec.",
+          "cooldown": "15 sec.",
+          "duration": "2.17 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "500",
+          "aggro": "83",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Windblow",
+          "image": "sbg_windblow.jpg",
+          "description": "Attack enemies around you by turning quickly and jump to make a strong explosion.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "3.33 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "500",
+          "aggro": "193",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1600%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3200%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Soul Crash",
+          "image": "sbg_soulcrash.jpg",
+          "description": "Cross Sword and Main-Gauche quickly to make a wind to blow enemies.",
+          "target": "Up to 8 enemies 12m away and within 13m width",
+          "casting_time": "1.533 sec.",
+          "cooldown": "25 sec.",
+          "duration": "1.97 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "600",
+          "aggro": "172",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2000%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4000%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [STR]",
+        "[PVP/PVE Maps] Additional 5% DMG according to extra [STR]",
+        "Ignore additional DEF according to extra [STR] * 4",
+        "Additional DMG against [PC] + 0.5x",
+        "Additional DMG against Monster according to 5 * 50"
+      ],
+      "equipped_items": "Sword + Main Gauche",
+      "icon_position": {
+        "x": -250,
+        "y": -350
+      }
+    },
+    {
+      "name": "Tail-Guard",
+      "info": {
+        "Targets": "3 enemies",
+        "Range": "0.1~1.5m away",
+        "Splash": "0.75 DMG within  1.5m range",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "285",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+8%",
+        "Critical": "+6"
+      },
+      "skills": [
+        {
+          "name": "Sweet Dreamer",
+          "image": "tg_sweetdreamer.jpg",
+          "description": "Swing a sword in an ascending arc and drive enemies to the sky.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "0 sec.",
+          "duration": "2.03 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "100",
+          "aggro": "89",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 315%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 630%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Armor Crasher",
+          "image": "tg_armorcrasher.jpg",
+          "description": "Whirl to gain momentum before striking with a sword. Enemy defence will be reduced to 0 for a certain period of time.",
+          "target": "Up to 4 adjacent enemies",
+          "casting_time": "Instant",
+          "cooldown": "25 sec.",
+          "duration": "3.3 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "150",
+          "aggro": "51",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 171%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 342%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Brandish",
+          "image": "tg_brandish.jpg",
+          "description": "Wild swings of a sword drives back enemies in the vicinity.",
+          "target": "Up to 5 Enemies within a range of 2.5m",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "2.13 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "200",
+          "aggro": "43",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 157%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 314%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Quarto Taglio",
+          "image": "tg_quartotaglio.jpg",
+          "description": "Inflicts 4 powerful slashes upon enemies.",
+          "target": "Up to 4 adjacent enemies",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "4.52 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "146",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 669%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1338%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Great Sword",
+      "icon_position": {
+        "x": -200,
+        "y": -125
+      }
+    },
+    {
+      "name": "Sidewinder",
+      "info": {
+        "Targets": "4 enemies",
+        "Range": "0.1~1.5m away",
+        "Splash": "0.8 DMG within  1.5m range",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "325",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+15%",
+        "Critical": "+6"
+      },
+      "skills": [
+        {
+          "name": "Sweet Dreamer",
+          "image": "tg_sweetdreamer.jpg",
+          "description": "Swing a sword in an ascending arc and drive enemies to the sky.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "0 sec.",
+          "duration": "2.03 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "100",
+          "aggro": "89",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 315%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 630%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Ultimate Dash",
+          "image": "sw_ultimatedash.jpg",
+          "description": "A forceful charge that sweeps enemies away.",
+          "target": "Up to 5 enemies 5.6m away and within 3m width",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "2.43 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "200",
+          "aggro": "57",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 230%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 459%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Decision",
+          "image": "sw_decision.jpg",
+          "description": "Leaps and strikes enemies in mid-air.",
+          "target": "Up to 5 adjacent enemies",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "2.07 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "131",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 604%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1208%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Great Sword",
+      "icon_position": {
+        "x": 0,
+        "y": -300
+      }
+    },
+    {
+      "name": "Soul Guard",
+      "info": {
+        "Targets": "4 enemies",
+        "Range": "0.1~1.5m away",
+        "Splash": "0.8 DMG within  2m range",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Shooting DMG": "-20%",
+        "Magical DMG": "+10%",
+        "Debuff RES": "-10%"
+      },
+      "stats": {
+        "ASPD": "280",
+        "Bonus ATK": "300%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "30",
+        "EVA": "0",
+        "BLK": "10",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+10%",
+        "Block": "+10",
+        "Critical": "+16",
+        "Penetration": "20",
+        "Immunity": "10"
+      },
+      "skills": [
+        {
+          "name": "Changed Position",
+          "image": "sgd_aggressiveposition.jpg",
+          "description": "Adjust Great Sword to change attack and defense position.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "0 sec.",
+          "duration": "1.53 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "ATK+2%, Accuracy+1, Monster Damage+1%, Extra increases ATK/Monster Damage/Penetration in proportion to ["
+            },
+            {
+              "level": "Level 10",
+              "value": "ATK+20%, Accuracy+10, Monster Damage+10%, Extra increases ATK/Monster Damage/Penetration in proportion to ["
+            },
+            {
+              "level": "Level 11",
+              "value": "ATK+22%, Accuracy+11, Monster Damage+11%, Penetration+5, Extra increases ATK/Monster Damage/Penetration in proportion to ["
+            },
+            {
+              "level": "Level 12",
+              "value": "ATK+24%, Accuracy+12, Monster Damage+12%, Penetration+6, A.R.+1, Extra increases ATK/Monster Damage/Penetration in proportion to ["
+            },
+            {
+              "level": "Level 13",
+              "value": "ATK+26%, Accuracy+13, Monster Damage+13%, Penetration+7, A.R.+1, Extra increases ATK/Monster Damage/Penetration in proportion to ["
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Spin Combination",
+          "image": "sgd_spincombination.jpg",
+          "description": "Cross to attack front enemies with kicking and great sword and blow them quickly.",
+          "target": "Up to 5 adjacent enemies",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "2.17 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "350",
+          "aggro": "195",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Chain Direction",
+          "image": "sgd_chaindirection.jpg",
+          "description": "Continue to attack major enemies with kicking and great sword.",
+          "target": "Up to 6 Enemies nearby",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "3.63 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "450",
+          "aggro": "164",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Gust Bringer",
+          "image": "sgd_gustbringer.jpg",
+          "description": "Make a wind and blow enemies by swinging a great sword.",
+          "target": "Up to 8 enemies 4m away and within a 4m radius",
+          "casting_time": "Instant",
+          "cooldown": "25 sec.",
+          "duration": "2.93 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "550",
+          "aggro": "146",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2000%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Devastator",
+          "image": "sgd_devastator.jpg",
+          "description": "Give a huge consecutive damage to one enemy.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "24 sec.",
+          "duration": "6.57 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "650",
+          "aggro": "223",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5000%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [STR]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [STR]",
+        "Ignore additional DEF according to extra [STR] * 4",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Great Sword",
+      "icon_position": {
+        "x": -250,
+        "y": -375
+      }
+    },
+    {
+      "name": "Ancient Slayer",
+      "info": {
+        "Targets": "4 enemies",
+        "Range": "2.5m away",
+        "Splash": "0.75 DMG within  2.7m range",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Shooting DMG": "-15%",
+        "Magical DMG": "+15%"
+      },
+      "stats": {
+        "ASPD": "187",
+        "Bonus ATK": "280%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "50",
+        "EVA": "0",
+        "BLK": "10",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+13%",
+        "Block": "+5",
+        "Penetration": "20+15",
+        "Immunity": "5+10",
+        "DEF": "5"
+      },
+      "skills": [
+        {
+          "name": "Berserker",
+          "image": "berserknessgs.jpg",
+          "description": "Improve your ATK and Block ability by awakening your indomitable fighting spirit. However, your speed will decrease. Removed on Stance change.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "30 sec.",
+          "duration": "1.533 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "340",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 150 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 150 seconds"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration : 150 seconds"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration : 150 seconds"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration : 150 seconds"
+            }
+          ],
+          "special": [
+            "Additional Damage of all skill attack doubles against [",
+            "Additional Damage of all skill attack doubles against [",
+            "Additional Damage of all skill attack doubles against [",
+            "Additional Damage of all skill attack doubles against [",
+            "Additional Damage of all skill attack doubles against ["
+          ]
+        },
+        {
+          "name": "Arc Down",
+          "image": "arcdowngs.jpg",
+          "description": "Strike the enemy down with a big arc.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "5 sec.",
+          "duration": "2.2 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "550",
+          "aggro": "58",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1600%"
+            }
+          ],
+          "special": [
+            "Additional damage doubles if the enemy is affected by one of the following debuffs:",
+            "Additional damage doubles if the enemy is affected by one of the following debuffs:"
+          ]
+        },
+        {
+          "name": "Dragona Bash",
+          "image": "dragonabashgs.jpg",
+          "description": "Approach and strike the enemy with great force.",
+          "target": "Up to 5 enemies 12m away and within 3 width",
+          "casting_time": "1.533 sec.",
+          "cooldown": "14 sec.",
+          "duration": "4.033 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "800",
+          "aggro": "98",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Fly and Crush",
+          "image": "flyandcrushgs.jpg",
+          "description": "Jump high and strike the enemy from above.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "18 sec.",
+          "duration": "2.2 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "720",
+          "aggro": "74",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 900%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1800%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Additional Destruction",
+          "image": "addestructiongs.jpg",
+          "description": "Cut all enemies in a row down with a strong and splendid slash.",
+          "target": "Up to 5 enemies 6m away and within a 5m radius",
+          "casting_time": "Instant",
+          "cooldown": "27 sec.",
+          "duration": "3.7 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "1040",
+          "aggro": "145",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2000%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4000%"
+            }
+          ],
+          "special": [
+            "Additional damage doubles if the enemy is affected by a debuff from the following groups:",
+            "Additional damage doubles if the enemy is affected by a debuff from the following groups:"
+          ]
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [STR]",
+        "[PVP/PVE Maps] Additional 6% DMG according to extra [STR]",
+        "Ignore additional DEF according to extra [STR] * 1",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 1 * 50"
+      ],
+      "equipped_items": "Great Sword",
+      "icon_position": {
+        "x": -150,
+        "y": -250
+      }
+    }
+  ]
+}

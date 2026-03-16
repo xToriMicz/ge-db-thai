@@ -1,0 +1,282 @@
+{
+  "slug": "Braise",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "An Avatar Born from the Ashes Blessings of the 2026 New Year",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Leather",
+    "costume": "None",
+    "gloves": "Gloves",
+    "ring": "Ring",
+    "weapon_costume": "La Banjeresse La Vangresse for Events",
+    "belt": "Belt",
+    "shoes": "Shoes",
+    "artifact": "Lepin Noir",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Rinuariable",
+    "image": "job_linoubliable.jpg",
+    "description": "Recalling your childhood, you load your gun with bullets and burn with a desire for revenge.",
+    "target": "Apply to self without targeting.",
+    "casting_time": "0 sec.",
+    "cooldown": "15 sec.",
+    "duration": "3.1 sec.",
+    "sp_cost": "150",
+    "consume_item": "Ancient Star Orb × 5",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Attack Rating +1",
+          "ATK +30%",
+          "Attack Speed +15%",
+          "Attack against Monsters +60%",
+          "All Stats +5"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Sandreuse",
+      "equipped_items": "Shotgun",
+      "icon_position": {
+        "x": -350,
+        "y": -275
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Sandreuse",
+      "info": {
+        "Targets": "7 enemies",
+        "Range": "10m away",
+        "Splash": "100% DMG within  4m range",
+        "Hits per attack": "3",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "+20%",
+        "Shooting DMG": "-20%",
+        "Magical DMG": "-25%"
+      },
+      "stats": {
+        "ASPD": "193",
+        "Bonus ATK": "295%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "15",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+12%",
+        "Critical": "+10",
+        "Penetration": "5+25",
+        "Immunity": "5+10"
+      },
+      "skills": [
+        {
+          "name": "Vals de Lepine",
+          "image": "cdr_valsedelepine.jpg",
+          "description": "Fires Lepin Noir, dealing damage to enemies hit and pulling targets that can be knocked back towards Braise.",
+          "target": "1 enemy within 17m.",
+          "casting_time": "1 sec.",
+          "cooldown": "22 sec.",
+          "duration": "2 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "200",
+          "aggro": "75",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1100%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2200%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Allumage",
+          "image": "cdr_allumage.jpg",
+          "description": "Braise overheats Lepin Noir.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "25 sec.",
+          "duration": "1 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "250",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "When cast, ["
+            },
+            {
+              "level": "Level 10",
+              "value": "When casting ["
+            },
+            {
+              "level": "Level 11",
+              "value": "When casting, remove ["
+            },
+            {
+              "level": "Level 12",
+              "value": "When cast, ["
+            },
+            {
+              "level": "Level 13",
+              "value": "When cast, ["
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Yurman",
+          "image": "cdr_hurlement.jpg",
+          "description": "Deals damage by exploding a special bullet in front.",
+          "target": "Up to 8 enemies within a 10m x 80 degree range in front.",
+          "casting_time": "0.667 sec.",
+          "cooldown": "13 sec.",
+          "duration": "2.567 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "220",
+          "aggro": "80",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1451%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2902%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Sere du dEstaing",
+          "image": "cdr_serredudestin.jpg",
+          "description": "Use a shotgun to quickly approach the enemy and pierce them with Lepin Noir.",
+          "target": "",
+          "casting_time": "1 sec.",
+          "cooldown": "25 sec.",
+          "duration": "2.5 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "600",
+          "aggro": "150",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2132%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4264%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Beze de Lepine Noir",
+          "image": "cdr_baiserdelepinenoire.jpg",
+          "description": "Detonates Lepin Noir at maximum power, dealing damage.",
+          "target": "",
+          "casting_time": "1 sec.",
+          "cooldown": "25 sec.",
+          "duration": "2 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "600",
+          "aggro": "150",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2284%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4568%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Shotgun",
+      "icon_position": {
+        "x": -350,
+        "y": -275
+      }
+    }
+  ]
+}

@@ -1,0 +1,512 @@
+{
+  "slug": "WinonaEnde",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Siblings",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Robe",
+    "costume": "None",
+    "gloves": "Gloves",
+    "ring": "Ring",
+    "weapon_costume": "Abre Ignition Abre Ignition (Event) Sage Wall Sage Wall (Event)",
+    "belt": "Belt",
+    "shoes": "Shoes",
+    "artifact": "Shiny Bud",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Divine Might",
+    "image": "job_divinemight.jpg",
+    "description": "Temporarily increases the skill level of you and your teammates by 1.",
+    "target": "Special Buff",
+    "casting_time": "0 sec.",
+    "cooldown": "25 sec.",
+    "duration": "1.333 sec.",
+    "sp_cost": "700",
+    "consume_item": "Ancient Star Orb × 50",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration: 25 seconds",
+          "All skill levels +1"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Linker",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -250,
+        "y": -200
+      }
+    },
+    {
+      "stance_name": "Linker",
+      "equipped_items": "Rod",
+      "icon_position": {
+        "x": -250,
+        "y": -200
+      }
+    },
+    {
+      "stance_name": "Chronomancer",
+      "equipped_items": "Rod",
+      "icon_position": {
+        "x": -500,
+        "y": -250
+      }
+    },
+    {
+      "stance_name": "Linker",
+      "equipped_items": "Rod + Shield",
+      "icon_position": {
+        "x": -250,
+        "y": -200
+      }
+    },
+    {
+      "stance_name": "Chronomancer",
+      "equipped_items": "Rod + Shield",
+      "icon_position": {
+        "x": -500,
+        "y": -250
+      }
+    },
+    {
+      "stance_name": "Linker",
+      "equipped_items": "Staff",
+      "icon_position": {
+        "x": -250,
+        "y": -200
+      }
+    },
+    {
+      "stance_name": "Chronomancer",
+      "equipped_items": "Staff",
+      "icon_position": {
+        "x": -500,
+        "y": -250
+      }
+    },
+    {
+      "stance_name": "Linker",
+      "equipped_items": "Staff + Shield",
+      "icon_position": {
+        "x": -250,
+        "y": -200
+      }
+    },
+    {
+      "stance_name": "Chronomancer",
+      "equipped_items": "Staff + Shield",
+      "icon_position": {
+        "x": -500,
+        "y": -250
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Linker",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "6m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Shooting DMG": "+20%",
+        "Debuff RES": "-10%"
+      },
+      "stats": {
+        "ASPD": "187",
+        "Bonus ATK": "100%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "20"
+      },
+      "lv25_bonus": {
+        "Penetration": "20+10",
+        "Immunity": "10+5"
+      },
+      "skills": [
+        {
+          "name": "Joint Penalty",
+          "image": "linker_jointpenalty.jpg",
+          "description": "Creates a link between monsters, causing them to feel more pain while near each other.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "8 sec.",
+          "duration": "0.833 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "650",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2400%"
+            },
+            {
+              "level": "Level 11",
+              "value": "АТК: 2640%"
+            },
+            {
+              "level": "Level 12",
+              "value": "АТК: 2880%"
+            },
+            {
+              "level": "Level 13",
+              "value": "АТК: 2880%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Hangmans Sickle",
+          "image": "linker_hangmansknot.jpg",
+          "description": "Forcefully pull each linked monster towards the initial target. Does not inflict additional debuff on unlinked enemies.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "1.5 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "600",
+          "aggro": "330",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1400%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2800%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Physical Link",
+          "image": "linker_physicallink.jpg",
+          "description": "The caster and target become connected, taking damage equally.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "45 sec.",
+          "duration": "300s",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 300s"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 300s"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Spiritual Chain",
+          "image": "linker_spiritualchain.jpg",
+          "description": "You and your allies become connected to each other, feeling a miracle happen.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "55 sec.",
+          "duration": "300s",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 300s"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 300s"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Lifeline",
+          "image": "linker_lifeline.jpg",
+          "description": "Gather the lives of your linked comrades and fight as one. Does not apply to unlinked allies.",
+          "target": "",
+          "casting_time": "3 sec.",
+          "cooldown": "20 sec.",
+          "duration": "300s",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "800",
+          "aggro": "288",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 300s"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 300s"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 2% of extra [INT]",
+        "[PVP/PVE Maps] Additional 5% DMG according to extra [INT]",
+        "Ignore additional RES according to extra [INT] * 4",
+        "Additional DMG against Monster according to 5 * 50"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -250,
+        "y": -200
+      }
+    },
+    {
+      "name": "Chronomancer",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "8m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Shooting DMG": "+20%",
+        "Debuff RES": "-10%"
+      },
+      "stats": {
+        "ASPD": "157",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "Penetration": "30+10",
+        "Immunity": "20+5"
+      },
+      "skills": [
+        {
+          "name": "Slow",
+          "image": "chronomancy_slowjpn.jpg",
+          "description": "Controls time to decrease the movement speed of enemies.",
+          "target": "",
+          "casting_time": "3 sec.",
+          "cooldown": "15 sec.",
+          "duration": "2 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "700",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "100% Chance to inflict ["
+            },
+            {
+              "level": "Level 10",
+              "value": "100% Chance to inflict ["
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Quick Cast",
+          "image": "chronomancy_quickcastjpn.jpg",
+          "description": "Reduces skill casting time.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "60 sec.",
+          "duration": "300s",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "700",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 300s"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 300s"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Haste",
+          "image": "chronomancy_hastejpn.jpg",
+          "description": "Increase the speed of allies",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "120s",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "1600",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 120s"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 120s"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Backmasking",
+          "image": "chronomancy_backmaskingjpn.jpg",
+          "description": "Control time in an area, changing it back to its previous state. Returns allies from incapacitated state.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "1.5 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "0",
+          "skill_type": "Healing",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Resurrect up to 12 targets of downed allies"
+            },
+            {
+              "level": "Level 10",
+              "value": "Resurrect up to 12 targets of downed allies"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Pass",
+          "image": "chronomancy_passjpn.jpg",
+          "description": "Reduces the cooldown of allied family members",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "90 sec.",
+          "duration": "1.13 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "800",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Fully reset cooldowns of an ally"
+            },
+            {
+              "level": "Level 10",
+              "value": "Fully reset cooldowns of an ally"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 7% of extra [INT]",
+        "[PVP/PVE Maps] Additional 2% DMG according to extra [INT]",
+        "Ignore additional RES according to extra [INT] * 2",
+        "Additional DMG against Monster according to 5 * 50"
+      ],
+      "equipped_items": "Rod",
+      "icon_position": {
+        "x": -500,
+        "y": -250
+      }
+    }
+  ]
+}

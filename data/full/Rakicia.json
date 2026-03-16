@@ -1,0 +1,275 @@
+{
+  "slug": "Rakicia",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Absinian Warrior",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Robe Leather",
+    "costume": "None",
+    "gloves": "Gloves",
+    "ring": "Ring",
+    "weapon_costume": "Kiberiti Kiberiti (Event)",
+    "belt": "Belt",
+    "shoes": "Shoes",
+    "artifact": "Tattoo Design",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Weza",
+    "image": "job_Weza.jpg",
+    "description": "Use the power of Absinias traditional witchcraft tattoo Weza to increase your magical powers.",
+    "target": "Self-buff",
+    "casting_time": "0 sec.",
+    "cooldown": "10 sec.",
+    "duration": "1.6 sec.",
+    "sp_cost": "300",
+    "consume_item": "Ancient Star Orb × 10",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration: 600 seconds",
+          "Normal attack damage increases according to [Scald], [Perilune], [Burning Moon], [Taabu] buff on enemy",
+          "ATK against monsters +50%",
+          "Fire PEN +15",
+          "Casting Time -50%",
+          "A.R. +1"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Mganga Babaka",
+      "equipped_items": "Great Sword",
+      "icon_position": {
+        "x": -200,
+        "y": -250
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Mganga Babaka",
+      "info": {
+        "Targets": "6 enemies",
+        "Range": "1.5m away",
+        "Splash": "1.5 DMG within  3m range",
+        "Hits per attack": "3",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "-10%",
+        "Shooting DMG": "-10%"
+      },
+      "stats": {
+        "ASPD": "237",
+        "Bonus ATK": "300%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "10",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "Penetration": "5+20",
+        "Immunity": "10+10"
+      },
+      "skills": [
+        {
+          "name": "Ripuka",
+          "image": "MggBbk_Lipuka.jpg",
+          "description": "Magically charge the sword with magic and prepare it to breathe fire at any time.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "300 seconds",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "300",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 300 seconds"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Chando",
+          "image": "MggBbk_jeneralichando.jpg",
+          "description": "Shoot fire after swinging the great sword.",
+          "target": "Up to 4 enemies, 8m ahead and within a 4m range",
+          "casting_time": "Instant",
+          "cooldown": "3.5 sec.",
+          "duration": "1.766 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "300",
+          "aggro": "50",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 987.3%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1974%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Kaji Rahishi",
+          "image": "MggBbk_kajirahisi.jpg",
+          "description": "Create a fireball quickly, then throw it at the enemy.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "1.066 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "81",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 723.4%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1446%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Pania Uwanda",
+          "image": "MggBbk_paniauwanda.jpg",
+          "description": "Incinerate the ground with fire magic and draw the enemy towards you.",
+          "target": "",
+          "casting_time": "1.033 sec.",
+          "cooldown": "20 sec.",
+          "duration": "2.6 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "650",
+          "aggro": "91",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1778.9%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3557%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Amagimwi",
+          "image": "MggBbk_amazimuwi.jpg",
+          "description": "Create a huge sword with fire magic, devastating the area ahead.",
+          "target": "Up to 8 enemies, 16m ahead and within a 8m range",
+          "casting_time": "2.033 sec.",
+          "cooldown": "25 sec.",
+          "duration": "2.366 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "750",
+          "aggro": "130",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1822.5%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3645%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 10% of extra [STR]",
+        "[PVP/PVE Maps] Additional 2% DMG according to extra [STR]",
+        "Ignore additional DEF according to extra [STR] * 3",
+        "Ignore additional RES according to extra [STR] * 3"
+      ],
+      "equipped_items": "Great Sword",
+      "icon_position": {
+        "x": -200,
+        "y": -250
+      }
+    }
+  ]
+}

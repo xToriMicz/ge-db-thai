@@ -1,0 +1,283 @@
+{
+  "slug": "Bane",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Outlaw of the Ocean",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Leather",
+    "costume": "None",
+    "gloves": "Gloves Leather",
+    "ring": "Ring",
+    "weapon_costume": "Event Demolition Roar of Spirit Costume Demolition Roar of Spirit Costume",
+    "belt": "Belt Leather",
+    "shoes": "Shoes Leather",
+    "artifact": "Golden Compass",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Killer Instinct",
+    "image": "job_killerinstinct.jpg",
+    "description": "With a born instinct to overcome his adverse circumstances.",
+    "target": "Self-buff",
+    "casting_time": "0 sec.",
+    "cooldown": "30 sec.",
+    "duration": "2.033 sec.",
+    "sp_cost": "750",
+    "consume_item": "Ancient Star Orb × 2",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration : 300 sec.",
+          "Attack damage +40%(Max 200%) for each -10% of HP from Max HP",
+          "Attack damage -10%(Max 30%) for each -10% of HP from Max HP",
+          "A.R.+1"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Combative",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Demolition Roar",
+      "equipped_items": "Fire Bracelet",
+      "icon_position": {
+        "x": -450,
+        "y": -375
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Combative",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "4",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "187",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Demolition Roar",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "4",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "-10%",
+        "Shooting DMG": "+10%",
+        "Magical DMG": "-15%"
+      },
+      "stats": {
+        "ASPD": "187",
+        "Bonus ATK": "300%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "5",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "Evasion": "+10",
+        "Penetration": "10+25",
+        "Immunity": "5+15"
+      },
+      "skills": [
+        {
+          "name": "Blow Cannon",
+          "image": "dem_burstshot.jpg",
+          "description": "The shells are made of a flame, such as a magic cannon to blow the enemy. It attacks enemies with his fist in the distance.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "5 sec.",
+          "duration": "2.033 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "50",
+          "aggro": "30",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Flame Protection",
+          "image": "dem_flameprotection.jpg",
+          "description": "With wrapping flames around himself, it increases DEF ability. When changes the stance, it will be canceled.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "2.533 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "250",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 30 sec."
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 300 sec."
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration : 330 sec."
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration : 360 sec."
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration : 390 sec."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Flame Rush",
+          "image": "dem_flamerush.jpg",
+          "description": "Quickly rushes forward and pushes the enemy with causing flame to the ground.",
+          "target": "Up to 6 enemies 12m away and within 6m",
+          "casting_time": "0.866 sec.",
+          "cooldown": "5 sec.",
+          "duration": "2.1 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "81",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Lava Extrusion",
+          "image": "dem_lavaextrusion.jpg",
+          "description": "It struck down hard to the ground and attack enemies by spewing lava around.",
+          "target": "Up to 8 enemies within a range of 6m",
+          "casting_time": "1 sec.",
+          "cooldown": "18 sec.",
+          "duration": "3.7 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "400",
+          "aggro": "150",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2400%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4800%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Adios",
+          "image": "dem_adios.jpg",
+          "description": "It bounced lightly with his finger ignited the flame which condense lava, and gives eternal farewell greetings to enemies.",
+          "target": "Up to 8 enemies within a range of 8m",
+          "casting_time": "Instant",
+          "cooldown": "40 sec.",
+          "duration": "5.033 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "800",
+          "aggro": "245",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 3000%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 6000%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [INT]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [INT]",
+        "Ignore additional RES according to extra [INT] * 4",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Fire Bracelet",
+      "icon_position": {
+        "x": -450,
+        "y": -375
+      }
+    }
+  ]
+}

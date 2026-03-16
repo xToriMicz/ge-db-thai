@@ -1,0 +1,284 @@
+{
+  "slug": "Claret",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "I havent been charged with a crime yet",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Robe",
+    "costume": "None",
+    "gloves": "Gloves",
+    "ring": "Ring",
+    "weapon_costume": "Majestas Majestas (Event)",
+    "belt": "Belt",
+    "shoes": "Shoes",
+    "artifact": "Indicatore",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Versione",
+    "image": "job_versione.jpg",
+    "description": "Draw upon your divine power and prepare for battle.",
+    "target": "All allies within the range of 8m",
+    "casting_time": "0 sec.",
+    "cooldown": "25 sec.",
+    "duration": "1.333 sec.",
+    "sp_cost": "250",
+    "consume_item": "Ancient Star Orb × 10",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration: 300 seconds",
+          "Attack rating +1",
+          "Attack power +30%",
+          "Attack power against monsters +50%",
+          "Psychic penetration +20",
+          "Skill damage to monsters increases by up to 2.5 times in proportion to additional [Intelligence] (maximum 100)"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Puricia",
+      "equipped_items": "Staff",
+      "icon_position": {
+        "x": -350,
+        "y": -175
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Puricia",
+      "info": {
+        "Targets": "3 enemies",
+        "Range": "0.5~10m away",
+        "Splash": "100% DMG within  2m range",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "-10%",
+        "Shooting DMG": "+10%",
+        "Magical DMG": "-10%",
+        "Debuff RES": "-20%"
+      },
+      "stats": {
+        "ASPD": "157",
+        "Bonus ATK": "490%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+8%",
+        "Penetration": "10+20",
+        "Immunity": "5+10"
+      },
+      "skills": [
+        {
+          "name": "Venecuccio",
+          "image": "pria_benecuzio.jpg",
+          "description": "Prayer spreads holy energy to allies.",
+          "target": "",
+          "casting_time": "1.066 sec.",
+          "cooldown": "30 sec.",
+          "duration": "1.6 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "450",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "A.R. +1"
+            },
+            {
+              "level": "Level 10",
+              "value": "A.R. +1"
+            },
+            {
+              "level": "Level 11",
+              "value": "A.R. +1"
+            },
+            {
+              "level": "Level 12",
+              "value": "A.R. +1"
+            },
+            {
+              "level": "Level 13",
+              "value": "A.R. +1"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Portenza",
+          "image": "pria_fortenza.jpg",
+          "description": "Concentrates divine power at a designated point and then detonates it.",
+          "target": "",
+          "casting_time": "1.366 sec.",
+          "cooldown": "6 sec.",
+          "duration": "1.466 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "250",
+          "aggro": "30",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1850%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3700%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Sacrion",
+          "image": "pria_sacrion.jpg",
+          "description": "Spreads divine energy to a designated location, binding enemies feet.",
+          "target": "",
+          "casting_time": "1.666 sec.",
+          "cooldown": "30 sec.",
+          "duration": "1.266 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "670",
+          "aggro": "30",
+          "skill_type": "BUILD2",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "When cast, creates a sanctuary that lasts for 30 seconds in the range"
+            },
+            {
+              "level": "Level 10",
+              "value": "When cast, creates a sanctuary that lasts for 30 seconds in the range"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Caccia di Colpa",
+          "image": "pria_cacciadicolpa.jpg",
+          "description": "Fires a powerful blast of divine power at enemies in front.",
+          "target": "Up to 12 enemies within a 16m front x 7m wide range",
+          "casting_time": "2.566 sec.",
+          "cooldown": "8 sec.",
+          "duration": "2.333 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "520",
+          "aggro": "60",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2260%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4520%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Sekier",
+          "image": "pria_sekier.jpg",
+          "description": "Passes sentence on enemies in the surrounding area.",
+          "target": "Up to 15 enemies within 12m",
+          "casting_time": "2.666 sec.",
+          "cooldown": "25 sec.",
+          "duration": "3.1 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "800",
+          "aggro": "100",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 3240%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 6480%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[PVP/PVE Maps] Additional 4% DMG according to extra []",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Staff",
+      "icon_position": {
+        "x": -350,
+        "y": -175
+      }
+    }
+  ]
+}

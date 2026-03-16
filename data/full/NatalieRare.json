@@ -1,0 +1,273 @@
+{
+  "slug": "NatalieRare",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "None",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Coat Leather",
+    "costume": "None",
+    "gloves": "Gloves Leather",
+    "ring": "Ring",
+    "weapon_costume": "None",
+    "belt": "Belt Leather",
+    "shoes": "Shoes Leather",
+    "artifact": "Primus",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Vestige of Shadows",
+    "image": "job_vestige.jpg",
+    "description": "Natalie succumbed to her despair from the loss of Ophelia and Melissa. Her alter ego is ruthless.",
+    "target": "My character 8m away.",
+    "casting_time": "0 sec.",
+    "cooldown": "25 sec.",
+    "duration": "2.1 sec.",
+    "sp_cost": "100",
+    "consume_item": "Ancient Star Orb × 5",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "A.R. +1",
+          "ATK +30%",
+          "PEN +10",
+          "Chance to apply [Inhibiting Darkness] to enemy",
+          "Skill and attack have 10% chance to allow [Banshee Natalie] to evade all attack completely."
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Tactical Shot",
+      "equipped_items": "Rifle",
+      "icon_position": {
+        "x": -500,
+        "y": -375
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Tactical Shot",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.75~15m away",
+        "Splash": "None",
+        "Hits per attack": "3",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Magical DMG": "-25%"
+      },
+      "stats": {
+        "ASPD": "190",
+        "Bonus ATK": "245%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "30",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+15%",
+        "Ignore DEF": "+10%",
+        "Critical": "+15",
+        "Penetration": "5+20",
+        "Immunity": "10"
+      },
+      "skills": [
+        {
+          "name": "Point Blank",
+          "image": "ts_pointb.jpg",
+          "description": "Without aiming, it fires at the closest enemy.",
+          "target": "1 enemy within a range of 14m",
+          "casting_time": "Instant",
+          "cooldown": "7 sec.",
+          "duration": "1.166 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "280",
+          "aggro": "60",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Ricochet",
+          "image": "ts_ricochet.jpg",
+          "description": "By firing bullets to the ground, it attacks from unpredictable directions.",
+          "target": "Up to 7 enemies 1m ~ 12m away and within a 6m radius",
+          "casting_time": "0.667 sec.",
+          "cooldown": "12 sec.",
+          "duration": "2.434 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "100",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Suppressive Fire",
+          "image": "ts_suppressivefire.jpg",
+          "description": "After firing suppressively, and protect allies. It will trun battle to advantage.",
+          "target": "Up to 12 enemies 18m away and at an angle of 40 degrees",
+          "casting_time": "2 sec.",
+          "cooldown": "30 sec.",
+          "duration": "20 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "450",
+          "aggro": "195",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 900%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1800%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Deliberate Shot",
+          "image": "ts_deliberateshot.jpg",
+          "description": "It focused on the goal in front and fired a powerful shot.",
+          "target": "",
+          "casting_time": "5 sec.",
+          "cooldown": "18 sec.",
+          "duration": "1.334 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "580",
+          "aggro": "34",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Ophelia Melissa",
+          "image": "ts_opheliamelissa.jpg",
+          "description": "By firing a pistol filled with the spirit of Ophelia Melissa, annihilates all the enemies.",
+          "target": "Up to 10 enemies within a range of 9m",
+          "casting_time": "2.9 sec.",
+          "cooldown": "50 sec.",
+          "duration": "Permanent",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "680",
+          "aggro": "59",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 3000%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 6000%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [DEX]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [DEX]",
+        "Ignore additional DEF according to extra [DEX] * 3",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Rifle",
+      "icon_position": {
+        "x": -500,
+        "y": -375
+      }
+    }
+  ]
+}

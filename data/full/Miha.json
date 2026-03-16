@@ -1,0 +1,274 @@
+{
+  "slug": "Miha",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Nine Tails The Void",
+    "head": "None",
+    "earring": "Earring",
+    "face": "Glasses of Honor _ Butler Event Glasses of Honor - Butler",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Leather",
+    "costume": "None",
+    "gloves": "Gloves Leather",
+    "ring": "Ring",
+    "weapon_costume": "Essence of Cuberic Spirit of Cuberic Essence of Cuberic (Event) Spirit of Cuberic (Event)",
+    "belt": "Belt Leather",
+    "shoes": "Shoes Leather",
+    "artifact": "Ice Fox Statue Spirit of Fox",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Spirit of Fox",
+    "image": "job_spiritfox.jpg",
+    "description": "Ready to fight by using Spirit of Fox.",
+    "target": "Self-buff",
+    "casting_time": "0 sec.",
+    "cooldown": "20 sec.",
+    "duration": "1.8 sec.",
+    "sp_cost": "200",
+    "consume_item": "Ancient Star Orb × 5",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration: 300sec.",
+          "A.R.+1",
+          "DEF+10",
+          "INT+5",
+          "Move SPD/Move SPD Limit+30%",
+          "Normal attack accuracy imposes [Mark, Spirit] on enemy."
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Nine Tails",
+      "equipped_items": "Special Bracelet",
+      "icon_position": {
+        "x": -50,
+        "y": -175
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Nine Tails",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "4",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "-20%",
+        "Shooting DMG": "+10%",
+        "Magical DMG": "-10%",
+        "Debuff RES": "-20%"
+      },
+      "stats": {
+        "ASPD": "187",
+        "Bonus ATK": "220%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "5",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "Evasion": "+10",
+        "Penetration": "10+15",
+        "Immunity": "5+15"
+      },
+      "skills": [
+        {
+          "name": "Fox Form",
+          "image": "nth_foxfoam.jpg",
+          "description": "Draws the suppressed wild nature of fox to go reckless by absorbing [Fox Bead].",
+          "target": "Up to 7 enemies within a range of 12m",
+          "casting_time": "Instant",
+          "cooldown": "30 sec.",
+          "duration": "360 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "750",
+          "aggro": "0",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Nine Pro-port",
+          "image": "nth_ninefroport.jpg",
+          "description": "Jumps up to the close enemy and smash down on it.",
+          "target": "Up to 3 adjacent enemies",
+          "casting_time": "Instant",
+          "cooldown": "12 sec.",
+          "duration": "2.23 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "560",
+          "aggro": "342",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1600%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3200%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Flame Fox",
+          "image": "nth_flamefox.jpg",
+          "description": "Rushes to the specified target and creates flame.",
+          "target": "Up to 6 enemies 12m away and within 6m",
+          "casting_time": "0.7 sec.",
+          "cooldown": "18 sec.",
+          "duration": "2 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "81",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Fox Tribinal",
+          "image": "nth_foxtribinal.jpg",
+          "description": "Beats the enemy with the fist quickly and blows it away with a spinning kick, while advancing gradually.",
+          "target": "Up to 3 adjacent enemies",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "3.3 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "440",
+          "aggro": "342",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Fox Rampage",
+          "image": "nth_foxrampage.jpg",
+          "description": "Dashes to the enemy to strike its killing part and blow it away.",
+          "target": "Up to 5 enemies Max 9m away",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "2.23 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "560",
+          "aggro": "342",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2600%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5200%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [INT]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [INT]",
+        "Ignore additional RES according to extra [INT] * 4",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Special Bracelet",
+      "icon_position": {
+        "x": -50,
+        "y": -175
+      }
+    }
+  ]
+}

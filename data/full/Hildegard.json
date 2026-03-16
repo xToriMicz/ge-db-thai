@@ -1,0 +1,291 @@
+{
+  "slug": "Hildegard",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Blessing of Archbishop",
+    "head": "None",
+    "earring": "Earring",
+    "face": "Brown Bowing Sunglasses Event Brown Bowing Sunglasses",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Leather",
+    "costume": "None",
+    "gloves": "Gloves Leather",
+    "ring": "Ring",
+    "weapon_costume": "Saint Gloriel Saint Gloriel (Event)",
+    "belt": "Belt Leather",
+    "shoes": "Shoes Leather",
+    "artifact": "Archbishops Ring",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Menesis",
+    "image": "clb_manicis.jpg",
+    "description": "Intake holy aura into ones body to enhanced punching strength/nApplies [Inulnerable] upon successful hit against target with [Squashed Armor] Lv. 3",
+    "target": "Self-Buff",
+    "casting_time": "0 sec.",
+    "cooldown": "50 sec.",
+    "duration": "0.5 sec.",
+    "sp_cost": "600",
+    "consume_item": "Ancient Star Orb × 10",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration: 300 seconds",
+          "D.R. +1",
+          "DEF +20",
+          "IMM +20",
+          "Ignores all damage except from normal attacks",
+          "Applies [Deviated Grace] upon successful skill hit",
+          "A.R.+1, ATK+25%",
+          "Monster ATK +300%",
+          "PEN +20",
+          "Normal Attack Damage increases in proportion to [INT]",
+          "[PvE Maps] The sanctuary will follow Hildegard",
+          "[PvP Maps] The sanctuary disappears when Hildegard is more than 12m away from it"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Clabuster",
+      "equipped_items": "Book",
+      "icon_position": {
+        "x": -100,
+        "y": -100
+      }
+    },
+    {
+      "stance_name": "Clabuster",
+      "equipped_items": "Book + Arm Shield",
+      "icon_position": {
+        "x": -100,
+        "y": -100
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Clabuster",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1.5m away",
+        "Splash": "None",
+        "Hits per attack": "4",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "-10%",
+        "Shooting DMG": "+10%",
+        "Magical DMG": "-10%",
+        "Debuff Chance": "+20%"
+      },
+      "stats": {
+        "ASPD": "187",
+        "Bonus ATK": "220%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "20",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+25%",
+        "Block": "+15",
+        "Critical": "+15",
+        "Penetration": "5+25",
+        "Immunity": "5+25"
+      },
+      "skills": [
+        {
+          "name": "Spin Uriela",
+          "image": "clb_spinuriella.jpg",
+          "description": "Comes closer to the target to strike its weakness and then throws it into the air.",
+          "target": "3 enemies 9m away and within a 3m radius",
+          "casting_time": "Instant",
+          "cooldown": "8 sec.",
+          "duration": "1.76 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "560",
+          "aggro": "342",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Counter-buster",
+          "image": "clb_countbuster.jpg",
+          "description": "Quickly dashes towards the designated area to strike the enemy.",
+          "target": "6 enemies 12m away and within a 5m radius",
+          "casting_time": "0.4 sec.",
+          "cooldown": "25 sec.",
+          "duration": "1.2 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "1050",
+          "aggro": "120",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Upper Slicer",
+          "image": "clb_upperxlicer.jpg",
+          "description": "Throw a nearby enemy into the air and then make it crash into the ground.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "1.8 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "820",
+          "aggro": "132",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2400%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4800%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Colossus Break",
+          "image": "clb_colossusbreak.jpg",
+          "description": "Throws a nearby enemy away after consecutive attacks.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "17 sec.",
+          "duration": "2.37 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "1150",
+          "aggro": "132",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2600%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5200%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Divine Blast",
+          "image": "clb_divineblest.jpg",
+          "description": "Quickly dashes to the target and throws it away with a powerful blow.",
+          "target": "3 enemies 5m away and within a 3m radius",
+          "casting_time": "Instant",
+          "cooldown": "23 sec.",
+          "duration": "1.67 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "980",
+          "aggro": "342",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2440%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4880%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [INT]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [INT]",
+        "Ignore additional DEF according to extra [INT] * 3",
+        "Ignore additional RES according to extra [INT] * 3",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Book",
+      "icon_position": {
+        "x": -100,
+        "y": -100
+      }
+    }
+  ]
+}

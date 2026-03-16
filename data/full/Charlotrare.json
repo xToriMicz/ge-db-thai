@@ -1,0 +1,643 @@
+{
+  "slug": "Charlotrare",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Surveillant of Star Wow~ Its Summer!",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Coat Leather",
+    "costume": "None",
+    "gloves": "Gloves Leather",
+    "ring": "Ring",
+    "weapon_costume": "Queen of Flame Queen of Flame (Event) Event Demolition Roar of Spirit Costume Demolition Roar of Spirit Costume [Costume] Charlottes Smile [Costume] Charlottes Sharpness [Costume] Charlottes Patience [Costume] Charlottes Raid [Costume] Charlottes Agony [Costume] Charlottes Passion [Costume] Charlottes Faith",
+    "belt": "Belt Leather",
+    "shoes": "Shoes Leather",
+    "artifact": "Ruby of Red Flame",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Dioses",
+    "image": "job_diosa.jpg",
+    "description": "Combat ability enhanced by awakening dormant Fire Elemental power.",
+    "target": "Self-buff",
+    "casting_time": "0 sec.",
+    "cooldown": "30 sec.",
+    "duration": "1.47 sec.",
+    "sp_cost": "750",
+    "consume_item": "Ancient Star Orb × 2",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration: 300 sec.",
+          "A.R.+1",
+          "ATK +30%",
+          "Monster ATK +300%",
+          "All Stats +5",
+          "Immunity+5",
+          "Casting time -10%"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Flame Roar",
+      "equipped_items": "Fire Bracelet",
+      "icon_position": {
+        "x": -100,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Lama",
+      "equipped_items": "Fire Bracelet",
+      "icon_position": {
+        "x": -100,
+        "y": -25
+      }
+    },
+    {
+      "stance_name": "Helios",
+      "equipped_items": "Fire Bracelet",
+      "icon_position": {
+        "x": -500,
+        "y": -325
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Flame Roar",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "4",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "-10%",
+        "Shooting DMG": "+10%",
+        "Magical DMG": "-15%"
+      },
+      "stats": {
+        "ASPD": "187",
+        "Bonus ATK": "230%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "Penetration": "10+15",
+        "Immunity": "5+15"
+      },
+      "skills": [
+        {
+          "name": "Flame Suit",
+          "image": "fll_flameshoot.jpg",
+          "description": "Fires fragments of Fire toward the target by kicking.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "5 sec.",
+          "duration": "2.033 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "50",
+          "aggro": "30",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Flame Booster",
+          "image": "fll_flamebooster.jpg",
+          "description": "Uses powerful Fire Magic dexterously by winding fire on her body.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "390 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "250",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 30 sec."
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 300 sec."
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 330 sec."
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 360 sec."
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 390 sec."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Lava Strike",
+          "image": "fll_lavastrike.jpg",
+          "description": "Rushes forward and creates a path full of flames.",
+          "target": "Up to 6 enemies 12m away and within 6m",
+          "casting_time": "0.866 sec.",
+          "cooldown": "5 sec.",
+          "duration": "2.1 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "81",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2000%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Flame Extrusion",
+          "image": "fll_flameextrusion.jpg",
+          "description": "Defeats surrounding enemies by emitting holy power.",
+          "target": "Up to 8 enemies within a range of 6m",
+          "casting_time": "1 sec.",
+          "cooldown": "15 sec.",
+          "duration": "3.7 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "400",
+          "aggro": "150",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 3000%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 6000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Magma Roar",
+          "image": "fll_magmaroar.jpg",
+          "description": "Wipes out nearby enemies by causing powerful flame explosion.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "30 sec.",
+          "duration": "5.033 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "800",
+          "aggro": "245",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 3000%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 6000%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [INT]",
+        "[PVP/PVE Maps] Additional 5% DMG according to extra [INT]",
+        "Ignore additional RES according to extra [INT] * 3",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 5 * 50"
+      ],
+      "equipped_items": "Fire Bracelet",
+      "icon_position": {
+        "x": -100,
+        "y": 0
+      }
+    },
+    {
+      "name": "Lama",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "11m away",
+        "Splash": "None",
+        "Hits per attack": "4",
+        "Hits flying": "Yes",
+        "Flying": "Yes",
+        "Regenerate SP": "No",
+        "Physical DMG": "-10%",
+        "Shooting DMG": "+20%",
+        "Magical DMG": "-15%"
+      },
+      "stats": {
+        "ASPD": "187",
+        "Bonus ATK": "220%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "Penetration": "5+25",
+        "Immunity": "15"
+      },
+      "skills": [
+        {
+          "name": "Lama-El",
+          "image": "lam_ramael.jpg",
+          "description": "Detonates the designated area by causing a magma division.",
+          "target": "Up to 3 enemies 6m away and within a 3m radius",
+          "casting_time": "Instant",
+          "cooldown": "9 sec.",
+          "duration": "1.37 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "50",
+          "aggro": "30",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1900%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3800%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Volcanic Marcha",
+          "image": "lam_Volcanicmarsha.jpg",
+          "description": "Causes successive explosions on the designated ground by causing a magma division.",
+          "target": "Up to 5 enemies 12m away and within a 4m radius",
+          "casting_time": "2.07 sec.",
+          "cooldown": "5 sec.",
+          "duration": "2 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "650",
+          "aggro": "180",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2300%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Magma Explosion",
+          "image": "lam_magmaxplosion.jpg",
+          "description": "Shoots consecutive fireballs towards the specified target.",
+          "target": "1 enemy within a range of 17m",
+          "casting_time": "2.3 sec.",
+          "cooldown": "3.5 sec.",
+          "duration": "1.2 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "500",
+          "aggro": "150",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2600%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5200%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Hall of Flame",
+          "image": "lam_holeofflame.jpg",
+          "description": "Cause a lava explosion by stomping on the ground beneath you.",
+          "target": "Up to 12 enemies within a range of 9m",
+          "casting_time": "1.8 sec.",
+          "cooldown": "25 sec.",
+          "duration": "2.43 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "1000",
+          "aggro": "200",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 3000%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 6000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Caida",
+          "image": "lam_kaida.jpg",
+          "description": "Burns the designated area with hot flames.",
+          "target": "Up to 6 enemies 6m away and within a 4m radius",
+          "casting_time": "Instant",
+          "cooldown": "18 sec.",
+          "duration": "1.87 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "1000",
+          "aggro": "120",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 3000%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 6000%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [INT]",
+        "[PVP/PVE Maps] Additional 5% DMG according to extra [INT]",
+        "Ignore additional RES according to extra [INT] * 3",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 5 * 50"
+      ],
+      "equipped_items": "Fire Bracelet",
+      "icon_position": {
+        "x": -100,
+        "y": -25
+      }
+    },
+    {
+      "name": "Helios",
+      "info": {
+        "Targets": "6 enemies",
+        "Range": "0.5~11m away",
+        "Splash": "100% DMG within  5m range",
+        "Hits per attack": "2",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Shooting DMG": "+10%",
+        "Magical DMG": "-10%",
+        "Debuff RES": "-10%"
+      },
+      "stats": {
+        "ASPD": "153",
+        "Bonus ATK": "360%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "50",
+        "Ice RES": "10",
+        "Lightning RES": "30",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+5%",
+        "Penetration": "15+25"
+      },
+      "skills": [
+        {
+          "name": "Pyroclasm",
+          "image": "helios_pyroclasm.jpg",
+          "description": "Unleash a catastrophic eruption of fiery energy, dealing massive area damage that engulfs enemies with a wave of intense heat.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "12 sec.",
+          "duration": "2.1 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "550",
+          "aggro": "197",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Ashen Flame",
+          "image": "helios_ashenflame.jpg",
+          "description": "Cast a mystical flame that empowers oneself with the ashes of fallen foes.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "300s",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "350",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 300s"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 300s"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Flame Vortex",
+          "image": "helios_flamevortex.jpg",
+          "description": "Summon a swirling vortex of flames at a target location that pulls in nearby enemies.",
+          "target": "",
+          "casting_time": "2.1 sec.",
+          "cooldown": "12 sec.",
+          "duration": "4.008 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "600",
+          "aggro": "221",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1400%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2800%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Aetherial Cannon",
+          "image": "helios_aethercannon.jpg",
+          "description": "Harness the power of burning aether to launch a concentrated blast of energy.",
+          "target": "Up to 8 enemies 14m away and within a 4m radius",
+          "casting_time": "3 sec.",
+          "cooldown": "18 sec.",
+          "duration": "1.5 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "350",
+          "aggro": "60",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1230%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2460%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Rise from the Ashes",
+          "image": "helios_riseofashes.jpg",
+          "description": "Channel the phoenixs resilience, reviving fallen allies and restoring a portion of HP/SP. Applies [Rebirth Immolation] to alive allies.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "30 sec.",
+          "duration": "4.933 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "10000",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Consumes 50,000 HP"
+            },
+            {
+              "level": "Level 10",
+              "value": "Consumes 50,000 HP"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [INT]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [INT]",
+        "Ignore additional RES according to extra [INT] * 4",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Fire Bracelet",
+      "icon_position": {
+        "x": -500,
+        "y": -325
+      }
+    }
+  ]
+}

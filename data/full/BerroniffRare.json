@@ -1,0 +1,648 @@
+{
+  "slug": "BerroniffRare",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Imperial Alchemy Honorary Ailys Investigator",
+    "head": "None",
+    "earring": "Earring",
+    "face": "Chief Alchemists Glasses 2024 BerroniffRare Book And Bed Reading Glasses event 2024 2024 BerroniffRare Book And Bed Reading Glasses",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Coat Robe",
+    "costume": "None",
+    "gloves": "Gloves",
+    "ring": "Ring",
+    "weapon_costume": "Introduction to Alchemy Introduction to Alchemy for Events",
+    "belt": "Belt",
+    "shoes": "Shoes",
+    "artifact": "Veronifs Crystal Ball",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Alchemic Strengthening",
+    "image": "job_imperialalchemist2.jpg",
+    "description": "Strengthen yourself through imperial alchemy and treat the various ailments of your teammates.",
+    "target": "None",
+    "casting_time": "1.533 sec.",
+    "cooldown": "30 sec.",
+    "duration": "1.766 sec.",
+    "sp_cost": "500",
+    "consume_item": "Ancient Star Orb × 15",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration: 300 seconds",
+          "Removes all of [Imperial Alchemist Veronif]s exclusive debuffs applied (except for [Plague])",
+          "Removes [Burn], [Electric Shock], [Freezing], [Petrification], [Mortal Wound]",
+          "Applies [Alchemic Strengthening] to team: A.R. +1, ATK +20%, Casting time -10%, Attribute Penetration +10",
+          "Applies [Miracle], [Shearing Booster] and [Protecting Booster] to team"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Imperial Hermetisme",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -300,
+        "y": -25
+      }
+    },
+    {
+      "stance_name": "Imperial Hermetisme",
+      "equipped_items": "Book",
+      "icon_position": {
+        "x": -300,
+        "y": -25
+      }
+    },
+    {
+      "stance_name": "Elemental Alchemy",
+      "equipped_items": "Book",
+      "icon_position": {
+        "x": -300,
+        "y": -50
+      }
+    },
+    {
+      "stance_name": "Ancient Ray",
+      "equipped_items": "Book",
+      "icon_position": {
+        "x": -200,
+        "y": -400
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Imperial Hermetisme",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.1~8m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "-15%",
+        "Shooting DMG": "+15%"
+      },
+      "stats": {
+        "ASPD": "170",
+        "Bonus ATK": "350%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "30",
+        "Ice RES": "30",
+        "Lightning RES": "30",
+        "Abnormal RES": "30"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+3%",
+        "Penetration": "5+25",
+        "Immunity": "5+10"
+      },
+      "skills": [
+        {
+          "name": "Slowdown Field",
+          "image": "ihmts_slowdownfield.jpg",
+          "description": "Uses powerful alchemy to attack enemies and slow them down.",
+          "target": "",
+          "casting_time": "2.066 sec.",
+          "cooldown": "20 sec.",
+          "duration": "1.9 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "300",
+          "aggro": "80",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Blazing Field",
+          "image": "ihmts_blazefield.jpg",
+          "description": "Uses powerful alchemy to attack enemies with the fire attribute and reduce their defense performance.",
+          "target": "",
+          "casting_time": "2.533 sec.",
+          "cooldown": "25 sec.",
+          "duration": "1.533 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "80",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Ice Field",
+          "image": "ihmts_icefield.jpg",
+          "description": "Uses powerful alchemy to attack enemies with the ice attribute and restrict their actions.",
+          "target": "",
+          "casting_time": "2.066 sec.",
+          "cooldown": "25 sec.",
+          "duration": "1.9 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "800",
+          "aggro": "80",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2400%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4800%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Epidemic Field",
+          "image": "ihmts_epoidemicfield.jpg",
+          "description": "Uses powerful alchemy to cause a highly contagious epidemic in enemies.",
+          "target": "",
+          "casting_time": "2.533 sec.",
+          "cooldown": "30 sec.",
+          "duration": "1.533 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "1000",
+          "aggro": "160",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2600%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5200%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Imperial Protection",
+          "image": "ihmts_imperialprotection.jpg",
+          "description": "Consumes Ancient Star Orb x 20",
+          "target": "Up to 24 allies within 8m",
+          "casting_time": "2.366 sec.",
+          "cooldown": "30 sec.",
+          "duration": "300 seconds",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "1050",
+          "aggro": "50",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 300 seconds"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [INT]",
+        "Ignore additional RES according to extra [INT] * 2",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -300,
+        "y": -25
+      }
+    },
+    {
+      "name": "Elemental Alchemy",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.1~10m away",
+        "Splash": "None",
+        "Hits per attack": "3",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "-10%",
+        "Shooting DMG": "+20%",
+        "Debuff RES": "-10%"
+      },
+      "stats": {
+        "ASPD": "203",
+        "Bonus ATK": "300%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "40",
+        "Ice RES": "40",
+        "Lightning RES": "40",
+        "Abnormal RES": "40"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+5%",
+        "Penetration": "10+15",
+        "Immunity": "10+10",
+        "DEF": "5"
+      },
+      "skills": [
+        {
+          "name": "Crea",
+          "image": "ela_crear.jpg",
+          "description": "Quickly creates a homunculus through alchemy to assist you.",
+          "target": "Up to 3 can be summoned",
+          "casting_time": "2.533 sec.",
+          "cooldown": "25 sec.",
+          "duration": "0.967 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "800",
+          "aggro": "300",
+          "skill_type": "Build",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Up to 3 can be summoned"
+            },
+            {
+              "level": "Level 10",
+              "value": "Up to 3 can be summoned"
+            }
+          ],
+          "special": [
+            "Additional bonuses to certain stats in proportion to total [",
+            "Additional bonuses to certain stats in proportion to total ["
+          ]
+        },
+        {
+          "name": "Lightning Roar",
+          "image": "ela_roarerlightning.jpg",
+          "description": "Releases the power of lightning through the crystal ball to attack enemies. Strengthens the lightning attribute of the homunculus with accurate use.",
+          "target": "",
+          "casting_time": "1.033 sec.",
+          "cooldown": "20 sec.",
+          "duration": "1.933 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "150",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Rapid Freezing",
+          "image": "ela_quickfreezing.jpg",
+          "description": "Draws the power of ice from the crystal ball to rapidly freeze enemies. Strengthens the ice attribute of the homunculus with accurate use.",
+          "target": "",
+          "casting_time": "1.467 sec.",
+          "cooldown": "25 sec.",
+          "duration": "1.77 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "800",
+          "aggro": "150",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2900%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5800%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Passing Flames",
+          "image": "ela_pathoffire.jpg",
+          "description": "Emits the power of fire through the crystal ball and attacks enemies. Strengthens the fire attribute of the homunculus with accurate use.",
+          "target": "Up to 16 enemies up to 15m ahead and within a 10m wide area",
+          "casting_time": "2 sec.",
+          "cooldown": "30 sec.",
+          "duration": "2.033 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "1250",
+          "aggro": "150",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 3000%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 6000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Genius Alchemist",
+          "image": "ela_blasting_a.jpg",
+          "description": "Increase skill level by enhancing own tactical capacity.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "35 sec.",
+          "duration": "5 seconds",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "600",
+          "aggro": "300",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 5 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 5 seconds"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [INT]",
+        "Ignore additional RES according to extra [INT] * 2",
+        "Additional DMG against Monster according to 3 * 50"
+      ],
+      "equipped_items": "Book",
+      "icon_position": {
+        "x": -300,
+        "y": -50
+      }
+    },
+    {
+      "name": "Ancient Ray",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "0 DMG within  0m range",
+        "Hits per attack": "3",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "-15%",
+        "Shooting DMG": "-10%",
+        "Magical DMG": "+15%"
+      },
+      "stats": {
+        "ASPD": "193",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "20"
+      },
+      "lv25_bonus": {
+        "Immunity": "5+20",
+        "DEF": "5"
+      },
+      "skills": [
+        {
+          "name": "Encourage",
+          "image": "aray_encourage.jpg",
+          "description": "Dramatically enhances the offensive abilities of team members. Cannot be stacked with certain buffs.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "300 seconds",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "750",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 300 seconds"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Pulsate",
+          "image": "aray_pulsate.jpg",
+          "description": "Increases the speed of the designated ally.",
+          "target": "",
+          "casting_time": "1.033 sec.",
+          "cooldown": "12 sec.",
+          "duration": "300 seconds",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "600",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 300 seconds"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Meditate",
+          "image": "aray_meditate.jpg",
+          "description": "Enhances the ATK of the designated ally according to their combat attributes.",
+          "target": "",
+          "casting_time": "1.033 sec.",
+          "cooldown": "12 sec.",
+          "duration": "300 seconds",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "600",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "Level 11"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 300 seconds"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Netherworld",
+          "image": "aray_netherworld.jpg",
+          "description": "Maximizes the offensive capabilities of the selected character by leveraging their strengths.",
+          "target": "",
+          "casting_time": "2.033 sec.",
+          "cooldown": "40 sec.",
+          "duration": "260 second",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "900",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 20 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 200 second"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 220 second"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 240 second"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 260 second"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Additional Assist",
+          "image": "aray_additionalassist.jpg",
+          "description": "Installs a tactical trap. Upon casting, reduces the cooldown of all of your characters except [Additional Assist].",
+          "target": "",
+          "casting_time": "1.2 sec.",
+          "cooldown": "45 sec.",
+          "duration": "1.533 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "1000",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Install a self-destruct trap"
+            },
+            {
+              "level": "Level 10",
+              "value": "Install a self-destruct trap"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Book",
+      "icon_position": {
+        "x": -200,
+        "y": -400
+      }
+    }
+  ]
+}

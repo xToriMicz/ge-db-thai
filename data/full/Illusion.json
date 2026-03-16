@@ -1,0 +1,583 @@
+{
+  "slug": "Illusion",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "None",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Leather",
+    "costume": "None",
+    "gloves": "Gloves Leather",
+    "ring": "Ring",
+    "weapon_costume": "None",
+    "belt": "Belt Leather",
+    "shoes": "Shoes Leather",
+    "artifact": "None",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Show Time",
+    "image": "job_showtime.jpg",
+    "description": "Become the status that can maximize the ability by the cheers from lots of spectators.",
+    "target": "Self-buff",
+    "casting_time": "0 sec.",
+    "cooldown": "20 sec.",
+    "duration": "2 sec.",
+    "sp_cost": "300",
+    "consume_item": "Ancient Star Orb × 5",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration : 300 sec.",
+          "[Show time!] buff level rises according to the number of players in the area (including yourself)",
+          "Increase in A.R., ATK, Penetration and Basic ATK Damage proportional to level",
+          "3 ~ 4 PCs : Lv.11",
+          "5 ~ 6 PCs : Lv.12",
+          "7 ~ 9 PCs : Lv.13",
+          "10 ~11 PCs : Lv.14",
+          "12 or more PCs : Lv.15",
+          "[PvE only] Skill damage increases by (4% of extra [STR])"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Epee Garde",
+      "equipped_items": "Rapier",
+      "icon_position": {
+        "x": -200,
+        "y": -25
+      }
+    },
+    {
+      "stance_name": "Sabre Garde",
+      "equipped_items": "Rapier",
+      "icon_position": {
+        "x": -50,
+        "y": -125
+      }
+    },
+    {
+      "stance_name": "Illusion Garde",
+      "equipped_items": "Rapier",
+      "icon_position": {
+        "x": -400,
+        "y": -275
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Epee Garde",
+      "info": {
+        "Targets": "2 enemies",
+        "Range": "2m away",
+        "Splash": "0.8 DMG within  1m range",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "170",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+16%",
+        "Critical": "+20"
+      },
+      "skills": [
+        {
+          "name": "Fente",
+          "image": "epe_fente.jpg",
+          "description": "A lightning-quick attack that takes enemies by surprise and pierces him deeply. It has a longer range than other stabbing attacks.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "0 sec.",
+          "duration": "1.85 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "100",
+          "aggro": "92",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 406%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 811%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Sept Etoiles",
+          "image": "epe_septetoile.jpg",
+          "description": "Rapidly pierces enemies and forces him to retreat.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "2.97 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "200",
+          "aggro": "141",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 652%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1304%"
+            }
+          ],
+          "special": [
+            "Double Damage to enemies with [",
+            "Double Damage to enemies with ["
+          ]
+        },
+        {
+          "name": "Balestra Fente",
+          "image": "epe_balestrafente.jpg",
+          "description": "An advanced form of the Fente, accompanied by a surprising leap and powerful lunge.",
+          "target": "Up to 3 enemies 5.5m away and within 3m width",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "3.03 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "250",
+          "aggro": "119",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 513%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1026%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Cent-Ennui",
+          "image": "epe_centennuyer.jpg",
+          "description": "Attacks enemies with a series of violent piercing movements.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "3.5 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "267",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1280%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2560%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Rapier",
+      "icon_position": {
+        "x": -200,
+        "y": -25
+      }
+    },
+    {
+      "name": "Sabre Garde",
+      "info": {
+        "Targets": "2 enemies",
+        "Range": "1.75m away",
+        "Splash": "0.8 DMG within  1m range",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "160",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "15",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+8%",
+        "Evasion": "+15"
+      },
+      "skills": [
+        {
+          "name": "Tete",
+          "image": "sab_tete.jpg",
+          "description": "Strikes enemies with the sword hilt before delivering a damaging slash.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "0 sec.",
+          "duration": "2 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "100",
+          "aggro": "78",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 351%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 702%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Evasion",
+          "image": "sab_evasion.jpg",
+          "description": "Increases Evasion for a while. Canceled, if Stance changes.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "0 sec.",
+          "duration": "0.2 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "150",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration 30 sec"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration 30 sec"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration 30 sec"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration 30 sec"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration 30 sec"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Attaque Compose",
+          "image": "sab_attaquecomposee.jpg",
+          "description": "A rapid series of merciless slashes.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "2.87 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "200",
+          "aggro": "137",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 633%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1266%"
+            }
+          ],
+          "special": [
+            "Additional 50% damage to enemies with [",
+            "Additional 50% damage to enemies with ["
+          ]
+        },
+        {
+          "name": "Esquive Touch",
+          "image": "sab_esquivetouch.jpg",
+          "description": "A series of rapid slashes followed by a powerful stab to finish enemies off.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "3.9 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "274",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1304%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2608%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Rapier",
+      "icon_position": {
+        "x": -50,
+        "y": -125
+      }
+    },
+    {
+      "name": "Illusion Garde",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1.75m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Shooting DMG": "-10%",
+        "Magical DMG": "-10%"
+      },
+      "stats": {
+        "ASPD": "170",
+        "Bonus ATK": "270%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "60",
+        "EVA": "30",
+        "BLK": "0",
+        "Fire RES": "10",
+        "Ice RES": "10",
+        "Lightning RES": "10",
+        "Abnormal RES": "10"
+      },
+      "lv25_bonus": {
+        "Evasion": "+20",
+        "Critical": "+25",
+        "Penetration": "20+20",
+        "Immunity": "5+10"
+      },
+      "skills": [
+        {
+          "name": "Lovely Wink",
+          "image": "ilg_love.jpg",
+          "description": "Seduce with fascinating kiss on hand.",
+          "target": "Up to 5 enemies 10m away and within a 4m radius",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "2 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "200",
+          "aggro": "89",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Hand Trick",
+          "image": "ilg_handtrick.jpg",
+          "description": "Spinning Rapier splendidly and stab by confusing eye-sight.",
+          "target": "1 enemy in max Range 4m",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "1.83 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "200",
+          "aggro": "185",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "No Trick",
+          "image": "ilg_notrick.jpg",
+          "description": "Showing the magic, putting enemy in the box and stabbing with sword.",
+          "target": "",
+          "casting_time": "0.75 sec.",
+          "cooldown": "15 sec.",
+          "duration": "3.4 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "350",
+          "aggro": "89",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1600%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3200%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Illusion Straight",
+          "image": "ilg_fstab.jpg",
+          "description": "Overwhelming enemy with splendid and prevailing stabbing.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "4.45 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "500",
+          "aggro": "185",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2000%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Illusion Mirror",
+          "image": "ilg_mirror.jpg",
+          "description": "Surrounding enemy with magic mirror, moving between mirrors and give motal wound.",
+          "target": "",
+          "casting_time": "1.62 sec.",
+          "cooldown": "45 sec.",
+          "duration": "3.99 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "600",
+          "aggro": "159",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5000%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [STR]",
+        "[PVP/PVE Maps] Additional 3% DMG according to extra [STR]",
+        "Ignore additional DEF according to extra [STR] * 4",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 3 * 50"
+      ],
+      "equipped_items": "Rapier",
+      "icon_position": {
+        "x": -400,
+        "y": -275
+      }
+    }
+  ]
+}

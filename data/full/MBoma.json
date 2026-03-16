@@ -1,0 +1,2087 @@
+{
+  "slug": "MBoma",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Absinian Warrior",
+    "head": "None",
+    "earring": "Earring",
+    "face": "Red Face print White Face print",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Coat Robe",
+    "costume": "None",
+    "gloves": "Gloves",
+    "ring": "Ring",
+    "weapon_costume": "None",
+    "belt": "Belt",
+    "shoes": "Shoes",
+    "artifact": "Symbol of Absinian Warrior Tattoo Design",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Power of Absinia",
+    "image": "job_powerabsinia.jpg",
+    "description": "Increases HP for a short time through the special body training method of the Absinia warriors.",
+    "target": "Self-buff",
+    "casting_time": "0 sec.",
+    "cooldown": "30 sec.",
+    "duration": "1.2 sec.",
+    "sp_cost": "500",
+    "consume_item": "Ancient Star Orb × 5",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration : 300 sec.",
+          "A.R. +1",
+          "D.R. +1",
+          "Maximum HP +15%",
+          "Received Skill DMG -5%"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Illusionist",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": -75
+      }
+    },
+    {
+      "stance_name": "Possession Fire",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -50,
+        "y": -100
+      }
+    },
+    {
+      "stance_name": "Illusionist",
+      "equipped_items": "Staff",
+      "icon_position": {
+        "x": -150,
+        "y": -75
+      }
+    },
+    {
+      "stance_name": "Anathema",
+      "equipped_items": "Staff",
+      "icon_position": {
+        "x": -100,
+        "y": -325
+      }
+    },
+    {
+      "stance_name": "Levitation",
+      "equipped_items": "Staff",
+      "icon_position": {
+        "x": -100,
+        "y": -175
+      }
+    },
+    {
+      "stance_name": "Darkness",
+      "equipped_items": "Staff",
+      "icon_position": {
+        "x": 0,
+        "y": -475
+      }
+    },
+    {
+      "stance_name": "Possession Fire",
+      "equipped_items": "Fire Bracelet",
+      "icon_position": {
+        "x": -50,
+        "y": -100
+      }
+    },
+    {
+      "stance_name": "Evocation Fire",
+      "equipped_items": "Fire Bracelet",
+      "icon_position": {
+        "x": -50,
+        "y": -25
+      }
+    },
+    {
+      "stance_name": "Domination Fire",
+      "equipped_items": "Fire Bracelet",
+      "icon_position": {
+        "x": -50,
+        "y": -275
+      }
+    },
+    {
+      "stance_name": "Occult Magic",
+      "equipped_items": "Fire Bracelet",
+      "icon_position": {
+        "x": -50,
+        "y": -475
+      }
+    },
+    {
+      "stance_name": "Occult Assistance",
+      "equipped_items": "Fire Bracelet",
+      "icon_position": {
+        "x": -100,
+        "y": -475
+      }
+    },
+    {
+      "stance_name": "Elemental Master",
+      "equipped_items": "Fire Bracelet",
+      "icon_position": {
+        "x": -500,
+        "y": -125
+      }
+    },
+    {
+      "stance_name": "Possession Fire",
+      "equipped_items": "Fire Bracelet + Fire Bracelet",
+      "icon_position": {
+        "x": -50,
+        "y": -100
+      }
+    },
+    {
+      "stance_name": "Evocation Fire",
+      "equipped_items": "Fire Bracelet + Fire Bracelet",
+      "icon_position": {
+        "x": -50,
+        "y": -25
+      }
+    },
+    {
+      "stance_name": "Domination Fire",
+      "equipped_items": "Fire Bracelet + Fire Bracelet",
+      "icon_position": {
+        "x": -50,
+        "y": -275
+      }
+    },
+    {
+      "stance_name": "Occult Magic",
+      "equipped_items": "Fire Bracelet + Fire Bracelet",
+      "icon_position": {
+        "x": -50,
+        "y": -475
+      }
+    },
+    {
+      "stance_name": "Occult Assistance",
+      "equipped_items": "Fire Bracelet + Fire Bracelet",
+      "icon_position": {
+        "x": -100,
+        "y": -475
+      }
+    },
+    {
+      "stance_name": "Elemental Master",
+      "equipped_items": "Fire Bracelet + Fire Bracelet",
+      "icon_position": {
+        "x": -500,
+        "y": -125
+      }
+    },
+    {
+      "stance_name": "Possession Fire",
+      "equipped_items": "Fire Bracelet + Bone Brc",
+      "icon_position": {
+        "x": -50,
+        "y": -100
+      }
+    },
+    {
+      "stance_name": "Evocation Fire",
+      "equipped_items": "Fire Bracelet + Bone Brc",
+      "icon_position": {
+        "x": -50,
+        "y": -25
+      }
+    },
+    {
+      "stance_name": "Domination Fire",
+      "equipped_items": "Fire Bracelet + Bone Brc",
+      "icon_position": {
+        "x": -50,
+        "y": -275
+      }
+    },
+    {
+      "stance_name": "Occult Magic",
+      "equipped_items": "Fire Bracelet + Bone Brc",
+      "icon_position": {
+        "x": -50,
+        "y": -475
+      }
+    },
+    {
+      "stance_name": "Occult Assistance",
+      "equipped_items": "Fire Bracelet + Bone Brc",
+      "icon_position": {
+        "x": -100,
+        "y": -475
+      }
+    },
+    {
+      "stance_name": "Elemental Master",
+      "equipped_items": "Fire Bracelet + Bone Brc",
+      "icon_position": {
+        "x": -500,
+        "y": -125
+      }
+    },
+    {
+      "stance_name": "Anathema",
+      "equipped_items": "Staff + Fire Bracelet",
+      "icon_position": {
+        "x": -100,
+        "y": -325
+      }
+    },
+    {
+      "stance_name": "Hasaraahab",
+      "equipped_items": "Staff + Fire Bracelet",
+      "icon_position": {
+        "x": -100,
+        "y": -475
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Illusionist",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1~10m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "170",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "15"
+      },
+      "lv25_bonus": {},
+      "skills": [
+        {
+          "name": "Sandman",
+          "image": "ilu_sandmann.jpg",
+          "description": "Put all enemies in a certain range to sleep.",
+          "target": "",
+          "casting_time": "1.167 sec.",
+          "cooldown": "10 sec.",
+          "duration": "1 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "60",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "80% chance to inflict ["
+            },
+            {
+              "level": "Level 10",
+              "value": "80% chance to inflict ["
+            },
+            {
+              "level": "Level 11",
+              "value": "80% chance to inflict ["
+            },
+            {
+              "level": "Level 12",
+              "value": "80% chance to inflict ["
+            },
+            {
+              "level": "Level 13",
+              "value": "80% chance to inflict ["
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Magical Piercing",
+          "image": "ilu_magicalpiercing.jpg",
+          "description": "Reduces Fire/Ice/Lightning/Mental RES to all enemies in a certain area.",
+          "target": "",
+          "casting_time": "1.167 sec.",
+          "cooldown": "10 sec.",
+          "duration": "1 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "90",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 16.5 sec."
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 30 sec."
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration : 31.5 sec."
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration : 33 sec."
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration : 34.5 sec."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Ritardi",
+          "image": "ilu_ritardi.jpg",
+          "description": "Reduces the Movement Speed of enemies.",
+          "target": "",
+          "casting_time": "1.167 sec.",
+          "cooldown": "10 sec.",
+          "duration": "1 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "150",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "80% chance to decrease enemys ATK/MOVE Speed -33% for 8.8 sec."
+            },
+            {
+              "level": "Level 10",
+              "value": "80% chance to decrease enemys ATK/MOVE Speed -60% for 16 sec."
+            },
+            {
+              "level": "Level 11",
+              "value": "80% chance to decrease enemys ATK/MOVE Speed -63% for 16.8 sec."
+            },
+            {
+              "level": "Level 12",
+              "value": "80% chance to decrease enemys ATK/MOVE Speed -66% for 17.6 sec."
+            },
+            {
+              "level": "Level 13",
+              "value": "80% chance to decrease enemys ATK/MOVE Speed -69% for 18.4 sec."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Invisible Stalker",
+          "image": "ilu_invisiblestalker.jpg",
+          "description": "Grant invisibility to allies. An invisible character cannot be attacked until he is detected, but cannot use any skill. After using it, [Skill Standby] buff is applied.",
+          "target": "",
+          "casting_time": "2.633 sec.",
+          "cooldown": "60 sec.",
+          "duration": "1.63 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "180",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 17.5 sec"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 40 sec"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration : 42.5 sec"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration : 45 sec"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration : 47.5 sec"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": -75
+      }
+    },
+    {
+      "name": "Possession Fire",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.5~9m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "170",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "15",
+        "Ice RES": "-25",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [
+        {
+          "name": "Fireball",
+          "image": "pfir_fireball.jpg",
+          "description": "Casts a devastating fireball that incinerates all enemies in its path.",
+          "target": "",
+          "casting_time": "0.9 sec.",
+          "cooldown": "0 sec.",
+          "duration": "1.33 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "60",
+          "aggro": "35",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Burning Hands",
+          "image": "pfir_burninghands.jpg",
+          "description": "Increases Fire RES by imbuing Fire attribute to allies attack.",
+          "target": "",
+          "casting_time": "0.367 sec.",
+          "cooldown": "0 sec.",
+          "duration": "230 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "90",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 110 sec."
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 200 sec."
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 210 sec."
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 220 sec."
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 230 sec."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Flame Ground",
+          "image": "pfir_flameground.jpg",
+          "description": "Sets [Flame Ground] inflicting constant Fire ATK.",
+          "target": "",
+          "casting_time": "2 sec.",
+          "cooldown": "15 sec.",
+          "duration": "1.63 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "180",
+          "aggro": "186",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2400%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -50,
+        "y": -100
+      }
+    },
+    {
+      "name": "Anathema",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1~10m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "170",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "20"
+      },
+      "lv25_bonus": {},
+      "skills": [
+        {
+          "name": "Confusion",
+          "image": "ana_confusion.jpg",
+          "description": "Disables use of skills by confusing the enemy.",
+          "target": "",
+          "casting_time": "0.9 sec.",
+          "cooldown": "12 sec.",
+          "duration": "1.3 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "100",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "80% chance to inflict ["
+            },
+            {
+              "level": "Level 10",
+              "value": "80% chance to inflict ["
+            },
+            {
+              "level": "Level 11",
+              "value": "80% chance to inflict ["
+            },
+            {
+              "level": "Level 12",
+              "value": "80% chance to inflict ["
+            },
+            {
+              "level": "Level 13",
+              "value": "80% chance to inflict ["
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Enervation",
+          "image": "ana_enervation.jpg",
+          "description": "Decreases attack speed, Movement Speed and Attack of enemies by 50% for 20 seconds. Natural HP regeneration is halted.",
+          "target": "",
+          "casting_time": "0.9 sec.",
+          "cooldown": "12 sec.",
+          "duration": "1.3 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "150",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "80% chance to inflict ["
+            },
+            {
+              "level": "Level 10",
+              "value": "80% chance to inflict ["
+            },
+            {
+              "level": "Level 11",
+              "value": "80% chance to inflict ["
+            },
+            {
+              "level": "Level 12",
+              "value": "80% chance to inflict ["
+            },
+            {
+              "level": "Level 13",
+              "value": "80% chance to inflict ["
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Curse",
+          "image": "ana_curse.jpg",
+          "description": "Curse enemies in a certain range and deals triple damage.",
+          "target": "",
+          "casting_time": "0.9 sec.",
+          "cooldown": "12 sec.",
+          "duration": "1.3 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "200",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "80% chance to blow 3 times damage to enemy for 6 sec."
+            },
+            {
+              "level": "Level 10",
+              "value": "80% chance to blow 3 times damage to enemy for 15 sec."
+            },
+            {
+              "level": "Level 11",
+              "value": "80% chance to blow 3 times damage to enemy for 16 sec."
+            },
+            {
+              "level": "Level 12",
+              "value": "80% chance to blow 3 times damage to enemy for 17 sec."
+            },
+            {
+              "level": "Level 13",
+              "value": "80% chance to blow 3 times damage to enemy for 18 sec."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Destruction",
+          "image": "ana_destruction.jpg",
+          "description": "Dead enemies disappear.",
+          "target": "",
+          "casting_time": "7.667 sec.",
+          "cooldown": "240 sec.",
+          "duration": "2 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "1050",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Disappearance of Dead enemies"
+            },
+            {
+              "level": "Level 10",
+              "value": "Disappearance of Dead enemies"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Stone Disease",
+          "image": "ana_stonedisease.jpg",
+          "description": "Immobilizes target but increases defense of the target.",
+          "target": "",
+          "casting_time": "2.633 sec.",
+          "cooldown": "60 sec.",
+          "duration": "1.63 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "300",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "80% chance to ["
+            },
+            {
+              "level": "Level 10",
+              "value": "80% chance to ["
+            },
+            {
+              "level": "Level 11",
+              "value": "80% chance to ["
+            },
+            {
+              "level": "Level 12",
+              "value": "80% chance to ["
+            },
+            {
+              "level": "Level 13",
+              "value": "80% chance to ["
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Staff",
+      "icon_position": {
+        "x": -100,
+        "y": -325
+      }
+    },
+    {
+      "name": "Levitation",
+      "info": {
+        "Targets": "3 enemies",
+        "Range": "1.5~12m away",
+        "Splash": "100% DMG within  2m range",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "Yes",
+        "Regenerate SP": "No"
+      },
+      "stats": {
+        "ASPD": "170",
+        "Bonus ATK": "200%",
+        "MSPD": "1.25",
+        "MSPD Limit": "12.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [
+        {
+          "name": "Reverse",
+          "image": "lev_reverse.jpg",
+          "description": "Immobilize enemies by suspending them in the air.",
+          "target": "",
+          "casting_time": "1.867 sec.",
+          "cooldown": "15 sec.",
+          "duration": "1.73 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "60",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "80% chance to ["
+            },
+            {
+              "level": "Level 10",
+              "value": "80% chance to ["
+            },
+            {
+              "level": "Level 11",
+              "value": "80% chance to ["
+            },
+            {
+              "level": "Level 12",
+              "value": "80% chance to ["
+            },
+            {
+              "level": "Level 13",
+              "value": "80% chance to ["
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Photon Splash",
+          "image": "lev_photonsplash.jpg",
+          "description": "Fires a series of Psychokinetic blasts.",
+          "target": "",
+          "casting_time": "1.867 sec.",
+          "cooldown": "12 sec.",
+          "duration": "1.73 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "240",
+          "aggro": "72",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 305%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 610%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Amplify",
+          "image": "lev_amplify.jpg",
+          "description": "Increase magical power.",
+          "target": "",
+          "casting_time": "0.533 sec.",
+          "cooldown": "60 sec.",
+          "duration": "1.53 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "740",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "18 sec"
+            },
+            {
+              "level": "Level 10",
+              "value": "180 sec"
+            },
+            {
+              "level": "Level 11",
+              "value": "198 sec"
+            },
+            {
+              "level": "Level 12",
+              "value": "216 sec"
+            },
+            {
+              "level": "Level 13",
+              "value": "234 sec"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Hole of Darkness",
+          "image": "lev_holeofdarkness.jpg",
+          "description": "Creates a powerful gravity field that pins down all surrounding enemies.",
+          "target": "Up to 12 enemies within a range of 8m",
+          "casting_time": "2.367 sec.",
+          "cooldown": "22.5 sec.",
+          "duration": "1.67 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "280",
+          "aggro": "49",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 190%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 380%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Staff",
+      "icon_position": {
+        "x": -100,
+        "y": -175
+      }
+    },
+    {
+      "name": "Darkness",
+      "info": {
+        "Targets": "4 enemies",
+        "Range": "1.5~12.5m away",
+        "Splash": "100% DMG within  2m range",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "Yes",
+        "Regenerate SP": "No",
+        "Shooting DMG": "+20%",
+        "Debuff Chance": "+10%"
+      },
+      "stats": {
+        "ASPD": "170",
+        "Bonus ATK": "200%",
+        "MSPD": "1.25",
+        "MSPD Limit": "12.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "40"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+8%",
+        "Immunity": "10"
+      },
+      "skills": [
+        {
+          "name": "Deep Sleep",
+          "image": "pod_deepsleep.jpg",
+          "description": "Enhanced skill of Sandman. Summon other-worldly moth power which has a dark light to make enemies sleep.",
+          "target": "",
+          "casting_time": "1.3 sec.",
+          "cooldown": "12 sec.",
+          "duration": "1.73 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "640",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "1% chance to inflict ["
+            },
+            {
+              "level": "Level 10",
+              "value": "90% chance to inflict ["
+            },
+            {
+              "level": "Level 11",
+              "value": "100% chance to inflict ["
+            },
+            {
+              "level": "Level 12",
+              "value": "110% chance to inflict ["
+            },
+            {
+              "level": "Level 13",
+              "value": "120% chance to inflict ["
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Improve Disease",
+          "image": "pod_improvedisease.jpg",
+          "description": "Enhances its curse, DEF abilities but will be immobilized and attribute RES will be decreased.",
+          "target": "",
+          "casting_time": "0.733 sec.",
+          "cooldown": "22 sec.",
+          "duration": "1.8 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "640",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "1% chance to inflict for 2 sec"
+            },
+            {
+              "level": "Level 10",
+              "value": "90% chance to inflict for 20 sec"
+            },
+            {
+              "level": "Level 11",
+              "value": "100% chance to inflict for 22 sec"
+            },
+            {
+              "level": "Level 12",
+              "value": "110% chance to inflict for 24 sec"
+            },
+            {
+              "level": "Level 13",
+              "value": "120% chance to inflict for 26 sec"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Blood Curse",
+          "image": "pod_bloodcurse.jpg",
+          "description": "To increase external damage to enemies in a range, it calls down bloody curse.",
+          "target": "",
+          "casting_time": "3.5 sec.",
+          "cooldown": "55 sec.",
+          "duration": "2.5 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "940",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "1% chance to inflict for 18 sec"
+            },
+            {
+              "level": "Level 10",
+              "value": "90% chance to inflict for 180 sec"
+            },
+            {
+              "level": "Level 11",
+              "value": "100% chance to inflict for 198 sec"
+            },
+            {
+              "level": "Level 12",
+              "value": "110% chance to inflict for 216 sec"
+            },
+            {
+              "level": "Level 13",
+              "value": "120% chance to inflict for 234 sec"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Gloomy Present",
+          "image": "pod_gloomypresent.jpg",
+          "description": "The curse of abyss that narrows your view and decrease your Movement Speed.",
+          "target": "",
+          "casting_time": "1.533 sec.",
+          "cooldown": "60 sec.",
+          "duration": "2.6 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "940",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "1% chance to inflict for 6 sec"
+            },
+            {
+              "level": "Level 10",
+              "value": "90% chance to inflict for 60 sec"
+            },
+            {
+              "level": "Level 11",
+              "value": "100% chance to inflict for 66 sec"
+            },
+            {
+              "level": "Level 12",
+              "value": "110% chance to inflict for 72 sec"
+            },
+            {
+              "level": "Level 13",
+              "value": "120% chance to inflict for 78 sec"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Whole Cancellation",
+          "image": "pod_wholecancellation.jpg",
+          "description": "Can debuff the enemies in the range and limit enemies to use skill.",
+          "target": "Up to 6 enemies within a range of 5m",
+          "casting_time": "0.867 sec.",
+          "cooldown": "50 sec.",
+          "duration": "1.7 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "840",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "1% chance to inflict for 1.5 sec"
+            },
+            {
+              "level": "Level 10",
+              "value": "90% chance to inflict for 15 sec"
+            },
+            {
+              "level": "Level 11",
+              "value": "100% chance to inflict for 16.5 sec"
+            },
+            {
+              "level": "Level 12",
+              "value": "110% chance to inflict for 18 sec"
+            },
+            {
+              "level": "Level 13",
+              "value": "120% chance to inflict for 19.5 sec"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Staff",
+      "icon_position": {
+        "x": 0,
+        "y": -475
+      }
+    },
+    {
+      "name": "Evocation Fire",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.5~9m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "227",
+        "Bonus ATK": "200%",
+        "MSPD": "0.5",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "30",
+        "Ice RES": "-50",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [
+        {
+          "name": "Hell Breath",
+          "image": "efir_hellbreath.jpg",
+          "description": "To set enemies ablaze, it causes a jet of flame to burst forth from your hands.",
+          "target": "Up to 6 enemies 6m away and at an angle of 80 degrees",
+          "casting_time": "1.433 sec.",
+          "cooldown": "0 sec.",
+          "duration": "2.7 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "80",
+          "aggro": "67",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1300%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Infernal Flames",
+          "image": "efir_infernalflames.jpg",
+          "description": "A pillar of Flames of Hell blazes up from the ground, incinerating all enemies within range.",
+          "target": "Up to 8 enemies within a range of 5m",
+          "casting_time": "2.967 sec.",
+          "cooldown": "7.5 sec.",
+          "duration": "1.53 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "160",
+          "aggro": "97",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1400%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2800%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Meteor Strike",
+          "image": "efir_meteostrikes.jpg",
+          "description": "Brings a blazing meteor down upon the heads of your enemies.",
+          "target": "",
+          "casting_time": "7 sec.",
+          "cooldown": "20 sec.",
+          "duration": "2.47 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "240",
+          "aggro": "216",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4400%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Fire Bracelet",
+      "icon_position": {
+        "x": -50,
+        "y": -25
+      }
+    },
+    {
+      "name": "Domination Fire",
+      "info": {
+        "Targets": "3 enemies",
+        "Range": "0.5~9m away",
+        "Splash": "100% DMG within  2m range",
+        "Hits per attack": "2",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "217",
+        "Bonus ATK": "200%",
+        "MSPD": "0.4",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "50",
+        "Ice RES": "-75",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [
+        {
+          "name": "Firewall",
+          "image": "dfir_firewall.jpg",
+          "description": "Summons a wall of fire.",
+          "target": "Up to 8 enemies 8m away and within 4m width",
+          "casting_time": "1.533 sec.",
+          "cooldown": "0 sec.",
+          "duration": "1.5 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "100",
+          "aggro": "108",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 600%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1200%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Lava Plasma",
+          "image": "dfir_lavaplasma.jpg",
+          "description": "Fire RES and Fire attribute ATK increases much but Ice RES decreases.",
+          "target": "",
+          "casting_time": "2 sec.",
+          "cooldown": "0 sec.",
+          "duration": "230 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "150",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 110 sec."
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 200 sec."
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 210 sec."
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 220 sec."
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 230 sec."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Blazing Pillar",
+          "image": "dfir_blazingpillar.jpg",
+          "description": "Summons a huge pillar of fire that sets enemies ablaze.",
+          "target": "",
+          "casting_time": "1.533 sec.",
+          "cooldown": "15 sec.",
+          "duration": "1.5 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "250",
+          "aggro": "112",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1100%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2200%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Volcanic Eruption",
+          "image": "dfir_volcaniceruption.jpg",
+          "description": "Creates a volcanic eruption by accumulating magma beneath the ground.",
+          "target": "",
+          "casting_time": "4.833 sec.",
+          "cooldown": "30 sec.",
+          "duration": "1.6 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "205",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1400%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2800%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Fire Bracelet",
+      "icon_position": {
+        "x": -50,
+        "y": -275
+      }
+    },
+    {
+      "name": "Occult Magic",
+      "info": {
+        "Targets": "3 enemies",
+        "Range": "0.5~9m away",
+        "Splash": "0.8 DMG within  2m range",
+        "Hits per attack": "2",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Shooting DMG": "+20%",
+        "Magical DMG": "-20%",
+        "Debuff RES": "-10%"
+      },
+      "stats": {
+        "ASPD": "267",
+        "Bonus ATK": "270%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "20",
+        "Ice RES": "20",
+        "Lightning RES": "20",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+10%",
+        "Penetration": "10+25"
+      },
+      "skills": [
+        {
+          "name": "Tenseness",
+          "image": "occ_tenseness.jpg",
+          "description": "Deals damage with strong magnetic wave with attribute of holding weapon.",
+          "target": "Up to 18 enemies within a range of 6m",
+          "casting_time": "Instant",
+          "cooldown": "1 sec.",
+          "duration": "1.33 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "65",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 379.5%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 759%"
+            },
+            {
+              "level": "Level 12",
+              "value": "АТК: 910%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Ice Vrille",
+          "image": "occ_icevrille.jpg",
+          "description": "Creates a sharp ice pick in a straight line to pierce enemies from the bottom.",
+          "target": "Up to 12 enemies 15m away and within 5m width",
+          "casting_time": "2.633 sec.",
+          "cooldown": "12 sec.",
+          "duration": "2.17 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "700",
+          "aggro": "172",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1058.2%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2116%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Breath of Fire",
+          "image": "occ_blastfire.jpg",
+          "description": "Breathes strong fire to targets.",
+          "target": "Up to 20 during casting time",
+          "casting_time": "3.033 sec.",
+          "cooldown": "21 sec.",
+          "duration": "7.54 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "800",
+          "aggro": "103",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 462%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 924%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Electric Bluster",
+          "image": "occ_dynabreath.jpg",
+          "description": "Creates a lightning ball and makes it explode to deal damage to enemy and nearby targets.",
+          "target": "Up to 30 during casting time",
+          "casting_time": "2.7 sec.",
+          "cooldown": "28 sec.",
+          "duration": "3.74 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "900",
+          "aggro": "223",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 541.21%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1082%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Abyss Flare",
+          "image": "occ_abyssflare.jpg",
+          "description": "Concentrate the magic power into a single focal point, and deliver a great punch to the enemies.",
+          "target": "",
+          "casting_time": "6.033 sec.",
+          "cooldown": "65 sec.",
+          "duration": "3.77 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "1000",
+          "aggro": "353",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2415.6%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4831%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [INT]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [INT]",
+        "Ignore additional RES according to extra [INT] * 4",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Fire Bracelet",
+      "icon_position": {
+        "x": -50,
+        "y": -475
+      }
+    },
+    {
+      "name": "Occult Assistance",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.5~8m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Shooting DMG": "+15%",
+        "Magical DMG": "-20%",
+        "Debuff Chance": "+10%"
+      },
+      "stats": {
+        "ASPD": "227",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "20",
+        "Ice RES": "20",
+        "Lightning RES": "20",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+10%",
+        "Immunity": "10+10"
+      },
+      "skills": [
+        {
+          "name": "Absolute Zero",
+          "image": "eice_absolutezero.jpg",
+          "description": "Powerful ice attack to one enemy.",
+          "target": "1 enemy within a range of 8m",
+          "casting_time": "1.433 sec.",
+          "cooldown": "10 sec.",
+          "duration": "2.7 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "160",
+          "aggro": "184",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Chain Lightning",
+          "image": "elgt_chainlightning.jpg",
+          "description": "Conjure forth a bolt of chain lightning that leaps from one enemy to the next, inflicting lightning damage on the target and surrounding enemies.",
+          "target": "",
+          "casting_time": "1.433 sec.",
+          "cooldown": "18 sec.",
+          "duration": "2.7 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "160",
+          "aggro": "90",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Tenseness",
+          "image": "occ_tenseness.jpg",
+          "description": "Deals damage with strong magnetic wave with attribute of holding weapon.",
+          "target": "Up to 18 enemies within a range of 6m",
+          "casting_time": "Instant",
+          "cooldown": "1 sec.",
+          "duration": "1.33 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "65",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 379.5%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 759%"
+            },
+            {
+              "level": "Level 12",
+              "value": "АТК: 910%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Barsel",
+          "image": "oaa_barsel.jpg",
+          "description": "Accumulates mana and inserts it to the body to increase Magical ATK.",
+          "target": "",
+          "casting_time": "1.133 sec.",
+          "cooldown": "30 sec.",
+          "duration": "1.13 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "1100",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "300 sec."
+            },
+            {
+              "level": "Level 10",
+              "value": "300 sec."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Flare",
+          "image": "oaa_flare.jpg",
+          "description": "Increases Monster Damage, by granting mysterious magical power to team members.",
+          "target": "",
+          "casting_time": "1.133 sec.",
+          "cooldown": "40 sec.",
+          "duration": "1.13 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "1250",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "300 sec."
+            },
+            {
+              "level": "Level 10",
+              "value": "300 sec."
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [None]"
+      ],
+      "equipped_items": "Fire Bracelet",
+      "icon_position": {
+        "x": -100,
+        "y": -475
+      }
+    },
+    {
+      "name": "Elemental Master",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.5~10m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Shooting DMG": "+10%",
+        "Magical DMG": "-10%",
+        "Debuff RES": "-10%"
+      },
+      "stats": {
+        "ASPD": "120",
+        "Bonus ATK": "320%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "10"
+      },
+      "lv25_bonus": {
+        "Penetration": "10+25",
+        "Immunity": "10"
+      },
+      "skills": [
+        {
+          "name": "Elemental Spirit",
+          "image": "ele_elementalspirits.jpg",
+          "description": "Absorbing elements energy, the body becomes stronger. Canceled in case of Stance change. [Elemental Control] rises to Max 50 and [Elemental Spirit] state appears every 3 levels.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "30 sec.",
+          "duration": "2 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 30 sec"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 30 sec"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Vanishing Flare",
+          "image": "ele_vanishingflare.jpg",
+          "description": "Throws a magic sphere of flame and electricity. The flame explodes and the electricity flows on the ground.",
+          "target": "",
+          "casting_time": "1.7 sec.",
+          "cooldown": "12 sec.",
+          "duration": "1.7 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "500",
+          "aggro": "103",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 894%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1788%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Tornado Flare",
+          "image": "ele_tonadoflare.jpg",
+          "description": "Ice vortex rages and lightning strikes.",
+          "target": "",
+          "casting_time": "2 sec.",
+          "cooldown": "18 sec.",
+          "duration": "2 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "800",
+          "aggro": "160",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1115%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2230%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Misty Claymore",
+          "image": "ele_mistyclaymore.jpg",
+          "description": "The flame explodes in a wide misty place.",
+          "target": "",
+          "casting_time": "1.4 sec.",
+          "cooldown": "22 sec.",
+          "duration": "1.4 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "750",
+          "aggro": "184",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 754%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1508%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Arch Spear",
+          "image": "ele_archsphere.jpg",
+          "description": "Pour the whole power of Flame, Ice and Lightning to the enemy.",
+          "target": "",
+          "casting_time": "3 sec.",
+          "cooldown": "35 sec.",
+          "duration": "3 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "1100",
+          "aggro": "300",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1702%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3404%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [INT]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [INT]",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Fire Bracelet",
+      "icon_position": {
+        "x": -500,
+        "y": -125
+      }
+    },
+    {
+      "name": "Hasaraahab",
+      "info": {
+        "Targets": "3 enemies",
+        "Range": "10m away",
+        "Splash": "100% DMG within  2m range",
+        "Hits per attack": "2",
+        "Hits flying": "Yes",
+        "Flying": "Yes",
+        "Regenerate SP": "No",
+        "Physical DMG": "-10%",
+        "Shooting DMG": "+20%",
+        "Magical DMG": "-10%"
+      },
+      "stats": {
+        "ASPD": "340",
+        "Bonus ATK": "300%",
+        "MSPD": "1.25",
+        "MSPD Limit": "12.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+10%",
+        "Penetration": "35+13",
+        "Immunity": "10+20"
+      },
+      "skills": [
+        {
+          "name": "Rahnatanari",
+          "image": "harahab_hasaraahab01.jpg",
+          "description": "Reinforce your own capabilities with fire magic.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "30 sec.",
+          "duration": "1.566 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "100",
+          "aggro": "10",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration 300 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration 300 seconds"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Rahazzaira",
+          "image": "harahab_hasaraahab02.jpg",
+          "description": "Quickly create a flickering magical flame.",
+          "target": "",
+          "casting_time": "2 sec.",
+          "cooldown": "12 sec.",
+          "duration": "1.833 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "150",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Dollerbah Saahinaa",
+          "image": "harahab_hasaraahab03.jpg",
+          "description": "Launch several strong fireballs.",
+          "target": "Up to 11m away / within a radius of 4m / Max. 4 targets",
+          "casting_time": "3.3 sec.",
+          "cooldown": "15 sec.",
+          "duration": "1.73 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "240",
+          "aggro": "72",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2300%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Amdanari",
+          "image": "harahab_hasaraahab04.jpg",
+          "description": "Generate fire pillars to burn enemies over and over.",
+          "target": "Up to 10m away / within a radius of 10m / Max. 18 targets",
+          "casting_time": "3.5 sec.",
+          "cooldown": "18 sec.",
+          "duration": "6 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "700",
+          "aggro": "180",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Graddu Ashams",
+          "image": "harahab_hasaraahab05.jpg",
+          "description": "Pray to the sun gods, making countless fireballs descend from the sky.",
+          "target": "Up to 15 attacks within the skill duration",
+          "casting_time": "5.8 sec.",
+          "cooldown": "20 sec.",
+          "duration": "5.49 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "580",
+          "aggro": "195",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2400%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 7% of extra [INT]",
+        "[PVP/PVE Maps] Additional 3% DMG according to extra [INT]",
+        "Ignore additional RES according to extra [INT] * 2",
+        "Additional DMG against [PC] + 1x"
+      ],
+      "equipped_items": "Staff + Fire Bracelet",
+      "icon_position": {
+        "x": -100,
+        "y": -475
+      }
+    }
+  ]
+}

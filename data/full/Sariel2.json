@@ -1,0 +1,312 @@
+{
+  "slug": "Sariel2",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Blessing of Archbishop",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Robe",
+    "costume": "None",
+    "gloves": "Gloves",
+    "ring": "Ring",
+    "weapon_costume": "Event Conviction of Spirit Costume Conviction of Spirit Costume",
+    "belt": "Belt",
+    "shoes": "Shoes",
+    "artifact": "None",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Soul Absorb",
+    "image": "job_Faith.jpg",
+    "description": "Attune the disconnected souls nearby into your own power.",
+    "target": "Self-buff",
+    "casting_time": "0 sec.",
+    "cooldown": "30 sec.",
+    "duration": "2.033 sec.",
+    "sp_cost": "750",
+    "consume_item": "Ancient Star Orb × 5",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration : 300s",
+          "A.R. +1",
+          "ATK +50%",
+          "Monster ATK +150%",
+          "Cast Time -25%",
+          "INT +5"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Mystic Cube",
+      "equipped_items": "Cube",
+      "icon_position": {
+        "x": -500,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Conviction",
+      "equipped_items": "Cube + Staff",
+      "icon_position": {
+        "x": -500,
+        "y": -25
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Mystic Cube",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.5~6m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "197",
+        "Bonus ATK": "80%",
+        "MSPD": "1.1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "15"
+      },
+      "lv25_bonus": {
+        "Penetration": "5+10",
+        "Immunity": "5+10"
+      },
+      "skills": [],
+      "equipped_items": "Cube",
+      "icon_position": {
+        "x": -500,
+        "y": 0
+      }
+    },
+    {
+      "name": "Conviction",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.5~13m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "197",
+        "Bonus ATK": "330%",
+        "MSPD": "1.1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "15"
+      },
+      "lv25_bonus": {
+        "Penetration": "5+25",
+        "Immunity": "5+10"
+      },
+      "skills": [
+        {
+          "name": "Overwhelm",
+          "image": "cov1_overwhelm.jpg",
+          "description": "Utilizing magic that takes the form of a chain, it binds and assaults the enemy.",
+          "target": "1 enemy within a range of 10m",
+          "casting_time": "Instant",
+          "cooldown": "7 sec.",
+          "duration": "1 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "300",
+          "aggro": "115",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1000%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Pitiless",
+          "image": "cov1_pitiless.jpg",
+          "description": "Bestows the energy from disconnected souls upon allies.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "45 sec.",
+          "duration": "1 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "750",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 300s"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 300s"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Mad Delusion",
+          "image": "cov1_maddelusion.jpg",
+          "description": "It makes multiple enemies confuse.",
+          "target": "Up to 10 enemies 8m away.",
+          "casting_time": "2.033 sec.",
+          "cooldown": "15 sec.",
+          "duration": "2.033 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "800",
+          "aggro": "135",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Lethargy",
+          "image": "cov1_lethargy.jpg",
+          "description": "It occurs confusion to multiple enemies.",
+          "target": "Up to 8 enemies 12m away and within 8m width",
+          "casting_time": "1.333 sec.",
+          "cooldown": "20 sec.",
+          "duration": "1.833 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "700",
+          "aggro": "128",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2000%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Extinction",
+          "image": "cov1_extinction.jpg",
+          "description": "With giving the Gods judgement to an enemy, it extinguishes the enemy.",
+          "target": "1 enemy within a range of 14m",
+          "casting_time": "2.366 sec.",
+          "cooldown": "15 sec.",
+          "duration": "2.7 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "900",
+          "aggro": "245",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2400%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4800%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [INT]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [INT]",
+        "Ignore additional RES according to extra [INT] * 3",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Cube + Staff",
+      "icon_position": {
+        "x": -500,
+        "y": -25
+      }
+    }
+  ]
+}

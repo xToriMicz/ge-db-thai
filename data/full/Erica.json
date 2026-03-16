@@ -1,0 +1,282 @@
+{
+  "slug": "Erica",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "New Destiny",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Coat Robe",
+    "costume": "None",
+    "gloves": "Gloves",
+    "ring": "Ring",
+    "weapon_costume": "Violantes Bracelet Violantes Bracelet for Event",
+    "belt": "Belt",
+    "shoes": "Shoes",
+    "artifact": "Brooch of Darkness Hourglass of Dimensions",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Unleash",
+    "image": "job_unlockmana.jpg",
+    "description": "Frees the magical power flowing within Erica. [Strike Conversion] converts to [Energetic Surge] when it reaches level 10.",
+    "target": "None",
+    "casting_time": "2.267 sec.",
+    "cooldown": "0 sec.",
+    "duration": "1.367 sec.",
+    "sp_cost": "600",
+    "consume_item": "Ancient Star Orb × 25",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration: 300s",
+          "Re-use to toggle between effects",
+          "[Offensive Magic]",
+          "A.R. +1",
+          "ATK increases by 50% of extra [INT]",
+          "Monster ATK increases by 80% of extra [INT]",
+          "INT +10, PEN +15, Casting Time -15%, Evasion -60",
+          "Ignores 15 Mental RES ([PC] 3x)",
+          "[Defensive Magic]",
+          "D.R. +1",
+          "ATK increases by 50% of extra [INT]",
+          "Knockback time reduced by 30% of extra [INT]",
+          "INT +10, DEF +30, IMM +15, All DMG -15%",
+          "[Strike Conversion] Level +1 after dodging an enemys attack"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Hilliensus",
+      "equipped_items": "Special Bracelet",
+      "icon_position": {
+        "x": -250,
+        "y": -400
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Hilliensus",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "8m away",
+        "Splash": "None",
+        "Hits per attack": "3",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Shooting DMG": "+10%",
+        "Magical DMG": "-15%",
+        "Debuff RES": "-10%"
+      },
+      "stats": {
+        "ASPD": "203",
+        "Bonus ATK": "330%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "10",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "30"
+      },
+      "lv25_bonus": {
+        "Evasion": "+10",
+        "Penetration": "5+15",
+        "Immunity": "15+10"
+      },
+      "skills": [
+        {
+          "name": "Cut Down",
+          "image": "hath_cutdown.jpg",
+          "description": "Shoots an ethereal blade infused with Ericas magical power towards the enemy.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "5 sec.",
+          "duration": "1.533 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "50",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Ultimate Laser",
+          "image": "hath_ultimaterazer.jpg",
+          "description": "Continuously fires lasers forward. During [Energetic Surge], a more powerful [Energetic Ultimate Laser] is used.",
+          "target": "",
+          "casting_time": "1.533 sec.",
+          "cooldown": "12 sec.",
+          "duration": "13.896 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "700",
+          "aggro": "50",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1600%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3200%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Radiant Execution",
+          "image": "hath_radiantexecution.jpg",
+          "description": "Summons a sphere of magical energy in a specific area and detonates it, causing massive damage.",
+          "target": "",
+          "casting_time": "3.033 sec.",
+          "cooldown": "17 sec.",
+          "duration": "1.833 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "800",
+          "aggro": "100",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Arcane Blast",
+          "image": "hath_arcaneblast.jpg",
+          "description": "Repels all enemies around yourself while infusing yourself with magical power.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "18 sec.",
+          "duration": "2.533 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "650",
+          "aggro": "100",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1440%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2880%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Luminous Strike",
+          "image": "hath_luminousstrike.jpg",
+          "description": "Delivers a relentless attack strong enough to break enemy armor. During [Energetic Surge], it ignores enemy DEF and you become invincible during the cast.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "25 sec.",
+          "duration": "7 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "2000",
+          "aggro": "300",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1315%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2630%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [INT]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [INT]",
+        "Ignore additional RES according to extra [INT] * 3",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 3 * 50"
+      ],
+      "equipped_items": "Special Bracelet",
+      "icon_position": {
+        "x": -250,
+        "y": -400
+      }
+    }
+  ]
+}

@@ -1,0 +1,934 @@
+{
+  "slug": "GracieloHD",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "None",
+    "head": "None",
+    "earring": "Earring",
+    "face": "Headgear Bandana Return Glasses",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Leather",
+    "costume": "None",
+    "gloves": "Gloves Leather",
+    "ring": "Ring",
+    "weapon_costume": "None",
+    "belt": "Belt Leather",
+    "shoes": "Shoes Leather",
+    "artifact": "None",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Ultimate Bloodthirsty Windstorm",
+    "image": "job_chapterofwind_R.jpg",
+    "description": "Increases physical ability like lightning.",
+    "target": "Self-buff",
+    "casting_time": "0 sec.",
+    "cooldown": "120 sec.",
+    "duration": "1.2 sec.",
+    "sp_cost": "300",
+    "consume_item": "Ancient Star Orb × 5",
+    "levels": [
+      {
+        "level": "Level 1",
+        "effects": [
+          "Duration : 300 sec.",
+          "Lightning Attribute ATK : +15",
+          "Lightning RES : +5",
+          "Move SPD +1%",
+          "Penetration +1",
+          "IMM +1",
+          "A.R. +1"
+        ]
+      },
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration : 300 sec.",
+          "Lightning Attribute ATK : +150",
+          "Lightning RES : +50",
+          "Move SPD +10%",
+          "Penetration +10",
+          "IMM +10",
+          "In every attack, 6% of chance to inflict [Electrical Field] on enemy",
+          "A.R. +1"
+        ]
+      },
+      {
+        "level": "Level 11",
+        "effects": [
+          "Duration : 300 sec.",
+          "Lightning Attribute ATK : +165",
+          "Lightning RES : +55",
+          "Move SPD +11%",
+          "Penetration +11",
+          "IMM +11",
+          "In every attack, 7% of chance to inflict [Electrical Field] on enemy",
+          "A.R. +1",
+          "D.R. +1"
+        ]
+      },
+      {
+        "level": "Level 12",
+        "effects": [
+          "Duration : 300 sec.",
+          "Lightning Attribute ATK : +180",
+          "Lightning RES : +60",
+          "Move SPD +12%",
+          "Penetration +12",
+          "IMM +12",
+          "In every attack, 8% of chance to inflict [Electrical Field] on enemy",
+          "A.R. +1",
+          "D.R. +1"
+        ]
+      },
+      {
+        "level": "Level 13",
+        "effects": [
+          "Duration : 300 sec.",
+          "Lightning Attribute ATK : +195",
+          "Lightning RES : +65",
+          "Move SPD +13%",
+          "Penetration +13",
+          "IMM +13",
+          "In every attack, 8% of chance to inflict [Electrical Field] on enemy",
+          "A.R. +1",
+          "D.R. +1"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "Knuckle",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Martial Arts Compendium",
+      "equipped_items": "Knuckle",
+      "icon_position": {
+        "x": -200,
+        "y": -450
+      }
+    },
+    {
+      "stance_name": "Ancient Arts",
+      "equipped_items": "Knuckle",
+      "icon_position": {
+        "x": -150,
+        "y": -275
+      }
+    },
+    {
+      "stance_name": "Martial Arts Book-Chap. of Wind",
+      "equipped_items": "Leguard",
+      "icon_position": {
+        "x": -100,
+        "y": -200
+      }
+    },
+    {
+      "stance_name": "Martial Arts Book-Chap.Lightning",
+      "equipped_items": "Leguard",
+      "icon_position": {
+        "x": -400,
+        "y": -125
+      }
+    },
+    {
+      "stance_name": "Martial Arts Compendium",
+      "equipped_items": "Leguard",
+      "icon_position": {
+        "x": -200,
+        "y": -450
+      }
+    },
+    {
+      "stance_name": "Ancient Arts",
+      "equipped_items": "Leguard",
+      "icon_position": {
+        "x": -150,
+        "y": -275
+      }
+    },
+    {
+      "stance_name": "Martial Arts Book-Chap. of Wind",
+      "equipped_items": "Knuckle + Leguard",
+      "icon_position": {
+        "x": -100,
+        "y": -200
+      }
+    },
+    {
+      "stance_name": "Ancient Arts",
+      "equipped_items": "Knuckle + Leguard",
+      "icon_position": {
+        "x": -150,
+        "y": -275
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "150",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+10%"
+      },
+      "skills": [
+        {
+          "name": "Side Kick",
+          "image": "bkn_sidekick.jpg",
+          "description": "A simple, lightning fast kick to the side that throws the enemy far back.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "0 sec.",
+          "duration": "2.02 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "100",
+          "aggro": "74",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 314%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 628%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Martial Arts Compendium",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "-20%",
+        "Shooting DMG": "-10%",
+        "Magical DMG": "+10%"
+      },
+      "stats": {
+        "ASPD": "157",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "63",
+        "EVA": "20",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+25%",
+        "Evasion": "+15",
+        "Critical": "+15",
+        "Penetration": "5+15",
+        "Immunity": "5+15"
+      },
+      "skills": [
+        {
+          "name": "Enhanced Elemental Kick",
+          "image": "mma_enhancedelementalkick.jpg",
+          "description": "Rapid double spin kicks that create a slicing vacuum to attack the enemy.",
+          "target": "1 enemy within a range of 1m",
+          "casting_time": "Instant",
+          "cooldown": "5 sec.",
+          "duration": "1.9 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "240",
+          "aggro": "136",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 739.29%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1478%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Enhanced Lion Heart",
+          "image": "mma_enhancedlionheart.jpg",
+          "description": "Push the physical and mental limits.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "40 sec.",
+          "duration": "5 minutes (missions only).",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "650",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 21sec."
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 30sec."
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 31sec."
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 32sec."
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 33sec."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Elemental Kick",
+          "image": "mma_ementalkick.jpg",
+          "description": "Jump to the sky and rapidly fall to ground to give a big shock to enemy around you.",
+          "target": "Up to 5 adjacent enemies",
+          "casting_time": "Instant",
+          "cooldown": "12 sec.",
+          "duration": "3.47 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "340",
+          "aggro": "186",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1019.69%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2039%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Elemental Punch",
+          "image": "mma_ementalpunch.jpg",
+          "description": "Rapidly pummels an enemy 7 times with fists.",
+          "target": "2 adjacent enemies.",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "6.03 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "440",
+          "aggro": "342",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1907.82%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3815%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Elemental Power",
+          "image": "mma_elementalpower.jpg",
+          "description": "Transform into an avatar of the god of elemental power.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "5.8 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "540",
+          "aggro": "435",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2492.73%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4985%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [STR]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [STR]",
+        "Ignore additional DEF according to extra [STR] * 4",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Knuckle",
+      "icon_position": {
+        "x": -200,
+        "y": -450
+      }
+    },
+    {
+      "name": "Ancient Arts",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1.75m away",
+        "Splash": "None",
+        "Hits per attack": "3",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "-25%",
+        "Debuff Chance": "+10%"
+      },
+      "stats": {
+        "ASPD": "187",
+        "Bonus ATK": "280%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "15",
+        "EVA": "10",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+10%",
+        "Evasion": "+10",
+        "Critical": "+5",
+        "Penetration": "5+20",
+        "Immunity": "5+15",
+        "DEF": "5"
+      },
+      "skills": [
+        {
+          "name": "Swift Dash",
+          "image": "aoa1_swiftdash.jpg",
+          "description": "Hit the enemy to the air, and smash it on the floor.",
+          "target": "Up to 3 adjacent enemies",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "1.5 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "560",
+          "aggro": "500",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Dragon Aura",
+          "image": "aoa1_dragonaura.jpg",
+          "description": "Emits the aura of the dragon and nullifies nearby enemies.",
+          "target": "Up to 8 targets within a 10m surrounding radius",
+          "casting_time": "0.7 sec.",
+          "cooldown": "30 sec.",
+          "duration": "2.5 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "100",
+          "aggro": "226",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Titan Break",
+          "image": "aoa1_titanbreak.jpg",
+          "description": "Defeat the enemy with a powerful series of attacks that will defeat even the giant.",
+          "target": "Up to 3 adjacent enemies",
+          "casting_time": "Instant",
+          "cooldown": "12 sec.",
+          "duration": "1.5 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "950",
+          "aggro": "342",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Ultimate Soul",
+          "image": "aoa1_ultmatesoul.jpg",
+          "description": "Connect the ultimate specialty of the Five Books of Martial Arts.",
+          "target": "1 adjacent enemy",
+          "casting_time": "0.6 sec.",
+          "cooldown": "30 sec.",
+          "duration": "4.9 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "1050",
+          "aggro": "444",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Additional Rage",
+          "image": "aoa1_additionalrage.jpg",
+          "description": "Muster the strength by borrowing strength from the gods.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "30 sec.",
+          "duration": "1.133 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "650",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 300 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 300 seconds"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration : 300 seconds"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration : 300 seconds"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration : 300 seconds"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [STR]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [STR]",
+        "Ignore additional DEF according to extra [STR] * 2",
+        "Additional DMG against [PC] + 2x",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Knuckle",
+      "icon_position": {
+        "x": -150,
+        "y": -275
+      }
+    },
+    {
+      "name": "Martial Arts Book-Chap. of Wind",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "3",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "178",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "15",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+15%",
+        "Evasion": "+15",
+        "Critical": "+10"
+      },
+      "skills": [
+        {
+          "name": "Tornado Vortex",
+          "image": "mas_tornadovortex.jpg",
+          "description": "A whirlwind attack that cuts down enemy lines.",
+          "target": "Up to 5 Enemies within a range of 2.5m",
+          "casting_time": "Instant",
+          "cooldown": "0 sec.",
+          "duration": "2.03 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "150",
+          "aggro": "56",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 223%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 446%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Dragon Kick",
+          "image": "mas_dragonkick.jpg",
+          "description": "A fiery series of kicks that knocks the enemy down.",
+          "target": "Up to 6 enemies 7.2 away and within 3 width",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "1.83 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "250",
+          "aggro": "81",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 328%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 656%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Atomic Crazy Rush",
+          "image": "mas_atomiccrazyrush.jpg",
+          "description": "Strikes explosive blows on the enemy with the swiftness of a storm.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "4.9 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "444",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2165%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4330%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [STR]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [STR]",
+        "Ignore additional DEF according to extra [STR] * 4",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Leguard",
+      "icon_position": {
+        "x": -100,
+        "y": -200
+      }
+    },
+    {
+      "name": "Martial Arts Book-Chap.Lightning",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "3",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "-20%"
+      },
+      "stats": {
+        "ASPD": "178",
+        "Bonus ATK": "300%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "63",
+        "EVA": "20",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+25%",
+        "Evasion": "+15",
+        "Critical": "+15",
+        "Penetration": "15",
+        "Immunity": "10"
+      },
+      "skills": [
+        {
+          "name": "Third Eye",
+          "image": "masn_mindeye.jpg",
+          "description": "Uses DEF of enemy by reading the enemys weakness with the minds eye.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "30 sec.",
+          "duration": "300 sec",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "600",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 300 sec"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 300 sec"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 300 sec"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 300 sec"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 300 sec"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Enhanced Lion Heart",
+          "image": "mma_enhancedlionheart.jpg",
+          "description": "Push the physical and mental limits.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "40 sec.",
+          "duration": "5 minutes (missions only).",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "650",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 21sec."
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 30sec."
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 31sec."
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 32sec."
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 33sec."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Stormy Helix Circle",
+          "image": "masn_tornadovortex.jpg",
+          "description": "Wipes out surrounding enemies with a movement similar to a storm.",
+          "target": "Up to 5 enemies 6m away",
+          "casting_time": "0.75 sec.",
+          "cooldown": "10 sec.",
+          "duration": "2.03 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "80",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1000%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Blue Dragon Rising",
+          "image": "masn_dragonkick.jpg",
+          "description": "Rushes quickly like a dragon soaring to the skies.",
+          "target": "Up to 6 enemies 7.2 away and within 3 width",
+          "casting_time": "1.8 sec.",
+          "cooldown": "15 sec.",
+          "duration": "1.83 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "400",
+          "aggro": "100",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Whirlwind Blow",
+          "image": "masn_atomiccrazyrush.jpg",
+          "description": "Attacks an enemy as fast as the wind, smooth like a cloud and strong like lightning.",
+          "target": "1 adjacent enemy",
+          "casting_time": "1.89 sec.",
+          "cooldown": "30 sec.",
+          "duration": "4.9 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "500",
+          "aggro": "444",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2000%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4000%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [STR]",
+        "[PVP/PVE Maps] Additional 3% DMG according to extra [STR]",
+        "Ignore additional DEF according to extra [STR] * 4",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 5 * 50"
+      ],
+      "equipped_items": "Leguard",
+      "icon_position": {
+        "x": -400,
+        "y": -125
+      }
+    }
+  ]
+}

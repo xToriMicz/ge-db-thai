@@ -1,0 +1,246 @@
+{
+  "slug": "Elizabeth",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "None",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Robe",
+    "costume": "None",
+    "gloves": "Gloves",
+    "ring": "Ring",
+    "weapon_costume": "None",
+    "belt": "Belt",
+    "shoes": "Shoes",
+    "artifact": "None",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Artists Greatest Design",
+    "image": "job_veryeasy.jpg",
+    "description": "Painting with magic, enjoy and is satisfied.",
+    "target": "Self-buff",
+    "casting_time": "0 sec.",
+    "cooldown": "30 sec.",
+    "duration": "3 sec.",
+    "sp_cost": "500",
+    "consume_item": "Ancient Star Orb × 5",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration : 180sec.",
+          "ATK+40%",
+          "Mental Penetration +10",
+          "A.R.+2"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Drawing",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -450,
+        "y": -200
+      }
+    },
+    {
+      "stance_name": "Drawing",
+      "equipped_items": "Special Bracelet",
+      "icon_position": {
+        "x": -450,
+        "y": -200
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Drawing",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "13.5m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "187",
+        "Bonus ATK": "390%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "10"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+10%",
+        "Penetration": "10+20",
+        "Immunity": "5+10"
+      },
+      "skills": [
+        {
+          "name": "Tree of Rainbow",
+          "image": "dra_treerainbow.jpg",
+          "description": "Momentary push around the enemy with paint filled with magic.",
+          "target": "Up to 6 enemies within a range of 5m",
+          "casting_time": "Instant",
+          "cooldown": "7 sec.",
+          "duration": "3.3 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "100",
+          "aggro": "80",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1000%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Greatest Inspiration",
+          "image": "dra_success.jpg",
+          "description": "Improves the ability of the allies by drawing a picture filled with warm and hopeful spirit. [Squad Buff Point] +4",
+          "target": "",
+          "casting_time": "5.52 sec.",
+          "cooldown": "40 sec.",
+          "duration": "390sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "300",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 30sec."
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 300sec."
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 330sec."
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 360sec."
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 390sec."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Graffiti Road",
+          "image": "dra_graffitiroad.jpg",
+          "description": "Makes enemy slowly with sticky paint in four colors.",
+          "target": "Up to 12 enemies 20m away and within 6m",
+          "casting_time": "0.93 sec.",
+          "cooldown": "15 sec.",
+          "duration": "3.5 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "170",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Paint Shower",
+          "image": "dra_paintsshower.jpg",
+          "description": "Putting a spell on paint lump, turns out to concentrate for a moment to the enemy.",
+          "target": "Up to 6 enemies 13m away and within a 8m radius",
+          "casting_time": "2.13 sec.",
+          "cooldown": "20 sec.",
+          "duration": "3.3 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "600",
+          "aggro": "190",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2000%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Trick Art!",
+          "image": "dra_trickart.jpg",
+          "description": "Draw a trenches picture on the floor and disrupt enemy.",
+          "target": "Up to 9 enemies 13m away and within a 8m radius",
+          "casting_time": "2.85 sec.",
+          "cooldown": "27 sec.",
+          "duration": "4.4 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "700",
+          "aggro": "200",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 3000%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 6000%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [INT]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [INT]",
+        "Ignore additional RES according to extra [INT] * 4",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -450,
+        "y": -200
+      }
+    }
+  ]
+}

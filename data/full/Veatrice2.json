@@ -1,0 +1,277 @@
+{
+  "slug": "Veatrice2",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Blessing of the Storm",
+    "head": "None",
+    "earring": "Earring",
+    "face": "CodeName V,s Glasses CodeName V,s Mask",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Coat",
+    "costume": "None",
+    "gloves": "Gloves",
+    "ring": "Ring",
+    "weapon_costume": "Awakening of Tempest Awakening of Tempest (Event)",
+    "belt": "Belt",
+    "shoes": "Shoes",
+    "artifact": "Leviathans Scale",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Awaken Arm",
+    "image": "job_awakenarm.jpg",
+    "description": "Momentarily strike a lightning bolt from the sky, absorbing it into ones own power.",
+    "target": "Apply to yourself.",
+    "casting_time": "0 sec.",
+    "cooldown": "20 sec.",
+    "duration": "1.2 sec.",
+    "sp_cost": "320",
+    "consume_item": "Ancient Star Orb × 10",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration : 5 Minutes",
+          "A.R. +2",
+          "Lightning Penetration +15",
+          "ATK +135%",
+          "Monster ATK +100%",
+          "INT +15",
+          "Increases damage by (2% of extra [INT]), in PvE only",
+          "Apply [Enchanted Arm] ([Awaken Arm] level +2), in PvE only"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Red Sprite",
+      "equipped_items": "Lightning Bracelet",
+      "icon_position": {
+        "x": -150,
+        "y": -50
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "153",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Red Sprite",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "10m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "-15%",
+        "Shooting DMG": "+15%",
+        "Magical DMG": "-15%",
+        "Debuff RES": "-15%"
+      },
+      "stats": {
+        "ASPD": "170",
+        "Bonus ATK": "240%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+15%",
+        "Penetration": "5+25",
+        "Immunity": "5+10"
+      },
+      "skills": [
+        {
+          "name": "Return Stroke",
+          "image": "rep_returnstroke.jpg",
+          "description": "Move instantly using the force of Lightning. An afterimage remains behind due to the speed. However, you cannot pass through terrain or obstacles.",
+          "target": "",
+          "casting_time": "0.533 sec.",
+          "cooldown": "3.5 sec.",
+          "duration": "0.633 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "200",
+          "aggro": "0",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Electrocution",
+          "image": "rep_electrocution.jpg",
+          "description": "Gather electricity at your fingertips and electrocute the innards of the target by stabbing them with it.",
+          "target": "1 enemy within a range of 1m",
+          "casting_time": "Instant",
+          "cooldown": "5 sec.",
+          "duration": "1.2 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "250",
+          "aggro": "105",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Elves",
+          "image": "rep_elves.jpg",
+          "description": "Immediately detonate the power of Lightning contained inside yourself.",
+          "target": "Up to 5 enemies 12m away",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "1.2 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "500",
+          "aggro": "200",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1600%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3200%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Giant Jet",
+          "image": "rep_giantjet.jpg",
+          "description": "Produce and drop red thunderstorms in designated places, causing a powerful explosion.",
+          "target": "",
+          "casting_time": "1.2 sec.",
+          "cooldown": "10 sec.",
+          "duration": "1.033 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "400",
+          "aggro": "45",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1900%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3800%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Catatumbo",
+          "image": "rep_catatumbo.jpg",
+          "description": "Condense the power of the lightning and launch it instantly.",
+          "target": "Up to 3 enemies 15m away and within a 1.5m range",
+          "casting_time": "2.033 sec.",
+          "cooldown": "15 sec.",
+          "duration": "1.033 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "500",
+          "aggro": "200",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1600%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3200%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [INT]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [INT]",
+        "Ignore additional RES according to extra [INT] * 3",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Lightning Bracelet",
+      "icon_position": {
+        "x": -150,
+        "y": -50
+      }
+    }
+  ]
+}

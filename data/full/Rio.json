@@ -1,0 +1,1313 @@
+{
+  "slug": "Rio",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Pioneering Supporters Lucias Appreciation Plaque",
+    "head": "None",
+    "earring": "Earring",
+    "face": "One Eyed Glass",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Robe",
+    "costume": "None",
+    "gloves": "Gloves",
+    "ring": "Ring",
+    "weapon_costume": "Liuto Di Amaneti Event Liuto Di Amaneti",
+    "belt": "Belt",
+    "shoes": "Shoes",
+    "artifact": "Pick Lorchs Letter",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Encore",
+    "image": "job_encor.jpg",
+    "description": "Reply to the cry of people for an Encore!",
+    "target": "Self-buff",
+    "casting_time": "1.033 sec.",
+    "cooldown": "45 sec.",
+    "duration": "2.83 sec.",
+    "sp_cost": "300",
+    "consume_item": "Ancient Star Orb × 5",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration : 20 seconds",
+          "+1 Skill Level",
+          "[Rio] A.R. +2"
+        ]
+      },
+      {
+        "level": "Level 11",
+        "effects": [
+          "Duration : 35 secs.",
+          "All Stance skill Lv.+1"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Minstrel",
+      "equipped_items": "Lute",
+      "icon_position": {
+        "x": -150,
+        "y": -375
+      }
+    },
+    {
+      "stance_name": "Serenade",
+      "equipped_items": "Lute",
+      "icon_position": {
+        "x": 0,
+        "y": -400
+      }
+    },
+    {
+      "stance_name": "Prelude",
+      "equipped_items": "Lute",
+      "icon_position": {
+        "x": -250,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Ancient Tactics",
+      "equipped_items": "Lute",
+      "icon_position": {
+        "x": -50,
+        "y": -325
+      }
+    },
+    {
+      "stance_name": "Possession Lightning",
+      "equipped_items": "Lightning Bracelet",
+      "icon_position": {
+        "x": -150,
+        "y": -100
+      }
+    },
+    {
+      "stance_name": "Evocation Lightning",
+      "equipped_items": "Lightning Bracelet",
+      "icon_position": {
+        "x": -150,
+        "y": -25
+      }
+    },
+    {
+      "stance_name": "Domination Lightning",
+      "equipped_items": "Lightning Bracelet",
+      "icon_position": {
+        "x": -150,
+        "y": -275
+      }
+    },
+    {
+      "stance_name": "Ancient Tactics",
+      "equipped_items": "Lightning Bracelet",
+      "icon_position": {
+        "x": -50,
+        "y": -325
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Minstrel",
+      "info": {
+        "Targets": "3 enemies",
+        "Range": "0.5~9m away",
+        "Splash": "100% DMG within  2m range",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "203",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "15"
+      },
+      "lv25_bonus": {},
+      "skills": [
+        {
+          "name": "Crazy Rhapsody",
+          "image": "min_crazyrhapsody.jpg",
+          "description": "Plays an explosive tune.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "5 sec.",
+          "duration": "2.37 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "100",
+          "aggro": "42",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 152%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 304%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Silent Cradlesong",
+          "image": "min_silentcradlesong.jpg",
+          "description": "Puts enemies to sleep with a lullaby.",
+          "target": "",
+          "casting_time": "1.033 sec.",
+          "cooldown": "15 sec.",
+          "duration": "2.83 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "200",
+          "aggro": "0",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "66% chance to inflict ["
+            },
+            {
+              "level": "Level 10",
+              "value": "66% chance to inflict ["
+            },
+            {
+              "level": "Level 11",
+              "value": "66% chance to inflict ["
+            },
+            {
+              "level": "Level 12",
+              "value": "66% chance to inflict ["
+            },
+            {
+              "level": "Level 13",
+              "value": "66% chance to inflict ["
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Rhythm and Blues",
+          "image": "min_rhythmandblues.jpg",
+          "description": "A slow but vital melody makes enemies lose their will to fight.",
+          "target": "",
+          "casting_time": "1.033 sec.",
+          "cooldown": "15 sec.",
+          "duration": "2.83 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "250",
+          "aggro": "61",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 251%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 501%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Requiem",
+          "image": "min_requiem.jpg",
+          "description": "Sings a death dirge for all enemies.",
+          "target": "",
+          "casting_time": "1.533 sec.",
+          "cooldown": "30 sec.",
+          "duration": "3.37 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "300",
+          "aggro": "120",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 545%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1090%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Lute",
+      "icon_position": {
+        "x": -150,
+        "y": -375
+      }
+    },
+    {
+      "name": "Serenade",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.1~15m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "203",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "15"
+      },
+      "lv25_bonus": {},
+      "skills": [
+        {
+          "name": "Shining Ballade",
+          "image": "ser_shiningballade.jpg",
+          "description": "Increased ATK, ATK SPD and Movement Speed to all team members.",
+          "target": "",
+          "casting_time": "1.033 sec.",
+          "cooldown": "15 sec.",
+          "duration": "2.83 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "200",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 165 sec"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 300 sec"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration : 315 sec"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration : 330 sec"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration : 345 sec"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Endurance Melody",
+          "image": "ser_endurancemelody.jpg",
+          "description": "Slight DEF Increase of team and decrease damage from physical attack.",
+          "target": "",
+          "casting_time": "1.033 sec.",
+          "cooldown": "15 sec.",
+          "duration": "2.83 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "200",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 165 sec"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 300 sec"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration : 315 sec"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration : 330 sec"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration : 345 sec"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Spell-break Rhythm",
+          "image": "ser_rhythmofspellbreak.jpg",
+          "description": "Increases Debuff RES of all team members and decreases damage from magical attacks.",
+          "target": "",
+          "casting_time": "1.033 sec.",
+          "cooldown": "15 sec.",
+          "duration": "2.83 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "200",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 165 sec"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 300 sec"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration : 315 sec"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration : 330 sec"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration : 345 sec"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Orpheus",
+          "image": "ser_orpheus.jpg",
+          "description": "Beckons a soul back to the living world with earthly hymns. Resurrects a character who is incapable of combat.",
+          "target": "",
+          "casting_time": "1.533 sec.",
+          "cooldown": "60 sec.",
+          "duration": "3.37 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "2500",
+          "aggro": "0",
+          "skill_type": "Healing",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Heals 5% of HP after Resurrection"
+            },
+            {
+              "level": "Level 10",
+              "value": "Heals 50% of HP after Resurrection"
+            },
+            {
+              "level": "Level 11",
+              "value": "Heals 55% of HP after Resurrection"
+            },
+            {
+              "level": "Level 12",
+              "value": "Heals 60% of HP after Resurrection"
+            },
+            {
+              "level": "Level 13",
+              "value": "Heals 65% of HP after Resurrection"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Lute",
+      "icon_position": {
+        "x": 0,
+        "y": -400
+      }
+    },
+    {
+      "name": "Prelude",
+      "info": {
+        "Targets": "3 enemies",
+        "Range": "0.5~9m away",
+        "Splash": "0.75 DMG within  2m range",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "203",
+        "Bonus ATK": "200%",
+        "MSPD": "1.1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "15"
+      },
+      "lv25_bonus": {
+        "Immunity": "10"
+      },
+      "skills": [
+        {
+          "name": "Con Fuoco",
+          "image": "pld_confuoco.jpg",
+          "description": "Passionate performance increases Accuracy, Critical and Attack SPD of all team members.",
+          "target": "",
+          "casting_time": "1.033 sec.",
+          "cooldown": "30 sec.",
+          "duration": "390 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "550",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 30 sec."
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 300 sec."
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 330 sec."
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 360 sec."
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 390 sec."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Virtuoso",
+          "image": "pld_virtuoso.jpg",
+          "description": "The moving play increases all team members HP and SP and decreases members received damage.",
+          "target": "",
+          "casting_time": "1.033 sec.",
+          "cooldown": "30 sec.",
+          "duration": "390 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "550",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 30 sec."
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 300 sec."
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 330 sec."
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 360 sec."
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 390 sec."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Con Impeto",
+          "image": "pld_conimpeto.jpg",
+          "description": "Skillful and excellent performance improves Blocking, Evasion and Immunity of all team members.",
+          "target": "",
+          "casting_time": "1.033 sec.",
+          "cooldown": "30 sec.",
+          "duration": "390 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "550",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 300 sec."
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 330 sec."
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 360 sec."
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 390 sec."
+            }
+          ],
+          "special": [
+            "Additional basic Attack Damage to target with ["
+          ]
+        },
+        {
+          "name": "Pieno",
+          "image": "pld_pieno.jpg",
+          "description": "The moving play increases all team members HP and SP and decreases members received damage.",
+          "target": "",
+          "casting_time": "1.533 sec.",
+          "cooldown": "30 sec.",
+          "duration": "390 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "550",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 20 sec."
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 300 sec."
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 330 sec."
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 360 sec."
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 390 sec."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Appassionato",
+          "image": "pld_totentanz.jpg",
+          "description": "Solemn prelude fills enemies with deadly despair.",
+          "target": "",
+          "casting_time": "1.033 sec.",
+          "cooldown": "35 sec.",
+          "duration": "2.83 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "750",
+          "aggro": "95",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 413%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 826%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [None]"
+      ],
+      "equipped_items": "Lute",
+      "icon_position": {
+        "x": -250,
+        "y": 0
+      }
+    },
+    {
+      "name": "Ancient Tactics",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.1~1m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "+10%",
+        "Shooting DMG": "-10%",
+        "Magical DMG": "-15%",
+        "Debuff RES": "-10%"
+      },
+      "stats": {
+        "ASPD": "150",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "20"
+      },
+      "lv25_bonus": {
+        "Immunity": "10+20"
+      },
+      "skills": [
+        {
+          "name": "Miracle",
+          "image": "aot_miracle.jpg",
+          "description": "Execute a tactic that increases the offensive and defensive capacity of the ally.",
+          "target": "",
+          "casting_time": "0.866 sec.",
+          "cooldown": "30 sec.",
+          "duration": "130 seconds",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "150",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 10 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 100 seconds"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 110 seconds"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 120 seconds"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 130 seconds"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Protecting Booster",
+          "image": "aot_caenopy.jpg",
+          "description": "Increase the defensive capacity of target ally.",
+          "target": "",
+          "casting_time": "0.866 sec.",
+          "cooldown": "10 sec.",
+          "duration": "390 seconds",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 30 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 330 seconds"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 360 seconds"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 390 seconds"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Shearing Booster",
+          "image": "aot_siaringbooster.jpg",
+          "description": "Increase the offensive capacity of target ally.",
+          "target": "",
+          "casting_time": "0.866 sec.",
+          "cooldown": "10 sec.",
+          "duration": "390 seconds",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 30 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 330 seconds"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 360 seconds"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 390 seconds"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Bartor",
+          "image": "aot_bartor.jpg",
+          "description": "Remove all harmful effects and restore HP of all team members.",
+          "target": "",
+          "casting_time": "0.866 sec.",
+          "cooldown": "20 sec.",
+          "duration": "1.6 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "150",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Restore 15% of maximum HP"
+            },
+            {
+              "level": "Level 10",
+              "value": "Restore 15% of maximum HP"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Additional Training",
+          "image": "aot_Additionaltraing.jpg",
+          "description": "Increase skill level by enhancing own tactical capacity.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "50 sec.",
+          "duration": "1.033 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Increase all skills level by enhancing your own tactical capacity."
+            },
+            {
+              "level": "Level 10",
+              "value": "Increase all skills level by enhancing your own tactical capacity."
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 2% of extra [None]"
+      ],
+      "equipped_items": "Lute",
+      "icon_position": {
+        "x": -50,
+        "y": -325
+      }
+    },
+    {
+      "name": "Possession Lightning",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.5~9m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "170",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "0",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "-25",
+        "Ice RES": "0",
+        "Lightning RES": "15",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [
+        {
+          "name": "Lightning",
+          "image": "plgt_lightning.jpg",
+          "description": "Strikes an enemy with a bolt of lightning.",
+          "target": "1 enemy within a range of 10m",
+          "casting_time": "0.9 sec.",
+          "cooldown": "0 sec.",
+          "duration": "1.33 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "60",
+          "aggro": "61",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1100%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2200%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Electric Charger",
+          "image": "plgt_electriccharger.jpg",
+          "description": "Increases Lightning RES by imbuing Lightning attribute to allies attack.",
+          "target": "",
+          "casting_time": "0.367 sec.",
+          "cooldown": "0 sec.",
+          "duration": "230 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "90",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 110 sec."
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 200 sec."
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 210 sec."
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 220 sec."
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 230 sec."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Shock Wave",
+          "image": "plgt_shockwaves.jpg",
+          "description": "Electrocutes surrounding enemies by an electrical field.",
+          "target": "Up to 7 enemies within a range of 5m",
+          "casting_time": "2.967 sec.",
+          "cooldown": "15 sec.",
+          "duration": "1.53 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "120",
+          "aggro": "0",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "100% chance to inflict ["
+            },
+            {
+              "level": "Level 10",
+              "value": "100% chance to inflict ["
+            },
+            {
+              "level": "Level 11",
+              "value": "100% chance to inflict ["
+            },
+            {
+              "level": "Level 12",
+              "value": "100% chance to inflict ["
+            },
+            {
+              "level": "Level 13",
+              "value": "100% chance to inflict ["
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Tornado Holding",
+          "image": "plgt_tornado.jpg",
+          "description": "Summon a [Tornado] to bombard enemies with lightning attacks.",
+          "target": "",
+          "casting_time": "2 sec.",
+          "cooldown": "15 sec.",
+          "duration": "1.63 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "180",
+          "aggro": "186",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2400%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Lightning Bracelet",
+      "icon_position": {
+        "x": -150,
+        "y": -100
+      }
+    },
+    {
+      "name": "Evocation Lightning",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.5~9m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "227",
+        "Bonus ATK": "200%",
+        "MSPD": "0.5",
+        "MSPD Limit": "8.00",
+        "ACC": "0",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "-50",
+        "Ice RES": "0",
+        "Lightning RES": "30",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [
+        {
+          "name": "Thunderstorm",
+          "image": "elgt_thunderstorm.jpg",
+          "description": "Causes a thunderstorm to form over the caster, inflicting random lightning damage on enemies in the vicinity.",
+          "target": "",
+          "casting_time": "1.533 sec.",
+          "cooldown": "0 sec.",
+          "duration": "1.5 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "80",
+          "aggro": "41",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 700%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Chain Lightning",
+          "image": "elgt_chainlightning.jpg",
+          "description": "Conjure forth a bolt of chain lightning that leaps from one enemy to the next, inflicting lightning damage on the target and surrounding enemies.",
+          "target": "",
+          "casting_time": "1.433 sec.",
+          "cooldown": "18 sec.",
+          "duration": "2.7 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "160",
+          "aggro": "90",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Enchanted Arm",
+          "image": "elgt_enchantedarm.jpg",
+          "description": "A spell that imbues your arm with the power of lightning. Effect disappears when stance changes.",
+          "target": "",
+          "casting_time": "2 sec.",
+          "cooldown": "10 sec.",
+          "duration": "2.47 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "240",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 600s"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 600s"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Lightning Bracelet",
+      "icon_position": {
+        "x": -150,
+        "y": -25
+      }
+    },
+    {
+      "name": "Domination Lightning",
+      "info": {
+        "Targets": "3 enemies",
+        "Range": "0.5~9m away",
+        "Splash": "100% DMG within  2m range",
+        "Hits per attack": "2",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "217",
+        "Bonus ATK": "200%",
+        "MSPD": "0.4",
+        "MSPD Limit": "8.00",
+        "ACC": "0",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "-75",
+        "Ice RES": "0",
+        "Lightning RES": "50",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [
+        {
+          "name": "Charged Bolt",
+          "image": "dlgt_chargedvolt.jpg",
+          "description": "Releases a surge of electricity that attacks surrounding enemies.",
+          "target": "Up to 3 targets 10m away and within a radius of 1.75m",
+          "casting_time": "1.533 sec.",
+          "cooldown": "0 sec.",
+          "duration": "1.5 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "100",
+          "aggro": "67",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Electric Plasma",
+          "image": "dlgt_electricplasma.jpg",
+          "description": "Lightning RES and Lightning attribute ATK increases much but Fire RES decreases.",
+          "target": "",
+          "casting_time": "2 sec.",
+          "cooldown": "0 sec.",
+          "duration": "230 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "150",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 110 sec."
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 200 sec."
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 210 sec."
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 220 sec."
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 230 sec."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Lightning Blast",
+          "image": "dlgt_lightningblast.jpg",
+          "description": "Discharges an electrical tornado.",
+          "target": "Up to 6 enemies 6m away and at an angle of 80 degrees",
+          "casting_time": "1.433 sec.",
+          "cooldown": "10 sec.",
+          "duration": "2.7 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "200",
+          "aggro": "78",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1100%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2200%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Frenzied Thunder",
+          "image": "dlgt_frenzythunder.jpg",
+          "description": "Conjures a tempest that destroys everything in its path.",
+          "target": "Up to 12 enemies within a range of 8m",
+          "casting_time": "4.833 sec.",
+          "cooldown": "30 sec.",
+          "duration": "1.6 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "98",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2400%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Lightning Bracelet",
+      "icon_position": {
+        "x": -150,
+        "y": -275
+      }
+    }
+  ]
+}

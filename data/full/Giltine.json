@@ -1,0 +1,282 @@
+{
+  "slug": "Giltine",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Killer of the Ten Nobles Siblings Faded Glyph Howls from Gehenna",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Robe",
+    "costume": "None",
+    "gloves": "Gloves",
+    "ring": "Ring",
+    "weapon_costume": "Demonic Ruby Bracelet Event Demonic Ruby Bracelet",
+    "belt": "Belt",
+    "shoes": "Shoes",
+    "artifact": "Shiny Bud",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Taken",
+    "image": "job_taken.jpg",
+    "description": "Charges power by absorbing the souls around it.",
+    "target": "Self-buff",
+    "casting_time": "0 sec.",
+    "cooldown": "15 sec.",
+    "duration": "2.533 sec.",
+    "sp_cost": "300",
+    "consume_item": "Ancient Star Orb × 10",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration: 600 seconds",
+          "A.R. +1",
+          "D.R. +1",
+          "ATK +30%",
+          "Mental Penetration +20",
+          "Movement Speed Limit +25%"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Dead Scythe",
+      "equipped_items": "Special Bracelet",
+      "icon_position": {
+        "x": -200,
+        "y": -75
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Dead Scythe",
+      "info": {
+        "Targets": "3 enemies",
+        "Range": "0.1~13m away",
+        "Splash": "100% DMG within  3m range",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "-20%"
+      },
+      "stats": {
+        "ASPD": "170",
+        "Bonus ATK": "350%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "Penetration": "10+20",
+        "Immunity": "10+0"
+      },
+      "skills": [
+        {
+          "name": "Release",
+          "image": "dscythe_release.jpg",
+          "description": "Release the souls potential abilities.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "60 sec.",
+          "duration": "600 seconds",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 600 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 600 seconds"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 600 seconds"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 600 seconds"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 600 seconds"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Soul Split",
+          "image": "dscythe_soulsplit.jpg",
+          "description": "Attack with a sharp magic that seems to tear the soul apart.",
+          "target": "Up to 9 enemies 18m away and within 3m width",
+          "casting_time": "1.7 sec.",
+          "cooldown": "10 sec.",
+          "duration": "1.366 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "550",
+          "aggro": "90",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Horizon Slash",
+          "image": "dscythe_horizoncut.jpg",
+          "description": "Attempt to take away the enemys soul with the great scythe of death.",
+          "target": "Up to 9 enemies 18m away and within 3m width",
+          "casting_time": "1.1 sec.",
+          "cooldown": "10 sec.",
+          "duration": "1.966 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "750",
+          "aggro": "90",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Death Ground",
+          "image": "dscythe_verticalcut.jpg",
+          "description": "Collect the energy of darkness and detonate it at once.",
+          "target": "Up to 6 enemies 15m away and within a 6m radius",
+          "casting_time": "2.633 sec.",
+          "cooldown": "15 sec.",
+          "duration": "1.433 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "800",
+          "aggro": "90",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2400%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4800%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Cadena",
+          "image": "dscythe_cadena.jpg",
+          "description": "Connect the souls with an agonizing chain.",
+          "target": "",
+          "casting_time": "2.466 sec.",
+          "cooldown": "35 sec.",
+          "duration": "10.33 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "900",
+          "aggro": "100",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2000%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4000%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [INT]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [INT]",
+        "Ignore additional RES according to extra [INT] * 3",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Special Bracelet",
+      "icon_position": {
+        "x": -200,
+        "y": -75
+      }
+    }
+  ]
+}

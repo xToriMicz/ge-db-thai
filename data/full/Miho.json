@@ -1,0 +1,273 @@
+{
+  "slug": "Miho",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Nine Tails The Void",
+    "head": "None",
+    "earring": "Earring",
+    "face": "Glasses of Honor - Maid Event Glasses of Honor - maid",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Coat",
+    "costume": "None",
+    "gloves": "Gloves",
+    "ring": "Ring",
+    "weapon_costume": "Essence of Cuberic Spirit of Cuberic Essence of Cuberic (Event) Spirit of Cuberic (Event)",
+    "belt": "Belt",
+    "shoes": "Shoes",
+    "artifact": "Ice Fox Statue Soul of Fox",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Soul of Fox",
+    "image": "job_spiritfox2.jpg",
+    "description": "Ready to fight by using Soul of Fox.",
+    "target": "Up to 7 enemies within a range of 12m",
+    "casting_time": "0 sec.",
+    "cooldown": "20 sec.",
+    "duration": "1.8 sec.",
+    "sp_cost": "200",
+    "consume_item": "Ancient Star Orb × 5",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration: 300 sec.",
+          "A.R.+1",
+          "Attack SPD+10%",
+          "INT+5",
+          "Normal attack accuracy imposes [Mark, Soul] on enemy."
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Nine Tails",
+      "equipped_items": "Special Bracelet",
+      "icon_position": {
+        "x": -50,
+        "y": -175
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Nine Tails",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "10m away",
+        "Splash": "None",
+        "Hits per attack": "4",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "-20%",
+        "Shooting DMG": "+10%",
+        "Magical DMG": "-10%",
+        "Debuff RES": "-20%"
+      },
+      "stats": {
+        "ASPD": "187",
+        "Bonus ATK": "220%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "5",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "Block": "+10",
+        "Penetration": "10+15",
+        "Immunity": "5+15"
+      },
+      "skills": [
+        {
+          "name": "Fox Form",
+          "image": "nth2_foxfoam.jpg",
+          "description": "Draws the suppressed wild nature of fox to go reckless by absorbing [Fox Bead].",
+          "target": "Up to 7 enemies within a range of 12m",
+          "casting_time": "Instant",
+          "cooldown": "30 sec.",
+          "duration": "360 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "750",
+          "aggro": "0",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Nine Crystal",
+          "image": "nth2_ninechrystal.jpg",
+          "description": "Endows the magic power into [Fox Bead] and shoots it to the enemy.",
+          "target": "Up to 3 enemies in max 13m away and within 4m radius",
+          "casting_time": "1.7 sec.",
+          "cooldown": "12 sec.",
+          "duration": "1.4 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "160",
+          "aggro": "184",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1600%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3200%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Sparking Fox",
+          "image": "nth2_sparkingfox.jpg",
+          "description": "Creates powerful electricity by sending [Fox Bead] in the designated ground to attack the enemy.",
+          "target": "Up to 7 enemies 14m away and within 6m width",
+          "casting_time": "2.9 sec.",
+          "cooldown": "19 sec.",
+          "duration": "2.57 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "172",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Fox Faltrie",
+          "image": "nth2_foxfaltrie.jpg",
+          "description": "Rushes to the specified enemy and throw [Fox Bead] to its killing point.",
+          "target": "1 enemy within a range of 15m",
+          "casting_time": "1.47 sec.",
+          "cooldown": "12 sec.",
+          "duration": "2.68 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "500",
+          "aggro": "60",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Tail Crash",
+          "image": "nth2_tailcrash.jpg",
+          "description": "Whips the enemy with [tail] and blows it away.",
+          "target": "Up to 5 adjacent enemies",
+          "casting_time": "Instant",
+          "cooldown": "12 sec.",
+          "duration": "1.5 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "560",
+          "aggro": "342",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2600%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5200%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [INT]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [INT]",
+        "Ignore additional RES according to extra [INT] * 4",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Special Bracelet",
+      "icon_position": {
+        "x": -50,
+        "y": -175
+      }
+    }
+  ]
+}

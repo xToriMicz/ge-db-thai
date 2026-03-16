@@ -1,0 +1,280 @@
+{
+  "slug": "Tora2",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Shadow Javelin",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Leather",
+    "costume": "None",
+    "gloves": "Gloves Leather",
+    "ring": "Ring",
+    "weapon_costume": "Eternal Revenge Eternal Revenge (Event)",
+    "belt": "Belt Leather",
+    "shoes": "Shoes Leather",
+    "artifact": "Chocolate of Reminiscence",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Melting Darkness",
+    "image": "job_meltingdarkness.jpg",
+    "description": "To sink ones body perfectly in the dark, and draw strength from the dark. Effects disappear on Stance change.",
+    "target": "Apply to yourself.",
+    "casting_time": "0 sec.",
+    "cooldown": "12.5 sec.",
+    "duration": "0.7 sec.",
+    "sp_cost": "200",
+    "consume_item": "Ancient Star Orb × 10",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Can be used Max. 3 times, Recharge after using it once",
+          "Recharge Duration: 20 seconds",
+          "Stage 1: Duration 30 seconds, A.R. +1, ATK +10%, Physical Penetration +2, ATK against monster +15%",
+          "Stage 2 : Duration 60 seconds, A.R. +1, ATK +20%, Physical Penetration +4, ATK against monster +30%",
+          "Stage 3 : Duration 120 seconds, A.R. +1, ATK +30%, Physical Penetration +6, ATK against monster +45%",
+          "Activation : Duration 300 seconds, A.R. +1, ATK +45%, Physical Penetration +10, ATK against monster +60%",
+          "Changes to the next stage in order when skill is used in each stage",
+          "Cannot change when reaching Activation stage[Dark Veil] activated when used."
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Dark Lord",
+      "equipped_items": "Javelin",
+      "icon_position": {
+        "x": -150,
+        "y": -150
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Dark Lord",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "10m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "+25%",
+        "Shooting DMG": "-10%",
+        "Magical DMG": "-20%",
+        "Debuff RES": "-15%"
+      },
+      "stats": {
+        "ASPD": "137",
+        "Bonus ATK": "300%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "15",
+        "EVA": "10",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+15%",
+        "Ignore DEF": "+10%",
+        "Evasion": "+5",
+        "Critical": "+10",
+        "Penetration": "5+30",
+        "Immunity": "5+5"
+      },
+      "skills": [
+        {
+          "name": "Near Death",
+          "image": "dlr_neardeath.jpg",
+          "description": "Summon the dark javelin and throw it with your own.",
+          "target": "1 enemy within a range of 15m",
+          "casting_time": "Instant",
+          "cooldown": "8 sec.",
+          "duration": "1.5 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "150",
+          "aggro": "50",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Into the Darkness",
+          "image": "dlr_intothedarkness.jpg",
+          "description": "Leap backward, throw the javelin, and blow it up.",
+          "target": "Up to 5 enemies 6m away and within a 2.5m radius",
+          "casting_time": "0.467 sec.",
+          "cooldown": "12 sec.",
+          "duration": "1.467 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "134",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Death Rain",
+          "image": "dlr_deathrain.jpg",
+          "description": "Throw the javelin into the air at the designated place and then blow it up.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "1.867 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "200",
+          "aggro": "120",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2400%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4800%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Prelude to Death",
+          "image": "dlr_preludetodeath.jpg",
+          "description": "Gather the inner strength and throw the Javelin toward the front.",
+          "target": "Up to 5 enemies 17m away and within 4m",
+          "casting_time": "5 sec.",
+          "cooldown": "20 sec.",
+          "duration": "1.3 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "200",
+          "aggro": "121",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1400%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2800%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Scent of Death",
+          "image": "dlr_scentofdeath.jpg",
+          "description": "Summon dark javelins and blow them up after stabbing them into the target.",
+          "target": "1 enemy within a range of 15m",
+          "casting_time": "Instant",
+          "cooldown": "30 sec.",
+          "duration": "2.3 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "250",
+          "aggro": "50",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 3000%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 6000%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [DEX]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [DEX]",
+        "Ignore additional DEF according to extra [DEX] * 4",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Javelin",
+      "icon_position": {
+        "x": -150,
+        "y": -150
+      }
+    }
+  ]
+}

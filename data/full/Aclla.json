@@ -1,0 +1,869 @@
+{
+  "slug": "Aclla",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Medal of Goddess Surveillant of Star",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Coat Robe",
+    "costume": "None",
+    "gloves": "Gloves",
+    "ring": "Ring",
+    "weapon_costume": "Glow of Goddess Tartarus of Goddess Halloween Staff Costume Halloween Staff Costume (Event) Glow of Goddess (Event) Tartarus of Goddess (Event) Halloween Spirit Staff",
+    "belt": "Belt",
+    "shoes": "Shoes",
+    "artifact": "Primus Ruby of Red Flame",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Revolution",
+    "image": "job_revolution.jpg",
+    "description": "Rotates the small space in her inside and changes the main abilities.",
+    "target": "Self-buff",
+    "casting_time": "0 sec.",
+    "cooldown": "30 sec.",
+    "duration": "2 sec.",
+    "sp_cost": "100",
+    "consume_item": "Ancient Star Orb × 15",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration: 300sec.",
+          "A.R.+1",
+          "Monster Damage+40%",
+          "Penetration increases in proportion to [INT]"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Illusionist",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": -75
+      }
+    },
+    {
+      "stance_name": "Illusionist",
+      "equipped_items": "Rod",
+      "icon_position": {
+        "x": -150,
+        "y": -75
+      }
+    },
+    {
+      "stance_name": "Zodiac",
+      "equipped_items": "Rod",
+      "icon_position": {
+        "x": -500,
+        "y": -350
+      }
+    },
+    {
+      "stance_name": "Telekinesis",
+      "equipped_items": "Rod",
+      "icon_position": {
+        "x": -300,
+        "y": -100
+      }
+    },
+    {
+      "stance_name": "Illusionist",
+      "equipped_items": "Staff",
+      "icon_position": {
+        "x": -150,
+        "y": -75
+      }
+    },
+    {
+      "stance_name": "Zodiac",
+      "equipped_items": "Staff",
+      "icon_position": {
+        "x": -500,
+        "y": -350
+      }
+    },
+    {
+      "stance_name": "Darkness",
+      "equipped_items": "Staff",
+      "icon_position": {
+        "x": 0,
+        "y": -475
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Illusionist",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1~10m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "170",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "15"
+      },
+      "lv25_bonus": {},
+      "skills": [
+        {
+          "name": "Sandman",
+          "image": "ilu_sandmann.jpg",
+          "description": "Put all enemies in a certain range to sleep.",
+          "target": "",
+          "casting_time": "1.167 sec.",
+          "cooldown": "10 sec.",
+          "duration": "1 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "60",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "80% chance to inflict ["
+            },
+            {
+              "level": "Level 10",
+              "value": "80% chance to inflict ["
+            },
+            {
+              "level": "Level 11",
+              "value": "80% chance to inflict ["
+            },
+            {
+              "level": "Level 12",
+              "value": "80% chance to inflict ["
+            },
+            {
+              "level": "Level 13",
+              "value": "80% chance to inflict ["
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Magical Piercing",
+          "image": "ilu_magicalpiercing.jpg",
+          "description": "Reduces Fire/Ice/Lightning/Mental RES to all enemies in a certain area.",
+          "target": "",
+          "casting_time": "1.167 sec.",
+          "cooldown": "10 sec.",
+          "duration": "1 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "90",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 16.5 sec."
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 30 sec."
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration : 31.5 sec."
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration : 33 sec."
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration : 34.5 sec."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Ritardi",
+          "image": "ilu_ritardi.jpg",
+          "description": "Reduces the Movement Speed of enemies.",
+          "target": "",
+          "casting_time": "1.167 sec.",
+          "cooldown": "10 sec.",
+          "duration": "1 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "150",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "80% chance to decrease enemys ATK/MOVE Speed -33% for 8.8 sec."
+            },
+            {
+              "level": "Level 10",
+              "value": "80% chance to decrease enemys ATK/MOVE Speed -60% for 16 sec."
+            },
+            {
+              "level": "Level 11",
+              "value": "80% chance to decrease enemys ATK/MOVE Speed -63% for 16.8 sec."
+            },
+            {
+              "level": "Level 12",
+              "value": "80% chance to decrease enemys ATK/MOVE Speed -66% for 17.6 sec."
+            },
+            {
+              "level": "Level 13",
+              "value": "80% chance to decrease enemys ATK/MOVE Speed -69% for 18.4 sec."
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Invisible Stalker",
+          "image": "ilu_invisiblestalker.jpg",
+          "description": "Grant invisibility to allies. An invisible character cannot be attacked until he is detected, but cannot use any skill. After using it, [Skill Standby] buff is applied.",
+          "target": "",
+          "casting_time": "2.633 sec.",
+          "cooldown": "60 sec.",
+          "duration": "1.63 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "180",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration : 17.5 sec"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration : 40 sec"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration : 42.5 sec"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration : 45 sec"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration : 47.5 sec"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": -75
+      }
+    },
+    {
+      "name": "Zodiac",
+      "info": {
+        "Targets": "4 enemies",
+        "Range": "1.5~12.5m away",
+        "Splash": "100% DMG within  2m range",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "Yes",
+        "Regenerate SP": "No",
+        "Shooting DMG": "+20%",
+        "Debuff RES": "-10%"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "330%",
+        "MSPD": "1.25",
+        "MSPD Limit": "12.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "Penetration": "10+20",
+        "Immunity": "5+10"
+      },
+      "skills": [
+        {
+          "name": "Scorpius",
+          "image": "zod_scorpius.jpg",
+          "description": "With the power of Scorpius, it attacks enemies from every direction.",
+          "target": "Up to 4 enemies 2 - 12m away and within a 6m radius",
+          "casting_time": "1.5 sec.",
+          "cooldown": "8 sec.",
+          "duration": "1.866 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "240",
+          "aggro": "72",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1600%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Taurus",
+          "image": "zod_taurus.jpg",
+          "description": "With the power of Taurus, it makes enemy fly high.",
+          "target": "Up to 7 enemies 15m away and within 6.",
+          "casting_time": "1.452 sec.",
+          "cooldown": "10 sec.",
+          "duration": "2.6 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "320",
+          "aggro": "60",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Libra Ring",
+          "image": "zod_libra.jpg",
+          "description": "With the scale of Justice, it judge enemies as much as their weight of sin.",
+          "target": "Up to 10 enemies within a range of 10m",
+          "casting_time": "1.733 sec.",
+          "cooldown": "17 sec.",
+          "duration": "2.933 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "450",
+          "aggro": "150",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 900%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1800%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Leo",
+          "image": "zod_leo.jpg",
+          "description": "With the cruel power of Leo, it wipes out enemies calling millions of shooting stars.",
+          "target": "Up to 20 attacks during casting time",
+          "casting_time": "2.166 sec.",
+          "cooldown": "22 sec.",
+          "duration": "5.49 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "580",
+          "aggro": "195",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Ophiuchus",
+          "image": "zod_ophiuchus.jpg",
+          "description": "With the power of Ophiuchus symbolized ruin and chaos, it ruins enemies.",
+          "target": "Up to 25 attacks during casting time",
+          "casting_time": "3.834 sec.",
+          "cooldown": "26 sec.",
+          "duration": "7.32 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "680",
+          "aggro": "200",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 620%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 1240%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [INT]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [INT]",
+        "Ignore additional RES according to extra [INT] * 4",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Rod",
+      "icon_position": {
+        "x": -500,
+        "y": -350
+      }
+    },
+    {
+      "name": "Telekinesis",
+      "info": {
+        "Targets": "6 enemies",
+        "Range": "1.5~14m away",
+        "Splash": "0.5 DMG within  3m range",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "150",
+        "Bonus ATK": "295%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "100"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+5%",
+        "Penetration": "15+25",
+        "Immunity": "5+10"
+      },
+      "skills": [
+        {
+          "name": "Wind Pressure",
+          "image": "tel_windpressure.jpg",
+          "description": "Throw the air blades to give a shock to enemy.",
+          "target": "Up to 9 enemies 10m away and within 9m width",
+          "casting_time": "1.4 sec.",
+          "cooldown": "9 sec.",
+          "duration": "2 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "100",
+          "aggro": "50",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Avalanche",
+          "image": "tel_avalanche.jpg",
+          "description": "Summon a pile of stones to make landslide above head of enemy.",
+          "target": "Up to 3x additional Damage against monsters in proportion to the casters final [",
+          "casting_time": "2.2 sec.",
+          "cooldown": "15 sec.",
+          "duration": "2.833 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "100",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1600%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3200%"
+            }
+          ],
+          "special": [
+            "Additional 100 DEF removed against PC in proportion to the casters final [",
+            "Additional 100 DEF removed against PC in proportion to the casters final ["
+          ]
+        },
+        {
+          "name": "Weather Ring",
+          "image": "tel_weathering.jpg",
+          "description": "Enemy will be weathered with a strong sandstorm.",
+          "target": "Up to 24 enemies 12m away and within a 10m radius",
+          "casting_time": "2.066 sec.",
+          "cooldown": "30 sec.",
+          "duration": "7.866 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "150",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Eraser",
+          "image": "tel_eraser.jpg",
+          "description": "Cancel the buffs that benefit the enemies.",
+          "target": "Up to 15 enemies 5m away within a radius of 12m",
+          "casting_time": "2.8 sec.",
+          "cooldown": "60 sec.",
+          "duration": "2.1 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "800",
+          "aggro": "250",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "1% chance to inflict for 1.5 sec"
+            },
+            {
+              "level": "Level 10",
+              "value": "90% chance to inflict for 15 sec"
+            },
+            {
+              "level": "Level 11",
+              "value": "100% chance to inflict for 16.5 sec"
+            },
+            {
+              "level": "Level 12",
+              "value": "110% chance to inflict for 18 sec"
+            },
+            {
+              "level": "Level 13",
+              "value": "120% chance to inflict for 19.5 sec"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Falling Meteorite",
+          "image": "tel_meteorite.jpg",
+          "description": "Summon a huge meteor and drop it down to the ground.",
+          "target": "Up to 3x additional Damage against monsters in proportion to the casters final [",
+          "casting_time": "3 sec.",
+          "cooldown": "90 sec.",
+          "duration": "3.4 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "800",
+          "aggro": "500",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2800%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5600%"
+            }
+          ],
+          "special": [
+            "Additional 100 DEF removed against PC in proportion to the casters final [",
+            "Additional 100 DEF removed against PC in proportion to the casters final ["
+          ]
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [INT]",
+        "[PVP/PVE Maps] Additional 5% DMG according to extra [INT]",
+        "Ignore additional RES according to extra [INT] * 4",
+        "Additional DMG against [PC] + 2x",
+        "Additional DMG against Monster according to 5 * 50"
+      ],
+      "equipped_items": "Rod",
+      "icon_position": {
+        "x": -300,
+        "y": -100
+      }
+    },
+    {
+      "name": "Darkness",
+      "info": {
+        "Targets": "4 enemies",
+        "Range": "1.5~12.5m away",
+        "Splash": "100% DMG within  2m range",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "Yes",
+        "Regenerate SP": "No",
+        "Shooting DMG": "+20%",
+        "Debuff Chance": "+10%"
+      },
+      "stats": {
+        "ASPD": "170",
+        "Bonus ATK": "200%",
+        "MSPD": "1.25",
+        "MSPD Limit": "12.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "40"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+8%",
+        "Immunity": "10"
+      },
+      "skills": [
+        {
+          "name": "Deep Sleep",
+          "image": "pod_deepsleep.jpg",
+          "description": "Enhanced skill of Sandman. Summon other-worldly moth power which has a dark light to make enemies sleep.",
+          "target": "",
+          "casting_time": "1.3 sec.",
+          "cooldown": "12 sec.",
+          "duration": "1.73 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "640",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "1% chance to inflict ["
+            },
+            {
+              "level": "Level 10",
+              "value": "90% chance to inflict ["
+            },
+            {
+              "level": "Level 11",
+              "value": "100% chance to inflict ["
+            },
+            {
+              "level": "Level 12",
+              "value": "110% chance to inflict ["
+            },
+            {
+              "level": "Level 13",
+              "value": "120% chance to inflict ["
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Improve Disease",
+          "image": "pod_improvedisease.jpg",
+          "description": "Enhances its curse, DEF abilities but will be immobilized and attribute RES will be decreased.",
+          "target": "",
+          "casting_time": "0.733 sec.",
+          "cooldown": "22 sec.",
+          "duration": "1.8 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "640",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "1% chance to inflict for 2 sec"
+            },
+            {
+              "level": "Level 10",
+              "value": "90% chance to inflict for 20 sec"
+            },
+            {
+              "level": "Level 11",
+              "value": "100% chance to inflict for 22 sec"
+            },
+            {
+              "level": "Level 12",
+              "value": "110% chance to inflict for 24 sec"
+            },
+            {
+              "level": "Level 13",
+              "value": "120% chance to inflict for 26 sec"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Blood Curse",
+          "image": "pod_bloodcurse.jpg",
+          "description": "To increase external damage to enemies in a range, it calls down bloody curse.",
+          "target": "",
+          "casting_time": "3.5 sec.",
+          "cooldown": "55 sec.",
+          "duration": "2.5 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "940",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "1% chance to inflict for 18 sec"
+            },
+            {
+              "level": "Level 10",
+              "value": "90% chance to inflict for 180 sec"
+            },
+            {
+              "level": "Level 11",
+              "value": "100% chance to inflict for 198 sec"
+            },
+            {
+              "level": "Level 12",
+              "value": "110% chance to inflict for 216 sec"
+            },
+            {
+              "level": "Level 13",
+              "value": "120% chance to inflict for 234 sec"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Gloomy Present",
+          "image": "pod_gloomypresent.jpg",
+          "description": "The curse of abyss that narrows your view and decrease your Movement Speed.",
+          "target": "",
+          "casting_time": "1.533 sec.",
+          "cooldown": "60 sec.",
+          "duration": "2.6 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "940",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "1% chance to inflict for 6 sec"
+            },
+            {
+              "level": "Level 10",
+              "value": "90% chance to inflict for 60 sec"
+            },
+            {
+              "level": "Level 11",
+              "value": "100% chance to inflict for 66 sec"
+            },
+            {
+              "level": "Level 12",
+              "value": "110% chance to inflict for 72 sec"
+            },
+            {
+              "level": "Level 13",
+              "value": "120% chance to inflict for 78 sec"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Whole Cancellation",
+          "image": "pod_wholecancellation.jpg",
+          "description": "Can debuff the enemies in the range and limit enemies to use skill.",
+          "target": "Up to 6 enemies within a range of 5m",
+          "casting_time": "0.867 sec.",
+          "cooldown": "50 sec.",
+          "duration": "1.7 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "840",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "1% chance to inflict for 1.5 sec"
+            },
+            {
+              "level": "Level 10",
+              "value": "90% chance to inflict for 15 sec"
+            },
+            {
+              "level": "Level 11",
+              "value": "100% chance to inflict for 16.5 sec"
+            },
+            {
+              "level": "Level 12",
+              "value": "110% chance to inflict for 18 sec"
+            },
+            {
+              "level": "Level 13",
+              "value": "120% chance to inflict for 19.5 sec"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "equipped_items": "Staff",
+      "icon_position": {
+        "x": 0,
+        "y": -475
+      }
+    }
+  ]
+}

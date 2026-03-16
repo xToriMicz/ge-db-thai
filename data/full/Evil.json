@@ -1,0 +1,270 @@
+{
+  "slug": "Evil",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Deus Machina",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Coat Robe",
+    "costume": "None",
+    "gloves": "Gloves",
+    "ring": "Ring",
+    "weapon_costume": "Evils Affection Evils Puzzlement Evils Impatience Evils Temptation Evils Strain Evils Risk Evils Fear Evils Desires Evils Despair Evils Void Evils Aversion Evils freedom from distraction Evils Affection Evils Puzzlement Evils Impatience Evils Temptation Event Machina of Spirit Costume Machina of Spirit Costume Evil Knuckle Costume Evil Rifle Costume Evil Main-Gauche Costume Evil Slayer Costume Evil Bayonet Costume Evil Cannon Costume Evil Crossbow Costume Evil Tonfa Costume",
+    "belt": "Belt",
+    "shoes": "Shoes",
+    "artifact": "Pigeon Brooch",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Sorting Machina",
+    "image": "job_soltingmachina.jpg",
+    "description": "Understanding the flow of the machine circuit, it exerts more effective combat.",
+    "target": "Self-buff",
+    "casting_time": "0 sec.",
+    "cooldown": "30 sec.",
+    "duration": "2.033 sec.",
+    "sp_cost": "750",
+    "consume_item": "Ancient Star Orb × 5",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration: 300s",
+          "A.R. +1",
+          "ATK +20%",
+          "Lightning PEN +20, Casting SPD -15%",
+          "Ignore Debuffs"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Machina",
+      "equipped_items": "Lightning Bracelet",
+      "icon_position": {
+        "x": -450,
+        "y": -425
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Machina",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "0.5~9m away",
+        "Splash": "None",
+        "Hits per attack": "1",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Shooting DMG": "+10%"
+      },
+      "stats": {
+        "ASPD": "227",
+        "Bonus ATK": "290%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "125",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+5%",
+        "Penetration": "25"
+      },
+      "skills": [
+        {
+          "name": "Machina Control",
+          "image": "mcn_machinacontrol.jpg",
+          "description": "It charges the energy to circulate a power circuit of the machine. Additional effects are given to the attack skills in proportion to the charge.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "25 sec.",
+          "duration": "2.533 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "250",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "When the first use, ["
+            },
+            {
+              "level": "Level 10",
+              "value": "When the first use, ["
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Static",
+          "image": "mcn_static.jpg",
+          "description": "It blocks magics by releasing a shock wave which discharge magics around. According to [Machina Control] level, the duration will increase.",
+          "target": "9 enemies within 8m",
+          "casting_time": "0.7 sec.",
+          "cooldown": "18 sec.",
+          "duration": "1.833 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "750",
+          "aggro": "0",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Edella",
+          "image": "mcn_eedla.jpg",
+          "description": "It blows the enemy away by releasing a shock wave applying a repulsion of magnetic fields. According to [Machina Control] Lv., the other additional effect will be given.",
+          "target": "Up to 9 enemies 8m away.",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "1.833 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "800",
+          "aggro": "250",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1500%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3000%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Magneta",
+          "image": "mcn_magenate.jpg",
+          "description": "By using the gravitation of a magnetic field, it pulls the enemy towards the caster. According to [Machina Control] Lv., the other additional effect will be given.",
+          "target": "Up to 15 enemies 6m away and within a 12m radius",
+          "casting_time": "1.6 sec.",
+          "cooldown": "25 sec.",
+          "duration": "2.3 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "1000",
+          "aggro": "500",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2200%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4400%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Totani",
+          "image": "mcn_tonati.jpg",
+          "description": "It occurs a powerful earthquake with the power of thunder and lightning. According to [Machina Control] level, the additional effect will be given.",
+          "target": "Up to 15 enemies 14m away and within a 6m radius",
+          "casting_time": "3.733 sec.",
+          "cooldown": "35 sec.",
+          "duration": "4.2 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "1200",
+          "aggro": "350",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2700%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5400%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [INT]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [INT]",
+        "Ignore additional RES according to extra [INT] * 4",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Lightning Bracelet",
+      "icon_position": {
+        "x": -450,
+        "y": -425
+      }
+    }
+  ]
+}

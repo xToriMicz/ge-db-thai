@@ -1,0 +1,349 @@
+{
+  "slug": "LorchRare",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Pioneering Supporters Hot Summer 2024 Hot Summer(Steam)",
+    "head": "None",
+    "earring": "Earring",
+    "face": "RobClemenss Glasses",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Coat",
+    "costume": "None",
+    "gloves": "Gloves Leather",
+    "ring": "Ring",
+    "weapon_costume": "GPSG Event GPSG",
+    "belt": "Belt Leather",
+    "shoes": "Shoes Leather",
+    "artifact": "Lorchs Letter",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Bullet Apilicion",
+    "image": "job_bulletapulsiont.jpg",
+    "description": "Modified to maximize the performance of the Shotgun.",
+    "target": "None",
+    "casting_time": "0 sec.",
+    "cooldown": "5 sec.",
+    "duration": "2 sec.",
+    "sp_cost": "500",
+    "consume_item": "Ancient Star Orb × 10",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "A.R. +1",
+          "ATK SPD +10%",
+          "DEX +5",
+          "ATK against monster +100%"
+        ]
+      },
+      {
+        "level": "Level 11",
+        "effects": [
+          "A.R. +1",
+          "ATK SPD +11%",
+          "DEX +5",
+          "ATK against monster +110%"
+        ]
+      },
+      {
+        "level": "Level 12",
+        "effects": [
+          "A.R. +1",
+          "ATK SPD +12%",
+          "DEX +6",
+          "ATK against monster +120%"
+        ]
+      },
+      {
+        "level": "Level 13",
+        "effects": [
+          "A.R. +1",
+          "ATK SPD +13%",
+          "DEX +6",
+          "ATK against monster +130%"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Meister",
+      "equipped_items": "Shotgun",
+      "icon_position": {
+        "x": -150,
+        "y": -200
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Meister",
+      "info": {
+        "Targets": "6 enemies",
+        "Range": "10m away",
+        "Splash": "100% DMG within  3m range",
+        "Hits per attack": "3",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "+10%",
+        "Shooting DMG": "-20%",
+        "Magical DMG": "-25%"
+      },
+      "stats": {
+        "ASPD": "170",
+        "Bonus ATK": "300%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "15",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+15%",
+        "Ignore DEF": "+10%",
+        "Critical": "+10",
+        "Penetration": "5+25",
+        "Immunity": "5+10"
+      },
+      "skills": [
+        {
+          "name": "Leg Breaker",
+          "image": "mist_legbreaker.jpg",
+          "description": "After shooting the enemys leg twice with a shotgun, shoots on the floor and causes an explosion.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "2.133 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "150",
+          "aggro": "50",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 3000%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 6000%"
+            }
+          ],
+          "special": [
+            "Additional Damage by casters extra [",
+            "Additional Damage by casters extra ["
+          ]
+        },
+        {
+          "name": "Share Flint",
+          "image": "mist_shareplant.jpg",
+          "description": "Improve Shotgun to strengthen general attacks. However, as basic attacks are strengthened, the maximum range, hit range, and the number of targets are reduced.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "1 sec.",
+          "duration": "390 seconds",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "100",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 30 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 330 seconds"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 360 seconds"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 390 seconds"
+            }
+          ],
+          "special": [
+            "Additional Damage by casters extra [",
+            "Additional Damage by casters extra [",
+            "Additional Damage by casters extra [",
+            "Additional Damage by casters extra [",
+            "Additional Damage by casters extra ["
+          ]
+        },
+        {
+          "name": "Boulevard Pace",
+          "image": "mist_bolbodface.jpg",
+          "description": "Improve shotgun to enhance range attack. The range of hits and the number of targets increases, but the attack speed decreases.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "1 sec.",
+          "duration": "390 seconds",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "100",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 30 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 330 seconds"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 360 seconds"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 390 seconds"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Assist Shooter",
+          "image": "mist_assistshooter.jpg",
+          "description": "Improve Shotgun to enhance skill attack. However, basic attacks are impossible as skill attacks are strengthened.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "1 sec.",
+          "duration": "390 seconds",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "100",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 30 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 330 seconds"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 360 seconds"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 390 seconds"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Flare Signal",
+          "image": "mist_flaresignal.jpg",
+          "description": "Load Fire Bullets in the shotgun and shoot at the target.",
+          "target": "Up to 5 enemies 10m away within 5m radius",
+          "casting_time": "1.867 sec.",
+          "cooldown": "60 sec.",
+          "duration": "1.1 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "60",
+          "skill_type": "Shooting",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2700%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5400%"
+            }
+          ],
+          "special": [
+            "Additional Damage by casters extra [",
+            "Additional Damage by casters extra ["
+          ]
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [DEX]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [DEX]",
+        "Ignore additional DEF according to extra [DEX] * 4",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Shotgun",
+      "icon_position": {
+        "x": -150,
+        "y": -200
+      }
+    }
+  ]
+}

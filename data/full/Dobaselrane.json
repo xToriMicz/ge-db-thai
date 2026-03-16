@@ -1,0 +1,282 @@
+{
+  "slug": "Dobaselrane",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Honorable Baselrane Full moon",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Coat Robe",
+    "costume": "None",
+    "gloves": "Gloves",
+    "ring": "Ring",
+    "weapon_costume": "Attencion de Baselrane - D Attencion de Baselrane - D (Event)",
+    "belt": "Belt",
+    "shoes": "Shoes",
+    "artifact": "Mer Libre",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Electrification",
+    "image": "job_Elect.jpg",
+    "description": "Powers up nearby allies or Lady Lorraine by sharing the attributes of lightning magic.",
+    "target": "Team members up to 6m away",
+    "casting_time": "0 sec.",
+    "cooldown": "20 sec.",
+    "duration": "2.1 sec.",
+    "sp_cost": "490",
+    "consume_item": "Ancient Star Orb × 5",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration: 300 seconds",
+          "ATK +25% (3x for Magic Corps Chief Dolores)",
+          "Accuracy -10",
+          "Lightning Penetration +10",
+          "[Magic Corps Chief Dolores/Lady Lorraine] Movement Speed and Movement Speed Limit +25%"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Franticness",
+      "equipped_items": "Lightning Bracelet",
+      "icon_position": {
+        "x": -200,
+        "y": -475
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Franticness",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "10m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "Yes",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "-10%",
+        "Shooting DMG": "+20%"
+      },
+      "stats": {
+        "ASPD": "203",
+        "Bonus ATK": "320%",
+        "MSPD": "1",
+        "MSPD Limit": "8.00",
+        "ACC": "15",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "5",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "Penetration": "25",
+        "Immunity": "20"
+      },
+      "skills": [
+        {
+          "name": "Luminescence",
+          "image": "frant_lumin.jpg",
+          "description": "You can increase your combat power and power up your allies even more by sharing the attributes of lightning magic with those around you.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "12 sec.",
+          "duration": "300 seconds",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "535",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 11",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 12",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 13",
+              "value": "Duration: 300 seconds"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Swift Hare",
+          "image": "frant_swift.jpg",
+          "description": "Summons Hare to attack enemies in front of you.",
+          "target": "Up to 10 targets 13m ahead and within a 6m range",
+          "casting_time": "0.533 sec.",
+          "cooldown": "13 sec.",
+          "duration": "1.033 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "560",
+          "aggro": "100",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1301%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2602%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Thunder Ruination",
+          "image": "frant_ruinous.jpg",
+          "description": "Gathers powerful thunderbolts scattered in the atmosphere and pours it upon the enemy forces ahead.",
+          "target": "Up to 8 targets within a radius of 7m and up to 14m away",
+          "casting_time": "Instant",
+          "cooldown": "17 sec.",
+          "duration": "3.5 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "615",
+          "aggro": "130",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1730%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3460%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Magnitude of Hare",
+          "image": "frant_magnit.jpg",
+          "description": "Summons Hare to unleash the energy of lightning upon a designated location.",
+          "target": "Up to 10 targets within a radius of 8m and up to 10m away",
+          "casting_time": "0.8 sec.",
+          "cooldown": "11 sec.",
+          "duration": "1.7 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "645",
+          "aggro": "185",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2080%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4160%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Grand Finale",
+          "image": "frant_grand.jpg",
+          "description": "Makes a large amount of lightning magic spin around you, radiating it splendidly.",
+          "target": "Up to 10 enemies within 10m",
+          "casting_time": "0.833 sec.",
+          "cooldown": "5 sec.",
+          "duration": "3.433 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "785",
+          "aggro": "228",
+          "skill_type": "Magic",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2522.3%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 5044%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 10% of extra [INT]",
+        "[PVP/PVE Maps] Additional 3% DMG according to extra [INT]",
+        "Ignore additional RES according to extra [INT] * 3",
+        "Additional DMG against Monster according to 3 * 50"
+      ],
+      "equipped_items": "Lightning Bracelet",
+      "icon_position": {
+        "x": -200,
+        "y": -475
+      }
+    }
+  ]
+}

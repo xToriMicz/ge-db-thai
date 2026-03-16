@@ -1,0 +1,272 @@
+{
+  "slug": "Sherry",
+  "equipment": {
+    "category": "Usable Equipment",
+    "medal": "Spirit of Arsene",
+    "head": "None",
+    "earring": "Earring",
+    "face": "None",
+    "accessory": "Accessory",
+    "necklace": "Necklace",
+    "back": "All Characters",
+    "armor": "Leather",
+    "costume": "None",
+    "gloves": "Gloves Leather",
+    "ring": "Ring",
+    "weapon_costume": "Broken Rose Event Broken Rose Broken Rose Event Broken Rose",
+    "belt": "Belt Leather",
+    "shoes": "Shoes Leather",
+    "artifact": "Dancers Mask",
+    "runestone": "Runestone",
+    "pet_spirit": "Pet Spirit"
+  },
+  "character_buff": {
+    "name": "Listo",
+    "image": "job_Listo.jpg",
+    "description": "Greet the audience before the performance and raise the mood. When evading enemy skills during [Dancer on Stage] status, [Counterattack] is applied.",
+    "target": "None",
+    "casting_time": "0 sec.",
+    "cooldown": "30 sec.",
+    "duration": "1.9 sec.",
+    "sp_cost": "750",
+    "consume_item": "Ancient Star Orb × 10",
+    "levels": [
+      {
+        "level": "Level 10",
+        "effects": [
+          "Duration: 300 seconds",
+          "A.R. +1",
+          "ATK +30%",
+          "ATK against monster +50%"
+        ]
+      }
+    ]
+  },
+  "stance_overview": [
+    {
+      "stance_name": "Bare Knuckle",
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "stance_name": "Flamenco",
+      "equipped_items": "Leguard",
+      "icon_position": {
+        "x": -150,
+        "y": -225
+      }
+    }
+  ],
+  "stances": [
+    {
+      "name": "Bare Knuckle",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "2",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "167",
+        "Bonus ATK": "0%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "0",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {},
+      "skills": [],
+      "lv25_bonus_extra": [
+        "None"
+      ],
+      "equipped_items": "None",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
+    },
+    {
+      "name": "Flamenco",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "3",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "-20%",
+        "Shooting DMG": "+10%"
+      },
+      "stats": {
+        "ASPD": "197",
+        "Bonus ATK": "300%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "40",
+        "EVA": "5",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "Evasion": "+10",
+        "Critical": "+5",
+        "Penetration": "5+25",
+        "Immunity": "15"
+      },
+      "skills": [
+        {
+          "name": "Calentar",
+          "image": "flc_calentar.jpg",
+          "description": "Make preparatory moves before the performance. As the dance progresses after the preparatory movement, additional effects can be acquired.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "30 sec.",
+          "duration": "300 seconds",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "500",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "Duration: 300 seconds"
+            },
+            {
+              "level": "Level 10",
+              "value": "Duration: 300 seconds"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Fasiar",
+          "image": "flc_fasiar.jpg",
+          "description": "Leap to the designated point, land, and sweep the lower part of the enemy. Cast [Fasiar Impact] or an even more powerful [Fasiar Strike] at a 33% chance when re-casting the skill.",
+          "target": "Up to 5 enemies 10m away and within a 4m radius",
+          "casting_time": "0.7 sec.",
+          "cooldown": "8 sec.",
+          "duration": "1.12 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "650",
+          "aggro": "200",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1023%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2046%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Taraby",
+          "image": "flc_taraby.jpg",
+          "description": "The left foot rotates on the center axis and kicks the enemy. Cast [Taraby Impact] or an even more powerful [Taraby Strike] at a 33% chance when re-casting the skill.",
+          "target": "Up to 3 adjacent enemies",
+          "casting_time": "Instant",
+          "cooldown": "9 sec.",
+          "duration": "1.766 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "840",
+          "aggro": "342",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1505%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3010%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Caron Spirit",
+          "image": "flc_caronspirit.jpg",
+          "description": "Dash around the specified ground and inflict a consecutive attack. Cast [Caron Impact] or an even more powerful [Caron Strike] at a 33% chance when re-casting the skill.",
+          "target": "Up to 6 enemies 6m away and within a 4m radius",
+          "casting_time": "0.7 sec.",
+          "cooldown": "11 sec.",
+          "duration": "1.3 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "920",
+          "aggro": "200",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1994%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3988%"
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Flamingo",
+          "image": "flc_flamingo.jpg",
+          "description": "Kick continuously as if youre dancing towards the designated target. Cast [Flamingo Impact] or an even more powerful [Flamingo Strike] at a 33% chance when re-casting the skill.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "10 sec.",
+          "duration": "1.7 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "840",
+          "aggro": "47",
+          "skill_type": "Melee",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2035%"
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4070%"
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [STR]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [STR]",
+        "Ignore additional DEF according to extra [STR] * 2",
+        "Additional DMG against [PC] + 2x",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Leguard",
+      "icon_position": {
+        "x": -150,
+        "y": -225
+      }
+    }
+  ]
+}
