@@ -116,54 +116,65 @@ function parseItemPage(html, category, group) {
   const items = [];
   const seen = new Set();
 
-  // Strategy: Split HTML by item anchors (id="NNNNN")
-  // Each item block: <a id="ID">...</a> followed by table with stats
-  // Item name: <span class="name">NAME</span>
-  // Level: from <h3>Level X</h3> sections or "Available to equip above Lv. X"
+  // Strategy: Split HTML by <div class="item"> blocks
+  // Each block contains BOTH the name and the anchor+image
+  // Structure: <div class="item..."><div class="desc"><h5><span class="name">NAME</span></h5>...</div>
+  //            <a id="ID" class="flimg"><img src="images/items/IMAGE.jpg"></a>...</div>
 
   // Track current level from <h3> headers
   let currentLevel = null;
 
-  // Split by item anchor tags
-  const anchorRegex = /<a\s+id="(\d+)"\s+href="[^"]*"\s+class="flimg"/gi;
-  const anchors = [...html.matchAll(anchorRegex)];
+  // Split by item div blocks
+  const blockStarts = [];
+  const blockRegex = /<div\s+class="item\s/gi;
+  let bm;
+  while ((bm = blockRegex.exec(html)) !== null) {
+    blockStarts.push(bm.index);
+  }
 
-  if (anchors.length === 0) {
-    console.log(`    (no anchors found)`);
+  if (blockStarts.length === 0) {
+    console.log(`    (no item blocks found)`);
     return items;
   }
 
-  for (let i = 0; i < anchors.length; i++) {
-    const itemId = anchors[i][1];
-    const startIdx = anchors[i].index;
+  for (let i = 0; i < blockStarts.length; i++) {
+    const startIdx = blockStarts[i];
+    const endIdx = i + 1 < blockStarts.length ? blockStarts[i + 1] : startIdx + 10000;
+    const block = html.substring(startIdx, Math.min(endIdx, startIdx + 10000));
 
-    // Look backwards from this anchor for <h3>Level X</h3>
+    // Check for <h3>Level X</h3> before this block
     const beforeText = html.substring(Math.max(0, startIdx - 500), startIdx);
     const h3Match = beforeText.match(/<h3>(?:Level\s+)?(\d+|Expert|Veteran|Master|High Master|Grand Master)[^<]*<\/h3>/i);
     if (h3Match) {
       currentLevel = parseLevel(h3Match[1]) || parseLevel(h3Match[0]);
     }
 
-    // Get the text from this anchor to the next one
-    const endIdx = i + 1 < anchors.length ? anchors[i + 1].index : startIdx + 5000;
-    const section = html.substring(startIdx, Math.min(endIdx, startIdx + 5000));
-
     // Extract item name from <span class="name">
-    const nameMatch = section.match(/<span class="name">([^<]+)<\/span>/);
+    const nameMatch = block.match(/<span class="name">([^<]+)<\/span>/);
     if (!nameMatch) continue;
 
     const name = nameMatch[1].trim();
     if (!name || seen.has(name)) continue;
     seen.add(name);
 
+    // Extract item_id and image from <a id="ID" ...><img src="images/items/IMAGE.jpg">
+    // Some pages (summon, etc.) use src="none.gif" with alt="IMAGE_NAME" instead
+    const anchorMatch = block.match(/<a\s+id="(\d+)"[^>]*class="flimg"[^>]*>\s*<img\s+src="images\/items\/([^"]+)"/i);
+    const anchorAlt = !anchorMatch ? block.match(/<a\s+id="(\d+)"[^>]*class="flimg"[^>]*>\s*<img\s+[^>]*alt="([^"]+)"/i) : null;
+    const anchor = anchorMatch || anchorAlt;
+    if (!anchor) continue;
+
+    const itemId = anchor[1];
+    const image = anchorMatch ? anchor[2] : anchor[2] + '.jpg';
+
     // Extract level from "Available to equip above Lv. X" or current h3 level
-    const lvMatch = section.match(/(?:equip above|above)\s+Lv\.?\s*(\d+)/i);
+    const lvMatch = block.match(/(?:equip above|above)\s+Lv\.?\s*(\d+)/i);
     let level = lvMatch ? parseInt(lvMatch[1]) : currentLevel;
 
-    // Also check for named levels in the section
+    // Also check for named levels in the block
     if (!level) {
       for (const [k, v] of Object.entries(NAMED_LEVELS)) {
-        if (section.toLowerCase().includes(`above ${k}`) || section.toLowerCase().includes(`- ${k}`)) {
+        if (block.toLowerCase().includes(`above ${k}`) || block.toLowerCase().includes(`- ${k}`)) {
           level = v;
           break;
         }
@@ -171,7 +182,7 @@ function parseItemPage(html, category, group) {
     }
 
     // Extract stats from the table
-    const statsSection = section.match(/<td>([\s\S]*?)<\/td>/);
+    const statsSection = block.match(/<td>([\s\S]*?)<\/td>/);
     const statsText = statsSection ? statsSection[1].replace(/<[^>]+>/g, " ") : "";
 
     const arMatch = statsText.match(/A\.?R\.?\s*(\d+)/);
@@ -187,6 +198,7 @@ function parseItemPage(html, category, group) {
       category,
       group,
       level: level || null,
+      image,
       atk: atkMatch ? parseInt(atkMatch[1]) : null,
       def: defMatch ? parseInt(defMatch[1]) : null,
       ar: arMatch ? parseInt(arMatch[1]) : null,
