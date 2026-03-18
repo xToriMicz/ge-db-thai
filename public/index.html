@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GE Database Thai — ฐานข้อมูล Granado Espada ภาษาไทย</title>
-  <meta name="description" content="ฐานข้อมูล Granado Espada ภาษาไทย — ตัวละคร 292 ตัว, ไอเทม 10,500+, แผนที่ 123, มอนสเตอร์ 630, เรด 130 พร้อมชื่อไทย">
+  <meta name="description" content="ฐานข้อมูล Granado Espada ภาษาไทย — ตัวละคร 292 ตัว, สกิล 4,700, ไอเทม 10,490+, แผนที่ 242, มอนสเตอร์ 630, เรด 130 พร้อมชื่อไทย">
   <meta name="keywords" content="Granado Espada, GE, ฐานข้อมูล, database, ตัวละคร, สแตนซ์, สกิล, อาวุธ, เกราะ, ภาษาไทย, Thai">
   <meta name="author" content="GE Database Thai">
   <meta name="robots" content="index, follow">
@@ -17,7 +17,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://ge.makeloops.xyz/">
   <meta property="og:title" content="GE Database Thai — ฐานข้อมูล Granado Espada ภาษาไทย">
-  <meta property="og:description" content="ฐานข้อมูล Granado Espada ภาษาไทย — 292 ตัวละคร, 4,700 สกิล, 10,000+ ไอเทม, 123 แผนที่, 630 มอนสเตอร์, 130 เรด">
+  <meta property="og:description" content="ฐานข้อมูล Granado Espada ภาษาไทย — 292 ตัวละคร, 4,700 สกิล, 10,490+ ไอเทม, 242 แผนที่, 630 มอนสเตอร์, 130 เรด">
   <meta property="og:image" content="https://ge.makeloops.xyz/images/og-cover.png">
   <meta property="og:locale" content="th_TH">
   <meta property="og:site_name" content="GE Database Thai">
@@ -25,7 +25,7 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="GE Database Thai — ฐานข้อมูล Granado Espada ภาษาไทย">
-  <meta name="twitter:description" content="ฐานข้อมูล Granado Espada ภาษาไทย — 292 ตัวละคร, 4,700 สกิล, 10,000+ ไอเทม, 123 แผนที่, 630 มอนสเตอร์, 130 เรด">
+  <meta name="twitter:description" content="ฐานข้อมูล Granado Espada ภาษาไทย — 292 ตัวละคร, 4,700 สกิล, 10,490+ ไอเทม, 242 แผนที่, 630 มอนสเตอร์, 130 เรด">
   <meta name="twitter:image" content="https://ge.makeloops.xyz/images/og-cover.png">
 
   <!-- Theme & PWA -->
@@ -41,7 +41,7 @@
     "name": "GE Database Thai",
     "alternateName": "ฐานข้อมูล Granado Espada ภาษาไทย",
     "url": "https://ge.makeloops.xyz/",
-    "description": "ฐานข้อมูล Granado Espada ภาษาไทย — ตัวละคร 292 ตัว, สแตนซ์ 1,900+",
+    "description": "ฐานข้อมูล Granado Espada ภาษาไทย — ตัวละคร 292 ตัว, สแตนซ์ 1,348, สกิล 4,700, ไอเทม 10,490+, แผนที่ 242",
     "inLanguage": "th",
     "potentialAction": {
       "@type": "SearchAction",
@@ -184,7 +184,7 @@
           </select>
         </div>
       </div>
-      <div class="result-count">แสดง <span id="result-count">0</span> ตัวละคร</div>
+      <div class="result-count">แสดง <span id="result-count">—</span> ตัวละคร</div>
     </div>
   </div>
 
@@ -192,7 +192,7 @@
   <main id="main">
     <div class="container">
       <div id="character-grid" class="character-grid">
-        <div class="loading">กำลังโหลดข้อมูล...</div>
+        <div class="loading"><div class="spinner"></div> กำลังโหลดข้อมูล...</div>
       </div>
     </div>
   </main>
@@ -226,12 +226,12 @@
             </select>
           </div>
         </div>
-        <div class="result-count">แสดง <span id="item-result-count">0</span> / <span id="item-total-count">0</span> ไอเทม</div>
+        <div class="result-count">แสดง <span id="item-result-count">—</span> / <span id="item-total-count">—</span> ไอเทม</div>
       </div>
     </div>
     <div class="container" style="padding:20px 16px 40px">
       <div id="item-grid" class="item-grid">
-        <div class="loading">กำลังโหลดข้อมูล...</div>
+        <div class="loading"><div class="spinner"></div> กำลังโหลดข้อมูล...</div>
       </div>
       <div id="item-pagination" class="pagination"></div>
     </div>
@@ -256,12 +256,12 @@
             </select>
           </div>
         </div>
-        <div class="result-count">แสดง <span id="map-result-count">0</span> แผนที่</div>
+        <div class="result-count">แสดง <span id="map-result-count">—</span> แผนที่</div>
       </div>
     </div>
     <div class="container" style="padding:20px 16px 40px">
       <div id="map-grid" class="map-grid">
-        <div class="loading">กำลังโหลดข้อมูล...</div>
+        <div class="loading"><div class="spinner"></div> กำลังโหลดข้อมูล...</div>
       </div>
     </div>
   </section>
@@ -294,12 +294,12 @@
             </select>
           </div>
         </div>
-        <div class="result-count">แสดง <span id="mob-result-count">0</span> มอนสเตอร์</div>
+        <div class="result-count">แสดง <span id="mob-result-count">—</span> มอนสเตอร์</div>
       </div>
     </div>
     <div class="container" style="padding:20px 16px 40px">
       <div id="mob-grid" class="mob-grid">
-        <div class="loading">กำลังโหลดข้อมูล...</div>
+        <div class="loading"><div class="spinner"></div> กำลังโหลดข้อมูล...</div>
       </div>
     </div>
   </section>
@@ -325,12 +325,12 @@
             </select>
           </div>
         </div>
-        <div class="result-count">แสดง <span id="raid-result-count">0</span> เรด</div>
+        <div class="result-count">แสดง <span id="raid-result-count">—</span> เรด</div>
       </div>
     </div>
     <div class="container" style="padding:20px 16px 40px">
       <div id="raid-grid" class="raid-grid">
-        <div class="loading">กำลังโหลดข้อมูล...</div>
+        <div class="loading"><div class="spinner"></div> กำลังโหลดข้อมูล...</div>
       </div>
     </div>
   </section>
@@ -351,6 +351,22 @@
       <p class="footer-sub">สร้างด้วย Cloudflare Workers + D1 | Jingjing Oracle</p>
     </div>
   </footer>
+
+  <!-- SEO: Visible content for crawlers that don't execute JS -->
+  <noscript>
+    <div style="max-width:900px;margin:40px auto;padding:0 20px;color:#e6edf3">
+      <h2>GE Database Thai — ฐานข้อมูล Granado Espada ภาษาไทย</h2>
+      <p>ฐานข้อมูลเกม Granado Espada ภาษาไทยที่ครบที่สุด รองรับการค้นหาภาษาไทยและอังกฤษ</p>
+      <ul>
+        <li><strong>ตัวละคร 292 ตัว</strong> — พร้อมชื่อไทย, ชีวประวัติไทย, สแตนซ์ 1,348 ท่า, สกิล 4,700</li>
+        <li><strong>ไอเทม 10,490+ ชิ้น</strong> — อาวุธ, เกราะ, เครื่องประดับ, แหวน, คอสตูม พร้อม stats</li>
+        <li><strong>แผนที่ 242 แห่ง</strong> — Field, City, Mission, PK Disabled พร้อมมอนสเตอร์และ connections</li>
+        <li><strong>มอนสเตอร์ 630 ตัว</strong> — 65 บอส พร้อมชื่อไทยและตำแหน่งในแผนที่</li>
+        <li><strong>เรด 130 ด่าน</strong> — พร้อมชื่อไทย</li>
+      </ul>
+      <p>เปิด JavaScript เพื่อใช้งานเว็บไซต์อย่างเต็มรูปแบบ — ค้นหา กรอง ดูรายละเอียด และ share link ได้</p>
+    </div>
+  </noscript>
 
   <script src="app.js"></script>
   <script>

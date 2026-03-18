@@ -393,7 +393,7 @@ async function showDetail(slug) {
     const armors = JSON.parse(c.armor_types || "[]");
     const stances = c.stances || [];
 
-    const statLabels = { str: "STR", agi: "AGI", hp: "HP", dex: "DEX", int_stat: "INT", sen: "SEN" };
+    const statLabels = { str: "STR", agi: "AGI", hp: "CON", dex: "DEX", int_stat: "INT", sen: "SEN" };
 
     const detailSprite = c.portrait_sheet === 2 ? 'var(--sprite-url-2)' : 'var(--sprite-url)';
     body.innerHTML = `
