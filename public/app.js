@@ -1715,27 +1715,91 @@ async function showQuestDetail(slug) {
     }
 
     const prereqs = q.prerequisites || [];
-    const bannerUrl = imgData ? (slug === 'beatrice' ? 'https://cdn.exe.in.th/marketing/granado/images/guide/0523/beatrice/granado_beatrice_banner.jpg' : '') : '';
+    const bannerUrl = BANNER_MAP[slug] || '';
+
+    // Collect main rewards
+    const allRewards = (q.stages || []).flatMap(s => s.rewards || []);
+    const mainRewards = allRewards.filter(r =>
+      r.reward_name?.includes('การ์ดตัวละคร') || r.reward_name?.includes('Character Card') ||
+      r.reward_name?.includes('card') || r.reward_name?.includes('Stance') ||
+      r.reward_name?.includes('ตำรา') || r.reward_type === 'stance' ||
+      r.reward_type === 'costume' || r.reward_type === 'manual' ||
+      r.reward_type === 'recipe' || r.reward_type === 'character_card'
+    );
+    const rewardText = mainRewards.length > 0
+      ? mainRewards.map(r => r.reward_name).join(', ')
+      : allRewards.length > 0 ? 'EXP Cards + items' : '-';
+
+    const QUEST_SUMMARY = {
+      'beatrice': 'เควสเปิดตัว Beatrice น้องสาวของ M\'Boma ที่ค้นพบ Tempest grimoire ตั้งแต่เด็ก — ต้องผ่านมิชชั่น Time Paradox และเรียนรู้ความลับของสายฟ้าสีดำ',
+      'sharon': 'เรื่องราวของ Sharon ผู้ตามหา Cortés ที่ถูก Montoro สาปเป็นปีศาจหิน สืบสาวถึงองค์กรลับ Strata Vista และ Rhodolite อัญมณีแห่งไฟ — ต้องปลดล็อก 7 ตัวละครก่อน',
+      'dark-emilia': 'ปลดล็อกร่างมืดของ Emilia — บุคลิกที่สองที่เกิดจากการทดลองของ Dr. Lorenzo เมื่อ 20 ปีก่อน เก็บความทรงจำที่ถูกลบไว้ทั้งหมด',
+      'nar-2': 'เควสเสริมของ Nar นักรบแห่ง Errac — สร้างความเชื่อใจกับชาวเมือง ค้นหาความจริง และเผชิญหน้ากับ Harman ผู้นำ Errac',
+      'mboma-ll': 'เควสเสริมของ M\'Boma — ต่อสู้กับ King of Mildew, ดวลกับ José, สืบสวนคดีฆาตกรรม และหาวัตถุดิบทำอาหารพิเศษ',
+      'jose-cortasar': 'เก็บกระสุนปืนใหญ่ หาผงกระดองเต่า แล้วดวลกับ José เอง — เควสสั้น 3 ขั้นตอน ต้อง Level 81+',
+      'gurtrude': 'สำรวจคฤหาสน์ Dr. Torsche, เรือนจำ Jacquin และสืบหาหน่วยลับของ Sir Lindon — ต้อง Level 80+',
+      'gracielo': 'Gracielo หิวข้าว Fritz รับเป็นศิษย์ ฝึกควบคุมพลัง ท้าสู้ศิษย์ 3 คน — เควสยาว 8 ขั้น',
+      'selva': 'ตามหาร่องรอยของ Montoro ข้ามหลายแผนที่ — ปลดล็อก Selva North พร้อม Rabida Espada stance',
+      'irawan': 'เควสง่ายสุด! จ่ายเงิน 10,000 Vis พบไอราวัณ ต่อสู้กับอันธพาล แล้วดวลกับ Gracielo',
+      'ania': 'ช่วย Ania จัดการกับคณะละครสัตว์อาร์เซ็น — ตั้ง Ania เป็นหัวหน้าทีมไปพบ André เพื่อตัดชุด Dignite',
+      'vincent': 'พา André ไปพบ Vincent ที่ Viron แล้วตามหาบันทึก Dilos Latemen 4 ชิ้นใน Al Quelt Moreza',
+      'soso': 'เควสสั้น 2 ขั้น — พบโซโซที่ Gigante แล้วกำจัด Jack O\' Lantern ที่เกาะอัคคี ต้อง Level 78',
+      'marie': 'เควสยาวสุด 13 ขั้น! ทำงานรับใช้ในคฤหาสน์ Dr. Torsche — ตั้งแต่ทำสวน ปัดฝุ่น ทำอาหาร ล้างจาน จนได้ Swiper Stance',
+      'catherine': 'สำรวจคฤหาสน์ Dr. Torsche 9 ขั้น — ปลุก Carmen หุ่นรับใช้, พบ Dr. Torsche, เก็บชิ้นส่วน Catherine ครบ เลือก class ได้',
+      'catherinetorsche': 'แอบฟังบทสนทนา Dr. Torsche กับ Montoro แล้วเผชิญหน้ากับ Catherine Torsche ลูกสาวตัวจริง',
+      'hellena': 'ตั้ง Ania เป็นหัวหน้าไปพบ Emilia แล้วช่วย Helena ที่ Safe House เมืองอุช — ต้อง Shiny Crystal 300',
+      'calyce': 'พบแคลิซทหารตัวน้อยที่ท่าเรือ ต่อสู้กับโจรสลัด แล้วเปิดเผยแผนสมคบ — ไม่ต้อง prerequisite',
+      'mboma': 'หาอาหารบ้านเกิดให้ M\'Boma แล้วประลองกับเขา — ต้องทำ Panfilo quest ก่อน',
+      'emilia': 'สืบหาบันทึกของพ่อ Dr. Lorenzo ที่ Tetra Ruins แล้วนำไปให้นักวิจัย — เควสเริ่มต้นง่าย',
+      'andre': 'กำจัดแมนดราโกร่า หาน้ำมนต์ศักดิ์สิทธิ์ ทำอาหารสีขาว แล้วหาขนนกสีรุ้ง 50 ชิ้น',
+      'panfilo': 'ส่งอาหารให้ทหาร หาน้ำมนต์ ทำอาหารให้ André ล่าหนวดออตโตปุส แล้วป้องกันฟาร์มจากหมาป่า',
+      'najib-sharif': 'เควสยาว 10 ขั้น — ช่วย Najib ค้าโบราณวัตถุ หา Blazing Ruby เฮมาไทต์ เฟอร์นิเจอร์โรโรโค และไข่มุก 50 ชิ้น',
+    };
+    const summary = QUEST_SUMMARY[slug] || `เควสปลดล็อกตัวละคร ${q.character_name || ''} — ${q.total_stages} ขั้นตอน`;
 
     body.innerHTML = `
       <div class="quest-detail">
+        ${bannerUrl ? `<div class="quest-detail-banner"><img src="${bannerUrl}" alt="${q.character_name}"><div class="quest-img-credit">ภาพจาก <a href="${sourceUrl}" target="_blank" rel="noopener">ge.exe.in.th</a></div></div>` : ''}
         <div class="quest-detail-header">
           <h2>${q.name_th}</h2>
           <p class="quest-detail-char">ตัวละคร: <strong>${q.character_name || '-'}</strong></p>
-          ${q.level_req ? `<p>⚔️ เลเวลขั้นต่ำ: ${q.level_req}</p>` : ''}
-          ${prereqs.length > 0 ? `<div class="quest-detail-prereqs"><h4>📋 เควสที่ต้องทำก่อน</h4><ul>${prereqs.map(p => `<li>${p}</li>`).join('')}</ul></div>` : '<p style="color:var(--type-recruit)">✅ ไม่มี prerequisite — เริ่มได้เลย!</p>'}
         </div>
-        <div class="quest-stages-list">
+
+        <div class="quest-summary-box">
+          <div class="quest-summary-grid">
+            <div class="quest-summary-item"><span class="quest-summary-label">📋 ขั้นตอน</span><span class="quest-summary-value">${q.total_stages} stages</span></div>
+            ${q.level_req ? `<div class="quest-summary-item"><span class="quest-summary-label">⚔️ เลเวลขั้นต่ำ</span><span class="quest-summary-value">${q.level_req}</span></div>` : ''}
+            <div class="quest-summary-item"><span class="quest-summary-label">🎁 รางวัลหลัก</span><span class="quest-summary-value">${rewardText}</span></div>
+          </div>
+          ${prereqs.length > 0
+            ? `<div class="quest-summary-prereqs"><strong>📋 ต้องทำก่อน:</strong> ${prereqs.join(', ')}</div>`
+            : '<div class="quest-summary-prereqs" style="color:var(--type-recruit)">✅ ไม่มี prerequisite — เริ่มได้เลย!</div>'}
+          <p class="quest-summary-desc">${summary}</p>
+        </div>
+
+        <button class="quest-expand-btn" onclick="toggleQuestFull(this)">📖 อ่านเนื้อหาเต็ม</button>
+
+        <div id="quest-full-content" class="quest-full-content hidden">
+          <div class="quest-stages-list">
           <h3>ขั้นตอนทั้งหมด (${q.total_stages} stages)</h3>
           ${stagesHtml}
         </div>
         <div class="quest-source-credit">
           ข้อมูลและภาพทั้งหมดจาก <a href="${sourceUrl}" target="_blank" rel="noopener">ge.exe.in.th</a>
         </div>
+        </div>
       </div>`;
   } catch (e) {
     body.innerHTML = '<div class="loading">โหลดข้อมูลไม่สำเร็จ</div>';
   }
+}
+
+function toggleQuestFull(btn) {
+  const content = document.getElementById("quest-full-content");
+  if (!content) return;
+  const isHidden = content.classList.toggle("hidden");
+  btn.textContent = isHidden ? "📖 อ่านเนื้อหาเต็ม" : "📕 ซ่อนเนื้อหา";
+  if (!isHidden) content.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
 function closeQuestModal() {
