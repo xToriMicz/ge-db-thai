@@ -1,5 +1,5 @@
 // GE Database Thai — Service Worker
-const CACHE_NAME = 'ge-db-thai-v24';
+const CACHE_NAME = 'ge-db-thai-v25';
 const STATIC_ASSETS = [
   '/',
   '/style.css',
