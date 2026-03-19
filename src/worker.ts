@@ -673,6 +673,60 @@ async function handleAPI(request: Request, env: Env): Promise<Response> {
     return json({ feedback: result.results });
   }
 
+  // GET /api/quests — list all quests (cache 5 min)
+  if (path === "/api/quests") {
+    const search = url.searchParams.get("q");
+    let query = "SELECT * FROM quests";
+    const params: string[] = [];
+
+    if (search) {
+      query += " WHERE name_th LIKE ? OR character_name LIKE ?";
+      params.push(`%${search}%`, `%${search}%`);
+    }
+    query += " ORDER BY character_name ASC";
+
+    const result = await env.DB.prepare(query).bind(...params).all();
+    return json({ quests: result.results, total: result.results.length }, 200, 300);
+  }
+
+  // GET /api/quests/:slug — single quest with stages (cache 5 min)
+  const questMatch = path.match(/^\/api\/quests\/([a-zA-Z0-9_-]+)$/);
+  if (questMatch) {
+    const slug = questMatch[1];
+    const quest = await env.DB.prepare("SELECT * FROM quests WHERE slug = ?").bind(slug).first();
+    if (!quest) return json({ error: "Quest not found" }, 404);
+
+    const stages = await env.DB.prepare(
+      "SELECT * FROM quest_stages WHERE quest_id = ? ORDER BY stage_num ASC"
+    ).bind(quest.id).all();
+
+    // Get items and rewards for each stage
+    const stageIds = stages.results.map((s: any) => s.id);
+    let items: any[] = [];
+    let rewards: any[] = [];
+
+    if (stageIds.length > 0) {
+      const ph = stageIds.map(() => "?").join(",");
+      const itemsResult = await env.DB.prepare(
+        `SELECT * FROM quest_stage_items WHERE stage_id IN (${ph})`
+      ).bind(...stageIds).all();
+      items = itemsResult.results as any[];
+
+      const rewardsResult = await env.DB.prepare(
+        `SELECT * FROM quest_stage_rewards WHERE stage_id IN (${ph})`
+      ).bind(...stageIds).all();
+      rewards = rewardsResult.results as any[];
+    }
+
+    const stagesWithDetails = stages.results.map((s: any) => ({
+      ...s,
+      required_items: items.filter((i: any) => i.stage_id === s.id),
+      rewards: rewards.filter((r: any) => r.stage_id === s.id),
+    }));
+
+    return json({ ...quest, prerequisites: JSON.parse(quest.prerequisites as string || "[]"), stages: stagesWithDetails }, 200, 300);
+  }
+
   return json({ error: "Not found" }, 404);
 }
 

@@ -113,11 +113,13 @@ function switchTab(tab) {
   document.getElementById("maps-section").classList.toggle("hidden", tab !== "maps");
   document.getElementById("monsters-section").classList.toggle("hidden", tab !== "monsters");
   document.getElementById("raids-section").classList.toggle("hidden", tab !== "raids");
+  document.getElementById("quests-section").classList.toggle("hidden", tab !== "quests");
 
   if (tab === "items" && itemCategories.length === 0) loadItems();
   if (tab === "maps" && allMaps.length === 0) loadMaps();
   if (tab === "monsters" && allMonsters.length === 0) loadMonsters();
   if (tab === "raids" && allRaids.length === 0) loadRaids();
+  if (tab === "quests" && !questsLoaded) loadQuests();
 
   // Update URL with tab (only when no modal is open)
   const modal = document.getElementById("modal");
@@ -1573,6 +1575,182 @@ function showComparison() {
     </div>
   `;
 }
+
+// ── Quests ──
+let questsLoaded = false;
+
+async function loadQuests() {
+  const grid = document.getElementById("quest-grid");
+  grid.innerHTML = '<div class="loading"><div class="spinner"></div> กำลังโหลดเควส...</div>';
+  try {
+    const res = await fetch("/api/quests");
+    const data = await res.json();
+    questsLoaded = true;
+    document.getElementById("quest-result-count").textContent = data.total;
+    renderQuestGrid(data.quests);
+  } catch (e) {
+    grid.innerHTML = '<div class="loading">โหลดข้อมูลไม่สำเร็จ</div>';
+  }
+}
+
+function renderQuestGrid(quests) {
+  const grid = document.getElementById("quest-grid");
+  if (!quests.length) { grid.innerHTML = '<div class="loading">ไม่พบเควส</div>'; return; }
+
+  const BANNER_MAP = {
+    'beatrice': 'https://cdn.exe.in.th/marketing/granado/images/guide/0523/beatrice/granado_beatrice_banner.jpg',
+    'sharon': 'https://cdn.exe.in.th/marketing/granado/images/guide/0623/sharon/granadoespada-sharon-banner.jpg',
+    'dark-emilia': 'https://cdn.exe.in.th/marketing/granado/images/guide/0623/darkemilia/granadoespada_darkemilia_banner.jpg',
+    'nar-2': 'https://cdn.exe.in.th/marketing/granado/images/guide/0623/nar/granadoespada_nar_banner.jpg',
+    'mboma-ll': 'https://cdn.exe.in.th/marketing/granado/images/guide/0523/mboma/granado_mboma_banner.jpg',
+    'jose-cortasar': 'https://cdn.exe.in.th/marketing/granado/images/guide/0523/jose/granado_jose_banner.jpg',
+    'gurtrude': 'https://cdn.exe.in.th/marketing/granado/images/2023/05/gurtrude/gurtrude_banner.jpg',
+    'gracielo': 'https://cdn.exe.in.th/marketing/granado/images/guide/0523/gracielo/gracielo_banner.jpg',
+    'selva': 'https://cdn.exe.in.th/marketing/granado/images/guide/0523/selva/selva_banner.jpg',
+    'irawan': 'https://cdn.exe.in.th/marketing/granado/images/guide/0323/irawan_banner.jpg',
+    'ania': 'https://cdn.exe.in.th/marketing/granado/images/guide/12/ania/ania_700x365.jpg',
+    'vincent': 'https://cdn.exe.in.th/marketing/granado/images/guide/12/vincent/vincent_700x365.jpg',
+    'soso': 'https://cdn.exe.in.th/marketing/granado/images/guide/12/soso/soso_700x365.jpg',
+    'marie': 'https://cdn.exe.in.th/marketing/granado/images/guide/12/marie/marie_700x365.jpg',
+    'catherine': 'https://cdn.exe.in.th/marketing/granado/images/guide/12/catherine/catherine_700x365.jpg',
+    'catherinetorsche': 'https://cdn.exe.in.th/marketing/granado/images/guide/11/catherinetorsche/catherinetorsche_700x365.jpg',
+    'hellena': 'https://cdn.exe.in.th/marketing/granado/images/guide/11/hellena/hellena_700x365.jpg',
+    'calyce': 'https://cdn.exe.in.th/marketing/granado/images/guide/11/calyce/calyce_700x365.jpg',
+    'mboma': 'https://cdn.exe.in.th/marketing/granado/images/guide/11/mboma/mboma_700x365.jpg',
+    'emilia': 'https://cdn.exe.in.th/marketing/granado/images/guide/11/emilia/emilia_700x365.jpg',
+    'andre': 'https://cdn.exe.in.th/marketing/granado/images/guide/11/andre/andre_700.jpg',
+    'panfilo': 'https://cdn.exe.in.th/marketing/granado/images/guide/11/panfilo/panfilo_700.jpg',
+    'najib-sharif': 'https://cdn.exe.in.th/marketing/granado/images/guide/11/najibsharif/najib_700.jpg',
+  };
+
+  grid.innerHTML = quests.map(q => {
+    const banner = BANNER_MAP[q.slug] || '';
+    const prereqs = JSON.parse(q.prerequisites || '[]');
+    return `
+      <div class="quest-card" onclick="showQuestDetail('${q.slug}')">
+        ${banner ? `<div class="quest-card-banner"><img src="${banner}" alt="${q.character_name}" loading="lazy"></div>` : ''}
+        <div class="quest-card-body">
+          <h3>${q.character_name || q.name_th}</h3>
+          <p class="quest-card-title">${q.name_th}</p>
+          <div class="quest-card-meta">
+            <span>📋 ${q.total_stages} ขั้นตอน</span>
+            ${q.level_req ? `<span>⚔️ Lv.${q.level_req}</span>` : ''}
+          </div>
+          ${prereqs.length > 0 ? `<div class="quest-card-prereq">ต้องทำก่อน: ${prereqs.length} เควส</div>` : '<div class="quest-card-prereq" style="color:var(--type-recruit)">ไม่มี prerequisite</div>'}
+        </div>
+        <div class="quest-card-credit">ภาพจาก <a href="https://ge.exe.in.th/quests/detail/${q.slug}" target="_blank" rel="noopener" onclick="event.stopPropagation()">ge.exe.in.th</a></div>
+      </div>`;
+  }).join('');
+}
+
+const QUEST_IMG_BASE = {
+  'beatrice': { base: 'https://cdn.exe.in.th/marketing/granado/images/guide/0523/beatrice/', count: 37 },
+  'sharon': { base: 'https://cdn.exe.in.th/marketing/granado/images/guide/0623/sharon/', count: 47 },
+  'dark-emilia': { base: 'https://cdn.exe.in.th/marketing/granado/images/guide/0623/darkemilia/', count: 18 },
+  'nar-2': { base: 'https://cdn.exe.in.th/marketing/granado/images/guide/0623/nar/', count: 18 },
+  'mboma-ll': { base: 'https://cdn.exe.in.th/marketing/granado/images/guide/0523/mboma/', count: 21 },
+  'jose-cortasar': { base: 'https://cdn.exe.in.th/marketing/granado/images/guide/0523/jose/', count: 5 },
+  'gurtrude': { base: 'https://cdn.exe.in.th/marketing/granado/images/2023/05/gurtrude/', count: 11 },
+  'gracielo': { base: 'https://cdn.exe.in.th/marketing/granado/images/guide/0523/gracielo/', count: 20 },
+  'selva': { base: 'https://cdn.exe.in.th/marketing/granado/images/guide/0523/selva/', count: 35 },
+  'irawan': { base: 'https://cdn.exe.in.th/marketing/granado/images/guide/0323/', count: 5 },
+  'ania': { base: 'https://cdn.exe.in.th/marketing/granado/images/guide/12/ania/', count: 10 },
+  'vincent': { base: 'https://cdn.exe.in.th/marketing/granado/images/guide/12/vincent/', count: 13 },
+  'soso': { base: 'https://cdn.exe.in.th/marketing/granado/images/guide/12/soso/', count: 10 },
+  'marie': { base: 'https://cdn.exe.in.th/marketing/granado/images/guide/12/marie/', count: 58 },
+  'catherine': { base: 'https://cdn.exe.in.th/marketing/granado/images/guide/12/catherine/', count: 32 },
+  'catherinetorsche': { base: 'https://cdn.exe.in.th/marketing/granado/images/guide/11/catherinetorsche/', count: 22 },
+  'hellena': { base: 'https://cdn.exe.in.th/marketing/granado/images/guide/11/hellena/', count: 11 },
+  'calyce': { base: 'https://cdn.exe.in.th/marketing/granado/images/guide/11/calyce/', count: 31 },
+  'mboma': { base: 'https://cdn.exe.in.th/marketing/granado/images/guide/11/mboma/', count: 12 },
+  'emilia': { base: 'https://cdn.exe.in.th/marketing/granado/images/guide/11/emilia/', count: 13 },
+  'andre': { base: 'https://cdn.exe.in.th/marketing/granado/images/guide/11/andre/', count: 17 },
+  'panfilo': { base: 'https://cdn.exe.in.th/marketing/granado/images/guide/11/panfilo/', count: 20 },
+  'najib-sharif': { base: 'https://cdn.exe.in.th/marketing/granado/images/guide/11/najibsharif/', count: 31 },
+};
+
+async function showQuestDetail(slug) {
+  const modal = document.getElementById("quest-modal");
+  const body = document.getElementById("quest-modal-body");
+  modal.classList.remove("hidden");
+  document.body.style.overflow = "hidden";
+  body.innerHTML = '<div class="loading"><div class="spinner"></div> กำลังโหลด...</div>';
+
+  try {
+    const res = await fetch(`/api/quests/${slug}`);
+    const q = await res.json();
+    const sourceUrl = q.source_url || `https://ge.exe.in.th/quests/detail/${slug}`;
+    const imgData = QUEST_IMG_BASE[slug];
+
+    let stagesHtml = '';
+    if (q.stages) {
+      stagesHtml = q.stages.map((s, i) => {
+        let imgHtml = '';
+        if (imgData && i < imgData.count) {
+          imgHtml = `
+            <div class="quest-stage-img">
+              <img src="${imgData.base}${i}.png" alt="ขั้นตอน ${s.stage_num}" loading="lazy" onerror="this.parentElement.style.display='none'">
+              <div class="quest-img-credit">ภาพจาก <a href="${sourceUrl}" target="_blank" rel="noopener">ge.exe.in.th</a></div>
+            </div>`;
+        }
+        const itemsHtml = s.required_items?.length ? `<div class="quest-stage-items">📦 ไอเทมที่ต้องใช้: ${s.required_items.map(it => `${it.item_name} x${it.quantity}`).join(', ')}</div>` : '';
+        const rewardsHtml = s.rewards?.length ? `<div class="quest-stage-rewards">🎁 รางวัล: ${s.rewards.map(r => `${r.reward_name}${r.quantity > 1 ? ' x'+r.quantity : ''}`).join(', ')}</div>` : '';
+        return `
+          <div class="quest-stage">
+            <div class="quest-stage-header">
+              <span class="quest-stage-num">${s.stage_num}</span>
+              <h4>${s.title || 'ขั้นตอน ' + s.stage_num}</h4>
+            </div>
+            ${imgHtml}
+            <div class="quest-stage-details">
+              ${s.npc ? `<div>🗣️ NPC: <strong>${s.npc}</strong></div>` : ''}
+              ${s.location ? `<div>📍 ${s.location}${s.coordinates ? ' (' + s.coordinates + ')' : ''}</div>` : ''}
+              ${s.objective ? `<div>🎯 ${s.objective}</div>` : ''}
+              ${s.boss_name ? `<div>⚔️ บอส: <strong>${s.boss_name}</strong></div>` : ''}
+              ${itemsHtml}
+              ${rewardsHtml}
+            </div>
+          </div>`;
+      }).join('');
+    }
+
+    const prereqs = q.prerequisites || [];
+    const bannerUrl = imgData ? (slug === 'beatrice' ? 'https://cdn.exe.in.th/marketing/granado/images/guide/0523/beatrice/granado_beatrice_banner.jpg' : '') : '';
+
+    body.innerHTML = `
+      <div class="quest-detail">
+        <div class="quest-detail-header">
+          <h2>${q.name_th}</h2>
+          <p class="quest-detail-char">ตัวละคร: <strong>${q.character_name || '-'}</strong></p>
+          ${q.level_req ? `<p>⚔️ เลเวลขั้นต่ำ: ${q.level_req}</p>` : ''}
+          ${prereqs.length > 0 ? `<div class="quest-detail-prereqs"><h4>📋 เควสที่ต้องทำก่อน</h4><ul>${prereqs.map(p => `<li>${p}</li>`).join('')}</ul></div>` : '<p style="color:var(--type-recruit)">✅ ไม่มี prerequisite — เริ่มได้เลย!</p>'}
+        </div>
+        <div class="quest-stages-list">
+          <h3>ขั้นตอนทั้งหมด (${q.total_stages} stages)</h3>
+          ${stagesHtml}
+        </div>
+        <div class="quest-source-credit">
+          ข้อมูลและภาพทั้งหมดจาก <a href="${sourceUrl}" target="_blank" rel="noopener">ge.exe.in.th</a>
+        </div>
+      </div>`;
+  } catch (e) {
+    body.innerHTML = '<div class="loading">โหลดข้อมูลไม่สำเร็จ</div>';
+  }
+}
+
+function closeQuestModal() {
+  document.getElementById("quest-modal").classList.add("hidden");
+  document.body.style.overflow = "";
+}
+
+// Quest modal close events
+document.addEventListener("DOMContentLoaded", () => {
+  const qm = document.getElementById("quest-modal");
+  if (qm) {
+    qm.querySelector(".modal-backdrop")?.addEventListener("click", closeQuestModal);
+    qm.querySelector(".modal-close")?.addEventListener("click", closeQuestModal);
+  }
+});
 
 // ── Start ──
 init();

@@ -53,7 +53,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;600;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=20260319b">
+  <link rel="stylesheet" href="style.css?v=20260319c">
 </head>
 <body>
   <!-- Header -->
@@ -77,6 +77,7 @@
         <button class="tab" data-tab="maps">แผนที่</button>
         <button class="tab" data-tab="monsters">มอนสเตอร์</button>
         <button class="tab" data-tab="raids">เรด</button>
+        <button class="tab" data-tab="quests">เควส</button>
       </div>
     </div>
   </nav>
@@ -335,6 +336,25 @@
     </div>
   </section>
 
+  <!-- Quests Section -->
+  <section id="quests-section" class="hidden">
+    <div class="container" style="padding:20px 16px 40px">
+      <div class="result-count">แสดง <span id="quest-result-count">—</span> เควสปลดล็อกตัวละคร</div>
+      <div id="quest-grid" class="quest-grid">
+        <div class="loading"><div class="spinner"></div> กำลังโหลดข้อมูล...</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quest Detail Modal -->
+  <div id="quest-modal" class="modal hidden">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content quest-modal-content">
+      <button class="modal-close">&times;</button>
+      <div id="quest-modal-body"></div>
+    </div>
+  </div>
+
   <!-- Character Detail Modal -->
   <div id="modal" class="modal hidden">
     <div class="modal-backdrop"></div>
@@ -368,7 +388,7 @@
     </div>
   </noscript>
 
-  <script src="app.js"></script>
+  <script src="app.js?v=20260319c"></script>
   <script>
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('/sw.js');

@@ -1817,3 +1817,201 @@ footer a:hover { text-decoration: underline; }
   .compare-table th, .compare-table td { padding: 6px 8px; }
   .compare-item-img { width: 32px; height: 32px; }
 }
+
+/* ── Quest Tab ── */
+.quest-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.quest-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.quest-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.quest-card-banner {
+  width: 100%;
+  aspect-ratio: 700/365;
+  overflow: hidden;
+  background: var(--bg-primary);
+}
+.quest-card-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.quest-card-body {
+  padding: 12px 14px;
+}
+.quest-card-body h3 {
+  font-size: 1.1rem;
+  color: var(--accent);
+  margin-bottom: 4px;
+}
+.quest-card-title {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+.quest-card-meta {
+  display: flex;
+  gap: 12px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+.quest-card-prereq {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+.quest-card-credit {
+  padding: 6px 14px 10px;
+  font-size: 0.7rem;
+  color: var(--text-muted);
+}
+.quest-card-credit a {
+  color: var(--type-basic);
+  text-decoration: none;
+}
+.quest-card-credit a:hover { text-decoration: underline; }
+
+/* Quest Detail Modal */
+.quest-modal-content {
+  max-width: 800px;
+}
+
+.quest-detail-header {
+  margin-bottom: 24px;
+}
+.quest-detail-header h2 {
+  font-size: 1.4rem;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+.quest-detail-char {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-bottom: 6px;
+}
+.quest-detail-prereqs {
+  margin-top: 12px;
+  padding: 12px;
+  background: var(--bg-primary);
+  border-radius: var(--radius);
+}
+.quest-detail-prereqs h4 {
+  margin-bottom: 6px;
+  color: var(--text-primary);
+}
+.quest-detail-prereqs ul {
+  list-style: disc;
+  padding-left: 20px;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+}
+.quest-detail-prereqs li { margin-bottom: 3px; }
+
+.quest-stages-list h3 {
+  font-size: 1.1rem;
+  margin-bottom: 16px;
+  color: var(--text-primary);
+}
+
+.quest-stage {
+  margin-bottom: 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--bg-card);
+}
+.quest-stage-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  background: var(--bg-secondary);
+}
+.quest-stage-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background: var(--accent);
+  color: var(--bg-primary);
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+.quest-stage-header h4 {
+  font-size: 0.95rem;
+  color: var(--text-primary);
+}
+
+.quest-stage-img {
+  width: 100%;
+  background: var(--bg-primary);
+}
+.quest-stage-img img {
+  width: 100%;
+  display: block;
+}
+.quest-img-credit {
+  padding: 4px 10px;
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  text-align: right;
+}
+.quest-img-credit a {
+  color: var(--type-basic);
+  text-decoration: none;
+}
+
+.quest-stage-details {
+  padding: 10px 14px;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.quest-stage-items, .quest-stage-rewards {
+  margin-top: 4px;
+  padding: 6px 8px;
+  background: var(--bg-primary);
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.quest-source-credit {
+  margin-top: 24px;
+  padding: 12px;
+  background: var(--bg-primary);
+  border-radius: var(--radius);
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+.quest-source-credit a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+.quest-source-credit a:hover { text-decoration: underline; }
+
+@media (max-width: 600px) {
+  .quest-grid { grid-template-columns: 1fr; }
+  .quest-modal-content { max-width: 100%; }
+}
