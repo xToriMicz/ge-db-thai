@@ -32,6 +32,7 @@ let currentTab = "characters";
 let itemPage = 1;
 let itemTotal = 0;
 let suppressPush = false; // prevent pushState during popstate handling
+let compareList = []; // items selected for comparison (max 3)
 
 // ── Init ──
 async function init() {
@@ -771,6 +772,7 @@ function renderItemGrid(items) {
 
     const imgSrc = item.image ? `/img/items/${item.image}` : null;
 
+    const inCompare = compareList.some(c => c.slug === item.slug);
     return `
       <div class="item-card clickable" onclick="showItemDetail('${item.slug}')">
         ${imgSrc ? `<img class="item-icon" src="${imgSrc}" alt="" loading="lazy" onerror="this.style.display='none'">` : '<div class="item-icon-empty"></div>'}
@@ -782,6 +784,7 @@ function renderItemGrid(items) {
         <div class="item-meta">
           ${item.sockets ? `<span class="item-sockets">${item.sockets}S</span>` : ''}
           <span class="item-cat-tag item-group-${groupClass}">${CATEGORY_LABELS[item.category] || item.category}</span>
+          <button class="compare-btn${inCompare ? ' active' : ''}" onclick="event.stopPropagation(); toggleCompare(${JSON.stringify(JSON.stringify({slug: item.slug, name: item.name, name_th: item.name_th || '', image: item.image, level: item.level, atk: item.atk, def: item.def, ar: item.ar, dr: item.dr, sockets: item.sockets, category: item.category, category_group: item.category_group}))})" title="เพิ่มเปรียบเทียบ">${inCompare ? '✓' : '⚖'}</button>
         </div>
       </div>
     `;
@@ -1437,6 +1440,139 @@ function handlePopState() {
 }
 
 window.addEventListener("popstate", handlePopState);
+
+// ── Item Comparison ──
+function toggleCompare(itemJson) {
+  const item = JSON.parse(itemJson);
+  const idx = compareList.findIndex(c => c.slug === item.slug);
+  if (idx >= 0) {
+    compareList.splice(idx, 1);
+  } else {
+    if (compareList.length >= 3) {
+      compareList.shift(); // remove oldest
+    }
+    compareList.push(item);
+  }
+  renderCompareTray();
+  // Re-render item grid to update button states
+  if (currentTab === "items") {
+    const grid = document.getElementById("item-grid");
+    const cards = grid.querySelectorAll(".compare-btn");
+    cards.forEach(btn => {
+      const card = btn.closest(".item-card");
+      if (!card) return;
+      const nameEl = card.querySelector(".item-name");
+      if (!nameEl) return;
+      const isIn = compareList.some(c => c.name === nameEl.textContent);
+      btn.classList.toggle("active", isIn);
+      btn.textContent = isIn ? "✓" : "⚖";
+    });
+  }
+}
+
+function renderCompareTray() {
+  let tray = document.getElementById("compare-tray");
+  if (!tray) {
+    tray = document.createElement("div");
+    tray.id = "compare-tray";
+    tray.className = "compare-tray";
+    document.body.appendChild(tray);
+  }
+
+  if (compareList.length === 0) {
+    tray.classList.add("hidden");
+    return;
+  }
+
+  tray.classList.remove("hidden");
+  tray.innerHTML = `
+    <div class="compare-tray-inner">
+      <div class="compare-tray-items">
+        ${compareList.map((item, i) => `
+          <div class="compare-tray-item">
+            ${item.image ? `<img src="/img/items/${item.image}" alt="" onerror="this.style.display='none'">` : ''}
+            <span class="compare-tray-name">${item.name}</span>
+            <button class="compare-tray-remove" onclick="removeCompare(${i})">×</button>
+          </div>
+        `).join("")}
+      </div>
+      <div class="compare-tray-actions">
+        <span class="compare-tray-count">${compareList.length}/3</span>
+        <button class="compare-tray-go${compareList.length < 2 ? ' disabled' : ''}" onclick="${compareList.length >= 2 ? 'showComparison()' : ''}"${compareList.length < 2 ? ' disabled' : ''}>⚖ เปรียบเทียบ</button>
+        <button class="compare-tray-clear" onclick="clearCompare()">ล้าง</button>
+      </div>
+    </div>
+  `;
+}
+
+function removeCompare(idx) {
+  compareList.splice(idx, 1);
+  renderCompareTray();
+}
+
+function clearCompare() {
+  compareList = [];
+  renderCompareTray();
+}
+
+function showComparison() {
+  const modal = document.getElementById("modal");
+  const body = document.getElementById("modal-body");
+  modal.classList.remove("hidden");
+  document.body.style.overflow = "hidden";
+
+  const statKeys = [
+    { key: "level", label: "Level", prefix: "Lv." },
+    { key: "atk", label: "ATK" },
+    { key: "def", label: "DEF" },
+    { key: "ar", label: "AR" },
+    { key: "dr", label: "DR" },
+    { key: "sockets", label: "Sockets" },
+  ];
+
+  // Find best values for highlighting
+  const bestVals = {};
+  for (const s of statKeys) {
+    const vals = compareList.map(item => item[s.key] || 0).filter(v => v > 0);
+    bestVals[s.key] = vals.length > 0 ? Math.max(...vals) : 0;
+  }
+
+  const headerCols = compareList.map(item => {
+    const imgSrc = item.image ? `/img/items/${item.image}` : null;
+    return `
+      <th class="compare-item-col">
+        ${imgSrc ? `<img class="compare-item-img" src="${imgSrc}" alt="" onerror="this.style.display='none'">` : ''}
+        <div class="compare-item-name">${item.name}</div>
+        ${item.name_th ? `<div class="compare-item-th">${item.name_th}</div>` : ''}
+        <div class="compare-item-cat">${CATEGORY_LABELS[item.category] || item.category}</div>
+      </th>
+    `;
+  }).join("");
+
+  const statRows = statKeys.map(s => {
+    const cells = compareList.map(item => {
+      const val = item[s.key];
+      if (!val) return `<td class="compare-val empty">—</td>`;
+      const isBest = val === bestVals[s.key] && compareList.filter(i => (i[s.key] || 0) === bestVals[s.key]).length < compareList.length;
+      return `<td class="compare-val${isBest ? ' best' : ''}">${s.prefix || ''}${val}</td>`;
+    }).join("");
+    return `<tr><td class="compare-label">${s.label}</td>${cells}</tr>`;
+  }).join("");
+
+  body.innerHTML = `
+    <div class="compare-modal">
+      <h2>⚖ เปรียบเทียบไอเทม</h2>
+      <table class="compare-table">
+        <thead><tr><th></th>${headerCols}</tr></thead>
+        <tbody>${statRows}</tbody>
+      </table>
+      <div class="compare-actions">
+        <button onclick="clearCompare(); closeModal();" class="compare-close-btn">ปิดและล้างรายการ</button>
+        <button onclick="closeModal();" class="compare-close-btn secondary">ปิด</button>
+      </div>
+    </div>
+  `;
+}
 
 // ── Start ──
 init();
