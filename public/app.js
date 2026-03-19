@@ -1669,6 +1669,41 @@ const QUEST_IMG_BASE = {
   'najib-sharif': { base: 'https://cdn.exe.in.th/marketing/granado/images/guide/11/najibsharif/', count: 31 },
 };
 
+function mdToHtml(md) {
+  let html = md
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+    .replace(/^### (.+)$/gm, '<h5>$1</h5>')
+    .replace(/^## (.+)$/gm, '<h4>$1</h4>')
+    .replace(/^---$/gm, '<hr>')
+    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+    .replace(/\*(.+?)\*/g, '<em>$1</em>')
+    .replace(/\[(.+?)\]\((.+?)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
+  // Tables
+  html = html.replace(/^(\|.+\|)\n(\|[-| :]+\|)\n((?:\|.+\|\n?)+)/gm, (_, hdr, sep, rows) => {
+    const ths = hdr.split('|').filter(c => c.trim()).map(c => `<th>${c.trim()}</th>`).join('');
+    const trs = rows.trim().split('\n').map(r => {
+      const tds = r.split('|').filter(c => c.trim()).map(c => `<td>${c.trim()}</td>`).join('');
+      return `<tr>${tds}</tr>`;
+    }).join('');
+    return `<table><thead><tr>${ths}</tr></thead><tbody>${trs}</tbody></table>`;
+  });
+  // Lists
+  html = html.replace(/^(\d+)\. (.+)$/gm, '<li class="md-ol">$2</li>');
+  html = html.replace(/^- (.+)$/gm, '<li class="md-ul">$1</li>');
+  html = html.replace(/((?:<li class="md-ol">.+<\/li>\n?)+)/g, '<ol>$1</ol>');
+  html = html.replace(/((?:<li class="md-ul">.+<\/li>\n?)+)/g, '<ul>$1</ul>');
+  html = html.replace(/ class="md-ol"/g, '').replace(/ class="md-ul"/g, '');
+  // Sub-list items with indentation
+  html = html.replace(/^   - (.+)$/gm, '<li>$1</li>');
+  // Paragraphs
+  html = html.replace(/\n\n/g, '</p><p>');
+  html = '<p>' + html + '</p>';
+  html = html.replace(/<p>\s*(<h[45]|<hr|<ol|<ul|<table)/g, '$1');
+  html = html.replace(/(<\/h[45]>|<hr>|<\/ol>|<\/ul>|<\/table>)\s*<\/p>/g, '$1');
+  html = html.replace(/<p>\s*<\/p>/g, '');
+  return html;
+}
+
 async function showQuestDetail(slug) {
   const modal = document.getElementById("quest-modal");
   const body = document.getElementById("quest-modal-body");
@@ -1693,6 +1728,20 @@ async function showQuestDetail(slug) {
               <div class="quest-img-credit">ภาพจาก <a href="${sourceUrl}" target="_blank" rel="noopener">ge.exe.in.th</a></div>
             </div>`;
         }
+
+        // If full_content exists, render rich content
+        if (s.full_content) {
+          return `
+          <div class="quest-stage">
+            <div class="quest-stage-header">
+              <span class="quest-stage-num">${s.stage_num}</span>
+              <h4>${s.title || 'ขั้นตอน ' + s.stage_num}</h4>
+            </div>
+            ${imgHtml}
+            <div class="quest-stage-details quest-rich-content">${mdToHtml(s.full_content)}</div>
+          </div>`;
+        }
+
         const itemsHtml = s.required_items?.length ? `<div class="quest-stage-items">📦 ไอเทมที่ต้องใช้: ${s.required_items.map(it => `${it.item_name} x${it.quantity}`).join(', ')}</div>` : '';
         const rewardsHtml = s.rewards?.length ? `<div class="quest-stage-rewards">🎁 รางวัล: ${s.rewards.map(r => `${r.reward_name}${r.quantity > 1 ? ' x'+r.quantity : ''}`).join(', ')}</div>` : '';
         return `

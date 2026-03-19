@@ -2094,6 +2094,18 @@ footer a:hover { text-decoration: underline; }
   transform: scale(1.02);
 }
 
+.quest-rich-content { line-height: 1.8; color: var(--text-secondary); }
+.quest-rich-content h4 { color: var(--accent); margin: 16px 0 8px; font-size: 1.05rem; }
+.quest-rich-content h5 { color: var(--text-primary); margin: 12px 0 6px; font-size: 0.95rem; }
+.quest-rich-content hr { border: none; border-top: 1px solid var(--border); margin: 16px 0; }
+.quest-rich-content ol, .quest-rich-content ul { padding-left: 20px; margin: 8px 0; }
+.quest-rich-content li { margin: 4px 0; }
+.quest-rich-content strong { color: var(--text-primary); }
+.quest-rich-content table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 0.9rem; }
+.quest-rich-content th { background: var(--bg-secondary); color: var(--accent); padding: 8px 12px; text-align: left; border: 1px solid var(--border); }
+.quest-rich-content td { padding: 8px 12px; border: 1px solid var(--border); }
+.quest-rich-content p { margin: 6px 0; }
+
 @media (max-width: 600px) {
   .quest-grid { grid-template-columns: 1fr; }
   .quest-modal-content { max-width: 100%; }

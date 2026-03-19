@@ -720,6 +720,7 @@ async function handleAPI(request: Request, env: Env): Promise<Response> {
 
     const stagesWithDetails = stages.results.map((s: any) => ({
       ...s,
+      full_content: s.full_content || null,
       required_items: items.filter((i: any) => i.stage_id === s.id),
       rewards: rewards.filter((r: any) => r.stage_id === s.id),
     }));
