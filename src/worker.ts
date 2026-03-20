@@ -1044,12 +1044,35 @@ export default {
         }
       }
 
+      // Tab listing pages (no specific content id)
+      if (tab && !newsId && !questId) {
+        const tabTitles: Record<string, string> = {
+          characters: "ตัวละครทั้งหมด — GE Database Thai",
+          news: "ข่าวสารทั้งหมด — GE Database Thai",
+          quests: "เควสทั้งหมด — GE Database Thai",
+          items: "ไอเทมทั้งหมด — GE Database Thai",
+          maps: "แผนที่ทั้งหมด — GE Database Thai",
+          monsters: "มอนสเตอร์ทั้งหมด — GE Database Thai",
+          stances: "สแตนซ์ทั้งหมด — GE Database Thai",
+          skills: "สกิลทั้งหมด — GE Database Thai",
+          bosses: "บอสทั้งหมด — GE Database Thai",
+          raids: "เรดทั้งหมด — GE Database Thai",
+        };
+        if (tabTitles[tab]) {
+          ogTitle = tabTitles[tab];
+          ogUrl = `https://ge.makeloops.xyz/?tab=${tab}`;
+        }
+      }
+
+      // Determine og:type — article for detail, website for listing/home
+      const ogType = (newsId || questId) ? "article" : "website";
+
       const html = `<!DOCTYPE html>
 <html lang="th">
 <head>
 <meta charset="UTF-8">
 <title>${sanitizeHtml(ogTitle)}</title>
-<meta property="og:type" content="article">
+<meta property="og:type" content="${ogType}">
 <meta property="og:site_name" content="GE Database Thai">
 <meta property="og:title" content="${sanitizeHtml(ogTitle)}">
 <meta property="og:description" content="${sanitizeHtml(ogDesc)}">
