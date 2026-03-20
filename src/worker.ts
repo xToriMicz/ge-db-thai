@@ -1000,7 +1000,8 @@ export default {
     // Social media crawler OG meta tags
     // Facebook, Twitter, LINE etc. don't run JS — serve pre-rendered HTML with OG tags
     const ua = request.headers.get("User-Agent") || "";
-    const isBot = /facebookexternalhit|Facebot|Twitterbot|LinkedInBot|Slackbot|Discordbot|LINE|WhatsApp|Googlebot|bingbot/i.test(ua);
+    // Only social media crawlers — NOT search engines (Googlebot/bingbot need full SPA content)
+    const isBot = /facebookexternalhit|Facebot|Twitterbot|LinkedInBot|Slackbot|Discordbot|LINE|WhatsApp/i.test(ua);
 
     if (isBot) {
       const tab = url.searchParams.get("tab");
