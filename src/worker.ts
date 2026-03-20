@@ -997,6 +997,81 @@ export default {
       return new Response(null, { status: 404 });
     }
 
+    // Social media crawler OG meta tags
+    // Facebook, Twitter, LINE etc. don't run JS — serve pre-rendered HTML with OG tags
+    const ua = request.headers.get("User-Agent") || "";
+    const isBot = /facebookexternalhit|Facebot|Twitterbot|LinkedInBot|Slackbot|Discordbot|LINE|WhatsApp|Googlebot|bingbot/i.test(ua);
+
+    if (isBot) {
+      const tab = url.searchParams.get("tab");
+      const id = url.searchParams.get("id");
+      const newsParam = url.searchParams.get("news");
+      const questParam = url.searchParams.get("quest");
+
+      let ogTitle = "GE Database Thai — ฐานข้อมูล Granado Espada ภาษาไทย";
+      let ogDesc = "ฐานข้อมูลเกม Granado Espada ภาษาไทยที่ครบที่สุด — ตัวละคร ไอเทม แผนที่ มอนสเตอร์ สกิล สแตนซ์ เควส ข่าวสาร";
+      let ogImage = "https://ge.makeloops.xyz/favicon.ico";
+      let ogUrl = "https://ge.makeloops.xyz/";
+
+      // News content
+      const newsId = (tab === "news" && id) ? id : newsParam;
+      if (newsId) {
+        const news = await env.DB.prepare("SELECT id, title, title_th, summary_th, thumbnail, published_at FROM news WHERE id = ?").bind(Number(newsId)).first();
+        if (news) {
+          ogTitle = (news.title_th as string) || (news.title as string) || ogTitle;
+          ogDesc = (news.summary_th as string) || ogDesc;
+          if (news.thumbnail) {
+            ogImage = (news.thumbnail as string).startsWith("http") ? (news.thumbnail as string) : `https://ge.makeloops.xyz${news.thumbnail}`;
+          }
+          ogUrl = `https://ge.makeloops.xyz/?tab=news&id=${news.id}`;
+        }
+      }
+
+      // Quest content
+      const questId = (tab === "quests" && id) ? id : questParam;
+      if (questId) {
+        const isNumeric = /^\d+$/.test(questId);
+        const quest = isNumeric
+          ? await env.DB.prepare("SELECT id, slug, name_th, character_name, banner_image FROM quests WHERE id = ?").bind(Number(questId)).first()
+          : await env.DB.prepare("SELECT id, slug, name_th, character_name, banner_image FROM quests WHERE slug = ?").bind(questId).first();
+        if (quest) {
+          ogTitle = (quest.name_th as string) || `เควส ${quest.character_name}` || ogTitle;
+          ogDesc = `เควสตัวละคร ${quest.character_name} — GE Database Thai`;
+          if (quest.banner_image) {
+            ogImage = (quest.banner_image as string).startsWith("http") ? (quest.banner_image as string) : `https://ge.makeloops.xyz${quest.banner_image}`;
+          }
+          ogUrl = `https://ge.makeloops.xyz/?tab=quests&id=${quest.slug || quest.id}`;
+        }
+      }
+
+      const html = `<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>${sanitizeHtml(ogTitle)}</title>
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="GE Database Thai">
+<meta property="og:title" content="${sanitizeHtml(ogTitle)}">
+<meta property="og:description" content="${sanitizeHtml(ogDesc)}">
+<meta property="og:image" content="${sanitizeHtml(ogImage)}">
+<meta property="og:url" content="${sanitizeHtml(ogUrl)}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="${sanitizeHtml(ogTitle)}">
+<meta name="twitter:description" content="${sanitizeHtml(ogDesc)}">
+<meta name="twitter:image" content="${sanitizeHtml(ogImage)}">
+<meta http-equiv="refresh" content="0;url=${sanitizeHtml(ogUrl)}">
+</head>
+<body><p>Redirecting to <a href="${sanitizeHtml(ogUrl)}">${sanitizeHtml(ogTitle)}</a></p></body>
+</html>`;
+
+      return new Response(html, {
+        headers: {
+          "Content-Type": "text/html; charset=utf-8",
+          "Cache-Control": "public, max-age=3600",
+        },
+      });
+    }
+
     // Static files served by Cloudflare assets binding
     return new Response(null, { status: 404 });
   },
