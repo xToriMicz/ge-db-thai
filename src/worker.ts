@@ -689,11 +689,14 @@ async function handleAPI(request: Request, env: Env): Promise<Response> {
     return json({ quests: result.results, total: result.results.length }, 200, 300);
   }
 
-  // GET /api/quests/:slug — single quest with stages (cache 5 min)
+  // GET /api/quests/:idOrSlug — single quest with stages (cache 5 min)
   const questMatch = path.match(/^\/api\/quests\/([a-zA-Z0-9_-]+)$/);
   if (questMatch) {
-    const slug = questMatch[1];
-    const quest = await env.DB.prepare("SELECT * FROM quests WHERE slug = ?").bind(slug).first();
+    const idOrSlug = questMatch[1];
+    const isNumeric = /^\d+$/.test(idOrSlug);
+    const quest = isNumeric
+      ? await env.DB.prepare("SELECT * FROM quests WHERE id = ?").bind(Number(idOrSlug)).first()
+      : await env.DB.prepare("SELECT * FROM quests WHERE slug = ?").bind(idOrSlug).first();
     if (!quest) return json({ error: "Quest not found" }, 404);
 
     const stages = await env.DB.prepare(
