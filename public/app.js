@@ -114,12 +114,14 @@ function switchTab(tab) {
   document.getElementById("monsters-section").classList.toggle("hidden", tab !== "monsters");
   document.getElementById("raids-section").classList.toggle("hidden", tab !== "raids");
   document.getElementById("quests-section").classList.toggle("hidden", tab !== "quests");
+  document.getElementById("news-section").classList.toggle("hidden", tab !== "news");
 
   if (tab === "items" && itemCategories.length === 0) loadItems();
   if (tab === "maps" && allMaps.length === 0) loadMaps();
   if (tab === "monsters" && allMonsters.length === 0) loadMonsters();
   if (tab === "raids" && allRaids.length === 0) loadRaids();
   if (tab === "quests" && !questsLoaded) loadQuests();
+  if (tab === "news" && !newsLoaded) loadNews();
 
   // Update URL with tab (only when no modal is open)
   const modal = document.getElementById("modal");
@@ -1862,6 +1864,92 @@ document.addEventListener("DOMContentLoaded", () => {
   if (qm) {
     qm.querySelector(".modal-backdrop")?.addEventListener("click", closeQuestModal);
     qm.querySelector(".modal-close")?.addEventListener("click", closeQuestModal);
+  }
+});
+
+// ── News ──
+let newsLoaded = false;
+
+async function loadNews() {
+  const grid = document.getElementById("news-grid");
+  grid.innerHTML = '<div class="loading"><div class="spinner"></div> กำลังโหลดข่าว...</div>';
+  try {
+    const res = await fetch("/api/news");
+    const data = await res.json();
+    newsLoaded = true;
+    document.getElementById("news-result-count").textContent = data.total;
+    renderNewsGrid(data.news);
+  } catch (e) {
+    grid.innerHTML = '<div class="loading">โหลดข้อมูลไม่สำเร็จ</div>';
+  }
+}
+
+function renderNewsGrid(news) {
+  const grid = document.getElementById("news-grid");
+  if (!news || !news.length) {
+    grid.innerHTML = '<div class="loading">ยังไม่มีข่าวอัพเดต — กำลังเตรียมข้อมูล</div>';
+    return;
+  }
+
+  grid.innerHTML = news.map(n => `
+    <div class="news-card" onclick="showNewsDetail(${n.id})">
+      ${n.thumbnail ? `<div class="news-card-banner"><img src="${n.thumbnail}" alt="${n.title_th || n.title}" loading="lazy" onerror="this.parentElement.style.display='none'"></div>` : ''}
+      <div class="news-card-body">
+        <div class="news-card-meta">
+          <span class="news-card-date">${n.published_at ? new Date(n.published_at).toLocaleDateString('th-TH', { year: 'numeric', month: 'short', day: 'numeric' }) : ''}</span>
+          ${n.category ? `<span class="news-card-tag">${n.category}</span>` : ''}
+        </div>
+        <h3>${n.title_th || n.title}</h3>
+        ${n.summary_th ? `<p class="news-card-summary">${n.summary_th}</p>` : ''}
+      </div>
+    </div>
+  `).join('');
+}
+
+async function showNewsDetail(id) {
+  const modal = document.getElementById("news-modal");
+  const body = document.getElementById("news-modal-body");
+  modal.classList.remove("hidden");
+  document.body.style.overflow = "hidden";
+  body.innerHTML = '<div class="loading"><div class="spinner"></div> กำลังโหลด...</div>';
+
+  try {
+    const res = await fetch(`/api/news/${id}`);
+    if (!res.ok) throw new Error("Not found");
+    const n = await res.json();
+
+    body.innerHTML = `
+      <div class="news-detail-header">
+        <div class="news-detail-meta">
+          <span class="news-card-date">${n.published_at ? new Date(n.published_at).toLocaleDateString('th-TH', { year: 'numeric', month: 'long', day: 'numeric' }) : ''}</span>
+          ${n.category ? `<span class="news-card-tag">${n.category}</span>` : ''}
+        </div>
+        <h2>${n.title_th || n.title}</h2>
+      </div>
+      ${n.thumbnail ? `<div class="news-detail-banner"><img src="${n.thumbnail}" alt="${n.title_th || n.title}"></div>` : ''}
+      <div class="news-detail-content">
+        ${n.content_th || n.content || '<p>เนื้อหากำลังแปล...</p>'}
+      </div>
+      <div class="news-detail-source">
+        ${n.source_url ? `แหล่งที่มา: <a href="${n.source_url}" target="_blank" rel="noopener">${n.source_url}</a>` : ''}
+      </div>
+    `;
+  } catch (e) {
+    body.innerHTML = '<div class="loading">โหลดข้อมูลไม่สำเร็จ</div>';
+  }
+}
+
+function closeNewsModal() {
+  document.getElementById("news-modal").classList.add("hidden");
+  document.body.style.overflow = "";
+}
+
+// News modal close events
+document.addEventListener("DOMContentLoaded", () => {
+  const nm = document.getElementById("news-modal");
+  if (nm) {
+    nm.querySelector(".modal-backdrop")?.addEventListener("click", closeNewsModal);
+    nm.querySelector(".modal-close")?.addEventListener("click", closeNewsModal);
   }
 });
 

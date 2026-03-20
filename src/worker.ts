@@ -673,6 +673,31 @@ async function handleAPI(request: Request, env: Env): Promise<Response> {
     return json({ feedback: result.results });
   }
 
+  // GET /api/news — list news (cache 5 min)
+  if (path === "/api/news") {
+    const category = url.searchParams.get("category");
+    let query = "SELECT id, title, title_th, category, summary_th, thumbnail, published_at, source_url FROM news";
+    const params: string[] = [];
+    if (category) {
+      query += " WHERE category = ?";
+      params.push(category);
+    }
+    query += " ORDER BY published_at DESC";
+    const limit = parseInt(url.searchParams.get("limit") || "50");
+    query += ` LIMIT ${Math.min(limit, 100)}`;
+    const result = await env.DB.prepare(query).bind(...params).all();
+    return json({ news: result.results, total: result.results.length }, 200, 300);
+  }
+
+  // GET /api/news/:id — single news detail (cache 5 min)
+  const newsMatch = path.match(/^\/api\/news\/(\d+)$/);
+  if (newsMatch) {
+    const newsId = Number(newsMatch[1]);
+    const news = await env.DB.prepare("SELECT * FROM news WHERE id = ?").bind(newsId).first();
+    if (!news) return json({ error: "News not found" }, 404);
+    return json(news, 200, 300);
+  }
+
   // GET /api/quests — list all quests (cache 5 min)
   if (path === "/api/quests") {
     const search = url.searchParams.get("q");
