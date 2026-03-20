@@ -847,6 +847,27 @@ export default {
       }
     }
 
+    // Image proxy: /img/news/{path} → R2 news assets
+    const newsImgMatch = url.pathname.match(/^\/img\/news\/(.+)$/);
+    if (newsImgMatch) {
+      const filePath = newsImgMatch[1];
+      const r2Key = `news/${filePath}`;
+      const cached = await env.ASSETS.get(r2Key);
+      if (cached) {
+        const ext = filePath.split(".").pop()?.toLowerCase();
+        const contentTypes: Record<string, string> = {
+          jpg: "image/jpeg", jpeg: "image/jpeg", png: "image/png", gif: "image/gif", webp: "image/webp",
+        };
+        return new Response(cached.body, {
+          headers: {
+            "Content-Type": cached.httpMetadata?.contentType || contentTypes[ext || ""] || "image/jpeg",
+            "Cache-Control": "public, max-age=31536000, immutable",
+          },
+        });
+      }
+      return new Response(null, { status: 404 });
+    }
+
     // Static files served by Cloudflare assets binding
     return new Response(null, { status: 404 });
   },
