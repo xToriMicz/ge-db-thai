@@ -15,10 +15,13 @@ const CORS_HEADERS = {
 // Rate limiter: IP → timestamps (in-memory, resets on cold start)
 const feedbackLog = new Map<string, number[]>();
 const commentLog = new Map<string, number[]>();
+const ratingLog = new Map<string, number[]>();
 const RATE_LIMIT = 3; // max per window
 const RATE_WINDOW = 60 * 60 * 1000; // 1 hour
 const COMMENT_RATE_LIMIT = 5;
 const COMMENT_RATE_WINDOW = 60 * 60 * 1000;
+const RATING_RATE_LIMIT = 10;
+const RATING_RATE_WINDOW = 60 * 60 * 1000;
 
 function isRateLimited(ip: string): boolean {
   const now = Date.now();
@@ -36,6 +39,19 @@ function isCommentLimited(ip: string): boolean {
   timestamps.push(now);
   commentLog.set(ip, timestamps);
   return false;
+}
+
+function isRatingLimited(ip: string): boolean {
+  const now = Date.now();
+  const timestamps = (ratingLog.get(ip) || []).filter(t => now - t < RATING_RATE_WINDOW);
+  if (timestamps.length >= RATING_RATE_LIMIT) return true;
+  timestamps.push(now);
+  ratingLog.set(ip, timestamps);
+  return false;
+}
+
+function sanitizeHtml(str: string): string {
+  return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#x27;");
 }
 
 async function hashIP(ip: string): Promise<string> {
@@ -508,7 +524,7 @@ async function handleAPI(request: Request, env: Env): Promise<Response> {
   }
 
   // GET /api/ratings — all character ratings (for homepage cards, overall only)
-  if (path === "/api/ratings") {
+  if (path === "/api/ratings" && request.method === "GET") {
     const result = await env.DB.prepare(
       "SELECT character_slug, COUNT(*) as count, ROUND(AVG(rating), 1) as avg FROM character_category_ratings WHERE category = 'overall' GROUP BY character_slug"
     ).all();
@@ -754,6 +770,119 @@ async function handleAPI(request: Request, env: Env): Promise<Response> {
     }));
 
     return json({ ...quest, prerequisites: JSON.parse(quest.prerequisites as string || "[]"), stages: stagesWithDetails }, 200, 300);
+  }
+
+  // ── Engagement API: Ratings ──
+
+  // POST /api/ratings — submit a rating
+  if (path === "/api/ratings" && request.method === "POST") {
+    const ip = request.headers.get("CF-Connecting-IP") || "unknown";
+    if (isRatingLimited(ip)) {
+      return json({ error: "ให้ดาวได้สูงสุด 10 ครั้งต่อชั่วโมง" }, 429);
+    }
+    const ipHash = await hashIP(ip);
+    const body = await request.json() as { content_type?: string; content_id?: string; rating?: number };
+    const validTypes = ["news", "quest"];
+    if (!body.content_type || !validTypes.includes(body.content_type)) {
+      return json({ error: "content_type ต้องเป็น news หรือ quest" }, 400);
+    }
+    if (!body.content_id) {
+      return json({ error: "กรุณาระบุ content_id" }, 400);
+    }
+    if (!body.rating || body.rating < 1 || body.rating > 5 || !Number.isInteger(body.rating)) {
+      return json({ error: "ให้ดาว 1-5 เท่านั้น" }, 400);
+    }
+    await env.DB.prepare(
+      "INSERT INTO content_ratings (content_type, content_id, rating, ip_hash) VALUES (?, ?, ?, ?) ON CONFLICT(content_type, content_id, ip_hash) DO UPDATE SET rating = excluded.rating"
+    ).bind(body.content_type, String(body.content_id), body.rating, ipHash).run();
+
+    const stats = await env.DB.prepare(
+      "SELECT COUNT(*) as count, ROUND(AVG(rating), 1) as avg FROM content_ratings WHERE content_type = ? AND content_id = ?"
+    ).bind(body.content_type, String(body.content_id)).first();
+
+    return json({ ok: true, avg: stats?.avg || 0, count: stats?.count || 0 });
+  }
+
+  // GET /api/ratings/:type/:id — get rating stats
+  const ratingGetMatch = path.match(/^\/api\/ratings\/(news|quest)\/([a-zA-Z0-9_-]+)$/);
+  if (ratingGetMatch && request.method === "GET") {
+    const [, contentType, contentId] = ratingGetMatch;
+    const ip = request.headers.get("CF-Connecting-IP") || "unknown";
+    const ipHash = await hashIP(ip);
+
+    const stats = await env.DB.prepare(
+      "SELECT COUNT(*) as count, ROUND(AVG(rating), 1) as avg FROM content_ratings WHERE content_type = ? AND content_id = ?"
+    ).bind(contentType, contentId).first();
+
+    const myRating = await env.DB.prepare(
+      "SELECT rating FROM content_ratings WHERE content_type = ? AND content_id = ? AND ip_hash = ?"
+    ).bind(contentType, contentId, ipHash).first();
+
+    return json({
+      avg: stats?.avg || 0,
+      count: stats?.count || 0,
+      my_rating: myRating?.rating || 0,
+    }, 200, 30);
+  }
+
+  // ── Engagement API: Comments ──
+
+  // POST /api/comments — submit a comment
+  if (path === "/api/comments" && request.method === "POST") {
+    const ip = request.headers.get("CF-Connecting-IP") || "unknown";
+    if (isCommentLimited(ip)) {
+      return json({ error: "คอมเมนต์ได้สูงสุด 5 ครั้งต่อชั่วโมง" }, 429);
+    }
+    const ipHash = await hashIP(ip);
+    const body = await request.json() as { content_type?: string; content_id?: string; nickname?: string; message?: string; website?: string; ts?: number };
+
+    // Honeypot
+    if (body.website) {
+      return json({ ok: true, message: "ขอบคุณสำหรับคอมเมนต์!" });
+    }
+    // Time gate
+    if (body.ts && Date.now() - body.ts < 3000) {
+      return json({ ok: true, message: "ขอบคุณสำหรับคอมเมนต์!" });
+    }
+
+    const validTypes = ["news", "quest"];
+    if (!body.content_type || !validTypes.includes(body.content_type)) {
+      return json({ error: "content_type ต้องเป็น news หรือ quest" }, 400);
+    }
+    if (!body.content_id) {
+      return json({ error: "กรุณาระบุ content_id" }, 400);
+    }
+
+    const nickname = sanitizeHtml((body.nickname || "").trim().slice(0, 30) || "นักผจญภัย");
+    const message = sanitizeHtml((body.message || "").trim());
+
+    if (!message || message.length === 0) {
+      return json({ error: "กรุณาระบุข้อความ" }, 400);
+    }
+    if (message.length > 500) {
+      return json({ error: "ข้อความยาวเกินไป (สูงสุด 500 ตัวอักษร)" }, 400);
+    }
+
+    await env.DB.prepare(
+      "INSERT INTO content_comments (content_type, content_id, nickname, message, ip_hash) VALUES (?, ?, ?, ?, ?)"
+    ).bind(body.content_type, String(body.content_id), nickname, message, ipHash).run();
+
+    return json({ ok: true, message: "ขอบคุณสำหรับคอมเมนต์!" });
+  }
+
+  // GET /api/comments/:type/:id — get comments
+  const commentEngGetMatch = path.match(/^\/api\/comments\/(news|quest)\/([a-zA-Z0-9_-]+)$/);
+  if (commentEngGetMatch && request.method === "GET") {
+    const [, contentType, contentId] = commentEngGetMatch;
+    const result = await env.DB.prepare(
+      "SELECT id, nickname, message, created_at FROM content_comments WHERE content_type = ? AND content_id = ? AND is_visible = 1 ORDER BY created_at DESC LIMIT 50"
+    ).bind(contentType, contentId).all();
+
+    const countResult = await env.DB.prepare(
+      "SELECT COUNT(*) as total FROM content_comments WHERE content_type = ? AND content_id = ? AND is_visible = 1"
+    ).bind(contentType, contentId).first();
+
+    return json({ comments: result.results, total: countResult?.total || 0 }, 200, 30);
   }
 
   return json({ error: "Not found" }, 404);

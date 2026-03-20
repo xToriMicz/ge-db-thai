@@ -1839,7 +1839,19 @@ async function showQuestDetail(slug) {
           ข้อมูลและภาพทั้งหมดจาก <a href="${sourceUrl}" target="_blank" rel="noopener">ge.exe.in.th</a>
         </div>
         </div>
+        ${engagementHtml('quest', slug, q.name_th || q.character_name)}
       </div>`;
+
+    // Load engagement data
+    loadRating('quest', slug);
+    loadComments('quest', slug);
+
+    // Set timestamp for honeypot
+    const tsInput = body.querySelector('input[name="ts"]');
+    if (tsInput) tsInput.value = Date.now();
+
+    // Inject Schema.org JSON-LD
+    injectSchemaOrg('quest', slug, q.name_th || q.character_name, summary, null, bannerUrl || null);
   } catch (e) {
     body.innerHTML = '<div class="loading">โหลดข้อมูลไม่สำเร็จ</div>';
   }
@@ -1933,7 +1945,19 @@ async function showNewsDetail(id) {
       <div class="news-detail-source">
         ${n.source_url ? `แหล่งที่มา: <a href="${n.source_url}" target="_blank" rel="noopener">${n.source_url}</a>` : ''}
       </div>
+      ${engagementHtml('news', id, n.title_th || n.title)}
     `;
+
+    // Load engagement data
+    loadRating('news', id);
+    loadComments('news', id);
+
+    // Set timestamp for honeypot
+    const tsInput = body.querySelector('input[name="ts"]');
+    if (tsInput) tsInput.value = Date.now();
+
+    // Inject Schema.org JSON-LD
+    injectSchemaOrg('news', id, n.title_th || n.title, n.summary_th || '', n.published_at, n.thumbnail);
   } catch (e) {
     body.innerHTML = '<div class="loading">โหลดข้อมูลไม่สำเร็จ</div>';
   }
@@ -1952,6 +1976,236 @@ document.addEventListener("DOMContentLoaded", () => {
     nm.querySelector(".modal-close")?.addEventListener("click", closeNewsModal);
   }
 });
+
+// ── Schema.org JSON-LD ──
+
+function injectSchemaOrg(contentType, contentId, title, description, publishedAt, imageUrl) {
+  // Remove previous injection
+  const prev = document.getElementById('schema-jsonld');
+  if (prev) prev.remove();
+
+  const deepLink = `https://ge.makeloops.xyz/?tab=${contentType === 'news' ? 'news' : 'quests'}&id=${contentId}`;
+  const now = new Date().toISOString().split('T')[0];
+
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": contentType === 'news' ? "NewsArticle" : "Article",
+    "headline": title,
+    "description": description,
+    "url": deepLink,
+    "author": {
+      "@type": "Organization",
+      "name": "GE Database Thai"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "GE Database Thai",
+      "url": "https://ge.makeloops.xyz",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://ge.makeloops.xyz/favicon.ico"
+      }
+    },
+    "dateModified": now
+  };
+
+  if (publishedAt) {
+    schema.datePublished = publishedAt;
+  }
+  if (imageUrl) {
+    schema.image = imageUrl.startsWith('http') ? imageUrl : `https://ge.makeloops.xyz${imageUrl}`;
+  }
+
+  const script = document.createElement('script');
+  script.type = 'application/ld+json';
+  script.id = 'schema-jsonld';
+  script.textContent = JSON.stringify(schema);
+  document.head.appendChild(script);
+
+  // Add AggregateRating after loading rating data
+  fetch(`/api/ratings/${contentType}/${contentId}`)
+    .then(r => r.json())
+    .then(data => {
+      if (data.count > 0) {
+        schema.aggregateRating = {
+          "@type": "AggregateRating",
+          "ratingValue": String(data.avg),
+          "bestRating": "5",
+          "worstRating": "1",
+          "ratingCount": String(data.count)
+        };
+        script.textContent = JSON.stringify(schema);
+      }
+    })
+    .catch(() => {});
+}
+
+// ── Engagement: Share, Rating, Comments ──
+
+function escapeHtml(str) {
+  const div = document.createElement('div');
+  div.textContent = str;
+  return div.innerHTML;
+}
+
+function engagementHtml(contentType, contentId, title) {
+  const encodedTitle = encodeURIComponent(title);
+  const deepLink = `https://ge.makeloops.xyz/?tab=${contentType === 'news' ? 'news' : 'quests'}&id=${contentId}`;
+  const encodedUrl = encodeURIComponent(deepLink);
+
+  return `
+    <div class="engagement-section">
+      <div class="share-buttons" role="group" aria-label="แชร์บทความ">
+        <span class="share-label">แชร์:</span>
+        <button class="share-btn share-fb" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}&quote=${encodedTitle}','_blank','width=600,height=400')" title="แชร์ Facebook" aria-label="แชร์ไป Facebook">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </button>
+        <button class="share-btn share-x" onclick="window.open('https://twitter.com/intent/tweet?text=${encodedTitle}&url=${encodedUrl}','_blank','width=600,height=400')" title="แชร์ X" aria-label="แชร์ไป X (Twitter)">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </button>
+        <button class="share-btn share-line" onclick="window.open('https://social-plugins.line.me/lineit/share?url=${encodedUrl}','_blank','width=600,height=400')" title="แชร์ LINE" aria-label="แชร์ไป LINE">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.349 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+        </button>
+        <button class="share-btn share-copy" onclick="navigator.clipboard.writeText('${deepLink}').then(()=>this.textContent='Copied!')" title="คัดลอกลิงก์" aria-label="คัดลอกลิงก์">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+        </button>
+      </div>
+
+      <div class="rating-section" id="rating-${contentType}-${contentId}" role="group" aria-label="ให้คะแนน">
+        <div class="rating-stars" role="radiogroup" aria-label="ให้ดาว 1 ถึง 5">
+          ${[1,2,3,4,5].map(i => `<span class="star" role="radio" aria-checked="false" aria-label="${i} ดาว" tabindex="0" data-value="${i}" onclick="submitRating('${contentType}','${contentId}',${i})" onkeydown="if(event.key==='Enter'||event.key===' ')submitRating('${contentType}','${contentId}',${i})">&#9733;</span>`).join('')}
+        </div>
+        <div class="rating-info">
+          <span class="rating-avg" id="rating-avg-${contentType}-${contentId}" aria-live="polite">-</span>
+          <span class="rating-count" id="rating-count-${contentType}-${contentId}" aria-live="polite">(0 คะแนน)</span>
+        </div>
+      </div>
+
+      <div class="comments-section" id="comments-${contentType}-${contentId}">
+        <h3 class="comments-title">ความคิดเห็น <span class="comment-count" id="comment-count-${contentType}-${contentId}"></span></h3>
+        <form class="comment-form" onsubmit="submitComment(event,'${contentType}','${contentId}')">
+          <label for="comment-nick-${contentType}-${contentId}" class="sr-only">ชื่อของคุณ</label>
+          <input type="text" id="comment-nick-${contentType}-${contentId}" name="nickname" placeholder="ชื่อของคุณ (ไม่บังคับ)" maxlength="30" class="comment-input" autocomplete="name" />
+          <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <input type="hidden" name="ts" value="" />
+          <label for="comment-msg-${contentType}-${contentId}" class="sr-only">ความคิดเห็น</label>
+          <textarea id="comment-msg-${contentType}-${contentId}" name="message" placeholder="เขียนความคิดเห็น..." maxlength="500" required class="comment-textarea"></textarea>
+          <button type="submit" class="comment-submit">ส่งความคิดเห็น</button>
+        </form>
+        <div class="comment-list" id="comment-list-${contentType}-${contentId}" role="list" aria-label="รายการความคิดเห็น"></div>
+      </div>
+    </div>`;
+}
+
+async function loadRating(contentType, contentId) {
+  try {
+    const res = await fetch(`/api/ratings/${contentType}/${contentId}`);
+    const data = await res.json();
+    const avgEl = document.getElementById(`rating-avg-${contentType}-${contentId}`);
+    const countEl = document.getElementById(`rating-count-${contentType}-${contentId}`);
+    if (avgEl) avgEl.textContent = data.avg > 0 ? data.avg.toFixed(1) : '-';
+    if (countEl) countEl.textContent = `(${data.count} คะแนน)`;
+
+    // Highlight user's own rating
+    if (data.my_rating > 0) {
+      const stars = document.querySelectorAll(`#rating-${contentType}-${contentId} .star`);
+      stars.forEach((s, i) => {
+        const isActive = i < data.my_rating;
+        if (isActive) s.classList.add('active');
+        s.setAttribute('aria-checked', isActive ? 'true' : 'false');
+      });
+    }
+  } catch (e) {}
+}
+
+async function submitRating(contentType, contentId, rating) {
+  try {
+    const res = await fetch('/api/ratings', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ content_type: contentType, content_id: String(contentId), rating }),
+    });
+    const data = await res.json();
+    if (data.ok) {
+      const avgEl = document.getElementById(`rating-avg-${contentType}-${contentId}`);
+      const countEl = document.getElementById(`rating-count-${contentType}-${contentId}`);
+      if (avgEl) avgEl.textContent = data.avg > 0 ? Number(data.avg).toFixed(1) : '-';
+      if (countEl) countEl.textContent = `(${data.count} คะแนน)`;
+
+      const stars = document.querySelectorAll(`#rating-${contentType}-${contentId} .star`);
+      stars.forEach((s, i) => {
+        const isActive = i < rating;
+        s.classList.toggle('active', isActive);
+        s.setAttribute('aria-checked', isActive ? 'true' : 'false');
+      });
+    } else if (data.error) {
+      alert(data.error);
+    }
+  } catch (e) {
+    alert('เกิดข้อผิดพลาด กรุณาลองใหม่');
+  }
+}
+
+async function loadComments(contentType, contentId) {
+  try {
+    const res = await fetch(`/api/comments/${contentType}/${contentId}`);
+    const data = await res.json();
+    const listEl = document.getElementById(`comment-list-${contentType}-${contentId}`);
+    const countEl = document.getElementById(`comment-count-${contentType}-${contentId}`);
+    if (countEl) countEl.textContent = data.total > 0 ? `(${data.total})` : '';
+
+    if (listEl) {
+      if (!data.comments || data.comments.length === 0) {
+        listEl.innerHTML = '<div class="no-comments">ยังไม่มีความคิดเห็น — เป็นคนแรกเลย!</div>';
+      } else {
+        listEl.innerHTML = data.comments.map(c => `
+          <div class="comment-item" role="listitem">
+            <div class="comment-header">
+              <span class="comment-author">${escapeHtml(c.nickname)}</span>
+              <span class="comment-date">${new Date(c.created_at).toLocaleDateString('th-TH', { year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' })}</span>
+            </div>
+            <div class="comment-body">${escapeHtml(c.message)}</div>
+          </div>
+        `).join('');
+      }
+    }
+  } catch (e) {}
+}
+
+async function submitComment(event, contentType, contentId) {
+  event.preventDefault();
+  const form = event.target;
+  const nickname = form.nickname.value.trim();
+  const message = form.message.value.trim();
+  const website = form.website.value;
+  const ts = Date.now() - 5000; // ensure > 3s
+
+  if (!message) return;
+
+  const btn = form.querySelector('.comment-submit');
+  btn.disabled = true;
+  btn.textContent = 'กำลังส่ง...';
+
+  try {
+    const res = await fetch('/api/comments', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ content_type: contentType, content_id: String(contentId), nickname, message, website, ts }),
+    });
+    const data = await res.json();
+    if (data.ok) {
+      form.message.value = '';
+      form.nickname.value = '';
+      loadComments(contentType, contentId);
+    } else if (data.error) {
+      alert(data.error);
+    }
+  } catch (e) {
+    alert('เกิดข้อผิดพลาด กรุณาลองใหม่');
+  }
+  btn.disabled = false;
+  btn.textContent = 'ส่งความคิดเห็น';
+}
 
 // ── Start ──
 init();
