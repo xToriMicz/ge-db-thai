@@ -1579,6 +1579,32 @@ function showComparison() {
 // ── Quests ──
 let questsLoaded = false;
 
+const BANNER_MAP = {
+  'beatrice': 'https://cdn.exe.in.th/marketing/granado/images/guide/0523/beatrice/granado_beatrice_banner.jpg',
+  'sharon': 'https://cdn.exe.in.th/marketing/granado/images/guide/0623/sharon/granadoespada-sharon-banner.jpg',
+  'dark-emilia': 'https://cdn.exe.in.th/marketing/granado/images/guide/0623/darkemilia/granadoespada_darkemilia_banner.jpg',
+  'nar-2': 'https://cdn.exe.in.th/marketing/granado/images/guide/0623/nar/granadoespada_nar_banner.jpg',
+  'mboma-ll': 'https://cdn.exe.in.th/marketing/granado/images/guide/0523/mboma/granado_mboma_banner.jpg',
+  'jose-cortasar': 'https://cdn.exe.in.th/marketing/granado/images/guide/0523/jose/granado_jose_banner.jpg',
+  'gurtrude': 'https://cdn.exe.in.th/marketing/granado/images/guide/2023/05/gurtrude/gurtrude_banner.jpg',
+  'gracielo': 'https://cdn.exe.in.th/marketing/granado/images/guide/0523/gracielo/gracielo_banner.jpg',
+  'selva': 'https://cdn.exe.in.th/marketing/granado/images/guide/0523/selva/selva_banner.jpg',
+  'irawan': 'https://cdn.exe.in.th/marketing/granado/images/guide/0323/irawan_banner.jpg',
+  'ania': 'https://cdn.exe.in.th/marketing/granado/images/guide/12/ania/ania_700x365.jpg',
+  'vincent': 'https://cdn.exe.in.th/marketing/granado/images/guide/12/vincent/vincent_700x365.jpg',
+  'soso': 'https://cdn.exe.in.th/marketing/granado/images/guide/12/soso/soso_700x365.jpg',
+  'marie': 'https://cdn.exe.in.th/marketing/granado/images/guide/12/marie/marie_700x365.jpg',
+  'catherine': 'https://cdn.exe.in.th/marketing/granado/images/guide/12/catherine/catherine_700x365.jpg',
+  'catherinetorsche': 'https://cdn.exe.in.th/marketing/granado/images/guide/11/catherinetorsche/catherinetorsche_700x365.jpg',
+  'hellena': 'https://cdn.exe.in.th/marketing/granado/images/guide/11/hellena/hellena_700x365.jpg',
+  'calyce': 'https://cdn.exe.in.th/marketing/granado/images/guide/11/calyce/calyce_700x365.jpg',
+  'mboma': 'https://cdn.exe.in.th/marketing/granado/images/guide/11/mboma/mboma_700x365.jpg',
+  'emilia': 'https://cdn.exe.in.th/marketing/granado/images/guide/11/emilia/emilia_700x365.jpg',
+  'andre': 'https://cdn.exe.in.th/marketing/granado/images/guide/11/andre/andre_700.jpg',
+  'panfilo': 'https://cdn.exe.in.th/marketing/granado/images/guide/11/panfilo/panfilo_700.jpg',
+  'najib-sharif': 'https://cdn.exe.in.th/marketing/granado/images/guide/11/najibsharif/najib_700.jpg',
+};
+
 async function loadQuests() {
   const grid = document.getElementById("quest-grid");
   grid.innerHTML = '<div class="loading"><div class="spinner"></div> กำลังโหลดเควส...</div>';
@@ -1596,32 +1622,6 @@ async function loadQuests() {
 function renderQuestGrid(quests) {
   const grid = document.getElementById("quest-grid");
   if (!quests.length) { grid.innerHTML = '<div class="loading">ไม่พบเควส</div>'; return; }
-
-  const BANNER_MAP = {
-    'beatrice': 'https://cdn.exe.in.th/marketing/granado/images/guide/0523/beatrice/granado_beatrice_banner.jpg',
-    'sharon': 'https://cdn.exe.in.th/marketing/granado/images/guide/0623/sharon/granadoespada-sharon-banner.jpg',
-    'dark-emilia': 'https://cdn.exe.in.th/marketing/granado/images/guide/0623/darkemilia/granadoespada_darkemilia_banner.jpg',
-    'nar-2': 'https://cdn.exe.in.th/marketing/granado/images/guide/0623/nar/granadoespada_nar_banner.jpg',
-    'mboma-ll': 'https://cdn.exe.in.th/marketing/granado/images/guide/0523/mboma/granado_mboma_banner.jpg',
-    'jose-cortasar': 'https://cdn.exe.in.th/marketing/granado/images/guide/0523/jose/granado_jose_banner.jpg',
-    'gurtrude': 'https://cdn.exe.in.th/marketing/granado/images/2023/05/gurtrude/gurtrude_banner.jpg',
-    'gracielo': 'https://cdn.exe.in.th/marketing/granado/images/guide/0523/gracielo/gracielo_banner.jpg',
-    'selva': 'https://cdn.exe.in.th/marketing/granado/images/guide/0523/selva/selva_banner.jpg',
-    'irawan': 'https://cdn.exe.in.th/marketing/granado/images/guide/0323/irawan_banner.jpg',
-    'ania': 'https://cdn.exe.in.th/marketing/granado/images/guide/12/ania/ania_700x365.jpg',
-    'vincent': 'https://cdn.exe.in.th/marketing/granado/images/guide/12/vincent/vincent_700x365.jpg',
-    'soso': 'https://cdn.exe.in.th/marketing/granado/images/guide/12/soso/soso_700x365.jpg',
-    'marie': 'https://cdn.exe.in.th/marketing/granado/images/guide/12/marie/marie_700x365.jpg',
-    'catherine': 'https://cdn.exe.in.th/marketing/granado/images/guide/12/catherine/catherine_700x365.jpg',
-    'catherinetorsche': 'https://cdn.exe.in.th/marketing/granado/images/guide/11/catherinetorsche/catherinetorsche_700x365.jpg',
-    'hellena': 'https://cdn.exe.in.th/marketing/granado/images/guide/11/hellena/hellena_700x365.jpg',
-    'calyce': 'https://cdn.exe.in.th/marketing/granado/images/guide/11/calyce/calyce_700x365.jpg',
-    'mboma': 'https://cdn.exe.in.th/marketing/granado/images/guide/11/mboma/mboma_700x365.jpg',
-    'emilia': 'https://cdn.exe.in.th/marketing/granado/images/guide/11/emilia/emilia_700x365.jpg',
-    'andre': 'https://cdn.exe.in.th/marketing/granado/images/guide/11/andre/andre_700.jpg',
-    'panfilo': 'https://cdn.exe.in.th/marketing/granado/images/guide/11/panfilo/panfilo_700.jpg',
-    'najib-sharif': 'https://cdn.exe.in.th/marketing/granado/images/guide/11/najibsharif/najib_700.jpg',
-  };
 
   grid.innerHTML = quests.map(q => {
     const banner = BANNER_MAP[q.slug] || '';
