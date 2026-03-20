@@ -85,6 +85,14 @@ async function init() {
     if (mapParam) { if (!tabParam) switchTab("maps"); showMapDetail(mapParam); }
     const itemParam = params.get("item");
     if (itemParam) { if (!tabParam) switchTab("items"); showItemDetail(itemParam); }
+    const questParam = params.get("quest");
+    if (questParam) { if (!tabParam) switchTab("quests"); setTimeout(() => showQuestDetail(questParam), 300); }
+    const newsParam = params.get("news");
+    if (newsParam) { if (!tabParam) switchTab("news"); setTimeout(() => showNewsDetail(newsParam), 300); }
+    // Also support generic ?id= with tab context
+    const idParam = params.get("id");
+    if (idParam && tabParam === "news") { setTimeout(() => showNewsDetail(idParam), 300); }
+    if (idParam && tabParam === "quests") { setTimeout(() => showQuestDetail(idParam), 300); }
     const qParam = params.get("q");
     if (qParam) {
       const gs = document.getElementById("global-search");
@@ -1985,7 +1993,6 @@ function injectSchemaOrg(contentType, contentId, title, description, publishedAt
   if (prev) prev.remove();
 
   const deepLink = `https://ge.makeloops.xyz/?tab=${contentType === 'news' ? 'news' : 'quests'}&id=${contentId}`;
-  const now = new Date().toISOString().split('T')[0];
 
   const schema = {
     "@context": "https://schema.org",
@@ -2006,14 +2013,17 @@ function injectSchemaOrg(contentType, contentId, title, description, publishedAt
         "url": "https://ge.makeloops.xyz/favicon.ico"
       }
     },
-    "dateModified": now
+    "dateModified": publishedAt || new Date().toISOString().split('T')[0]
   };
 
   if (publishedAt) {
     schema.datePublished = publishedAt;
   }
-  if (imageUrl) {
+  if (imageUrl && imageUrl.length > 0) {
     schema.image = imageUrl.startsWith('http') ? imageUrl : `https://ge.makeloops.xyz${imageUrl}`;
+  } else {
+    // Fallback: use site logo as image (Schema.org requires image for rich results)
+    schema.image = "https://ge.makeloops.xyz/favicon.ico";
   }
 
   const script = document.createElement('script');
