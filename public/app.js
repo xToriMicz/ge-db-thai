@@ -687,26 +687,35 @@ const GROUP_LABELS = {
 };
 
 const CATEGORY_LABELS = {
-  sword: "Sword", dagger: "Dagger", blunt: "Blunt", great_sword: "Great Sword",
-  polearm: "Polearm", rapier: "Rapier", sabre: "Sabre", knuckle: "Knuckle",
-  tonfa: "Tonfa", javelin: "Javelin", crescent: "Crescent", shield: "Shield",
-  main_gauche: "Main-Gauche", leg_guards: "Leg-Guards",
-  pistol: "Pistol", rifle: "Rifle", cannon: "Cannon", crossbow: "Crossbow",
-  shotgun: "Shotgun", heavy_rifle: "Heavy Rifle", arm_shield: "Arm Shield",
-  controller: "Controller", hammer: "Hammer", pendant: "Pendant",
-  rod: "Rod", staff: "Staff", fire_bracelet: "Fire Bracelet",
-  ice_bracelet: "Ice Bracelet", lightning_bracelet: "Lightning Bracelet",
-  special_bracelet: "Special Bracelet", cube: "Cube", lute: "Lute",
-  magic_scroll: "Magic Scroll", rosario: "Rosario",
-  coat: "Coat", leather: "Leather", metal: "Metal", robe: "Robe",
-  artifact: "Artifact", belt: "Belt", earring: "Earring", glove: "Glove",
-  necklace: "Necklace", shoes: "Shoes", runestone: "Runestone", pet_spirit: "Pet Spirit",
-  back: "Back", face: "Face", medal: "Medal", hat: "Hat",
-  body_costume: "Body Costume", weapon_costume: "Weapon Costume",
-  skill_ring: "Skill Ring", veteran_ring: "Veteran Ring",
-  upgraded_ring: "Upgraded Ring", stat_ring: "Stat Ring",
-  alchemy: "Alchemy", cooking: "Cooking", craftable: "Craftable",
-  crafting: "Crafting", quest: "Quest", lumin: "Lumin", summon: "Summon",
+  // weapon-melee — อาวุธระยะประชิด
+  sword: "ดาบ", dagger: "มีดสั้น", blunt: "อาวุธทื่อ", great_sword: "ดาบใหญ่",
+  polearm: "อาวุธด้ามยาว", rapier: "เรเปียร์", sabre: "กระบี่", knuckle: "ถุงมือเหล็ก",
+  tonfa: "ทอนฟา", javelin: "หอกซัด", crescent: "เคียวพระจันทร์",
+  // weapon-melee sub-weapons
+  shield: "โล่", main_gauche: "มังโกช", leg_guards: "สนับแข้ง",
+  // weapon-ranged — อาวุธระยะไกล
+  pistol: "ปืนพก", rifle: "ปืนไรเฟิล", cannon: "ปืนใหญ่", crossbow: "หน้าไม้",
+  shotgun: "ปืนลูกซอง", heavy_rifle: "ปืนไรเฟิลหนัก", arm_shield: "โล่แขน",
+  // weapon-magic — อาวุธเวทมนตร์
+  controller: "คอนโทรลเลอร์", hammer: "ค้อน", pendant: "จี้",
+  rod: "คทา", staff: "ไม้เท้า", fire_bracelet: "กำไลไฟ",
+  ice_bracelet: "กำไลน้ำแข็ง", lightning_bracelet: "กำไลสายฟ้า",
+  special_bracelet: "กำไลพิเศษ", cube: "คิวบ์", lute: "พิณ",
+  magic_scroll: "ม้วนคาถา", rosario: "สายประคำ",
+  // armor — เกราะ
+  coat: "เสื้อคลุม", leather: "เกราะหนัง", metal: "เกราะเหล็ก", robe: "ชุดคลุม",
+  // accessory — เครื่องประดับ
+  artifact: "อาร์ติแฟค", belt: "เข็มขัด", earring: "ต่างหู", glove: "ถุงมือ",
+  necklace: "สร้อยคอ", shoes: "รองเท้า", runestone: "หินรูน", pet_spirit: "วิญญาณสัตว์เลี้ยง",
+  // costume — คอสตูม
+  back: "หลัง", face: "หน้า", medal: "เหรียญ", hat: "หมวก",
+  body_costume: "ชุดคอสตูม", weapon_costume: "คอสตูมอาวุธ",
+  // ring — แหวน
+  skill_ring: "แหวนสกิล", veteran_ring: "แหวนเวเทอรัน",
+  upgraded_ring: "แหวนอัพเกรด", stat_ring: "แหวนสเตตัส",
+  // misc — อื่นๆ
+  alchemy: "เล่นแร่แปรธาตุ", cooking: "ทำอาหาร", craftable: "ของคราฟต์ได้",
+  crafting: "วัตถุดิบคราฟต์", quest: "เควส", lumin: "ลูมิน", summon: "ซัมมอน",
 };
 
 async function loadItems() {
@@ -1115,6 +1124,16 @@ async function doGlobalSearch(q) {
       }
     }
 
+    if (data.enchantments && data.enchantments.length > 0) {
+      sections.push(`<div class="gs-group-title">เอนแชนท์ (${data.enchantments.length})</div>`);
+      for (const e of data.enchantments) {
+        sections.push(`<div class="gs-item">
+          <div><span class="gs-item-name">${e.name}</span></div>
+          <span class="gs-item-meta">${e.category} · ${e.chance}</span>
+        </div>`);
+      }
+    }
+
     if (sections.length === 0) {
       results.innerHTML = '<div class="gs-no-result">ไม่พบผลลัพธ์</div>';
     } else {
@@ -1203,7 +1222,7 @@ async function showItemDetail(slug) {
         <div>
           <h2 class="item-detail-name">${item.name}</h2>
           ${item.name_th ? `<div class="item-detail-th">${item.name_th}</div>` : ''}
-          <div class="item-detail-cat">${CATEGORY_LABELS[item.category] || item.category} · ${item.category_group}</div>
+          <div class="item-detail-cat">${CATEGORY_LABELS[item.category] || item.category} · ${GROUP_LABELS[item.category_group] || item.category_group}</div>
           ${stats.length ? `<div class="item-detail-stats">${stats.join(' · ')}</div>` : ''}
         </div>
       </div>

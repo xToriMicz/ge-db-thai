@@ -286,7 +286,7 @@ async function handleAPI(request: Request, env: Env): Promise<Response> {
 
     const like = `%${q}%`;
 
-    const [chars, items, maps, monsters, raids, stances, skills] = await Promise.all([
+    const [chars, items, maps, monsters, raids, stances, skills, enchantments] = await Promise.all([
       env.DB.prepare("SELECT slug, display_name, name_th, type, portrait_x, portrait_y, portrait_class, portrait_sheet FROM characters WHERE display_name LIKE ? OR name LIKE ? OR name_th LIKE ? LIMIT 10")
         .bind(like, like, like).all(),
       env.DB.prepare("SELECT name, name_th, slug, category, category_group, level, image FROM items WHERE name LIKE ? OR name_th LIKE ? LIMIT 10")
@@ -301,6 +301,8 @@ async function handleAPI(request: Request, env: Env): Promise<Response> {
         .bind(like, like).all(),
       env.DB.prepare("SELECT skill_name, character_slug, stance_name FROM skills WHERE skill_name LIKE ? LIMIT 10")
         .bind(like).all(),
+      env.DB.prepare("SELECT id, category, name, chance FROM enchantments WHERE name LIKE ? OR category LIKE ? LIMIT 10")
+        .bind(like, like).all(),
     ]);
 
     return json({
@@ -311,6 +313,7 @@ async function handleAPI(request: Request, env: Env): Promise<Response> {
       raids: raids.results,
       stances: stances.results,
       skills: skills.results,
+      enchantments: enchantments.results,
     }, 200, 60);
   }
 
@@ -447,6 +450,36 @@ async function handleAPI(request: Request, env: Env): Promise<Response> {
     }
 
     return json({ ...monster, map, drop_items: dropItems }, 200, 300);
+  }
+
+  // GET /api/enchantments — list enchantments by category (cache 10 min)
+  if (path === "/api/enchantments") {
+    const cat = url.searchParams.get("category");
+    const search = url.searchParams.get("q");
+
+    let query = "SELECT * FROM enchantments";
+    const conditions: string[] = [];
+    const params: string[] = [];
+
+    if (cat && cat !== "all") {
+      conditions.push("category = ?");
+      params.push(cat);
+    }
+    if (search) {
+      conditions.push("(name LIKE ? OR category LIKE ?)");
+      params.push(`%${search}%`, `%${search}%`);
+    }
+    if (conditions.length > 0) {
+      query += " WHERE " + conditions.join(" AND ");
+    }
+    query += " ORDER BY category, id";
+
+    const result = await env.DB.prepare(query).bind(...params).all();
+
+    // Also return category list
+    const cats = await env.DB.prepare("SELECT DISTINCT category FROM enchantments ORDER BY category").all();
+
+    return json({ enchantments: result.results, categories: cats.results.map((c: any) => c.category), total: result.results.length }, 200, 600);
   }
 
   // GET /api/raids — list raids (cache 5 min)
