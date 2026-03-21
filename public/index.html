@@ -9,6 +9,7 @@
   <meta name="author" content="GE Database Thai">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://ge.makeloops.xyz/">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="manifest" href="/manifest.json">
@@ -58,7 +59,14 @@
 <body>
   <!-- Header -->
   <header id="header">
+    <div class="header-accent"></div>
     <div class="container">
+      <div class="header-ornament">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="header-diamond">
+          <path d="M12 2L22 12L12 22L2 12Z" stroke="#f0c040" stroke-width="1" opacity="0.3"/>
+          <path d="M12 6L18 12L12 18L6 12Z" fill="#f0c040" opacity="0.1"/>
+        </svg>
+      </div>
       <h1><span class="logo-ge">GE</span> Database <span class="logo-th">Thai</span></h1>
       <p class="subtitle">ฐานข้อมูล Granado Espada ภาษาไทย</p>
       <div class="global-search-wrap">
@@ -77,6 +85,8 @@
         <button class="tab" data-tab="maps">แผนที่</button>
         <button class="tab" data-tab="monsters">มอนสเตอร์</button>
         <button class="tab" data-tab="raids">เรด</button>
+        <button class="tab" data-tab="enchantments">เอนแชนท์</button>
+        <button class="tab" data-tab="statuses">สถานะ</button>
         <button class="tab" data-tab="quests">เควส</button>
         <button class="tab" data-tab="news">ข่าว</button>
       </div>
@@ -337,6 +347,41 @@
     </div>
   </section>
 
+  <!-- Statuses Section -->
+  <section id="statuses-section" class="hidden">
+    <div class="container" style="padding:20px 16px 40px">
+      <div class="filters-inline">
+        <select id="filter-status-type">
+          <option value="all">ทุกประเภท</option>
+          <option value="buff">Buff</option>
+          <option value="debuff">Debuff</option>
+          <option value="misc">อื่นๆ</option>
+        </select>
+        <input type="text" id="status-search" placeholder="🔍 ค้นหาสถานะ...">
+      </div>
+      <div class="result-count">แสดง <span id="status-result-count">—</span> สถานะ</div>
+      <div id="status-grid" class="status-grid">
+        <div class="loading"><div class="spinner"></div> กำลังโหลดข้อมูล...</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Enchantments Section -->
+  <section id="enchantments-section" class="hidden">
+    <div class="container" style="padding:20px 16px 40px">
+      <div class="filters-inline">
+        <select id="filter-enchant-cat">
+          <option value="all">ทุกหมวด</option>
+        </select>
+        <input type="text" id="enchant-search" placeholder="🔍 ค้นหาเอนแชนท์...">
+      </div>
+      <div class="result-count">แสดง <span id="enchant-result-count">—</span> เอนแชนท์</div>
+      <div id="enchant-grid" class="enchant-grid">
+        <div class="loading"><div class="spinner"></div> กำลังโหลดข้อมูล...</div>
+      </div>
+    </div>
+  </section>
+
   <!-- Quests Section -->
   <section id="quests-section" class="hidden">
     <div class="container" style="padding:20px 16px 40px">
@@ -411,7 +456,19 @@
   <script src="app.js?v=20260319f"></script>
   <script>
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/sw.js');
+      navigator.serviceWorker.register('/sw.js').then(function(reg) {
+        // Smart prefetch: after page is idle, tell SW to cache API data
+        function triggerPrefetch() {
+          if (reg.active) {
+            reg.active.postMessage({ type: 'PREFETCH' });
+          }
+        }
+        if ('requestIdleCallback' in window) {
+          requestIdleCallback(triggerPrefetch, { timeout: 5000 });
+        } else {
+          setTimeout(triggerPrefetch, 3000);
+        }
+      });
     }
   </script>
 </body>

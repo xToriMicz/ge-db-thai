@@ -1,17 +1,29 @@
 // GE Database Thai — Service Worker
-const CACHE_NAME = 'ge-db-thai-v25';
+// Phase 5B: Offline mode with smart prefetch
+const CACHE_VERSION = 26;
+const CACHE_NAME = 'ge-db-thai-v' + CACHE_VERSION;
+
 const STATIC_ASSETS = [
   '/',
   '/style.css',
   '/app.js',
   '/manifest.json',
   '/favicon.png',
+  '/favicon.svg',
   '/images/portrait.webp',
   '/images/portrait02.webp',
   '/images/stanceicon.webp',
   '/images/stanceicon2.webp',
   '/images/stanceiconcustom.webp',
   '/images/icon-192.png',
+];
+
+// API endpoints to prefetch in background after page load
+const PREFETCH_APIS = [
+  '/api/characters',
+  '/api/stats',
+  '/api/items?limit=50',
+  '/api/maps',
 ];
 
 // Install: cache static assets
@@ -36,12 +48,15 @@ self.addEventListener('activate', (e) => {
 self.addEventListener('fetch', (e) => {
   const url = new URL(e.request.url);
 
+  // Only handle GET requests
+  if (e.request.method !== 'GET') return;
+
   // API calls: network first, fallback to cache
   if (url.pathname.startsWith('/api/')) {
     e.respondWith(
       fetch(e.request)
         .then((res) => {
-          if (res.ok && e.request.method === 'GET') {
+          if (res.ok) {
             const clone = res.clone();
             caches.open(CACHE_NAME).then((cache) => cache.put(e.request, clone));
           }
@@ -66,3 +81,24 @@ self.addEventListener('fetch', (e) => {
     })
   );
 });
+
+// Smart prefetch: triggered by message from main thread
+self.addEventListener('message', (e) => {
+  if (e.data && e.data.type === 'PREFETCH') {
+    e.waitUntil(prefetchApis());
+  }
+});
+
+async function prefetchApis() {
+  const cache = await caches.open(CACHE_NAME);
+  for (const url of PREFETCH_APIS) {
+    try {
+      const res = await fetch(url);
+      if (res.ok) {
+        await cache.put(new Request(url), res);
+      }
+    } catch (_) {
+      // Silently skip — prefetch is best-effort
+    }
+  }
+}

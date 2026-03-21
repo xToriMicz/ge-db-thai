@@ -22,6 +22,9 @@ const COMMENT_RATE_LIMIT = 5;
 const COMMENT_RATE_WINDOW = 60 * 60 * 1000;
 const RATING_RATE_LIMIT = 10;
 const RATING_RATE_WINDOW = 60 * 60 * 1000;
+const viewLog = new Map<string, number[]>();
+const VIEW_RATE_LIMIT = 30;
+const VIEW_RATE_WINDOW = 60 * 60 * 1000; // 1 hour
 
 function isRateLimited(ip: string): boolean {
   const now = Date.now();
@@ -50,6 +53,15 @@ function isRatingLimited(ip: string): boolean {
   return false;
 }
 
+function isViewLimited(ip: string): boolean {
+  const now = Date.now();
+  const timestamps = (viewLog.get(ip) || []).filter(t => now - t < VIEW_RATE_WINDOW);
+  if (timestamps.length >= VIEW_RATE_LIMIT) return true;
+  timestamps.push(now);
+  viewLog.set(ip, timestamps);
+  return false;
+}
+
 function sanitizeHtml(str: string): string {
   return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#x27;");
 }
@@ -58,6 +70,45 @@ async function hashIP(ip: string): Promise<string> {
   const data = new TextEncoder().encode(ip + "ge-db-salt-2026");
   const hash = await crypto.subtle.digest("SHA-256", data);
   return Array.from(new Uint8Array(hash)).map(b => b.toString(16).padStart(2, "0")).join("").slice(0, 16);
+}
+
+// Image cache headers — 1 year immutable for all image routes
+const IMAGE_CACHE_HEADERS = {
+  "Cache-Control": "public, max-age=31536000, immutable",
+};
+
+/**
+ * Check if the client supports WebP via Accept header.
+ */
+function supportsWebP(request: Request): boolean {
+  const accept = request.headers.get("Accept") || "";
+  return accept.includes("image/webp");
+}
+
+/**
+ * Try to serve a WebP variant from R2 if the client supports it.
+ * Looks for `{r2Key}.webp` in R2. Returns the WebP object if found, else null.
+ */
+async function tryWebPVariant(env: Env, r2Key: string, request: Request): Promise<R2ObjectBody | null> {
+  if (!supportsWebP(request)) return null;
+  const webpKey = `${r2Key}.webp`;
+  const webpObj = await env.ASSETS.get(webpKey);
+  return webpObj || null;
+}
+
+/**
+ * Build image response headers with content type, cache control, and optional Vary.
+ * When serving a WebP variant, we add Vary: Accept so caches distinguish.
+ */
+function imageResponseHeaders(contentType: string, isWebPNegotiated: boolean): Record<string, string> {
+  const headers: Record<string, string> = {
+    "Content-Type": contentType,
+    ...IMAGE_CACHE_HEADERS,
+  };
+  if (isWebPNegotiated) {
+    headers["Vary"] = "Accept";
+  }
+  return headers;
 }
 
 function json(data: unknown, status = 200, cacheSeconds = 0): Response {
@@ -286,7 +337,7 @@ async function handleAPI(request: Request, env: Env): Promise<Response> {
 
     const like = `%${q}%`;
 
-    const [chars, items, maps, monsters, raids] = await Promise.all([
+    const [chars, items, maps, monsters, raids, stances, skills, enchantments, statuses] = await Promise.all([
       env.DB.prepare("SELECT slug, display_name, name_th, type, portrait_x, portrait_y, portrait_class, portrait_sheet FROM characters WHERE display_name LIKE ? OR name LIKE ? OR name_th LIKE ? LIMIT 10")
         .bind(like, like, like).all(),
       env.DB.prepare("SELECT name, name_th, slug, category, category_group, level, image FROM items WHERE name LIKE ? OR name_th LIKE ? LIMIT 10")
@@ -297,7 +348,18 @@ async function handleAPI(request: Request, env: Env): Promise<Response> {
         .bind(like, like).all(),
       env.DB.prepare("SELECT name, name_th, slug, level, race, location, map_slug FROM raids WHERE name LIKE ? OR name_th LIKE ? OR location LIKE ? LIMIT 10")
         .bind(like, like, like).all(),
+      env.DB.prepare("SELECT s.name, s.name_th, c.slug as character_slug, c.display_name as character_name FROM stances s JOIN characters c ON s.character_id = c.id WHERE s.name LIKE ? OR s.name_th LIKE ? LIMIT 10")
+        .bind(like, like).all(),
+      env.DB.prepare("SELECT skill_name, character_slug, stance_name FROM skills WHERE skill_name LIKE ? LIMIT 10")
+        .bind(like).all(),
+      env.DB.prepare("SELECT id, category, name, chance FROM enchantments WHERE name LIKE ? OR category LIKE ? LIMIT 10")
+        .bind(like, like).all(),
+      env.DB.prepare("SELECT id, name, description, description_th, type FROM statuses WHERE name LIKE ? OR description LIKE ? OR description_th LIKE ? LIMIT 10")
+        .bind(like, like, like).all(),
     ]);
+
+    // Log search query for analytics (fire-and-forget, non-blocking)
+    env.DB.prepare("INSERT INTO popular_searches (query) VALUES (?)").bind(q).run();
 
     return json({
       characters: chars.results,
@@ -305,6 +367,10 @@ async function handleAPI(request: Request, env: Env): Promise<Response> {
       maps: maps.results,
       monsters: monsters.results,
       raids: raids.results,
+      stances: stances.results,
+      skills: skills.results,
+      enchantments: enchantments.results,
+      statuses: statuses.results,
     }, 200, 60);
   }
 
@@ -413,6 +479,140 @@ async function handleAPI(request: Request, env: Env): Promise<Response> {
 
     const result = await env.DB.prepare(query).bind(...params).all();
     return json({ monsters: result.results, total: result.results.length }, 200, 300);
+  }
+
+  // GET /api/monsters/:id — single monster with drop items + map (cache 5 min)
+  const monsterMatch = path.match(/^\/api\/monsters\/(\d+)$/);
+  if (monsterMatch) {
+    const monsterId = Number(monsterMatch[1]);
+    const monster = await env.DB.prepare("SELECT * FROM monsters WHERE id = ?").bind(monsterId).first();
+    if (!monster) return json({ error: "Monster not found" }, 404);
+
+    // Get map info
+    let map = null;
+    if (monster.map_slug) {
+      map = await env.DB.prepare("SELECT slug, name, name_th, level_range, map_type FROM maps WHERE slug = ?").bind(monster.map_slug).first();
+    }
+
+    // Get items that drop in same map
+    let dropItems: any[] = [];
+    if (monster.map_slug) {
+      const mapRow = await env.DB.prepare("SELECT id FROM maps WHERE slug = ?").bind(monster.map_slug).first();
+      if (mapRow) {
+        const drops = await env.DB.prepare(
+          "SELECT md.item_name, md.item_slug, md.item_category FROM map_drops md WHERE md.map_id = ? ORDER BY md.item_name LIMIT 30"
+        ).bind(mapRow.id).all();
+        dropItems = drops.results as any[];
+      }
+    }
+
+    return json({ ...monster, map, drop_items: dropItems }, 200, 300);
+  }
+
+  // GET /api/statuses — list status effects (cache 10 min)
+  if (path === "/api/statuses") {
+    const type = url.searchParams.get("type");
+    const search = url.searchParams.get("q");
+
+    let query = "SELECT * FROM statuses";
+    const conditions: string[] = [];
+    const params: string[] = [];
+
+    if (type && type !== "all") {
+      conditions.push("type = ?");
+      params.push(type);
+    }
+    if (search) {
+      conditions.push("(name LIKE ? OR description LIKE ? OR description_th LIKE ?)");
+      params.push(`%${search}%`, `%${search}%`, `%${search}%`);
+    }
+    if (conditions.length > 0) {
+      query += " WHERE " + conditions.join(" AND ");
+    }
+    query += " ORDER BY name ASC";
+
+    const result = await env.DB.prepare(query).bind(...params).all();
+    return json({ statuses: result.results, total: result.results.length }, 200, 600);
+  }
+
+  // GET /api/enchantments — list enchantments by category (cache 10 min)
+  if (path === "/api/enchantments") {
+    const cat = url.searchParams.get("category");
+    const search = url.searchParams.get("q");
+
+    let query = "SELECT * FROM enchantments";
+    const conditions: string[] = [];
+    const params: string[] = [];
+
+    if (cat && cat !== "all") {
+      conditions.push("category = ?");
+      params.push(cat);
+    }
+    if (search) {
+      conditions.push("(name LIKE ? OR category LIKE ?)");
+      params.push(`%${search}%`, `%${search}%`);
+    }
+    if (conditions.length > 0) {
+      query += " WHERE " + conditions.join(" AND ");
+    }
+    query += " ORDER BY category, id";
+
+    const result = await env.DB.prepare(query).bind(...params).all();
+
+    // Also return category list
+    const cats = await env.DB.prepare("SELECT DISTINCT category FROM enchantments ORDER BY category").all();
+
+    return json({ enchantments: result.results, categories: cats.results.map((c: any) => c.category), total: result.results.length }, 200, 600);
+  }
+
+  // GET /api/guides — list guides for content (cache 5 min)
+  if (path === "/api/guides") {
+    const contentType = url.searchParams.get("type") || "general";
+    const contentId = url.searchParams.get("id");
+
+    let query = "SELECT id, title, body, content_type, content_id, author, created_at FROM guides WHERE is_visible = 1";
+    const params: string[] = [];
+
+    if (contentType !== "all") {
+      query += " AND content_type = ?";
+      params.push(contentType);
+    }
+    if (contentId) {
+      query += " AND content_id = ?";
+      params.push(contentId);
+    }
+    query += " ORDER BY created_at DESC LIMIT 50";
+
+    const result = await env.DB.prepare(query).bind(...params).all();
+    return json({ guides: result.results, total: result.results.length }, 200, 300);
+  }
+
+  // POST /api/guides — submit a guide (rate limited)
+  if (path === "/api/guides" && request.method === "POST") {
+    const ip = request.headers.get("CF-Connecting-IP") || "unknown";
+    if (isCommentLimited(ip)) return json({ error: "ส่งได้ไม่เกิน 5 ครั้ง/ชั่วโมง" }, 429);
+
+    const body = await request.json() as any;
+    const title = sanitizeHtml((body.title || "").trim());
+    const content = sanitizeHtml((body.body || "").trim());
+    const contentType = (body.content_type || "general").trim();
+    const contentId = (body.content_id || "").trim();
+    const author = sanitizeHtml((body.author || "ชุมชน").trim()).slice(0, 30);
+
+    if (!title || title.length < 3) return json({ error: "หัวข้อสั้นเกินไป (ขั้นต่ำ 3 ตัวอักษร)" }, 400);
+    if (!content || content.length < 10) return json({ error: "เนื้อหาสั้นเกินไป (ขั้นต่ำ 10 ตัวอักษร)" }, 400);
+    if (title.length > 200) return json({ error: "หัวข้อยาวเกินไป (สูงสุด 200 ตัวอักษร)" }, 400);
+    if (content.length > 5000) return json({ error: "เนื้อหายาวเกินไป (สูงสุด 5000 ตัวอักษร)" }, 400);
+
+    // Honeypot check
+    if (body.website) return json({ ok: true }, 200);
+
+    const ipHash = await hashIP(ip);
+    await env.DB.prepare(
+      "INSERT INTO guides (title, body, content_type, content_id, author, ip_hash) VALUES (?, ?, ?, ?, ?, ?)"
+    ).bind(title, content, contentType, contentId || null, author, ipHash).run();
+
+    return json({ ok: true }, 201);
   }
 
   // GET /api/raids — list raids (cache 5 min)
@@ -885,6 +1085,111 @@ async function handleAPI(request: Request, env: Env): Promise<Response> {
     return json({ comments: result.results, total: countResult?.total || 0 }, 200, 30);
   }
 
+  // ── Analytics API: View Tracking ──
+
+  // POST /api/views — record a page view
+  if (path === "/api/views" && request.method === "POST") {
+    const ip = request.headers.get("CF-Connecting-IP") || "unknown";
+    if (isViewLimited(ip)) {
+      return json({ error: "บันทึกได้สูงสุด 30 ครั้งต่อชั่วโมง" }, 429);
+    }
+
+    const body = await request.json() as { content_type?: string; content_id?: string };
+    const validTypes = ["character", "item", "map", "monster", "raid", "quest", "news"];
+    if (!body.content_type || !validTypes.includes(body.content_type)) {
+      return json({ error: "content_type ไม่ถูกต้อง" }, 400);
+    }
+    if (!body.content_id || body.content_id.trim().length === 0) {
+      return json({ error: "กรุณาระบุ content_id" }, 400);
+    }
+
+    const ipHash = await hashIP(ip);
+    await env.DB.prepare(
+      "INSERT INTO page_views (content_type, content_id, ip_hash) VALUES (?, ?, ?)"
+    ).bind(body.content_type, body.content_id.trim(), ipHash).run();
+
+    return json({ ok: true });
+  }
+
+  // GET /api/analytics/popular — top 20 most viewed characters + items (cache 10 min)
+  if (path === "/api/analytics/popular") {
+    const topCharacters = await env.DB.prepare(
+      `SELECT content_id, COUNT(*) as views
+       FROM page_views
+       WHERE content_type = 'character'
+       GROUP BY content_id
+       ORDER BY views DESC
+       LIMIT 20`
+    ).all();
+
+    const topItems = await env.DB.prepare(
+      `SELECT content_id, COUNT(*) as views
+       FROM page_views
+       WHERE content_type = 'item'
+       GROUP BY content_id
+       ORDER BY views DESC
+       LIMIT 20`
+    ).all();
+
+    return json({
+      characters: topCharacters.results,
+      items: topItems.results,
+    }, 200, 600);
+  }
+
+  // GET /api/analytics/searches — top 20 search queries (cache 10 min)
+  if (path === "/api/analytics/searches") {
+    const topSearches = await env.DB.prepare(
+      `SELECT query, COUNT(*) as count
+       FROM popular_searches
+       GROUP BY query
+       ORDER BY count DESC
+       LIMIT 20`
+    ).all();
+
+    return json({ searches: topSearches.results }, 200, 600);
+  }
+
+  // GET /api/preload/:type — critical image URLs for frontend <link rel="preload"> hints
+  const preloadMatch = path.match(/^\/api\/preload\/(characters|items)$/);
+  if (preloadMatch) {
+    const type = preloadMatch[1];
+    const baseUrl = `https://${url.hostname}`;
+
+    if (type === "characters") {
+      // Return portrait sprite sheet URLs for all characters
+      const result = await env.DB.prepare(
+        "SELECT slug, portrait_sheet FROM characters WHERE portrait_sheet IS NOT NULL ORDER BY display_name ASC"
+      ).all();
+      const urls = (result.results as any[]).map((c: any) => ({
+        slug: c.slug,
+        url: c.portrait_sheet?.startsWith("http") ? c.portrait_sheet : `${baseUrl}${c.portrait_sheet}`,
+        as: "image",
+      }));
+      return json({ type: "characters", images: urls, total: urls.length }, 200, 600);
+    }
+
+    if (type === "items") {
+      // Return top 20 most popular item images (by map_drops frequency as a popularity proxy)
+      const result = await env.DB.prepare(
+        `SELECT i.slug, i.name, i.image
+         FROM items i
+         INNER JOIN map_drops md ON md.item_slug = i.slug
+         WHERE i.image IS NOT NULL
+         GROUP BY i.slug
+         ORDER BY COUNT(md.item_slug) DESC
+         LIMIT 20`
+      ).all();
+      const urls = (result.results as any[]).map((item: any) => ({
+        slug: item.slug,
+        name: item.name,
+        url: item.image?.startsWith("http") ? item.image : `${baseUrl}/img/items/${item.image}`,
+        as: "image",
+      }));
+      return json({ type: "items", images: urls, total: urls.length }, 200, 600);
+    }
+  }
+
   return json({ error: "Not found" }, 404);
 }
 
@@ -902,20 +1207,38 @@ export default {
     }
 
     // Image proxy: /img/items/{filename} → R2 (lazy cache from ge-db.site)
+    // Supports: WebP content negotiation, ?thumb=1 thumbnail hint
     const imgMatch = url.pathname.match(/^\/img\/items\/(.+)$/);
     if (imgMatch) {
       const filename = imgMatch[1];
       const r2Key = `items/${filename}`;
+      const isThumb = url.searchParams.get("thumb") === "1";
 
-      // Try R2 first
+      // Thumbnail support infrastructure:
+      // When ?thumb=1 is requested, we add an X-Thumb-Requested header and serve the
+      // original image. Cloudflare Image Resizing (paid plan) can be enabled later by
+      // replacing the fetch with:
+      //   fetch(imageUrl, { cf: { image: { width: 80, height: 80, fit: "cover" } } })
+      // The isThumb flag is preserved so we can add resizing logic without changing the
+      // routing structure.
+
+      // Try WebP variant from R2 first (content negotiation)
+      const webpObj = await tryWebPVariant(env, r2Key, request);
+      if (webpObj) {
+        const headers = imageResponseHeaders("image/webp", true);
+        if (isThumb) headers["X-Thumb-Requested"] = "1";
+        return new Response(webpObj.body, { headers });
+      }
+
+      // Try original from R2
       const cached = await env.ASSETS.get(r2Key);
       if (cached) {
-        return new Response(cached.body, {
-          headers: {
-            "Content-Type": cached.httpMetadata?.contentType || "image/jpeg",
-            "Cache-Control": "public, max-age=31536000, immutable",
-          },
-        });
+        const headers = imageResponseHeaders(
+          cached.httpMetadata?.contentType || "image/jpeg",
+          supportsWebP(request), // Vary: Accept even if no webp variant found
+        );
+        if (isThumb) headers["X-Thumb-Requested"] = "1";
+        return new Response(cached.body, { headers });
       }
 
       // Not in R2 — fetch from source, cache in R2, serve
@@ -925,34 +1248,41 @@ export default {
           return new Response(null, { status: 404 });
         }
         const imageData = await sourceRes.arrayBuffer();
+        const contentType = sourceRes.headers.get("content-type") || "image/jpeg";
         // Store in R2 (non-blocking)
         env.ASSETS.put(r2Key, imageData, {
-          httpMetadata: { contentType: sourceRes.headers.get("content-type") || "image/jpeg" },
+          httpMetadata: { contentType },
         });
-        return new Response(imageData, {
-          headers: {
-            "Content-Type": sourceRes.headers.get("content-type") || "image/jpeg",
-            "Cache-Control": "public, max-age=31536000, immutable",
-          },
-        });
+        const headers = imageResponseHeaders(contentType, false);
+        if (isThumb) headers["X-Thumb-Requested"] = "1";
+        return new Response(imageData, { headers });
       } catch {
         return new Response(null, { status: 502 });
       }
     }
 
     // Image proxy: /img/skills/{filename} → R2 (lazy cache from ge-db.site)
+    // Supports: WebP content negotiation
     const skillImgMatch = url.pathname.match(/^\/img\/skills\/(.+)$/);
     if (skillImgMatch) {
       const filename = skillImgMatch[1];
       const r2Key = `skills/${filename}`;
 
+      // Try WebP variant from R2 first
+      const webpObj = await tryWebPVariant(env, r2Key, request);
+      if (webpObj) {
+        return new Response(webpObj.body, {
+          headers: imageResponseHeaders("image/webp", true),
+        });
+      }
+
       const cached = await env.ASSETS.get(r2Key);
       if (cached) {
         return new Response(cached.body, {
-          headers: {
-            "Content-Type": cached.httpMetadata?.contentType || "image/jpeg",
-            "Cache-Control": "public, max-age=31536000, immutable",
-          },
+          headers: imageResponseHeaders(
+            cached.httpMetadata?.contentType || "image/jpeg",
+            supportsWebP(request),
+          ),
         });
       }
 
@@ -962,14 +1292,12 @@ export default {
           return new Response(null, { status: 404 });
         }
         const imageData = await sourceRes.arrayBuffer();
+        const contentType = sourceRes.headers.get("content-type") || "image/jpeg";
         env.ASSETS.put(r2Key, imageData, {
-          httpMetadata: { contentType: sourceRes.headers.get("content-type") || "image/jpeg" },
+          httpMetadata: { contentType },
         });
         return new Response(imageData, {
-          headers: {
-            "Content-Type": sourceRes.headers.get("content-type") || "image/jpeg",
-            "Cache-Control": "public, max-age=31536000, immutable",
-          },
+          headers: imageResponseHeaders(contentType, false),
         });
       } catch {
         return new Response(null, { status: 502 });
@@ -977,10 +1305,20 @@ export default {
     }
 
     // Image proxy: /img/news/{path} → R2 news assets
+    // Supports: WebP content negotiation
     const newsImgMatch = url.pathname.match(/^\/img\/news\/(.+)$/);
     if (newsImgMatch) {
       const filePath = newsImgMatch[1];
       const r2Key = `news/${filePath}`;
+
+      // Try WebP variant from R2 first
+      const webpObj = await tryWebPVariant(env, r2Key, request);
+      if (webpObj) {
+        return new Response(webpObj.body, {
+          headers: imageResponseHeaders("image/webp", true),
+        });
+      }
+
       const cached = await env.ASSETS.get(r2Key);
       if (cached) {
         const ext = filePath.split(".").pop()?.toLowerCase();
@@ -988,10 +1326,10 @@ export default {
           jpg: "image/jpeg", jpeg: "image/jpeg", png: "image/png", gif: "image/gif", webp: "image/webp",
         };
         return new Response(cached.body, {
-          headers: {
-            "Content-Type": cached.httpMetadata?.contentType || contentTypes[ext || ""] || "image/jpeg",
-            "Cache-Control": "public, max-age=31536000, immutable",
-          },
+          headers: imageResponseHeaders(
+            cached.httpMetadata?.contentType || contentTypes[ext || ""] || "image/jpeg",
+            supportsWebP(request),
+          ),
         });
       }
       return new Response(null, { status: 404 });

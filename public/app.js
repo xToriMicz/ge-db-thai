@@ -85,6 +85,8 @@ async function init() {
     if (mapParam) { if (!tabParam) switchTab("maps"); showMapDetail(mapParam); }
     const itemParam = params.get("item");
     if (itemParam) { if (!tabParam) switchTab("items"); showItemDetail(itemParam); }
+    const monsterParam = params.get("monster");
+    if (monsterParam) { if (!tabParam) switchTab("monsters"); showMonsterDetail(monsterParam); }
     const questParam = params.get("quest");
     if (questParam) { if (!tabParam) switchTab("quests"); setTimeout(() => showQuestDetail(questParam), 300); }
     const newsParam = params.get("news");
@@ -121,6 +123,8 @@ function switchTab(tab) {
   document.getElementById("maps-section").classList.toggle("hidden", tab !== "maps");
   document.getElementById("monsters-section").classList.toggle("hidden", tab !== "monsters");
   document.getElementById("raids-section").classList.toggle("hidden", tab !== "raids");
+  document.getElementById("enchantments-section").classList.toggle("hidden", tab !== "enchantments");
+  document.getElementById("statuses-section").classList.toggle("hidden", tab !== "statuses");
   document.getElementById("quests-section").classList.toggle("hidden", tab !== "quests");
   document.getElementById("news-section").classList.toggle("hidden", tab !== "news");
 
@@ -128,6 +132,8 @@ function switchTab(tab) {
   if (tab === "maps" && allMaps.length === 0) loadMaps();
   if (tab === "monsters" && allMonsters.length === 0) loadMonsters();
   if (tab === "raids" && allRaids.length === 0) loadRaids();
+  if (tab === "enchantments" && !enchantmentsLoaded) loadEnchantments();
+  if (tab === "statuses" && !statusesLoaded) loadStatuses();
   if (tab === "quests" && !questsLoaded) loadQuests();
   if (tab === "news" && !newsLoaded) loadNews();
 
@@ -685,26 +691,35 @@ const GROUP_LABELS = {
 };
 
 const CATEGORY_LABELS = {
-  sword: "Sword", dagger: "Dagger", blunt: "Blunt", great_sword: "Great Sword",
-  polearm: "Polearm", rapier: "Rapier", sabre: "Sabre", knuckle: "Knuckle",
-  tonfa: "Tonfa", javelin: "Javelin", crescent: "Crescent", shield: "Shield",
-  main_gauche: "Main-Gauche", leg_guards: "Leg-Guards",
-  pistol: "Pistol", rifle: "Rifle", cannon: "Cannon", crossbow: "Crossbow",
-  shotgun: "Shotgun", heavy_rifle: "Heavy Rifle", arm_shield: "Arm Shield",
-  controller: "Controller", hammer: "Hammer", pendant: "Pendant",
-  rod: "Rod", staff: "Staff", fire_bracelet: "Fire Bracelet",
-  ice_bracelet: "Ice Bracelet", lightning_bracelet: "Lightning Bracelet",
-  special_bracelet: "Special Bracelet", cube: "Cube", lute: "Lute",
-  magic_scroll: "Magic Scroll", rosario: "Rosario",
-  coat: "Coat", leather: "Leather", metal: "Metal", robe: "Robe",
-  artifact: "Artifact", belt: "Belt", earring: "Earring", glove: "Glove",
-  necklace: "Necklace", shoes: "Shoes", runestone: "Runestone", pet_spirit: "Pet Spirit",
-  back: "Back", face: "Face", medal: "Medal", hat: "Hat",
-  body_costume: "Body Costume", weapon_costume: "Weapon Costume",
-  skill_ring: "Skill Ring", veteran_ring: "Veteran Ring",
-  upgraded_ring: "Upgraded Ring", stat_ring: "Stat Ring",
-  alchemy: "Alchemy", cooking: "Cooking", craftable: "Craftable",
-  crafting: "Crafting", quest: "Quest", lumin: "Lumin", summon: "Summon",
+  // weapon-melee — อาวุธระยะประชิด
+  sword: "ดาบ", dagger: "มีดสั้น", blunt: "อาวุธทื่อ", great_sword: "ดาบใหญ่",
+  polearm: "อาวุธด้ามยาว", rapier: "เรเปียร์", sabre: "กระบี่", knuckle: "ถุงมือเหล็ก",
+  tonfa: "ทอนฟา", javelin: "หอกซัด", crescent: "เคียวพระจันทร์",
+  // weapon-melee sub-weapons
+  shield: "โล่", main_gauche: "มังโกช", leg_guards: "สนับแข้ง",
+  // weapon-ranged — อาวุธระยะไกล
+  pistol: "ปืนพก", rifle: "ปืนไรเฟิล", cannon: "ปืนใหญ่", crossbow: "หน้าไม้",
+  shotgun: "ปืนลูกซอง", heavy_rifle: "ปืนไรเฟิลหนัก", arm_shield: "โล่แขน",
+  // weapon-magic — อาวุธเวทมนตร์
+  controller: "คอนโทรลเลอร์", hammer: "ค้อน", pendant: "จี้",
+  rod: "คทา", staff: "ไม้เท้า", fire_bracelet: "กำไลไฟ",
+  ice_bracelet: "กำไลน้ำแข็ง", lightning_bracelet: "กำไลสายฟ้า",
+  special_bracelet: "กำไลพิเศษ", cube: "คิวบ์", lute: "พิณ",
+  magic_scroll: "ม้วนคาถา", rosario: "สายประคำ",
+  // armor — เกราะ
+  coat: "เสื้อคลุม", leather: "เกราะหนัง", metal: "เกราะเหล็ก", robe: "ชุดคลุม",
+  // accessory — เครื่องประดับ
+  artifact: "อาร์ติแฟค", belt: "เข็มขัด", earring: "ต่างหู", glove: "ถุงมือ",
+  necklace: "สร้อยคอ", shoes: "รองเท้า", runestone: "หินรูน", pet_spirit: "วิญญาณสัตว์เลี้ยง",
+  // costume — คอสตูม
+  back: "หลัง", face: "หน้า", medal: "เหรียญ", hat: "หมวก",
+  body_costume: "ชุดคอสตูม", weapon_costume: "คอสตูมอาวุธ",
+  // ring — แหวน
+  skill_ring: "แหวนสกิล", veteran_ring: "แหวนเวเทอรัน",
+  upgraded_ring: "แหวนอัพเกรด", stat_ring: "แหวนสเตตัส",
+  // misc — อื่นๆ
+  alchemy: "เล่นแร่แปรธาตุ", cooking: "ทำอาหาร", craftable: "ของคราฟต์ได้",
+  crafting: "วัตถุดิบคราฟต์", quest: "เควส", lumin: "ลูมิน", summon: "ซัมมอน",
 };
 
 async function loadItems() {
@@ -892,7 +907,7 @@ function renderMobGrid(mobs) {
   }
 
   grid.innerHTML = mobs.map(m => `
-    <div class="mob-card${m.is_boss ? ' boss' : ''}${m.map_slug ? ' clickable' : ''}" ${m.map_slug ? `onclick="showMapDetail('${m.map_slug}')" title="ดูแผนที่: ${m.location}"` : ''}>
+    <div class="mob-card${m.is_boss ? ' boss' : ''} clickable" onclick="showMonsterDetail(${m.id})">
       <div>
         <div class="mob-name">${m.name}${m.is_boss ? ' <span class="boss-badge">BOSS</span>' : ''}</div>
         ${m.name_th ? `<div class="mob-name-th">${m.name_th}</div>` : ''}
@@ -1093,6 +1108,46 @@ async function doGlobalSearch(q) {
       }
     }
 
+    if (data.stances && data.stances.length > 0) {
+      sections.push(`<div class="gs-group-title">สแตนซ์ (${data.stances.length})</div>`);
+      for (const s of data.stances) {
+        sections.push(`<div class="gs-item" onclick="document.getElementById('global-results').classList.add('hidden'); showDetail('${s.character_slug}')">
+          <div><span class="gs-item-name">${s.name}</span>${s.name_th ? ` <span class="gs-item-th">${s.name_th}</span>` : ''}</div>
+          <span class="gs-item-meta">${s.character_name}</span>
+        </div>`);
+      }
+    }
+
+    if (data.skills && data.skills.length > 0) {
+      sections.push(`<div class="gs-group-title">สกิล (${data.skills.length})</div>`);
+      for (const s of data.skills) {
+        sections.push(`<div class="gs-item" onclick="document.getElementById('global-results').classList.add('hidden'); showDetail('${s.character_slug}')">
+          <div><span class="gs-item-name">${s.skill_name}</span></div>
+          <span class="gs-item-meta">${s.stance_name} · ${s.character_slug}</span>
+        </div>`);
+      }
+    }
+
+    if (data.enchantments && data.enchantments.length > 0) {
+      sections.push(`<div class="gs-group-title">เอนแชนท์ (${data.enchantments.length})</div>`);
+      for (const e of data.enchantments) {
+        sections.push(`<div class="gs-item">
+          <div><span class="gs-item-name">${e.name}</span></div>
+          <span class="gs-item-meta">${e.category} · ${e.chance}</span>
+        </div>`);
+      }
+    }
+
+    if (data.statuses && data.statuses.length > 0) {
+      sections.push(`<div class="gs-group-title">สถานะ (${data.statuses.length})</div>`);
+      for (const s of data.statuses) {
+        sections.push(`<div class="gs-item" onclick="document.getElementById('global-results').classList.add('hidden'); switchTab('statuses')">
+          <div><span class="gs-item-name">${s.type === 'buff' ? '🟢' : s.type === 'debuff' ? '🔴' : '⚪'} ${s.name}</span></div>
+          <span class="gs-item-meta">${s.description.slice(0, 60)}${s.description.length > 60 ? '...' : ''}</span>
+        </div>`);
+      }
+    }
+
     if (sections.length === 0) {
       results.innerHTML = '<div class="gs-no-result">ไม่พบผลลัพธ์</div>';
     } else {
@@ -1181,7 +1236,7 @@ async function showItemDetail(slug) {
         <div>
           <h2 class="item-detail-name">${item.name}</h2>
           ${item.name_th ? `<div class="item-detail-th">${item.name_th}</div>` : ''}
-          <div class="item-detail-cat">${CATEGORY_LABELS[item.category] || item.category} · ${item.category_group}</div>
+          <div class="item-detail-cat">${CATEGORY_LABELS[item.category] || item.category} · ${GROUP_LABELS[item.category_group] || item.category_group}</div>
           ${stats.length ? `<div class="item-detail-stats">${stats.join(' · ')}</div>` : ''}
         </div>
       </div>
@@ -1202,6 +1257,67 @@ function searchMonster(name) {
       search.dispatchEvent(new Event("input"));
     }
   }, 300);
+}
+
+async function showMonsterDetail(id) {
+  const modal = document.getElementById("modal");
+  const body = document.getElementById("modal-body");
+  body.innerHTML = '<div class="loading">กำลังโหลด...</div>';
+  modal.classList.remove("hidden");
+  pushUrl({ monster: id });
+
+  try {
+    const res = await fetch(`/api/monsters/${id}`);
+    if (!res.ok) throw new Error("not found");
+    const mob = await res.json();
+
+    const mapHtml = mob.map ? `
+      <div class="item-detail-section">
+        <h3>📍 แผนที่</h3>
+        <div class="item-drop-map-card">
+          <div class="item-drop-map-name clickable" onclick="closeModal(); showMapDetail('${mob.map.slug}')">
+            <strong>${mob.map.name}</strong>
+            ${mob.map.name_th ? `<span class="th-name">${mob.map.name_th}</span>` : ''}
+            ${mob.map.level_range ? `<span class="level-tag">Lv.${mob.map.level_range}</span>` : ''}
+          </div>
+        </div>
+      </div>
+    ` : '';
+
+    let dropHtml = '';
+    if (mob.drop_items && mob.drop_items.length > 0) {
+      dropHtml = `
+        <div class="item-detail-section">
+          <h3>🎁 ดรอปไอเทม (${mob.drop_items.length} ชิ้น)</h3>
+          <div class="item-drop-maps">
+            ${mob.drop_items.map(d => `
+              <span class="drop-tag${d.item_slug ? ' clickable' : ''}" ${d.item_slug ? `onclick="closeModal(); navigateToItem('${d.item_slug}')"` : ''}>
+                ${d.item_name}
+                <span style="color:var(--text-muted);font-size:0.8em">${d.item_category}</span>
+              </span>
+            `).join('')}
+          </div>
+        </div>
+      `;
+    }
+
+    body.innerHTML = `
+      <div class="item-detail-header">
+        <div>
+          <h2 class="item-detail-name">${mob.name}${mob.is_boss ? ' <span class="boss-badge">BOSS</span>' : ''}</h2>
+          ${mob.name_th ? `<div class="item-detail-th">${mob.name_th}</div>` : ''}
+          <div class="item-detail-stats">
+            Lv.${mob.level} · ${mob.race}
+            ${mob.location ? ` · ${mob.location}` : ''}
+          </div>
+        </div>
+      </div>
+      ${mapHtml}
+      ${dropHtml}
+    `;
+  } catch (err) {
+    body.innerHTML = '<div class="loading">ไม่พบข้อมูลมอนสเตอร์</div>';
+  }
 }
 
 // ── Feedback ──
@@ -1433,6 +1549,7 @@ function handlePopState() {
   const charParam = params.get("char");
   const mapParam = params.get("map");
   const itemParam = params.get("item");
+  const monsterParam = params.get("monster");
   const tabParam = params.get("tab") || "characters";
 
   if (charParam) {
@@ -1444,6 +1561,9 @@ function handlePopState() {
   } else if (itemParam) {
     switchTab("items");
     showItemDetail(itemParam);
+  } else if (monsterParam) {
+    switchTab("monsters");
+    showMonsterDetail(monsterParam);
   } else {
     switchTab(tabParam);
   }
@@ -1584,6 +1704,170 @@ function showComparison() {
       </div>
     </div>
   `;
+}
+
+// ── Statuses ──
+let statusesLoaded = false;
+let allStatuses = [];
+
+async function loadStatuses() {
+  try {
+    const res = await fetch("/api/statuses");
+    const data = await res.json();
+    allStatuses = data.statuses;
+    statusesLoaded = true;
+    renderStatuses(allStatuses);
+    setupStatusFilters();
+  } catch (err) {
+    document.getElementById("status-grid").innerHTML = `<div class="loading">โหลดข้อมูลไม่สำเร็จ: ${err.message}</div>`;
+  }
+}
+
+function renderStatuses(list) {
+  const grid = document.getElementById("status-grid");
+  document.getElementById("status-result-count").textContent = list.length;
+
+  if (list.length === 0) {
+    grid.innerHTML = '<div class="loading">ไม่พบสถานะที่ตรงกัน</div>';
+    return;
+  }
+
+  // Group alphabetically like source (ge-db.site/andromida/Status.php)
+  const grouped = {};
+  for (const s of list) {
+    const letter = (s.name[0] || '?').toUpperCase();
+    const key = /[A-Z]/.test(letter) ? letter : '#';
+    if (!grouped[key]) grouped[key] = [];
+    grouped[key].push(s);
+  }
+
+  grid.innerHTML = Object.entries(grouped).sort((a, b) => a[0].localeCompare(b[0])).map(([letter, items]) => `
+    <div class="status-letter-group">
+      <div class="status-letter">${letter}</div>
+      <table class="status-table">
+        <thead><tr><th>ชื่อสถานะ</th><th>คำอธิบาย</th><th>ประเภท</th></tr></thead>
+        <tbody>
+          ${items.map(s => `
+            <tr class="status-row status-${s.type}">
+              <td class="status-name-cell">
+                <span class="status-icon-sm">${s.type === 'buff' ? '🟢' : s.type === 'debuff' ? '🔴' : '⚪'}</span>
+                ${s.name}
+              </td>
+              <td class="status-desc-cell">
+                ${s.description}
+                ${s.description_th ? `<div class="status-th">${s.description_th}</div>` : ''}
+              </td>
+              <td class="status-type-cell"><span class="status-type-pill status-pill-${s.type}">${s.type}</span></td>
+            </tr>
+          `).join("")}
+        </tbody>
+      </table>
+    </div>
+  `).join("");
+}
+
+function setupStatusFilters() {
+  const typeSelect = document.getElementById("filter-status-type");
+  const search = document.getElementById("status-search");
+  let debounce;
+
+  function apply() {
+    clearTimeout(debounce);
+    debounce = setTimeout(() => {
+      const type = typeSelect.value;
+      const q = search.value.toLowerCase().trim();
+      let filtered = allStatuses;
+      if (type !== "all") filtered = filtered.filter(s => s.type === type);
+      if (q) filtered = filtered.filter(s => s.name.toLowerCase().includes(q) || s.description.toLowerCase().includes(q) || (s.description_th || '').toLowerCase().includes(q));
+      renderStatuses(filtered);
+    }, 200);
+  }
+
+  typeSelect.addEventListener("change", apply);
+  search.addEventListener("input", apply);
+}
+
+// ── Enchantments ──
+let enchantmentsLoaded = false;
+let allEnchantments = [];
+let enchantCategories = [];
+
+async function loadEnchantments() {
+  try {
+    const res = await fetch("/api/enchantments");
+    const data = await res.json();
+    allEnchantments = data.enchantments;
+    enchantCategories = data.categories;
+    enchantmentsLoaded = true;
+
+    const catSelect = document.getElementById("filter-enchant-cat");
+    enchantCategories.forEach(cat => {
+      const opt = document.createElement("option");
+      opt.value = cat;
+      opt.textContent = cat;
+      catSelect.appendChild(opt);
+    });
+
+    renderEnchantments(allEnchantments);
+    setupEnchantFilters();
+  } catch (err) {
+    document.getElementById("enchant-grid").innerHTML = `<div class="loading">โหลดข้อมูลไม่สำเร็จ: ${err.message}</div>`;
+  }
+}
+
+function renderEnchantments(list) {
+  const grid = document.getElementById("enchant-grid");
+  document.getElementById("enchant-result-count").textContent = list.length;
+
+  if (list.length === 0) {
+    grid.innerHTML = '<div class="loading">ไม่พบเอนแชนท์ที่ตรงกัน</div>';
+    return;
+  }
+
+  // Group by category
+  const grouped = {};
+  for (const e of list) {
+    if (!grouped[e.category]) grouped[e.category] = [];
+    grouped[e.category].push(e);
+  }
+
+  grid.innerHTML = Object.entries(grouped).map(([cat, items]) => `
+    <div class="enchant-category">
+      <h3 class="enchant-cat-title">${cat}</h3>
+      <table class="enchant-table">
+        <thead><tr><th>เอนแชนท์</th><th>โอกาส</th></tr></thead>
+        <tbody>
+          ${items.map(e => `
+            <tr class="${e.chance === 'Always' ? 'enchant-always' : e.chance.includes('150') || e.chance.includes('200') ? 'enchant-rare' : ''}">
+              <td>${e.name}</td>
+              <td class="enchant-chance">${e.chance === 'Always' ? '✅ เสมอ' : e.chance}</td>
+            </tr>
+          `).join("")}
+        </tbody>
+      </table>
+    </div>
+  `).join("");
+}
+
+function setupEnchantFilters() {
+  const catSelect = document.getElementById("filter-enchant-cat");
+  const search = document.getElementById("enchant-search");
+  let debounce;
+
+  function apply() {
+    clearTimeout(debounce);
+    debounce = setTimeout(() => {
+      const cat = catSelect.value;
+      const q = search.value.toLowerCase().trim();
+      let filtered = allEnchantments;
+      if (cat !== "all") filtered = filtered.filter(e => e.category === cat);
+      if (q) filtered = filtered.filter(e => e.name.toLowerCase().includes(q) || e.category.toLowerCase().includes(q));
+      renderEnchantments(filtered);
+    }, 200);
+  }
+
+  catSelect.addEventListener("change", apply);
+  search.addEventListener("input", apply);
 }
 
 // ── Quests ──
