@@ -124,6 +124,7 @@ function switchTab(tab) {
   document.getElementById("monsters-section").classList.toggle("hidden", tab !== "monsters");
   document.getElementById("raids-section").classList.toggle("hidden", tab !== "raids");
   document.getElementById("enchantments-section").classList.toggle("hidden", tab !== "enchantments");
+  document.getElementById("statuses-section").classList.toggle("hidden", tab !== "statuses");
   document.getElementById("quests-section").classList.toggle("hidden", tab !== "quests");
   document.getElementById("news-section").classList.toggle("hidden", tab !== "news");
 
@@ -132,6 +133,7 @@ function switchTab(tab) {
   if (tab === "monsters" && allMonsters.length === 0) loadMonsters();
   if (tab === "raids" && allRaids.length === 0) loadRaids();
   if (tab === "enchantments" && !enchantmentsLoaded) loadEnchantments();
+  if (tab === "statuses" && !statusesLoaded) loadStatuses();
   if (tab === "quests" && !questsLoaded) loadQuests();
   if (tab === "news" && !newsLoaded) loadNews();
 
@@ -1136,6 +1138,16 @@ async function doGlobalSearch(q) {
       }
     }
 
+    if (data.statuses && data.statuses.length > 0) {
+      sections.push(`<div class="gs-group-title">สถานะ (${data.statuses.length})</div>`);
+      for (const s of data.statuses) {
+        sections.push(`<div class="gs-item" onclick="document.getElementById('global-results').classList.add('hidden'); switchTab('statuses')">
+          <div><span class="gs-item-name">${s.type === 'buff' ? '🟢' : s.type === 'debuff' ? '🔴' : '⚪'} ${s.name}</span></div>
+          <span class="gs-item-meta">${s.description.slice(0, 60)}${s.description.length > 60 ? '...' : ''}</span>
+        </div>`);
+      }
+    }
+
     if (sections.length === 0) {
       results.innerHTML = '<div class="gs-no-result">ไม่พบผลลัพธ์</div>';
     } else {
@@ -1692,6 +1704,68 @@ function showComparison() {
       </div>
     </div>
   `;
+}
+
+// ── Statuses ──
+let statusesLoaded = false;
+let allStatuses = [];
+
+async function loadStatuses() {
+  try {
+    const res = await fetch("/api/statuses");
+    const data = await res.json();
+    allStatuses = data.statuses;
+    statusesLoaded = true;
+    renderStatuses(allStatuses);
+    setupStatusFilters();
+  } catch (err) {
+    document.getElementById("status-grid").innerHTML = `<div class="loading">โหลดข้อมูลไม่สำเร็จ: ${err.message}</div>`;
+  }
+}
+
+function renderStatuses(list) {
+  const grid = document.getElementById("status-grid");
+  document.getElementById("status-result-count").textContent = list.length;
+
+  if (list.length === 0) {
+    grid.innerHTML = '<div class="loading">ไม่พบสถานะที่ตรงกัน</div>';
+    return;
+  }
+
+  grid.innerHTML = `<div class="status-list">
+    ${list.map(s => `
+      <div class="status-card status-${s.type}">
+        <div class="status-header">
+          <span class="status-icon">${s.type === 'buff' ? '🟢' : s.type === 'debuff' ? '🔴' : '⚪'}</span>
+          <span class="status-name">${s.name}</span>
+          <span class="status-type-badge">${s.type}</span>
+        </div>
+        <div class="status-desc">${s.description}</div>
+        ${s.description_th ? `<div class="status-desc-th">${s.description_th}</div>` : ''}
+      </div>
+    `).join("")}
+  </div>`;
+}
+
+function setupStatusFilters() {
+  const typeSelect = document.getElementById("filter-status-type");
+  const search = document.getElementById("status-search");
+  let debounce;
+
+  function apply() {
+    clearTimeout(debounce);
+    debounce = setTimeout(() => {
+      const type = typeSelect.value;
+      const q = search.value.toLowerCase().trim();
+      let filtered = allStatuses;
+      if (type !== "all") filtered = filtered.filter(s => s.type === type);
+      if (q) filtered = filtered.filter(s => s.name.toLowerCase().includes(q) || s.description.toLowerCase().includes(q) || (s.description_th || '').toLowerCase().includes(q));
+      renderStatuses(filtered);
+    }, 200);
+  }
+
+  typeSelect.addEventListener("change", apply);
+  search.addEventListener("input", apply);
 }
 
 // ── Enchantments ──

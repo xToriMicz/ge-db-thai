@@ -342,6 +342,8 @@ async function handleAPI(request: Request, env: Env): Promise<Response> {
         .bind(like).all(),
       env.DB.prepare("SELECT id, category, name, chance FROM enchantments WHERE name LIKE ? OR category LIKE ? LIMIT 10")
         .bind(like, like).all(),
+      env.DB.prepare("SELECT id, name, description, description_th, type FROM statuses WHERE name LIKE ? OR description LIKE ? OR description_th LIKE ? LIMIT 10")
+        .bind(like, like, like).all(),
     ]);
 
     return json({
@@ -353,6 +355,7 @@ async function handleAPI(request: Request, env: Env): Promise<Response> {
       stances: stances.results,
       skills: skills.results,
       enchantments: enchantments.results,
+      statuses: (statuses as any).results,
     }, 200, 60);
   }
 
@@ -489,6 +492,32 @@ async function handleAPI(request: Request, env: Env): Promise<Response> {
     }
 
     return json({ ...monster, map, drop_items: dropItems }, 200, 300);
+  }
+
+  // GET /api/statuses — list status effects (cache 10 min)
+  if (path === "/api/statuses") {
+    const type = url.searchParams.get("type");
+    const search = url.searchParams.get("q");
+
+    let query = "SELECT * FROM statuses";
+    const conditions: string[] = [];
+    const params: string[] = [];
+
+    if (type && type !== "all") {
+      conditions.push("type = ?");
+      params.push(type);
+    }
+    if (search) {
+      conditions.push("(name LIKE ? OR description LIKE ? OR description_th LIKE ?)");
+      params.push(`%${search}%`, `%${search}%`, `%${search}%`);
+    }
+    if (conditions.length > 0) {
+      query += " WHERE " + conditions.join(" AND ");
+    }
+    query += " ORDER BY name ASC";
+
+    const result = await env.DB.prepare(query).bind(...params).all();
+    return json({ statuses: result.results, total: result.results.length }, 200, 600);
   }
 
   // GET /api/enchantments — list enchantments by category (cache 10 min)

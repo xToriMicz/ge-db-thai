@@ -86,6 +86,7 @@
         <button class="tab" data-tab="monsters">มอนสเตอร์</button>
         <button class="tab" data-tab="raids">เรด</button>
         <button class="tab" data-tab="enchantments">เอนแชนท์</button>
+        <button class="tab" data-tab="statuses">สถานะ</button>
         <button class="tab" data-tab="quests">เควส</button>
         <button class="tab" data-tab="news">ข่าว</button>
       </div>
@@ -341,6 +342,25 @@
     </div>
     <div class="container" style="padding:20px 16px 40px">
       <div id="raid-grid" class="raid-grid">
+        <div class="loading"><div class="spinner"></div> กำลังโหลดข้อมูล...</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Statuses Section -->
+  <section id="statuses-section" class="hidden">
+    <div class="container" style="padding:20px 16px 40px">
+      <div class="filters-inline">
+        <select id="filter-status-type">
+          <option value="all">ทุกประเภท</option>
+          <option value="buff">Buff</option>
+          <option value="debuff">Debuff</option>
+          <option value="misc">อื่นๆ</option>
+        </select>
+        <input type="text" id="status-search" placeholder="🔍 ค้นหาสถานะ...">
+      </div>
+      <div class="result-count">แสดง <span id="status-result-count">—</span> สถานะ</div>
+      <div id="status-grid" class="status-grid">
         <div class="loading"><div class="spinner"></div> กำลังโหลดข้อมูล...</div>
       </div>
     </div>
