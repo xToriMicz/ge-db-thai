@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1e2e"/>
+      <stop offset="100%" style="stop-color:#0d1117"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5d060"/>
+      <stop offset="100%" style="stop-color:#d4a020"/>
+    </linearGradient>
+  </defs>
+  <rect width="32" height="32" rx="6" fill="url(#bg)"/>
+  <rect x="0" y="0" width="32" height="2" rx="1" fill="url(#gold)" opacity="0.8"/>
+  <!-- G -->
+  <text x="8" y="22" font-family="Georgia, serif" font-size="16" font-weight="700" fill="url(#gold)" letter-spacing="-1">G</text>
+  <!-- E -->
+  <text x="17" y="22" font-family="Georgia, serif" font-size="16" font-weight="700" fill="url(#gold)" letter-spacing="-1">E</text>
+  <!-- Subtle rapier accent -->
+  <line x1="6" y1="26" x2="26" y2="26" stroke="#f0c040" stroke-width="0.8" opacity="0.4"/>
+  <!-- Diamond accent -->
+  <polygon points="16,25 17.5,26.5 16,28 14.5,26.5" fill="#f0c040" opacity="0.5"/>
+</svg>
