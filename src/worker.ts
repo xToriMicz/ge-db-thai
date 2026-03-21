@@ -60,6 +60,45 @@ async function hashIP(ip: string): Promise<string> {
   return Array.from(new Uint8Array(hash)).map(b => b.toString(16).padStart(2, "0")).join("").slice(0, 16);
 }
 
+// Image cache headers — 1 year immutable for all image routes
+const IMAGE_CACHE_HEADERS = {
+  "Cache-Control": "public, max-age=31536000, immutable",
+};
+
+/**
+ * Check if the client supports WebP via Accept header.
+ */
+function supportsWebP(request: Request): boolean {
+  const accept = request.headers.get("Accept") || "";
+  return accept.includes("image/webp");
+}
+
+/**
+ * Try to serve a WebP variant from R2 if the client supports it.
+ * Looks for `{r2Key}.webp` in R2. Returns the WebP object if found, else null.
+ */
+async function tryWebPVariant(env: Env, r2Key: string, request: Request): Promise<R2ObjectBody | null> {
+  if (!supportsWebP(request)) return null;
+  const webpKey = `${r2Key}.webp`;
+  const webpObj = await env.ASSETS.get(webpKey);
+  return webpObj || null;
+}
+
+/**
+ * Build image response headers with content type, cache control, and optional Vary.
+ * When serving a WebP variant, we add Vary: Accept so caches distinguish.
+ */
+function imageResponseHeaders(contentType: string, isWebPNegotiated: boolean): Record<string, string> {
+  const headers: Record<string, string> = {
+    "Content-Type": contentType,
+    ...IMAGE_CACHE_HEADERS,
+  };
+  if (isWebPNegotiated) {
+    headers["Vary"] = "Accept";
+  }
+  return headers;
+}
+
 function json(data: unknown, status = 200, cacheSeconds = 0): Response {
   const headers: Record<string, string> = {
     "Content-Type": "application/json",
@@ -1002,6 +1041,46 @@ async function handleAPI(request: Request, env: Env): Promise<Response> {
     return json({ comments: result.results, total: countResult?.total || 0 }, 200, 30);
   }
 
+  // GET /api/preload/:type — critical image URLs for frontend <link rel="preload"> hints
+  const preloadMatch = path.match(/^\/api\/preload\/(characters|items)$/);
+  if (preloadMatch) {
+    const type = preloadMatch[1];
+    const baseUrl = `https://${url.hostname}`;
+
+    if (type === "characters") {
+      // Return portrait sprite sheet URLs for all characters
+      const result = await env.DB.prepare(
+        "SELECT slug, portrait_sheet FROM characters WHERE portrait_sheet IS NOT NULL ORDER BY display_name ASC"
+      ).all();
+      const urls = (result.results as any[]).map((c: any) => ({
+        slug: c.slug,
+        url: c.portrait_sheet?.startsWith("http") ? c.portrait_sheet : `${baseUrl}${c.portrait_sheet}`,
+        as: "image",
+      }));
+      return json({ type: "characters", images: urls, total: urls.length }, 200, 600);
+    }
+
+    if (type === "items") {
+      // Return top 20 most popular item images (by map_drops frequency as a popularity proxy)
+      const result = await env.DB.prepare(
+        `SELECT i.slug, i.name, i.image
+         FROM items i
+         INNER JOIN map_drops md ON md.item_slug = i.slug
+         WHERE i.image IS NOT NULL
+         GROUP BY i.slug
+         ORDER BY COUNT(md.item_slug) DESC
+         LIMIT 20`
+      ).all();
+      const urls = (result.results as any[]).map((item: any) => ({
+        slug: item.slug,
+        name: item.name,
+        url: item.image?.startsWith("http") ? item.image : `${baseUrl}/img/items/${item.image}`,
+        as: "image",
+      }));
+      return json({ type: "items", images: urls, total: urls.length }, 200, 600);
+    }
+  }
+
   return json({ error: "Not found" }, 404);
 }
 
@@ -1019,20 +1098,38 @@ export default {
     }
 
     // Image proxy: /img/items/{filename} → R2 (lazy cache from ge-db.site)
+    // Supports: WebP content negotiation, ?thumb=1 thumbnail hint
     const imgMatch = url.pathname.match(/^\/img\/items\/(.+)$/);
     if (imgMatch) {
       const filename = imgMatch[1];
       const r2Key = `items/${filename}`;
+      const isThumb = url.searchParams.get("thumb") === "1";
 
-      // Try R2 first
+      // Thumbnail support infrastructure:
+      // When ?thumb=1 is requested, we add an X-Thumb-Requested header and serve the
+      // original image. Cloudflare Image Resizing (paid plan) can be enabled later by
+      // replacing the fetch with:
+      //   fetch(imageUrl, { cf: { image: { width: 80, height: 80, fit: "cover" } } })
+      // The isThumb flag is preserved so we can add resizing logic without changing the
+      // routing structure.
+
+      // Try WebP variant from R2 first (content negotiation)
+      const webpObj = await tryWebPVariant(env, r2Key, request);
+      if (webpObj) {
+        const headers = imageResponseHeaders("image/webp", true);
+        if (isThumb) headers["X-Thumb-Requested"] = "1";
+        return new Response(webpObj.body, { headers });
+      }
+
+      // Try original from R2
       const cached = await env.ASSETS.get(r2Key);
       if (cached) {
-        return new Response(cached.body, {
-          headers: {
-            "Content-Type": cached.httpMetadata?.contentType || "image/jpeg",
-            "Cache-Control": "public, max-age=31536000, immutable",
-          },
-        });
+        const headers = imageResponseHeaders(
+          cached.httpMetadata?.contentType || "image/jpeg",
+          supportsWebP(request), // Vary: Accept even if no webp variant found
+        );
+        if (isThumb) headers["X-Thumb-Requested"] = "1";
+        return new Response(cached.body, { headers });
       }
 
       // Not in R2 — fetch from source, cache in R2, serve
@@ -1042,34 +1139,41 @@ export default {
           return new Response(null, { status: 404 });
         }
         const imageData = await sourceRes.arrayBuffer();
+        const contentType = sourceRes.headers.get("content-type") || "image/jpeg";
         // Store in R2 (non-blocking)
         env.ASSETS.put(r2Key, imageData, {
-          httpMetadata: { contentType: sourceRes.headers.get("content-type") || "image/jpeg" },
+          httpMetadata: { contentType },
         });
-        return new Response(imageData, {
-          headers: {
-            "Content-Type": sourceRes.headers.get("content-type") || "image/jpeg",
-            "Cache-Control": "public, max-age=31536000, immutable",
-          },
-        });
+        const headers = imageResponseHeaders(contentType, false);
+        if (isThumb) headers["X-Thumb-Requested"] = "1";
+        return new Response(imageData, { headers });
       } catch {
         return new Response(null, { status: 502 });
       }
     }
 
     // Image proxy: /img/skills/{filename} → R2 (lazy cache from ge-db.site)
+    // Supports: WebP content negotiation
     const skillImgMatch = url.pathname.match(/^\/img\/skills\/(.+)$/);
     if (skillImgMatch) {
       const filename = skillImgMatch[1];
       const r2Key = `skills/${filename}`;
 
+      // Try WebP variant from R2 first
+      const webpObj = await tryWebPVariant(env, r2Key, request);
+      if (webpObj) {
+        return new Response(webpObj.body, {
+          headers: imageResponseHeaders("image/webp", true),
+        });
+      }
+
       const cached = await env.ASSETS.get(r2Key);
       if (cached) {
         return new Response(cached.body, {
-          headers: {
-            "Content-Type": cached.httpMetadata?.contentType || "image/jpeg",
-            "Cache-Control": "public, max-age=31536000, immutable",
-          },
+          headers: imageResponseHeaders(
+            cached.httpMetadata?.contentType || "image/jpeg",
+            supportsWebP(request),
+          ),
         });
       }
 
@@ -1079,14 +1183,12 @@ export default {
           return new Response(null, { status: 404 });
         }
         const imageData = await sourceRes.arrayBuffer();
+        const contentType = sourceRes.headers.get("content-type") || "image/jpeg";
         env.ASSETS.put(r2Key, imageData, {
-          httpMetadata: { contentType: sourceRes.headers.get("content-type") || "image/jpeg" },
+          httpMetadata: { contentType },
         });
         return new Response(imageData, {
-          headers: {
-            "Content-Type": sourceRes.headers.get("content-type") || "image/jpeg",
-            "Cache-Control": "public, max-age=31536000, immutable",
-          },
+          headers: imageResponseHeaders(contentType, false),
         });
       } catch {
         return new Response(null, { status: 502 });
@@ -1094,10 +1196,20 @@ export default {
     }
 
     // Image proxy: /img/news/{path} → R2 news assets
+    // Supports: WebP content negotiation
     const newsImgMatch = url.pathname.match(/^\/img\/news\/(.+)$/);
     if (newsImgMatch) {
       const filePath = newsImgMatch[1];
       const r2Key = `news/${filePath}`;
+
+      // Try WebP variant from R2 first
+      const webpObj = await tryWebPVariant(env, r2Key, request);
+      if (webpObj) {
+        return new Response(webpObj.body, {
+          headers: imageResponseHeaders("image/webp", true),
+        });
+      }
+
       const cached = await env.ASSETS.get(r2Key);
       if (cached) {
         const ext = filePath.split(".").pop()?.toLowerCase();
@@ -1105,10 +1217,10 @@ export default {
           jpg: "image/jpeg", jpeg: "image/jpeg", png: "image/png", gif: "image/gif", webp: "image/webp",
         };
         return new Response(cached.body, {
-          headers: {
-            "Content-Type": cached.httpMetadata?.contentType || contentTypes[ext || ""] || "image/jpeg",
-            "Cache-Control": "public, max-age=31536000, immutable",
-          },
+          headers: imageResponseHeaders(
+            cached.httpMetadata?.contentType || contentTypes[ext || ""] || "image/jpeg",
+            supportsWebP(request),
+          ),
         });
       }
       return new Response(null, { status: 404 });
