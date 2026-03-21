@@ -1880,7 +1880,7 @@ const BANNER_MAP = {
   'nar-2': 'https://cdn.exe.in.th/marketing/granado/images/guide/0623/nar/granadoespada_nar_banner.jpg',
   'mboma-ll': 'https://cdn.exe.in.th/marketing/granado/images/guide/0523/mboma/granado_mboma_banner.jpg',
   'jose-cortasar': 'https://cdn.exe.in.th/marketing/granado/images/guide/0523/jose/granado_jose_banner.jpg',
-  'gurtrude': 'https://cdn.exe.in.th/marketing/granado/images/guide/2023/05/gurtrude/gurtrude_banner.jpg',
+  'gurtrude': 'https://cdn.exe.in.th/marketing/granado/images/2023/05/gurtrude/gurtrude_banner.jpg',
   'gracielo': 'https://cdn.exe.in.th/marketing/granado/images/guide/0523/gracielo/gracielo_banner.jpg',
   'selva': 'https://cdn.exe.in.th/marketing/granado/images/guide/0523/selva/selva_banner.jpg',
   'irawan': 'https://cdn.exe.in.th/marketing/granado/images/guide/0323/irawan_banner.jpg',
