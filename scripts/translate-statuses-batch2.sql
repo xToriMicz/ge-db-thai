@@ -1,0 +1,31 @@
+-- Batch 2: A-section statuses (hand-translated)
+
+UPDATE statuses SET description_th = 'ความสามารถในการต่อสู้ของตัวละครจะดีขึ้น' WHERE id = 1;
+UPDATE statuses SET description_th = 'เพิ่มโอกาสได้รับไอเทม 20%' WHERE id = 2;
+UPDATE statuses SET description_th = 'พลังโจมตี +10%, เจาะเกราะ +10, ความแม่นยำ +5, คริติคอล +5, ค่าประสบการณ์ +200%, ค่าประสบการณ์สแตนซ์ +200%' WHERE id = 3;
+UPDATE statuses SET description_th = 'A.R. +1, D.R. +1, พลังโจมตี +10%' WHERE id = 4;
+UPDATE statuses SET description_th = 'ดาเมจสกิลที่ได้รับลดลง ตามประเภทเกราะของเป้าหมาย' WHERE id = 5;
+UPDATE statuses SET description_th = 'ให้เอฟเฟกต์เพิ่มอัตราดรอปไอเทม หรือพรศักดิ์สิทธิ์' WHERE id = 6;
+UPDATE statuses SET description_th = 'ค่า A.R. จะเปลี่ยนแปลง' WHERE id = 7;
+UPDATE statuses SET description_th = 'ค่า AGI: เพิ่มพลังโจมตีกายภาพเล็กน้อย, ความเร็วโจมตี, การหลบ และบล็อก' WHERE id = 9;
+UPDATE statuses SET description_th = 'เพิ่มพลังโจมตีต่อเผ่าทั้งหมด ให้สมาชิกปาร์ตี้ทั้งหมดในระยะเวลาหนึ่ง' WHERE id = 10;
+UPDATE statuses SET description_th = 'คำสาปหินการ์กอยล์ ใช้ได้ใน Tower of Glaciel Spirit พลังโจมตี ความเร็วโจมตี และความเร็วเคลื่อนที่ -50% HP สูงสุด -30% การฟื้นฟู SP ปิดใช้งาน' WHERE id = 12;
+UPDATE statuses SET description_th = 'ดูดซับดาเมจ 5% เป็นเวลา 1 ชั่วโมง' WHERE id = 13;
+UPDATE statuses SET description_th = 'พลังป้องกัน -3 ต่อระดับ, ต้านทาน -3 ต่อระดับ; D.R. -1 (ถ้าสูงกว่า Lv.10)' WHERE id = 17;
+UPDATE statuses SET description_th = 'เพิ่มพลังโจมตีและความเร็วโจมตี' WHERE id = 18;
+UPDATE statuses SET description_th = 'เพิ่มพลังโจมตีและความเร็วเคลื่อนที่เป็นระยะเวลาหนึ่ง' WHERE id = 19;
+UPDATE statuses SET description_th = 'เพิ่มดาเมจจาก PvP ตามจำนวนผู้เล่นฝ่ายตรงข้าม' WHERE id = 22;
+UPDATE statuses SET description_th = 'ขีดจำกัดความเร็วเคลื่อนที่ +10%, เวลาร่ายสกิล -10%' WHERE id = 25;
+UPDATE statuses SET description_th = 'พลังโจมตี +10%, เจาะเกราะ +5, A.R. +1' WHERE id = 27;
+UPDATE statuses SET description_th = 'ปรับค่าความสามารถของตัวละคร' WHERE id = 31;
+UPDATE statuses SET description_th = 'เพิ่มความสามารถส่วนใหญ่ 20% ไม่ซ้อนกับ Steroid ปกติ' WHERE id = 33;
+UPDATE statuses SET description_th = 'โซ่ตรวนเรืองแสงมืด' WHERE id = 37;
+UPDATE statuses SET description_th = 'ไม่สามารถรับบัฟอมตะและบัฟป้องกันอื่นๆ เป็นเวลาหนึ่ง' WHERE id = 39;
+UPDATE statuses SET description_th = 'เพิ่มพลังโจมตี ความแม่นยำ และเจาะเกราะ' WHERE id = 41;
+UPDATE statuses SET description_th = 'เพิ่มโจมตีปกติ 1.5 เท่า และ AGI เป็นระยะเวลาหนึ่ง' WHERE id = 42;
+UPDATE statuses SET description_th = 'หลังปลดปล่อยโล่โบราณ Aias เพิ่มค่าป้องกัน' WHERE id = 44;
+UPDATE statuses SET description_th = 'ดาเมจสกิลทั้งหมด +3% ต่อระดับ (สูงสุดระดับ 3)' WHERE id = 46;
+UPDATE statuses SET description_th = 'เพิ่มระยะโจมตีปกติเป็น 2 เท่า เพิ่มโจมตีปกติ' WHERE id = 49;
+UPDATE statuses SET description_th = 'ความเร็วเคลื่อนที่และความเร็วโจมตี -15%' WHERE id = 54;
+UPDATE statuses SET description_th = 'สถานะทั้งหมดเพิ่มตามสัดส่วนของ HP สูงสุด' WHERE id = 55;
+UPDATE statuses SET description_th = 'พลังโจมตี +15%, ดาเมจมอนสเตอร์ +15%, ความเร็วเคลื่อนที่ +10%' WHERE id = 57;
