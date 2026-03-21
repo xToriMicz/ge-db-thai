@@ -1335,6 +1335,24 @@ export default {
       return new Response(null, { status: 404 });
     }
 
+    // Image proxy: /img/quests/{slug}/{filename} → R2 quest assets (WebP only)
+    const questImgMatch = url.pathname.match(/^\/img\/quests\/(.+)$/);
+    if (questImgMatch) {
+      const filePath = questImgMatch[1];
+      const r2Key = `quests/${filePath}`;
+
+      const cached = await env.ASSETS.get(r2Key);
+      if (cached) {
+        return new Response(cached.body, {
+          headers: imageResponseHeaders(
+            cached.httpMetadata?.contentType || "image/webp",
+            false,
+          ),
+        });
+      }
+      return new Response(null, { status: 404 });
+    }
+
     // Social media crawler OG meta tags
     // Facebook, Twitter, LINE etc. don't run JS — serve pre-rendered HTML with OG tags
     const ua = request.headers.get("User-Agent") || "";
