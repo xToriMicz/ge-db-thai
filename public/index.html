@@ -456,7 +456,19 @@
   <script src="app.js?v=20260319f"></script>
   <script>
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/sw.js');
+      navigator.serviceWorker.register('/sw.js').then(function(reg) {
+        // Smart prefetch: after page is idle, tell SW to cache API data
+        function triggerPrefetch() {
+          if (reg.active) {
+            reg.active.postMessage({ type: 'PREFETCH' });
+          }
+        }
+        if ('requestIdleCallback' in window) {
+          requestIdleCallback(triggerPrefetch, { timeout: 5000 });
+        } else {
+          setTimeout(triggerPrefetch, 3000);
+        }
+      });
     }
   </script>
 </body>
