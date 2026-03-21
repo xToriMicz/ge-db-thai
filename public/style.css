@@ -2697,3 +2697,27 @@ footer a:hover { text-decoration: underline; }
 .status-desc-th { font-size: 12px; color: var(--accent); margin-top: 4px; opacity: 0.7; }
 .status-buff { border-left: 3px solid rgba(76,175,80,0.3); }
 .status-debuff { border-left: 3px solid rgba(239,68,68,0.3); }
+
+/* ── Statuses Table (matching ge-db.site style) ── */
+.status-letter-group { margin-bottom: 24px; }
+.status-letter { font-size: 20px; font-weight: 800; color: var(--accent); margin-bottom: 8px; padding-left: 4px; }
+.status-table { width: 100%; border-collapse: collapse; font-size: 13px; background: var(--card-bg); border-radius: 8px; overflow: hidden; }
+.status-table th { text-align: left; padding: 8px 12px; color: var(--text-muted); border-bottom: 2px solid var(--border); font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; }
+.status-table td { padding: 8px 12px; border-bottom: 1px solid var(--border-light, #ffffff06); vertical-align: top; }
+.status-table tbody tr:hover { background: var(--hover-bg, #ffffff06); }
+.status-name-cell { font-weight: 600; white-space: nowrap; color: var(--text); }
+.status-icon-sm { font-size: 10px; margin-right: 4px; }
+.status-desc-cell { color: var(--text-muted); line-height: 1.5; }
+.status-th { color: var(--accent); font-size: 12px; margin-top: 2px; opacity: 0.7; }
+.status-type-cell { white-space: nowrap; }
+.status-type-pill { font-size: 10px; padding: 2px 8px; border-radius: 4px; font-family: monospace; }
+.status-pill-buff { background: rgba(76,175,80,0.12); color: #4caf50; }
+.status-pill-debuff { background: rgba(239,68,68,0.12); color: #ef4444; }
+.status-pill-misc { background: rgba(255,255,255,0.06); color: var(--text-muted); }
+.status-row.status-buff { border-left: 3px solid rgba(76,175,80,0.3); }
+.status-row.status-debuff { border-left: 3px solid rgba(239,68,68,0.3); }
+@media (max-width: 768px) {
+  .status-table { font-size: 12px; }
+  .status-name-cell { white-space: normal; }
+  .status-type-cell { display: none; }
+}

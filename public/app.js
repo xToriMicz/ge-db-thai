@@ -1732,19 +1732,38 @@ function renderStatuses(list) {
     return;
   }
 
-  grid.innerHTML = `<div class="status-list">
-    ${list.map(s => `
-      <div class="status-card status-${s.type}">
-        <div class="status-header">
-          <span class="status-icon">${s.type === 'buff' ? '🟢' : s.type === 'debuff' ? '🔴' : '⚪'}</span>
-          <span class="status-name">${s.name}</span>
-          <span class="status-type-badge">${s.type}</span>
-        </div>
-        <div class="status-desc">${s.description}</div>
-        ${s.description_th ? `<div class="status-desc-th">${s.description_th}</div>` : ''}
-      </div>
-    `).join("")}
-  </div>`;
+  // Group alphabetically like source (ge-db.site/andromida/Status.php)
+  const grouped = {};
+  for (const s of list) {
+    const letter = (s.name[0] || '?').toUpperCase();
+    const key = /[A-Z]/.test(letter) ? letter : '#';
+    if (!grouped[key]) grouped[key] = [];
+    grouped[key].push(s);
+  }
+
+  grid.innerHTML = Object.entries(grouped).sort((a, b) => a[0].localeCompare(b[0])).map(([letter, items]) => `
+    <div class="status-letter-group">
+      <div class="status-letter">${letter}</div>
+      <table class="status-table">
+        <thead><tr><th>ชื่อสถานะ</th><th>คำอธิบาย</th><th>ประเภท</th></tr></thead>
+        <tbody>
+          ${items.map(s => `
+            <tr class="status-row status-${s.type}">
+              <td class="status-name-cell">
+                <span class="status-icon-sm">${s.type === 'buff' ? '🟢' : s.type === 'debuff' ? '🔴' : '⚪'}</span>
+                ${s.name}
+              </td>
+              <td class="status-desc-cell">
+                ${s.description}
+                ${s.description_th ? `<div class="status-th">${s.description_th}</div>` : ''}
+              </td>
+              <td class="status-type-cell"><span class="status-type-pill status-pill-${s.type}">${s.type}</span></td>
+            </tr>
+          `).join("")}
+        </tbody>
+      </table>
+    </div>
+  `).join("");
 }
 
 function setupStatusFilters() {
