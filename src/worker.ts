@@ -22,6 +22,9 @@ const COMMENT_RATE_LIMIT = 5;
 const COMMENT_RATE_WINDOW = 60 * 60 * 1000;
 const RATING_RATE_LIMIT = 10;
 const RATING_RATE_WINDOW = 60 * 60 * 1000;
+const viewLog = new Map<string, number[]>();
+const VIEW_RATE_LIMIT = 30;
+const VIEW_RATE_WINDOW = 60 * 60 * 1000; // 1 hour
 
 function isRateLimited(ip: string): boolean {
   const now = Date.now();
@@ -47,6 +50,15 @@ function isRatingLimited(ip: string): boolean {
   if (timestamps.length >= RATING_RATE_LIMIT) return true;
   timestamps.push(now);
   ratingLog.set(ip, timestamps);
+  return false;
+}
+
+function isViewLimited(ip: string): boolean {
+  const now = Date.now();
+  const timestamps = (viewLog.get(ip) || []).filter(t => now - t < VIEW_RATE_WINDOW);
+  if (timestamps.length >= VIEW_RATE_LIMIT) return true;
+  timestamps.push(now);
+  viewLog.set(ip, timestamps);
   return false;
 }
 
@@ -345,6 +357,9 @@ async function handleAPI(request: Request, env: Env): Promise<Response> {
       env.DB.prepare("SELECT id, name, description, description_th, type FROM statuses WHERE name LIKE ? OR description LIKE ? OR description_th LIKE ? LIMIT 10")
         .bind(like, like, like).all(),
     ]);
+
+    // Log search query for analytics (fire-and-forget, non-blocking)
+    env.DB.prepare("INSERT INTO popular_searches (query) VALUES (?)").bind(q).run();
 
     return json({
       characters: chars.results,
@@ -1068,6 +1083,71 @@ async function handleAPI(request: Request, env: Env): Promise<Response> {
     ).bind(contentType, contentId).first();
 
     return json({ comments: result.results, total: countResult?.total || 0 }, 200, 30);
+  }
+
+  // ── Analytics API: View Tracking ──
+
+  // POST /api/views — record a page view
+  if (path === "/api/views" && request.method === "POST") {
+    const ip = request.headers.get("CF-Connecting-IP") || "unknown";
+    if (isViewLimited(ip)) {
+      return json({ error: "บันทึกได้สูงสุด 30 ครั้งต่อชั่วโมง" }, 429);
+    }
+
+    const body = await request.json() as { content_type?: string; content_id?: string };
+    const validTypes = ["character", "item", "map", "monster", "raid", "quest", "news"];
+    if (!body.content_type || !validTypes.includes(body.content_type)) {
+      return json({ error: "content_type ไม่ถูกต้อง" }, 400);
+    }
+    if (!body.content_id || body.content_id.trim().length === 0) {
+      return json({ error: "กรุณาระบุ content_id" }, 400);
+    }
+
+    const ipHash = await hashIP(ip);
+    await env.DB.prepare(
+      "INSERT INTO page_views (content_type, content_id, ip_hash) VALUES (?, ?, ?)"
+    ).bind(body.content_type, body.content_id.trim(), ipHash).run();
+
+    return json({ ok: true });
+  }
+
+  // GET /api/analytics/popular — top 20 most viewed characters + items (cache 10 min)
+  if (path === "/api/analytics/popular") {
+    const topCharacters = await env.DB.prepare(
+      `SELECT content_id, COUNT(*) as views
+       FROM page_views
+       WHERE content_type = 'character'
+       GROUP BY content_id
+       ORDER BY views DESC
+       LIMIT 20`
+    ).all();
+
+    const topItems = await env.DB.prepare(
+      `SELECT content_id, COUNT(*) as views
+       FROM page_views
+       WHERE content_type = 'item'
+       GROUP BY content_id
+       ORDER BY views DESC
+       LIMIT 20`
+    ).all();
+
+    return json({
+      characters: topCharacters.results,
+      items: topItems.results,
+    }, 200, 600);
+  }
+
+  // GET /api/analytics/searches — top 20 search queries (cache 10 min)
+  if (path === "/api/analytics/searches") {
+    const topSearches = await env.DB.prepare(
+      `SELECT query, COUNT(*) as count
+       FROM popular_searches
+       GROUP BY query
+       ORDER BY count DESC
+       LIMIT 20`
+    ).all();
+
+    return json({ searches: topSearches.results }, 200, 600);
   }
 
   // GET /api/preload/:type — critical image URLs for frontend <link rel="preload"> hints
