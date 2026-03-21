@@ -421,6 +421,34 @@ async function handleAPI(request: Request, env: Env): Promise<Response> {
     return json({ monsters: result.results, total: result.results.length }, 200, 300);
   }
 
+  // GET /api/monsters/:id — single monster with drop items + map (cache 5 min)
+  const monsterMatch = path.match(/^\/api\/monsters\/(\d+)$/);
+  if (monsterMatch) {
+    const monsterId = Number(monsterMatch[1]);
+    const monster = await env.DB.prepare("SELECT * FROM monsters WHERE id = ?").bind(monsterId).first();
+    if (!monster) return json({ error: "Monster not found" }, 404);
+
+    // Get map info
+    let map = null;
+    if (monster.map_slug) {
+      map = await env.DB.prepare("SELECT slug, name, name_th, level_range, map_type FROM maps WHERE slug = ?").bind(monster.map_slug).first();
+    }
+
+    // Get items that drop in same map
+    let dropItems: any[] = [];
+    if (monster.map_slug) {
+      const mapRow = await env.DB.prepare("SELECT id FROM maps WHERE slug = ?").bind(monster.map_slug).first();
+      if (mapRow) {
+        const drops = await env.DB.prepare(
+          "SELECT md.item_name, md.item_slug, md.item_category FROM map_drops md WHERE md.map_id = ? ORDER BY md.item_name LIMIT 30"
+        ).bind(mapRow.id).all();
+        dropItems = drops.results as any[];
+      }
+    }
+
+    return json({ ...monster, map, drop_items: dropItems }, 200, 300);
+  }
+
   // GET /api/raids — list raids (cache 5 min)
   if (path === "/api/raids") {
     const race = url.searchParams.get("race");

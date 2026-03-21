@@ -85,6 +85,8 @@ async function init() {
     if (mapParam) { if (!tabParam) switchTab("maps"); showMapDetail(mapParam); }
     const itemParam = params.get("item");
     if (itemParam) { if (!tabParam) switchTab("items"); showItemDetail(itemParam); }
+    const monsterParam = params.get("monster");
+    if (monsterParam) { if (!tabParam) switchTab("monsters"); showMonsterDetail(monsterParam); }
     const questParam = params.get("quest");
     if (questParam) { if (!tabParam) switchTab("quests"); setTimeout(() => showQuestDetail(questParam), 300); }
     const newsParam = params.get("news");
@@ -892,7 +894,7 @@ function renderMobGrid(mobs) {
   }
 
   grid.innerHTML = mobs.map(m => `
-    <div class="mob-card${m.is_boss ? ' boss' : ''}${m.map_slug ? ' clickable' : ''}" ${m.map_slug ? `onclick="showMapDetail('${m.map_slug}')" title="ดูแผนที่: ${m.location}"` : ''}>
+    <div class="mob-card${m.is_boss ? ' boss' : ''} clickable" onclick="showMonsterDetail(${m.id})">
       <div>
         <div class="mob-name">${m.name}${m.is_boss ? ' <span class="boss-badge">BOSS</span>' : ''}</div>
         ${m.name_th ? `<div class="mob-name-th">${m.name_th}</div>` : ''}
@@ -1224,6 +1226,67 @@ function searchMonster(name) {
   }, 300);
 }
 
+async function showMonsterDetail(id) {
+  const modal = document.getElementById("modal");
+  const body = document.getElementById("modal-body");
+  body.innerHTML = '<div class="loading">กำลังโหลด...</div>';
+  modal.classList.remove("hidden");
+  pushUrl({ monster: id });
+
+  try {
+    const res = await fetch(`/api/monsters/${id}`);
+    if (!res.ok) throw new Error("not found");
+    const mob = await res.json();
+
+    const mapHtml = mob.map ? `
+      <div class="item-detail-section">
+        <h3>📍 แผนที่</h3>
+        <div class="item-drop-map-card">
+          <div class="item-drop-map-name clickable" onclick="closeModal(); showMapDetail('${mob.map.slug}')">
+            <strong>${mob.map.name}</strong>
+            ${mob.map.name_th ? `<span class="th-name">${mob.map.name_th}</span>` : ''}
+            ${mob.map.level_range ? `<span class="level-tag">Lv.${mob.map.level_range}</span>` : ''}
+          </div>
+        </div>
+      </div>
+    ` : '';
+
+    let dropHtml = '';
+    if (mob.drop_items && mob.drop_items.length > 0) {
+      dropHtml = `
+        <div class="item-detail-section">
+          <h3>🎁 ดรอปไอเทม (${mob.drop_items.length} ชิ้น)</h3>
+          <div class="item-drop-maps">
+            ${mob.drop_items.map(d => `
+              <span class="drop-tag${d.item_slug ? ' clickable' : ''}" ${d.item_slug ? `onclick="closeModal(); navigateToItem('${d.item_slug}')"` : ''}>
+                ${d.item_name}
+                <span style="color:var(--text-muted);font-size:0.8em">${d.item_category}</span>
+              </span>
+            `).join('')}
+          </div>
+        </div>
+      `;
+    }
+
+    body.innerHTML = `
+      <div class="item-detail-header">
+        <div>
+          <h2 class="item-detail-name">${mob.name}${mob.is_boss ? ' <span class="boss-badge">BOSS</span>' : ''}</h2>
+          ${mob.name_th ? `<div class="item-detail-th">${mob.name_th}</div>` : ''}
+          <div class="item-detail-stats">
+            Lv.${mob.level} · ${mob.race}
+            ${mob.location ? ` · ${mob.location}` : ''}
+          </div>
+        </div>
+      </div>
+      ${mapHtml}
+      ${dropHtml}
+    `;
+  } catch (err) {
+    body.innerHTML = '<div class="loading">ไม่พบข้อมูลมอนสเตอร์</div>';
+  }
+}
+
 // ── Feedback ──
 async function submitFeedback(slug) {
   const msg = document.getElementById("feedback-msg");
@@ -1453,6 +1516,7 @@ function handlePopState() {
   const charParam = params.get("char");
   const mapParam = params.get("map");
   const itemParam = params.get("item");
+  const monsterParam = params.get("monster");
   const tabParam = params.get("tab") || "characters";
 
   if (charParam) {
@@ -1464,6 +1528,9 @@ function handlePopState() {
   } else if (itemParam) {
     switchTab("items");
     showItemDetail(itemParam);
+  } else if (monsterParam) {
+    switchTab("monsters");
+    showMonsterDetail(monsterParam);
   } else {
     switchTab(tabParam);
   }
