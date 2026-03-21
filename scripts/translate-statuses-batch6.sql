@@ -1,0 +1,50 @@
+-- Batch 6: B-section (156-220)
+
+UPDATE statuses SET description_th = 'บล็อก +10, พลังป้องกัน +10, ภูมิคุ้มกัน +8, ได้รับ [Counter] เมื่อบล็อกสกิลสำเร็จ' WHERE id = 156;
+UPDATE statuses SET description_th = 'เพิ่มพลังโจมตีและพลังป้องกัน' WHERE id = 157;
+UPDATE statuses SET description_th = 'HP สูงสุดและความสามารถทั้งหมดเพิ่มขึ้น' WHERE id = 158;
+UPDATE statuses SET description_th = 'ถูกทำเครื่องหมายโดยผีเสื้อน้ำแข็งของ Gaura [มอนสเตอร์] พลังโจมตี -3%, ความเร็วโจมตี -3%' WHERE id = 159;
+UPDATE statuses SET description_th = 'เกรดโจมตี -1, [มอนสเตอร์] พลังโจมตี -10%, ความเร็วโจมตี -10%, ความเร็วเคลื่อนที่ -10%' WHERE id = 160;
+UPDATE statuses SET description_th = 'ดาเมจมอนสเตอร์ +30%, เจาะเกราะ +15, Fighter มีเอฟเฟกต์เพิ่มเติม' WHERE id = 161;
+UPDATE statuses SET description_th = 'เข้าสู่ความบ้าคลั่งที่ควบคุมไม่ได้ เพิ่มความสามารถโจมตีอย่างมาก' WHERE id = 162;
+UPDATE statuses SET description_th = 'เพิ่มความสามารถ' WHERE id = 164;
+UPDATE statuses SET description_th = 'ความเร็วโจมตีลด ถ้าเป็นสิ่งเรียก พลังโจมตีลดด้วย' WHERE id = 165;
+UPDATE statuses SET description_th = 'พลังโจมตี +8%, เจาะเกราะ +10, ภูมิคุ้มกัน +10, ดาเมจมอนสเตอร์ +25%, ดาเมจทั้งหมด -5%' WHERE id = 166;
+UPDATE statuses SET description_th = 'ไม่สามารถใช้สกิลบางตัวได้' WHERE id = 167;
+UPDATE statuses SET description_th = 'เกรดโจมตี +1, พลังโจมตี +30%, ดาเมจมอนสเตอร์ +50%, ความแม่นยำ +10' WHERE id = 168;
+UPDATE statuses SET description_th = 'ค่าประสบการณ์การต่อสู้ สแตนซ์ และอัตราดรอปไอเทม +25%' WHERE id = 169;
+UPDATE statuses SET description_th = '[PvP] พลังโจมตี -30%, ความแม่นยำ -3 ต่อระดับ (สูงสุด 10), ความเร็วเคลื่อนที่ -25%' WHERE id = 170;
+UPDATE statuses SET description_th = 'เพิ่มพลังโจมตี แต่ลดความเร็วเคลื่อนที่และความเร็วโจมตี' WHERE id = 171;
+UPDATE statuses SET description_th = 'เพิ่มต้านทานเป็นเวลา 30 วินาที' WHERE id = 172;
+UPDATE statuses SET description_th = 'ปล่อยวางจิตใจเพื่อเข้าถึงสมาธิเต็มที่' WHERE id = 173;
+UPDATE statuses SET description_th = 'ลด HP ตลอดระยะเวลา' WHERE id = 174;
+UPDATE statuses SET description_th = 'พลังโจมตี/ความเร็วเคลื่อนที่ลดลงอย่างมาก HP ลดอย่างต่อเนื่อง' WHERE id = 176;
+
+-- More B entries
+UPDATE statuses SET description_th = 'ยิงกระสุนที่มีพลังศักดิ์สิทธิ์' WHERE name = 'Blue Virgo' AND description_th IS NULL;
+UPDATE statuses SET description_th = 'เพิ่มความสามารถพื้นฐาน' WHERE name = 'Body Enhancement' AND description_th IS NULL;
+UPDATE statuses SET description_th = 'ลดพลังป้องกันของศัตรู' WHERE name = 'Break' AND description_th IS NULL;
+UPDATE statuses SET description_th = 'คำสั่งให้ถอยทัพ ลดความสามารถในการต่อสู้' WHERE name = 'Retreat Order' AND description_th IS NULL;
+UPDATE statuses SET description_th = 'เพิ่มคริติคอลอย่างมาก' WHERE name = 'Critical Up' AND description_th IS NULL;
+UPDATE statuses SET description_th = 'พลังโจมตีเพิ่มเป็น 2 เท่า' WHERE name = 'Double ATK' AND description_th IS NULL;
+UPDATE statuses SET description_th = 'พลังป้องกันเพิ่มเป็น 2 เท่า' WHERE name = 'Double DEF' AND description_th IS NULL;
+UPDATE statuses SET description_th = 'ไม่สามารถรับการรักษาได้' WHERE name = 'Heal Block' AND description_th IS NULL;
+UPDATE statuses SET description_th = 'ไม่สามารถฟื้นคืนชีพได้' WHERE name = 'Resurrection Block' AND description_th IS NULL;
+UPDATE statuses SET description_th = 'ลดอัตราดรอปไอเทม' WHERE name = 'Drop Rate Down' AND description_th IS NULL;
+UPDATE statuses SET description_th = 'เพิ่มอัตราดรอปไอเทม' WHERE name = 'Drop Rate Up' AND description_th IS NULL;
+UPDATE statuses SET description_th = 'ล้มลง ไม่สามารถเคลื่อนไหว' WHERE name = 'Down' AND description_th IS NULL;
+UPDATE statuses SET description_th = 'เพิ่มค่าประสบการณ์ที่ได้รับ' WHERE name = 'EXP Up' AND description_th IS NULL;
+UPDATE statuses SET description_th = 'ค่าประสบการณ์ +50%' WHERE name = 'EXP +50%' AND description_th IS NULL;
+UPDATE statuses SET description_th = 'ฟื้นฟู HP' WHERE name = 'Heal' AND description_th IS NULL;
+UPDATE statuses SET description_th = 'ฟื้นฟู HP อย่างต่อเนื่อง' WHERE name = 'Regeneration' AND description_th IS NULL;
+UPDATE statuses SET description_th = 'กันตาย ไม่สามารถถูกสังหารได้' WHERE name = 'Immortal' AND description_th IS NULL;
+UPDATE statuses SET description_th = 'โจมตีโดนทุกครั้ง ไม่พลาด' WHERE name = 'Sure Hit' AND description_th IS NULL;
+UPDATE statuses SET description_th = 'ไม่สามารถเป็นเป้าหมายได้' WHERE name = 'Untargetable' AND description_th IS NULL;
+UPDATE statuses SET description_th = 'มองไม่เห็น' WHERE name = 'Invisible' AND description_th IS NULL;
+UPDATE statuses SET description_th = 'ลดต้านทานทั้งหมด' WHERE name = 'RES Down' AND description_th IS NULL;
+UPDATE statuses SET description_th = 'เพิ่มต้านทานทั้งหมด' WHERE name = 'RES Up' AND description_th IS NULL;
+UPDATE statuses SET description_th = 'หยุดเวลา ไม่สามารถเคลื่อนไหวหรือโจมตีได้' WHERE name = 'Time Stop' AND description_th IS NULL;
+UPDATE statuses SET description_th = 'เปลี่ยนร่าง' WHERE name = 'Transform' AND description_th IS NULL;
+UPDATE statuses SET description_th = 'เปลี่ยนร่าง' WHERE name = 'Transformation' AND description_th IS NULL;
+UPDATE statuses SET description_th = 'กำลังขุด' WHERE name = 'Mining' AND description_th IS NULL;
+UPDATE statuses SET description_th = 'กำลังตกปลา' WHERE name = 'Fishing' AND description_th IS NULL;

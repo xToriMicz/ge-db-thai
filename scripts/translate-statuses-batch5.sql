@@ -1,0 +1,31 @@
+-- Batch 5: A-remainder + B-section (116-160)
+
+UPDATE statuses SET description_th = 'สกิลดาเมจ x3' WHERE id = 118;
+UPDATE statuses SET description_th = 'A.R. -1, พลังโจมตี -2%, ความเร็วโจมตี -4% ต่อระดับ (สูงสุดระดับ 10)' WHERE id = 119;
+UPDATE statuses SET description_th = 'สั่งโจมตีเพื่อยึดครองสนามรบ' WHERE id = 120;
+UPDATE statuses SET description_th = '[พันธมิตร]: พลังโจมตี -30%, คริติคอล -20, เจาะเกราะ -10 [ศัตรู]: ภูมิคุ้มกันต่อ [Excision]' WHERE id = 121;
+UPDATE statuses SET description_th = 'ยั่วยุศัตรูในรัศมี 15 เมตรให้โจมตีตัวเองตลอดเวลา' WHERE id = 122;
+UPDATE statuses SET description_th = 'SP +100 ต่อระดับ, เจาะเกราะสายฟ้า +1 ต่อระดับ' WHERE id = 123;
+UPDATE statuses SET description_th = 'ต้านทานสกิลโจมตีวงกว้างเพิ่ม 50% และต้านทานเพิ่มขึ้นอย่างมาก' WHERE id = 125;
+UPDATE statuses SET description_th = 'ยั่วยุศัตรูใกล้เคียงให้โจมตีตัวเองอย่างต่อเนื่อง' WHERE id = 126;
+UPDATE statuses SET description_th = 'พลังป้องกัน และ D.R. เพิ่ม เวลาร่ายสกิลลด' WHERE id = 128;
+UPDATE statuses SET description_th = 'เพิ่มพลังโจมตีจากความกระหายแก้แค้น' WHERE id = 129;
+UPDATE statuses SET description_th = 'A.R. +1, เจาะผ่านการป้องกันของบอสชั่วคราว' WHERE id = 133;
+UPDATE statuses SET description_th = 'เกรดโจมตี +1, พลังโจมตี +40%, เจาะเกราะกายภาพ +20, ความเร็วเคลื่อนที่ลด' WHERE id = 134;
+UPDATE statuses SET description_th = 'เกรดป้องกัน +1, พลังป้องกัน +10, ภูมิคุ้มกัน +5, ดาเมจที่ได้รับ -5%' WHERE id = 135;
+UPDATE statuses SET description_th = 'หลังปลดปล่อยดาบศักดิ์สิทธิ์ในตำนาน เพิ่มค่าโจมตี' WHERE id = 136;
+UPDATE statuses SET description_th = 'พลังโจมตียิง +10%, เจาะเกราะ +10, ละเว้นพลังป้องกัน +1%, ดาเมจมอนสเตอร์ +15%' WHERE id = 137;
+UPDATE statuses SET description_th = 'เพิ่มพลังป้องกัน การหลบ และบล็อก' WHERE id = 138;
+UPDATE statuses SET description_th = 'ร่างกายดุร้ายขึ้นจากพลังเวทย์ลึกลับ' WHERE id = 139;
+UPDATE statuses SET description_th = 'เข้าร่วมห้อง PvP' WHERE id = 140;
+UPDATE statuses SET description_th = 'เพิ่มคริติคอล ความแม่นยำ และมีโอกาสเข้าสถานะ [Extraction]' WHERE id = 141;
+UPDATE statuses SET description_th = 'ฟื้นฟู HP/SP อย่างรวดเร็วตลอดระยะเวลา' WHERE id = 144;
+UPDATE statuses SET description_th = 'สถานะทั้งหมด +3, HP สูงสุด +10%, Fighter และ Neo มีเอฟเฟกต์เพิ่มเติม' WHERE id = 145;
+UPDATE statuses SET description_th = 'เพิ่มพลังโจมตีและเจาะเกราะจิต' WHERE id = 146;
+UPDATE statuses SET description_th = 'เพิ่มความสามารถทางกายภาพโดยขับเคลื่อนร่างกายเป็นสัตว์ร้าย' WHERE id = 147;
+UPDATE statuses SET description_th = 'ดาเมจมอนสเตอร์ +10%, ดาเมจจากมอนสเตอร์ -5%, ค่าประสบการณ์ +20%' WHERE id = 148;
+UPDATE statuses SET description_th = 'พลังโจมตี +10%, ความเร็วโจมตี +5%, Fighter และ Neo มีเอฟเฟกต์เพิ่มเติม' WHERE id = 151;
+UPDATE statuses SET description_th = 'พลังโจมตีประชิด +15%, เจาะเกราะกายภาพ +15, ดาเมจมอนสเตอร์ +30%, ดาเมจสกิลประชิด +15%' WHERE id = 152;
+UPDATE statuses SET description_th = 'สร้างโล่ดูดซับดาเมจจากการโจมตียิง' WHERE id = 153;
+UPDATE statuses SET description_th = 'สกิลที่ 3 ของสแตนซ์ [Peacefulness]' WHERE id = 154;
+UPDATE statuses SET description_th = 'เกรดโจมตี +1, พลังโจมตีมอนสเตอร์ +80%, สามารถใช้สแตนซ์ [Rafinata]' WHERE id = 155;

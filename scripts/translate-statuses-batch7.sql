@@ -1,0 +1,56 @@
+-- Batch 7: C-D section (303-400+)
+
+UPDATE statuses SET description_th = 'ดาเมจมอนสเตอร์ +5%, ค่าประสบการณ์การต่อสู้ +20%' WHERE id = 303;
+UPDATE statuses SET description_th = 'ดาเมจมอนสเตอร์ +5%, ค่าประสบการณ์สแตนซ์ +20%' WHERE id = 304;
+UPDATE statuses SET description_th = 'รีบทำความสะอาดรอบบ้านเพราะถูกเรียก' WHERE id = 305;
+UPDATE statuses SET description_th = 'พลังโจมตี +5%, ความแม่นยำ +5, คริติคอล +5, เวลาร่ายสกิล -5%' WHERE id = 306;
+UPDATE statuses SET description_th = 'ความเร็วเคลื่อนที่เพิ่มชั่วคราว และขีดจำกัดความเร็วเพิ่ม' WHERE id = 307;
+UPDATE statuses SET description_th = 'ลดดาเมจจากโจมตีเวทย์ ใช้สกิลและไอเทมได้ แต่ความเร็วเคลื่อนที่ลด' WHERE id = 308;
+UPDATE statuses SET description_th = 'เพิ่มพลังโจมตี ตรวจจับศัตรูที่ซ่อนตัวและทำให้อ่อนแอ' WHERE id = 309;
+UPDATE statuses SET description_th = 'ทำให้ผู้คนรู้สึกถึงจุดสุดยอดของบรรยากาศ' WHERE id = 310;
+UPDATE statuses SET description_th = 'คุณกำลังเล่นเกมจับ Capybara' WHERE id = 314;
+UPDATE statuses SET description_th = 'เจาะเกราะและความแม่นยำเพิ่มอย่างมากเป็นระยะเวลาหนึ่ง' WHERE id = 315;
+UPDATE statuses SET description_th = '[Lv 1] ดาเมจมอนสเตอร์ +10%, ดาเมจคริติคอล +6%' WHERE id = 317;
+UPDATE statuses SET description_th = '[Ziz] พลังโจมตี +5%, INT +5 [Silaen] ดาเมจมอนสเตอร์ +25%, ความเร็วเคลื่อนที่ +10%' WHERE id = 318;
+UPDATE statuses SET description_th = 'ประกายไฟจากเล่นแร่แปรธาตุ ลด HP อย่างต่อเนื่อง และลดความเร็วเคลื่อนที่' WHERE id = 320;
+UPDATE statuses SET description_th = 'A.R. +1, D.R. +1, ความเร็วโจมตี +10%, ความแม่นยำ +10' WHERE id = 321;
+UPDATE statuses SET description_th = 'ไม่สามารถทำอะไรได้ชั่วคราว การหลบและบล็อกเป็นไปไม่ได้' WHERE id = 322;
+UPDATE statuses SET description_th = 'เกรดโจมตี +1, ดาเมจมอนสเตอร์ +50%, ละเว้นพลังป้องกัน +5%' WHERE id = 323;
+UPDATE statuses SET description_th = 'เพิ่ม AGI' WHERE id = 324;
+UPDATE statuses SET description_th = 'เพิ่มพลังป้องกัน' WHERE id = 325;
+UPDATE statuses SET description_th = 'เพิ่ม A.R.' WHERE id = 326;
+UPDATE statuses SET description_th = 'เพิ่ม DEX' WHERE id = 328;
+UPDATE statuses SET description_th = 'เจาะเกราะและความแม่นยำเพิ่มอย่างมากเป็นระยะเวลาหนึ่ง' WHERE id = 329;
+UPDATE statuses SET description_th = 'ฟื้นฟู HP +600%, A.R. +5, D.R. +5, พลังโจมตี +50%' WHERE id = 330;
+UPDATE statuses SET description_th = 'เพิ่ม HP' WHERE id = 331;
+UPDATE statuses SET description_th = 'เพิ่ม INT' WHERE id = 332;
+UPDATE statuses SET description_th = 'เพิ่ม STR' WHERE id = 333;
+UPDATE statuses SET description_th = 'เพิ่มการหลบ' WHERE id = 334;
+UPDATE statuses SET description_th = 'เพิ่มบล็อก' WHERE id = 335;
+
+-- Character - X series (simple stat buffs)
+UPDATE statuses SET description_th = 'เพิ่ม AGI ของตัวละคร' WHERE name = 'Character - AGI' AND description_th IS NULL;
+UPDATE statuses SET description_th = 'เพิ่มพลังโจมตีของตัวละคร' WHERE name = 'Character - ATK' AND description_th IS NULL;
+UPDATE statuses SET description_th = 'เพิ่มความเร็วโจมตีของตัวละคร' WHERE name = 'Character - ATK SPD' AND description_th IS NULL;
+UPDATE statuses SET description_th = 'เพิ่มพลังโจมตีและ D.R. ของตัวละคร' WHERE name = 'Character - ATK/D.R.' AND description_th IS NULL;
+UPDATE statuses SET description_th = 'เพิ่มความแม่นยำของตัวละคร' WHERE name = 'Character - Accuracy' AND description_th IS NULL;
+UPDATE statuses SET description_th = 'เพิ่มบล็อกของตัวละคร' WHERE name = 'Character - Blocking' AND description_th IS NULL;
+UPDATE statuses SET description_th = 'ลดเวลาร่ายสกิลของตัวละคร' WHERE name = 'Character - Casting' AND description_th IS NULL;
+UPDATE statuses SET description_th = 'เพิ่มคริติคอลของตัวละคร' WHERE name = 'Character - Critical' AND description_th IS NULL;
+UPDATE statuses SET description_th = 'เพิ่มดาเมจคริติคอลของตัวละคร' WHERE name = 'Character - Critical Damage' AND description_th IS NULL;
+UPDATE statuses SET description_th = 'เพิ่มพลังป้องกันของตัวละคร' WHERE name = 'Character - DEF' AND description_th IS NULL;
+UPDATE statuses SET description_th = 'เพิ่ม DEX ของตัวละคร' WHERE name = 'Character - DEX' AND description_th IS NULL;
+UPDATE statuses SET description_th = 'เพิ่มระยะเวลาของตัวละคร' WHERE name = 'Character - Duration' AND description_th IS NULL;
+UPDATE statuses SET description_th = 'เพิ่มการหลบของตัวละคร' WHERE name = 'Character - Evasion' AND description_th IS NULL;
+UPDATE statuses SET description_th = 'เพิ่ม HP ของตัวละคร' WHERE name = 'Character - HP' AND description_th IS NULL;
+UPDATE statuses SET description_th = 'เพิ่มการดูดซับ HP ของตัวละคร' WHERE name = 'Character - HP Absorption' AND description_th IS NULL;
+UPDATE statuses SET description_th = 'เพิ่มการฟื้นฟู HP ของตัวละคร' WHERE name = 'Character - HP Recovery' AND description_th IS NULL;
+UPDATE statuses SET description_th = 'เพิ่ม INT ของตัวละคร' WHERE name = 'Character - INT' AND description_th IS NULL;
+UPDATE statuses SET description_th = 'เพิ่มภูมิคุ้มกันของตัวละคร' WHERE name = 'Character - Immunity' AND description_th IS NULL;
+UPDATE statuses SET description_th = 'เพิ่มขีดจำกัดความเร็วของตัวละคร' WHERE name = 'Character - MoveSpd Limit' AND description_th IS NULL;
+UPDATE statuses SET description_th = 'เพิ่มความเร็วเคลื่อนที่ของตัวละคร' WHERE name = 'Character - Movement Speed' AND description_th IS NULL;
+UPDATE statuses SET description_th = 'เพิ่มเจาะเกราะของตัวละคร' WHERE name = 'Character - Penetration' AND description_th IS NULL;
+UPDATE statuses SET description_th = 'เพิ่ม SEN ของตัวละคร' WHERE name = 'Character - SEN' AND description_th IS NULL;
+UPDATE statuses SET description_th = 'เพิ่ม SP ของตัวละคร' WHERE name = 'Character - SP' AND description_th IS NULL;
+UPDATE statuses SET description_th = 'เพิ่มการฟื้นฟู SP ของตัวละคร' WHERE name = 'Character - SP Recovery' AND description_th IS NULL;
+UPDATE statuses SET description_th = 'เพิ่ม STR ของตัวละคร' WHERE name = 'Character - STR' AND description_th IS NULL;
