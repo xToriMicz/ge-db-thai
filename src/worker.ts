@@ -286,7 +286,7 @@ async function handleAPI(request: Request, env: Env): Promise<Response> {
 
     const like = `%${q}%`;
 
-    const [chars, items, maps, monsters, raids] = await Promise.all([
+    const [chars, items, maps, monsters, raids, stances, skills] = await Promise.all([
       env.DB.prepare("SELECT slug, display_name, name_th, type, portrait_x, portrait_y, portrait_class, portrait_sheet FROM characters WHERE display_name LIKE ? OR name LIKE ? OR name_th LIKE ? LIMIT 10")
         .bind(like, like, like).all(),
       env.DB.prepare("SELECT name, name_th, slug, category, category_group, level, image FROM items WHERE name LIKE ? OR name_th LIKE ? LIMIT 10")
@@ -297,6 +297,10 @@ async function handleAPI(request: Request, env: Env): Promise<Response> {
         .bind(like, like).all(),
       env.DB.prepare("SELECT name, name_th, slug, level, race, location, map_slug FROM raids WHERE name LIKE ? OR name_th LIKE ? OR location LIKE ? LIMIT 10")
         .bind(like, like, like).all(),
+      env.DB.prepare("SELECT s.name, s.name_th, c.slug as character_slug, c.display_name as character_name FROM stances s JOIN characters c ON s.character_id = c.id WHERE s.name LIKE ? OR s.name_th LIKE ? LIMIT 10")
+        .bind(like, like).all(),
+      env.DB.prepare("SELECT skill_name, character_slug, stance_name FROM skills WHERE skill_name LIKE ? LIMIT 10")
+        .bind(like).all(),
     ]);
 
     return json({
@@ -305,6 +309,8 @@ async function handleAPI(request: Request, env: Env): Promise<Response> {
       maps: maps.results,
       monsters: monsters.results,
       raids: raids.results,
+      stances: stances.results,
+      skills: skills.results,
     }, 200, 60);
   }
 

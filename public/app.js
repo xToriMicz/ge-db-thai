@@ -1093,6 +1093,26 @@ async function doGlobalSearch(q) {
       }
     }
 
+    if (data.stances && data.stances.length > 0) {
+      sections.push(`<div class="gs-group-title">สแตนซ์ (${data.stances.length})</div>`);
+      for (const s of data.stances) {
+        sections.push(`<div class="gs-item" onclick="document.getElementById('global-results').classList.add('hidden'); showDetail('${s.character_slug}')">
+          <div><span class="gs-item-name">${s.name}</span>${s.name_th ? ` <span class="gs-item-th">${s.name_th}</span>` : ''}</div>
+          <span class="gs-item-meta">${s.character_name}</span>
+        </div>`);
+      }
+    }
+
+    if (data.skills && data.skills.length > 0) {
+      sections.push(`<div class="gs-group-title">สกิล (${data.skills.length})</div>`);
+      for (const s of data.skills) {
+        sections.push(`<div class="gs-item" onclick="document.getElementById('global-results').classList.add('hidden'); showDetail('${s.character_slug}')">
+          <div><span class="gs-item-name">${s.skill_name}</span></div>
+          <span class="gs-item-meta">${s.stance_name} · ${s.character_slug}</span>
+        </div>`);
+      }
+    }
+
     if (sections.length === 0) {
       results.innerHTML = '<div class="gs-no-result">ไม่พบผลลัพธ์</div>';
     } else {
