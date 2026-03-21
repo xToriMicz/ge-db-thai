@@ -123,6 +123,7 @@ function switchTab(tab) {
   document.getElementById("maps-section").classList.toggle("hidden", tab !== "maps");
   document.getElementById("monsters-section").classList.toggle("hidden", tab !== "monsters");
   document.getElementById("raids-section").classList.toggle("hidden", tab !== "raids");
+  document.getElementById("enchantments-section").classList.toggle("hidden", tab !== "enchantments");
   document.getElementById("quests-section").classList.toggle("hidden", tab !== "quests");
   document.getElementById("news-section").classList.toggle("hidden", tab !== "news");
 
@@ -130,6 +131,7 @@ function switchTab(tab) {
   if (tab === "maps" && allMaps.length === 0) loadMaps();
   if (tab === "monsters" && allMonsters.length === 0) loadMonsters();
   if (tab === "raids" && allRaids.length === 0) loadRaids();
+  if (tab === "enchantments" && !enchantmentsLoaded) loadEnchantments();
   if (tab === "quests" && !questsLoaded) loadQuests();
   if (tab === "news" && !newsLoaded) loadNews();
 
@@ -1690,6 +1692,89 @@ function showComparison() {
       </div>
     </div>
   `;
+}
+
+// ── Enchantments ──
+let enchantmentsLoaded = false;
+let allEnchantments = [];
+let enchantCategories = [];
+
+async function loadEnchantments() {
+  try {
+    const res = await fetch("/api/enchantments");
+    const data = await res.json();
+    allEnchantments = data.enchantments;
+    enchantCategories = data.categories;
+    enchantmentsLoaded = true;
+
+    const catSelect = document.getElementById("filter-enchant-cat");
+    enchantCategories.forEach(cat => {
+      const opt = document.createElement("option");
+      opt.value = cat;
+      opt.textContent = cat;
+      catSelect.appendChild(opt);
+    });
+
+    renderEnchantments(allEnchantments);
+    setupEnchantFilters();
+  } catch (err) {
+    document.getElementById("enchant-grid").innerHTML = `<div class="loading">โหลดข้อมูลไม่สำเร็จ: ${err.message}</div>`;
+  }
+}
+
+function renderEnchantments(list) {
+  const grid = document.getElementById("enchant-grid");
+  document.getElementById("enchant-result-count").textContent = list.length;
+
+  if (list.length === 0) {
+    grid.innerHTML = '<div class="loading">ไม่พบเอนแชนท์ที่ตรงกัน</div>';
+    return;
+  }
+
+  // Group by category
+  const grouped = {};
+  for (const e of list) {
+    if (!grouped[e.category]) grouped[e.category] = [];
+    grouped[e.category].push(e);
+  }
+
+  grid.innerHTML = Object.entries(grouped).map(([cat, items]) => `
+    <div class="enchant-category">
+      <h3 class="enchant-cat-title">${cat}</h3>
+      <table class="enchant-table">
+        <thead><tr><th>เอนแชนท์</th><th>โอกาส</th></tr></thead>
+        <tbody>
+          ${items.map(e => `
+            <tr class="${e.chance === 'Always' ? 'enchant-always' : e.chance.includes('150') || e.chance.includes('200') ? 'enchant-rare' : ''}">
+              <td>${e.name}</td>
+              <td class="enchant-chance">${e.chance === 'Always' ? '✅ เสมอ' : e.chance}</td>
+            </tr>
+          `).join("")}
+        </tbody>
+      </table>
+    </div>
+  `).join("");
+}
+
+function setupEnchantFilters() {
+  const catSelect = document.getElementById("filter-enchant-cat");
+  const search = document.getElementById("enchant-search");
+  let debounce;
+
+  function apply() {
+    clearTimeout(debounce);
+    debounce = setTimeout(() => {
+      const cat = catSelect.value;
+      const q = search.value.toLowerCase().trim();
+      let filtered = allEnchantments;
+      if (cat !== "all") filtered = filtered.filter(e => e.category === cat);
+      if (q) filtered = filtered.filter(e => e.name.toLowerCase().includes(q) || e.category.toLowerCase().includes(q));
+      renderEnchantments(filtered);
+    }, 200);
+  }
+
+  catSelect.addEventListener("change", apply);
+  search.addEventListener("input", apply);
 }
 
 // ── Quests ──
