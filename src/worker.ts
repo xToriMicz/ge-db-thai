@@ -482,6 +482,56 @@ async function handleAPI(request: Request, env: Env): Promise<Response> {
     return json({ enchantments: result.results, categories: cats.results.map((c: any) => c.category), total: result.results.length }, 200, 600);
   }
 
+  // GET /api/guides — list guides for content (cache 5 min)
+  if (path === "/api/guides") {
+    const contentType = url.searchParams.get("type") || "general";
+    const contentId = url.searchParams.get("id");
+
+    let query = "SELECT id, title, body, content_type, content_id, author, created_at FROM guides WHERE is_visible = 1";
+    const params: string[] = [];
+
+    if (contentType !== "all") {
+      query += " AND content_type = ?";
+      params.push(contentType);
+    }
+    if (contentId) {
+      query += " AND content_id = ?";
+      params.push(contentId);
+    }
+    query += " ORDER BY created_at DESC LIMIT 50";
+
+    const result = await env.DB.prepare(query).bind(...params).all();
+    return json({ guides: result.results, total: result.results.length }, 200, 300);
+  }
+
+  // POST /api/guides — submit a guide (rate limited)
+  if (path === "/api/guides" && request.method === "POST") {
+    const ip = request.headers.get("CF-Connecting-IP") || "unknown";
+    if (isCommentLimited(ip)) return json({ error: "ส่งได้ไม่เกิน 5 ครั้ง/ชั่วโมง" }, 429);
+
+    const body = await request.json() as any;
+    const title = sanitizeHtml((body.title || "").trim());
+    const content = sanitizeHtml((body.body || "").trim());
+    const contentType = (body.content_type || "general").trim();
+    const contentId = (body.content_id || "").trim();
+    const author = sanitizeHtml((body.author || "ชุมชน").trim()).slice(0, 30);
+
+    if (!title || title.length < 3) return json({ error: "หัวข้อสั้นเกินไป (ขั้นต่ำ 3 ตัวอักษร)" }, 400);
+    if (!content || content.length < 10) return json({ error: "เนื้อหาสั้นเกินไป (ขั้นต่ำ 10 ตัวอักษร)" }, 400);
+    if (title.length > 200) return json({ error: "หัวข้อยาวเกินไป (สูงสุด 200 ตัวอักษร)" }, 400);
+    if (content.length > 5000) return json({ error: "เนื้อหายาวเกินไป (สูงสุด 5000 ตัวอักษร)" }, 400);
+
+    // Honeypot check
+    if (body.website) return json({ ok: true }, 200);
+
+    const ipHash = await hashIP(ip);
+    await env.DB.prepare(
+      "INSERT INTO guides (title, body, content_type, content_id, author, ip_hash) VALUES (?, ?, ?, ?, ?, ?)"
+    ).bind(title, content, contentType, contentId || null, author, ipHash).run();
+
+    return json({ ok: true }, 201);
+  }
+
   // GET /api/raids — list raids (cache 5 min)
   if (path === "/api/raids") {
     const race = url.searchParams.get("race");
