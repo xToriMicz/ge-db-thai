@@ -337,7 +337,7 @@ async function handleAPI(request: Request, env: Env): Promise<Response> {
 
     const like = `%${q}%`;
 
-    const [chars, items, maps, monsters, raids, stances, skills, enchantments] = await Promise.all([
+    const [chars, items, maps, monsters, raids, stances, skills, enchantments, statuses] = await Promise.all([
       env.DB.prepare("SELECT slug, display_name, name_th, type, portrait_x, portrait_y, portrait_class, portrait_sheet FROM characters WHERE display_name LIKE ? OR name LIKE ? OR name_th LIKE ? LIMIT 10")
         .bind(like, like, like).all(),
       env.DB.prepare("SELECT name, name_th, slug, category, category_group, level, image FROM items WHERE name LIKE ? OR name_th LIKE ? LIMIT 10")
@@ -370,7 +370,7 @@ async function handleAPI(request: Request, env: Env): Promise<Response> {
       stances: stances.results,
       skills: skills.results,
       enchantments: enchantments.results,
-      statuses: (statuses as any).results,
+      statuses: statuses.results,
     }, 200, 60);
   }
 
