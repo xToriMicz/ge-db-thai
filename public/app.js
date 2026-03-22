@@ -1939,14 +1939,14 @@ function renderQuestGrid(quests) {
 
 const QUEST_IMG_BASE = {
   'beatrice': { base: '/img/quests/beatrice/', count: 37, intro: [0], stages: {1:[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26], 2:[27,28,29,30], 3:[31,32,33,34,35,36]} },
-  'sharon': { base: '/img/quests/sharon/', count: 48, intro: [], stages: {1:[1,2,3,4,5,6,7,8,9,10,11], 2:[13], 3:[14,15,16,17,18,19,20,21], 4:[22,23,24,25,26,27,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43], 5:[44,45,46,47]} },
+  'sharon': { base: '/img/quests/sharon/', count: 48, intro: [], stages: {1:[1,2,3,4,5,6,7], 2:[8,9,10,11,13], 3:[14,15,16,17,18,19,20,21], 4:[22,23,24,25,26,27,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43], 5:[44,45,46,47]} },
   'dark-emilia': { base: '/img/quests/dark-emilia/', count: 18, intro: [0], stages: {1:[1,2,3], 2:[4,5,6,7,8,9,10,11,12,13,14], 3:[15,16,17]} },
   'nar-2': { base: '/img/quests/nar-2/', count: 19, intro: [0,1,2,3,4,5,6], stages: {2:[7,8,9,10], 3:[11], 4:[12,13,14], 5:[15,16,17,18]} },
   'mboma-ll': { base: '/img/quests/mboma-ll/', count: 22, intro: [0], stages: {1:[1,2,3], 2:[4,5], 3:[6,7,8,9,10], 4:[11,12,13,14,15,16,17,18,19,20], 6:[21]} },
   'jose-cortasar': { base: '/img/quests/jose-cortasar/', count: 5, intro: [0], stages: {1:[1,2], 2:[3], 3:[4]} },
   'gurtrude': { base: '/img/quests/gurtrude/', count: 12, intro: [0], stages: {1:[1,2], 2:[3,4,5,6,7,8], 3:[9,10,11]} },
   'gracielo': { base: '/img/quests/gracielo/', count: 31, intro: [0], stages: {1:[1,2,3,4,5], 2:[6,7,8,9], 3:[10,11], 4:[12,13,14,15,16,17,18,19,20,21,22,23,24,25], 5:[26,27], 6:[28,29], 7:[30]} },
-  'selva': { base: '/img/quests/selva/', count: 35, intro: [], stages: {1:[0,1,2], 2:[3,4,5], 3:[6,7,8,9,10,11,12,14,15,16,17,18,19,20,21], 4:[22,23,24,25,26,27], 5:[29,30,31], 6:[32,33,34]} },
+  'selva': { base: '/img/quests/selva/', count: 35, intro: [0,1,2], stages: {2:[3,4,5], 3:[6,7,8,9,10,11,12,14,15,16,17,18,19,20,21], 4:[22,23,24,25,26,27], 5:[29,30,31], 6:[32,33,34]} },
   'irawan': { base: '/img/quests/irawan/', count: 5, intro: [0], stages: {1:[1,2,3,4]} },
   'ania': { base: '/img/quests/ania/', count: 20, intro: [0], stages: {1:[1,2,3,5,6,7,8,9,10], 2:[11,12,13,14,15,16], 3:[17,18,19]} },
   'vincent': { base: '/img/quests/vincent/', count: 14, intro: [0], stages: {1:[1,2,3,4,5], 2:[6,7,8,9,10,11,12,13]} },
