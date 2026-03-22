@@ -1960,7 +1960,7 @@ const QUEST_IMG_BASE = {
   'emilia': { base: '/img/quests/emilia/', count: 15 },
   'andre': { base: '/img/quests/andre/', count: 28, intro: [0], stages: {1:[1,2], 2:[3,4,5,6], 3:[7,8,9,10], 4:[11,12,13,14,15,16,17], 5:[18,19,20,21,22,23,24,25], 6:[26,27]} },
   'panfilo': { base: '/img/quests/panfilo/', count: 22, intro: [0], stages: {1:[1,2,3,4], 2:[5,6], 3:[7,8,9,10,11,12,13,14], 4:[15,16,17,18,19,20], 5:[21]} },
-  'najib-sharif': { base: '/img/quests/najib-sharif/', count: 36 },
+  'najib-sharif': { base: '/img/quests/najib-sharif/', count: 36, intro: [0], stages: {1:[1,2,3,4], 2:[5], 3:[6], 4:[7,8,9,10], 5:[11,12,13,14,15], 6:[18,19], 7:[20], 8:[21], 9:[22,23,24,25,26,27,28,29], 10:[30,31,32,33,34,35]} },
 };
 
 function mdToHtml(md) {
