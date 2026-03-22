@@ -1939,7 +1939,7 @@ function renderQuestGrid(quests) {
 
 const QUEST_IMG_BASE = {
   'beatrice': { base: '/img/quests/beatrice/', count: 37, intro: [0], stages: {1:[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26], 2:[27,28,29,30], 3:[31,32,33,34,35,36]} },
-  'sharon': { base: '/img/quests/sharon/', count: 48 },
+  'sharon': { base: '/img/quests/sharon/', count: 48, intro: [], stages: {1:[1,2,3,4,5,6,7,8,9,10,11], 2:[13], 3:[14,15,16,17,18,19,20,21], 4:[22,23,24,25,26,27,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43], 5:[44,45,46,47]} },
   'dark-emilia': { base: '/img/quests/dark-emilia/', count: 18 },
   'nar-2': { base: '/img/quests/nar-2/', count: 19, intro: [0,1,2,3,4,5,6], stages: {2:[7,8,9,10], 3:[11], 4:[12,13,14], 5:[15,16,17,18]} },
   'mboma-ll': { base: '/img/quests/mboma-ll/', count: 22, intro: [0], stages: {1:[1,2,3], 2:[4,5], 3:[6,7,8,9,10], 4:[11,12,13,14,15,16,17,18,19,20], 6:[21]} },
