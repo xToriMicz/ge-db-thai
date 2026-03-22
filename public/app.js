@@ -1938,26 +1938,26 @@ function renderQuestGrid(quests) {
 }
 
 const QUEST_IMG_BASE = {
-  'beatrice': { base: '/img/quests/beatrice/', count: 45 },
+  'beatrice': { base: '/img/quests/beatrice/', count: 37 },
   'sharon': { base: '/img/quests/sharon/', count: 48 },
-  'dark-emilia': { base: '/img/quests/dark-emilia/', count: 26 },
+  'dark-emilia': { base: '/img/quests/dark-emilia/', count: 18 },
   'nar-2': { base: '/img/quests/nar-2/', count: 19 },
   'mboma-ll': { base: '/img/quests/mboma-ll/', count: 22 },
   'jose-cortasar': { base: '/img/quests/jose-cortasar/', count: 5 },
-  'gurtrude': { base: '/img/quests/gurtrude/', count: 20 },
-  'gracielo': { base: '/img/quests/gracielo/', count: 39 },
+  'gurtrude': { base: '/img/quests/gurtrude/', count: 12 },
+  'gracielo': { base: '/img/quests/gracielo/', count: 31 },
   'selva': { base: '/img/quests/selva/', count: 35 },
   'irawan': { base: '/img/quests/irawan/', count: 5 },
-  'ania': { base: '/img/quests/ania/', count: 27 },
+  'ania': { base: '/img/quests/ania/', count: 20 },
   'vincent': { base: '/img/quests/vincent/', count: 14 },
   'soso': { base: '/img/quests/soso/', count: 10 },
   'marie': { base: '/img/quests/marie/', count: 59 },
-  'catherine': { base: '/img/quests/catherine/', count: 41 },
-  'catherinetorsche': { base: '/img/quests/catherinetorsche/', count: 30 },
+  'catherine': { base: '/img/quests/catherine/', count: 33, intro: [0], stages: {1:[1,2,3], 2:[4,5,6], 3:[7,8,9,10,11], 4:[12], 5:[13,14], 6:[15,16,17,18,19,20], 7:[21,22], 8:[23], 9:[24,25,26,27,28,29,30,31,32]} },
+  'catherinetorsche': { base: '/img/quests/catherinetorsche/', count: 23 },
   'hellena': { base: '/img/quests/hellena/', count: 11 },
-  'calyce': { base: '/img/quests/calyce/', count: 41 },
+  'calyce': { base: '/img/quests/calyce/', count: 34 },
   'mboma': { base: '/img/quests/mboma/', count: 12 },
-  'emilia': { base: '/img/quests/emilia/', count: 23 },
+  'emilia': { base: '/img/quests/emilia/', count: 15 },
   'andre': { base: '/img/quests/andre/', count: 28 },
   'panfilo': { base: '/img/quests/panfilo/', count: 22 },
   'najib-sharif': { base: '/img/quests/najib-sharif/', count: 36 },
@@ -2015,7 +2015,16 @@ async function showQuestDetail(slug) {
     if (q.stages) {
       stagesHtml = q.stages.map((s, i) => {
         let imgHtml = '';
-        if (imgData && i < imgData.count) {
+        if (imgData && imgData.stages && imgData.stages[s.stage_num]) {
+          // New format: multiple images per stage mapped correctly
+          imgHtml = imgData.stages[s.stage_num].map(imgIdx =>
+            `<div class="quest-stage-img">
+              <img src="${imgData.base}${imgIdx}.webp" alt="ขั้นตอน ${s.stage_num}" loading="lazy" onerror="this.parentElement.style.display='none'">
+              <div class="quest-img-credit">ภาพจาก <a href="${sourceUrl}" target="_blank" rel="noopener">ge.exe.in.th</a></div>
+            </div>`
+          ).join('');
+        } else if (imgData && i < imgData.count) {
+          // Legacy format: 1 image per stage (old quests not yet mapped)
           imgHtml = `
             <div class="quest-stage-img">
               <img src="${imgData.base}${i}.webp" alt="ขั้นตอน ${s.stage_num}" loading="lazy" onerror="this.parentElement.style.display='none'">
@@ -2113,6 +2122,7 @@ async function showQuestDetail(slug) {
         <button class="quest-expand-btn" onclick="toggleQuestFull(this)">📖 อ่านเนื้อหาเต็ม</button>
 
         <div id="quest-full-content" class="quest-full-content hidden">
+          ${imgData && imgData.intro ? imgData.intro.map(idx => `<div class="quest-stage-img"><img src="${imgData.base}${idx}.webp" alt="บทนำ" loading="lazy" onerror="this.parentElement.style.display='none'"><div class="quest-img-credit">ภาพจาก <a href="${sourceUrl}" target="_blank" rel="noopener">ge.exe.in.th</a></div></div>`).join('') : ''}
           <div class="quest-stages-list">
           <h3>ขั้นตอนทั้งหมด (${q.total_stages} stages)</h3>
           ${stagesHtml}
