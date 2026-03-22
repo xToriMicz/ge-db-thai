@@ -1874,29 +1874,29 @@ function setupEnchantFilters() {
 let questsLoaded = false;
 
 const BANNER_MAP = {
-  'beatrice': 'https://cdn.exe.in.th/marketing/granado/images/guide/0523/beatrice/granado_beatrice_banner.jpg',
-  'sharon': 'https://cdn.exe.in.th/marketing/granado/images/guide/0623/sharon/granadoespada-sharon-banner.jpg',
-  'dark-emilia': 'https://cdn.exe.in.th/marketing/granado/images/guide/0623/darkemilia/granadoespada_darkemilia_banner.jpg',
-  'nar-2': 'https://cdn.exe.in.th/marketing/granado/images/guide/0623/nar/granadoespada_nar_banner.jpg',
-  'mboma-ll': 'https://cdn.exe.in.th/marketing/granado/images/guide/0523/mboma/granado_mboma_banner.jpg',
-  'jose-cortasar': 'https://cdn.exe.in.th/marketing/granado/images/guide/0523/jose/granado_jose_banner.jpg',
-  'gurtrude': 'https://cdn.exe.in.th/marketing/granado/images/guide/2023/05/gurtrude/gurtrude_banner.jpg',
-  'gracielo': 'https://cdn.exe.in.th/marketing/granado/images/guide/0523/gracielo/gracielo_banner.jpg',
-  'selva': 'https://cdn.exe.in.th/marketing/granado/images/guide/0523/selva/selva_banner.jpg',
-  'irawan': 'https://cdn.exe.in.th/marketing/granado/images/guide/0323/irawan_banner.jpg',
-  'ania': 'https://cdn.exe.in.th/marketing/granado/images/guide/12/ania/ania_700x365.jpg',
-  'vincent': 'https://cdn.exe.in.th/marketing/granado/images/guide/12/vincent/vincent_700x365.jpg',
-  'soso': 'https://cdn.exe.in.th/marketing/granado/images/guide/12/soso/soso_700x365.jpg',
-  'marie': 'https://cdn.exe.in.th/marketing/granado/images/guide/12/marie/marie_700x365.jpg',
-  'catherine': 'https://cdn.exe.in.th/marketing/granado/images/guide/12/catherine/catherine_700x365.jpg',
-  'catherinetorsche': 'https://cdn.exe.in.th/marketing/granado/images/guide/11/catherinetorsche/catherinetorsche_700x365.jpg',
-  'hellena': 'https://cdn.exe.in.th/marketing/granado/images/guide/11/hellena/hellena_700x365.jpg',
-  'calyce': 'https://cdn.exe.in.th/marketing/granado/images/guide/11/calyce/calyce_700x365.jpg',
-  'mboma': 'https://cdn.exe.in.th/marketing/granado/images/guide/11/mboma/mboma_700x365.jpg',
-  'emilia': 'https://cdn.exe.in.th/marketing/granado/images/guide/11/emilia/emilia_700x365.jpg',
-  'andre': 'https://cdn.exe.in.th/marketing/granado/images/guide/11/andre/andre_700.jpg',
-  'panfilo': 'https://cdn.exe.in.th/marketing/granado/images/guide/11/panfilo/panfilo_700.jpg',
-  'najib-sharif': 'https://cdn.exe.in.th/marketing/granado/images/guide/11/najibsharif/najib_700.jpg',
+  'beatrice': '/img/quests/beatrice/banner.webp',
+  'sharon': '/img/quests/sharon/banner.webp',
+  'dark-emilia': '/img/quests/dark-emilia/banner.webp',
+  'nar-2': '/img/quests/nar-2/banner.webp',
+  'mboma-ll': '/img/quests/mboma-ll/banner.webp',
+  'jose-cortasar': '/img/quests/jose-cortasar/banner.webp',
+  'gurtrude': '/img/quests/gurtrude/banner.webp',
+  'gracielo': '/img/quests/gracielo/banner.webp',
+  'selva': '/img/quests/selva/banner.webp',
+  'irawan': '/img/quests/irawan/banner.webp',
+  'ania': '/img/quests/ania/banner.webp',
+  'vincent': '/img/quests/vincent/banner.webp',
+  'soso': '/img/quests/soso/banner.webp',
+  'marie': '/img/quests/marie/banner.webp',
+  'catherine': '/img/quests/catherine/banner.webp',
+  'catherinetorsche': '/img/quests/catherinetorsche/banner.webp',
+  'hellena': '/img/quests/hellena/banner.webp',
+  'calyce': '/img/quests/calyce/banner.webp',
+  'mboma': '/img/quests/mboma/banner.webp',
+  'emilia': '/img/quests/emilia/banner.webp',
+  'andre': '/img/quests/andre/banner.webp',
+  'panfilo': '/img/quests/panfilo/banner.webp',
+  'najib-sharif': '/img/quests/najib-sharif/banner.webp',
 };
 
 async function loadQuests() {
@@ -1938,29 +1938,29 @@ function renderQuestGrid(quests) {
 }
 
 const QUEST_IMG_BASE = {
-  'beatrice': { base: 'https://cdn.exe.in.th/marketing/granado/images/guide/0523/beatrice/', count: 37 },
-  'sharon': { base: 'https://cdn.exe.in.th/marketing/granado/images/guide/0623/sharon/', count: 47 },
-  'dark-emilia': { base: 'https://cdn.exe.in.th/marketing/granado/images/guide/0623/darkemilia/', count: 18 },
-  'nar-2': { base: 'https://cdn.exe.in.th/marketing/granado/images/guide/0623/nar/', count: 18 },
-  'mboma-ll': { base: 'https://cdn.exe.in.th/marketing/granado/images/guide/0523/mboma/', count: 21 },
-  'jose-cortasar': { base: 'https://cdn.exe.in.th/marketing/granado/images/guide/0523/jose/', count: 5 },
-  'gurtrude': { base: 'https://cdn.exe.in.th/marketing/granado/images/2023/05/gurtrude/', count: 11 },
-  'gracielo': { base: 'https://cdn.exe.in.th/marketing/granado/images/guide/0523/gracielo/', count: 20 },
-  'selva': { base: 'https://cdn.exe.in.th/marketing/granado/images/guide/0523/selva/', count: 35 },
-  'irawan': { base: 'https://cdn.exe.in.th/marketing/granado/images/guide/0323/', count: 5 },
-  'ania': { base: 'https://cdn.exe.in.th/marketing/granado/images/guide/12/ania/', count: 10 },
-  'vincent': { base: 'https://cdn.exe.in.th/marketing/granado/images/guide/12/vincent/', count: 13 },
-  'soso': { base: 'https://cdn.exe.in.th/marketing/granado/images/guide/12/soso/', count: 10 },
-  'marie': { base: 'https://cdn.exe.in.th/marketing/granado/images/guide/12/marie/', count: 58 },
-  'catherine': { base: 'https://cdn.exe.in.th/marketing/granado/images/guide/12/catherine/', count: 32 },
-  'catherinetorsche': { base: 'https://cdn.exe.in.th/marketing/granado/images/guide/11/catherinetorsche/', count: 22 },
-  'hellena': { base: 'https://cdn.exe.in.th/marketing/granado/images/guide/11/hellena/', count: 11 },
-  'calyce': { base: 'https://cdn.exe.in.th/marketing/granado/images/guide/11/calyce/', count: 31 },
-  'mboma': { base: 'https://cdn.exe.in.th/marketing/granado/images/guide/11/mboma/', count: 12 },
-  'emilia': { base: 'https://cdn.exe.in.th/marketing/granado/images/guide/11/emilia/', count: 13 },
-  'andre': { base: 'https://cdn.exe.in.th/marketing/granado/images/guide/11/andre/', count: 17 },
-  'panfilo': { base: 'https://cdn.exe.in.th/marketing/granado/images/guide/11/panfilo/', count: 20 },
-  'najib-sharif': { base: 'https://cdn.exe.in.th/marketing/granado/images/guide/11/najibsharif/', count: 31 },
+  'beatrice': { base: '/img/quests/beatrice/', count: 37 },
+  'sharon': { base: '/img/quests/sharon/', count: 47 },
+  'dark-emilia': { base: '/img/quests/dark-emilia/', count: 18 },
+  'nar-2': { base: '/img/quests/nar-2/', count: 18 },
+  'mboma-ll': { base: '/img/quests/mboma-ll/', count: 21 },
+  'jose-cortasar': { base: '/img/quests/jose-cortasar/', count: 5 },
+  'gurtrude': { base: '/img/quests/gurtrude/', count: 11 },
+  'gracielo': { base: '/img/quests/gracielo/', count: 20 },
+  'selva': { base: '/img/quests/selva/', count: 35 },
+  'irawan': { base: '/img/quests/irawan/', count: 5 },
+  'ania': { base: '/img/quests/ania/', count: 10 },
+  'vincent': { base: '/img/quests/vincent/', count: 13 },
+  'soso': { base: '/img/quests/soso/', count: 10 },
+  'marie': { base: '/img/quests/marie/', count: 58 },
+  'catherine': { base: '/img/quests/catherine/', count: 32 },
+  'catherinetorsche': { base: '/img/quests/catherinetorsche/', count: 22 },
+  'hellena': { base: '/img/quests/hellena/', count: 11 },
+  'calyce': { base: '/img/quests/calyce/', count: 31 },
+  'mboma': { base: '/img/quests/mboma/', count: 12 },
+  'emilia': { base: '/img/quests/emilia/', count: 13 },
+  'andre': { base: '/img/quests/andre/', count: 17 },
+  'panfilo': { base: '/img/quests/panfilo/', count: 20 },
+  'najib-sharif': { base: '/img/quests/najib-sharif/', count: 31 },
 };
 
 function mdToHtml(md) {
@@ -2018,7 +2018,7 @@ async function showQuestDetail(slug) {
         if (imgData && i < imgData.count) {
           imgHtml = `
             <div class="quest-stage-img">
-              <img src="${imgData.base}${i}.png" alt="ขั้นตอน ${s.stage_num}" loading="lazy" onerror="this.parentElement.style.display='none'">
+              <img src="${imgData.base}${i}.webp" alt="ขั้นตอน ${s.stage_num}" loading="lazy" onerror="this.parentElement.style.display='none'">
               <div class="quest-img-credit">ภาพจาก <a href="${sourceUrl}" target="_blank" rel="noopener">ge.exe.in.th</a></div>
             </div>`;
         }
