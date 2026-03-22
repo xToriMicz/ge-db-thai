@@ -2023,36 +2023,26 @@ async function showQuestDetail(slug) {
             </div>`;
         }
 
-        // If full_content exists, render rich content
-        if (s.full_content) {
-          return `
-          <div class="quest-stage">
-            <div class="quest-stage-header">
-              <span class="quest-stage-num">${s.stage_num}</span>
-              <h4>${s.title || 'ขั้นตอน ' + s.stage_num}</h4>
-            </div>
-            ${imgHtml}
-            <div class="quest-stage-details quest-rich-content">${mdToHtml(s.full_content)}</div>
-          </div>`;
-        }
-
         const itemsHtml = s.required_items?.length ? `<div class="quest-stage-items">📦 ไอเทมที่ต้องใช้: ${s.required_items.map(it => `${it.item_name} x${it.quantity}`).join(', ')}</div>` : '';
         const rewardsHtml = s.rewards?.length ? `<div class="quest-stage-rewards">🎁 รางวัล: ${s.rewards.map(r => `${r.reward_name}${r.quantity > 1 ? ' x'+r.quantity : ''}`).join(', ')}</div>` : '';
+
         return `
           <div class="quest-stage">
             <div class="quest-stage-header">
               <span class="quest-stage-num">${s.stage_num}</span>
               <h4>${s.title || 'ขั้นตอน ' + s.stage_num}</h4>
             </div>
-            ${imgHtml}
-            <div class="quest-stage-details">
+            <div class="quest-stage-meta">
+              ${s.conditions ? `<div>📋 เงื่อนไข: ${s.conditions}</div>` : ''}
               ${s.npc ? `<div>🗣️ NPC: <strong>${s.npc}</strong></div>` : ''}
-              ${s.location ? `<div>📍 ${s.location}${s.coordinates ? ' (' + s.coordinates + ')' : ''}</div>` : ''}
-              ${s.objective ? `<div>🎯 ${s.objective}</div>` : ''}
+              ${s.location ? `<div>📍 สถานที่: ${s.location}${s.coordinates ? ' (พิกัด ' + s.coordinates + ')' : ''}</div>` : ''}
+              ${s.objective ? `<div>🎯 เป้าหมาย: ${s.objective}</div>` : ''}
               ${s.boss_name ? `<div>⚔️ บอส: <strong>${s.boss_name}</strong></div>` : ''}
               ${itemsHtml}
               ${rewardsHtml}
             </div>
+            ${imgHtml}
+            ${s.full_content ? `<div class="quest-stage-details quest-rich-content">${mdToHtml(s.full_content)}</div>` : ''}
           </div>`;
       }).join('');
     }
