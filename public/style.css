@@ -943,26 +943,41 @@ body {
   min-width: 50px;
 }
 
-/* Share */
+/* Share — Character Page */
 .share-row {
   display: flex;
-  gap: 6px;
+  align-items: center;
+  gap: 8px;
   flex-wrap: wrap;
 }
-.share-btn {
-  padding: 5px 12px;
-  background: var(--bg-secondary);
-  color: var(--text-secondary);
+.share-row .share-label {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  margin-right: 4px;
+}
+.share-row .share-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
   border: 1px solid var(--border);
-  border-radius: var(--radius);
-  font-size: 0.7rem;
+  background: var(--bg-card);
+  color: var(--text-secondary);
   cursor: pointer;
+  transition: all 0.2s;
   font-family: inherit;
 }
-.share-btn:hover {
-  background: var(--bg-primary);
-  color: var(--text-primary);
+.share-row .share-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-dim);
 }
+.share-row .share-fb:hover { color: #1877f2; border-color: #1877f2; }
+.share-row .share-x:hover { color: var(--text-primary); border-color: var(--text-primary); }
+.share-row .share-line:hover { color: #00b900; border-color: #00b900; }
+.share-row .share-copy:hover { color: var(--accent); border-color: var(--accent); }
 
 /* Comments */
 .comment-form { margin-bottom: 12px; }
@@ -2487,19 +2502,19 @@ footer a:hover { text-decoration: underline; }
   border-top: 1px solid var(--border);
 }
 
-/* Share Buttons */
+/* Share Buttons — Engagement Section */
 .share-buttons {
   display: flex;
   align-items: center;
   gap: 8px;
   margin-bottom: 24px;
 }
-.share-label {
+.share-buttons .share-label {
   color: var(--text-muted);
   font-size: 0.85rem;
   margin-right: 4px;
 }
-.share-btn {
+.share-buttons .share-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2512,14 +2527,14 @@ footer a:hover { text-decoration: underline; }
   cursor: pointer;
   transition: all 0.2s;
 }
-.share-btn:hover {
+.share-buttons .share-btn:hover {
   border-color: var(--accent);
   color: var(--accent);
   background: var(--accent-dim);
 }
-.share-fb:hover { color: #1877f2; border-color: #1877f2; }
-.share-x:hover { color: var(--text-primary); border-color: var(--text-primary); }
-.share-line:hover { color: #00b900; border-color: #00b900; }
+.share-buttons .share-fb:hover { color: #1877f2; border-color: #1877f2; }
+.share-buttons .share-x:hover { color: var(--text-primary); border-color: var(--text-primary); }
+.share-buttons .share-line:hover { color: #00b900; border-color: #00b900; }
 
 /* Star Rating */
 .rating-section {
