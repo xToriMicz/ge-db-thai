@@ -18,7 +18,7 @@ const WEAPON_NAMES = {
 const ARMOR_NAMES = { coat: "Coat", leather: "Leather", metal: "Metal", robe: "Robe" };
 
 const TYPE_LABELS = {
-  basic: "Basic", recruit: "Recruit", cash: "Cash", accomplish: "Special",
+  basic: "Basic", recruit: "Recruit", cash: "Cash", accomplish: "Special", rnpc: "RNPC",
 };
 
 let allCharacters = [];
@@ -327,7 +327,7 @@ function setupFilters() {
   const filterServer = document.getElementById("filter-server");
   const sortBy = document.getElementById("sort-by");
 
-  const TYPE_ORDER = { basic: 0, recruit: 1, cash: 2 };
+  const TYPE_ORDER = { basic: 0, recruit: 1, cash: 2, accomplish: 3, rnpc: 4 };
 
   let debounceTimer;
   const applyFilters = () => {
@@ -551,7 +551,18 @@ async function showDetail(slug) {
               </div>
             </div>
             <div class="stance-detail">
-              ${s.stats?.bonus_atk ? `
+              ${s.info ? `
+                <div class="stance-info-table">
+                  ${s.info.targets ? `<div class="si-row"><span class="si-label">Targets</span><span class="si-val">${s.info.targets}</span></div>` : ''}
+                  ${s.info.range ? `<div class="si-row"><span class="si-label">Range</span><span class="si-val">${s.info.range}</span></div>` : ''}
+                  ${s.info.splash && s.info.splash !== 'None' ? `<div class="si-row"><span class="si-label">Splash</span><span class="si-val">${s.info.splash}</span></div>` : ''}
+                  ${s.info.hits_per_attack ? `<div class="si-row"><span class="si-label">Hits/Attack</span><span class="si-val">${s.info.hits_per_attack}</span></div>` : ''}
+                  ${s.info.hits_flying === 'Yes' ? `<div class="si-row"><span class="si-label">Hits Flying</span><span class="si-val">Yes</span></div>` : ''}
+                  ${s.info.regenerate_sp === 'Yes' ? `<div class="si-row"><span class="si-label">Regen SP</span><span class="si-val">Yes</span></div>` : ''}
+                  ${s.consume ? `<div class="si-row"><span class="si-label">Consume</span><span class="si-val">${s.consume}</span></div>` : ''}
+                </div>
+              ` : ''}
+              ${s.stats ? `
                 <div class="stance-stats-grid">
                   ${s.stats.aspd ? `<div class="ss-item"><span class="ss-label">ASPD</span><span class="ss-val">${s.stats.aspd}</span></div>` : ''}
                   ${s.stats.bonus_atk ? `<div class="ss-item"><span class="ss-label">ATK</span><span class="ss-val">${s.stats.bonus_atk}</span></div>` : ''}
@@ -561,11 +572,20 @@ async function showDetail(slug) {
                   ${s.stats.blk && s.stats.blk !== '0' ? `<div class="ss-item"><span class="ss-label">BLK</span><span class="ss-val">${s.stats.blk}</span></div>` : ''}
                   ${s.stats.mspd_limit ? `<div class="ss-item"><span class="ss-label">MSPD</span><span class="ss-val">${s.stats.mspd_limit}</span></div>` : ''}
                 </div>
+                ${s.resistances && (s.resistances.fire !== '0' || s.resistances.ice !== '0' || s.resistances.lightning !== '0' || s.resistances.abnormal !== '0') ? `
+                  <div class="stance-stats-grid" style="margin-top:4px">
+                    ${s.resistances.fire !== '0' ? `<div class="ss-item"><span class="ss-label">🔥 RES</span><span class="ss-val">${s.resistances.fire}</span></div>` : ''}
+                    ${s.resistances.ice !== '0' ? `<div class="ss-item"><span class="ss-label">❄️ RES</span><span class="ss-val">${s.resistances.ice}</span></div>` : ''}
+                    ${s.resistances.lightning !== '0' ? `<div class="ss-item"><span class="ss-label">⚡ RES</span><span class="ss-val">${s.resistances.lightning}</span></div>` : ''}
+                    ${s.resistances.abnormal !== '0' ? `<div class="ss-item"><span class="ss-label">🛡️ RES</span><span class="ss-val">${s.resistances.abnormal}</span></div>` : ''}
+                  </div>
+                ` : ''}
               ` : ''}
               ${Object.keys(s.lv25_bonus || {}).length > 0 ? `
                 <div class="lv25-bonus">
                   <span class="lv25-label">Lv.25</span>
                   ${Object.entries(s.lv25_bonus).map(([k,v]) => `<span class="lv25-item">${k}: ${v}</span>`).join("")}
+                  ${s.lv25_bonus_extra && s.lv25_bonus_extra.length > 0 && s.lv25_bonus_extra[0] !== 'None' ? s.lv25_bonus_extra.map(e => `<span class="lv25-item lv25-extra">${e}</span>`).join("") : ''}
                 </div>
               ` : ''}
               ${s.skills && s.skills.length > 0 ? `
@@ -585,18 +605,26 @@ async function showDetail(slug) {
                         ${sk.casting_time ? `<span class="si-tag">Cast ${sk.casting_time}</span>` : ''}
                         ${sk.skill_type ? `<span class="si-tag si-type">${sk.skill_type}</span>` : ''}
                         ${sk.target ? `<span class="si-tag">${sk.target}</span>` : ''}
+                        ${sk.duration && sk.duration !== '0 sec.' ? `<span class="si-tag">Dur ${sk.duration}</span>` : ''}
+                        ${sk.hits_flying === 'Yes' ? `<span class="si-tag">✈️ Hits Flying</span>` : ''}
+                        ${sk.knock_down === 'Yes' ? `<span class="si-tag">⬇️ Knock Down</span>` : ''}
+                        ${sk.aggro && sk.aggro !== '0' ? `<span class="si-tag">Aggro ${sk.aggro}</span>` : ''}
+                        ${sk.consume_item ? `<span class="si-tag si-consume">${sk.consume_item}</span>` : ''}
+                        ${sk.soft_armor_atk ? `<span class="si-tag">Soft ${sk.soft_armor_atk}</span>` : ''}
+                        ${sk.heavy_armor_atk ? `<span class="si-tag">Heavy ${sk.heavy_armor_atk}</span>` : ''}
+                        ${sk.light_armor_atk ? `<span class="si-tag">Light ${sk.light_armor_atk}</span>` : ''}
                       </div>
                       ${sk.levels && sk.levels.length > 0 ? (() => {
                         const base = sk.levels.filter(l => { const n = parseInt(l.level.replace(/\D/g,'')); return n <= 10; });
                         const ring = sk.levels.filter(l => { const n = parseInt(l.level.replace(/\D/g,'')); return n > 10; });
                         return `
                         <div class="skill-levels">
-                          ${base.map(l => `<span class="sl-item">${l.level}: ${l.value}</span>`).join("")}
+                          ${base.map(l => `<div class="sl-item">${l.level}${l.value ? `: ${l.value}` : ''}${l.effects && l.effects.length > 0 ? `<div class="sl-effects">${l.effects.map(e => `<div class="sl-effect">${e}</div>`).join("")}</div>` : ''}</div>`).join("")}
                         </div>
                         ${ring.length > 0 ? `
                         <div class="skill-ring-levels">
                           <span class="sl-ring-label">💍 แหวนตัวละคร</span>
-                          ${ring.map(l => `<span class="sl-item sl-ring">${l.level}: ${l.value}</span>`).join("")}
+                          ${ring.map(l => `<div class="sl-item sl-ring">${l.level}${l.value ? `: ${l.value}` : ''}${l.effects && l.effects.length > 0 ? `<div class="sl-effects">${l.effects.map(e => `<div class="sl-effect">${e}</div>`).join("")}</div>` : ''}</div>`).join("")}
                         </div>
                         ` : ''}`;
                       })() : ''}

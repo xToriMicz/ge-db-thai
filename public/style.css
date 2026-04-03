@@ -15,6 +15,7 @@
   --type-recruit: #3fb950;
   --type-cash: #f85149;
   --type-accomplish: #d2a8ff;
+  --type-rnpc: #f0883e;
   --radius: 8px;
   --sprite-url: url('/images/portrait.webp');
   --sprite-url-2: url('/images/portrait02.webp');
@@ -411,6 +412,7 @@ body {
 .type-recruit { background: rgba(63, 185, 80, 0.15); color: var(--type-recruit); }
 .type-cash { background: rgba(248, 81, 73, 0.15); color: var(--type-cash); }
 .type-accomplish { background: rgba(210, 168, 255, 0.15); color: var(--type-accomplish); }
+.type-rnpc { background: rgba(240, 136, 62, 0.15); color: var(--type-rnpc); }
 
 .char-card .new-badge {
   position: absolute;
@@ -792,9 +794,42 @@ body {
   margin-top: 4px;
 }
 .sl-item {
-  font-size: 0.65rem;
-  color: var(--text-muted);
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  padding: 4px 0;
+  border-bottom: 1px solid rgba(48,54,61,0.5);
 }
+.sl-effects {
+  margin-top: 4px;
+  padding-left: 8px;
+  border-left: 2px solid var(--border);
+}
+.sl-effect {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* Stance info table */
+.stance-info-table {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2px 12px;
+  font-size: 0.75rem;
+  margin-bottom: 8px;
+  padding: 8px;
+  background: rgba(13,17,23,0.5);
+  border-radius: 6px;
+}
+.si-row { display: contents; }
+.si-label { color: var(--text-muted); }
+.si-val { color: var(--text-secondary); }
+
+/* Skill consume tag */
+.si-consume { background: rgba(240,136,62,0.15); color: var(--type-rnpc); }
+
+/* Lv25 bonus extra */
+.lv25-extra { font-style: italic; opacity: 0.8; }
 
 /* Character Buff */
 .buff-card {
