@@ -37,9 +37,10 @@
           "A.R. +1",
           "D.R. +1",
           "ATK +50%",
+          "Monster ATK +50%",
           "IMM +10",
-          "STR +10",
-          "HP +10",
+          "STR +50",
+          "HP +50",
           "Ignores debuff RES",
           "Damage received from PC -25%",
           "Skill damage x2",
@@ -93,6 +94,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -136,6 +138,7 @@
         "Penetration": "5+25",
         "Immunity": "5+15"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Layered",
@@ -150,14 +153,34 @@
           "sp_cost": "300",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "A.R. +1"
+              "value": "",
+              "effects": [
+                "A.R. +1",
+                "ATK +18%",
+                "DEF +12",
+                "IMM +6",
+                "Max HP +15000",
+                "Received Magical Damage -5%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "A.R. +1"
+              "value": "",
+              "effects": [
+                "A.R. +1",
+                "ATK +18%",
+                "DEF +12",
+                "IMM +6",
+                "Max HP +15000",
+                "Received Magical Damage -5%"
+              ]
             }
           ],
           "special": []
@@ -175,14 +198,38 @@
           "sp_cost": "560",
           "aggro": "342",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "50%",
+          "heavy_armor_atk": "75%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 984%"
+              "value": "АТК: 984%",
+              "effects": [
+                "Ignoring enemys DEF by 50",
+                "Ignoring Blocking",
+                "Ignoring enemy shields DEF by 1/2",
+                "With skill accuracy, [Fighting-spirit] up",
+                "[Kira Smash] Ignoring enemys DEF by 60, Ignoring Blocking, 50% chance to [Stun], Extra ignoring DEF of [Neutralized] PC in proportion to [STR][A.R.]",
+                "[Kira Strike] Ignoring enemys DEF by 60, Ignoring Evasion, 50% chance to [Armor Crasher], Extra ignoring DEF of [Neutralized] PC in proportion to [STR][A.R.]",
+                "[Kira Slash] Ignoring enemys DEF by 60, 50% chance to [Slow] enemy, Extra ignoring DEF of [Neutralized] PC in proportion to [STR][A.R.]",
+                "[Kira Burst] Ignoring enemys DEF by 60, 50% chance to [Heat], Extra ignoring DEF of [Neutralized] PC in proportion to [STR][A.R.]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1968%"
+              "value": "АТК: 1968%",
+              "effects": [
+                "Ignoring enemys DEF by 50",
+                "Ignoring Blocking",
+                "Ignoring enemy shields DEF by 1/2",
+                "With skill accuracy, [Fighting-spirit] up",
+                "[Kira Smash] Ignoring enemys DEF by 60, Ignoring Blocking, 50% chance to [Stun], Extra ignoring DEF of [Neutralized] PC in proportion to [STR][A.R.]",
+                "[Kira Strike] Ignoring enemys DEF by 60, Ignoring Evasion, 50% chance to [Armor Crasher], Extra ignoring DEF of [Neutralized] PC in proportion to [STR][A.R.]",
+                "[Kira Slash] Ignoring enemys DEF by 60, 50% chance to [Slow] enemy, Extra ignoring DEF of [Neutralized] PC in proportion to [STR][A.R.]",
+                "[Kira Burst] Ignoring enemys DEF by 60, 50% chance to [Heat], Extra ignoring DEF of [Neutralized] PC in proportion to [STR][A.R.]"
+              ]
             }
           ],
           "special": []
@@ -200,14 +247,32 @@
           "sp_cost": "750",
           "aggro": "159",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "60%",
+          "heavy_armor_atk": "80%",
+          "light_armor_atk": "130%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1492.5%"
+              "value": "АТК: 1492.5%",
+              "effects": [
+                "Ignores enemys DEF by 60",
+                "Ignores Evasion",
+                "In Skill Casting/Accuracy, [Barisadas Fighting Spirit] increases",
+                "[Pales Crash] Ignores enemys DEF by 60, Ignores Evasion, 50% chance to impose [Panic] on enemy, Extra ignores DEF of PC enemy in [Neutralized] state in proportion to [STR][A.R.]",
+                "Damage to Evasion type enemies +1% per 1 evasion"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2985%"
+              "value": "АТК: 2985%",
+              "effects": [
+                "Ignores enemys DEF by 60",
+                "Ignores Evasion",
+                "In Skill Casting/Accuracy, [Barisadas Fighting Spirit] increases",
+                "[Pales Crash] Ignores enemys DEF by 60, Ignores Evasion, 50% chance to impose [Panic] on enemy, Extra ignores DEF of PC enemy in [Neutralized] state in proportion to [STR][A.R.]",
+                "Damage to Evasion type enemies +1% per 1 evasion"
+              ]
             }
           ],
           "special": []
@@ -225,14 +290,38 @@
           "sp_cost": "540",
           "aggro": "260",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "70%",
+          "heavy_armor_atk": "90%",
+          "light_armor_atk": "130%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1449%"
+              "value": "АТК: 1449%",
+              "effects": [
+                "Ignores enemys DEF by 75",
+                "Ignores Evasion",
+                "In Skill Accuracy, [Fighting Spirit] increases",
+                "Ignores DEF of enemy in [Kaleidor Burst] state by 75, Ignores Block, 50% chance to impose [Mortal Wound], Extra ignores DEF of PC enemy in [Neutralization] state in proportion to [STR] [A.R.]",
+                "Ignores DEF of enemy in [Kaleidor Smash] state by 75, Ignores Evasion, 50% chance to impose [Stun], Extra ignores DEF of PC enemy in [Neutralization] state in proportion to [STR] [A.R.]",
+                "Ignores DEF of enemy in [Kaleidor Slash] state by 75, Extra ignores DEF of PC enemy in [Neutralization] state in proportion to [STR] [A.R.]",
+                "Ignores DEF of enemy in [Kaleidor Strike] state by 75, 50% chance to impose [Stun], Extra ignores DEF of PC enemy in [Neutralization] state in proportion to [STR] [A.R.]",
+                "Damage to Evasion type enemies +1% per 1 evasion"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2898%"
+              "value": "АТК: 2898%",
+              "effects": [
+                "Ignores enemys DEF by 75",
+                "Ignores Evasion",
+                "In Skill Accuracy, [Fighting Spirit] increases",
+                "Ignores DEF of enemy in [Kaleidor Burst] state by 75, Ignores Block, 50% chance to impose [Mortal Wound], Extra ignores DEF of PC enemy in [Neutralization] state in proportion to [STR] [A.R.]",
+                "Ignores DEF of enemy in [Kaleidor Smash] state by 75, Ignores Evasion, 50% chance to impose [Stun], Extra ignores DEF of PC enemy in [Neutralization] state in proportion to [STR] [A.R.]",
+                "Ignores DEF of enemy in [Kaleidor Slash] state by 75, Extra ignores DEF of PC enemy in [Neutralization] state in proportion to [STR] [A.R.]",
+                "Ignores DEF of enemy in [Kaleidor Strike] state by 75, 50% chance to impose [Stun], Extra ignores DEF of PC enemy in [Neutralization] state in proportion to [STR] [A.R.]",
+                "Damage to Evasion type enemies +1% per 1 evasion"
+              ]
             }
           ],
           "special": []
@@ -250,14 +339,28 @@
           "sp_cost": "2250",
           "aggro": "350",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 458%"
+              "value": "АТК: 458%",
+              "effects": [
+                "Melee Fixed damage",
+                "Hitting enemy, [Holy Sword] is lifted",
+                "The more targets, the more damage"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 916%"
+              "value": "АТК: 916%",
+              "effects": [
+                "Melee Fixed damage",
+                "Hitting enemy, [Holy Sword] is lifted",
+                "The more targets, the more damage"
+              ]
             }
           ],
           "special": []

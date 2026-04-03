@@ -97,6 +97,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [
         {
           "name": "Fireball",
@@ -111,14 +112,24 @@
           "sp_cost": "60",
           "aggro": "35",
           "skill_type": "Magic",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 500%"
+              "value": "АТК: 500%",
+              "effects": [
+                "20% chance to inflict [Burn]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1000%"
+              "value": "АТК: 1000%",
+              "effects": [
+                "20% chance to inflict [Burn]"
+              ]
             }
           ],
           "special": []
@@ -136,26 +147,55 @@
           "sp_cost": "90",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Elemental Orb x 1",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 110 sec."
+              "value": "",
+              "effects": [
+                "Duration: 110 sec.",
+                "Fire RES+15",
+                "Extra Fire ATK+13"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 200 sec."
+              "value": "",
+              "effects": [
+                "Duration: 200 sec.",
+                "Fire RES+15",
+                "Extra Fire ATK+40"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 210 sec."
+              "value": "",
+              "effects": [
+                "Duration: 210 sec.",
+                "Fire RES+15",
+                "Extra Fire ATK+43"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 220 sec."
+              "value": "",
+              "effects": [
+                "Duration: 220 sec.",
+                "Fire RES+15",
+                "Extra Fire ATK+46"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 230 sec."
+              "value": "",
+              "effects": [
+                "Duration: 230 sec.",
+                "Fire RES+15",
+                "Extra Fire ATK+49"
+              ]
             }
           ],
           "special": []
@@ -173,14 +213,24 @@
           "sp_cost": "180",
           "aggro": "186",
           "skill_type": "Magic",
+          "consume_item": "Elemental Orb x 1",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1200%"
+              "value": "АТК: 1200%",
+              "effects": [
+                "Summon Flame Ground"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "Summon Flame Ground"
+              ]
             }
           ],
           "special": []
@@ -225,6 +275,7 @@
         "Penetration": "5+25",
         "Immunity": "10"
       },
+      "consume": "Elemental Sphere x 2",
       "skills": [
         {
           "name": "Quick Boom",
@@ -239,14 +290,32 @@
           "sp_cost": "350",
           "aggro": "50",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 2",
+          "soft_armor_atk": "50%",
+          "heavy_armor_atk": "130%",
+          "light_armor_atk": "120%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1400%"
+              "value": "АТК: 1400%",
+              "effects": [
+                "30% Chance to inflict [Burn] on enemy",
+                "Applies [Lava Shield]+1 upon caster",
+                "Increase DMG in proportion to [Lava Shield] Level",
+                "Skill Damage increases by (3% of extra [INT])",
+                "Additionally, ignores the following amount of RES: 10+ (level of [Lava Shield]/ 2)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2800%"
+              "value": "АТК: 2800%",
+              "effects": [
+                "30% Chance to inflict [Burn] on enemy",
+                "Applies [Lava Shield]+1 upon caster",
+                "Increase DMG in proportion to [Lava Shield] Level",
+                "Skill Damage increases by (3% of extra [INT])",
+                "Additionally, ignores the following amount of RES: 10+ (level of [Lava Shield]/ 2)"
+              ]
             }
           ],
           "special": [
@@ -258,7 +327,7 @@
           "name": "Flame Rampage",
           "image": "ifb_flamerampage.jpg",
           "description": "Control the reckless flame to concentrate it on one enemy.",
-          "target": "1 enemy within a range of 15m",
+          "target": "1 enemy within a range of 13m",
           "casting_time": "1.6 sec.",
           "cooldown": "12 sec.",
           "duration": "3.4 sec.",
@@ -267,14 +336,32 @@
           "sp_cost": "500",
           "aggro": "150",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "50%",
+          "heavy_armor_atk": "130%",
+          "light_armor_atk": "120%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2019%"
+              "value": "АТК: 2019%",
+              "effects": [
+                "40% Chance to inflict [Burn] on enemy",
+                "Applies [Lava Shield]+1 upon caster",
+                "Increase DMG in proportion to [Lava Shield] Level",
+                "Skill Damage increases by (3% of extra [INT])",
+                "Additionally, ignores the following amount of RES: 10+ (level of [Lava Shield]/ 2)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4038%"
+              "value": "АТК: 4038%",
+              "effects": [
+                "40% Chance to inflict [Burn] on enemy",
+                "Applies [Lava Shield]+1 upon caster",
+                "Increase DMG in proportion to [Lava Shield] Level",
+                "Skill Damage increases by (3% of extra [INT])",
+                "Additionally, ignores the following amount of RES: 10+ (level of [Lava Shield]/ 2)"
+              ]
             }
           ],
           "special": [
@@ -295,14 +382,34 @@
           "sp_cost": "650",
           "aggro": "180",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "50%",
+          "heavy_armor_atk": "130%",
+          "light_armor_atk": "120%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2300%"
+              "value": "АТК: 2300%",
+              "effects": [
+                "50% Chance to inflict [Burn] on enemy",
+                "Applies [Lava Shield]+1 upon caster",
+                "Increase DMG in proportion to [Lava Shield] Level",
+                "Skill Damage increases by (3% of extra [INT])",
+                "Lesser targets, more damage",
+                "Additionally, ignores the following amount of RES: 10+ (level of [Lava Shield]/ 2)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4600%"
+              "value": "АТК: 4600%",
+              "effects": [
+                "50% Chance to inflict [Burn] on enemy",
+                "Applies [Lava Shield]+1 upon caster",
+                "Increase DMG in proportion to [Lava Shield] Level",
+                "Skill Damage increases by (3% of extra [INT])",
+                "Lesser targets, more damage",
+                "Additionally, ignores the following amount of RES: 10+ (level of [Lava Shield]/ 2)"
+              ]
             }
           ],
           "special": [
@@ -323,14 +430,32 @@
           "sp_cost": "800",
           "aggro": "80",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 8",
+          "soft_armor_atk": "50%",
+          "heavy_armor_atk": "130%",
+          "light_armor_atk": "120%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "60% Chance to inflict [Burn] on enemy",
+                "Applies [Lava Shield]+1 upon caster",
+                "Increase DMG in proportion to [Lava Shield] Level",
+                "Skill Damage increases by (3% of extra [INT])",
+                "Additionally, ignores the following amount of RES: 10+ (level of [Lava Shield]/ 2)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4800%"
+              "value": "АТК: 4800%",
+              "effects": [
+                "60% Chance to inflict [Burn] on enemy",
+                "Applies [Lava Shield]+1 upon caster",
+                "Increase DMG in proportion to [Lava Shield] Level",
+                "Skill Damage increases by (3% of extra [INT])",
+                "Additionally, ignores the following amount of RES: 10+ (level of [Lava Shield]/ 2)"
+              ]
             }
           ],
           "special": [
@@ -342,23 +467,43 @@
           "name": "Summon Sekhmet",
           "image": "ifb_summonsekhmet.jpg",
           "description": "Summoned Sekhmet causes a strong fire storm around it.",
-          "target": "Up to 15 enemies within a range of 10m",
+          "target": "Up to 15 enemies within a range of 13m",
           "casting_time": "1.7 sec.",
-          "cooldown": "40 sec.",
+          "cooldown": "28 sec.",
           "duration": "2.4 sec.",
           "hits_flying": "Yes",
           "knock_down": "Yes",
           "sp_cost": "1000",
           "aggro": "200",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "50%",
+          "heavy_armor_atk": "130%",
+          "light_armor_atk": "120%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2500%"
+              "value": "АТК: 2500%",
+              "effects": [
+                "60% Chance to inflict [Burn] on enemy",
+                "Applies [Lava Shield]+1 upon caster",
+                "Increase DMG in proportion to [Lava Shield] Level",
+                "Skill Damage increases by (3% of extra [INT])",
+                "Lesser targets, more damage",
+                "Additionally, ignores the following amount of RES: 10+ (level of [Lava Shield]/ 2)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5000%"
+              "value": "АТК: 5000%",
+              "effects": [
+                "60% Chance to inflict [Burn] on enemy",
+                "Applies [Lava Shield]+1 upon caster",
+                "Increase DMG in proportion to [Lava Shield] Level",
+                "Skill Damage increases by (3% of extra [INT])",
+                "Lesser targets, more damage",
+                "Additionally, ignores the following amount of RES: 10+ (level of [Lava Shield]/ 2)"
+              ]
             }
           ],
           "special": [

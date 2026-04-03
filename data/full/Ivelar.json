@@ -98,6 +98,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -143,6 +144,7 @@
         "Penetration": "15+20",
         "Immunity": "5+5"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Redeo",
@@ -157,14 +159,36 @@
           "sp_cost": "Ancient Star Orb x 15undefined",
           "aggro": "15",
           "skill_type": "",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 500 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 500 seconds",
+                "Attack Rating +1",
+                "ATK +30%",
+                "ATK against monsters +60%",
+                "Evasion +20",
+                "Movement Speed +10%",
+                "Movement Speed Limit +1.00"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 500 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 500 seconds",
+                "Attack Rating +1",
+                "ATK +30%",
+                "ATK against monsters +60%",
+                "Evasion +20",
+                "Movement Speed +10%",
+                "Movement Speed Limit +1.00"
+              ]
             }
           ],
           "special": []
@@ -182,14 +206,34 @@
           "sp_cost": "Ancient Star Orb x 10undefined",
           "aggro": "50",
           "skill_type": "",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "90%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1420%"
+              "value": "АТК: 1420%",
+              "effects": [
+                "Cast: [Unattackable]",
+                "Cast while [Situs] active: [Situs] +3",
+                "Skill damage increases according to [Situs] level (PC damage halved)",
+                "Level 1: Skill damage x2 (x1.5 for PCs)",
+                "Level 2: Skill damage x3 (x2 for PCs)",
+                "Level 3: Skill damage x4 (x2.5 for PCs)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2840%"
+              "value": "АТК: 2840%",
+              "effects": [
+                "Cast: [Unattackable]",
+                "Cast while [Situs] active: [Situs] +3",
+                "Skill damage increases according to [Situs] level (PC damage halved)",
+                "Level 1: Skill damage x2 (x1.5 for PCs)",
+                "Level 2: Skill damage x3 (x2 for PCs)",
+                "Level 3: Skill damage x4 (x2.5 for PCs)"
+              ]
             }
           ],
           "special": []
@@ -207,14 +251,32 @@
           "sp_cost": "Ancient Star Orb x 5undefined",
           "aggro": "30",
           "skill_type": "",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "90%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1090%"
+              "value": "АТК: 1090%",
+              "effects": [
+                "Cast while [Situs] active: [Situs] +3",
+                "Skill damage increases according to [Situs] level (PC damage halved)",
+                "Level 1: Skill damage x2 (x1.5 for PCs)",
+                "Level 2: Skill damage x3 (x2 for PCs)",
+                "Level 3: Skill damage x4 (x2.5 for PCs)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2180%"
+              "value": "АТК: 2180%",
+              "effects": [
+                "Cast while [Situs] active: [Situs] +3",
+                "Skill damage increases according to [Situs] level (PC damage halved)",
+                "Level 1: Skill damage x2 (x1.5 for PCs)",
+                "Level 2: Skill damage x3 (x2 for PCs)",
+                "Level 3: Skill damage x4 (x2.5 for PCs)"
+              ]
             }
           ],
           "special": []
@@ -232,14 +294,32 @@
           "sp_cost": "Ancient Star Orb x 10undefined",
           "aggro": "80",
           "skill_type": "",
+          "consume_item": "",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "90%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1560%"
+              "value": "АТК: 1560%",
+              "effects": [
+                "Cast while [Situs] active: [Situs] +3",
+                "Skill damage increases according to [Situs] level (PC damage halved)",
+                "Level 1: Skill damage x2 (x1.5 for PCs)",
+                "Level 2: Skill damage x3 (x2 for PCs)",
+                "Level 3: Skill damage x4 (x2.5 for PCs)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3120%"
+              "value": "АТК: 3120%",
+              "effects": [
+                "Cast while [Situs] active: [Situs] +3",
+                "Skill damage increases according to [Situs] level (PC damage halved)",
+                "Level 1: Skill damage x2 (x1.5 for PCs)",
+                "Level 2: Skill damage x3 (x2 for PCs)",
+                "Level 3: Skill damage x4 (x2.5 for PCs)"
+              ]
             }
           ],
           "special": []
@@ -257,14 +337,30 @@
           "sp_cost": "Ancient Star Orb x 23undefined",
           "aggro": "200",
           "skill_type": "",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1430%"
+              "value": "АТК: 1430%",
+              "effects": [
+                "Upon casting, [Unattackable].",
+                "Skill damage increased up to 16x (4x for PCs) depending on the [Situs] buff level.",
+                "Additional enemy defense ignored up to 150 (75 for PCs) depending on the [Situs] buff level.",
+                "[Situs] resets on skill hit."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2860%"
+              "value": "АТК: 2860%",
+              "effects": [
+                "Upon casting, [Unattackable].",
+                "Skill damage increased up to 16x (4x for PCs) depending on the [Situs] buff level.",
+                "Additional enemy defense ignored up to 150 (75 for PCs) depending on the [Situs] buff level.",
+                "[Situs] resets on skill hit."
+              ]
             }
           ],
           "special": [

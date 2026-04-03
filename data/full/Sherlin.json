@@ -122,6 +122,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [
         {
           "name": "Fireball",
@@ -136,14 +137,24 @@
           "sp_cost": "60",
           "aggro": "35",
           "skill_type": "Magic",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 500%"
+              "value": "АТК: 500%",
+              "effects": [
+                "20% chance to inflict [Burn]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1000%"
+              "value": "АТК: 1000%",
+              "effects": [
+                "20% chance to inflict [Burn]"
+              ]
             }
           ],
           "special": []
@@ -161,26 +172,55 @@
           "sp_cost": "90",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Elemental Orb x 1",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 110 sec."
+              "value": "",
+              "effects": [
+                "Duration: 110 sec.",
+                "Fire RES+15",
+                "Extra Fire ATK+13"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 200 sec."
+              "value": "",
+              "effects": [
+                "Duration: 200 sec.",
+                "Fire RES+15",
+                "Extra Fire ATK+40"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 210 sec."
+              "value": "",
+              "effects": [
+                "Duration: 210 sec.",
+                "Fire RES+15",
+                "Extra Fire ATK+43"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 220 sec."
+              "value": "",
+              "effects": [
+                "Duration: 220 sec.",
+                "Fire RES+15",
+                "Extra Fire ATK+46"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 230 sec."
+              "value": "",
+              "effects": [
+                "Duration: 230 sec.",
+                "Fire RES+15",
+                "Extra Fire ATK+49"
+              ]
             }
           ],
           "special": []
@@ -198,14 +238,24 @@
           "sp_cost": "180",
           "aggro": "186",
           "skill_type": "Magic",
+          "consume_item": "Elemental Orb x 1",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1200%"
+              "value": "АТК: 1200%",
+              "effects": [
+                "Summon Flame Ground"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "Summon Flame Ground"
+              ]
             }
           ],
           "special": []
@@ -245,6 +295,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [
         {
           "name": "Hell Breath",
@@ -259,14 +310,24 @@
           "sp_cost": "80",
           "aggro": "67",
           "skill_type": "Magic",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1300%"
+              "value": "АТК: 1300%",
+              "effects": [
+                "25% chance to inflict [Burn] enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2600%"
+              "value": "АТК: 2600%",
+              "effects": [
+                "25% chance to inflict [Burn] enemy"
+              ]
             }
           ],
           "special": []
@@ -284,14 +345,24 @@
           "sp_cost": "160",
           "aggro": "97",
           "skill_type": "Magic",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1400%"
+              "value": "АТК: 1400%",
+              "effects": [
+                "15% chance to inflict [Burn] enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2800%"
+              "value": "АТК: 2800%",
+              "effects": [
+                "15% chance to inflict [Burn] enemy"
+              ]
             }
           ],
           "special": []
@@ -309,14 +380,24 @@
           "sp_cost": "240",
           "aggro": "216",
           "skill_type": "Magic",
+          "consume_item": "Elemental Orb x 2",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "15% chance to inflict [Burn] enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4400%"
+              "value": "АТК: 4400%",
+              "effects": [
+                "15% chance to inflict [Burn] enemy"
+              ]
             }
           ],
           "special": []
@@ -357,6 +438,7 @@
         "Penetration": "20",
         "Immunity": "10"
       },
+      "consume": "Elemental Sphere x 2",
       "skills": [
         {
           "name": "Fire Golem Control",
@@ -371,14 +453,28 @@
           "sp_cost": "500",
           "aggro": "0",
           "skill_type": "Build",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Available to summon maximum 1"
+              "value": "",
+              "effects": [
+                "Available to summon maximum 1",
+                "Provides bonus ability to the Golem according to skill level and INT stats",
+                "Enforce [Lava Flare] in the first call"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Available to summon maximum 1 at the same time"
+              "value": "",
+              "effects": [
+                "Available to summon maximum 1 at the same time",
+                "Provides bonus ability to the Golem according to skill level and INT stats",
+                "Enforce [Lava Flare] after summoning"
+              ]
             }
           ],
           "special": [
@@ -399,14 +495,26 @@
           "sp_cost": "500",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Teleports Fire Golem to your location."
+              "value": "",
+              "effects": [
+                "Teleports Fire Golem to your location.",
+                "Fire Golem : Use [Lava Flare]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Teleports Fire Golem to your location."
+              "value": "",
+              "effects": [
+                "Teleports Fire Golem to your location.",
+                "Fire Golem : Use [Lava Flare]"
+              ]
             }
           ],
           "special": []
@@ -424,14 +532,26 @@
           "sp_cost": "400",
           "aggro": "128",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 8",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1100%"
+              "value": "АТК: 1100%",
+              "effects": [
+                "100% chance to inflict [Burn] on enemy",
+                "Fire Golem : Use [Lava Clapper]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "100% chance to inflict [Burn] on enemy",
+                "Fire Golem : Use [Lava Clapper]"
+              ]
             }
           ],
           "special": []
@@ -449,14 +569,32 @@
           "sp_cost": "700",
           "aggro": "189",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": [
+                "Recharging time 20 sec.",
+                "Possible to use max 3 times",
+                "Re-charge when use it over 1 time.",
+                "100% chance to inflict [Burning Wave] on enemy",
+                "Fire Golem : Use [Lava Spire] to ground type enemy."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3600%"
+              "value": "АТК: 3600%",
+              "effects": [
+                "Recharging time 20 sec.",
+                "Possible to use max 3 times",
+                "Re-charge when use it over 1 time.",
+                "100% chance to inflict [Burning Wave] on enemy",
+                "Fire Golem : Use [Lava Spire] to ground type enemy."
+              ]
             }
           ],
           "special": []
@@ -474,14 +612,26 @@
           "sp_cost": "800",
           "aggro": "240",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 8",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1500%"
+              "value": "АТК: 1500%",
+              "effects": [
+                "100% chance to inflict [Burning Wave] on enemy",
+                "Fire Golem : Use [Meteo]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "100% chance to inflict [Burning Wave] on enemy",
+                "Fire Golem : Use [Meteo]"
+              ]
             }
           ],
           "special": []
@@ -532,6 +682,7 @@
         "Penetration": "25+13",
         "Immunity": "10+20"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Burning Tempest",
@@ -546,14 +697,30 @@
           "sp_cost": "820",
           "aggro": "200",
           "skill_type": "Magic",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "30% chance to inflict [Burn] on enemy",
+                "Skill Damage increases according to 6% of extra [INT]",
+                "Ignores 50 Fire RES",
+                "Skill Damage additionally increases according to number of targets (less targets, more damage)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4400%"
+              "value": "АТК: 4400%",
+              "effects": [
+                "30% chance to inflict [Burn] on enemy",
+                "Skill Damage increases according to 6% of extra [INT]",
+                "Ignores 50 Fire RES",
+                "Skill Damage additionally increases according to number of targets (less targets, more damage)"
+              ]
             }
           ],
           "special": []
@@ -571,14 +738,30 @@
           "sp_cost": "400",
           "aggro": "121",
           "skill_type": "Magic",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2500%"
+              "value": "АТК: 2500%",
+              "effects": [
+                "40% chance to [Burn] enemy",
+                "Skill Damage increases according to 5% of extra [INT]",
+                "Ignores 80 Fire RES",
+                "Skill Damage additionally increases according to number of targets (less targets, more damage)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5000%"
+              "value": "АТК: 5000%",
+              "effects": [
+                "40% chance to [Burn] enemy",
+                "Skill Damage increases according to 5% of extra [INT]",
+                "Ignores 80 Fire RES",
+                "Skill Damage additionally increases according to number of targets (less targets, more damage)"
+              ]
             }
           ],
           "special": []
@@ -596,14 +779,30 @@
           "sp_cost": "800",
           "aggro": "250",
           "skill_type": "Magic",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 3200%"
+              "value": "АТК: 3200%",
+              "effects": [
+                "50% chance to inflict [Burn] on enemy",
+                "Skill Damage increases according to 4% of extra [INT]",
+                "Ignores 70 Fire RES",
+                "Skill Damage additionally increases according to number of targets (less targets, more damage)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 6400%"
+              "value": "АТК: 6400%",
+              "effects": [
+                "50% chance to inflict [Burn] on enemy",
+                "Skill Damage increases according to 4% of extra [INT]",
+                "Ignores 70 Fire RES",
+                "Skill Damage additionally increases according to number of targets (less targets, more damage)"
+              ]
             }
           ],
           "special": []
@@ -621,14 +820,28 @@
           "sp_cost": "800",
           "aggro": "180",
           "skill_type": "Magic",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 3500%"
+              "value": "АТК: 3500%",
+              "effects": [
+                "60% chance to inflict [Burn] on enemy",
+                "Skill Damage increases according to 3% of extra [INT]",
+                "Ignores 100 Fire RES"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 7000%"
+              "value": "АТК: 7000%",
+              "effects": [
+                "60% chance to inflict [Burn] on enemy",
+                "Skill Damage increases according to 3% of extra [INT]",
+                "Ignores 100 Fire RES"
+              ]
             }
           ],
           "special": []
@@ -646,14 +859,30 @@
           "sp_cost": "1000",
           "aggro": "353",
           "skill_type": "Magic",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 3800%"
+              "value": "АТК: 3800%",
+              "effects": [
+                "60% chance to inflict [Burn] on enemy",
+                "Skill Damage increases according to 3% of extra [INT]",
+                "Ignores 100 Fire RES",
+                "Skill Damage additionally increases according to number of targets (less targets, more damage)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 7600%"
+              "value": "АТК: 7600%",
+              "effects": [
+                "60% chance to inflict [Burn] on enemy",
+                "Skill Damage increases according to 3% of extra [INT]",
+                "Ignores 100 Fire RES",
+                "Skill Damage additionally increases according to number of targets (less targets, more damage)"
+              ]
             }
           ],
           "special": []

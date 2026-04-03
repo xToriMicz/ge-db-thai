@@ -89,6 +89,7 @@ function parseStanceDetail(sectionHtml, stanceName) {
     info: {},
     stats: {},
     lv25_bonus: {},
+    consume: "",
     skills: [],
   };
 
@@ -103,6 +104,12 @@ function parseStanceDetail(sectionHtml, stanceName) {
       if (dataCells[0]) {
         const infoLines = extractTextLines(dataCells[0][1]);
         for (const line of infoLines) {
+          // Consume items (e.g. "Consumes Metal Shell Ammo x 2")
+          const consumeMatch = line.match(/^Consumes?\s+(.+)$/i);
+          if (consumeMatch) {
+            result.consume = consumeMatch[1].trim();
+            continue;
+          }
           // Handle "Targets: 1 enemy" style and "Regenerate SP: Yes"
           const match = line.match(/^([A-Z][A-Za-z\s]+?):\s*(.+)$/);
           if (match) result.info[match[1].trim()] = match[2].trim();
@@ -164,6 +171,10 @@ function parseStanceDetail(sectionHtml, stanceName) {
       sp_cost: "",
       aggro: "",
       skill_type: "",
+      consume_item: "",
+      soft_armor_atk: "",
+      heavy_armor_atk: "",
+      light_armor_atk: "",
       levels: [],
       special: [],
     };
@@ -182,17 +193,17 @@ function parseStanceDetail(sectionHtml, stanceName) {
       else if (text.startsWith("SP:")) skill.sp_cost = text.replace("SP:", "").trim();
       else if (text.startsWith("Aggro:")) skill.aggro = text.replace("Aggro:", "").trim();
       else if (text.startsWith("Skill Type:")) skill.skill_type = text.replace("Skill Type:", "").trim();
+      else if (text.match(/^Consumes?\s+/i)) skill.consume_item = text.replace(/^Consumes?\s+/i, "").trim();
+      else if (text.startsWith("Soft Armor ATK:")) skill.soft_armor_atk = text.replace("Soft Armor ATK:", "").trim();
+      else if (text.startsWith("Heavy Armor ATK:")) skill.heavy_armor_atk = text.replace("Heavy Armor ATK:", "").trim();
+      else if (text.startsWith("Light Armor ATK:")) skill.light_armor_atk = text.replace("Light Armor ATK:", "").trim();
       else if (text.match(/^Level \d+$/)) {
-        // Next text should be the ATK value
-        const idx = texts.indexOf(text);
-        if (idx + 1 < texts.length) {
-          skill.levels.push({ level: text, value: texts[idx + 1] });
-        }
+        // Skip — levels are parsed from HTML blocks below
       }
       else if (text.match(/^(АТК|ATK):/)) {
-        // Already captured via Level pattern above
+        // Captured in level effects below
       }
-      else if (text.match(/^\d+ (adjacent|enemies|enemy)/i) || text.match(/^Up to \d+/)) {
+      else if (text.match(/^\d+ (adjacent|enemies|enemy)/i) || text.match(/^Up to \d+/) || text.match(/^Max Range/)) {
         skill.target = text;
       }
       else if (text.startsWith("Double Damage") || text.startsWith("Additional") || text.match(/^[A-Z].*bonus/i)) {
@@ -200,6 +211,30 @@ function parseStanceDetail(sectionHtml, stanceName) {
       }
       else if (!skill.description && text.length > 20 && !text.match(/^(None|Level|\d)/) && !text.includes(":")) {
         skill.description = text;
+      }
+    }
+
+    // Parse skill levels with full effects from HTML blocks
+    // Format: <strong>Level N</strong><br>ATK: X%<br>effect1<br>effect2...
+    const levelBlocks = [...skillBlock.matchAll(/<strong>(Level \d+)<\/strong><br\s*\/?>([\s\S]*?)(?=<strong>Level|<\/p>|<\/div>)/gi)];
+    if (levelBlocks.length > 0) {
+      skill.levels = [];
+      for (const block of levelBlocks) {
+        const levelName = block[1].trim();
+        const content = block[2];
+        const effectLines = content.split(/<br\s*\/?>/)
+          .map(s => s.replace(/<[^>]*>/g, "").replace(/&nbsp;/g, " ").trim())
+          .filter(s => s.length > 0);
+
+        // First line is usually ATK value
+        const atkLine = effectLines.find(l => l.match(/^(АТК|ATK):/));
+        const effects = effectLines.filter(l => !l.match(/^(АТК|ATK):/));
+
+        skill.levels.push({
+          level: levelName,
+          value: atkLine || "",
+          effects: effects,
+        });
       }
     }
 

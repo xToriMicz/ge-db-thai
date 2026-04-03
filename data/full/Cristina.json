@@ -2,7 +2,7 @@
   "slug": "Cristina",
   "equipment": {
     "category": "Usable Equipment",
-    "medal": "Legion Special Force Justice and Glory",
+    "medal": "Legion Special Force Justice and Glory Odile or Odette",
     "head": "Justice Glorieux Laheine hair",
     "earring": "Earring",
     "face": "None",
@@ -102,6 +102,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -144,6 +145,7 @@
         "Penetration": "5+10",
         "Immunity": "5+25"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Assilio",
@@ -158,14 +160,28 @@
           "sp_cost": "400",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Removes all debuffs"
+              "value": "",
+              "effects": [
+                "Removes all debuffs",
+                "Recovers 20% of your HP",
+                "Evade all attacks during skill animation"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Removes all debuffs"
+              "value": "",
+              "effects": [
+                "Removes all debuffs",
+                "Recovers 20% of your HP",
+                "Evade all attacks during skill animation"
+              ]
             }
           ],
           "special": []
@@ -183,14 +199,34 @@
           "sp_cost": "550",
           "aggro": "200",
           "skill_type": "Shooting",
+          "consume_item": "Metal Shell Ammo x 3",
+          "soft_armor_atk": "70%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "120%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1134%"
+              "value": "АТК: 1134%",
+              "effects": [
+                "Ignores 80 DEF",
+                "Skill damage against monsters increases according to enemy armor type, proportional to extra [DEX] (1% Soft, 2% Light, 3% Heavy)",
+                "PC: Ignore DEF proportional to extra [DEX]",
+                "Monster: Increases damage proportional to extra [DEX]",
+                "Skill ATK increases proportional to Enemy HP loss (Max. 250%)",
+                "Apply [Florence] to yourself"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2268%"
+              "value": "АТК: 2268%",
+              "effects": [
+                "Ignores 80 DEF",
+                "Skill damage against monsters increases according to enemy armor type, proportional to extra [DEX] (1% Soft, 2% Light, 3% Heavy)",
+                "PC: Ignore DEF proportional to extra [DEX]",
+                "Monster: Increases damage proportional to extra [DEX]",
+                "Skill ATK increases proportional to Enemy HP loss (Max. 250%)",
+                "Apply [Florence] to yourself"
+              ]
             }
           ],
           "special": []
@@ -208,14 +244,34 @@
           "sp_cost": "600",
           "aggro": "56",
           "skill_type": "Shooting",
+          "consume_item": "Metal Shell Ammo x 3",
+          "soft_armor_atk": "70%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 865%"
+              "value": "АТК: 865%",
+              "effects": [
+                "Ignores 75 DEF",
+                "Skill damage against monsters increases according to enemy armor type, proportional to extra [DEX] (1% Soft, 2% Light, 3% Heavy)",
+                "PC: [Burn] enemy by 50% chance, Ignore DEF proportional to extra [DEX]",
+                "Monster: Increases damage proportional to extra [DEX]",
+                "Skill ATK increases proportional to Enemy HP loss (Max. 250%)",
+                "Apply [Florence] to yourself"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1730%"
+              "value": "АТК: 1730%",
+              "effects": [
+                "Ignores 75 DEF",
+                "Skill damage against monsters increases according to enemy armor type, proportional to extra [DEX] (1% Soft, 2% Light, 3% Heavy)",
+                "PC: [Burn] enemy by 50% chance, Ignore DEF proportional to extra [DEX]",
+                "Monster: Increases damage proportional to extra [DEX]",
+                "Skill ATK increases proportional to Enemy HP loss (Max. 250%)",
+                "Apply [Florence] to yourself"
+              ]
             }
           ],
           "special": []
@@ -233,14 +289,34 @@
           "sp_cost": "750",
           "aggro": "120",
           "skill_type": "Shooting",
+          "consume_item": "Metal Shell Ammo x 3",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 915%"
+              "value": "АТК: 915%",
+              "effects": [
+                "Ignores 60 DEF",
+                "Skill damage against monsters increases according to enemy armor type, proportional to extra [DEX] (1% Soft, 2% Light, 3% Heavy)",
+                "PC: [Burn] enemy by 50% chance, Ignore DEF proportional to extra [DEX]",
+                "Monster: Increases damage proportional to extra [DEX]",
+                "Skill ATK increases proportional to Enemy HP loss (Max. 250%)",
+                "Apply [Florence] to yourself"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1830%"
+              "value": "АТК: 1830%",
+              "effects": [
+                "Ignores 60 DEF",
+                "Skill damage against monsters increases according to enemy armor type, proportional to extra [DEX] (1% Soft, 2% Light, 3% Heavy)",
+                "PC: [Burn] enemy by 50% chance, Ignore DEF proportional to extra [DEX]",
+                "Monster: Increases damage proportional to extra [DEX]",
+                "Skill ATK increases proportional to Enemy HP loss (Max. 250%)",
+                "Apply [Florence] to yourself"
+              ]
             }
           ],
           "special": []
@@ -258,14 +334,38 @@
           "sp_cost": "1100",
           "aggro": "121",
           "skill_type": "Shooting",
+          "consume_item": "Enhanced Heavy Shell Ammo x 1",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 202%"
+              "value": "АТК: 202%",
+              "effects": [
+                "100% chance to inflict [Excido], ignoring Debuff RES (Ranged ATK Damage increases proportional to level)",
+                "50% chance to apply [Tormentum] to self",
+                "Skill damage against monsters increases according to enemy armor type, proportional to extra [DEX] (1% Soft, 2% Light, 3% Heavy)",
+                "Ignores enemy DEF",
+                "Removes [Florence] and replaces it with [Floreo] (ATK +20%, All RES +20, IMM +20, Penetration +20, DEF +15, Movement Speed and Limit +20%, doesnt stack with [Florence])",
+                "Cast again during casting to activate skill",
+                "Increases knockdown range, knockdown duration, and damage proportional to casting time",
+                "Additional damage increase and additional damage to monster when cast until the maximum duration"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 404%"
+              "value": "АТК: 404%",
+              "effects": [
+                "100% chance to inflict [Excido], ignoring Debuff RES (Ranged ATK Damage increases proportional to level)",
+                "50% chance to apply [Tormentum] to self",
+                "Skill damage against monsters increases according to enemy armor type, proportional to extra [DEX] (1% Soft, 2% Light, 3% Heavy)",
+                "Ignores enemy DEF",
+                "Removes [Florence] and replaces it with [Floreo] (ATK +20%, All RES +20, IMM +20, Penetration +20, DEF +15, Movement Speed and Limit +20%, doesnt stack with [Florence])",
+                "Cast again during casting to activate skill",
+                "Increases knockdown range, knockdown duration, and damage proportional to casting time",
+                "Additional damage increase and additional damage to monster when cast until the maximum duration"
+              ]
             }
           ],
           "special": [
@@ -318,6 +418,7 @@
         "Penetration": "5+25",
         "Immunity": "5+10"
       },
+      "consume": "Metal Shell Ammo x 3",
       "skills": [
         {
           "name": "Tormentum",
@@ -332,14 +433,32 @@
           "sp_cost": "300",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 60 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 60 seconds",
+                "A.R. +1",
+                "Casting Time -50%",
+                "Ignore DEF +5%",
+                "Effects disappear on Stance change"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 60 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 60 seconds",
+                "A.R. +1",
+                "Casting Time -50%",
+                "Ignore DEF +5%",
+                "Effects disappear on Stance change"
+              ]
             }
           ],
           "special": []
@@ -348,35 +467,89 @@
           "name": "Caelum Frondesco",
           "image": "fls_caelumfrondesco.jpg",
           "description": "Fire [Pole Cannon] in the air and swiftly clean up the flying enemies.",
-          "target": "",
+          "target": "Max Range 13m / Radius 6m / Max 5 enemies",
           "casting_time": "Instant",
-          "cooldown": "15 sec.",
+          "cooldown": "20 sec.",
           "duration": "3.5 sec.",
           "hits_flying": "Yes",
           "knock_down": "No",
           "sp_cost": "350",
           "aggro": "60",
           "skill_type": "Shooting",
+          "consume_item": "Metal Shell Ammo x 3",
+          "soft_armor_atk": "130%",
+          "heavy_armor_atk": "45%",
+          "light_armor_atk": "130%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 915%"
+              "value": "АТК: 915%",
+              "effects": [
+                "Ignores 75 DEF",
+                "50% chance to inflict [Excido], ignoring Debuff RES (Ranged ATK Damage +1%)",
+                "50% chance to apply [Tormentum] to self",
+                "Skill damage against monsters increases according to enemy armor type, proportional to extra [DEX] (1% Soft, 2% Light, 3% Heavy)",
+                "PC: Ignore DEF proportional to extra [DEX]",
+                "Monster: Increase damage proportional to extra [DEX]",
+                "Increases skill ATK proportional to enemy HP (Max. 250%)",
+                "Apply [Florence] to yourself"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1830%"
+              "value": "АТК: 1830%",
+              "effects": [
+                "Ignores 75 DEF",
+                "50% chance to inflict [Excido], ignoring Debuff RES (Ranged ATK Damage +10%)",
+                "50% chance to apply [Tormentum] to self",
+                "Skill damage against monsters increases according to enemy armor type, proportional to extra [DEX] (1% Soft, 2% Light, 3% Heavy)",
+                "PC: Ignore DEF proportional to extra [DEX]",
+                "Monster: Increase damage proportional to extra [DEX]",
+                "Increases skill ATK proportional to enemy HP (Max. 250%)",
+                "Apply [Florence] to yourself"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "АТК: 2013%"
+              "value": "АТК: 2013%",
+              "effects": [
+                "Ignores 75 DEF",
+                "50% chance to inflict [Excido], ignoring Debuff RES (Ranged ATK Damage +11%)",
+                "50% chance to apply [Tormentum] to self",
+                "Skill damage against monsters increases according to enemy armor type, proportional to extra [DEX] (1% Soft, 2% Light, 3% Heavy)",
+                "PC: Ignore DEF proportional to extra [DEX]",
+                "Monster: Increase damage proportional to extra [DEX]",
+                "Increases skill ATK proportional to enemy HP (Max. 250%)",
+                "Apply [Florence] to yourself"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "АТК: 2196%"
+              "value": "АТК: 2196%",
+              "effects": [
+                "Ignores 75 DEF",
+                "50% chance to inflict [Excido], ignoring Debuff RES (Ranged ATK Damage +12%)",
+                "50% chance to apply [Tormentum] to self",
+                "Skill damage against monsters increases according to enemy armor type, proportional to extra [DEX] (1% Soft, 2% Light, 3% Heavy)",
+                "PC: Ignore DEF proportional to extra [DEX]",
+                "Monster: Increase damage proportional to extra [DEX]",
+                "Increases skill ATK proportional to enemy HP (Max. 250%)",
+                "Apply [Florence] to yourself"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "АТК: 2196%"
+              "value": "АТК: 2196%",
+              "effects": [
+                "Ignores 75 DEF",
+                "50% chance to inflict [Excido], ignoring Debuff RES (Ranged ATK Damage +13%)",
+                "50% chance to apply [Tormentum] to self",
+                "Skill damage against monsters increases according to enemy armor type, proportional to extra [DEX] (1% Soft, 2% Light, 3% Heavy)",
+                "PC: Ignore DEF proportional to extra [DEX]",
+                "Monster: Increase damage proportional to extra [DEX]",
+                "Increases skill ATK proportional to enemy HP (Max. 250%)",
+                "Apply [Florence] to yourself"
+              ]
             }
           ],
           "special": []
@@ -387,21 +560,45 @@
           "description": "Dominate enemy by firing [Pole Cannon].",
           "target": "Up to 3 enemies 8m away and within a 2m radius",
           "casting_time": "1.1 sec.",
-          "cooldown": "5 sec.",
+          "cooldown": "20 sec.",
           "duration": "1.233 sec.",
           "hits_flying": "Yes",
           "knock_down": "Yes",
           "sp_cost": "450",
           "aggro": "150",
           "skill_type": "Shooting",
+          "consume_item": "Metal Shell Ammo x 3",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "80%",
+          "light_armor_atk": "135%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1125%"
+              "value": "АТК: 1125%",
+              "effects": [
+                "20% chance to inflict [Excido], ignoring Debuff RES (Ranged ATK Damage increases proportional to level)",
+                "50% chance to apply [Tormentum] to self",
+                "Skill damage against monsters increases according to enemy armor type, proportional to extra [DEX] (1% Soft, 2% Light, 3% Heavy)",
+                "Ignores 70 DEF",
+                "PC: Ignore DEF proportional to extra [DEX]",
+                "Monster: Increases damage proportional to extra [DEX]",
+                "Skill ATK increases proportional to enemy HP (Max. 250%)",
+                "Apply [Florence] to yourself"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2250%"
+              "value": "АТК: 2250%",
+              "effects": [
+                "20% chance to inflict [Excido], ignoring Debuff RES (Ranged ATK Damage increases proportional to level)",
+                "50% chance to apply [Tormentum] to self",
+                "Skill damage against monsters increases according to enemy armor type, proportional to extra [DEX] (1% Soft, 2% Light, 3% Heavy)",
+                "Ignores 70 DEF",
+                "PC: Ignore DEF proportional to extra [DEX]",
+                "Monster: Increases damage proportional to extra [DEX]",
+                "Skill ATK increases proportional to enemy HP (Max. 250%)",
+                "Apply [Florence] to yourself"
+              ]
             }
           ],
           "special": []
@@ -412,21 +609,45 @@
           "description": "Dominate enemy by firing [Pole Cannon] to a wide range.",
           "target": "Up to 8 enemies 9m away and within 10m width",
           "casting_time": "2.033 sec.",
-          "cooldown": "5 sec.",
+          "cooldown": "25 sec.",
           "duration": "1.8 sec.",
           "hits_flying": "Yes",
           "knock_down": "Yes",
           "sp_cost": "500",
           "aggro": "20",
           "skill_type": "Shooting",
+          "consume_item": "Metal Shell Ammo x 3",
+          "soft_armor_atk": "60%",
+          "heavy_armor_atk": "150%",
+          "light_armor_atk": "120%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1350%"
+              "value": "АТК: 1350%",
+              "effects": [
+                "30% chance to inflict [Excido], ignoring Debuff RES (Ranged ATK Damage increases proportional to level)",
+                "50% chance to apply [Tormentum] to self",
+                "Skill damage against monsters increases according to enemy armor type, proportional to extra [DEX] (1% Soft, 2% Light, 3% Heavy)",
+                "Ignores 80 DEF",
+                "PC: Ignore DEF proportional to extra [DEX]",
+                "Monster: Increases damage proportional to extra [DEX]",
+                "Skill ATK increases proportional to Enemy HP (Max. 250%)",
+                "Apply [Florence] to yourself"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2700%"
+              "value": "АТК: 2700%",
+              "effects": [
+                "30% chance to inflict [Excido], ignoring Debuff RES (Ranged ATK Damage increases proportional to level)",
+                "50% chance to apply [Tormentum] to self",
+                "Skill damage against monsters increases according to enemy armor type, proportional to extra [DEX] (1% Soft, 2% Light, 3% Heavy)",
+                "Ignores 80 DEF",
+                "PC: Ignore DEF proportional to extra [DEX]",
+                "Monster: Increases damage proportional to extra [DEX]",
+                "Skill ATK increases proportional to Enemy HP (Max. 250%)",
+                "Apply [Florence] to yourself"
+              ]
             }
           ],
           "special": []
@@ -437,21 +658,45 @@
           "description": "Open the [Pole Cannon] and give a powerful blow ignoring the enemys defense.",
           "target": "Up to 5 enemies 18m away and within 7m width",
           "casting_time": "5 sec.",
-          "cooldown": "10 sec.",
+          "cooldown": "30 sec.",
           "duration": "2.2 sec.",
           "hits_flying": "Yes",
           "knock_down": "Yes",
           "sp_cost": "1100",
           "aggro": "121",
           "skill_type": "Shooting",
+          "consume_item": "Metal Shell Ammo x 3",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 208%"
+              "value": "АТК: 208%",
+              "effects": [
+                "100% chance to inflict [Excido], ignoring Debuff RES (Ranged ATK Damage increases proportional to level)",
+                "50% chance to apply [Tormentum] to self",
+                "Skill damage against monsters increases according to enemy armor type, proportional to extra [DEX] (1% Soft, 2% Light, 3% Heavy)",
+                "Ignores enemy DEF",
+                "Removes [Florence] and replaces it with [Floreo] (ATK +20%, All RES +20, IMM +20, Penetration +20, DEF +15, Movement Speed and Limit +20%, doesnt stack with [Florence])",
+                "Cast again during casting to activate skill",
+                "Increases knockdown range, knockdown duration, and damage proportional to casting time",
+                "Additional damage increase and additional damage to monster when cast until the maximum duration"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 416%"
+              "value": "АТК: 416%",
+              "effects": [
+                "100% chance to inflict [Excido], ignoring Debuff RES (Ranged ATK Damage increases proportional to level)",
+                "50% chance to apply [Tormentum] to self",
+                "Skill damage against monsters increases according to enemy armor type, proportional to extra [DEX] (1% Soft, 2% Light, 3% Heavy)",
+                "Ignores enemy DEF",
+                "Removes [Florence] and replaces it with [Floreo] (ATK +20%, All RES +20, IMM +20, Penetration +20, DEF +15, Movement Speed and Limit +20%, doesnt stack with [Florence])",
+                "Cast again during casting to activate skill",
+                "Increases knockdown range, knockdown duration, and damage proportional to casting time",
+                "Additional damage increase and additional damage to monster when cast until the maximum duration"
+              ]
             }
           ],
           "special": [

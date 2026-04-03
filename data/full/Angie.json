@@ -114,51 +114,11 @@
       }
     },
     {
-      "stance_name": "Plow-Guard",
-      "equipped_items": "Great Sword",
+      "stance_name": "Ancient Ray",
+      "equipped_items": "Tool",
       "icon_position": {
-        "x": 0,
-        "y": -100
-      }
-    },
-    {
-      "stance_name": "Roof-Guard",
-      "equipped_items": "Great Sword",
-      "icon_position": {
-        "x": 0,
-        "y": -125
-      }
-    },
-    {
-      "stance_name": "Sidewinder",
-      "equipped_items": "Great Sword",
-      "icon_position": {
-        "x": 0,
-        "y": -300
-      }
-    },
-    {
-      "stance_name": "Hanging Guard",
-      "equipped_items": "Great Sword",
-      "icon_position": {
-        "x": -100,
-        "y": -425
-      }
-    },
-    {
-      "stance_name": "Ancient Slayer",
-      "equipped_items": "Great Sword",
-      "icon_position": {
-        "x": -150,
-        "y": -250
-      }
-    },
-    {
-      "stance_name": "Blast Guard",
-      "equipped_items": "Great Sword",
-      "icon_position": {
-        "x": -250,
-        "y": -375
+        "x": -200,
+        "y": -400
       }
     }
   ],
@@ -188,6 +148,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [
         {
           "name": "Detection",
@@ -202,14 +163,24 @@
           "sp_cost": "50",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Transparency Detecting"
+              "value": "",
+              "effects": [
+                "Transparency Detecting"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Transparency Detecting"
+              "value": "",
+              "effects": [
+                "Transparency Detecting"
+              ]
             }
           ],
           "special": []
@@ -227,14 +198,24 @@
           "sp_cost": "75",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 1",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Build Critical Disease"
+              "value": "",
+              "effects": [
+                "Build Critical Disease"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Build Critical Disease"
+              "value": "",
+              "effects": [
+                "Build Critical Disease"
+              ]
             }
           ],
           "special": []
@@ -252,14 +233,24 @@
           "sp_cost": "75",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 1",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Build Invisible String"
+              "value": "",
+              "effects": [
+                "Build Invisible String"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Build Invisible String"
+              "value": "",
+              "effects": [
+                "Build Invisible String"
+              ]
             }
           ],
           "special": []
@@ -277,14 +268,24 @@
           "sp_cost": "100",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 2",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Build Explosion"
+              "value": "",
+              "effects": [
+                "Build Explosion"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Build Explosion"
+              "value": "",
+              "effects": [
+                "Build Explosion"
+              ]
             }
           ],
           "special": []
@@ -324,6 +325,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [
         {
           "name": "Fence Construction",
@@ -338,14 +340,24 @@
           "sp_cost": "150",
           "aggro": "0",
           "skill_type": "Build",
+          "consume_item": "Ancient Star Orb x 3",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Up to 6 fences simultaneously"
+              "value": "",
+              "effects": [
+                "Up to 6 fences simultaneously"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Up to 6 fences simultaneously"
+              "value": "",
+              "effects": [
+                "Up to 6 fences simultaneously"
+              ]
             }
           ],
           "special": []
@@ -363,14 +375,26 @@
           "sp_cost": "200",
           "aggro": "0",
           "skill_type": "Build",
+          "consume_item": "Ancient Star Orb x 3",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Up to 6 fences simultaneously"
+              "value": "",
+              "effects": [
+                "Up to 6 fences simultaneously",
+                "ATK depends on skill level"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Up to 6 fences simultaneously"
+              "value": "",
+              "effects": [
+                "Up to 6 fences simultaneously",
+                "ATK depends on skill level"
+              ]
             }
           ],
           "special": []
@@ -388,14 +412,24 @@
           "sp_cost": "250",
           "aggro": "0",
           "skill_type": "Build",
+          "consume_item": "Ancient Star Orb x 4",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Up to 3 fences simultaneously"
+              "value": "",
+              "effects": [
+                "Up to 3 fences simultaneously"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Up to 3 fences simultaneously"
+              "value": "",
+              "effects": [
+                "Up to 3 fences simultaneously"
+              ]
             }
           ],
           "special": []
@@ -413,14 +447,24 @@
           "sp_cost": "250",
           "aggro": "0",
           "skill_type": "Build",
+          "consume_item": "Ancient Star Orb x 4",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Up to 3 fences simultaneously"
+              "value": "",
+              "effects": [
+                "Up to 3 fences simultaneously"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Up to 3 fences simultaneously"
+              "value": "",
+              "effects": [
+                "Up to 3 fences simultaneously"
+              ]
             }
           ],
           "special": []
@@ -438,14 +482,26 @@
           "sp_cost": "300",
           "aggro": "0",
           "skill_type": "Build",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Up to 3 fences simultaneously"
+              "value": "",
+              "effects": [
+                "Up to 3 fences simultaneously",
+                "ATK depends on skill level"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Up to 3 fences simultaneously"
+              "value": "",
+              "effects": [
+                "Up to 3 fences simultaneously",
+                "ATK depends on skill level"
+              ]
             }
           ],
           "special": []
@@ -482,6 +538,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [
         {
           "name": "Fence Construction",
@@ -496,14 +553,24 @@
           "sp_cost": "150",
           "aggro": "0",
           "skill_type": "Build",
+          "consume_item": "Ancient Star Orb x 3",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Up to 6 fences simultaneously"
+              "value": "",
+              "effects": [
+                "Up to 6 fences simultaneously"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Up to 6 fences simultaneously"
+              "value": "",
+              "effects": [
+                "Up to 6 fences simultaneously"
+              ]
             }
           ],
           "special": []
@@ -521,14 +588,24 @@
           "sp_cost": "50",
           "aggro": "0",
           "skill_type": "Build",
+          "consume_item": "Ancient Star Orb x 2",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Build Spike Trap"
+              "value": "",
+              "effects": [
+                "Build Spike Trap"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Build Spike Trap"
+              "value": "",
+              "effects": [
+                "Build Spike Trap"
+              ]
             }
           ],
           "special": []
@@ -546,14 +623,26 @@
           "sp_cost": "250",
           "aggro": "0",
           "skill_type": "Build",
+          "consume_item": "Ancient Star Orb x 3",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Up to 5 fences simultaneously"
+              "value": "",
+              "effects": [
+                "Up to 5 fences simultaneously",
+                "ATK depends on skill level"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Up to 5 fences simultaneously"
+              "value": "",
+              "effects": [
+                "Up to 5 fences simultaneously",
+                "ATK depends on skill level"
+              ]
             }
           ],
           "special": []
@@ -571,14 +660,24 @@
           "sp_cost": "250",
           "aggro": "0",
           "skill_type": "Build",
+          "consume_item": "Ancient Star Orb x 4",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Up to 3 fences simultaneously"
+              "value": "",
+              "effects": [
+                "Up to 3 fences simultaneously"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Up to 3 fences simultaneously"
+              "value": "",
+              "effects": [
+                "Up to 3 fences simultaneously"
+              ]
             }
           ],
           "special": []
@@ -596,14 +695,26 @@
           "sp_cost": "300",
           "aggro": "0",
           "skill_type": "Build",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Up to 3 fences simultaneously"
+              "value": "",
+              "effects": [
+                "Up to 3 fences simultaneously",
+                "ATK depends on skill level"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Up to 3 fences simultaneously"
+              "value": "",
+              "effects": [
+                "Up to 3 fences simultaneously",
+                "ATK depends on skill level"
+              ]
             }
           ],
           "special": []
@@ -643,6 +754,7 @@
         "Penetration": "5+15",
         "Immunity": "5+10"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Defensive Tool",
@@ -657,14 +769,24 @@
           "sp_cost": "1000",
           "aggro": "0",
           "skill_type": "Build",
+          "consume_item": "Ancient Star Orb x 2",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Increases structure HP recovery and frequency of recovery according to DEX stats"
+              "value": "",
+              "effects": [
+                "Increases structure HP recovery and frequency of recovery according to DEX stats"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Increases structure HP recovery and frequency of recovery according to DEX stats"
+              "value": "",
+              "effects": [
+                "Increases structure HP recovery and frequency of recovery according to DEX stats"
+              ]
             }
           ],
           "special": []
@@ -682,14 +804,20 @@
           "sp_cost": "1000",
           "aggro": "0",
           "skill_type": "Build",
+          "consume_item": "Ancient Star Orb x 1",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Level 10"
+              "value": "",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "<img src=\"./images/Skills/arc_detectionward.jpg\""
+              "value": "",
+              "effects": []
             }
           ],
           "special": []
@@ -697,7 +825,7 @@
         {
           "name": "Detection Ward Construction",
           "image": "arc_detectionward.jpg",
-          "description": "Builds a ward which can detect nearby invisible enemy and flying enemies. Only 3 units available.",
+          "description": "Builds a ward which can detect nearby invisible enemy and flying enemies. Only 2 units available.",
           "target": "",
           "casting_time": "10 sec.",
           "cooldown": "30 sec.",
@@ -707,14 +835,24 @@
           "sp_cost": "1000",
           "aggro": "0",
           "skill_type": "Build",
+          "consume_item": "Ancient Star Orb x 2",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Cancel invisible status of enemy when it detects and also inflicts ["
+              "value": "",
+              "effects": [
+                "Cancel invisible status of enemy when it detects and also inflicts [Web] skill on the enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Cancel invisible status of enemy when it detects and also inflicts ["
+              "value": "",
+              "effects": [
+                "Cancel invisible status of enemy when it detects and also inflicts [Web] skill on the enemy"
+              ]
             }
           ],
           "special": []
@@ -722,7 +860,7 @@
         {
           "name": "Electric Punisher Construction",
           "image": "dsr_antiairgun.jpg",
-          "description": "Builds a turret which recognizes an enemy to shoot an electronic ray of light. Only 3 unit available.",
+          "description": "Builds a turret which recognizes an enemy to shoot an electronic ray of light. Only 1 unit available.",
           "target": "",
           "casting_time": "10 sec.",
           "cooldown": "60 sec.",
@@ -732,14 +870,24 @@
           "sp_cost": "1000",
           "aggro": "0",
           "skill_type": "Build",
+          "consume_item": "Ancient Star Orb x 2",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Increases the chance to use [Electric Punisher] skill according to DEX stats"
+              "value": "",
+              "effects": [
+                "Increases the chance to use [Electric Punisher] skill according to DEX stats"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Increases the chance to use [Electric Punisher] skill according to DEX stats"
+              "value": "",
+              "effects": [
+                "Increases the chance to use [Electric Punisher] skill according to DEX stats"
+              ]
             }
           ],
           "special": []
@@ -747,7 +895,7 @@
         {
           "name": "Regenerator Construction",
           "image": "arc_interruptionward.jpg",
-          "description": "Builds a ward which recovers HP of nearby friendly force quickly. Only 1 unit available.",
+          "description": "Builds a ward which recovers HP of nearby friendly force quickly. Only 2 unit available.",
           "target": "",
           "casting_time": "10 sec.",
           "cooldown": "60 sec.",
@@ -757,14 +905,24 @@
           "sp_cost": "1000",
           "aggro": "0",
           "skill_type": "Build",
+          "consume_item": "Ancient Star Orb x 3",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Increases HP recovery, frequency of recovery according to DEX stats"
+              "value": "",
+              "effects": [
+                "Increases HP recovery, frequency of recovery according to DEX stats"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Increases HP recovery, frequency of recovery according to DEX stats"
+              "value": "",
+              "effects": [
+                "Increases HP recovery, frequency of recovery according to DEX stats"
+              ]
             }
           ],
           "special": []
@@ -806,6 +964,7 @@
       "lv25_bonus": {
         "Immunity": "10+20"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Miracle",
@@ -820,26 +979,71 @@
           "sp_cost": "500",
           "aggro": "150",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 20",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 10 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 10 seconds",
+                "Maximum HP +1000",
+                "Max. SP +100",
+                "All Damage Received -1",
+                "Damage against monster +4%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 100 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 100 seconds",
+                "Maximum HP +10000",
+                "Max. SP +1000",
+                "All Stats +5",
+                "All Damage Received -10",
+                "Damage against monster +40%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 110 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 110 seconds",
+                "Maximum HP +11000",
+                "Max. SP +1100",
+                "All Stats +5",
+                "All Damage Received -11",
+                "Damage against monster +44%"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 120 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 120 seconds",
+                "Maximum HP +12000",
+                "Max. SP +1200",
+                "All Stats +10",
+                "All Damage Received -12",
+                "Damage against monster +48%"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 130 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 130 seconds",
+                "D.R. +1",
+                "A.R. +1",
+                "Maximum HP +13000",
+                "Max. SP +1300",
+                "All Stats +10",
+                "All Damage Received -13",
+                "Damage against monster +52%"
+              ]
             }
           ],
           "special": []
@@ -857,26 +1061,70 @@
           "sp_cost": "500",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 30 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 30 seconds",
+                "DEF +1",
+                "IMM +1",
+                "Block +1",
+                "Evasion +1",
+                "Knockdown duration -1%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "DEF +10",
+                "IMM +10",
+                "Block +10",
+                "Evasion +10",
+                "Knockdown duration -10%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 330 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 330 seconds",
+                "DEF +11",
+                "IMM +11",
+                "Block +11",
+                "Evasion +11",
+                "Knockdown duration -11%"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 360 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 360 seconds",
+                "DEF +12",
+                "IMM +12",
+                "Block +12",
+                "Evasion +12",
+                "Knockdown duration -12%"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 390 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 390 seconds",
+                "DEF +13",
+                "IMM +13",
+                "Block +13",
+                "Evasion +13",
+                "Knockdown duration -13%"
+              ]
             }
           ],
           "special": []
@@ -894,26 +1142,65 @@
           "sp_cost": "500",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 30 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 30 seconds",
+                "ATK +1%",
+                "Penetration +1",
+                "Critical +1",
+                "Critical Damage +2%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "ATK +10%",
+                "Penetration +10",
+                "Critical +10",
+                "Critical Damage +20%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 330 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 330 seconds",
+                "ATK +11%",
+                "Penetration +11",
+                "Critical +11",
+                "Critical Damage +22%"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 360 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 360 seconds",
+                "ATK +12%",
+                "Penetration +12",
+                "Critical +12",
+                "Critical Damage +24%"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 390 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 390 seconds",
+                "ATK +13%",
+                "Penetration +13",
+                "Critical +13",
+                "Critical Damage +26%"
+              ]
             }
           ],
           "special": []
@@ -931,14 +1218,26 @@
           "sp_cost": "500",
           "aggro": "150",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 20",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Restore 15% of maximum HP"
+              "value": "",
+              "effects": [
+                "Restore 15% of maximum HP",
+                "Remove harmful effect of own character"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Restore 15% of maximum HP"
+              "value": "",
+              "effects": [
+                "Restore 15% of maximum HP",
+                "Remove harmful effect of own character"
+              ]
             }
           ],
           "special": []
@@ -956,14 +1255,24 @@
           "sp_cost": "500",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Increase all skills level by enhancing your own tactical capacity."
+              "value": "",
+              "effects": [
+                "Increase all skills level by enhancing your own tactical capacity."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Increase all skills level by enhancing your own tactical capacity."
+              "value": "",
+              "effects": [
+                "Increase all skills level by enhancing your own tactical capacity."
+              ]
             }
           ],
           "special": []
@@ -979,942 +1288,395 @@
       }
     },
     {
-      "name": "Plow-Guard",
+      "name": "Ancient Ray",
       "info": {
         "Targets": "1 enemy",
-        "Range": "0.25~1.75m away",
-        "Splash": "None",
-        "Hits per attack": "1",
-        "Hits flying": "No",
-        "Flying": "No",
-        "Regenerate SP": "Yes"
-      },
-      "stats": {
-        "ASPD": "167",
-        "Bonus ATK": "200%",
-        "MSPD": "1",
-        "MSPD Limit": "8.50",
-        "ACC": "100",
-        "EVA": "0",
-        "BLK": "10",
-        "Fire RES": "0",
-        "Ice RES": "0",
-        "Lightning RES": "0",
-        "Abnormal RES": "0"
-      },
-      "lv25_bonus": {
-        "ATK SPD": "+15%",
-        "Block": "+10",
-        "Critical": "+10"
-      },
-      "skills": [
-        {
-          "name": "Charge",
-          "image": "pg_charge.jpg",
-          "description": "Charges enemies down with a sword.",
-          "target": "1 adjacent enemy",
-          "casting_time": "Instant",
-          "cooldown": "0 sec.",
-          "duration": "3.3 sec.",
-          "hits_flying": "No",
-          "knock_down": "Yes",
-          "sp_cost": "100",
-          "aggro": "56",
-          "skill_type": "Melee",
-          "levels": [
-            {
-              "level": "Level 1",
-              "value": "АТК: 225%"
-            },
-            {
-              "level": "Level 10",
-              "value": "АТК: 450%"
-            }
-          ],
-          "special": []
-        },
-        {
-          "name": "Vertical Slash",
-          "image": "pg_verticalslash.jpg",
-          "description": "A powerful downward slash. It inflicts triple damage on large monsters and Double Damage on smaller ones.",
-          "target": "1 adjacent enemy",
-          "casting_time": "1.333 sec.",
-          "cooldown": "10 sec.",
-          "duration": "1.7 sec.",
-          "hits_flying": "No",
-          "knock_down": "Yes",
-          "sp_cost": "200",
-          "aggro": "56",
-          "skill_type": "Melee",
-          "levels": [
-            {
-              "level": "Level 1",
-              "value": "АТК: 214%"
-            },
-            {
-              "level": "Level 10",
-              "value": "АТК: 428%"
-            },
-            {
-              "level": "Level 11",
-              "value": "АТК: 470%"
-            },
-            {
-              "level": "Level 12",
-              "value": "АТК: 513%"
-            },
-            {
-              "level": "Level 13",
-              "value": "АТК: 513%"
-            }
-          ],
-          "special": []
-        },
-        {
-          "name": "Skyliner",
-          "image": "pg_skyliner.jpg",
-          "description": "Slashes across a group of enemies.",
-          "target": "Up to 6 Enemies nearby",
-          "casting_time": "Instant",
-          "cooldown": "15 sec.",
-          "duration": "2.93 sec.",
-          "hits_flying": "No",
-          "knock_down": "Yes",
-          "sp_cost": "250",
-          "aggro": "50",
-          "skill_type": "Melee",
-          "levels": [
-            {
-              "level": "Level 1",
-              "value": "АТК: 190%"
-            },
-            {
-              "level": "Level 10",
-              "value": "АТК: 380%"
-            }
-          ],
-          "special": []
-        },
-        {
-          "name": "Fury",
-          "image": "rg_fury.jpg",
-          "description": "Maximises Attack SPD by using whole bodys energy. Canceled, if Stance changes.",
-          "target": "",
-          "casting_time": "Instant",
-          "cooldown": "20 sec.",
-          "duration": "1.2 sec.",
-          "hits_flying": "No",
-          "knock_down": "No",
-          "sp_cost": "300",
-          "aggro": "0",
-          "skill_type": "Buff",
-          "levels": [
-            {
-              "level": "Level 1",
-              "value": "Duration : 17.5 sec"
-            },
-            {
-              "level": "Level 10",
-              "value": "Duration : 40 sec"
-            },
-            {
-              "level": "Level 11",
-              "value": "Duration : 42.5 sec"
-            },
-            {
-              "level": "Level 12",
-              "value": "Duration : 45 sec"
-            },
-            {
-              "level": "Level 13",
-              "value": "Duration : 47.5 sec"
-            }
-          ],
-          "special": []
-        }
-      ],
-      "equipped_items": "Great Sword",
-      "icon_position": {
-        "x": 0,
-        "y": -100
-      }
-    },
-    {
-      "name": "Roof-Guard",
-      "info": {
-        "Targets": "1 enemy",
-        "Range": "0.1~1.5m away",
-        "Splash": "None",
-        "Hits per attack": "1",
-        "Hits flying": "No",
-        "Flying": "No",
-        "Regenerate SP": "Yes"
-      },
-      "stats": {
-        "ASPD": "158",
-        "Bonus ATK": "200%",
-        "MSPD": "1",
-        "MSPD Limit": "8.50",
-        "ACC": "100",
-        "EVA": "0",
-        "BLK": "0",
-        "Fire RES": "0",
-        "Ice RES": "0",
-        "Lightning RES": "0",
-        "Abnormal RES": "0"
-      },
-      "lv25_bonus": {
-        "ATK SPD": "+30%",
-        "Critical": "+6"
-      },
-      "skills": [
-        {
-          "name": "Dread Worm",
-          "image": "rg_dreadworm.jpg",
-          "description": "Brandishes a sword in a sweeping motion, striking terror into the hearts of your enemies.",
-          "target": "Up to 5 enemies 9m away and within 3m width",
-          "casting_time": "2 sec.",
-          "cooldown": "10 sec.",
-          "duration": "1.77 sec.",
-          "hits_flying": "No",
-          "knock_down": "Yes",
-          "sp_cost": "200",
-          "aggro": "41",
-          "skill_type": "Melee",
-          "levels": [
-            {
-              "level": "Level 1",
-              "value": "АТК: 150%"
-            },
-            {
-              "level": "Level 10",
-              "value": "АТК: 300%"
-            }
-          ],
-          "special": []
-        },
-        {
-          "name": "Genocide",
-          "image": "rg_genocide.jpg",
-          "description": "Advances upon enemies with 7 consecutive slashes.",
-          "target": "1 adjacent enemy",
-          "casting_time": "Instant",
-          "cooldown": "15 sec.",
-          "duration": "3.73 sec.",
-          "hits_flying": "No",
-          "knock_down": "Yes",
-          "sp_cost": "250",
-          "aggro": "111",
-          "skill_type": "Melee",
-          "levels": [
-            {
-              "level": "Level 1",
-              "value": "АТК: 493%"
-            },
-            {
-              "level": "Level 10",
-              "value": "АТК: 986%"
-            }
-          ],
-          "special": []
-        },
-        {
-          "name": "Fury",
-          "image": "rg_fury.jpg",
-          "description": "Maximises Attack SPD by using whole bodys energy. Canceled, if Stance changes.",
-          "target": "",
-          "casting_time": "Instant",
-          "cooldown": "20 sec.",
-          "duration": "1.2 sec.",
-          "hits_flying": "No",
-          "knock_down": "No",
-          "sp_cost": "300",
-          "aggro": "0",
-          "skill_type": "Buff",
-          "levels": [
-            {
-              "level": "Level 1",
-              "value": "Duration : 17.5 sec"
-            },
-            {
-              "level": "Level 10",
-              "value": "Duration : 40 sec"
-            },
-            {
-              "level": "Level 11",
-              "value": "Duration : 42.5 sec"
-            },
-            {
-              "level": "Level 12",
-              "value": "Duration : 45 sec"
-            },
-            {
-              "level": "Level 13",
-              "value": "Duration : 47.5 sec"
-            }
-          ],
-          "special": []
-        }
-      ],
-      "equipped_items": "Great Sword",
-      "icon_position": {
-        "x": 0,
-        "y": -125
-      }
-    },
-    {
-      "name": "Sidewinder",
-      "info": {
-        "Targets": "4 enemies",
-        "Range": "0.1~1.5m away",
-        "Splash": "0.8 DMG within  1.5m range",
-        "Hits per attack": "2",
-        "Hits flying": "No",
-        "Flying": "No",
-        "Regenerate SP": "Yes"
-      },
-      "stats": {
-        "ASPD": "325",
-        "Bonus ATK": "200%",
-        "MSPD": "1",
-        "MSPD Limit": "8.50",
-        "ACC": "100",
-        "EVA": "0",
-        "BLK": "0",
-        "Fire RES": "0",
-        "Ice RES": "0",
-        "Lightning RES": "0",
-        "Abnormal RES": "0"
-      },
-      "lv25_bonus": {
-        "ATK SPD": "+15%",
-        "Critical": "+6"
-      },
-      "skills": [
-        {
-          "name": "Sweet Dreamer",
-          "image": "tg_sweetdreamer.jpg",
-          "description": "Swing a sword in an ascending arc and drive enemies to the sky.",
-          "target": "1 adjacent enemy",
-          "casting_time": "Instant",
-          "cooldown": "0 sec.",
-          "duration": "2.03 sec.",
-          "hits_flying": "No",
-          "knock_down": "Yes",
-          "sp_cost": "100",
-          "aggro": "89",
-          "skill_type": "Melee",
-          "levels": [
-            {
-              "level": "Level 1",
-              "value": "АТК: 315%"
-            },
-            {
-              "level": "Level 10",
-              "value": "АТК: 630%"
-            }
-          ],
-          "special": []
-        },
-        {
-          "name": "Ultimate Dash",
-          "image": "sw_ultimatedash.jpg",
-          "description": "A forceful charge that sweeps enemies away.",
-          "target": "Up to 5 enemies 5.6m away and within 3m width",
-          "casting_time": "Instant",
-          "cooldown": "10 sec.",
-          "duration": "2.43 sec.",
-          "hits_flying": "No",
-          "knock_down": "Yes",
-          "sp_cost": "200",
-          "aggro": "57",
-          "skill_type": "Melee",
-          "levels": [
-            {
-              "level": "Level 1",
-              "value": "АТК: 230%"
-            },
-            {
-              "level": "Level 10",
-              "value": "АТК: 459%"
-            }
-          ],
-          "special": []
-        },
-        {
-          "name": "Decision",
-          "image": "sw_decision.jpg",
-          "description": "Leaps and strikes enemies in mid-air.",
-          "target": "Up to 5 adjacent enemies",
-          "casting_time": "Instant",
-          "cooldown": "20 sec.",
-          "duration": "2.07 sec.",
-          "hits_flying": "No",
-          "knock_down": "Yes",
-          "sp_cost": "300",
-          "aggro": "131",
-          "skill_type": "Melee",
-          "levels": [
-            {
-              "level": "Level 1",
-              "value": "АТК: 604%"
-            },
-            {
-              "level": "Level 10",
-              "value": "АТК: 1208%"
-            }
-          ],
-          "special": []
-        }
-      ],
-      "equipped_items": "Great Sword",
-      "icon_position": {
-        "x": 0,
-        "y": -300
-      }
-    },
-    {
-      "name": "Hanging Guard",
-      "info": {
-        "Targets": "4 enemies",
-        "Range": "0.1~1.5m away",
-        "Splash": "0.75 DMG within  1m range",
-        "Hits per attack": "1",
-        "Hits flying": "No",
+        "Range": "1m away",
+        "Splash": "0 DMG within  0m range",
+        "Hits per attack": "3",
         "Flying": "No",
         "Regenerate SP": "Yes",
-        "Shooting DMG": "-20%",
-        "Magical DMG": "+10%"
-      },
-      "stats": {
-        "ASPD": "223",
-        "Bonus ATK": "290%",
-        "MSPD": "1",
-        "MSPD Limit": "8.50",
-        "ACC": "50",
-        "EVA": "0",
-        "BLK": "0",
-        "Fire RES": "0",
-        "Ice RES": "0",
-        "Lightning RES": "0",
-        "Abnormal RES": "0"
-      },
-      "lv25_bonus": {
-        "ATK SPD": "+23%",
-        "Critical": "+13",
-        "Penetration": "15+20",
-        "Immunity": "5+15"
-      },
-      "skills": [
-        {
-          "name": "Shell Breaker",
-          "image": "hgg_shellbreaker.jpg",
-          "description": "Can smash enemys armor easily by using the heavy weight of sword. But Attack SPD and ATK to Soft Armor decrease. Canceled, if Stance changes.",
-          "target": "",
-          "casting_time": "Instant",
-          "cooldown": "5 sec.",
-          "duration": "2.033 sec.",
-          "hits_flying": "No",
-          "knock_down": "No",
-          "sp_cost": "300",
-          "aggro": "0",
-          "skill_type": "Buff",
-          "levels": [
-            {
-              "level": "Level 1",
-              "value": "Damage +60% to Heavy Armor, +20% Light Armor"
-            },
-            {
-              "level": "Level 10",
-              "value": "Damage +60% to Heavy Armor, +20% Light Armor"
-            },
-            {
-              "level": "Level 11",
-              "value": "A.R. +1"
-            }
-          ],
-          "special": []
-        },
-        {
-          "name": "Carnage",
-          "image": "hgg_carnage.jpg",
-          "description": "Attacks the enemy by creating a rush of rubble with the great sword.",
-          "target": "Up to 9 enemies 6m away and within a 5m radius",
-          "casting_time": "1.333 sec.",
-          "cooldown": "10 sec.",
-          "duration": "2.4 sec.",
-          "hits_flying": "Yes",
-          "knock_down": "Yes",
-          "sp_cost": "340",
-          "aggro": "57",
-          "skill_type": "Melee",
-          "levels": [
-            {
-              "level": "Level 1",
-              "value": "АТК: 1200%"
-            },
-            {
-              "level": "Level 10",
-              "value": "АТК: 2400%"
-            }
-          ],
-          "special": []
-        },
-        {
-          "name": "Slaughter",
-          "image": "hgg_slaughter.jpg",
-          "description": "Attacks the enemy 4 times with a great sword.",
-          "target": "Up to 5 adjacent enemies",
-          "casting_time": "Instant",
-          "cooldown": "10 sec.",
-          "duration": "4.03 sec.",
-          "hits_flying": "No",
-          "knock_down": "Yes",
-          "sp_cost": "440",
-          "aggro": "116",
-          "skill_type": "Melee",
-          "levels": [
-            {
-              "level": "Level 1",
-              "value": "АТК: 1500%"
-            },
-            {
-              "level": "Level 10",
-              "value": "АТК: 3000%"
-            }
-          ],
-          "special": []
-        },
-        {
-          "name": "Volition",
-          "image": "hgg_volition.jpg",
-          "description": "Plunges sword into enemy while airborne.",
-          "target": "Up to 6 Enemies nearby",
-          "casting_time": "Instant",
-          "cooldown": "5 sec.",
-          "duration": "2.7 sec.",
-          "hits_flying": "No",
-          "knock_down": "Yes",
-          "sp_cost": "540",
-          "aggro": "75",
-          "skill_type": "Melee",
-          "levels": [
-            {
-              "level": "Level 1",
-              "value": "АТК: 2200%"
-            },
-            {
-              "level": "Level 10",
-              "value": "АТК: 4400%"
-            }
-          ],
-          "special": []
-        },
-        {
-          "name": "Ruthless",
-          "image": "hgg_ruthless.jpg",
-          "description": "Attacks the enemy with weight of the sword.",
-          "target": "Up to 3 adjacent enemies",
-          "casting_time": "Instant",
-          "cooldown": "17 sec.",
-          "duration": "3.43 sec.",
-          "hits_flying": "No",
-          "knock_down": "Yes",
-          "sp_cost": "650",
-          "aggro": "170",
-          "skill_type": "Melee",
-          "levels": [
-            {
-              "level": "Level 1",
-              "value": "АТК: 2500%"
-            },
-            {
-              "level": "Level 10",
-              "value": "АТК: 5000%"
-            }
-          ],
-          "special": []
-        }
-      ],
-      "lv25_bonus_extra": [
-        "[RE: PvE] Skill DMG increases equal to 8% of extra [STR]",
-        "[PVP/PVE Maps] Additional 4% DMG according to extra [STR]",
-        "Ignore additional DEF according to extra [STR] * 4",
-        "Additional DMG against [PC] + 2x",
-        "Additional DMG against Monster according to 4 * 50"
-      ],
-      "equipped_items": "Great Sword",
-      "icon_position": {
-        "x": -100,
-        "y": -425
-      }
-    },
-    {
-      "name": "Ancient Slayer",
-      "info": {
-        "Targets": "4 enemies",
-        "Range": "2.5m away",
-        "Splash": "0.75 DMG within  2.7m range",
-        "Hits per attack": "2",
-        "Hits flying": "No",
-        "Flying": "No",
-        "Regenerate SP": "Yes",
-        "Shooting DMG": "-15%",
+        "Physical DMG": "-15%",
+        "Shooting DMG": "-10%",
         "Magical DMG": "+15%"
       },
       "stats": {
-        "ASPD": "187",
-        "Bonus ATK": "280%",
+        "ASPD": "193",
+        "Bonus ATK": "0%",
         "MSPD": "1",
         "MSPD Limit": "8.50",
-        "ACC": "50",
-        "EVA": "0",
-        "BLK": "10",
-        "Fire RES": "0",
-        "Ice RES": "0",
-        "Lightning RES": "0",
-        "Abnormal RES": "0"
-      },
-      "lv25_bonus": {
-        "ATK SPD": "+13%",
-        "Block": "+5",
-        "Penetration": "20+15",
-        "Immunity": "5+10",
-        "DEF": "5"
-      },
-      "skills": [
-        {
-          "name": "Berserker",
-          "image": "berserknessgs.jpg",
-          "description": "Improve your ATK and Block ability by awakening your indomitable fighting spirit. However, your speed will decrease. Removed on Stance change.",
-          "target": "",
-          "casting_time": "Instant",
-          "cooldown": "30 sec.",
-          "duration": "1.533 sec.",
-          "hits_flying": "No",
-          "knock_down": "No",
-          "sp_cost": "340",
-          "aggro": "0",
-          "skill_type": "Buff",
-          "levels": [
-            {
-              "level": "Level 1",
-              "value": "Duration : 150 seconds"
-            },
-            {
-              "level": "Level 10",
-              "value": "Duration : 150 seconds"
-            },
-            {
-              "level": "Level 11",
-              "value": "Duration : 150 seconds"
-            },
-            {
-              "level": "Level 12",
-              "value": "Duration : 150 seconds"
-            },
-            {
-              "level": "Level 13",
-              "value": "Duration : 150 seconds"
-            }
-          ],
-          "special": [
-            "Additional Damage of all skill attack doubles against [",
-            "Additional Damage of all skill attack doubles against [",
-            "Additional Damage of all skill attack doubles against [",
-            "Additional Damage of all skill attack doubles against [",
-            "Additional Damage of all skill attack doubles against ["
-          ]
-        },
-        {
-          "name": "Arc Down",
-          "image": "arcdowngs.jpg",
-          "description": "Strike the enemy down with a big arc.",
-          "target": "",
-          "casting_time": "Instant",
-          "cooldown": "5 sec.",
-          "duration": "2.2 sec.",
-          "hits_flying": "No",
-          "knock_down": "Yes",
-          "sp_cost": "550",
-          "aggro": "58",
-          "skill_type": "Melee",
-          "levels": [
-            {
-              "level": "Level 1",
-              "value": "АТК: 800%"
-            },
-            {
-              "level": "Level 10",
-              "value": "АТК: 1600%"
-            }
-          ],
-          "special": [
-            "Additional damage doubles if the enemy is affected by one of the following debuffs:",
-            "Additional damage doubles if the enemy is affected by one of the following debuffs:"
-          ]
-        },
-        {
-          "name": "Dragona Bash",
-          "image": "dragonabashgs.jpg",
-          "description": "Approach and strike the enemy with great force.",
-          "target": "Up to 5 enemies 12m away and within 3 width",
-          "casting_time": "1.533 sec.",
-          "cooldown": "14 sec.",
-          "duration": "4.033 sec.",
-          "hits_flying": "No",
-          "knock_down": "Yes",
-          "sp_cost": "800",
-          "aggro": "98",
-          "skill_type": "Melee",
-          "levels": [
-            {
-              "level": "Level 1",
-              "value": "АТК: 1200%"
-            },
-            {
-              "level": "Level 10",
-              "value": "АТК: 2400%"
-            }
-          ],
-          "special": []
-        },
-        {
-          "name": "Fly and Crush",
-          "image": "flyandcrushgs.jpg",
-          "description": "Jump high and strike the enemy from above.",
-          "target": "",
-          "casting_time": "Instant",
-          "cooldown": "18 sec.",
-          "duration": "2.2 sec.",
-          "hits_flying": "No",
-          "knock_down": "Yes",
-          "sp_cost": "720",
-          "aggro": "74",
-          "skill_type": "Melee",
-          "levels": [
-            {
-              "level": "Level 1",
-              "value": "АТК: 900%"
-            },
-            {
-              "level": "Level 10",
-              "value": "АТК: 1800%"
-            }
-          ],
-          "special": []
-        },
-        {
-          "name": "Additional Destruction",
-          "image": "addestructiongs.jpg",
-          "description": "Cut all enemies in a row down with a strong and splendid slash.",
-          "target": "Up to 5 enemies 6m away and within a 5m radius",
-          "casting_time": "Instant",
-          "cooldown": "27 sec.",
-          "duration": "3.7 sec.",
-          "hits_flying": "Yes",
-          "knock_down": "Yes",
-          "sp_cost": "1040",
-          "aggro": "145",
-          "skill_type": "Melee",
-          "levels": [
-            {
-              "level": "Level 1",
-              "value": "АТК: 2000%"
-            },
-            {
-              "level": "Level 10",
-              "value": "АТК: 4000%"
-            }
-          ],
-          "special": [
-            "Additional damage doubles if the enemy is affected by a debuff from the following groups:",
-            "Additional damage doubles if the enemy is affected by a debuff from the following groups:"
-          ]
-        }
-      ],
-      "lv25_bonus_extra": [
-        "[RE: PvE] Skill DMG increases equal to 8% of extra [STR]",
-        "[PVP/PVE Maps] Additional 6% DMG according to extra [STR]",
-        "Ignore additional DEF according to extra [STR] * 1",
-        "Additional DMG against [PC] + 1x",
-        "Additional DMG against Monster according to 1 * 50"
-      ],
-      "equipped_items": "Great Sword",
-      "icon_position": {
-        "x": -150,
-        "y": -250
-      }
-    },
-    {
-      "name": "Blast Guard",
-      "info": {
-        "Targets": "4 enemies",
-        "Range": "0.1~1.5m away",
-        "Splash": "0.8 DMG within  2m range",
-        "Hits per attack": "2",
-        "Hits flying": "No",
-        "Flying": "No",
-        "Regenerate SP": "Yes",
-        "Physical DMG": "-10%",
-        "Shooting DMG": "-10%"
-      },
-      "stats": {
-        "ASPD": "280",
-        "Bonus ATK": "340%",
-        "MSPD": "1",
-        "MSPD Limit": "8.50",
-        "ACC": "50",
+        "ACC": "100",
         "EVA": "0",
         "BLK": "0",
         "Fire RES": "0",
         "Ice RES": "0",
         "Lightning RES": "0",
-        "Abnormal RES": "0"
+        "Abnormal RES": "20"
       },
       "lv25_bonus": {
-        "ATK SPD": "+22%",
-        "Critical": "+12",
-        "Penetration": "35+13",
-        "Immunity": "10+20"
+        "Immunity": "5+20",
+        "DEF": "5"
       },
+      "consume": "",
       "skills": [
         {
-          "name": "Blast Preparation",
-          "image": "bgd_Blastguardskl01.jpg",
-          "description": "Improve your destructive power by equipping your great sword with explosives to be detonated upon launching an attack.",
+          "name": "Encourage",
+          "image": "aray_encourage.jpg",
+          "description": "Dramatically enhances the offensive abilities of team members. Cannot be stacked with certain buffs.",
           "target": "",
           "casting_time": "Instant",
           "cooldown": "20 sec.",
           "duration": "300 seconds",
-          "hits_flying": "No",
+          "hits_flying": "Yes",
           "knock_down": "No",
-          "sp_cost": "500",
+          "sp_cost": "750",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 15",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "Penetration +2",
+                "Critical +2",
+                "Critical Damage +2%",
+                "ATK against monsters +15%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "Penetration +20",
+                "Critical +20",
+                "Critical Damage +20%",
+                "ATK against monsters +60%"
+              ]
+            },
+            {
+              "level": "Level 11",
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "Penetration +22",
+                "Critical +22",
+                "Critical Damage +22%",
+                "ATK against monsters +65%"
+              ]
+            },
+            {
+              "level": "Level 12",
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "Penetration +24",
+                "Critical +24",
+                "Critical Damage +24%",
+                "ATK against monsters +70%"
+              ]
+            },
+            {
+              "level": "Level 13",
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "Penetration +26",
+                "Critical +26",
+                "Critical Damage +26%",
+                "ATK against monsters +75%"
+              ]
             }
           ],
           "special": []
         },
         {
-          "name": "Blast Voltage",
-          "image": "bgd_Blastguardskl02.jpg",
-          "description": "Smash the great sword onto the ground, creating an explosive shock.",
-          "target": "Up to 8 surrounding enemies",
-          "casting_time": "Instant",
-          "cooldown": "10 sec.",
-          "duration": "2.7 sec.",
-          "hits_flying": "No",
-          "knock_down": "Yes",
-          "sp_cost": "540",
-          "aggro": "75",
-          "skill_type": "Melee",
-          "levels": [
-            {
-              "level": "Level 1",
-              "value": "АТК: 1150%"
-            },
-            {
-              "level": "Level 10",
-              "value": "АТК: 2300%"
-            }
-          ],
-          "special": []
-        },
-        {
-          "name": "Blast Chain",
-          "image": "bgd_Blastguardskl03.jpg",
-          "description": "Cause a chain explosion through consecutive strikes.",
-          "target": "Up to 3 adjacent enemies",
-          "casting_time": "Instant",
-          "cooldown": "15 sec.",
-          "duration": "3.63 sec.",
-          "hits_flying": "No",
-          "knock_down": "Yes",
-          "sp_cost": "450",
-          "aggro": "164",
-          "skill_type": "Melee",
-          "levels": [
-            {
-              "level": "Level 1",
-              "value": "АТК: 1550%"
-            },
-            {
-              "level": "Level 10",
-              "value": "АТК: 3100%"
-            }
-          ],
-          "special": []
-        },
-        {
-          "name": "Blast Swinger",
-          "image": "bgd_Blastguardskl04.jpg",
-          "description": "Blast enemies away with a big swing from your great sword.",
-          "target": "Up to 4m away / within a radius of 5m / Max. 6 targets",
-          "casting_time": "Instant",
+          "name": "Pulsate",
+          "image": "aray_pulsate.jpg",
+          "description": "Increases the speed of the designated ally.",
+          "target": "",
+          "casting_time": "1.033 sec.",
           "cooldown": "12 sec.",
-          "duration": "2.93 sec.",
-          "hits_flying": "No",
-          "knock_down": "Yes",
-          "sp_cost": "550",
-          "aggro": "146",
-          "skill_type": "Melee",
+          "duration": "300 seconds",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "600",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2200%"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "Attack speed +2%",
+                "Movement speed +2%",
+                "Casting time -0.5%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4400%"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "Attack speed +20%",
+                "Movement speed +20%",
+                "Casting time -5%"
+              ]
+            },
+            {
+              "level": "Level 11",
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "Attack speed +22%",
+                "Movement speed +22%",
+                "Casting time -5.5%"
+              ]
+            },
+            {
+              "level": "Level 12",
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "Attack speed +24%",
+                "Movement speed +24%",
+                "Casting time -6%"
+              ]
+            },
+            {
+              "level": "Level 13",
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "Attack speed +26%",
+                "Movement speed +26%",
+                "Casting time -6.5%"
+              ]
             }
           ],
           "special": []
         },
         {
-          "name": "Blast Device",
-          "image": "bgd_Blastguardskl05.jpg",
-          "description": "Large amounts of explosives are detonated at once through continuous attacks, causing a huge explosion.",
-          "target": "1 adjacent enemy",
-          "casting_time": "Instant",
-          "cooldown": "20 sec.",
-          "duration": "6.57 sec.",
-          "hits_flying": "No",
-          "knock_down": "Yes",
-          "sp_cost": "650",
-          "aggro": "223",
-          "skill_type": "Melee",
+          "name": "Meditate",
+          "image": "aray_meditate.jpg",
+          "description": "Enhances the ATK of the designated ally according to their combat attributes.",
+          "target": "",
+          "casting_time": "1.033 sec.",
+          "cooldown": "12 sec.",
+          "duration": "300 seconds",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "600",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 3350%"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "Increases ATK according to allys active stance.",
+                "Melee/Hybrid: Melee ATK +2%",
+                "Ranged: Ranged ATK +2%",
+                "Magic: Magic ATK +2%",
+                "Increases stats by +5 according to the active stance or attribute."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 6700%"
+              "value": "",
+              "effects": []
+            },
+            {
+              "level": "Level 11",
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "Increases ATK according to allys active stance.",
+                "Melee/Hybrid: Melee ATK +22%",
+                "Ranged: Ranged ATK +22%",
+                "Magic: Magic ATK +22%",
+                "Increases stats by +14 according to the active stance or attribute."
+              ]
+            },
+            {
+              "level": "Level 12",
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "Increases ATK according to allys active stance.",
+                "Melee/Hybrid: Melee ATK +24%",
+                "Ranged: Ranged ATK +24%",
+                "Magic: Magic ATK +24%",
+                "Increases stats by +15 according to the active stance or attribute."
+              ]
+            },
+            {
+              "level": "Level 13",
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "Increases ATK according to allys active stance.",
+                "Melee/Hybrid: Melee ATK +26%",
+                "Ranged: Ranged ATK +26%",
+                "Magic: Magic ATK +26%",
+                "Increases stats by +16 according to the active stance or attribute."
+              ]
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Netherworld",
+          "image": "aray_netherworld.jpg",
+          "description": "Maximizes the offensive capabilities of the selected character by leveraging their strengths.",
+          "target": "",
+          "casting_time": "2.033 sec.",
+          "cooldown": "40 sec.",
+          "duration": "260 second",
+          "hits_flying": "Yes",
+          "knock_down": "No",
+          "sp_cost": "900",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 20",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "",
+              "effects": [
+                "Duration: 20 seconds",
+                "Increases ATK by the highest stat * 0.2",
+                "Increases additional ATK against all races by the highest stat * 0.07",
+                "Maximum SP + 2,000",
+                "Upon casting, enters [Nether] state",
+                "While in [Nether] state, if [Netherworld] is recast, applies [Aether] state",
+                "While in [Aether] state, if [Netherworld] is recast, applies [Nether] state",
+                "Buffs does not stack with [Brute Force Solution]"
+              ]
+            },
+            {
+              "level": "Level 10",
+              "value": "",
+              "effects": [
+                "Duration: 200 second",
+                "Increases ATK by the highest stat * 0.2",
+                "Increases additional ATK against all races by the highest stat * 0.07",
+                "Maximum SP + 2,000",
+                "Upon casting, enters [Nether] state",
+                "While in [Nether] state, if [Netherworld] is recast, applies [Aether] state",
+                "While in [Aether] state, if [Netherworld] is recast, applies [Nether] state",
+                "Buffs does not stack with [Brute Force Solution]"
+              ]
+            },
+            {
+              "level": "Level 11",
+              "value": "",
+              "effects": [
+                "Duration: 220 second",
+                "Increases ATK by the highest stat * 0.2",
+                "Increases additional ATK against all races by the highest stat * 0.07",
+                "Maximum SP + 2,000",
+                "Upon casting, enters [Nether] state",
+                "While in [Nether] state, if [Netherworld] is recast, applies [Aether] state",
+                "While in [Aether] state, if [Netherworld] is recast, applies [Nether] state",
+                "Buffs does not stack with [Brute Force Solution]"
+              ]
+            },
+            {
+              "level": "Level 12",
+              "value": "",
+              "effects": [
+                "Duration: 240 second",
+                "Increases ATK by the highest stat * 0.2",
+                "Increases additional ATK against all races by the highest stat * 0.07",
+                "Maximum SP + 2,000",
+                "Upon casting, enters [Nether] state",
+                "While in [Nether] state, if [Netherworld] is recast, applies [Aether] state",
+                "While in [Aether] state, if [Netherworld] is recast, applies [Nether] state",
+                "Buffs does not stack with [Brute Force Solution]"
+              ]
+            },
+            {
+              "level": "Level 13",
+              "value": "",
+              "effects": [
+                "Duration: 260 second",
+                "Increases ATK by the highest stat * 0.2",
+                "Increases additional ATK against all races by the highest stat * 0.07",
+                "Maximum SP + 2,000",
+                "Upon casting, enters [Nether] state",
+                "While in [Nether] state, if [Netherworld] is recast, applies [Aether] state",
+                "While in [Aether] state, if [Netherworld] is recast, applies [Nether] state",
+                "Buffs does not stack with [Brute Force Solution]"
+              ]
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Additional Assist",
+          "image": "aray_additionalassist.jpg",
+          "description": "Installs a tactical trap. Upon casting, reduces the cooldown of all of your characters except [Additional Assist].",
+          "target": "",
+          "casting_time": "1.2 sec.",
+          "cooldown": "45 sec.",
+          "duration": "1.533 sec.",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "1000",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 30",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "",
+              "effects": [
+                "Install a self-destruct trap",
+                "Can install up to 1",
+                "The trap detects hidden enemies within 15m and self-destructs towards enemies within 6m",
+                "Applies harmful debuff and Increases cooldown of enemy when hit."
+              ]
+            },
+            {
+              "level": "Level 10",
+              "value": "",
+              "effects": [
+                "Install a self-destruct trap",
+                "Can install up to 1",
+                "The trap detects hidden enemies within 15m and self-destructs towards enemies within 6m",
+                "Applies harmful debuff and Increases cooldown of enemy when hit."
+              ]
             }
           ],
           "special": []
         }
       ],
-      "lv25_bonus_extra": [
-        "[RE: PvE] Skill DMG increases equal to 7% of extra [STR]",
-        "[PVP/PVE Maps] Additional 3% DMG according to extra [STR]",
-        "Ignore additional DEF according to extra [STR] * 3",
-        "Ignore additional RES according to extra [STR] * 3"
-      ],
-      "equipped_items": "Great Sword",
+      "equipped_items": "Tool",
       "icon_position": {
-        "x": -250,
-        "y": -375
+        "x": -200,
+        "y": -400
       }
     }
   ]

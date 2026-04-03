@@ -2,7 +2,7 @@
   "slug": "Dina",
   "equipment": {
     "category": "Usable Equipment",
-    "medal": "The trick is that there is no trick",
+    "medal": "The trick is that there is no trick GE 20th Anniversary Commemorative Medal Special GE 20th Anniversary Commemorative Medal",
     "head": "None",
     "earring": "Earring",
     "face": "None",
@@ -91,6 +91,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -132,6 +133,7 @@
         "Penetration": "10+20",
         "Immunity": "10+5"
       },
+      "consume": "Psychic Sphere x 3",
       "skills": [
         {
           "name": "Whats in my hat?",
@@ -146,14 +148,44 @@
           "sp_cost": "100",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 2",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "If there is no [Response] when cast, apply ["
+              "value": "",
+              "effects": [
+                "If there is no [Response] when cast, apply [Response - Applause]",
+                "If there is [Response] when cast, refresh the duration of [Response]",
+                "When cast, reduce the cooldown of [Hat Trick] stance skill by 4 seconds",
+                "[Response - Applause] Duration 45 seconds",
+                "Attack power +10%, attack power +20% to monsters, and mental penetration +10",
+                "[Response - Cheer] Duration 45 seconds",
+                "Attack rating +1, attack power +20%, attack power +40% to monsters, and mental penetration +20",
+                "[Response - Zeal] Duration 45 seconds",
+                "Attack rating up to +2 in proportion to the buff level",
+                "Attack power +30%, attack power +60% to monsters, and mental penetration +30",
+                "Additional effect when casting an attack skill"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "If there is no [Response] when cast, apply ["
+              "value": "",
+              "effects": [
+                "If there is no [Response] when cast, apply [Response - Applause]",
+                "If there is [Response] when cast, refresh the duration of [Response]",
+                "When cast, reduce the cooldown of [Hat Trick] stance skill by 4 seconds",
+                "[Response - Applause] Duration 45 seconds",
+                "Attack power +10%, attack power +20% to monsters, and mental penetration +10",
+                "[Response - Cheer] Duration 45 seconds",
+                "Attack rating +1, attack power +20%, attack power +40% to monsters, and mental penetration +20",
+                "[Response - Zeal] Duration 45 seconds",
+                "Attack rating up to +2 in proportion to the buff level",
+                "Attack power +30%, attack power +60% to monsters, and mental penetration +30",
+                "Additional effect when casting an attack skill"
+              ]
             }
           ],
           "special": [
@@ -174,14 +206,36 @@
           "sp_cost": "240",
           "aggro": "20",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 6",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 382%"
+              "value": "АТК: 382%",
+              "effects": [
+                "During casting, until landing, [Unable to be hit]",
+                "When in [Let the Show Begin!] state, skill damage to monsters is tripled.",
+                "If there is no [Response] when casting, [Response - Applause] is applied.",
+                "When in [Response - Applause] or [Response - Cheer] state, the next level of [Response] is applied.",
+                "[Response - Zeal] When in this state, [Response - Zeal] is removed and [Response - Applause] is applied.",
+                "When [Magicians High] Level 2 is applied, double skill damage to monsters.",
+                "When [Magicians High] Level 2 lasts 90 seconds, casting time -15%, movement speed +30%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 764%"
+              "value": "АТК: 764%",
+              "effects": [
+                "During casting, until landing, [Unable to be hit]",
+                "When in [Let the Show Begin!] state, skill damage to monsters is tripled.",
+                "If there is no [Response] when casting, [Response - Applause] is applied.",
+                "When in [Response - Applause] or [Response - Cheer] state, the next level of [Response] is applied.",
+                "[Response - Zeal] When in this state, [Response - Zeal] is removed and [Response - Applause] is applied.",
+                "When [Magicians High] Level 2 is applied, double skill damage to monsters.",
+                "When [Magicians High] Level 2 lasts 90 seconds, casting time -15%, movement speed +30%"
+              ]
             }
           ],
           "special": []
@@ -199,14 +253,36 @@
           "sp_cost": "400",
           "aggro": "40",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 667%"
+              "value": "АТК: 667%",
+              "effects": [
+                "[Let the Show Begin!] When in this state, triple skill damage to monsters.",
+                "When cast If there is no [Response], [Response - Applause] is applied.",
+                "When in [Response - Applause] or [Response - Cheers] state, the next level of [Response] is applied.",
+                "When in [Response - Zeal] state, [Response - Zeal] is removed and [Response - Cheers] is applied.",
+                "Apply [Magicians High] Level 1.",
+                "Reduces the cooldown of [Closer] by 20 seconds.",
+                "4x skill damage to monsters."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1334%"
+              "value": "АТК: 1334%",
+              "effects": [
+                "[Let the Show Begin!] When in this state, triple skill damage to monsters.",
+                "When cast If there is no [Response], [Response - Applause] is applied.",
+                "When in [Response - Applause] or [Response - Cheers] state, the next level of [Response] is applied.",
+                "When in [Response - Zeal] state, [Response - Zeal] is removed and [Response - Cheers] is applied.",
+                "Apply [Magicians High] Level 1.",
+                "Reduces the cooldown of [Closer] by 20 seconds.",
+                "4x skill damage to monsters."
+              ]
             }
           ],
           "special": []
@@ -224,14 +300,32 @@
           "sp_cost": "600",
           "aggro": "80",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 15",
+          "soft_armor_atk": "85%",
+          "heavy_armor_atk": "115%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1046%"
+              "value": "АТК: 1046%",
+              "effects": [
+                "When in [Let the Show Begin!] state 3x skill damage to monsters",
+                "If there is no [Response] when casting, [Response - Applause] is applied",
+                "If [Response - Applause] or [Response - Cheer] is in effect, the next level of [Response] is applied",
+                "If [Response - Zeal] is in effect, [Response - Zeal] level 2 is applied",
+                "4x skill damage to monsters"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2092%"
+              "value": "АТК: 2092%",
+              "effects": [
+                "When in [Let the Show Begin!] state 3x skill damage to monsters",
+                "If there is no [Response] when casting, [Response - Applause] is applied",
+                "If [Response - Applause] or [Response - Cheer] is in effect, the next level of [Response] is applied",
+                "If [Response - Zeal] is in effect, [Response - Zeal] level 2 is applied",
+                "4x skill damage to monsters"
+              ]
             }
           ],
           "special": []
@@ -249,14 +343,36 @@
           "sp_cost": "1250",
           "aggro": "120",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 25",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1953%"
+              "value": "АТК: 1953%",
+              "effects": [
+                "Can only be cast while in [Magicians High] state.",
+                "When in [Let the Show Begin!] state, skill damage to monsters is tripled.",
+                "Removes [Response] when cast.",
+                "Removes [Magicians High] when hit.",
+                "When in [Response - Zeal] state, resets cooldowns for [Hat Trick] stance skills except this skill.",
+                "During casting, [Cannot be hit].",
+                "Skill damage to monsters is quadrupled."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3906%"
+              "value": "АТК: 3906%",
+              "effects": [
+                "Can only be cast while in [Magicians High] state.",
+                "When in [Let the Show Begin!] state, skill damage to monsters is tripled.",
+                "Removes [Response] when cast.",
+                "Removes [Magicians High] when hit.",
+                "When in [Response - Zeal] state, resets cooldowns for [Hat Trick] stance skills except this skill.",
+                "During casting, [Cannot be hit].",
+                "Skill damage to monsters is quadrupled."
+              ]
             }
           ],
           "special": []

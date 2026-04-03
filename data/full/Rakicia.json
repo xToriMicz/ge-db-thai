@@ -88,6 +88,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -128,6 +129,7 @@
         "Penetration": "5+20",
         "Immunity": "10+10"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Ripuka",
@@ -142,18 +144,44 @@
           "sp_cost": "300",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "Skill damage triples against monsters affected by [Taabu]",
+                "Fire Penetration +5",
+                "IMM +5",
+                "Movement Speed Limit +20%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "Skill damage triples against monsters affected by [Taabu]",
+                "Fire Penetration +5",
+                "IMM +5",
+                "Movement Speed Limit +20%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "Skill damage triples against monsters affected by [Taabu]",
+                "Fire Penetration +10",
+                "IMM +10",
+                "Movement Speed Limit +20%",
+                "A.R. +1"
+              ]
             }
           ],
           "special": []
@@ -171,14 +199,38 @@
           "sp_cost": "300",
           "aggro": "50",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 3",
+          "soft_armor_atk": "60%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "130%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 987.3%"
+              "value": "АТК: 987.3%",
+              "effects": [
+                "Recharge time: 7 seconds",
+                "Can be used up to 3 times",
+                "Recharges after 1 use",
+                "20% chance to inflict [Scald]",
+                "100% chance to inflict [Taabu]",
+                "Ignore Debuff RES",
+                "Skill DMG increases by 5% of extra [STR]",
+                "Reduces [Kaji Rahishi]s cooldown by 3 seconds when successfully hitting a monster"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1974%"
+              "value": "АТК: 1974%",
+              "effects": [
+                "Recharge time: 7 seconds",
+                "Can be used up to 3 times",
+                "Recharges after 1 use",
+                "20% chance to inflict [Scald]",
+                "100% chance to inflict [Taabu]",
+                "Ignore Debuff RES",
+                "Skill DMG increases by 5% of extra [STR]",
+                "Reduces [Kaji Rahishi]s cooldown by 3 seconds when successfully hitting a monster"
+              ]
             }
           ],
           "special": []
@@ -196,14 +248,30 @@
           "sp_cost": "500",
           "aggro": "81",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "60%",
+          "heavy_armor_atk": "120%",
+          "light_armor_atk": "120%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 723.4%"
+              "value": "АТК: 723.4%",
+              "effects": [
+                "20% chance to inflict [Scald]",
+                "100% chance to inflict [Taabu]",
+                "Ignore Debuff RES",
+                "Skill DMG increases by 5% of extra [STR]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1446%"
+              "value": "АТК: 1446%",
+              "effects": [
+                "20% chance to inflict [Scald]",
+                "100% chance to inflict [Taabu]",
+                "Ignore Debuff RES",
+                "Skill DMG increases by 5% of extra [STR]"
+              ]
             }
           ],
           "special": []
@@ -221,14 +289,30 @@
           "sp_cost": "650",
           "aggro": "91",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "60%",
+          "heavy_armor_atk": "130%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1778.9%"
+              "value": "АТК: 1778.9%",
+              "effects": [
+                "20% chance to inflict [Scald]",
+                "100% chance to inflict [Taabu]",
+                "Ignore Debuff RES",
+                "Skill DMG increases by 5% of extra [STR]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3557%"
+              "value": "АТК: 3557%",
+              "effects": [
+                "20% chance to inflict [Scald]",
+                "100% chance to inflict [Taabu]",
+                "Ignore Debuff RES",
+                "Skill DMG increases by 5% of extra [STR]"
+              ]
             }
           ],
           "special": []
@@ -246,14 +330,30 @@
           "sp_cost": "750",
           "aggro": "130",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 20",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1822.5%"
+              "value": "АТК: 1822.5%",
+              "effects": [
+                "30% chance to inflict [Scald]",
+                "100% chance to inflict [Taabu]",
+                "Ignore Debuff RES",
+                "Skill DMG increases by 5% of extra [STR]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3645%"
+              "value": "АТК: 3645%",
+              "effects": [
+                "30% chance to inflict [Scald]",
+                "100% chance to inflict [Taabu]",
+                "Ignore Debuff RES",
+                "Skill DMG increases by 5% of extra [STR]"
+              ]
             }
           ],
           "special": []

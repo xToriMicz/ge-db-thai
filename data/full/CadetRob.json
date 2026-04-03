@@ -103,6 +103,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -145,6 +146,7 @@
         "Penetration": "20+15",
         "Immunity": "5+5"
       },
+      "consume": "Steel Bullet x 3",
       "skills": [
         {
           "name": "Bloody Shootdown Shot",
@@ -159,14 +161,26 @@
           "sp_cost": "300",
           "aggro": "100",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bullet x 1",
+          "soft_armor_atk": "165%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 600%"
+              "value": "АТК: 600%",
+              "effects": [
+                "Ignores 300 DEF",
+                "30% chance to inflict [Entangle] on PC"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1200%"
+              "value": "АТК: 1200%",
+              "effects": [
+                "Ignores 300 DEF",
+                "30% chance to inflict [Entangle] on PC"
+              ]
             }
           ],
           "special": []
@@ -184,14 +198,26 @@
           "sp_cost": "200",
           "aggro": "100",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bullet x 15",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1100%"
+              "value": "АТК: 1100%",
+              "effects": [
+                "Ignores 200 DEF",
+                "30% chance to inflict [Confusion] on PC"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "Ignores 200 DEF",
+                "30% chance to inflict [Confusion] on PC"
+              ]
             }
           ],
           "special": []
@@ -209,14 +235,24 @@
           "sp_cost": "600",
           "aggro": "150",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bullet x 20",
+          "soft_armor_atk": "120%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1400%"
+              "value": "АТК: 1400%",
+              "effects": [
+                "25% chance to inflict [Burn]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2800%"
+              "value": "АТК: 2800%",
+              "effects": [
+                "25% chance to inflict [Burn]"
+              ]
             }
           ],
           "special": []
@@ -234,14 +270,26 @@
           "sp_cost": "750",
           "aggro": "200",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bullet x 2",
+          "soft_armor_atk": "75%",
+          "heavy_armor_atk": "75%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": [
+                "Ignores 100 DEF",
+                "Skill damage up to 2.2x in proportion to distance"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3600%"
+              "value": "АТК: 3600%",
+              "effects": [
+                "Ignores 100 DEF",
+                "Skill damage up to 2.2x in proportion to distance"
+              ]
             }
           ],
           "special": []
@@ -259,14 +307,30 @@
           "sp_cost": "800",
           "aggro": "250",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bullet x 1",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "75%",
+          "light_armor_atk": "150%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1550%"
+              "value": "АТК: 1550%",
+              "effects": [
+                "Ignores 350 DEF",
+                "40% chance to inflict [Armor Break]",
+                "Ignores debuff RES",
+                "Enemies with [Visual Confusion] gain [Mark] ON HIT"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3100%"
+              "value": "АТК: 3100%",
+              "effects": [
+                "Ignores 350 DEF",
+                "40% chance to inflict [Armor Break]",
+                "Ignores debuff RES",
+                "Enemies with [Visual Confusion] gain [Mark] ON HIT"
+              ]
             }
           ],
           "special": []
@@ -316,6 +380,7 @@
         "Penetration": "20+15",
         "Immunity": "5+5"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Protective Hiding",
@@ -330,26 +395,55 @@
           "sp_cost": "700",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 40",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Gain ["
+              "value": "",
+              "effects": [
+                "Gain [Snipers Camouflage] on cast, and when it expires, gain [Snipers Patience]",
+                "[Snipers Camouflage] Invisible for 15 seconds",
+                "[Snipers Patience] D.R. +1, DEF/RES/IMM +2 for 15 seconds"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Gain ["
+              "value": "",
+              "effects": [
+                "Gain [Snipers Camouflage] on cast, and when it expires, gain [Snipers Patience]",
+                "[Snipers Camouflage] Invisible for 15 seconds",
+                "[Snipers Patience] D.R. +1, DEF/RES/IMM +20 for 15 seconds"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Gain ["
+              "value": "",
+              "effects": [
+                "Gain [Snipers Camouflage] on cast, and when it expires, gain [Snipers Patience]",
+                "[Snipers Camouflage] Invisible for 15 seconds",
+                "[Snipers Patience] D.R. +1, DEF/RES/IMM +22 for 15 seconds"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Gain ["
+              "value": "",
+              "effects": [
+                "Gain [Snipers Camouflage] on cast, and when it expires, gain [Snipers Patience]",
+                "[Snipers Camouflage] Invisible for 15 seconds",
+                "[Snipers Patience] D.R. +1, DEF/RES/IMM +24 for 15 seconds"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Gain ["
+              "value": "",
+              "effects": [
+                "Gain [Snipers Camouflage] on cast, and when it expires, gain [Snipers Patience]",
+                "[Snipers Camouflage] Invisible for 15 seconds",
+                "[Snipers Patience] D.R. +1, DEF/RES/IMM +26 for 15 seconds"
+              ]
             }
           ],
           "special": []
@@ -367,26 +461,60 @@
           "sp_cost": "800",
           "aggro": "50",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bullet x 30",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1400%"
+              "value": "АТК: 1400%",
+              "effects": [
+                "Ignores 100 DEF",
+                "Gain [Double Time] and resets Cooldown of all skills upon successful hit",
+                "10% chance of to inflict [Confusion] on PC",
+                "[Double Time] During 18 seconds, Movement Speed +9%, Movement Speed Limit +0.90, Received Melee/Ranged Damage -20%, and Received Magical Damage +20%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2800%"
+              "value": "АТК: 2800%",
+              "effects": [
+                "Ignores 100 DEF",
+                "Gain [Double Time] and resets Cooldown of all skills upon successful hit",
+                "10% chance of to inflict [Confusion] on PC",
+                "[Double Time] During 18 seconds, Movement Speed +45%, Movement Speed Limit +4.50, Received Melee/Ranged Damage -20%, and Received Magical Damage +20%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "АТК: 3080%"
+              "value": "АТК: 3080%",
+              "effects": [
+                "Ignores 100 DEF",
+                "Gain [Double Time] and resets Cooldown of all skills upon successful hit",
+                "10% chance of to inflict [Confusion] on PC",
+                "[Double Time] During 18 seconds, Movement Speed +49%, Movement Speed Limit +4.90, Received Melee/Ranged Damage -20%, and Received Magical Damage +20%"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "АТК: 3360%"
+              "value": "АТК: 3360%",
+              "effects": [
+                "Ignores 100 DEF",
+                "Gain [Double Time] and resets Cooldown of all skills upon successful hit",
+                "10% chance of to inflict [Confusion] on PC",
+                "[Double Time] During 18 seconds, Movement Speed +53%, Movement Speed Limit +5.30, Received Melee/Ranged Damage -20%, and Received Magical Damage +20%"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "АТК: 3360%"
+              "value": "АТК: 3360%",
+              "effects": [
+                "Ignores 100 DEF",
+                "Gain [Double Time] and resets Cooldown of all skills upon successful hit",
+                "10% chance of to inflict [Confusion] on PC",
+                "[Double Time] During 18 seconds, Movement Speed +57%, Movement Speed Limit +5.70, Received Melee/Ranged Damage -20%, and Received Magical Damage +20%"
+              ]
             }
           ],
           "special": []
@@ -404,14 +532,32 @@
           "sp_cost": "250",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 15",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "["
+              "value": "",
+              "effects": [
+                "[Leg Aim] ATK to monsters +100%",
+                "Upon skill hit (except [Evasion Shot]), enemies with [Visual Confusion] gain [Neutralize Defense]",
+                "[Arm Aim] ATK to monsters +100%",
+                "Upon skill hit (except [Evasion Shot]), enemies with [Visual Confusion] gain [Neutralize Attack]",
+                "Toggle between buffs by re-casting"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "["
+              "value": "",
+              "effects": [
+                "[Leg Aim] ATK to monsters +100%",
+                "Upon skill hit (except [Evasion Shot]), enemies with [Visual Confusion] gain [Neutralize Defense]",
+                "[Arm Aim] ATK to monsters +100%",
+                "Upon skill hit (except [Evasion Shot]), enemies with [Visual Confusion] gain [Neutralize Attack]",
+                "Toggle between buffs by re-casting"
+              ]
             }
           ],
           "special": []
@@ -429,14 +575,30 @@
           "sp_cost": "650",
           "aggro": "100",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bullet x 1",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "90%",
+          "light_armor_atk": "120%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2000%"
+              "value": "АТК: 2000%",
+              "effects": [
+                "Ignores 150 DEF",
+                "Gain Lv. 8 [Double Time] on hit",
+                "During [Leg Aim], enemies with [Visual Confusion] gain [Neutralize Defense] (50% chance for PC)",
+                "During [Arm Aim], enemies with [Visual Confusion] gain [Neutralize Attack] (50% chance for PC)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4000%"
+              "value": "АТК: 4000%",
+              "effects": [
+                "Ignores 150 DEF",
+                "Gain Lv. 8 [Double Time] on hit",
+                "During [Leg Aim], enemies with [Visual Confusion] gain [Neutralize Defense] (50% chance for PC)",
+                "During [Arm Aim], enemies with [Visual Confusion] gain [Neutralize Attack] (50% chance for PC)"
+              ]
             }
           ],
           "special": []
@@ -454,14 +616,34 @@
           "sp_cost": "800",
           "aggro": "100",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bullet x 1",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "70%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1200%"
+              "value": "АТК: 1200%",
+              "effects": [
+                "Ignores 100 DEF",
+                "100% Chance to inflict [Panic]",
+                "Skill damage up to 3x proportional to distance (up to 20m)",
+                "During [Leg Aim], enemies with [Visual Confusion] gain [Neutralize Defense] (For PC, chance proportional to distance)",
+                "During [Arm Aim], enemies with [Visual Confusion] gain [Neutralize Attack] (For PC, chance proportional to distance)",
+                "Cannot kill the enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "Ignores 100 DEF",
+                "100% Chance to inflict [Panic]",
+                "Skill damage up to 3x proportional to distance (up to 20m)",
+                "During [Leg Aim], enemies with [Visual Confusion] gain [Neutralize Defense] (For PC, chance proportional to distance)",
+                "During [Arm Aim], enemies with [Visual Confusion] gain [Neutralize Attack] (For PC, chance proportional to distance)",
+                "Cannot kill the enemy"
+              ]
             }
           ],
           "special": []

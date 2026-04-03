@@ -91,6 +91,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -134,6 +135,7 @@
         "Penetration": "20+15",
         "Immunity": "5+5"
       },
+      "consume": "Metal Shell Ammo x 2",
       "skills": [
         {
           "name": "Souvenir Leve",
@@ -148,26 +150,65 @@
           "sp_cost": "200",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 7",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 400 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 400 seconds",
+                "Attack Rating +1",
+                "Attack against monsters +50%",
+                "[Ranged] Ignore Defence +1%",
+                "All Stats +5"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 400 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 400 seconds",
+                "Attack Rating +1",
+                "Attack against Monsters +50%",
+                "[Ranged] Ignore Defence +10%",
+                "All Stats +5"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 400 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 400 seconds",
+                "Attack Rating +1",
+                "Attack against Monsters +50%",
+                "[Ranged] Defence Ignore +11%",
+                "All Stats +5"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 400 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 400 seconds",
+                "Attack Rating +1",
+                "Attack against Monsters +50%",
+                "[Ranged] Defence Ignore +12%",
+                "All Stats +5"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 400 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 400 seconds",
+                "Attack Rating +1",
+                "Attack against Monsters +50%",
+                "[Ranged] Ignore Defence +13%",
+                "All Stats +5"
+              ]
             }
           ],
           "special": []
@@ -176,7 +217,7 @@
           "name": "Pointaje",
           "image": "rmd_pointage.jpg",
           "description": "Fires a rapid burst of shots at the target.",
-          "target": "",
+          "target": "Max Range 16m / Radius 3m / Up to 4 enemies around the designated target",
           "casting_time": "Instant",
           "cooldown": "8 sec.",
           "duration": "1.066 sec.",
@@ -185,14 +226,30 @@
           "sp_cost": "150",
           "aggro": "0",
           "skill_type": "Shooting",
+          "consume_item": "Metal Shell Ammo x 3",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 310%"
+              "value": "АТК: 310%",
+              "effects": [
+                "Skill damage doubled against monsters whilst in [Modification - Rapid Fire] state",
+                "Switches to [Modification - Firepower] state whilst in [Modification - Rapid Fire] state",
+                "Can cast [P Attaju] can be cast additionally",
+                "When casting an additional skill, all skill cooldowns are reduced by 2 seconds"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 620%"
+              "value": "АТК: 620%",
+              "effects": [
+                "Skill damage doubled against monsters whilst in [Modification - Rapid Fire] state",
+                "Switches to [Modification - Firepower] state whilst in [Modification - Rapid Fire] state",
+                "Can cast [P Attaju] can be cast additionally",
+                "When casting an additional skill, all skill cooldowns are reduced by 2 seconds"
+              ]
             }
           ],
           "special": []
@@ -210,14 +267,30 @@
           "sp_cost": "300",
           "aggro": "50",
           "skill_type": "Shooting",
+          "consume_item": "Metal Shell Ammo x 12",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "90%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 460%"
+              "value": "АТК: 460%",
+              "effects": [
+                "20% chance to apply [Flame] to the enemy on hit",
+                "Skill damage doubled when in [Souvenir Leve] state (1.5x against PCs)",
+                "When in [Modification - Firepower] state, 3x skill damage",
+                "When in [Modification - Firepower] state, switches to [Modification - Rapid Fire] state"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 919%"
+              "value": "АТК: 919%",
+              "effects": [
+                "20% chance to apply [Flame] to the enemy on hit",
+                "Skill damage doubled when in [Souvenir Leve] state (1.5x against PCs)",
+                "When in [Modification - Firepower] state, 3x skill damage",
+                "When in [Modification - Firepower] state, switches to [Modification - Rapid Fire] state"
+              ]
             }
           ],
           "special": []
@@ -235,14 +308,32 @@
           "sp_cost": "320",
           "aggro": "100",
           "skill_type": "Shooting",
+          "consume_item": "Metal Shell Ammo x 9",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 740%"
+              "value": "АТК: 740%",
+              "effects": [
+                "40% chance to inflict [Critical Wound] on the enemy upon hit",
+                "Skill damage doubled whilst in [Souvenir Leve] state (1.5x for PCs)",
+                "Skill damage tripled against monsters whilst in [Modification - Rapid Fire] state",
+                "Switches to [Modification - Firepower] status whilst in [Modification - Rapid Fire] status",
+                "Ignores an additional (Total [Skill] * 0.04)% of the monsters defence"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1480%"
+              "value": "АТК: 1480%",
+              "effects": [
+                "40% chance to inflict [Critical Wound] on the enemy upon hit",
+                "Skill damage doubled whilst in [Souvenir Leve] state (1.5x for PCs)",
+                "Skill damage tripled against monsters whilst in [Modification - Rapid Fire] state",
+                "Switches to [Modification - Firepower] status whilst in [Modification - Rapid Fire] status",
+                "Ignores an additional (Total [Skill] * 0.04)% of the monsters defence"
+              ]
             }
           ],
           "special": []
@@ -260,14 +351,32 @@
           "sp_cost": "470",
           "aggro": "100",
           "skill_type": "Shooting",
+          "consume_item": "Ancient Star Orb x 12",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "105%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1330%"
+              "value": "АТК: 1330%",
+              "effects": [
+                "On hit, 50% chance to [Impact] the enemy",
+                "Skill damage to monsters up to 2x as the number of targets hit decreases",
+                "Skill damage to monsters 4x while in [Modification - Firepower] state",
+                "Switches to [Modification - Rapid Fire] state while in [Modification - Firepower] state",
+                "Ignores additional defense of monsters equal to (Total [Skill] * 0.04)%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2660%"
+              "value": "АТК: 2660%",
+              "effects": [
+                "On hit, 50% chance to [Impact] the enemy",
+                "Skill damage to monsters up to 2x as the number of targets hit decreases",
+                "Skill damage to monsters 4x while in [Modification - Firepower] state",
+                "Switches to [Modification - Rapid Fire] state while in [Modification - Firepower] state",
+                "Ignores additional defense of monsters equal to (Total [Skill] * 0.04)%"
+              ]
             }
           ],
           "special": []

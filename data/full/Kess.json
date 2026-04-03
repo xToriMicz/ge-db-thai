@@ -156,6 +156,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -195,6 +196,7 @@
         "Ignore DEF": "+2%",
         "Critical": "+16"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Plumbullet shot",
@@ -209,14 +211,24 @@
           "sp_cost": "100",
           "aggro": "31",
           "skill_type": "Shooting",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 112%"
+              "value": "АТК: 112%",
+              "effects": [
+                "100% chance to inflict [Poison]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 224%"
+              "value": "АТК: 224%",
+              "effects": [
+                "100% chance to inflict [Poison]"
+              ]
             }
           ],
           "special": []
@@ -234,14 +246,20 @@
           "sp_cost": "150",
           "aggro": "57",
           "skill_type": "Shooting",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 239%"
+              "value": "АТК: 239%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 478%"
+              "value": "АТК: 478%",
+              "effects": []
             }
           ],
           "special": []
@@ -259,14 +277,20 @@
           "sp_cost": "250",
           "aggro": "39",
           "skill_type": "Shooting",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 149%"
+              "value": "АТК: 149%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 298%"
+              "value": "АТК: 298%",
+              "effects": []
             }
           ],
           "special": []
@@ -284,14 +308,20 @@
           "sp_cost": "300",
           "aggro": "165",
           "skill_type": "Shooting",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 773%"
+              "value": "АТК: 773%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1546%"
+              "value": "АТК: 1546%",
+              "effects": []
             }
           ],
           "special": []
@@ -331,6 +361,7 @@
         "ATK SPD": "+25%",
         "Ignore DEF": "+2%"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Sapping Shots",
@@ -345,14 +376,24 @@
           "sp_cost": "100",
           "aggro": "114",
           "skill_type": "Shooting",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 525%"
+              "value": "АТК: 525%",
+              "effects": [
+                "25% chance to inflict [Mortal Wound]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1050%"
+              "value": "АТК: 1050%",
+              "effects": [
+                "25% chance to inflict [Mortal Wound]"
+              ]
             }
           ],
           "special": []
@@ -370,14 +411,20 @@
           "sp_cost": "200",
           "aggro": "236",
           "skill_type": "Shooting",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1132%"
+              "value": "АТК: 1132%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2264%"
+              "value": "АТК: 2264%",
+              "effects": []
             }
           ],
           "special": []
@@ -395,14 +442,24 @@
           "sp_cost": "250",
           "aggro": "144",
           "skill_type": "Shooting",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 673%"
+              "value": "АТК: 673%",
+              "effects": [
+                "50% chance to inflict [Mortal Wound] on enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1346%"
+              "value": "АТК: 1346%",
+              "effects": [
+                "50% chance to inflict [Mortal Wound] on enemy"
+              ]
             }
           ],
           "special": []
@@ -420,14 +477,26 @@
           "sp_cost": "300",
           "aggro": "241",
           "skill_type": "Shooting",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1152%"
+              "value": "АТК: 1152%",
+              "effects": [
+                "Enemy DEF -50",
+                "100% chance to inflict [Mortal Wound] on enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2304%"
+              "value": "АТК: 2304%",
+              "effects": [
+                "Enemy DEF -50",
+                "100% chance to inflict [Mortal Wound] on enemy"
+              ]
             }
           ],
           "special": []
@@ -468,6 +537,7 @@
         "Ignore DEF": "+2%",
         "Critical": "+9"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Birdfall",
@@ -482,14 +552,20 @@
           "sp_cost": "100",
           "aggro": "122",
           "skill_type": "Shooting",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 567%"
+              "value": "АТК: 567%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1134%"
+              "value": "АТК: 1134%",
+              "effects": []
             }
           ],
           "special": []
@@ -507,26 +583,45 @@
           "sp_cost": "150",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "80% chance of Enemys Accuracy 0 for 11 sec."
+              "value": "",
+              "effects": [
+                "80% chance of Enemys Accuracy 0 for 11 sec."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "80% chance of Enemys Accuracy 0 for 20 sec."
+              "value": "",
+              "effects": [
+                "80% chance of Enemys Accuracy 0 for 20 sec."
+              ]
             },
             {
               "level": "Level 11",
-              "value": "80% chance of Enemys Accuracy 0 for 21 sec."
+              "value": "",
+              "effects": [
+                "80% chance of Enemys Accuracy 0 for 21 sec."
+              ]
             },
             {
               "level": "Level 12",
-              "value": "80% chance of Enemys Accuracy 0 for 22 sec."
+              "value": "",
+              "effects": [
+                "80% chance of Enemys Accuracy 0 for 22 sec."
+              ]
             },
             {
               "level": "Level 13",
-              "value": "80% chance of Enemys Accuracy 0 for 23 sec."
+              "value": "",
+              "effects": [
+                "80% chance of Enemys Accuracy 0 for 23 sec."
+              ]
             }
           ],
           "special": []
@@ -544,14 +639,24 @@
           "sp_cost": "200",
           "aggro": "60",
           "skill_type": "Shooting",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 255%"
+              "value": "АТК: 255%",
+              "effects": [
+                "Enemy DEF -25"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 509%"
+              "value": "АТК: 509%",
+              "effects": [
+                "Enemy DEF -25"
+              ]
             }
           ],
           "special": []
@@ -569,14 +674,24 @@
           "sp_cost": "200",
           "aggro": "45",
           "skill_type": "Shooting",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 165%"
+              "value": "АТК: 165%",
+              "effects": [
+                "25% Chance to [Fear] Enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 330%"
+              "value": "АТК: 330%",
+              "effects": [
+                "25% Chance to [Fear] Enemy"
+              ]
             }
           ],
           "special": []
@@ -594,14 +709,20 @@
           "sp_cost": "250",
           "aggro": "84",
           "skill_type": "Shooting",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 375%"
+              "value": "АТК: 375%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 750%"
+              "value": "АТК: 750%",
+              "effects": []
             }
           ],
           "special": []
@@ -642,6 +763,7 @@
         "Ignore DEF": "+2%",
         "Critical": "+18"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Charging Shot",
@@ -656,14 +778,20 @@
           "sp_cost": "100",
           "aggro": "54",
           "skill_type": "Shooting",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 204%"
+              "value": "АТК: 204%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 408%"
+              "value": "АТК: 408%",
+              "effects": []
             }
           ],
           "special": []
@@ -681,14 +809,20 @@
           "sp_cost": "200",
           "aggro": "31",
           "skill_type": "Shooting",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 109%"
+              "value": "АТК: 109%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 218%"
+              "value": "АТК: 218%",
+              "effects": []
             }
           ],
           "special": []
@@ -706,14 +840,20 @@
           "sp_cost": "300",
           "aggro": "166",
           "skill_type": "Shooting",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 759%"
+              "value": "АТК: 759%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1518%"
+              "value": "АТК: 1518%",
+              "effects": []
             }
           ],
           "special": []
@@ -758,6 +898,7 @@
         "Penetration": "5+25",
         "Immunity": "10"
       },
+      "consume": "Steel Bullet x 2",
       "skills": [
         {
           "name": "Shootdown Shot",
@@ -772,14 +913,26 @@
           "sp_cost": "340",
           "aggro": "90",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bullet x 1",
+          "soft_armor_atk": "165%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1100%"
+              "value": "АТК: 1100%",
+              "effects": [
+                "Ignores DEF of enemy by 30",
+                "Cancel invisible skill of enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "Ignores DEF of enemy by 30",
+                "Cancel invisible skill of enemy"
+              ]
             }
           ],
           "special": []
@@ -797,14 +950,26 @@
           "sp_cost": "340",
           "aggro": "57",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bullet x 1",
+          "soft_armor_atk": "150%",
+          "heavy_armor_atk": "95%",
+          "light_armor_atk": "115%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": [
+                "30% chance to impose [Expose] to enemy",
+                "Using it to enemy Enemys Shoot Damage: +30%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3600%"
+              "value": "АТК: 3600%",
+              "effects": [
+                "30% chance to impose [Expose] to enemy",
+                "Using it to enemy Enemys Shoot Damage: +30%"
+              ]
             }
           ],
           "special": []
@@ -822,14 +987,26 @@
           "sp_cost": "440",
           "aggro": "34",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bullet x 1",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "Ignore DEF 50",
+                "While enemy is casting, if you use it, twice of damage(4 times to Monster)."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4400%"
+              "value": "АТК: 4400%",
+              "effects": [
+                "Ignore DEF 50",
+                "While enemy is casting, if you use it, twice of damage(4 times to Monster)."
+              ]
             }
           ],
           "special": []
@@ -847,26 +1024,65 @@
           "sp_cost": "650",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 3",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "100% chance of Enemys ["
+              "value": "",
+              "effects": [
+                "100% chance of Enemys [Expose] for 7 sec.",
+                "Enemys Shoot Damage: +14%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "100% chance of Enemys ["
+              "value": "",
+              "effects": [
+                "100% chance of Enemys [Expose] for 25 sec.",
+                "Enemys Shoot Damage: +50%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "100% chance of Enemys ["
+              "value": "",
+              "effects": [
+                "100% chance of Enemys [Expose] for 27 sec.",
+                "Enemys Shoot Damage: +54%",
+                "Movement Speed -20%",
+                "A.R. : -1",
+                "D.R. : -2",
+                "ATK : -10%",
+                "DEF : -30"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "100% chance of Enemys ["
+              "value": "",
+              "effects": [
+                "100% chance of Enemys [Expose] for 29 sec.",
+                "Enemys Shoot Damage: +58%",
+                "Movement Speed -20%",
+                "A.R. : -1",
+                "D.R. : -2",
+                "ATK : -10%",
+                "DEF : -30"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "100% chance of Enemys ["
+              "value": "",
+              "effects": [
+                "100% chance of Enemys [Expose] for 31 sec.",
+                "Enemys Shoot Damage: +62%",
+                "Movement Speed -20%",
+                "A.R. : -1",
+                "D.R. : -2",
+                "ATK : -10%",
+                "DEF : -30"
+              ]
             }
           ],
           "special": []
@@ -884,14 +1100,34 @@
           "sp_cost": "540",
           "aggro": "108",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bullet x 1",
+          "soft_armor_atk": "150%",
+          "heavy_armor_atk": "80%",
+          "light_armor_atk": "140%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1600%"
+              "value": "АТК: 1600%",
+              "effects": [
+                "Ignores enemys DEF by 75",
+                "50% chance to impose [Slow]",
+                "Cancel enemys Invincible skill",
+                "When reusing the skill during casting, the skill activates",
+                "Knockback range and time increases in proportion to casting time",
+                "Skill Damage increases according to cast time"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3200%"
+              "value": "АТК: 3200%",
+              "effects": [
+                "Ignores enemys DEF by 75",
+                "50% chance to impose [Slow]",
+                "Cancel enemys Invincible skill",
+                "When reusing the skill during casting, the skill activates",
+                "Knockback range and time increases in proportion to casting time",
+                "Skill Damage increases according to cast time"
+              ]
             }
           ],
           "special": []
@@ -943,6 +1179,7 @@
         "Penetration": "30",
         "Immunity": "5"
       },
+      "consume": "Steel Bullet x 3",
       "skills": [
         {
           "name": "Overrange Shot",
@@ -957,14 +1194,26 @@
           "sp_cost": "250",
           "aggro": "50",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bullet x 2",
+          "soft_armor_atk": "130%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "130%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1500%"
+              "value": "АТК: 1500%",
+              "effects": [
+                "Ignores enemy DEF by 15",
+                "Deals [Mortal Wound] with 100% chance"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "Ignores enemy DEF by 15",
+                "Deals [Mortal Wound] with 100% chance"
+              ]
             }
           ],
           "special": []
@@ -982,14 +1231,30 @@
           "sp_cost": "250",
           "aggro": "100",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bullet x 2",
+          "soft_armor_atk": "120%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "140%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "Ignores enemys DEF by 40",
+                "100% chance to impose [Mortal Wound]",
+                "Reusing it during casting, skill activates",
+                "Damage increases in proportion to casting timeIn max casting, damage extra increases/extra Monster Damage."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4400%"
+              "value": "АТК: 4400%",
+              "effects": [
+                "Ignores enemys DEF by 40",
+                "100% chance to impose [Mortal Wound]",
+                "Reusing it during casting, skill activates",
+                "Damage increases in proportion to casting timeIn max casting, damage extra increases/extra Monster Damage."
+              ]
             }
           ],
           "special": []
@@ -1007,14 +1272,26 @@
           "sp_cost": "350",
           "aggro": "250",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bullet x 10",
+          "soft_armor_atk": "120%",
+          "heavy_armor_atk": "80%",
+          "light_armor_atk": "140%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2600%"
+              "value": "АТК: 2600%",
+              "effects": [
+                "Ignores enemy DEF by 50",
+                "1% Chance to inflict [Fear] on enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5200%"
+              "value": "АТК: 5200%",
+              "effects": [
+                "Ignores enemy DEF by 50",
+                "1% Chance to inflict [Fear] on enemy"
+              ]
             }
           ],
           "special": []
@@ -1032,26 +1309,68 @@
           "sp_cost": "500",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration 10 sec"
+              "value": "",
+              "effects": [
+                "Duration 10 sec",
+                "Casting Time -2%",
+                "Chance to [Marking] enemy by normal attack",
+                "To [Marked] monster, Ranged Damage +1%, DEF -1",
+                "100% chance to inflict shooting skill critical on [Marked] PC"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration 100 sec"
+              "value": "",
+              "effects": [
+                "Duration 100 sec",
+                "Casting Time -20%",
+                "Chance to [Marking] enemy by normal attack",
+                "To [Marked] monster, Ranged Damage +10%, DEF -10",
+                "100% chance to inflict shooting skill critical on [Marked] PC"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration 110 sec"
+              "value": "",
+              "effects": [
+                "Duration 110 sec",
+                "Casting Time -22%",
+                "Chance to [Marking] enemy by normal attack",
+                "A.R. +1",
+                "To [Marked] monster, Ranged Damage +11%, DEF -11, D.R. -1",
+                "100% chance to inflict shooting skill critical on [Marked] PC"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration 120 sec"
+              "value": "",
+              "effects": [
+                "Duration 120 sec",
+                "Casting Time -24%",
+                "Chance to [Marking] enemy by normal attack",
+                "A.R. +1",
+                "To [Marked] monster, Ranged Damage +12%, DEF -12, D.R. -1",
+                "100% chance to inflict shooting skill critical on [Marked] PC"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration 130 sec"
+              "value": "",
+              "effects": [
+                "Duration 130 sec",
+                "Casting Time -26%",
+                "Chance to [Marking] enemy by normal attack",
+                "A.R. +1",
+                "To [Marked] monster, Ranged Damage +13%, DEF -13, D.R. -1",
+                "100% chance to inflict shooting skill critical on [Marked] PC"
+              ]
             }
           ],
           "special": []
@@ -1069,14 +1388,24 @@
           "sp_cost": "500",
           "aggro": "358",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bullet x 10",
+          "soft_armor_atk": "130%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "140%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "Ignores enemy DEF by 60"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 6000%"
+              "value": "АТК: 6000%",
+              "effects": [
+                "Ignores enemy DEF by 60"
+              ]
             }
           ],
           "special": []
@@ -1126,6 +1455,7 @@
         "Penetration": "10+25",
         "Immunity": "5"
       },
+      "consume": "Metal Shell Ammo x 1",
       "skills": [
         {
           "name": "Stinger Shot",
@@ -1140,14 +1470,24 @@
           "sp_cost": "250",
           "aggro": "50",
           "skill_type": "Shooting",
+          "consume_item": "Metal Shell Ammo x 1",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 140%"
+              "value": "АТК: 140%",
+              "effects": [
+                "Increases level of [Overheating] by 5."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 280%"
+              "value": "АТК: 280%",
+              "effects": [
+                "Increases level of [Overheating] by 5."
+              ]
             }
           ],
           "special": []
@@ -1165,14 +1505,24 @@
           "sp_cost": "300",
           "aggro": "20",
           "skill_type": "Shooting",
+          "consume_item": "Ancient Star Orb x 2",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 80%"
+              "value": "АТК: 80%",
+              "effects": [
+                "Creates Smoke Screen at a targeted location for 8 sec. There is a 100% chance to inflict [Sight Block] on PC in Smoke Screen."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 160%"
+              "value": "АТК: 160%",
+              "effects": [
+                "Creates Smoke Screen at a targeted location for 8 sec. There is a 100% chance to inflict [Sight Block] on PC in Smoke Screen."
+              ]
             }
           ],
           "special": []
@@ -1190,26 +1540,73 @@
           "sp_cost": "200",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 3",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 4sec."
+              "value": "",
+              "effects": [
+                "Duration: 4sec.",
+                "ATK+2%",
+                "Critical Damage+5%",
+                "Breaks Attack SPD limit",
+                "Monster Damage+2%",
+                "Casting time -2%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 40sec."
+              "value": "",
+              "effects": [
+                "Duration: 40sec.",
+                "ATK+20%",
+                "Critical Damage+50%",
+                "Breaks Attack SPD limit",
+                "Monster Damage+20%",
+                "Casting time -20%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 44sec."
+              "value": "",
+              "effects": [
+                "Duration: 44sec.",
+                "ATK+22%",
+                "Critical Damage+55%",
+                "A.R.+1",
+                "Breaks Attack SPD limit",
+                "Monster Damage+22%",
+                "Casting time -22%"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 48sec."
+              "value": "",
+              "effects": [
+                "Duration: 48sec.",
+                "ATK+24%",
+                "Critical Damage+60%",
+                "A.R.+2",
+                "Breaks Attack SPD limit",
+                "Monster Damage+24%",
+                "Casting time -24%"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 52sec."
+              "value": "",
+              "effects": [
+                "Duration: 52sec.",
+                "ATK+26%",
+                "Critical Damage+65%",
+                "A.R.+2",
+                "Breaks Attack SPD limit",
+                "Monster Damage+26%",
+                "Casting time -26%"
+              ]
             }
           ],
           "special": []
@@ -1227,14 +1624,26 @@
           "sp_cost": "400",
           "aggro": "45",
           "skill_type": "Shooting",
+          "consume_item": "Metal Shell Ammo x 1",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 400%"
+              "value": "АТК: 400%",
+              "effects": [
+                "80% chance to inflict [Burn] on enemy",
+                "Level of [Overheating] is increased by 10 once it hits the enemy."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 800%"
+              "value": "АТК: 800%",
+              "effects": [
+                "80% chance to inflict [Burn] on enemy",
+                "Level of [Overheating] is increased by 10 once it hits the enemy."
+              ]
             }
           ],
           "special": []
@@ -1252,14 +1661,26 @@
           "sp_cost": "500",
           "aggro": "60",
           "skill_type": "Shooting",
+          "consume_item": "Metal Shell Ammo x 1",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 600%"
+              "value": "АТК: 600%",
+              "effects": [
+                "100% chance to inflict [Burn] on enemy",
+                "Level of [Overheating] is increased by 15 once hits enemy."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1200%"
+              "value": "АТК: 1200%",
+              "effects": [
+                "100% chance to inflict [Burn] on enemy",
+                "Level of [Overheating] is increased by 15 once hits enemy."
+              ]
             }
           ],
           "special": []

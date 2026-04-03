@@ -123,6 +123,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [
         {
           "name": "Lightning",
@@ -137,14 +138,24 @@
           "sp_cost": "60",
           "aggro": "61",
           "skill_type": "Magic",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1100%"
+              "value": "АТК: 1100%",
+              "effects": [
+                "15% chance to inflict [Shock] on enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "15% chance to inflict [Shock] on enemy"
+              ]
             }
           ],
           "special": []
@@ -162,26 +173,55 @@
           "sp_cost": "90",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Elemental Orb x 1",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 110 sec."
+              "value": "",
+              "effects": [
+                "Duration: 110 sec.",
+                "Lightning RES+15",
+                "Extra Lightning ATK+13"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 200 sec."
+              "value": "",
+              "effects": [
+                "Duration: 200 sec.",
+                "Lightning RES+15",
+                "Extra Lightning ATK+40"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 210 sec."
+              "value": "",
+              "effects": [
+                "Duration: 210 sec.",
+                "Lightning RES+15",
+                "Extra Lightning ATK+43"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 220 sec."
+              "value": "",
+              "effects": [
+                "Duration: 220 sec.",
+                "Lightning RES+15",
+                "Extra Lightning ATK+46"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 230 sec."
+              "value": "",
+              "effects": [
+                "Duration: 230 sec.",
+                "Lightning RES+15",
+                "Extra Lightning ATK+49"
+              ]
             }
           ],
           "special": []
@@ -199,26 +239,45 @@
           "sp_cost": "120",
           "aggro": "0",
           "skill_type": "Magic",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "100% chance to inflict ["
+              "value": "",
+              "effects": [
+                "100% chance to inflict [Shock] on enemy for 10.5 sec."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "100% chance to inflict ["
+              "value": "",
+              "effects": [
+                "100% chance to inflict [Shock] on enemy for 15 sec."
+              ]
             },
             {
               "level": "Level 11",
-              "value": "100% chance to inflict ["
+              "value": "",
+              "effects": [
+                "100% chance to inflict [Shock] on enemy for 15.5 sec."
+              ]
             },
             {
               "level": "Level 12",
-              "value": "100% chance to inflict ["
+              "value": "",
+              "effects": [
+                "100% chance to inflict [Shock] on enemy for 16 sec."
+              ]
             },
             {
               "level": "Level 13",
-              "value": "100% chance to inflict ["
+              "value": "",
+              "effects": [
+                "100% chance to inflict [Shock] on enemy for 16.5 sec."
+              ]
             }
           ],
           "special": []
@@ -236,14 +295,24 @@
           "sp_cost": "180",
           "aggro": "186",
           "skill_type": "Magic",
+          "consume_item": "Elemental Orb x 1",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1200%"
+              "value": "АТК: 1200%",
+              "effects": [
+                "Summon Tornado Holding"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "Summon Tornado Holding"
+              ]
             }
           ],
           "special": []
@@ -287,6 +356,7 @@
         "Penetration": "10+20",
         "Immunity": "10"
       },
+      "consume": "Elemental Sphere x 1",
       "skills": [
         {
           "name": "Thunder Ball",
@@ -301,14 +371,32 @@
           "sp_cost": "300",
           "aggro": "50",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 1",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1500%"
+              "value": "АТК: 1500%",
+              "effects": [
+                "100% chance to inflict [Arxon]",
+                "Applies [Tempest Force] equal to the number of affected enemies on caster",
+                "Increases DMG in proportion to [Tempest Force] level",
+                "[PvE only] Skill damage increases by (3% of extra [INT])",
+                "Additionally, ignores the following amount of RES: 10 + (level of [Tempest Force] / 2)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "100% chance to inflict [Arxon]",
+                "Applies [Tempest Force] equal to the number of affected enemies on caster",
+                "Increases DMG in proportion to [Tempest Force] level",
+                "[PvE only] Skill damage increases by (3% of extra [INT])",
+                "Additionally, ignores the following amount of RES: 10 + (level of [Tempest Force] / 2)"
+              ]
             }
           ],
           "special": [
@@ -329,14 +417,30 @@
           "sp_cost": "500",
           "aggro": "150",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 3",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1600%"
+              "value": "АТК: 1600%",
+              "effects": [
+                "20% chance to impose [Shock]",
+                "Cooldown: 33sec.",
+                "Can use it up to twice",
+                "After using twice, should recharge"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3200%"
+              "value": "АТК: 3200%",
+              "effects": [
+                "20% chance to impose [Shock]",
+                "Cooldown: 33sec.",
+                "Can use it up to twice",
+                "After using twice, should recharge"
+              ]
             }
           ],
           "special": []
@@ -354,14 +458,38 @@
           "sp_cost": "800",
           "aggro": "250",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "20% chance to inflict [Shock]",
+                "Recharge time 33 seconds",
+                "Max 2 uses",
+                "Recharge after 2 uses",
+                "Applies [Tempest Force] equal to the number of affected enemies on caster",
+                "Increases DMG in proportion to [Tempest Force] level",
+                "[PvE only] Skill damage increases by (3% of extra [INT])",
+                "Additionally, ignores the following amount of RES: 10 + (level of [Tempest Force] / 2)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4400%"
+              "value": "АТК: 4400%",
+              "effects": [
+                "20% chance to inflict [Shock]",
+                "Recharge time 33 seconds",
+                "Max 2 uses",
+                "Recharge after 2 uses",
+                "Applies [Tempest Force] equal to the number of affected enemies on caster",
+                "Increases DMG in proportion to [Tempest Force] level",
+                "[PvE only] Skill damage increases by (3% of extra [INT])",
+                "Additionally, ignores the following amount of RES: 10 + (level of [Tempest Force] / 2)"
+              ]
             }
           ],
           "special": [
@@ -375,21 +503,39 @@
           "description": "Expose lightning around you to kill all enemies instantly.",
           "target": "Up to 15 enemies within a range of 12m",
           "casting_time": "Instant",
-          "cooldown": "45 sec.",
+          "cooldown": "30 sec.",
           "duration": "2.3 sec.",
           "hits_flying": "Yes",
           "knock_down": "Yes",
           "sp_cost": "1000",
           "aggro": "500",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 8",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1200%"
+              "value": "АТК: 1200%",
+              "effects": [
+                "100% chance to inflict [Arxon]",
+                "Applies [Tempest Force] equal to the number of affected enemies on caster",
+                "Increases DMG in proportion to [Tempest Force] level",
+                "[PvE only] Skill damage increases by (3% of extra [INT])",
+                "Additionally, ignores the following amount of RES: 10 + (level of [Tempest Force] / 2)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "100% chance to inflict [Arxon]",
+                "Applies [Tempest Force] equal to the number of affected enemies on caster",
+                "Increases DMG in proportion to [Tempest Force] level",
+                "[PvE only] Skill damage increases by (3% of extra [INT])",
+                "Additionally, ignores the following amount of RES: 10 + (level of [Tempest Force] / 2)"
+              ]
             }
           ],
           "special": [
@@ -410,14 +556,34 @@
           "sp_cost": "1200",
           "aggro": "350",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2500%"
+              "value": "АТК: 2500%",
+              "effects": [
+                "100% chance to inflict [Dyna]",
+                "Damage increases with less number of targets",
+                "Applies [Tempest Force] equal to the number of affected enemies on caster",
+                "Increases DMG in proportion to [Tempest Force] level",
+                "[PvE only] Skill damage increases by (3% of extra [INT])",
+                "Additionally, ignores the following amount of RES: 10 + (level of [Tempest Force] / 2)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5000%"
+              "value": "АТК: 5000%",
+              "effects": [
+                "100% chance to inflict [Dyna]",
+                "Damage increases with less number of targets",
+                "Applies [Tempest Force] equal to the number of affected enemies on caster",
+                "Increases DMG in proportion to [Tempest Force] level",
+                "[PvE only] Skill damage increases by (3% of extra [INT])",
+                "Additionally, ignores the following amount of RES: 10 + (level of [Tempest Force] / 2)"
+              ]
             }
           ],
           "special": [
@@ -470,6 +636,7 @@
         "ATK SPD": "+10%",
         "Penetration": "10+25"
       },
+      "consume": "Elemental Sphere x 2",
       "skills": [
         {
           "name": "Tenseness",
@@ -484,18 +651,32 @@
           "sp_cost": "500",
           "aggro": "65",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 3",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 379.5%"
+              "value": "АТК: 379.5%",
+              "effects": [
+                "100% chance to inflict [Arxon]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 759%"
+              "value": "АТК: 759%",
+              "effects": [
+                "100% chance to inflict [Arxon]"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "АТК: 910%"
+              "value": "АТК: 910%",
+              "effects": [
+                "100% chance to inflict [Arxon]",
+                "Enemy D.R. -1"
+              ]
             }
           ],
           "special": []
@@ -513,14 +694,24 @@
           "sp_cost": "700",
           "aggro": "172",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1058.2%"
+              "value": "АТК: 1058.2%",
+              "effects": [
+                "100% chance to inflict [Ice Magic] on enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2116%"
+              "value": "АТК: 2116%",
+              "effects": [
+                "100% chance to inflict [Ice Magic] on enemy"
+              ]
             }
           ],
           "special": []
@@ -538,14 +729,30 @@
           "sp_cost": "800",
           "aggro": "103",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "25%",
+          "heavy_armor_atk": "20%",
+          "light_armor_atk": "20%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 462%"
+              "value": "АТК: 462%",
+              "effects": [
+                "Up to 20 during casting time",
+                "Reusing it during casting, casting the skill stops",
+                "Skill damage for every attack",
+                "For every attack, 10% chance to impose [Fire]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 924%"
+              "value": "АТК: 924%",
+              "effects": [
+                "Up to 20 during casting time",
+                "Reusing it during casting, casting the skill stops",
+                "Skill damage for every attack",
+                "For every attack, 10% chance to impose [Fire]"
+              ]
             }
           ],
           "special": []
@@ -563,14 +770,30 @@
           "sp_cost": "900",
           "aggro": "223",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 8",
+          "soft_armor_atk": "25%",
+          "heavy_armor_atk": "20%",
+          "light_armor_atk": "20%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 541.21%"
+              "value": "АТК: 541.21%",
+              "effects": [
+                "Up to 30 during casting time",
+                "Reusing it during casting, casting the skill stops",
+                "Skill damage for every attack",
+                "10% chance to impose [Electric Field]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1082%"
+              "value": "АТК: 1082%",
+              "effects": [
+                "Up to 30 during casting time",
+                "Reusing it during casting, casting the skill stops",
+                "Skill damage for every attack",
+                "10% chance to impose [Electric Field]"
+              ]
             }
           ],
           "special": []
@@ -581,21 +804,33 @@
           "description": "Concentrate the magic power into a single focal point, and deliver a great punch to the enemies.",
           "target": "",
           "casting_time": "6.033 sec.",
-          "cooldown": "65 sec.",
+          "cooldown": "35 sec.",
           "duration": "3.77 sec.",
           "hits_flying": "Yes",
           "knock_down": "Yes",
           "sp_cost": "1000",
           "aggro": "353",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2415.6%"
+              "value": "АТК: 2415.6%",
+              "effects": [
+                "100% chance to enemy [Panic]",
+                "The less target increase damage."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4831%"
+              "value": "АТК: 4831%",
+              "effects": [
+                "100% chance to enemy [Panic]",
+                "The less target increase damage."
+              ]
             }
           ],
           "special": []
@@ -645,6 +880,7 @@
         "ATK SPD": "+10%",
         "Immunity": "10+10"
       },
+      "consume": "Elemental Sphere x 1",
       "skills": [
         {
           "name": "Absolute Zero",
@@ -659,14 +895,24 @@
           "sp_cost": "160",
           "aggro": "184",
           "skill_type": "Magic",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "15% Chance to [Freeze] enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4400%"
+              "value": "АТК: 4400%",
+              "effects": [
+                "15% Chance to [Freeze] enemy"
+              ]
             }
           ],
           "special": []
@@ -684,14 +930,24 @@
           "sp_cost": "160",
           "aggro": "90",
           "skill_type": "Magic",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "20% Chance to inflict [Electric Shock] on enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4400%"
+              "value": "АТК: 4400%",
+              "effects": [
+                "20% Chance to inflict [Electric Shock] on enemy"
+              ]
             }
           ],
           "special": []
@@ -709,18 +965,32 @@
           "sp_cost": "500",
           "aggro": "65",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 3",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 379.5%"
+              "value": "АТК: 379.5%",
+              "effects": [
+                "100% chance to inflict [Arxon]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 759%"
+              "value": "АТК: 759%",
+              "effects": [
+                "100% chance to inflict [Arxon]"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "АТК: 910%"
+              "value": "АТК: 910%",
+              "effects": [
+                "100% chance to inflict [Arxon]",
+                "Enemy D.R. -1"
+              ]
             }
           ],
           "special": []
@@ -738,14 +1008,36 @@
           "sp_cost": "1100",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "300 sec."
+              "value": "",
+              "effects": [
+                "300 sec.",
+                "[Elementalist]",
+                "A.R. +1",
+                "[Elementalist &amp; Squad]",
+                "ATK SPD +10%",
+                "Magical PEN +12",
+                "Magic ATK +15%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "300 sec."
+              "value": "",
+              "effects": [
+                "300 sec.",
+                "[Elementalist]",
+                "A.R. +1",
+                "[Elementalist &amp; Squad]",
+                "ATK SPD +10%",
+                "Magical PEN +12",
+                "Magic ATK +15%"
+              ]
             }
           ],
           "special": []
@@ -763,14 +1055,34 @@
           "sp_cost": "1250",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "300 sec."
+              "value": "",
+              "effects": [
+                "300 sec.",
+                "A.R. +1",
+                "Max SP +20%",
+                "Monster ATK +60%",
+                "All RES -15",
+                "Max HP -25%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "300 sec."
+              "value": "",
+              "effects": [
+                "300 sec.",
+                "A.R. +1",
+                "Max SP +20%",
+                "Monster ATK +60%",
+                "All RES -15",
+                "Max HP -25%"
+              ]
             }
           ],
           "special": []
@@ -816,6 +1128,7 @@
         "Penetration": "10+25",
         "Immunity": "10"
       },
+      "consume": "Elemental Sphere x 2",
       "skills": [
         {
           "name": "Elemental Spirit",
@@ -830,14 +1143,24 @@
           "sp_cost": "500",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration : 30 sec"
+              "value": "",
+              "effects": [
+                "Duration : 30 sec"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration : 30 sec"
+              "value": "",
+              "effects": [
+                "Duration : 30 sec"
+              ]
             }
           ],
           "special": []
@@ -855,14 +1178,27 @@
           "sp_cost": "500",
           "aggro": "103",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 894%"
+              "value": "АТК: 894%",
+              "effects": [
+                "Double damage in [Elemental Spirit] status",
+                "Damage increases by 100% to monster",
+                "Change to same attribute as own weapon attribute."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1788%"
+              "value": "АТК: 1788%",
+              "effects": [
+                "Double damage in [Elemental Spirit] status",
+                "Change to same attribute as own weapon attribute."
+              ]
             }
           ],
           "special": []
@@ -880,14 +1216,27 @@
           "sp_cost": "800",
           "aggro": "160",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1115%"
+              "value": "АТК: 1115%",
+              "effects": [
+                "Double damage in [Elemental Spirit] status",
+                "Damage increases by 100% to monster",
+                "Change to same attribute as own weapon attribute."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2230%"
+              "value": "АТК: 2230%",
+              "effects": [
+                "Double damage in [Elemental Spirit] status",
+                "Change to same attribute as own weapon attribute."
+              ]
             }
           ],
           "special": []
@@ -905,14 +1254,27 @@
           "sp_cost": "750",
           "aggro": "184",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 754%"
+              "value": "АТК: 754%",
+              "effects": [
+                "Double damage in [Elemental Spirit] status",
+                "Damage increases by 100% to monster",
+                "Change to same attribute as own weapon attribute."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1508%"
+              "value": "АТК: 1508%",
+              "effects": [
+                "Double damage in [Elemental Spirit] status",
+                "Change to same attribute as own weapon attribute."
+              ]
             }
           ],
           "special": []
@@ -930,14 +1292,27 @@
           "sp_cost": "1100",
           "aggro": "300",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1702%"
+              "value": "АТК: 1702%",
+              "effects": [
+                "Double damage in [Elemental Spirit] status",
+                "Damage increases by 100% to monster",
+                "Change to same attribute as own weapon attribute."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3404%"
+              "value": "АТК: 3404%",
+              "effects": [
+                "Double damage in [Elemental Spirit] status",
+                "Change to same attribute as own weapon attribute."
+              ]
             }
           ],
           "special": []

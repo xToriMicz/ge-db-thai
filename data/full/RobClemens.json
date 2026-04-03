@@ -99,6 +99,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -141,6 +142,7 @@
         "Penetration": "20+15",
         "Immunity": "5+5"
       },
+      "consume": "Steel Bullet x 3",
       "skills": [
         {
           "name": "Bloody Shootdown Shot",
@@ -155,14 +157,26 @@
           "sp_cost": "300",
           "aggro": "100",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bullet x 1",
+          "soft_armor_atk": "165%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 600%"
+              "value": "АТК: 600%",
+              "effects": [
+                "Ignores 300 DEF",
+                "30% chance to inflict [Entangle] on PC"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1200%"
+              "value": "АТК: 1200%",
+              "effects": [
+                "Ignores 300 DEF",
+                "30% chance to inflict [Entangle] on PC"
+              ]
             }
           ],
           "special": []
@@ -180,14 +194,26 @@
           "sp_cost": "200",
           "aggro": "100",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bullet x 15",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1100%"
+              "value": "АТК: 1100%",
+              "effects": [
+                "Ignores 200 DEF",
+                "30% chance to inflict [Confusion] on PC"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "Ignores 200 DEF",
+                "30% chance to inflict [Confusion] on PC"
+              ]
             }
           ],
           "special": []
@@ -205,14 +231,24 @@
           "sp_cost": "600",
           "aggro": "150",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bullet x 20",
+          "soft_armor_atk": "120%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1400%"
+              "value": "АТК: 1400%",
+              "effects": [
+                "25% chance to inflict [Burn]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2800%"
+              "value": "АТК: 2800%",
+              "effects": [
+                "25% chance to inflict [Burn]"
+              ]
             }
           ],
           "special": []
@@ -230,14 +266,26 @@
           "sp_cost": "750",
           "aggro": "200",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bullet x 2",
+          "soft_armor_atk": "75%",
+          "heavy_armor_atk": "75%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": [
+                "Ignores 100 DEF",
+                "Skill damage up to 2.2x in proportion to distance"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3600%"
+              "value": "АТК: 3600%",
+              "effects": [
+                "Ignores 100 DEF",
+                "Skill damage up to 2.2x in proportion to distance"
+              ]
             }
           ],
           "special": []
@@ -255,14 +303,30 @@
           "sp_cost": "800",
           "aggro": "250",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bullet x 1",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "75%",
+          "light_armor_atk": "150%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1550%"
+              "value": "АТК: 1550%",
+              "effects": [
+                "Ignores 350 DEF",
+                "40% chance to inflict [Armor Break]",
+                "Ignores debuff RES",
+                "Enemies with [Visual Confusion] gain [Mark] ON HIT"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3100%"
+              "value": "АТК: 3100%",
+              "effects": [
+                "Ignores 350 DEF",
+                "40% chance to inflict [Armor Break]",
+                "Ignores debuff RES",
+                "Enemies with [Visual Confusion] gain [Mark] ON HIT"
+              ]
             }
           ],
           "special": []
@@ -313,6 +377,7 @@
         "Penetration": "15+15",
         "Immunity": "5+5"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Run Away",
@@ -327,26 +392,88 @@
           "sp_cost": "700",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 30",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Upon casting, ["
+              "value": "",
+              "effects": [
+                "Upon casting, [Snipers Run]",
+                "[Snipers Run] when canceled, [Snipers Endurance]",
+                "[Snipers Run]",
+                "Duration: 10 seconds",
+                "Stealth State",
+                "Movement Speed +30%",
+                "[Snipers Endurance]",
+                "Duration: 10 seconds",
+                "All incoming damage -1%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Upon casting, ["
+              "value": "",
+              "effects": [
+                "Upon casting, [Snipers Run]",
+                "[Snipers Run] when canceled, [Snipers Endurance]",
+                "[Snipers Run]",
+                "Duration: 10 seconds",
+                "Stealth State",
+                "Movement Speed +30%",
+                "[Snipers Endurance]",
+                "Duration: 10 seconds",
+                "All incoming damage -10%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Upon casting, ["
+              "value": "",
+              "effects": [
+                "Upon casting, [Snipers Run]",
+                "[Snipers Run] when canceled, [Snipers Endurance]",
+                "[Snipers Run]",
+                "Duration: 10 seconds",
+                "Stealth State",
+                "Movement Speed +30%",
+                "[Snipers Endurance]",
+                "Duration: 10 seconds",
+                "Defense Rating +1",
+                "All incoming damage -11%"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Upon casting, ["
+              "value": "",
+              "effects": [
+                "Upon casting, [Snipers Run]",
+                "[Snipers Run] when canceled, [Snipers Endurance]",
+                "[Snipers Run]",
+                "Duration: 10 seconds",
+                "Stealth State",
+                "Movement Speed +30%",
+                "[Snipers Endurance]",
+                "Duration: 10 seconds",
+                "Defense Rating +1",
+                "All incoming damage -12%"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Upon casting, ["
+              "value": "",
+              "effects": [
+                "Upon casting, [Snipers Run]",
+                "[Snipers Run] when canceled, [Snipers Endurance]",
+                "[Snipers Run]",
+                "Duration: 10 seconds",
+                "Stealth State",
+                "Movement Speed +30%",
+                "[Snipers Endurance]",
+                "Duration: 10 seconds",
+                "Defense Rating +1",
+                "All incoming damage -13%"
+              ]
             }
           ],
           "special": []
@@ -364,14 +491,38 @@
           "sp_cost": "800",
           "aggro": "50",
           "skill_type": "Shooting",
+          "consume_item": "Ancient Star Orb x 30",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1400%"
+              "value": "АТК: 1400%",
+              "effects": [
+                "On Hit: [Double Time]",
+                "100% chance to apply [Sight Block] on enemy PC",
+                "[Double Time]",
+                "Duration: 4 seconds",
+                "Movement Speed +9%",
+                "Movement Speed Cap +0.90",
+                "Melee and Ranged damage received -20%",
+                "Magical Damage received +20%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2800%"
+              "value": "АТК: 2800%",
+              "effects": [
+                "On Hit: [Double Time]",
+                "100% chance to apply [Sight Block] on enemy PC",
+                "[Double Time]",
+                "Duration: 4 seconds",
+                "Movement Speed +9%",
+                "Movement Speed Cap +0.90",
+                "Melee and Ranged damage received -20%",
+                "Magical Damage received +20%"
+              ]
             }
           ],
           "special": []
@@ -389,14 +540,38 @@
           "sp_cost": "250",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 15",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 60 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 60 seconds",
+                "[Ready to Fire I]",
+                "Additional ATK against PC +5%",
+                "On skill hit, excluding [Evasion Moving], apply [Defense Nullification] on enemies with [Sight Confusion]",
+                "[Ready to Fire II]",
+                "Additional ATK against PC +5%",
+                "On skill hit, excluding [Evasion Moving], apply [Attack Nullification] on enemies with [Sight Confusion]",
+                "Switch to a different ready stance upon skill reuse"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 60 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 60 seconds",
+                "[Ready to Fire I]",
+                "Additional ATK against PC +5%",
+                "On skill hit, excluding [Evasion Moving], apply [Defense Nullification] on enemies with [Sight Confusion]",
+                "[Ready to Fire II]",
+                "Additional ATK against PC +5%",
+                "On skill hit, excluding [Evasion Moving], apply [Attack Nullification] on enemies with [Sight Confusion]",
+                "Switch to a different ready stance upon skill reuse"
+              ]
             }
           ],
           "special": [
@@ -419,14 +594,30 @@
           "sp_cost": "600",
           "aggro": "100",
           "skill_type": "Shooting",
+          "consume_item": "Ancient Star Orb x 20",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "70%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2000%"
+              "value": "АТК: 2000%",
+              "effects": [
+                "Ignore 20% of enemys defense",
+                "On Hit: [Double Time] Level 8",
+                "When in [Ready to Fire I], apply [Defense Nullification] on enemies with [Sight Confusion] (50% chance for PC)",
+                "When in [Ready to Fire II], apply [Attack Nullification] on enemies with [Sight Confusion] (50% chance for PC)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4000%"
+              "value": "АТК: 4000%",
+              "effects": [
+                "Ignore 20% of enemys defense",
+                "On Hit: [Double Time] Level 8",
+                "When in [Ready to Fire I], apply [Defense Nullification] on enemies with [Sight Confusion] (50% chance for PC)",
+                "When in [Ready to Fire II], apply [Attack Nullification] on enemies with [Sight Confusion] (50% chance for PC)"
+              ]
             }
           ],
           "special": []
@@ -444,14 +635,40 @@
           "sp_cost": "800",
           "aggro": "100",
           "skill_type": "Shooting",
+          "consume_item": "Ancient Star Orb x 25",
+          "soft_armor_atk": "70%",
+          "heavy_armor_atk": "150%",
+          "light_armor_atk": "70%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1200%"
+              "value": "АТК: 1200%",
+              "effects": [
+                "Ignore 25% of enemys defense",
+                "Ignores Blocking",
+                "Ignores 1/2 of enemys shield defense",
+                "Removes Invincibility",
+                "Up to 3x skill damage to enemies within 20m based on distance",
+                "When in [Ready to Fire I], apply [Defense Nullification] on enemies with [Sight Confusion] (probability increases the closer you are to the PC)",
+                "When in [Ready to Fire II], apply [Attack Nullification] on enemies with [Sight Confusion] (probability increases the closer you are to the PC)",
+                "20% chance to apply [Critical Damage]",
+                "Enemy cannot be killed"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "Ignore 25% of enemys defense",
+                "Ignores Blocking",
+                "Ignores 1/2 of enemys shield defense",
+                "Removes Invincibility",
+                "Up to 3x skill damage to enemies within 20m based on distance",
+                "When in [Ready to Fire I], apply [Defense Nullification] on enemies with [Sight Confusion] (probability increases the closer you are to the PC)",
+                "When in [Ready to Fire II], apply [Attack Nullification] on enemies with [Sight Confusion] (probability increases the closer you are to the PC)",
+                "20% chance to apply [Critical Damage]",
+                "Enemy cannot be killed"
+              ]
             }
           ],
           "special": []

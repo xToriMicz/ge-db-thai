@@ -34,10 +34,11 @@
       {
         "level": "Level 10",
         "effects": [
-          "Duration: 5 Minutes.",
-          "A.R. +1",
-          "Monster Damage +40%",
-          "Cast Time -30%",
+          "Duration: 5 Minutes",
+          "A.R. +2",
+          "ATK +20%",
+          "Monster Damage +100%",
+          "Cast Time -35%",
           "Penetration +20."
         ]
       }
@@ -103,6 +104,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [
         {
           "name": "Strike Back",
@@ -117,14 +119,20 @@
           "sp_cost": "60",
           "aggro": "84",
           "skill_type": "Magic",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 358%"
+              "value": "АТК: 358%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 716%"
+              "value": "АТК: 716%",
+              "effects": []
             }
           ],
           "special": []
@@ -142,26 +150,45 @@
           "sp_cost": "120",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "80% chance to ["
+              "value": "",
+              "effects": [
+                "80% chance to [Immobilize] enemy for 3 sec."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "80% chance to ["
+              "value": "",
+              "effects": [
+                "80% chance to [Immobilize] enemy for 12 sec."
+              ]
             },
             {
               "level": "Level 11",
-              "value": "80% chance to ["
+              "value": "",
+              "effects": [
+                "80% chance to [Immobilize] enemy for 13 sec."
+              ]
             },
             {
               "level": "Level 12",
-              "value": "80% chance to ["
+              "value": "",
+              "effects": [
+                "80% chance to [Immobilize] enemy for 14 sec."
+              ]
             },
             {
               "level": "Level 13",
-              "value": "80% chance to ["
+              "value": "",
+              "effects": [
+                "80% chance to [Immobilize] enemy for 15 sec."
+              ]
             }
           ],
           "special": []
@@ -179,14 +206,20 @@
           "sp_cost": "150",
           "aggro": "64",
           "skill_type": "Magic",
+          "consume_item": "Magical Orb x 1",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 216%"
+              "value": "АТК: 216%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 432%"
+              "value": "АТК: 432%",
+              "effects": []
             }
           ],
           "special": []
@@ -204,18 +237,32 @@
           "sp_cost": "180",
           "aggro": "43",
           "skill_type": "Magic",
+          "consume_item": "Magical Orb x 1",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 157%"
+              "value": "АТК: 157%",
+              "effects": [
+                "100% chance to make enemy unable to skill for 20 sec."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 314%"
+              "value": "АТК: 314%",
+              "effects": [
+                "100% chance to make enemy unable to skill for 20 sec."
+              ]
             },
             {
               "level": "Level 11",
-              "value": "АТК: 345%"
+              "value": "АТК: 345%",
+              "effects": [
+                "100% chance to make enemy unable to skill for 20 sec.",
+                "Enemys D.R. -1"
+              ]
             }
           ],
           "special": []
@@ -261,6 +308,7 @@
         "Penetration": "45+13",
         "Immunity": "10+20"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Transcend Time",
@@ -275,14 +323,40 @@
           "sp_cost": "750",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "A.R +1",
+                "Mental Penetration +20",
+                "Monster Damage +100%",
+                "Skill Damage increases by 4% of extra [INT] (does not apply in PVP)",
+                "Normal Damage increases by 4% of extra [INT] (does not apply in PVP)",
+                "[RE :PvE]",
+                "Cast Time -75%",
+                "Reduce cooldown of all skillsby 10s per cast"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "A.R +1",
+                "Mental Penetration +20",
+                "Monster Damage +100%",
+                "Skill Damage increases by 4% of extra [INT] (does not apply in PVP)",
+                "Normal Damage increases by 4% of extra [INT] (does not apply in PVP)",
+                "[RE :PvE]",
+                "Cast Time -75%",
+                "Reduce cooldown of all skillsby 10s per cast"
+              ]
             }
           ],
           "special": []
@@ -300,14 +374,30 @@
           "sp_cost": "450",
           "aggro": "200",
           "skill_type": "Magic",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1200%"
+              "value": "АТК: 1200%",
+              "effects": [
+                "100% Chance to inflict [Gravitation]",
+                "Cooldown of [Galaxy Collapse] decreases by 10s on accurate hit.",
+                "Skill damage increases depending on amount of enemies hit.",
+                "Skill damage increases additionally, inversely proportional to the targets HP"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "100% Chance to inflict [Gravitation]",
+                "Cooldown of [Galaxy Collapse] decreases by 10s on accurate hit.",
+                "Skill damage increases depending on amount of enemies hit.",
+                "Skill damage increases additionally, inversely proportional to the targets HP"
+              ]
             }
           ],
           "special": []
@@ -325,14 +415,30 @@
           "sp_cost": "700",
           "aggro": "128",
           "skill_type": "Magic",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "100% Chance to inflict [Pressure]",
+                "Cooldown of [Galaxy Collapse] decreases by 5s on accurate hit.",
+                "Skill damage increases further the enemy is from the caster (max. 2x DMG)",
+                "Skill damage increases additionally, inversely proportional to the targets HP"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4800%"
+              "value": "АТК: 4800%",
+              "effects": [
+                "100% Chance to inflict [Pressure]",
+                "Cooldown of [Galaxy Collapse] decreases by 5s on accurate hit.",
+                "Skill damage increases further the enemy is from the caster (max. 2x DMG)",
+                "Skill damage increases additionally, inversely proportional to the targets HP"
+              ]
             }
           ],
           "special": []
@@ -350,14 +456,32 @@
           "sp_cost": "800",
           "aggro": "135",
           "skill_type": "Magic",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2800%"
+              "value": "АТК: 2800%",
+              "effects": [
+                "100% Chance to inflict [Hold]",
+                "Cooldown of [Galaxy Collapse] decreases by 5s on accurate hit.",
+                "Skill damage increases depending on amount of enemies hit.",
+                "Skill damage further increases the closer the enemies are to the caster (max. 3x DMG)",
+                "Skill damage increases additionally, inversely proportional to the targets HP"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5600%"
+              "value": "АТК: 5600%",
+              "effects": [
+                "100% Chance to inflict [Hold]",
+                "Cooldown of [Galaxy Collapse] decreases by 5s on accurate hit.",
+                "Skill damage increases depending on amount of enemies hit.",
+                "Skill damage further increases the closer the enemies are to the caster (max. 3x DMG)",
+                "Skill damage increases additionally, inversely proportional to the targets HP"
+              ]
             }
           ],
           "special": []
@@ -375,14 +499,30 @@
           "sp_cost": "900",
           "aggro": "245",
           "skill_type": "Magic",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 3200%"
+              "value": "АТК: 3200%",
+              "effects": [
+                "100% Chance to inflict [Impending Doom]",
+                "Skill damage increases depending on amount of enemies hit.",
+                "Skill damage further increases the closer the enemies are to center of AoE (max. 3x DMG)",
+                "Skill damage increases additionally, inversely proportional to the targets HP"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 6400%"
+              "value": "АТК: 6400%",
+              "effects": [
+                "100% Chance to inflict [Impending Doom]",
+                "Skill damage increases depending on amount of enemies hit.",
+                "Skill damage further increases the closer the enemies are to center of AoE (max. 3x DMG)",
+                "Skill damage increases additionally, inversely proportional to the targets HP"
+              ]
             }
           ],
           "special": []
@@ -429,12 +569,13 @@
         "Penetration": "5+25",
         "Immunity": "5+10"
       },
+      "consume": "Psychic Sphere x 1",
       "skills": [
         {
           "name": "Crystal Prison",
           "image": "cub_cristalprison.jpg",
           "description": "Locks up targets within the radius in a prison made of crystal.",
-          "target": "Up to 6 enemies 10m away and within a 6m radius",
+          "target": "Up to 6 enemies 10m away and within a 7m radius",
           "casting_time": "1.166 sec.",
           "cooldown": "10 sec.",
           "duration": "2.266 sec.",
@@ -443,14 +584,28 @@
           "sp_cost": "300",
           "aggro": "20",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "125%",
+          "heavy_armor_atk": "75%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 500%"
+              "value": "АТК: 500%",
+              "effects": [
+                "50%chance to inflict [Crystal Prison]",
+                "Ignores Debuff RES",
+                "[Fast Thinking]buff level downs."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1000%"
+              "value": "АТК: 1000%",
+              "effects": [
+                "50%chance to inflict [Crystal Prison]",
+                "Ignores Debuff RES",
+                "[Fast Thinking]buff level downs."
+              ]
             }
           ],
           "special": []
@@ -459,7 +614,7 @@
           "name": "Force Field",
           "image": "cub_forcefield.jpg",
           "description": "Cubes power controls the gravity to raise the enemies highly.",
-          "target": "Up to 6 enemies 10m away and within a 6m radius",
+          "target": "Up to 6 enemies 10m away and within a 7m radius",
           "casting_time": "1.533 sec.",
           "cooldown": "15 sec.",
           "duration": "2.133 sec.",
@@ -468,14 +623,26 @@
           "sp_cost": "450",
           "aggro": "25",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "120%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 800%"
+              "value": "АТК: 800%",
+              "effects": [
+                "100% chance to inflict [Force Field]",
+                "[Fast Thinking] buff level downs."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1600%"
+              "value": "АТК: 1600%",
+              "effects": [
+                "100% chance to inflict [Force Field]",
+                "[Fast Thinking] buff level downs."
+              ]
             }
           ],
           "special": []
@@ -484,7 +651,7 @@
           "name": "Dimension Territory",
           "image": "cub_absoluteterritory.jpg",
           "description": "Creates a wide space distortion at the designated point.",
-          "target": "",
+          "target": "Max Range 14m / Radius 6m / Max 10 enemies",
           "casting_time": "1.7 sec.",
           "cooldown": "25 sec.",
           "duration": "2.866 sec.",
@@ -493,14 +660,26 @@
           "sp_cost": "600",
           "aggro": "35",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "90%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1400%"
+              "value": "АТК: 1400%",
+              "effects": [
+                "Knock-back targets gather to the center of the designated area",
+                "[Fast Thinking]buff level downs."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2800%"
+              "value": "АТК: 2800%",
+              "effects": [
+                "Knock-back targets gather to the center of the designated area",
+                "[Fast Thinking]buff level downs."
+              ]
             }
           ],
           "special": []
@@ -518,14 +697,30 @@
           "sp_cost": "950",
           "aggro": "40",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "120%",
+          "heavy_armor_atk": "90%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2000%"
+              "value": "АТК: 2000%",
+              "effects": [
+                "Damage rises in proportion to the number of the attacked",
+                "If its number is more than 50% of Max, damage x1.5 ~ Max x3",
+                "70% chance to inflict [Heatwave]",
+                "[Fast Thinking]buff level downs."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4000%"
+              "value": "АТК: 4000%",
+              "effects": [
+                "Damage rises in proportion to the number of the attacked",
+                "If its number is more than 50% of Max, damage x1.5 ~ Max x3",
+                "70% chance to inflict [Heatwave]",
+                "[Fast Thinking]buff level downs."
+              ]
             }
           ],
           "special": []
@@ -534,7 +729,7 @@
           "name": "Lightning Cube",
           "image": "cub_flarecube.jpg",
           "description": "Gathers electromagnestism from the air and strikes it on the designated point.",
-          "target": "",
+          "target": "Max Range 12m / Radius 10m / Max 12 enemies",
           "casting_time": "4.7 sec.",
           "cooldown": "20 sec.",
           "duration": "3.233 sec.",
@@ -543,14 +738,28 @@
           "sp_cost": "700",
           "aggro": "30",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 8",
+          "soft_armor_atk": "70%",
+          "heavy_armor_atk": "150%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1100%"
+              "value": "АТК: 1100%",
+              "effects": [
+                "Double damage to enemies in the center",
+                "70% chance to inflict [Electrical Field]",
+                "[Fast Thinking]buff level downs."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "Double damage to enemies in the center",
+                "70% chance to inflict [Electrical Field]",
+                "[Fast Thinking]buff level downs."
+              ]
             }
           ],
           "special": []

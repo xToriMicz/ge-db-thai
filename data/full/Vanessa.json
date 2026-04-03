@@ -112,6 +112,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -153,6 +154,7 @@
         "Penetration": "5+25",
         "Immunity": "5+10"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Razantz",
@@ -167,14 +169,30 @@
           "sp_cost": "150",
           "aggro": "50",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 800%"
+              "value": "АТК: 800%",
+              "effects": [
+                "Ignoring enemys DEF by 50",
+                "Ignoring Evasion",
+                "Extra damage 15 + (extra [AGI] * 5)% per [Slayer]s each Lv.",
+                "Ignore additional DEF by 3 + (extra [AGI] * 0.8) proportional to level of [Slayer]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1600%"
+              "value": "АТК: 1600%",
+              "effects": [
+                "Ignoring enemys DEF by 50",
+                "Ignoring Evasion",
+                "Extra damage 15 + (extra [AGI] * 5)% per [Slayer]s each Lv.",
+                "Ignore additional DEF by 3 + (extra [AGI] * 0.8) proportional to level of [Slayer]"
+              ]
             }
           ],
           "special": []
@@ -192,14 +210,32 @@
           "sp_cost": "250",
           "aggro": "60",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1200%"
+              "value": "АТК: 1200%",
+              "effects": [
+                "Ignoring enemys DEF by 50",
+                "Ignoring Evasion",
+                "50% chance to [Stun]",
+                "Extra damage 15 + (extra [AGI] * 5)% per [Slayer]s each Lv.",
+                "Ignore additional DEF by 3 + (extra [AGI] * 0.8) proportional to level of [Slayer]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "Ignoring enemys DEF by 50",
+                "Ignoring Evasion",
+                "50% chance to [Stun]",
+                "Extra damage 15 + (extra [AGI] * 5)% per [Slayer]s each Lv.",
+                "Ignore additional DEF by 3 + (extra [AGI] * 0.8) proportional to level of [Slayer]"
+              ]
             }
           ],
           "special": []
@@ -217,14 +253,30 @@
           "sp_cost": "300",
           "aggro": "150",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1700%"
+              "value": "АТК: 1700%",
+              "effects": [
+                "Ignoring enemys DEF by 60",
+                "Ignoring Evasion",
+                "Extra damage 15 + (extra [AGI] * 5)% per [Slayer]s each Lv.",
+                "Ignore additional DEF by 3 + (extra [AGI] * 0.8) proportional to level of [Slayer]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3400%"
+              "value": "АТК: 3400%",
+              "effects": [
+                "Ignoring enemys DEF by 60",
+                "Ignoring Evasion",
+                "Extra damage 15 + (extra [AGI] * 5)% per [Slayer]s each Lv.",
+                "Ignore additional DEF by 3 + (extra [AGI] * 0.8) proportional to level of [Slayer]"
+              ]
             }
           ],
           "special": []
@@ -242,14 +294,30 @@
           "sp_cost": "350",
           "aggro": "220",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "125%",
+          "light_armor_atk": "140%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "Ignoring enemys DEF by 60",
+                "Ignoring Evasion",
+                "Extra damage 15 + (extra [AGI] * 5)% per [Slayer]s each Lv.",
+                "Ignore additional DEF by 3 + (extra [AGI] * 0.8) proportional to level of [Slayer]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4400%"
+              "value": "АТК: 4400%",
+              "effects": [
+                "Ignoring enemys DEF by 60",
+                "Ignoring Evasion",
+                "Extra damage 15 + (extra [AGI] * 5)% per [Slayer]s each Lv.",
+                "Ignore additional DEF by 3 + (extra [AGI] * 0.8) proportional to level of [Slayer]"
+              ]
             }
           ],
           "special": []
@@ -267,14 +335,32 @@
           "sp_cost": "400",
           "aggro": "220",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "150%",
+          "light_armor_atk": "140%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "Ignoring enemys DEF by 75",
+                "Ignoring Evasion",
+                "50% chance to [Enervation]",
+                "Extra damage 15 + (extra [AGI] * 5)% per [Slayer]s each Lv.",
+                "Ignore additional DEF by 3 + (extra [AGI] * 0.8) proportional to level of [Slayer]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4800%"
+              "value": "АТК: 4800%",
+              "effects": [
+                "Ignoring enemys DEF by 75",
+                "Ignoring Evasion",
+                "50% chance to [Enervation]",
+                "Extra damage 15 + (extra [AGI] * 5)% per [Slayer]s each Lv.",
+                "Ignore additional DEF by 3 + (extra [AGI] * 0.8) proportional to level of [Slayer]"
+              ]
             }
           ],
           "special": []
@@ -321,6 +407,7 @@
         "ATK SPD": "+25%",
         "Critical": "+8"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Hexen Dropper",
@@ -335,14 +422,20 @@
           "sp_cost": "100",
           "aggro": "99",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 900%"
+              "value": "АТК: 900%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": []
             }
           ],
           "special": []
@@ -360,14 +453,20 @@
           "sp_cost": "200",
           "aggro": "51",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1100%"
+              "value": "АТК: 1100%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": []
             }
           ],
           "special": []
@@ -385,14 +484,20 @@
           "sp_cost": "300",
           "aggro": "193",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 870%"
+              "value": "АТК: 870%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1739%"
+              "value": "АТК: 1739%",
+              "effects": []
             }
           ],
           "special": []
@@ -437,6 +542,7 @@
         "Penetration": "5+25",
         "Immunity": "10+10"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Crimson Crescent",
@@ -451,18 +557,39 @@
           "sp_cost": "240",
           "aggro": "83",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "140%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1200%"
+              "value": "АТК: 1200%",
+              "effects": [
+                "Ignores DEF of enemy by 40",
+                "Possible to use max 2 times",
+                "After using 2 times, recharge."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "Ignores DEF of enemy by 40",
+                "Possible to use max 2 times",
+                "After using 2 times, recharge."
+              ]
             },
             {
               "level": "Level 11",
-              "value": "АТК: 2640%"
+              "value": "АТК: 2640%",
+              "effects": [
+                "Ignores enemys DEF by 40",
+                "Cooldown: 10sec.",
+                "Can use up to twice",
+                "Recharge after using twice",
+                "[Bloody Fiesta]s Lv. increases on use."
+              ]
             }
           ],
           "special": []
@@ -480,14 +607,28 @@
           "sp_cost": "340",
           "aggro": "166",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1700%"
+              "value": "АТК: 1700%",
+              "effects": [
+                "Ignores enemys DEF by 50",
+                "Ignores Evasion",
+                "[Bloody Fiesta]s Lv. increases."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3400%"
+              "value": "АТК: 3400%",
+              "effects": [
+                "Ignores enemys DEF by 50",
+                "Ignores Evasion",
+                "[Bloody Fiesta]s Lv. increases."
+              ]
             }
           ],
           "special": []
@@ -505,26 +646,63 @@
           "sp_cost": "240",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration : 6 sec"
+              "value": "",
+              "effects": [
+                "Duration : 6 sec",
+                "[Bloody Fiesta] - Level does not increase while using the skill",
+                "ATK +2%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 60 sec"
+              "value": "",
+              "effects": [
+                "Duration: 60 sec",
+                "Increases [Bloody Fiesta] level",
+                "ATK +20%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 60 sec"
+              "value": "",
+              "effects": [
+                "Duration: 60 sec",
+                "Increases [Bloody Fiesta] level",
+                "ATK +25%",
+                "Knock-down time -5%",
+                "Penetration +2"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 60 sec"
+              "value": "",
+              "effects": [
+                "Duration: 60 sec",
+                "Increases [Bloody Fiesta] level",
+                "A.R. +1",
+                "ATK +30%",
+                "Knock-down time -10%",
+                "Penetration +4"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 60 sec"
+              "value": "",
+              "effects": [
+                "Duration: 60 sec",
+                "Increases [Bloody Fiesta] level",
+                "A.R. +1",
+                "ATK +35%",
+                "Knock-down time -15%",
+                "Penetration +6"
+              ]
             }
           ],
           "special": []
@@ -542,14 +720,28 @@
           "sp_cost": "540",
           "aggro": "217",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "150%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "Ignores enemys DEF by 60",
+                "Ignores Evasion",
+                "[Bloody Fiesta]s Lv. increases."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4800%"
+              "value": "АТК: 4800%",
+              "effects": [
+                "Ignores enemys DEF by 60",
+                "Ignores Evasion",
+                "[Bloody Fiesta]s Lv. increases."
+              ]
             }
           ],
           "special": []
@@ -567,14 +759,28 @@
           "sp_cost": "650",
           "aggro": "215",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "140%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "Ignores enemys DEF by 60",
+                "Ignores Evasion",
+                "60% chance to impose [Mortal Wound] on enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 6000%"
+              "value": "АТК: 6000%",
+              "effects": [
+                "Ignores enemys DEF by 60",
+                "Ignores Evasion",
+                "60% chance to impose [Mortal Wound] on enemy"
+              ]
             }
           ],
           "special": []
@@ -626,6 +832,7 @@
         "Penetration": "5+20",
         "Immunity": "5+15"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Ignis Roar",
@@ -640,14 +847,32 @@
           "sp_cost": "500",
           "aggro": "250",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 3",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration : 300s"
+              "value": "",
+              "effects": [
+                "Duration : 300s",
+                "A.R. +2",
+                "ATK +50%",
+                "Monster ATK +300%",
+                "AGI + 20"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration : 300s"
+              "value": "",
+              "effects": [
+                "Duration : 300s",
+                "A.R. +2",
+                "ATK +50%",
+                "Monster ATK +300%",
+                "AGI + 20"
+              ]
             }
           ],
           "special": []
@@ -665,14 +890,30 @@
           "sp_cost": "350",
           "aggro": "100",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1500%"
+              "value": "АТК: 1500%",
+              "effects": [
+                "Ignores 100 DEF",
+                "100% Chance to inflict [Ignisias Burn]",
+                "Skill Damage increases equal to 10% of extra [AGI]",
+                "Additional 1x DMG if enemy is inflicted with [Ignisias Burn], 2x [Ignisias Silence], 2.5x [Ignisias Acumen], 2x [Ignisias Power] (buff does stack)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "Ignores 100 DEF",
+                "100% Chance to inflict [Ignisias Burn]",
+                "Skill Damage increases equal to 10% of extra [AGI]",
+                "Additional 1x DMG if enemy is inflicted with [Ignisias Burn], 2x [Ignisias Silence], 2.5x [Ignisias Acumen], 2x [Ignisias Power] (buff does stack)"
+              ]
             }
           ],
           "special": [
@@ -693,14 +934,30 @@
           "sp_cost": "450",
           "aggro": "150",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 12",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1700%"
+              "value": "АТК: 1700%",
+              "effects": [
+                "Ignores 150 DEF",
+                "100% Chance to inflict [Ignisias Silence]",
+                "Skill Damage increases equal to 10% of extra [AGI]",
+                "Additional 1x DMG if enemy is inflicted with [Ignisias Burn], 2x [Ignisias Silence], 2.5x [Ignisias Acumen], 2x [Ignisias Power] (buff does stack)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3400%"
+              "value": "АТК: 3400%",
+              "effects": [
+                "Ignores 150 DEF",
+                "100% Chance to inflict [Ignisias Silence]",
+                "Skill Damage increases equal to 10% of extra [AGI]",
+                "Additional 1x DMG if enemy is inflicted with [Ignisias Burn], 2x [Ignisias Silence], 2.5x [Ignisias Acumen], 2x [Ignisias Power] (buff does stack)"
+              ]
             }
           ],
           "special": [
@@ -721,14 +978,30 @@
           "sp_cost": "550",
           "aggro": "0",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 15",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "Ignores 150 DEF",
+                "100% Chance to inflict [Ignisias Acumen]",
+                "Skill Damage increases equal to 10% of extra [AGI]",
+                "Additional 1x DMG if enemy is inflicted with [Ignisias Burn], 2x [Ignisias Silence], 2.5x [Ignisias Acumen], 2x [Ignisias Power] (buff does stack)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4400%"
+              "value": "АТК: 4400%",
+              "effects": [
+                "Ignores 150 DEF",
+                "100% Chance to inflict [Ignisias Acumen]",
+                "Skill Damage increases equal to 10% of extra [AGI]",
+                "Additional 1x DMG if enemy is inflicted with [Ignisias Burn], 2x [Ignisias Silence], 2.5x [Ignisias Acumen], 2x [Ignisias Power] (buff does stack)"
+              ]
             }
           ],
           "special": [
@@ -749,14 +1022,30 @@
           "sp_cost": "600",
           "aggro": "155",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 15",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "Ignores 200 DEF",
+                "100% Chance to inflict [Ignisias Power]",
+                "Skill Damage increases equal to 10% of extra [AGI]",
+                "Additional 1x DMG if enemy is inflicted with [Ignisias Burn], 2x [Ignisias Silence], 2.5x [Ignisias Acumen], 2x [Ignisias Power] (buff does stack)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 6000%"
+              "value": "АТК: 6000%",
+              "effects": [
+                "Ignores 200 DEF",
+                "100% Chance to inflict [Ignisias Power]",
+                "Skill Damage increases equal to 10% of extra [AGI]",
+                "Additional 1x DMG if enemy is inflicted with [Ignisias Burn], 2x [Ignisias Silence], 2.5x [Ignisias Acumen], 2x [Ignisias Power] (buff does stack)"
+              ]
             }
           ],
           "special": [

@@ -151,6 +151,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -190,6 +191,7 @@
         "Ignore DEF": "+2%",
         "Critical": "+16"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Plumbullet shot",
@@ -204,14 +206,24 @@
           "sp_cost": "100",
           "aggro": "31",
           "skill_type": "Shooting",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 112%"
+              "value": "АТК: 112%",
+              "effects": [
+                "100% chance to inflict [Poison]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 224%"
+              "value": "АТК: 224%",
+              "effects": [
+                "100% chance to inflict [Poison]"
+              ]
             }
           ],
           "special": []
@@ -229,14 +241,20 @@
           "sp_cost": "150",
           "aggro": "57",
           "skill_type": "Shooting",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 239%"
+              "value": "АТК: 239%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 478%"
+              "value": "АТК: 478%",
+              "effects": []
             }
           ],
           "special": []
@@ -254,14 +272,20 @@
           "sp_cost": "250",
           "aggro": "39",
           "skill_type": "Shooting",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 149%"
+              "value": "АТК: 149%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 298%"
+              "value": "АТК: 298%",
+              "effects": []
             }
           ],
           "special": []
@@ -279,14 +303,20 @@
           "sp_cost": "300",
           "aggro": "165",
           "skill_type": "Shooting",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 773%"
+              "value": "АТК: 773%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1546%"
+              "value": "АТК: 1546%",
+              "effects": []
             }
           ],
           "special": []
@@ -327,6 +357,7 @@
         "Ignore DEF": "+2%",
         "Critical": "+12"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Ankle Shot",
@@ -341,14 +372,24 @@
           "sp_cost": "100",
           "aggro": "77",
           "skill_type": "Shooting",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 375%"
+              "value": "АТК: 375%",
+              "effects": [
+                "25% chance to inflict [Mortal Wound]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 750%"
+              "value": "АТК: 750%",
+              "effects": [
+                "25% chance to inflict [Mortal Wound]"
+              ]
             }
           ],
           "special": []
@@ -366,14 +407,20 @@
           "sp_cost": "200",
           "aggro": "88",
           "skill_type": "Shooting",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 393%"
+              "value": "АТК: 393%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 786%"
+              "value": "АТК: 786%",
+              "effects": []
             }
           ],
           "special": []
@@ -391,14 +438,24 @@
           "sp_cost": "250",
           "aggro": "138",
           "skill_type": "Shooting",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 641%"
+              "value": "АТК: 641%",
+              "effects": [
+                "75% chance to inflict [Mortal Wound]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1282%"
+              "value": "АТК: 1282%",
+              "effects": [
+                "75% chance to inflict [Mortal Wound]"
+              ]
             }
           ],
           "special": []
@@ -416,14 +473,26 @@
           "sp_cost": "300",
           "aggro": "191",
           "skill_type": "Shooting",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 903%"
+              "value": "АТК: 903%",
+              "effects": [
+                "100% chance to inflict [Mortal Wound]",
+                "Enemy DEF -50"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1805%"
+              "value": "АТК: 1805%",
+              "effects": [
+                "100% chance to inflict [Mortal Wound]",
+                "Enemy DEF -50"
+              ]
             }
           ],
           "special": []
@@ -469,12 +538,13 @@
         "Penetration": "5+25",
         "Immunity": "5+15"
       },
+      "consume": "Large Caliber Bullet x 2",
       "skills": [
         {
           "name": "Back Dash Encounter",
           "image": "ss_backdashencounter.jpg",
           "description": "Quickly evade while continuing to shoot at the enemy",
-          "target": "",
+          "target": "Max Range 10m / Radius 4m / Max Targets 3",
           "casting_time": "Instant",
           "cooldown": "10 sec.",
           "duration": "2.43 sec.",
@@ -483,14 +553,26 @@
           "sp_cost": "300",
           "aggro": "116",
           "skill_type": "Shooting",
+          "consume_item": "Large Caliber Bullet x 5",
+          "soft_armor_atk": "120%",
+          "heavy_armor_atk": "80%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1600%"
+              "value": "АТК: 1600%",
+              "effects": [
+                "Ignores 30 DEF",
+                "100% chance to inflict [Holy Indication] (Adds between 1-2 stacks)Renew [Justice]s duration upon defeating an enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3200%"
+              "value": "АТК: 3200%",
+              "effects": [
+                "Ignores 30 DEF",
+                "100% chance to inflict [Holy Indication] (Adds between 1-2 stacks)Renew [Justice]s duration upon defeating an enemy"
+              ]
             }
           ],
           "special": []
@@ -508,26 +590,70 @@
           "sp_cost": "650",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "ATK +5%"
+              "value": "",
+              "effects": [
+                "ATK +5%",
+                "Penetration +1",
+                "Magical Damage -3%",
+                "Physical Damage +1%",
+                "Increases 1.5 times of damage by normal attack",
+                "A.R. +1"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "ATK +50%"
+              "value": "",
+              "effects": [
+                "ATK +50%",
+                "Penetration +10",
+                "Magical Damage -30%",
+                "Physical Damage +10%",
+                "Increases 1.5 times of damage by normal attack",
+                "A.R. +1"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "ATK +55%"
+              "value": "",
+              "effects": [
+                "ATK +55%",
+                "Penetration +11",
+                "Magical Damage -33%",
+                "Physical Damage +11%",
+                "Increases 1.5 times of damage by normal attack",
+                "A.R. +1"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "ATK +60%"
+              "value": "",
+              "effects": [
+                "ATK +60%",
+                "Penetration +12",
+                "Magical Damage -36%",
+                "Physical Damage +12%",
+                "Increases 1.5 times of damage by normal attack",
+                "A.R. +1"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "ATK +65%"
+              "value": "",
+              "effects": [
+                "ATK +65%",
+                "Penetration +12",
+                "Magical Damage -36%",
+                "Physical Damage +13%",
+                "Increases 1.5 times of damage by normal attack",
+                "A.R. +1"
+              ]
             }
           ],
           "special": []
@@ -545,14 +671,28 @@
           "sp_cost": "440",
           "aggro": "116",
           "skill_type": "Shooting",
+          "consume_item": "Large Caliber Bullet x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "80%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "Ignores 50 DEF",
+                "100% chance to inflict [Holy Indication] (Adds between 1-2 stacks)",
+                "Renew [Justice]s duration upon defeating an enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4400%"
+              "value": "АТК: 4400%",
+              "effects": [
+                "Ignores 50 DEF",
+                "100% chance to inflict [Holy Indication] (Adds between 1-2 stacks)",
+                "Renew [Justice]s duration upon defeating an enemy"
+              ]
             }
           ],
           "special": []
@@ -570,14 +710,30 @@
           "sp_cost": "750",
           "aggro": "172",
           "skill_type": "Shooting",
+          "consume_item": "Large Caliber Bullet x 4",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "130%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2500%"
+              "value": "АТК: 2500%",
+              "effects": [
+                "Ignores 60 DEF",
+                "100% chance to inflict [Mortal Wound]",
+                "Increase damage by (8% of Max HP) in proportion to [Holy Indication]s level (PvP only)",
+                "Renew [Justice]s duration upon defeating an enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5000%"
+              "value": "АТК: 5000%",
+              "effects": [
+                "Ignores 60 DEF",
+                "100% chance to inflict [Mortal Wound]",
+                "Increase damage by (8% of Max HP) in proportion to [Holy Indication]s level (PvP only)",
+                "Renew [Justice]s duration upon defeating an enemy"
+              ]
             }
           ],
           "special": []
@@ -595,14 +751,34 @@
           "sp_cost": "800",
           "aggro": "461",
           "skill_type": "Shooting",
+          "consume_item": "Large Caliber Bullet x 25",
+          "soft_armor_atk": "125%",
+          "heavy_armor_atk": "80%",
+          "light_armor_atk": "120%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "Ignores 60 DEF",
+                "100% chance to inflict [Mortal Wound]",
+                "Damage towards enemies affected by [Holy Indication] +20%",
+                "Ignore DEF in proportion to [Holy Indication]s level",
+                "Cancel [Invisible]",
+                "Renew [Justice]s duration upon defeating an enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 6000%"
+              "value": "АТК: 6000%",
+              "effects": [
+                "Ignores 60 DEF",
+                "100% chance to inflict [Mortal Wound]",
+                "Damage towards enemies affected by [Holy Indication] +20%",
+                "Ignore DEF in proportion to [Holy Indication]s level",
+                "Cancel [Invisible]",
+                "Renew [Justice]s duration upon defeating an enemy"
+              ]
             }
           ],
           "special": []

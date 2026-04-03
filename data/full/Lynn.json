@@ -26,7 +26,7 @@
     "description": "The will of protecting someone precious permeates into the sword. ATK attribute will be enhanced.",
     "target": "Self-buff",
     "casting_time": "0 sec.",
-    "cooldown": "60 sec.",
+    "cooldown": "30 sec.",
     "duration": "2.033 sec.",
     "sp_cost": "750",
     "consume_item": "Ancient Star Orb × 2",
@@ -130,6 +130,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -171,6 +172,7 @@
         "Penetration": "5+25",
         "Immunity": "10+10"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Imperial Smash",
@@ -185,14 +187,28 @@
           "sp_cost": "180",
           "aggro": "180",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 600%"
+              "value": "АТК: 600%",
+              "effects": [
+                "With 3rd skill accuracy, damage x2",
+                "Ignoring enemys DEF by 50",
+                "Skill ATK increased in proportion to the casters [STR] value"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1200%"
+              "value": "АТК: 1200%",
+              "effects": [
+                "With 3rd skill accuracy, damage x2",
+                "Ignoring enemys DEF by 50",
+                "Skill ATK increased in proportion to the casters [STR] value"
+              ]
             }
           ],
           "special": []
@@ -203,33 +219,98 @@
           "description": "Strengthen physical abilities by raising fighting spirit.",
           "target": "",
           "casting_time": "Instant",
-          "cooldown": "50 sec.",
+          "cooldown": "30 sec.",
           "duration": "1.8 sec.",
           "hits_flying": "No",
           "knock_down": "No",
           "sp_cost": "300",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration : 30 sec"
+              "value": "",
+              "effects": [
+                "Duration : 30 sec",
+                "Movement Speed +10%",
+                "Max movement SPD 9",
+                "ATK SPD +20%",
+                "Penetration +1",
+                "Casting time -3%",
+                "Basic ATK increased by 2x",
+                "Ranged Damage received -1%",
+                "Magical Damage received +1%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration : 300 sec"
+              "value": "",
+              "effects": [
+                "Duration : 300 sec",
+                "Movement Speed +10%",
+                "Max movement SPD 9",
+                "ATK SPD +20%",
+                "Penetration +10",
+                "Casting time -30%",
+                "Basic ATK increased by 2x",
+                "Ranged Damage received -10%",
+                "Magical Damage received +10%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration : 330 sec"
+              "value": "",
+              "effects": [
+                "Duration : 330 sec",
+                "Movement Speed +10%",
+                "Max movement SPD 9",
+                "ATK SPD +20%",
+                "Penetration +11",
+                "Casting time -33%",
+                "Basic ATK increased by 2x",
+                "Ranged Damage received -11%",
+                "Magical Damage received +11%"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration : 360 sec"
+              "value": "",
+              "effects": [
+                "Duration : 360 sec",
+                "A.R. +1",
+                "D.R. +1",
+                "ATK +40%",
+                "Penetration +15",
+                "Movement Speed +10%",
+                "Max movement SPD 9",
+                "ATK SPD +20%",
+                "Casting time -36%",
+                "Basic ATK increased by 2x",
+                "Ranged Damage received -12%",
+                "Magical Damage received +12%"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration : 390 sec"
+              "value": "",
+              "effects": [
+                "Duration : 390 sec",
+                "A.R. +1",
+                "D.R. +1",
+                "ATK +40%",
+                "Penetration +15",
+                "Movement Speed +10%",
+                "Max movement SPD 9",
+                "ATK SPD +20%",
+                "Casting time -39%",
+                "Basic ATK increased by 2x",
+                "Ranged Damage received -13%",
+                "Magical Damage received +13%"
+              ]
             }
           ],
           "special": []
@@ -247,14 +328,34 @@
           "sp_cost": "600",
           "aggro": "172",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "120%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1200%"
+              "value": "АТК: 1200%",
+              "effects": [
+                "With 3rd skill accuracy, damage x2",
+                "Ignoring enemys DEF by 40",
+                "Ignoring Evasion",
+                "Damage to Evasion type enemies +1% per 1 evasion",
+                "50% chance to [Control]",
+                "Skill ATK increased in proportion to the casters [STR] value"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "With 3rd skill accuracy, damage x2",
+                "Ignoring enemys DEF by 40",
+                "Ignoring Evasion",
+                "Damage to Evasion type enemies +1% per 1 evasion",
+                "50% chance to [Control]",
+                "Skill ATK increased in proportion to the casters [STR] value"
+              ]
             }
           ],
           "special": []
@@ -272,14 +373,32 @@
           "sp_cost": "750",
           "aggro": "159",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1700%"
+              "value": "АТК: 1700%",
+              "effects": [
+                "Skill damage x2 on every third accurate hit",
+                "Ignore enemy DEF by 50",
+                "Ignore additional enemy DEF by 75 + (extra [STR] * 0.6) when Movement Speed is lower than the caster",
+                "Apply [Panic] to enemy by 50% chance",
+                "Increase in skill ATK proportional to the extra [STR] value"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3400%"
+              "value": "АТК: 3400%",
+              "effects": [
+                "Skill damage x2 on every third accurate hit",
+                "Ignore enemy DEF by 50",
+                "Ignore additional enemy DEF by 75 + (extra [STR] * 0.6) when Movement Speed is lower than the caster",
+                "Apply [Panic] to enemy by 50% chance",
+                "Increase in skill ATK proportional to the extra [STR] value"
+              ]
             }
           ],
           "special": []
@@ -297,14 +416,34 @@
           "sp_cost": "540",
           "aggro": "223",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "150%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "Skill damage x2 on every third accurate hit",
+                "Ignores 75 DEF",
+                "Ignore Evasion",
+                "Damage +1% per 1 Evasion to Evasion type enemies",
+                "Ignore additional enemy DEF by 75 + (extra [STR] * 0.6) when Movement Speed is lower than the caster",
+                "Increase in skill ATK proportional to the extra [STR] value"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4800%"
+              "value": "АТК: 4800%",
+              "effects": [
+                "Skill damage x2 on every third accurate hit",
+                "Ignores 75 DEF",
+                "Ignore Evasion",
+                "Damage +1% per 1 Evasion to Evasion type enemies",
+                "Ignore additional enemy DEF by 75 + (extra [STR] * 0.6) when Movement Speed is lower than the caster",
+                "Increase in skill ATK proportional to the extra [STR] value"
+              ]
             }
           ],
           "special": []
@@ -355,6 +494,7 @@
         "Immunity": "5+10",
         "DEF": "5"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Berserker",
@@ -369,26 +509,95 @@
           "sp_cost": "340",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration : 150 seconds"
+              "value": "",
+              "effects": [
+                "Duration : 150 seconds",
+                "Removed on Stance change",
+                "A.R. +1",
+                "Physical Penetration +1",
+                "STR +8",
+                "Block +10",
+                "Knockdown Duration -10%",
+                "ATK SPD -15%",
+                "Additional Damage of all skill attack doubles against [Heavy Armor]",
+                "Recovers a small amount of HP when enemy succeeds in blocking your attack",
+                "Increases Skill ATK in proportion to extra [STR] when attacking enemy monster"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration : 150 seconds"
+              "value": "",
+              "effects": [
+                "Duration : 150 seconds",
+                "Removed on Stance change",
+                "A.R. +1",
+                "Physical Penetration +10",
+                "STR +8",
+                "Block +10",
+                "Knockdown Duration -10%",
+                "ATK SPD -15%",
+                "Additional Damage of all skill attack doubles against [Heavy Armor]",
+                "Recovers a small amount of HP when enemy succeeds in blocking your attack",
+                "Increases Skill ATK in proportion to extra [STR] when attacking enemy monster"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration : 150 seconds"
+              "value": "",
+              "effects": [
+                "Duration : 150 seconds",
+                "Removed on Stance change",
+                "A.R. +1",
+                "Physical Penetration +11",
+                "STR +9",
+                "Block +10",
+                "Knockdown Duration -12%",
+                "ATK SPD -15%",
+                "Additional Damage of all skill attack doubles against [Heavy Armor]",
+                "Recovers a small amount of HP when enemy succeeds in blocking your attack",
+                "Increases Skill ATK in proportion to extra [STR] when attacking enemy monster"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration : 150 seconds"
+              "value": "",
+              "effects": [
+                "Duration : 150 seconds",
+                "Removed on Stance change",
+                "A.R. +1",
+                "Physical Penetration +12",
+                "STR +10",
+                "Block +10",
+                "Knockdown Duration -15%",
+                "ATK SPD -15%",
+                "Additional Damage of all skill attack doubles against [Heavy Armor]",
+                "Recovers a small amount of HP when enemy succeeds in blocking your attack",
+                "Increases Skill ATK in proportion to extra [STR] when attacking enemy monster"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration : 150 seconds"
+              "value": "",
+              "effects": [
+                "Duration : 150 seconds",
+                "Removed on Stance change",
+                "A.R. +1",
+                "Physical Penetration +13",
+                "STR +10",
+                "Block +10",
+                "Knockdown Duration -15%",
+                "ATK SPD -15%",
+                "Additional Damage of all skill attack doubles against [Heavy Armor]",
+                "Recovers a small amount of HP when enemy succeeds in blocking your attack",
+                "Increases Skill ATK in proportion to extra [STR] when attacking enemy monster"
+              ]
             }
           ],
           "special": [
@@ -403,7 +612,7 @@
           "name": "Arc Down",
           "image": "arcdownl.jpg",
           "description": "Strike the enemy down with a big arc.",
-          "target": "",
+          "target": "Max Range 3.5m / Radius 5m / Max 3 enemies",
           "casting_time": "Instant",
           "cooldown": "5 sec.",
           "duration": "2.2 sec.",
@@ -412,14 +621,38 @@
           "sp_cost": "550",
           "aggro": "58",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "130%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 800%"
+              "value": "АТК: 800%",
+              "effects": [
+                "Ignore 90 DEF",
+                "Can be used max. twice",
+                "[Additional Destruction]s cooldown -3 seconds with a successful hit",
+                "60% chance to inflict [Armor Crasher] to enemy PC, ignoring debuff RES",
+                "Ignore Block",
+                "Additional damage doubles if the enemy is affected by one of the following debuffs:",
+                "[Armor Break], [Armor Crasher], [Sword Wound], [Drain], [Broken Armor]",
+                "[Enhanced Pierced Wound], [Squashed Armor], [Mortal Wound], [Critical Wound]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1600%"
+              "value": "АТК: 1600%",
+              "effects": [
+                "Ignore 90 DEF",
+                "Can be used max. twice",
+                "[Additional Destruction]s cooldown -3 seconds with a successful hit",
+                "60% chance to inflict [Armor Crasher] to enemy PC, ignoring debuff RES",
+                "Ignore Block",
+                "Additional damage doubles if the enemy is affected by one of the following debuffs:",
+                "[Armor Break], [Armor Crasher], [Sword Wound], [Drain], [Broken Armor]",
+                "[Enhanced Pierced Wound], [Squashed Armor], [Mortal Wound], [Critical Wound]"
+              ]
             }
           ],
           "special": [
@@ -440,14 +673,28 @@
           "sp_cost": "800",
           "aggro": "98",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "120%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1200%"
+              "value": "АТК: 1200%",
+              "effects": [
+                "Ignore 70 DEF",
+                "100% chance to inflict [Drain] to enemy PC, ignoring debuff RES",
+                "Knocks the enemy back with a successful hit"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "Ignore 70 DEF",
+                "100% chance to inflict [Drain] to enemy PC, ignoring debuff RES",
+                "Knocks the enemy back with a successful hit"
+              ]
             }
           ],
           "special": []
@@ -456,7 +703,7 @@
           "name": "Fly and Crush",
           "image": "flyandcrushl.jpg",
           "description": "Jump high and strike the enemy from above.",
-          "target": "",
+          "target": "Max Range 10m / Up to max. 4 enemies within the designated 4m radius",
           "casting_time": "Instant",
           "cooldown": "18 sec.",
           "duration": "2.2 sec.",
@@ -465,14 +712,34 @@
           "sp_cost": "720",
           "aggro": "74",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "75%",
+          "heavy_armor_atk": "130%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 900%"
+              "value": "АТК: 900%",
+              "effects": [
+                "Ignore 100 DEF",
+                "Ignore 50% shield DEF",
+                "[Additional Destruction]s cooldown -3 seconds with a successful hit",
+                "75% chance to inflict [Armor Break] to enemy PC, ignoring debuff RES",
+                "Ignore Block",
+                "Knocks the enemy back with a successful hit"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": [
+                "Ignore 100 DEF",
+                "Ignore 50% shield DEF",
+                "[Additional Destruction]s cooldown -3 seconds with a successful hit",
+                "75% chance to inflict [Armor Break] to enemy PC, ignoring debuff RES",
+                "Ignore Block",
+                "Knocks the enemy back with a successful hit"
+              ]
             }
           ],
           "special": []
@@ -490,14 +757,42 @@
           "sp_cost": "1040",
           "aggro": "145",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "60%",
+          "heavy_armor_atk": "140%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2000%"
+              "value": "АТК: 2000%",
+              "effects": [
+                "Ignore 120 DEF",
+                "Ignores Blocking",
+                "Ignore shields DEF and D.R.",
+                "Knocks the enemy back with a successful hit",
+                "Immune to all Damage during the skill animation",
+                "Additional damage doubles if the enemy is affected by a debuff from the following groups:",
+                "1. [Armor Break], [Armor Crasher], [Sword Wound]",
+                "2. [Drain], [Broken Armor], [Enhanced Pierced Wound]",
+                "3. [Squashed Armor], [Mortal Wound], [Critical Wound]",
+                "(Take one from each debuff group to stack damage)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4000%"
+              "value": "АТК: 4000%",
+              "effects": [
+                "Ignore 120 DEF",
+                "Ignores Blocking",
+                "Ignore shields DEF and D.R.",
+                "Knocks the enemy back with a successful hit",
+                "Immune to all Damage during the skill animation",
+                "Additional damage doubles if the enemy is affected by a debuff from the following groups:",
+                "1. [Armor Break], [Armor Crasher], [Sword Wound]",
+                "2. [Drain], [Broken Armor], [Enhanced Pierced Wound]",
+                "3. [Squashed Armor], [Mortal Wound], [Critical Wound]",
+                "(Take one from each debuff group to stack damage)"
+              ]
             }
           ],
           "special": [

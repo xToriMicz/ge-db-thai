@@ -162,6 +162,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -207,6 +208,7 @@
         "Penetration": "5+15",
         "Immunity": "10+15"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Servo",
@@ -221,26 +223,85 @@
           "sp_cost": "250",
           "aggro": "15",
           "skill_type": "",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Skill cast: ["
+              "value": "",
+              "effects": [
+                "Skill cast: [Unattackable] for 1 second",
+                "Duration: 5 seconds",
+                "DEF +11",
+                "Block +11",
+                "Negates 1 enemy skill attack",
+                "Negates 5 enemy PC basic attacks",
+                "Success or block reduces count by 1",
+                "Buff ends on negate/block: Servo cooldown -10 seconds",
+                "Buff ends on negate/block: [Counterattack]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Skill cast: ["
+              "value": "",
+              "effects": [
+                "Skill cast: [Unattackable] for 1 second",
+                "Duration: 5 seconds",
+                "DEF +20",
+                "Block +20",
+                "Negates 1 enemy skill attack",
+                "Negates 5 enemy PC basic attacks",
+                "Success or block reduces count by 1",
+                "Buff ends on negate/block: Servo cooldown -10 seconds",
+                "Buff ends on negate/block: [Counterattack]"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Skill cast: ["
+              "value": "",
+              "effects": [
+                "Skill cast: [Unattackable] for 1 second",
+                "Duration: 5 seconds",
+                "DEF +21",
+                "Block +21",
+                "Negates 1 enemy skill attack",
+                "Negates 5 enemy PC basic attacks",
+                "Success or block reduces count by 1",
+                "Buff ends on negate/block: Servo cooldown -10 seconds",
+                "Buff ends on negate/block: [Counterattack]"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Skill cast: ["
+              "value": "",
+              "effects": [
+                "Skill cast: [Unattackable] for 1 second",
+                "Duration: 5 seconds",
+                "DEF +22",
+                "Block +22",
+                "Negates 1 enemy skill attack",
+                "Negates 5 enemy PC basic attacks",
+                "Success or block reduces count by 1",
+                "Buff ends on negate/block: Servo cooldown -10 seconds",
+                "Buff ends on negate/block: [Counterattack]"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Skill cast: ["
+              "value": "",
+              "effects": [
+                "Skill cast: [Unattackable] for 1 second",
+                "Duration: 5 seconds",
+                "DEF +23",
+                "Block +23",
+                "Negates 1 enemy skill attack",
+                "Negates 5 enemy PC basic attacks",
+                "Success or block reduces count by 1",
+                "Buff ends on negate/block: Servo cooldown -10 seconds",
+                "Buff ends on negate/block: [Counterattack]"
+              ]
             }
           ],
           "special": []
@@ -258,14 +319,38 @@
           "sp_cost": "300",
           "aggro": "50",
           "skill_type": "",
+          "consume_item": "Ancient Star Orb x 6",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1350%"
+              "value": "АТК: 1350%",
+              "effects": [
+                "Recharge time: 12 seconds",
+                "Usable up to 2 times",
+                "Recharges after 1 use",
+                "50% chance to [Stun] enemy PC on hit",
+                "Ignores enemy PC abnormal state resistance while [Counterattack] is active",
+                "Double skill damage to enemy PC while [Counterattack] is active",
+                "[Counterattack] ends on cast",
+                "5x skill damage to monsters while [Protus] is active"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2700%"
+              "value": "АТК: 2700%",
+              "effects": [
+                "Recharge time: 12 seconds",
+                "Usable up to 2 times",
+                "Recharges after 1 use",
+                "50% chance to [Stun] enemy PC on hit",
+                "Ignores enemy PC abnormal state resistance while [Counterattack] is active",
+                "Double skill damage to enemy PC while [Counterattack] is active",
+                "[Counterattack] ends on cast",
+                "5x skill damage to monsters while [Protus] is active"
+              ]
             }
           ],
           "special": []
@@ -283,14 +368,38 @@
           "sp_cost": "350",
           "aggro": "100",
           "skill_type": "",
+          "consume_item": "Ancient Star Orb x 12",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1670%"
+              "value": "АТК: 1670%",
+              "effects": [
+                "Recharge time: 18 seconds",
+                "Usable up to 2 times",
+                "Recharges after 1 use",
+                "50% chance to inflict [Mortal Wound] on enemy on hit",
+                "Ignores enemy PC blocking while [Counterattack] is active",
+                "Double skill damage to enemy PC while [Counterattack] is active",
+                "[Counterattack] ends on cast",
+                "5x skill damage to monsters while [Protus] is active"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3340%"
+              "value": "АТК: 3340%",
+              "effects": [
+                "Recharge time: 18 seconds",
+                "Usable up to 2 times",
+                "Recharges after 1 use",
+                "50% chance to inflict [Mortal Wound] on enemy on hit",
+                "Ignores enemy PC blocking while [Counterattack] is active",
+                "Double skill damage to enemy PC while [Counterattack] is active",
+                "[Counterattack] ends on cast",
+                "5x skill damage to monsters while [Protus] is active"
+              ]
             }
           ],
           "special": []
@@ -308,14 +417,34 @@
           "sp_cost": "450",
           "aggro": "80",
           "skill_type": "",
+          "consume_item": "Ancient Star Orb x 13",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1790%"
+              "value": "АТК: 1790%",
+              "effects": [
+                "50% chance to inflict [Bleeding] on hit",
+                "Removes enemy PC invincibility while in [Counterattack] status",
+                "Double skill damage to enemy PC while in [Counterattack] status",
+                "[Counterattack] removed upon activation",
+                "Double skill damage to monsters if fewer enemies are hit",
+                "5x skill damage to monsters while in [Protus] status"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3579%"
+              "value": "АТК: 3579%",
+              "effects": [
+                "50% chance to inflict [Bleeding] on hit",
+                "Removes enemy PC invincibility while in [Counterattack] status",
+                "Double skill damage to enemy PC while in [Counterattack] status",
+                "[Counterattack] removed upon activation",
+                "Double skill damage to monsters if fewer enemies are hit",
+                "5x skill damage to monsters while in [Protus] status"
+              ]
             }
           ],
           "special": []
@@ -333,26 +462,100 @@
           "sp_cost": "250",
           "aggro": "15",
           "skill_type": "",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 400 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 400 seconds",
+                "STR +5",
+                "CON +5",
+                "ATK +11%",
+                "ATK against monsters +11%",
+                "[Cor] upon skill activation",
+                "[Cor] removed when [Regimen] buff ends",
+                "[Cor]",
+                "Duration: 400 seconds",
+                "1.3x skill damage (3 times)",
+                "Buff level -1 per skill hit",
+                "Does not stack with [Weapon Enhancement], [Staccato] effects."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 400 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 400 seconds",
+                "STR +5",
+                "CON +5",
+                "ATK +20%",
+                "ATK against monsters +20%",
+                "[Cor] upon skill activation",
+                "[Cor] removed when [Regimen] buff ends",
+                "[Cor]",
+                "Duration: 400 seconds",
+                "1.3x skill damage (3 times)",
+                "Buff level -1 per skill hit",
+                "Does not stack with [Weapon Enhancement], [Staccato] effects."
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 400 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 400 seconds",
+                "STR +5",
+                "CON +5",
+                "ATK +21%",
+                "ATK against monsters +21%",
+                "[Cor] upon skill activation",
+                "[Cor] removed when [Regimen] buff ends",
+                "[Cor]",
+                "Duration: 400 seconds",
+                "1.3x skill damage (3 times)",
+                "Buff level -1 per skill hit",
+                "Does not stack with [Weapon Enhancement], [Staccato] effects."
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 400 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 400 seconds",
+                "STR +5",
+                "CON +5",
+                "ATK +22%",
+                "ATK against monsters +22%",
+                "[Cor] upon skill activation",
+                "[Cor] removed when [Regimen] buff ends",
+                "[Cor]",
+                "Duration: 400 seconds",
+                "1.3x skill damage (3 times)",
+                "Buff level -1 per skill hit",
+                "Does not stack with [Weapon Enhancement], [Staccato] effects."
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 400 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 400 seconds",
+                "Strength +5",
+                "Constitution +5",
+                "ATK +23%",
+                "ATK against monsters +23%",
+                "[Cor] upon skill activation",
+                "[Regimen] buff ends, [Cor] removed",
+                "[Cor]",
+                "Duration: 400 seconds",
+                "Skill damage x1.3 (3 hits)",
+                "Buff level -1 per skill hit",
+                "Does not stack with [Weapon Enhancement], [Staccato] effects."
+              ]
             }
           ],
           "special": []

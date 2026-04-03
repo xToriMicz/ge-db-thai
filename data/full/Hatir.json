@@ -2,7 +2,7 @@
   "slug": "Hatir",
   "equipment": {
     "category": "Usable Equipment",
-    "medal": "You must give the order Blessings of the 2026 New Year",
+    "medal": "You must give the order Blessings of the 2026 New Year 20th Anniversary with Linden",
     "head": "None",
     "earring": "Earring",
     "face": "None",
@@ -93,6 +93,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -135,6 +136,7 @@
         "Penetration": "10+15",
         "Immunity": "15+20"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Tarik",
@@ -149,14 +151,26 @@
           "sp_cost": "150",
           "aggro": "300",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "105%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 832%"
+              "value": "АТК: 832%",
+              "effects": [
+                "When cast in [Hatlamak-Defense Stance], enemies within range [enemys]",
+                "Ignore abnormal status resistance"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1664%"
+              "value": "АТК: 1664%",
+              "effects": [
+                "When cast in [Hatlamak-Defense Stance], enemies within range [enemys]",
+                "Ignore abnormal status resistance"
+              ]
             }
           ],
           "special": []
@@ -174,26 +188,115 @@
           "sp_cost": "350",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 20",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Grants [Reconstruction] and [Suggestion] to yourself when casting"
+              "value": "",
+              "effects": [
+                "Grants [Reconstruction] and [Suggestion] to yourself when casting",
+                "[Reconstruction] Duration: 300 seconds",
+                "Attack against monsters +50%",
+                "Defense rating +1, Defense +2, Health +1",
+                "Status resistance +2, Knockdown time -20%",
+                "Attack rating +1, Penetration +2, Casting time -10%",
+                "[Suggestion] Duration: 10 seconds",
+                "Immunity to normal attacks and ignores 1 skill attack during the duration",
+                "If skill attack ignorance is successful, recover 15% HP and remove all debuffs",
+                "If skill attack ignorance is successful, remove [Suggestion] and acquire [Expression]",
+                "[Expression] Duration: 60 seconds",
+                "Defense +10, Immunity +5, All hit damage -10%",
+                "Movement speed limit +1.00, Movement speed +10%",
+                "Immunity to some status effects",
+                "Cannot acquire [Suggestion] during the duration"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Grants [Reconstruction] and [Suggestion] to yourself when casting"
+              "value": "",
+              "effects": [
+                "Grants [Reconstruction] and [Suggestion] to yourself when casting",
+                "[Reconstruction] Duration: 300 seconds",
+                "Attack against monsters +50%",
+                "Defense rating +1, Defense +20, Health +10",
+                "Status resistance +20, Knockdown time -20%",
+                "Attack rating +1, Penetration +20, Casting time -10%",
+                "[Suggestion] Duration: 10 seconds",
+                "Immunity to normal attacks and ignores 1 skill attack during the duration",
+                "If skill attack ignorance is successful, recover 15% HP and remove all debuffs",
+                "If skill attack ignorance is successful, remove [Suggestion] and acquire [Expression]",
+                "[Expression] Duration: 60 seconds",
+                "Defense +10, Immunity +5, All hit damage -10%",
+                "Movement speed limit +1.00, Movement speed +10%",
+                "Immunity to some status effects",
+                "Cannot acquire [Suggestion] during the duration"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Grants [Reconstruction] and [Suggestion] to yourself when casting"
+              "value": "",
+              "effects": [
+                "Grants [Reconstruction] and [Suggestion] to yourself when casting",
+                "[Reconstruction] Duration: 300 seconds",
+                "Attack against monsters +55%",
+                "Defense rating +1, Defense +22, Health +11",
+                "Status resistance +22, Knockdown time -20%",
+                "Attack rating +1, Penetration +22, Casting time -10%",
+                "[Suggestion] Duration: 10 seconds",
+                "Immunity to normal attacks and ignores 1 skill attack during the duration",
+                "If skill attack ignorance is successful, recover 15% HP and remove all debuffs",
+                "If skill attack ignorance is successful, remove [Suggestion] and acquire [Expression]",
+                "[Expression] Duration: 60 seconds",
+                "Defense +10, Immunity +5, All hit damage -10%",
+                "Movement speed limit +1.00, Movement speed +10%",
+                "Immunity to some status effects",
+                "Cannot acquire [Suggestion] during the duration"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Grants [Reconstruction] and [Suggestion] to yourself when casting"
+              "value": "",
+              "effects": [
+                "Grants [Reconstruction] and [Suggestion] to yourself when casting",
+                "[Reconstruction] Duration: 300 seconds",
+                "Attack against monsters +60%",
+                "Defense rating +1, Defense +24, Health +12",
+                "Status resistance +24, Knockdown time -20%",
+                "Attack rating +1, Penetration +24, Casting time -10%",
+                "[Suggestion] Duration: 10 seconds",
+                "Immunity to normal attacks and ignores 1 skill attack during the duration",
+                "If skill attack ignorance is successful, recover 15% HP and remove all debuffs",
+                "If skill attack ignorance is successful, remove [Suggestion] and acquire [Expression]",
+                "[Expression] Duration: 60 seconds",
+                "Defense +10, Immunity +5, All hit damage -10%",
+                "Movement speed limit +1.00, Movement speed +10%",
+                "Immunity to some status effects",
+                "Cannot acquire [Suggestion] during the duration"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Grants [Reconstruction] and [Suggestion] to yourself when casting"
+              "value": "",
+              "effects": [
+                "Grants [Reconstruction] and [Suggestion] to yourself when casting",
+                "[Reconstruction] Duration: 300 seconds",
+                "Attack against monsters +65%",
+                "Defense rating +1, Defense +26, HP +13",
+                "Status resistance +26, Knockdown time -20%",
+                "Attack rating +1, Penetration +26, Casting time -10%",
+                "[Suggestion] Duration: 10 seconds",
+                "Immunity to normal attacks and ignores 1 skill attack during the duration",
+                "If skill attack ignorance is successful, recover 15% HP and remove all debuffs",
+                "If skill attack ignorance is successful, remove [Suggestion] and acquire [Expression]",
+                "[Expression] Duration: 60 seconds",
+                "Defense +10, Immunity +5, All hit damage -10%",
+                "Movement speed limit +1.00, Movement speed +10%",
+                "Immunity to some status effects",
+                "Cannot acquire [Suggestion] during the duration"
+              ]
             }
           ],
           "special": []
@@ -211,14 +314,36 @@
           "sp_cost": "450",
           "aggro": "150",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 8",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1065%"
+              "value": "АТК: 1065%",
+              "effects": [
+                "When hitting, 45% chance to [Critical Wound] enemy",
+                "Ignore blocking",
+                "Ignore 1/2 of enemy shield defense",
+                "When hitting a monster in [Enemy] status, skill threat value increases by 2x",
+                "When hitting a monster in [Hatlamak - Attack Stance] status, skill damage is 3x",
+                "Skill damage is doubled in proportion to total [HP] (maximum 200)",
+                "Ignore additional defense by up to 100 as total [HP] * 0.5 (maximum 75 for PC)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2130%"
+              "value": "АТК: 2130%",
+              "effects": [
+                "When hitting, 45% chance to [Critical Wound] enemy",
+                "Ignore blocking",
+                "Ignore 1/2 of enemy shield defense",
+                "When hitting a monster in [Enemy] status, skill threat value increases by 2x",
+                "When hitting a monster in [Hatlamak - Attack Stance] status, skill damage is 3x",
+                "Skill damage is doubled in proportion to total [HP] (maximum 200)",
+                "Ignore additional defense by up to 100 as total [HP] * 0.5 (maximum 75 for PC)"
+              ]
             }
           ],
           "special": []
@@ -236,14 +361,40 @@
           "sp_cost": "350",
           "aggro": "350",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1294%"
+              "value": "АТК: 1294%",
+              "effects": [
+                "60% chance to [Stun] enemy PC when hit",
+                "[Unhittable] when cast",
+                "[Hatlamark - Defensive Stance] causes enemy [enemy] when cast",
+                "[Hatlamark - Defensive Stance] causes threat to be ranked 1st when cast on monsters",
+                "[Hatlamark - Attack Stance] reduces cooldown by 10 seconds when cast on monsters in [Hatlamark - Attack Stance]",
+                "[Hatlamark - Attack Stance] causes skill damage to monsters 4x",
+                "[Hatlamark - Attack Stance] causes skill damage to be increased up to 2x in proportion to total [HP] (maximum 200)",
+                "Ignores additional defense by up to 100 as [HP] * 0.5 (maximum 75 for PC)",
+                "Resets cooldown of all other skills when killing an enemy PC"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2588%"
+              "value": "АТК: 2588%",
+              "effects": [
+                "60% chance to [Stun] enemy PC when hit",
+                "[Unhittable] when cast",
+                "[Hatlamark - Defensive Stance] causes enemy [enemy] when cast",
+                "[Hatlamark - Defensive Stance] causes threat to be ranked 1st when cast on monsters",
+                "[Hatlamark - Attack Stance] reduces cooldown by 10 seconds when cast on monsters in [Hatlamark - Attack Stance]",
+                "[Hatlamark - Attack Stance] causes skill damage to monsters 4x",
+                "[Hatlamark - Attack Stance] causes skill damage to be increased up to 2x in proportion to total [HP] (maximum 200)",
+                "Ignores additional defense by up to 100 as [HP] * 0.5 (maximum 75 for PC)",
+                "Resets cooldown of all other skills when killing an enemy PC"
+              ]
             }
           ],
           "special": []
@@ -261,14 +412,36 @@
           "sp_cost": "650",
           "aggro": "200",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 12",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "130%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1460%"
+              "value": "АТК: 1460%",
+              "effects": [
+                "When hitting, 60% chance to [Critical Wound] enemy",
+                "Ignore blocking",
+                "Ignore 1/2 of enemy shield defense",
+                "When hitting a monster in [Enemy] status, skill threat value increases by 2x",
+                "When hitting a monster in [Hatlamak - Attack Stance] status, skill damage is 4x",
+                "Skill damage is increased up to 2x in proportion to total [HP] (maximum 200)",
+                "Ignore additional defense by up to 100 as total [HP] * 0.5 (maximum 75 for PC)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2920%"
+              "value": "АТК: 2920%",
+              "effects": [
+                "When hitting, 60% chance to [Critical Wound] enemy",
+                "Ignore blocking",
+                "Ignore 1/2 of enemy shield defense",
+                "When hitting a monster in [Enemy] status, skill threat value increases by 2x",
+                "When hitting a monster in [Hatlamak - Attack Stance] status, skill damage is 4x",
+                "Skill damage is increased up to 2x in proportion to total [HP] (maximum 200)",
+                "Ignore additional defense by up to 100 as total [HP] * 0.5 (maximum 75 for PC)"
+              ]
             }
           ],
           "special": []

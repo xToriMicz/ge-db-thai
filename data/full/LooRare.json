@@ -35,9 +35,15 @@
         "level": "Level 10",
         "effects": [
           "Duration: 300sec.",
-          "ATK+10%(For Guardian Ru, applied double.)",
-          "Monster Damage+10%(For Guardian Ru, applied double.)",
-          "For [Guardian Ru], A.R.+1, D.R.+1, +5 STR"
+          "A.R. +1",
+          "D.R. +1",
+          "Atk +30%",
+          "Monster ATK +50%",
+          "STR +10",
+          "All damage -10%",
+          "For Family members:",
+          "ATK+10%",
+          "Monster Damage+25%"
         ]
       }
     ]
@@ -86,6 +92,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -129,6 +136,7 @@
         "Penetration": "10+20",
         "Immunity": "5+10"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Kuka",
@@ -143,14 +151,34 @@
           "sp_cost": "300",
           "aggro": "342",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "50%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "150%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 800%"
+              "value": "АТК: 800%",
+              "effects": [
+                "Ignores enemys DEF by 50",
+                "50%chance to impose [Mortal Wound]",
+                "Ignores enemys Blocking",
+                "Ignores DEF of enemys shield by 1/2",
+                "In [Quatanaru] [Maketau] state, Extra ignores enemy PCs DEF in proportion to casters [STR]",
+                "In [Quatanaru] [Maketau] state, Extra damage to enemy monster in proportion to casters [STR]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1600%"
+              "value": "АТК: 1600%",
+              "effects": [
+                "Ignores enemys DEF by 50",
+                "50%chance to impose [Mortal Wound]",
+                "Ignores enemys Blocking",
+                "Ignores DEF of enemys shield by 1/2",
+                "In [Quatanaru] [Maketau] state, Extra ignores enemy PCs DEF in proportion to casters [STR]",
+                "In [Quatanaru] [Maketau] state, Extra damage to enemy monster in proportion to casters [STR]"
+              ]
             }
           ],
           "special": []
@@ -168,14 +196,34 @@
           "sp_cost": "480",
           "aggro": "43",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "50%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "150%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1400%"
+              "value": "АТК: 1400%",
+              "effects": [
+                "Ignores enemys DEF by 60",
+                "50% chance to impose [Slow]",
+                "Ignores enemys Blocking",
+                "Ignores DEF of enemys shield by 1/2",
+                "In [Quatanaru] [Maketau] state, Extra ignores enemy PCs DEF in proportion to casters [STR]",
+                "In [Quatanaru] [Maketau] state, Extra damage to enemy monster in proportion to casters [STR]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2800%"
+              "value": "АТК: 2800%",
+              "effects": [
+                "Ignores enemys DEF by 60",
+                "50% chance to impose [Slow]",
+                "Ignores enemys Blocking",
+                "Ignores DEF of enemys shield by 1/2",
+                "In [Quatanaru] [Maketau] state, Extra ignores enemy PCs DEF in proportion to casters [STR]",
+                "In [Quatanaru] [Maketau] state, Extra damage to enemy monster in proportion to casters [STR]"
+              ]
             }
           ],
           "special": []
@@ -193,14 +241,36 @@
           "sp_cost": "650",
           "aggro": "200",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "50%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1600%"
+              "value": "АТК: 1600%",
+              "effects": [
+                "Ignores enemy DEF by 60",
+                "Damage to enemy in the air x1.25",
+                "Cooldown: 30sec.",
+                "Can use up to 3 times",
+                "After using once, should recharge",
+                "In [Quatanaru] [Maketau] state, Extra ignores enemy PCs DEF in proportion to casters [STR]",
+                "In [Quatanaru] [Maketau] state, Extra damage to enemy monster in proportion to casters [STR]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3200%"
+              "value": "АТК: 3200%",
+              "effects": [
+                "Ignores enemy DEF by 60",
+                "Damage to enemy in the air x1.25",
+                "Cooldown: 30sec.",
+                "Can use up to 3 times",
+                "After using once, should recharge",
+                "In [Quatanaru] [Maketau] state, Extra ignores enemy PCs DEF in proportion to casters [STR]",
+                "In [Quatanaru] [Maketau] state, Extra damage to enemy monster in proportion to casters [STR]"
+              ]
             }
           ],
           "special": []
@@ -218,14 +288,32 @@
           "sp_cost": "1050",
           "aggro": "172",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 3",
+          "soft_armor_atk": "30%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "80%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1500%"
+              "value": "АТК: 1500%",
+              "effects": [
+                "Ignores enemys DEF by 60",
+                "Ignores enemys Blocking",
+                "Ignores DEF of enemys shield by 1/2",
+                "In [Quatanaru] [Maketau] state, Extra ignores enemy PCs DEF in proportion to casters [STR]",
+                "In [Quatanaru] [Maketau] state, Extra damage to enemy monster in proportion to casters [STR]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "Ignores enemys DEF by 60",
+                "Ignores enemys Blocking",
+                "Ignores DEF of enemys shield by 1/2",
+                "In [Quatanaru] [Maketau] state, Extra ignores enemy PCs DEF in proportion to casters [STR]",
+                "In [Quatanaru] [Maketau] state, Extra damage to enemy monster in proportion to casters [STR]"
+              ]
             }
           ],
           "special": []
@@ -243,14 +331,32 @@
           "sp_cost": "740",
           "aggro": "342",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "50%",
+          "heavy_armor_atk": "120%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2500%"
+              "value": "АТК: 2500%",
+              "effects": [
+                "Ignores enemys DEF by 75",
+                "Ignores enemys Blocking",
+                "Ignores DEF of enemys shield by 1/2",
+                "In [Quatanaru] [Maketau] state, Extra ignores enemy PCs DEF in proportion to casters [STR]",
+                "In [Quatanaru] [Maketau] state, Extra damage to enemy monster in proportion to casters [STR]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5000%"
+              "value": "АТК: 5000%",
+              "effects": [
+                "Ignores enemys DEF by 75",
+                "Ignores enemys Blocking",
+                "Ignores DEF of enemys shield by 1/2",
+                "In [Quatanaru] [Maketau] state, Extra ignores enemy PCs DEF in proportion to casters [STR]",
+                "In [Quatanaru] [Maketau] state, Extra damage to enemy monster in proportion to casters [STR]"
+              ]
             }
           ],
           "special": []

@@ -90,6 +90,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -132,6 +133,7 @@
         "Penetration": "5+25",
         "Immunity": "5+10"
       },
+      "consume": "Large Caliber Bullet x 3",
       "skills": [
         {
           "name": "Le Refroidisseur",
@@ -146,14 +148,38 @@
           "sp_cost": "100",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "["
+              "value": "",
+              "effects": [
+                "[Surchauffe] level -10 upon use",
+                "Resets skill cooldowns",
+                "Applies [BFG Overdrive]:",
+                "Duration: 45s",
+                "A.R. +1",
+                "Skills bypass bosses [Aurora of Protection] or similar buffs",
+                "Skills can hit critical 100% of the time",
+                "Additional DMG x3"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "["
+              "value": "",
+              "effects": [
+                "[Surchauffe] level -10 upon use",
+                "Resets skill cooldowns",
+                "Applies [BFG Overdrive]:",
+                "Duration: 45s",
+                "A.R. +1",
+                "Skills bypass bosses [Aurora of Protection] or similar buffs",
+                "Skills can hit critical 100% of the time",
+                "Additional DMG x3"
+              ]
             }
           ],
           "special": [
@@ -174,14 +200,34 @@
           "sp_cost": "200",
           "aggro": "150",
           "skill_type": "Shooting",
+          "consume_item": "Large Caliber Bullet x 2",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "90%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "Ignores 100 DEF",
+                "Cancels [Invulnerable]",
+                "Upon a successful skill hit:",
+                "- Increases enemys [Acide et Poison] level by 5",
+                "- Increases your [Surchauffe] level by 4-7",
+                "- Skill Damage increases up to 10x depending on enemys [Acide et Poison] level (up to 2x for PC)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4400%"
+              "value": "АТК: 4400%",
+              "effects": [
+                "Ignores 100 DEF",
+                "Cancels [Invulnerable]",
+                "Upon a successful skill hit:",
+                "- Increases enemys [Acide et Poison] level by 5",
+                "- Increases your [Surchauffe] level by 4-7",
+                "- Skill Damage increases up to 10x depending on enemys [Acide et Poison] level (up to 2x for PC)"
+              ]
             }
           ],
           "special": []
@@ -199,14 +245,30 @@
           "sp_cost": "350",
           "aggro": "100",
           "skill_type": "Shooting",
+          "consume_item": "Ancient Star Orb x 30",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2500%"
+              "value": "АТК: 2500%",
+              "effects": [
+                "Ignores 120 DEF",
+                "When a skill hits an enemy affected by [Acide et Poison]:",
+                "- Increases [Acide et Poison] level by 15",
+                "- Skill Damage increases up to 10x depending on enemys [Acide et Poison] level (up to 2x for PC)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5000%"
+              "value": "АТК: 5000%",
+              "effects": [
+                "Ignores 120 DEF",
+                "When a skill hits an enemy affected by [Acide et Poison]:",
+                "- Increases [Acide et Poison] level by 15",
+                "- Skill Damage increases up to 10x depending on enemys [Acide et Poison] level (up to 2x for PC)"
+              ]
             }
           ],
           "special": []
@@ -224,14 +286,40 @@
           "sp_cost": "500",
           "aggro": "100",
           "skill_type": "Shooting",
+          "consume_item": "Large Caliber Bullet x 22",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1830%"
+              "value": "АТК: 1830%",
+              "effects": [
+                "Ignores 150 DEF",
+                "Attacks up to 22 times during casting",
+                "Stops attacking and finishes up when re-used",
+                "Increases skill damage every 7 hits",
+                "Upon use, increases [Surchauffe] by 1 level",
+                "Upon a successful skill hit:",
+                "- Increases enemys [Acide et Poison] level by 1",
+                "- Ignores up to 50 additional DEF depending on the enemys [Acide et Poison] level (up to 25 for PC)",
+                "- Skill Damage increases up to 10x depending on enemys [Acide et Poison] level (up to 2x for PC)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3660%"
+              "value": "АТК: 3660%",
+              "effects": [
+                "Ignores 150 DEF",
+                "Attacks up to 22 times during casting",
+                "Stops attacking and finishes up when re-used",
+                "Increases skill damage every 7 hits",
+                "Upon use, increases [Surchauffe] by 1 level",
+                "Upon a successful skill hit:",
+                "- Increases enemys [Acide et Poison] level by 1",
+                "- Ignores up to 50 additional DEF depending on the enemys [Acide et Poison] level (up to 25 for PC)",
+                "- Skill Damage increases up to 10x depending on enemys [Acide et Poison] level (up to 2x for PC)"
+              ]
             }
           ],
           "special": []
@@ -249,14 +337,34 @@
           "sp_cost": "600",
           "aggro": "300",
           "skill_type": "Shooting",
+          "consume_item": "Large Caliber Bullet x 1",
+          "soft_armor_atk": "120%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "120%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2600%"
+              "value": "АТК: 2600%",
+              "effects": [
+                "Ignores 120 DEF",
+                "Activates skill when re-used during casting",
+                "Increases max range of skill according to cast time",
+                "- Ignores up to 50 additional DEF depending on the enemys [Acide et Poison] level (up to 25 for PC)",
+                "- Skill Damage increases up to 10x depending on enemys [Acide et Poison] level (up to 2x for PC)",
+                "- [Surchauffe] Lv. -15"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5200%"
+              "value": "АТК: 5200%",
+              "effects": [
+                "Ignores 120 DEF",
+                "Activates skill when re-used during casting",
+                "Increases max range of skill according to cast time",
+                "- Ignores up to 50 additional DEF depending on the enemys [Acide et Poison] level (up to 25 for PC)",
+                "- Skill Damage increases up to 10x depending on enemys [Acide et Poison] level (up to 2x for PC)",
+                "- [Surchauffe] Lv. -15"
+              ]
             }
           ],
           "special": []

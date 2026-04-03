@@ -89,6 +89,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "[RE: PvE] Skill DMG increases equal to 8% of extra [STR]",
@@ -132,6 +133,7 @@
         "Penetration": "10+10",
         "Immunity": "5+5"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Vienis",
@@ -146,14 +148,32 @@
           "sp_cost": "350",
           "aggro": "40",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 8",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "105%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "On hit, increases enemy [Berlonia] level by 1",
+                "[Berlonia] can increase up to level 3",
+                "At level 3, [Berlonia] changes to [Berlonia Plena]",
+                "In [Comina Pontus] state, hitting an enemy in [Berlonia Plena] state removes [Berlonia Plena]",
+                "[Strength Remove] removes [Berlonia Plena]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4800%"
+              "value": "АТК: 4800%",
+              "effects": [
+                "On hit, increases enemy [Berlonia] level by 1",
+                "[Berlonia] can increase up to level 3",
+                "At level 3, [Berlonia] changes to [Berlonia Plena]",
+                "In [Comina Pontus] state, hitting an enemy in [Berlonia Plena] state removes [Berlonia Plena]",
+                "[Strength Remove] removes [Berlonia Plena]"
+              ]
             }
           ],
           "special": []
@@ -171,26 +191,80 @@
           "sp_cost": "550",
           "aggro": "70",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2700%"
+              "value": "АТК: 2700%",
+              "effects": [
+                "Activates skill when reused during casting",
+                "Increases knockdown distance, knockdown time, and damage proportional to casting time",
+                "Additional damage increases up to 8x at maximum casting",
+                "Ignores additional defense up to 80 (up to 40 for PCs, not applied in World Cross PVP rule)",
+                "33% chance to reset [Karkiola] skill cooldown at maximum casting",
+                "Invincible while casting",
+                "On hit, [Destruido] level +1",
+                "On hit, increases enemy [Berlonia] level by 1"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5400%"
+              "value": "АТК: 5400%",
+              "effects": [
+                "Activates skill when reused during casting",
+                "Increases knockdown distance, knockdown time, and damage proportional to casting time",
+                "Additional damage increases up to 8x at maximum casting",
+                "Ignores additional defense up to 80 (up to 40 for PCs, not applied in World Cross PVP rule)",
+                "33% chance to reset [Karkiola] skill cooldown at maximum casting",
+                "Invincible while casting",
+                "On hit, [Destruido] level +10",
+                "On hit, increases enemy [Berlonia] level by 1"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "АТК: 5940%"
+              "value": "АТК: 5940%",
+              "effects": [
+                "Activates skill when reused during casting",
+                "Increases knockdown distance, knockdown time, and damage proportional to casting time",
+                "Additional damage increases up to 8x at maximum casting",
+                "Ignores additional defense up to 80 (up to 40 for PCs, not applied in World Cross PVP rule)",
+                "33% chance to reset [Karkiola] skill cooldown at maximum casting",
+                "Invincible while casting",
+                "On hit, [Destruido] level +11",
+                "On hit, increases enemy [Berlonia] level by 1"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "АТК: 6480%"
+              "value": "АТК: 6480%",
+              "effects": [
+                "Activates skill when reused during casting",
+                "Increases knockdown distance, knockdown time, and damage proportional to casting time",
+                "Additional damage increases up to 8x at maximum casting",
+                "Ignores additional defense up to 80 (up to 40 for PCs, not applied in World Cross PVP rule)",
+                "33% chance to reset [Karkiola] skill cooldown at maximum casting",
+                "Invincible while casting",
+                "On hit, [Destruido] level +12",
+                "On hit, increases enemy [Berlonia] level by 1"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "АТК: 6480%"
+              "value": "АТК: 6480%",
+              "effects": [
+                "Activates skill when reused during casting",
+                "Increases knockdown distance, knockdown time, and damage proportional to casting time",
+                "Additional damage increases up to 8x at maximum casting",
+                "Ignores additional defense up to 80 (up to 40 for PCs, not applied in World Cross PVP rule)",
+                "33% chance to reset [Karkiola] skill cooldown at maximum casting",
+                "Invincible while casting",
+                "On hit, [Destruido] level +13",
+                "On hit, increases enemy [Berlonia] level by 1"
+              ]
             }
           ],
           "special": [
@@ -205,7 +279,7 @@
           "name": "Shinyuata",
           "image": "ldm_sinnuata.jpg",
           "description": "Attacks the enemies in front with the Ice Butterfly.",
-          "target": "Up to 5 enemies within a 7m x 120° area in front",
+          "target": "",
           "casting_time": "1.033 sec.",
           "cooldown": "15 sec.",
           "duration": "2.466 sec.",
@@ -214,14 +288,30 @@
           "sp_cost": "630",
           "aggro": "150",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 12",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 3010%"
+              "value": "АТК: 3010%",
+              "effects": [
+                "Ignores evasion",
+                "On hit, increases enemy [Berlonia] level by 1",
+                "In [Destruido] state, ignores additional defense equal to (extra [Strength] * 1.25) against monsters",
+                "Reduces all skill cooldowns by 1 second proportionate to the number of hits on enemies in [Berlonia Plena] state"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 6020%"
+              "value": "АТК: 6020%",
+              "effects": [
+                "Ignores evasion",
+                "On hit, increases enemy [Berlonia] level by 1",
+                "In [Destruido] state, ignores additional defense equal to (extra [Strength] * 1.25) against monsters",
+                "Reduces all skill cooldowns by 1 second proportionate to the number of hits on enemies in [Berlonia Plena] state"
+              ]
             }
           ],
           "special": []
@@ -239,14 +329,32 @@
           "sp_cost": "750",
           "aggro": "300",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 17",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2140%"
+              "value": "АТК: 2140%",
+              "effects": [
+                "Ignores evasion",
+                "On hit, increases enemy [Berlonia] level by 1",
+                "In [Destruido] state, ignores additional defense equal to (extra [Strength] * 1.25) against monsters",
+                "Deals 1.5x damage to enemies in [Cold], [Frost], [Freeze], [Pain] state",
+                "Increases knockdown duration when hitting PC enemies in [Berlonia Plena] state"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4280%"
+              "value": "АТК: 4280%",
+              "effects": [
+                "Ignores evasion",
+                "On hit, increases enemy [Berlonia] level by 1",
+                "In [Destruido] state, ignores additional defense equal to (extra [Strength] * 1.25) against monsters",
+                "Deals 1.5x damage to enemies in [Cold], [Frost], [Freeze], [Pain] state",
+                "Increases knockdown duration when hitting PC enemies in [Berlonia Plena] state"
+              ]
             }
           ],
           "special": []
@@ -264,14 +372,34 @@
           "sp_cost": "1200",
           "aggro": "350",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 22",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "120%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2660%"
+              "value": "АТК: 2660%",
+              "effects": [
+                "Ignores evasion",
+                "On hit, increases enemy [Berlonia] level by 2",
+                "In [Destruido] state, ignores additional defense equal to (extra [Strength] * 1.25) against monsters",
+                "Deals 1.5x damage to enemies in [Cold], [Frost], [Freeze], [Pain] state",
+                "33% chance to reset [Felipeze] cooldown when hitting enemies in [Berlonia Plena] state",
+                "If caster has [Comina Pontus], grants [Calm of the Waves] to up to 7 squad members except the caster when hitting enemies"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5320%"
+              "value": "АТК: 5320%",
+              "effects": [
+                "Ignores evasion",
+                "On hit, increases enemy [Berlonia] level by 2",
+                "In [Destruido] state, ignores additional defense equal to (extra [Strength] * 1.25) against monsters",
+                "Deals 1.5x damage to enemies in [Cold], [Frost], [Freeze], [Pain] state",
+                "33% chance to reset [Felipeze] cooldown when hitting enemies in [Berlonia Plena] state",
+                "If caster has [Comina Pontus], grants [Calm of the Waves] to up to 7 squad members except the caster when hitting enemies"
+              ]
             }
           ],
           "special": []

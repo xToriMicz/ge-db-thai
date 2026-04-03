@@ -88,6 +88,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -131,6 +132,7 @@
         "Penetration": "25+10",
         "Immunity": "5+5"
       },
+      "consume": "Steel Bolt x 3",
       "skills": [
         {
           "name": "Alegria",
@@ -145,14 +147,28 @@
           "sp_cost": "150",
           "aggro": "30",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bolt x 3",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1720%"
+              "value": "АТК: 1720%",
+              "effects": [
+                "When cast, [Joy] +1 level (maximum 3 levels)",
+                "When hit, 60% chance to inflict [mortal wounds] on the enemy",
+                "Up to 3x skill damage in inverse proportion to [Joy] level"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3440%"
+              "value": "АТК: 3440%",
+              "effects": [
+                "When cast, [Joy] +1 level (maximum 3 levels)",
+                "When hit, 60% chance to inflict [mortal wounds] on the enemy",
+                "Up to 3x skill damage in inverse proportion to [Joy] level"
+              ]
             }
           ],
           "special": []
@@ -170,14 +186,26 @@
           "sp_cost": "200",
           "aggro": "45",
           "skill_type": "Shooting",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1630%"
+              "value": "АТК: 1630%",
+              "effects": [
+                "When cast, [Joy] +2 level (maximum 3 levels)",
+                "Skill damage up to 3 times in inverse proportion to [Joy] level"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3260%"
+              "value": "АТК: 3260%",
+              "effects": [
+                "When cast, [Joy] +2 level (maximum 3 levels)",
+                "Skill damage up to 3 times in inverse proportion to [Joy] level"
+              ]
             }
           ],
           "special": []
@@ -195,14 +223,32 @@
           "sp_cost": "300",
           "aggro": "70",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bolt x 15",
+          "soft_armor_atk": "120%",
+          "heavy_armor_atk": "90%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2060%"
+              "value": "АТК: 2060%",
+              "effects": [
+                "When cast on an enemy, [Joy] -1 level",
+                "When hit, 60% chance to inflict [mortal wounds] on the enemy",
+                "Double skill damage to monsters in [Humming] state",
+                "4x skill damage in [Joy] state (effect halved for PC)",
+                "Ignores up to 60 additional enemy monster defense in proportion to [Joy] level"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4120%"
+              "value": "АТК: 4120%",
+              "effects": [
+                "When cast on an enemy, [Joy] -1 level",
+                "When hit, 60% chance to inflict [mortal wounds] on the enemy",
+                "Double skill damage to monsters in [Humming] state",
+                "4x skill damage in [Joy] state (effect halved for PC)",
+                "Ignores up to 60 additional enemy monster defense in proportion to [Joy] level"
+              ]
             }
           ],
           "special": []
@@ -220,14 +266,30 @@
           "sp_cost": "360",
           "aggro": "100",
           "skill_type": "Shooting",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "120%",
+          "heavy_armor_atk": "80%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1870%"
+              "value": "АТК: 1870%",
+              "effects": [
+                "When hitting, there is a 70% chance to [slow] the enemy",
+                "When hitting, there is a 30% chance to hit the enemy PC [Confusion]",
+                "When in [Joy] state, skill damage is 4x (the effect is halved for PC)",
+                "Ignores enemy monster defense by up to 45 additional points in proportion to the [Joy] level"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3740%"
+              "value": "АТК: 3740%",
+              "effects": [
+                "When hitting, there is a 70% chance to [slow] the enemy",
+                "When hitting, there is a 30% chance to hit the enemy PC [Confusion]",
+                "When in [Joy] state, skill damage is 4x (the effect is halved for PC)",
+                "Ignores enemy monster defense by up to 45 additional points in proportion to the [Joy] level"
+              ]
             }
           ],
           "special": []
@@ -245,14 +307,34 @@
           "sp_cost": "570",
           "aggro": "80",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bolt x 3",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "120%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2290%"
+              "value": "АТК: 2290%",
+              "effects": [
+                "When cast on an enemy, [Joy] -1 level",
+                "Skill activated when reused during casting",
+                "Up to 4x enemy knockdown distance, knockdown time, and damage in proportion to casting time",
+                "2x skill damage at maximum casting",
+                "2x skill damage when in [Joy] state (effect halved for PC)",
+                "Ignores enemy monster defense up to 75 additionally in proportion to [Joy] level"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4580%"
+              "value": "АТК: 4580%",
+              "effects": [
+                "When cast on an enemy, [Joy] -1 level",
+                "Skill activated when reused during casting",
+                "Up to 4x enemy knockdown distance, knockdown time, and damage in proportion to casting time",
+                "2x skill damage at maximum casting",
+                "2x skill damage when in [Joy] state (effect halved for PC)",
+                "Ignores enemy monster defense up to 75 additionally in proportion to [Joy] level"
+              ]
             }
           ],
           "special": []

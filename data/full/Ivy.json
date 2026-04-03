@@ -93,6 +93,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -136,6 +137,7 @@
         "Penetration": "5+25",
         "Immunity": "10+25"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Peel Off",
@@ -150,14 +152,32 @@
           "sp_cost": "400",
           "aggro": "75",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "105%",
+          "heavy_armor_atk": "80%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1200%"
+              "value": "АТК: 1200%",
+              "effects": [
+                "Removes [Invulnerable]",
+                "Remove a random buff on the target PC by 40% chance",
+                "Can attack flying enemies",
+                "Ignore enemy DEF by 30 + extra [INT]*0.2",
+                "Damage increases by 2% per 1 extra [INT] when Ivy is in [Cooking Time - Knife] state"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "Removes [Invulnerable]",
+                "Remove a random buff on the target PC by 40% chance",
+                "Can attack flying enemies",
+                "Ignore enemy DEF by 30 + extra [INT]*0.2",
+                "Damage increases by 2% per 1 extra [INT] when Ivy is in [Cooking Time - Knife] state"
+              ]
             }
           ],
           "special": []
@@ -175,14 +195,28 @@
           "sp_cost": "500",
           "aggro": "100",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "105%",
+          "heavy_armor_atk": "90%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1600%"
+              "value": "АТК: 1600%",
+              "effects": [
+                "Ignore enemy DEF by 45 + extra [INT]*0.2",
+                "50% chance to inflict [Drain]",
+                "Damage increases by 2% per 1 extra [INT] when Ivy is in [Cooking Time - Knife] state"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3200%"
+              "value": "АТК: 3200%",
+              "effects": [
+                "Ignore enemy DEF by 45 + extra [INT]*0.2",
+                "50% chance to inflict [Drain]",
+                "Damage increases by 2% per 1 extra [INT] when Ivy is in [Cooking Time - Knife] state"
+              ]
             }
           ],
           "special": []
@@ -191,7 +225,7 @@
           "name": "Dicing",
           "image": "bstck_dicing.jpg",
           "description": "Cut the ingredients into bite-sized squares.",
-          "target": "",
+          "target": "Max Range 3.5m / Radius 4m / Max 5 enemies",
           "casting_time": "Instant",
           "cooldown": "10 sec.",
           "duration": "2.4333 sec.",
@@ -200,14 +234,28 @@
           "sp_cost": "600",
           "aggro": "120",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": [
+                "Ignore enemy DEF by 60 + extra [INT]*0.2",
+                "60% chance to inflict [Stun]",
+                "Damage increases by 2% per 1 extra [INT] when Ivy is in [Cooking Time - Knife] state"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3600%"
+              "value": "АТК: 3600%",
+              "effects": [
+                "Ignore enemy DEF by 60 + extra [INT]*0.2",
+                "60% chance to inflict [Stun]",
+                "Damage increases by 2% per 1 extra [INT] when Ivy is in [Cooking Time - Knife] state"
+              ]
             }
           ],
           "special": []
@@ -225,14 +273,32 @@
           "sp_cost": "450",
           "aggro": "35",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 4",
+          "soft_armor_atk": "85%",
+          "heavy_armor_atk": "115%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1500%"
+              "value": "АТК: 1500%",
+              "effects": [
+                "[Fire Attribute]",
+                "Ignores 50 RES",
+                "30% chance to inflict [Ember] (PC only)",
+                "Damage increases additionally by (2% of extra [INT]) during [Cooking Time - Knife]",
+                "During [Cooking Time - Fire], damage triples against monsters and increases additionally by (4% of extra [INT])"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "[Fire Attribute]",
+                "Ignores 50 RES",
+                "30% chance to inflict [Ember] (PC only)",
+                "Damage increases additionally by (2% of extra [INT]) during [Cooking Time - Knife]",
+                "During [Cooking Time - Fire], damage triples against monsters and increases additionally by (4% of extra [INT])"
+              ]
             }
           ],
           "special": []
@@ -250,26 +316,60 @@
           "sp_cost": "850",
           "aggro": "150",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 120 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 120 seconds",
+                "Grants a shield equal to 3% of the target PCs maximum HP",
+                "If shield expires due to enemy [PC] breaking it, inflicts [Embers]",
+                "Ivy can exceed 100 Satiety (Max. 200)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 120 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 120 seconds",
+                "Grants a shield equal to 30% of the target PCs maximum HP",
+                "If shield expires due to enemy [PC] breaking it, inflicts [Embers]",
+                "Ivy can exceed 100 Satiety (Max. 200)"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 120 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 120 seconds",
+                "Grants a shield equal to 33% of the target PCs maximum HP",
+                "If shield expires due to enemy [PC] breaking it, inflicts [Embers]",
+                "Ivy can exceed 100 Satiety (Max. 200)"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 120 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 120 seconds",
+                "Grants a shield equal to 36% of the target PCs maximum HP",
+                "If shield expires due to enemy [PC] breaking it, inflicts [Embers]",
+                "Ivy can exceed 100 Satiety (Max. 200)"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 120 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 120 seconds",
+                "Grants a shield equal to 39% of the target PCs maximum HP",
+                "If shield expires due to enemy [PC] breaking it, inflicts [Embers]",
+                "Ivy can exceed 100 Satiety (Max. 200)"
+              ]
             }
           ],
           "special": []
@@ -319,6 +419,7 @@
         "Penetration": "10+25",
         "Immunity": "5+25"
       },
+      "consume": "Elemental Sphere x 3",
       "skills": [
         {
           "name": "Smoke Seasoning",
@@ -333,14 +434,32 @@
           "sp_cost": "450",
           "aggro": "35",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 4",
+          "soft_armor_atk": "85%",
+          "heavy_armor_atk": "115%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1500%"
+              "value": "АТК: 1500%",
+              "effects": [
+                "[Fire Attribute]",
+                "Ignores 50 RES",
+                "30% chance to inflict [Ember] (PC only)",
+                "Damage increases additionally by (2% of extra [INT]) during [Cooking Time - Knife]",
+                "During [Cooking Time - Fire], damage triples against monsters and increases additionally by (4% of extra [INT])"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "[Fire Attribute]",
+                "Ignores 50 RES",
+                "30% chance to inflict [Ember] (PC only)",
+                "Damage increases additionally by (2% of extra [INT]) during [Cooking Time - Knife]",
+                "During [Cooking Time - Fire], damage triples against monsters and increases additionally by (4% of extra [INT])"
+              ]
             }
           ],
           "special": []
@@ -349,7 +468,7 @@
           "name": "High Heat Roasting",
           "image": "bstcf_roasting.jpg",
           "description": "Attack the enemies in front of you with scalding hot fire.",
-          "target": "",
+          "target": "Max Range 8m / Radius 6m / Max 5 targets",
           "casting_time": "Instant",
           "cooldown": "3.5 sec.",
           "duration": "1.4666 sec.",
@@ -358,14 +477,30 @@
           "sp_cost": "540",
           "aggro": "45",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 3",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "105%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": [
+                "Ignores 50 RES",
+                "Max. 3 times available, recharges after using it 1 time",
+                "Recharge Time - 8 seconds",
+                "During [Cooking Time - Fire], damage triples against monsters and increases additionally by (4% of extra [INT])"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3600%"
+              "value": "АТК: 3600%",
+              "effects": [
+                "Ignores 50 RES",
+                "Max. 3 times available, recharges after using it 1 time",
+                "Recharge Time - 8 seconds",
+                "During [Cooking Time - Fire], damage triples against monsters and increases additionally by (4% of extra [INT])"
+              ]
             }
           ],
           "special": []
@@ -383,14 +518,26 @@
           "sp_cost": "720",
           "aggro": "75",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "85%",
+          "heavy_armor_atk": "120%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1700%"
+              "value": "АТК: 1700%",
+              "effects": [
+                "Ignore 50 RES",
+                "During [Cooking Time - Fire], damage triples against monsters and increases additionally by (3% of extra [INT])"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3400%"
+              "value": "АТК: 3400%",
+              "effects": [
+                "Ignore 50 RES",
+                "During [Cooking Time - Fire], damage triples against monsters and increases additionally by (3% of extra [INT])"
+              ]
             }
           ],
           "special": []
@@ -399,7 +546,7 @@
           "name": "Super Heat Lava Stew",
           "image": "bstcf_lavastew.jpg",
           "description": "Attack the enemy as if youre making stew with hot lava fire.",
-          "target": "Up to 6 enemies 10m away and within a 6m radius",
+          "target": "Up to 6 enemies 10m away and within a 7m radius",
           "casting_time": "2.0333 sec.",
           "cooldown": "15 sec.",
           "duration": "1.5333 sec.",
@@ -408,14 +555,28 @@
           "sp_cost": "800",
           "aggro": "60",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "115%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2600%"
+              "value": "АТК: 2600%",
+              "effects": [
+                "30% chance to inflict [Burn]",
+                "Ignores 50 RES",
+                "During [Cooking Time - Fire], damage triples against monsters and increases additionally by (4% of extra [INT])"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5200%"
+              "value": "АТК: 5200%",
+              "effects": [
+                "30% chance to inflict [Burn]",
+                "Ignores 50 RES",
+                "During [Cooking Time - Fire], damage triples against monsters and increases additionally by (4% of extra [INT])"
+              ]
             }
           ],
           "special": []
@@ -433,14 +594,28 @@
           "sp_cost": "950",
           "aggro": "95",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 8",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "Ignores 50 RES",
+                "Apply [Scald] on enemy by 40% chance",
+                "During [Cooking Time - Fire], damage triples against monsters and increases additionally by (4% of extra [INT])"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 6000%"
+              "value": "АТК: 6000%",
+              "effects": [
+                "Ignores 50 RES",
+                "Apply [Scald] on enemy by 40% chance",
+                "During [Cooking Time - Fire], damage triples against monsters and increases additionally by (4% of extra [INT])"
+              ]
             }
           ],
           "special": []

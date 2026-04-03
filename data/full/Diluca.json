@@ -34,19 +34,23 @@
       {
         "level": "Level 10",
         "effects": [
-          "Duration : 300 seconds",
+          "Duration : 5 Minutes",
           "A.R. +1",
-          "ATK +15%",
-          "Mental Penetration +20"
+          "ATK +40%",
+          "Mental Penetration +30",
+          "Cast Time -20%",
+          "Monster DMG +50%"
         ]
       },
       {
         "level": "Level 11",
         "effects": [
-          "Duration : 300 seconds",
+          "Duration : 5 Minutes",
           "A.R. +1",
-          "ATK +20%",
-          "Mental Penetration +25"
+          "ATK +40%",
+          "Mental Penetration +30",
+          "Cast Time -20%",
+          "Monster DMG +50%"
         ]
       }
     ]
@@ -95,6 +99,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -136,6 +141,7 @@
         "Penetration": "10+25",
         "Immunity": "10+0"
       },
+      "consume": "Psychic Sphere x 1",
       "skills": [
         {
           "name": "Sordicula",
@@ -150,18 +156,37 @@
           "sp_cost": "300",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration : 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration : 300 seconds",
+                "A.R. +1",
+                "INT +10"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration : 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration : 300 seconds",
+                "A.R. +1",
+                "INT +10"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration : 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration : 300 seconds",
+                "A.R. +1",
+                "INT +20"
+              ]
             }
           ],
           "special": []
@@ -179,14 +204,28 @@
           "sp_cost": "450",
           "aggro": "90",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "120%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1354%"
+              "value": "АТК: 2000%",
+              "effects": [
+                "Inflicts [Speculor] with a successful hit",
+                "[Speculor] level rises further with successful hits",
+                "Skill ATK increases by 3.1x per [Speculor] level"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2708%"
+              "value": "АТК: 4000%",
+              "effects": [
+                "Inflicts [Speculor] with a successful hit",
+                "[Speculor] level rises further with successful hits",
+                "Skill ATK increases by 3.1x per [Speculor] level"
+              ]
             }
           ],
           "special": []
@@ -204,14 +243,28 @@
           "sp_cost": "650",
           "aggro": "197",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "90%",
+          "light_armor_atk": "90%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 920%"
+              "value": "АТК: 2500%",
+              "effects": [
+                "Inflicts [Speculor] with a successful hit",
+                "[Speculor] level rises further with successful hits",
+                "Skill ATK increases by 3.1x per [Speculor] level"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1839%"
+              "value": "АТК: 5000%",
+              "effects": [
+                "Inflicts [Speculor] with a successful hit",
+                "[Speculor] level rises further with successful hits",
+                "Skill ATK increases by 3.1x per [Speculor] level"
+              ]
             }
           ],
           "special": []
@@ -222,21 +275,37 @@
           "description": "Open several rifts to peer into multiple futures, continuously adjusting each enemys fate.",
           "target": "Up to 15m away / within a radius of 5m / Max. 8 targets",
           "casting_time": "2.133 sec.",
-          "cooldown": "30 sec.",
+          "cooldown": "20 sec.",
           "duration": "0 sec.",
           "hits_flying": "Yes",
           "knock_down": "No",
           "sp_cost": "970",
           "aggro": "100",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 30",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 824%"
+              "value": "АТК: 2300%",
+              "effects": [
+                "Attacks up to 10 times while casting",
+                "Inflicts [Speculor] with a successful hit",
+                "[Speculor] level rises further with successful hits",
+                "Skill ATK increases by 3.1x per [Speculor] level"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1648%"
+              "value": "АТК: 4600%",
+              "effects": [
+                "Attacks up to 10 times while casting",
+                "Inflicts [Speculor] with a successful hit",
+                "[Speculor] level rises further with successful hits",
+                "Skill ATK increases by 3.1x per [Speculor] level"
+              ]
             }
           ],
           "special": []
@@ -254,14 +323,28 @@
           "sp_cost": "1000",
           "aggro": "197",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 20",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "90%",
+          "light_armor_atk": "90%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1223%"
+              "value": "АТК: 2700%",
+              "effects": [
+                "Inflicts [Speculor] with a successful hit",
+                "[Speculor] level rises further with successful hits",
+                "Skill ATK increases by 3.1x per [Speculor] level"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2446%"
+              "value": "АТК: 5400%",
+              "effects": [
+                "Inflicts [Speculor] with a successful hit",
+                "[Speculor] level rises further with successful hits",
+                "Skill ATK increases by 3.1x per [Speculor] level"
+              ]
             }
           ],
           "special": []

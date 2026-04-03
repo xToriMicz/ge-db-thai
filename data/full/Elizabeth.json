@@ -90,6 +90,7 @@
         "Penetration": "10+20",
         "Immunity": "5+10"
       },
+      "consume": "Psychic Sphere x 1",
       "skills": [
         {
           "name": "Tree of Rainbow",
@@ -104,14 +105,26 @@
           "sp_cost": "100",
           "aggro": "80",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "50%",
+          "heavy_armor_atk": "150%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1000%"
+              "value": "АТК: 1000%",
+              "effects": [
+                "50% chance to [Stun] on enemy",
+                "When enemy is in [Stun][Slow][Confusion], ignores enemy RES proportional to 50% of extra [INT]."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2000%"
+              "value": "АТК: 2000%",
+              "effects": [
+                "50% chance to [Stun] on enemy",
+                "When enemy is in [Stun][Slow][Confusion], ignores enemy RES proportional to 50% of extra [INT]."
+              ]
             }
           ],
           "special": []
@@ -129,26 +142,58 @@
           "sp_cost": "300",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 30sec."
+              "value": "",
+              "effects": [
+                "Duration: 30sec.",
+                "ATK+2%",
+                "Monster Damage+3%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 300sec."
+              "value": "",
+              "effects": [
+                "Duration: 300sec.",
+                "ATK+20%",
+                "Monster Damage+30%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 330sec."
+              "value": "",
+              "effects": [
+                "Duration: 330sec.",
+                "ATK+22%",
+                "Monster Damage+33%",
+                "Penetration+10"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 360sec."
+              "value": "",
+              "effects": [
+                "Duration: 360sec.",
+                "ATK+24%",
+                "Monster Damage+36%",
+                "Penetration+10"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 390sec."
+              "value": "",
+              "effects": [
+                "Duration: 390sec.",
+                "ATK+26%",
+                "Monster Damage+39%",
+                "Penetration+10"
+              ]
             }
           ],
           "special": []
@@ -166,14 +211,26 @@
           "sp_cost": "300",
           "aggro": "170",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "50%",
+          "heavy_armor_atk": "150%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1500%"
+              "value": "АТК: 1500%",
+              "effects": [
+                "50% chance to inflict [Slow]",
+                "When enemy is in [Stun][Slow][Confusion], ignores enemy RES proportional to 50% of extra [INT]."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "50% chance to inflict [Slow]",
+                "When enemy is in [Stun][Slow][Confusion], ignores enemy RES proportional to 50% of extra [INT]."
+              ]
             }
           ],
           "special": []
@@ -191,14 +248,24 @@
           "sp_cost": "600",
           "aggro": "190",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 8",
+          "soft_armor_atk": "50%",
+          "heavy_armor_atk": "150%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2000%"
+              "value": "АТК: 2000%",
+              "effects": [
+                "When enemy is in [Stun][Slow][Confusion], ignores enemy RES proportional to 50% of extra [INT]."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4000%"
+              "value": "АТК: 4000%",
+              "effects": [
+                "When enemy is in [Stun][Slow][Confusion], ignores enemy RES proportional to 50% of extra [INT]."
+              ]
             }
           ],
           "special": []
@@ -216,14 +283,26 @@
           "sp_cost": "700",
           "aggro": "200",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 8",
+          "soft_armor_atk": "50%",
+          "heavy_armor_atk": "150%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "100% chance to inflict [Confusion]",
+                "When enemy is in [Stun][Slow][Confusion], ignores enemy RES proportional to 50% of extra [INT]."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 6000%"
+              "value": "АТК: 6000%",
+              "effects": [
+                "100% chance to inflict [Confusion]",
+                "When enemy is in [Stun][Slow][Confusion], ignores enemy RES proportional to 50% of extra [INT]."
+              ]
             }
           ],
           "special": []

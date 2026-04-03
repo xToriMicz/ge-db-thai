@@ -239,6 +239,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -277,6 +278,7 @@
         "ATK SPD": "+3%",
         "Block": "+14"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Deep Straight",
@@ -291,14 +293,20 @@
           "sp_cost": "100",
           "aggro": "78",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 300%"
+              "value": "АТК: 300%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 600%"
+              "value": "АТК: 600%",
+              "effects": []
             }
           ],
           "special": []
@@ -316,14 +324,20 @@
           "sp_cost": "150",
           "aggro": "68",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 400%"
+              "value": "АТК: 400%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 800%"
+              "value": "АТК: 800%",
+              "effects": []
             }
           ],
           "special": []
@@ -341,14 +355,24 @@
           "sp_cost": "200",
           "aggro": "105",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 600%"
+              "value": "АТК: 600%",
+              "effects": [
+                "Double Damage to enemies with [Soft Armor]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1200%"
+              "value": "АТК: 1200%",
+              "effects": [
+                "Double Damage to enemies with [Soft Armor]"
+              ]
             }
           ],
           "special": [
@@ -369,14 +393,20 @@
           "sp_cost": "250",
           "aggro": "210",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 800%"
+              "value": "АТК: 800%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1600%"
+              "value": "АТК: 1600%",
+              "effects": []
             }
           ],
           "special": []
@@ -422,6 +452,7 @@
         "Penetration": "5+25",
         "Immunity": "5+15"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Golpe",
@@ -436,14 +467,24 @@
           "sp_cost": "240",
           "aggro": "105",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "150%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 800%"
+              "value": "АТК: 800%",
+              "effects": [
+                "Enemy DEF -50"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1600%"
+              "value": "АТК: 1600%",
+              "effects": [
+                "Enemy DEF -50"
+              ]
             }
           ],
           "special": []
@@ -461,14 +502,26 @@
           "sp_cost": "340",
           "aggro": "60",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "105%",
+          "heavy_armor_atk": "250%",
+          "light_armor_atk": "150%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 900%"
+              "value": "АТК: 900%",
+              "effects": [
+                "Ignores enemys DEF by 50",
+                "50% chance to inflict [Slow]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": [
+                "Ignores enemys DEF by 50",
+                "50% chance to inflict [Slow]"
+              ]
             }
           ],
           "special": []
@@ -486,26 +539,83 @@
           "sp_cost": "650",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "ATK+3%"
+              "value": "",
+              "effects": [
+                "ATK+3%",
+                "Penetration+2",
+                "Accuracy+1",
+                "Using skill, Criticals 16% chance of double damage",
+                "Melee/Shoot damage -2%",
+                "HP+500",
+                "Knock-down time -3%",
+                "In skill accuracy, extra ignores DEF in proportion to [STR]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "ATK+30%"
+              "value": "",
+              "effects": [
+                "ATK+30%",
+                "Penetration+20",
+                "Accuracy+10",
+                "Using skill, Criticals 70% chance of double damage",
+                "Melee/Shoot damage --20%",
+                "HP+5000",
+                "Knock-down time -30%",
+                "In skill accuracy, extra ignores DEF in proportion to [STR]"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "ATK+33%"
+              "value": "",
+              "effects": [
+                "ATK+33%",
+                "Penetration+22",
+                "Accuracy+11",
+                "Using skill, Criticals 100% chance of double damage",
+                "Melee/Shoot damage -22%",
+                "HP+5500",
+                "Knock-down time -33%",
+                "A.R.+1",
+                "In skill accuracy, extra ignores DEF in proportion to [STR]"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "ATK+36%"
+              "value": "",
+              "effects": [
+                "ATK+36%",
+                "Penetration+24",
+                "Accuracy+12",
+                "Using skill, Criticals 100% chance of double damage",
+                "Melee/Shoot damage -24%",
+                "HP+6000",
+                "Knock-down time -36%",
+                "A.R.+1",
+                "In skill accuracy, extra ignores DEF in proportion to [STR]"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "ATK+39%"
+              "value": "",
+              "effects": [
+                "ATK+39%",
+                "Penetration+26",
+                "Accuracy+13",
+                "Using skill, Criticals 100% chance of double damage",
+                "Melee/Shoot damage -26%",
+                "HP+6500",
+                "Knock-down time -39%",
+                "A.R.+1",
+                "In skill accuracy, extra ignores DEF in proportion to [STR]"
+              ]
             }
           ],
           "special": []
@@ -523,14 +633,30 @@
           "sp_cost": "440",
           "aggro": "224",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "125%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "Ignores enemys DEF by 60",
+                "60% chance to inflict [Bleeding]",
+                "Ignores Evasion",
+                "Damage to Evasion type enemies +1% per 1 evasion"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4400%"
+              "value": "АТК: 4400%",
+              "effects": [
+                "Ignores enemys DEF by 60",
+                "60% chance to inflict [Bleeding]",
+                "Ignores Evasion",
+                "Damage to Evasion type enemies +1% per 1 evasion"
+              ]
             }
           ],
           "special": []
@@ -548,14 +674,26 @@
           "sp_cost": "540",
           "aggro": "260",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "70%",
+          "heavy_armor_atk": "90%",
+          "light_armor_atk": "150%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2300%"
+              "value": "АТК: 2300%",
+              "effects": [
+                "Ignores enemys DEF by 70",
+                "Ignores Evasion"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4600%"
+              "value": "АТК: 4600%",
+              "effects": [
+                "Ignores enemys DEF by 70",
+                "Ignores Evasion"
+              ]
             }
           ],
           "special": []
@@ -601,6 +739,7 @@
       "lv25_bonus": {
         "Block": "+24"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Slash Down",
@@ -615,14 +754,20 @@
           "sp_cost": "100",
           "aggro": "56",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1200%"
+              "value": "АТК: 1200%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": []
             }
           ],
           "special": []
@@ -640,26 +785,58 @@
           "sp_cost": "150",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration 10 sec"
+              "value": "",
+              "effects": [
+                "Duration 10 sec",
+                "Block +8",
+                "Movement Speed -30%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration 10 sec"
+              "value": "",
+              "effects": [
+                "Duration 10 sec",
+                "Block +35",
+                "Movement Speed -30%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration 10 sec"
+              "value": "",
+              "effects": [
+                "Duration 10 sec",
+                "Block +38",
+                "Movement Speed -30%",
+                "D.R. +1"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration 10 sec"
+              "value": "",
+              "effects": [
+                "Duration 10 sec",
+                "Block +41",
+                "Movement Speed -30%",
+                "D.R. +1"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration 10 sec"
+              "value": "",
+              "effects": [
+                "Duration 10 sec",
+                "Block +44",
+                "Movement Speed -30%",
+                "D.R. +1"
+              ]
             }
           ],
           "special": []
@@ -677,14 +854,26 @@
           "sp_cost": "200",
           "aggro": "117",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 700%"
+              "value": "АТК: 700%",
+              "effects": [
+                "Disregards DEF of small/medium enemies",
+                "Ineffective on large enemies"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1400%"
+              "value": "АТК: 1400%",
+              "effects": [
+                "Disregards DEF of small/medium enemies",
+                "Ineffective on large enemies"
+              ]
             }
           ],
           "special": []
@@ -702,14 +891,24 @@
           "sp_cost": "300",
           "aggro": "136",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 900%"
+              "value": "АТК: 900%",
+              "effects": [
+                "25% Chance to [Stun] Enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": [
+                "25% Chance to [Stun] Enemy"
+              ]
             }
           ],
           "special": []
@@ -754,6 +953,7 @@
         "Immunity": "5+25",
         "DEF": "5"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Shield Charge",
@@ -768,14 +968,26 @@
           "sp_cost": "540",
           "aggro": "435",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "90%",
+          "light_armor_atk": "120%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 920%"
+              "value": "АТК: 920%",
+              "effects": [
+                "Ignore enemy DEF by 60",
+                "80% chance to inflict [Impact] to target"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1839%"
+              "value": "АТК: 1839%",
+              "effects": [
+                "Ignore enemy DEF by 60",
+                "80% chance to inflict [Impact] to target"
+              ]
             }
           ],
           "special": []
@@ -793,14 +1005,28 @@
           "sp_cost": "890",
           "aggro": "260",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "90%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1579%"
+              "value": "АТК: 1579%",
+              "effects": [
+                "Ignores 75 DEF",
+                "Ignore additional DEF of the enemy PC with [Stun], [Impact] (75% of extra [STR])",
+                "Skill ATK increases to enemy with [Stun], [Impact] (5% of extra [STR])"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3158%"
+              "value": "АТК: 3158%",
+              "effects": [
+                "Ignores 75 DEF",
+                "Ignore additional DEF of the enemy PC with [Stun], [Impact] (75% of extra [STR])",
+                "Skill ATK increases to enemy with [Stun], [Impact] (5% of extra [STR])"
+              ]
             }
           ],
           "special": []
@@ -818,14 +1044,32 @@
           "sp_cost": "750",
           "aggro": "342",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "150%",
+          "light_armor_atk": "90%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 627%"
+              "value": "АТК: 627%",
+              "effects": [
+                "Ignores 75 DEF",
+                "80% chance to inflict [Impact] to target",
+                "Restore HP proportionally to damage received",
+                "Ignore additional DEF of the enemy PC with [Stun], [Impact] (75% of extra [STR])",
+                "Skill ATK increases to enemy with [Stun], [Impact] (5% of extra [STR])"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1254%"
+              "value": "АТК: 1254%",
+              "effects": [
+                "Ignores 75 DEF",
+                "80% chance to inflict [Impact] to target",
+                "Restore HP proportionally to damage received",
+                "Ignore additional DEF of the enemy PC with [Stun], [Impact] (75% of extra [STR])",
+                "Skill ATK increases to enemy with [Stun], [Impact] (5% of extra [STR])"
+              ]
             }
           ],
           "special": []
@@ -843,26 +1087,80 @@
           "sp_cost": "540",
           "aggro": "260",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "150%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2098%"
+              "value": "АТК: 2098%",
+              "effects": [
+                "Ignore enemy DEF by 80",
+                "100% chance to inflict [Penta Break] to target",
+                "Ignore Block",
+                "Ignore 1/2 of enemy shield DEF",
+                "Ignore additional DEF of the enemy PC with [Stun], [Impact] (75% of extra [STR])",
+                "Skill ATK increases to enemy with [Stun], [Impact] (5% of extra [STR])",
+                "Skill ATK increases in proportion to enemys lost HP (Max. +200%)",
+                "[Penta Break] Duration: 30 seconds, ATK -1%, DEF -1"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4196%"
+              "value": "АТК: 4196%",
+              "effects": [
+                "Ignore enemy DEF by 80",
+                "100% chance to inflict [Penta Break] to target",
+                "Ignore Block",
+                "Ignore 1/2 of enemy shield DEF",
+                "Ignore additional DEF of the enemy PC with [Stun], [Impact] (75% of extra [STR])",
+                "Skill ATK increases to enemy with [Stun], [Impact] (5% of extra [STR])",
+                "Skill ATK increases in proportion to enemys lost HP (Max. +200%)",
+                "[Penta Break] Duration: 30 seconds, ATK -10%, DEF -10"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "АТК: 4615%"
+              "value": "АТК: 4615%",
+              "effects": [
+                "Ignore enemy DEF by 80",
+                "100% chance to inflict [Penta Break] to target",
+                "Ignore Block",
+                "Ignore 1/2 of enemy shield DEF",
+                "Ignore additional DEF of the enemy PC with [Stun], [Impact] (75% of extra [STR])",
+                "Skill ATK increases to enemy with [Stun], [Impact] (5% of extra [STR])",
+                "Skill ATK increases in proportion to enemys lost HP (Max. +200%)",
+                "[Penta Break] Duration: 30 seconds, ATK -11%, DEF -11"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "АТК: 5035%"
+              "value": "АТК: 5035%",
+              "effects": [
+                "Ignore enemy DEF by 80",
+                "100% chance to inflict [Penta Break] to target",
+                "Ignore Block",
+                "Ignore 1/2 of enemy shield DEF",
+                "Ignore additional DEF of the enemy PC with [Stun], [Impact] (75% of extra [STR])",
+                "Skill ATK increases to enemy with [Stun], [Impact] (5% of extra [STR])",
+                "Skill ATK increases in proportion to enemys lost HP (Max. +200%)",
+                "[Penta Break] Duration: 30 seconds, ATK -12%, DEF -15, D.R. -1"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "АТК: 5035%"
+              "value": "АТК: 5035%",
+              "effects": [
+                "Ignore enemy DEF by 80",
+                "100% chance to inflict [Penta Break] to target",
+                "Ignore Block",
+                "Ignore 1/2 of enemy shield DEF",
+                "Ignore additional DEF of the enemy PC with [Stun], [Impact] (75% of extra [STR])",
+                "Skill ATK increases to enemy with [Stun], [Impact] (5% of extra [STR])",
+                "Skill ATK increases in proportion to enemys lost HP (Max. +200%)",
+                "[Penta Break] Duration: 30 seconds, ATK -13%, DEF -15, D.R. -1"
+              ]
             }
           ],
           "special": []
@@ -880,22 +1178,60 @@
           "sp_cost": "650",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 5 Minutes"
+              "value": "",
+              "effects": [
+                "Duration: 5 Minutes",
+                "Maximum HP +10000",
+                "STR +1",
+                "HP +15",
+                "Knockdown duration -20%",
+                "Damage from AoE skill -2%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 5 Minutes"
+              "value": "",
+              "effects": [
+                "Duration: 5 Minutes",
+                "Maximum HP +10000",
+                "STR +10",
+                "HP +15",
+                "Knockdown duration -20%",
+                "Damage from AoE skill -20%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 5 Minutes"
+              "value": "",
+              "effects": [
+                "Duration: 5 Minutes",
+                "Maximum HP +10000",
+                "STR +13",
+                "HP +15",
+                "Knockdown duration -20%",
+                "Damage from AoE skill -26%",
+                "D.R. +2"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 5 Minutes"
+              "value": "",
+              "effects": [
+                "Duration: 5 Minutes",
+                "Maximum HP +10000",
+                "STR +15",
+                "HP +15",
+                "Knockdown duration -20%",
+                "Damage from AoE skill -30%",
+                "D.R. +2"
+              ]
             }
           ],
           "special": []
@@ -943,6 +1279,7 @@
         "Block": "+10",
         "Critical": "+10"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Hexen Dropper",
@@ -957,14 +1294,20 @@
           "sp_cost": "100",
           "aggro": "99",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 900%"
+              "value": "АТК: 900%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": []
             }
           ],
           "special": []
@@ -982,14 +1325,20 @@
           "sp_cost": "200",
           "aggro": "51",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1100%"
+              "value": "АТК: 1100%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": []
             }
           ],
           "special": []
@@ -1007,14 +1356,24 @@
           "sp_cost": "250",
           "aggro": "149",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1200%"
+              "value": "АТК: 1200%",
+              "effects": [
+                "Enemy DEF -25"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "Enemy DEF -25"
+              ]
             }
           ],
           "special": []
@@ -1032,14 +1391,24 @@
           "sp_cost": "300",
           "aggro": "241",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1305.13%"
+              "value": "АТК: 1305.13%",
+              "effects": [
+                "30% Chance to [Fear] Enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2610%"
+              "value": "АТК: 2610%",
+              "effects": [
+                "30% Chance to [Fear] Enemy"
+              ]
             }
           ],
           "special": []
@@ -1080,6 +1449,7 @@
         "Block": "+10",
         "Critical": "+10"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Blandir Cadena",
@@ -1094,14 +1464,24 @@
           "sp_cost": "100",
           "aggro": "115",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 522%"
+              "value": "АТК: 522%",
+              "effects": [
+                "Additional 50% damage to enemies with [Heavy Armor]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1044%"
+              "value": "АТК: 1044%",
+              "effects": [
+                "Additional 50% damage to enemies with [Heavy Armor]"
+              ]
             }
           ],
           "special": [
@@ -1122,14 +1502,20 @@
           "sp_cost": "200",
           "aggro": "83",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 364%"
+              "value": "АТК: 364%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 728%"
+              "value": "АТК: 728%",
+              "effects": []
             }
           ],
           "special": []
@@ -1147,14 +1533,24 @@
           "sp_cost": "300",
           "aggro": "109",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 481%"
+              "value": "АТК: 481%",
+              "effects": [
+                "30% chance to inflict [Stun]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 961%"
+              "value": "АТК: 961%",
+              "effects": [
+                "30% chance to inflict [Stun]"
+              ]
             }
           ],
           "special": []
@@ -1194,6 +1590,7 @@
         "ATK SPD": "+25%",
         "Critical": "+16"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Harpoon",
@@ -1208,14 +1605,20 @@
           "sp_cost": "100",
           "aggro": "137",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 631%"
+              "value": "АТК: 631%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1262%"
+              "value": "АТК: 1262%",
+              "effects": []
             }
           ],
           "special": []
@@ -1233,14 +1636,24 @@
           "sp_cost": "200",
           "aggro": "112",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 496%"
+              "value": "АТК: 496%",
+              "effects": [
+                "Additional 50% damage to enemies with [Heavy Armor]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 992%"
+              "value": "АТК: 992%",
+              "effects": [
+                "Additional 50% damage to enemies with [Heavy Armor]"
+              ]
             }
           ],
           "special": [
@@ -1261,14 +1674,20 @@
           "sp_cost": "300",
           "aggro": "56",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 206%"
+              "value": "АТК: 206%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 412%"
+              "value": "АТК: 412%",
+              "effects": []
             }
           ],
           "special": []
@@ -1309,6 +1728,7 @@
         "Block": "+10",
         "Critical": "+12"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Sharp Scythe",
@@ -1323,14 +1743,20 @@
           "sp_cost": "150",
           "aggro": "63",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 270%"
+              "value": "АТК: 270%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 540%"
+              "value": "АТК: 540%",
+              "effects": []
             }
           ],
           "special": []
@@ -1348,14 +1774,26 @@
           "sp_cost": "200",
           "aggro": "122",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 552%"
+              "value": "АТК: 552%",
+              "effects": [
+                "Enemy DEF -30",
+                "Additional 50% damage to enemies with [Heavy Armor]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1104%"
+              "value": "АТК: 1104%",
+              "effects": [
+                "Enemy DEF -30",
+                "Additional 50% damage to enemies with [Heavy Armor]"
+              ]
             }
           ],
           "special": [
@@ -1376,14 +1814,24 @@
           "sp_cost": "250",
           "aggro": "270",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1298%"
+              "value": "АТК: 1298%",
+              "effects": [
+                "Enemy DEF -40"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2596%"
+              "value": "АТК: 2596%",
+              "effects": [
+                "Enemy DEF -40"
+              ]
             }
           ],
           "special": []
@@ -1401,14 +1849,26 @@
           "sp_cost": "300",
           "aggro": "139",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 633%"
+              "value": "АТК: 633%",
+              "effects": [
+                "Enemy DEF -50",
+                "Additional 50% damage to enemies with [Heavy Armor]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1266%"
+              "value": "АТК: 1266%",
+              "effects": [
+                "Enemy DEF -50",
+                "Additional 50% damage to enemies with [Heavy Armor]"
+              ]
             }
           ],
           "special": [
@@ -1456,6 +1916,7 @@
         "Penetration": "5+25",
         "Immunity": "5+10"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Rueda Ventana",
@@ -1470,14 +1931,26 @@
           "sp_cost": "240",
           "aggro": "57",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 275%"
+              "value": "АТК: 275%",
+              "effects": [
+                "Ignores DEF of enemy by 30",
+                "100% chance to inflict [Slow] on enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 550%"
+              "value": "АТК: 550%",
+              "effects": [
+                "Ignores DEF of enemy by 30",
+                "100% chance to inflict [Slow] on enemy"
+              ]
             }
           ],
           "special": []
@@ -1495,18 +1968,49 @@
           "sp_cost": "650",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 2",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Skill ATK+52%"
+              "value": "",
+              "effects": [
+                "Skill ATK+52%",
+                "In Normal attack, damage x1.5",
+                "Cooldown: 20sec.",
+                "Can use it up to twice",
+                "After using once, should recharge",
+                "Continues until Skill Attack",
+                "Skill ATK increases in proportion to [STR]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Skill ATK+75%"
+              "value": "",
+              "effects": [
+                "Skill ATK+75%",
+                "In Normal attack, damage x1.5",
+                "Cooldown: 20sec.",
+                "Can use it up to twice",
+                "After using once, should recharge",
+                "Continues until Skill Attack",
+                "Skill ATK increases in proportion to [STR]"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Skill ATK+300%"
+              "value": "",
+              "effects": [
+                "Skill ATK+300%",
+                "In Normal attack, damage x1.5",
+                "Cooldown: 20sec.",
+                "Can use it up to twice",
+                "After using once, should recharge",
+                "Continues until Skill Attack",
+                "Skill ATK increases in proportion to [STR]"
+              ]
             }
           ],
           "special": []
@@ -1524,14 +2028,30 @@
           "sp_cost": "340",
           "aggro": "118",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "120%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 955%"
+              "value": "АТК: 955%",
+              "effects": [
+                "Ignore DEF 60",
+                "50% chance of [Stun] to enemy",
+                "Ignore additional DEF by (extra [STR] * 1.25) during [Destruido]",
+                "Skill additional damage in proportion to the casters max HP"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1910%"
+              "value": "АТК: 1910%",
+              "effects": [
+                "Ignore DEF 60",
+                "50% chance of [Stun] to enemy",
+                "Ignore additional DEF by (extra [STR] * 1.25) during [Destruido]",
+                "Skill additional damage in proportion to the casters max HP"
+              ]
             }
           ],
           "special": []
@@ -1549,14 +2069,34 @@
           "sp_cost": "440",
           "aggro": "211",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "150%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": [
+                "Ignore DEF 75",
+                "Ignore Blocking",
+                "Ignore enemys shield DEF 1/2",
+                "Ignore additional DEF by (extra [STR] * 1.25) during [Destruido]",
+                "Skill additional damage in proportion to the casters max HP",
+                "To an enemy of blocking type, it increases by 1% in damage per 1 blocking."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3600%"
+              "value": "АТК: 3600%",
+              "effects": [
+                "Ignore DEF 75",
+                "Ignore Blocking",
+                "Ignore enemys shield DEF 1/2",
+                "Ignore additional DEF by (extra [STR] * 1.25) during [Destruido]",
+                "Skill additional damage in proportion to the casters max HP",
+                "To an enemy of blocking type, it increases by 1% in damage per 1 blocking."
+              ]
             }
           ],
           "special": []
@@ -1574,14 +2114,34 @@
           "sp_cost": "440",
           "aggro": "180",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "150%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1498%"
+              "value": "АТК: 1498%",
+              "effects": [
+                "Ignore DEF 75",
+                "Ignore Blocking",
+                "Ignore enemys shield DEF 1/2",
+                "Ignore additional DEF by (extra [STR] * 1.25) during [Destruido]",
+                "Skill additional damage in proportion to the casters max HP",
+                "To an enemy of blocking type, it increases by 1% in damage per 1 blocking."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2996%"
+              "value": "АТК: 2996%",
+              "effects": [
+                "Ignore DEF 75",
+                "Ignore Blocking",
+                "Ignore enemys shield DEF 1/2",
+                "Ignore additional DEF by (extra [STR] * 1.25) during [Destruido]",
+                "Skill additional damage in proportion to the casters max HP",
+                "To an enemy of blocking type, it increases by 1% in damage per 1 blocking."
+              ]
             }
           ],
           "special": []
@@ -1627,6 +2187,7 @@
       "lv25_bonus": {
         "Block": "+25"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Dull Attack",
@@ -1641,14 +2202,26 @@
           "sp_cost": "100",
           "aggro": "48",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 198%"
+              "value": "АТК: 198%",
+              "effects": [
+                "25% Chance to [Stun] Enemy",
+                "Additional 50% damage to enemies with [Heavy Armor]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 396%"
+              "value": "АТК: 396%",
+              "effects": [
+                "25% Chance to [Stun] Enemy",
+                "Additional 50% damage to enemies with [Heavy Armor]"
+              ]
             }
           ],
           "special": [
@@ -1669,26 +2242,63 @@
           "sp_cost": "200",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration 10 sec"
+              "value": "",
+              "effects": [
+                "Duration 10 sec",
+                "Block +12",
+                "Movement Speed -50%",
+                "ALL RES -20"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration 10 sec"
+              "value": "",
+              "effects": [
+                "Duration 10 sec",
+                "Block +30",
+                "Movement Speed -50%",
+                "ALL RES -20"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration 10 sec"
+              "value": "",
+              "effects": [
+                "Duration 10 sec",
+                "Block +32",
+                "Movement Speed -50%",
+                "ALL RES -20",
+                "D.R. +1"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration 10 sec"
+              "value": "",
+              "effects": [
+                "Duration 10 sec",
+                "Block +34",
+                "Movement Speed -50%",
+                "ALL RES -20",
+                "D.R. +1"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration 10 sec"
+              "value": "",
+              "effects": [
+                "Duration 10 sec",
+                "Block +36",
+                "Movement Speed -50%",
+                "ALL RES -20",
+                "D.R. +1"
+              ]
             }
           ],
           "special": []
@@ -1706,14 +2316,26 @@
           "sp_cost": "250",
           "aggro": "75",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 318%"
+              "value": "АТК: 318%",
+              "effects": [
+                "50% Chance to inflict [Mortal Wound]",
+                "Additional 50% damage to enemies with [Heavy Armor]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 636%"
+              "value": "АТК: 636%",
+              "effects": [
+                "50% Chance to inflict [Mortal Wound]",
+                "Additional 50% damage to enemies with [Heavy Armor]"
+              ]
             }
           ],
           "special": [
@@ -1734,14 +2356,26 @@
           "sp_cost": "300",
           "aggro": "224",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1065%"
+              "value": "АТК: 1065%",
+              "effects": [
+                "Enemy DEF -50",
+                "Additional 50% damage to enemies with [Heavy Armor]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2130%"
+              "value": "АТК: 2130%",
+              "effects": [
+                "Enemy DEF -50",
+                "Additional 50% damage to enemies with [Heavy Armor]"
+              ]
             }
           ],
           "special": [
@@ -1789,6 +2423,7 @@
         "Penetration": "5",
         "Immunity": "20+15"
       },
+      "consume": "",
       "skills": [
         {
           "name": "The Sieger",
@@ -1803,22 +2438,46 @@
           "sp_cost": "650",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 2",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration 5 Minutes"
+              "value": "",
+              "effects": [
+                "Duration 5 Minutes",
+                "Reduces knock down time by 5%",
+                "Reduces damage from monsters by 2%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration 5 Minutes"
+              "value": "",
+              "effects": [
+                "Duration 5 Minutes",
+                "Reduces knock down time by 50%",
+                "Reduces damage from monsters by 20%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration 5 Minutes"
+              "value": "",
+              "effects": [
+                "Duration 5 Minutes",
+                "Reduces knock down time by 60%",
+                "Reduces damage from monsters by 22%"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration 5 Minutes"
+              "value": "",
+              "effects": [
+                "Duration 5 Minutes",
+                "Reduces knock down time by 70%",
+                "Reduces damage from monsters by 24%"
+              ]
             }
           ],
           "special": []
@@ -1836,14 +2495,30 @@
           "sp_cost": "340",
           "aggro": "76",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 332%"
+              "value": "АТК: 332%",
+              "effects": [
+                "Ignores enemys DEF by 40",
+                "Ignores Block",
+                "Ignores enemys Shield DEF by 50%",
+                "80% Chance to inflict [Armor Crasher] on enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 664%"
+              "value": "АТК: 664%",
+              "effects": [
+                "Ignores enemys DEF by 40",
+                "Ignores Block",
+                "Ignores enemys Shield DEF by 50%",
+                "80% Chance to inflict [Armor Crasher] on enemy"
+              ]
             }
           ],
           "special": []
@@ -1861,14 +2536,24 @@
           "sp_cost": "440",
           "aggro": "250",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 3",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 81%"
+              "value": "АТК: 81%",
+              "effects": [
+                "100% Chance to [Slow] Enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 162%"
+              "value": "АТК: 162%",
+              "effects": [
+                "100% Chance to [Slow] Enemy"
+              ]
             }
           ],
           "special": []
@@ -1886,18 +2571,43 @@
           "sp_cost": "540",
           "aggro": "257",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "125%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1236%"
+              "value": "АТК: 1236%",
+              "effects": [
+                "Ignores enemys DEF by 50",
+                "Ignores Block",
+                "Ignores enemys Shield DEF by 50%",
+                "4% chance of damage x1.5",
+                "100% chance to inflict [Stun] on enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2472%"
+              "value": "АТК: 2472%",
+              "effects": [
+                "Ignores enemys DEF by 50",
+                "Ignores Block",
+                "Ignores enemys Shield DEF by 50%",
+                "18% chance of damage x1.5",
+                "100% chance to inflict [Stun] on enemy"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "АТК: 2719%"
+              "value": "АТК: 2719%",
+              "effects": [
+                "Ignores enemys DEF by 50",
+                "Ignores Block",
+                "Ignores enemys Shield DEF by 50%",
+                "25% chance of damage x1.5",
+                "100% chance to inflict [Stun] on enemy"
+              ]
             }
           ],
           "special": []
@@ -1915,26 +2625,70 @@
           "sp_cost": "850",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration 30 sec"
+              "value": "",
+              "effects": [
+                "Duration 30 sec",
+                "HP increases according to DEF of Shield and HP(Including the increasement from the Item)",
+                "All ATK damage -2%",
+                "Cancel Ignoring Blocking",
+                "Movement Speed -20%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration 30 sec"
+              "value": "",
+              "effects": [
+                "Duration 30 sec",
+                "HP increases according to DEF of Shield and HP(Including the increasement from the Item)",
+                "All ATK damage -20%",
+                "Cancel Ignoring Blocking",
+                "Movement Speed -20%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration 30 sec"
+              "value": "",
+              "effects": [
+                "Duration 30 sec",
+                "HP increases according to DEF of Shield and HP(Including the increasement from the Item)",
+                "All ATK damage -22%",
+                "Cancel Ignoring Blocking",
+                "Movement Speed -20%",
+                "D.R. +1"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration 30 sec"
+              "value": "",
+              "effects": [
+                "Duration 30 sec",
+                "HP increases according to DEF of Shield and HP(Including the increasement from the Item)",
+                "All ATK damage -24%",
+                "Cancel Ignoring Blocking",
+                "Movement Speed -20%",
+                "D.R. +1",
+                "IMM +10"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration 30 sec"
+              "value": "",
+              "effects": [
+                "Duration 30 sec",
+                "HP increases according to DEF of Shield and HP(Including the increasement from the Item)",
+                "All ATK damage -26%",
+                "Cancel Ignoring Blocking",
+                "Movement Speed -20%",
+                "D.R. +1",
+                "IMM +10"
+              ]
             }
           ],
           "special": []

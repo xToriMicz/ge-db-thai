@@ -105,6 +105,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -144,6 +145,7 @@
         "Ignore DEF": "+2%",
         "Critical": "+16"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Plumbullet shot",
@@ -158,14 +160,24 @@
           "sp_cost": "100",
           "aggro": "31",
           "skill_type": "Shooting",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 112%"
+              "value": "АТК: 112%",
+              "effects": [
+                "100% chance to inflict [Poison]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 224%"
+              "value": "АТК: 224%",
+              "effects": [
+                "100% chance to inflict [Poison]"
+              ]
             }
           ],
           "special": []
@@ -183,14 +195,20 @@
           "sp_cost": "150",
           "aggro": "57",
           "skill_type": "Shooting",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 239%"
+              "value": "АТК: 239%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 478%"
+              "value": "АТК: 478%",
+              "effects": []
             }
           ],
           "special": []
@@ -208,14 +226,20 @@
           "sp_cost": "250",
           "aggro": "39",
           "skill_type": "Shooting",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 149%"
+              "value": "АТК: 149%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 298%"
+              "value": "АТК: 298%",
+              "effects": []
             }
           ],
           "special": []
@@ -233,14 +257,20 @@
           "sp_cost": "300",
           "aggro": "165",
           "skill_type": "Shooting",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 773%"
+              "value": "АТК: 773%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1546%"
+              "value": "АТК: 1546%",
+              "effects": []
             }
           ],
           "special": []
@@ -281,6 +311,7 @@
         "Ignore DEF": "+2%",
         "Critical": "+12"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Ankle Shot",
@@ -295,14 +326,24 @@
           "sp_cost": "100",
           "aggro": "77",
           "skill_type": "Shooting",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 375%"
+              "value": "АТК: 375%",
+              "effects": [
+                "25% chance to inflict [Mortal Wound]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 750%"
+              "value": "АТК: 750%",
+              "effects": [
+                "25% chance to inflict [Mortal Wound]"
+              ]
             }
           ],
           "special": []
@@ -320,14 +361,20 @@
           "sp_cost": "200",
           "aggro": "88",
           "skill_type": "Shooting",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 393%"
+              "value": "АТК: 393%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 786%"
+              "value": "АТК: 786%",
+              "effects": []
             }
           ],
           "special": []
@@ -345,14 +392,24 @@
           "sp_cost": "250",
           "aggro": "138",
           "skill_type": "Shooting",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 641%"
+              "value": "АТК: 641%",
+              "effects": [
+                "75% chance to inflict [Mortal Wound]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1282%"
+              "value": "АТК: 1282%",
+              "effects": [
+                "75% chance to inflict [Mortal Wound]"
+              ]
             }
           ],
           "special": []
@@ -370,14 +427,26 @@
           "sp_cost": "300",
           "aggro": "191",
           "skill_type": "Shooting",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 903%"
+              "value": "АТК: 903%",
+              "effects": [
+                "100% chance to inflict [Mortal Wound]",
+                "Enemy DEF -50"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1805%"
+              "value": "АТК: 1805%",
+              "effects": [
+                "100% chance to inflict [Mortal Wound]",
+                "Enemy DEF -50"
+              ]
             }
           ],
           "special": []
@@ -422,6 +491,7 @@
         "Critical": "+15",
         "Penetration": "5+20"
       },
+      "consume": "Large Caliber Bullet x 2",
       "skills": [
         {
           "name": "Minerva",
@@ -436,26 +506,65 @@
           "sp_cost": "650",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Critical +2"
+              "value": "",
+              "effects": [
+                "Critical +2",
+                "Critical Damage +20%",
+                "Normal attack damage x3",
+                "10% chance to inflict [Red Virgo] with normal attacks",
+                "During [Red Virgo], ignore 25 monster DEF and gain a 5% chance to reset skill cooldowns"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Critical +20"
+              "value": "",
+              "effects": [
+                "Critical +20",
+                "Critical Damage +200%",
+                "Normal attack damage x3",
+                "10% chance to inflict [Red Virgo] with normal attacks",
+                "During [Red Virgo], ignore 25 monster DEF and gain a 5% chance to reset skill cooldowns"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Critical +22"
+              "value": "",
+              "effects": [
+                "Critical +22",
+                "Critical Damage +220%",
+                "Normal attack damage x3",
+                "10% chance to inflict [Red Virgo] with normal attacks",
+                "During [Red Virgo], ignore 25 monster DEF and gain a 5% chance to reset skill cooldowns"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Critical +24"
+              "value": "",
+              "effects": [
+                "Critical +24",
+                "Critical Damage +240%",
+                "Normal attack damage x3",
+                "10% chance to inflict [Red Virgo] with normal attacks",
+                "During [Red Virgo], ignore 25 monster DEF and gain a 5% chance to reset skill cooldowns"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Critical +26"
+              "value": "",
+              "effects": [
+                "Critical +26",
+                "Critical Damage +280%",
+                "Normal attack damage x3",
+                "10% chance to inflict [Red Virgo] with normal attacks",
+                "During [Red Virgo], ignore 25 monster DEF and gain a 5% chance to reset skill cooldowns"
+              ]
             }
           ],
           "special": []
@@ -473,14 +582,26 @@
           "sp_cost": "200",
           "aggro": "100",
           "skill_type": "Shooting",
+          "consume_item": "Large Caliber Bullet x 3",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "90%",
+          "light_armor_atk": "90%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1200%"
+              "value": "АТК: 1200%",
+              "effects": [
+                "Ignores DEF of enemy by 30",
+                "90% Chance to [Slow] Enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "Ignores DEF of enemy by 30",
+                "90% Chance to [Slow] Enemy"
+              ]
             }
           ],
           "special": []
@@ -498,14 +619,26 @@
           "sp_cost": "350",
           "aggro": "100",
           "skill_type": "Shooting",
+          "consume_item": "Large Caliber Bullet x 10",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "90%",
+          "light_armor_atk": "90%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1500%"
+              "value": "АТК: 1500%",
+              "effects": [
+                "Ignores DEF of enemy by 50",
+                "45% Chance to [Red Virgo] Enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "Ignores DEF of enemy by 50",
+                "45% Chance to [Red Virgo] Enemy"
+              ]
             }
           ],
           "special": []
@@ -523,14 +656,32 @@
           "sp_cost": "700",
           "aggro": "300",
           "skill_type": "Shooting",
+          "consume_item": "Large Caliber Bullet x 25",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "90%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 600%"
+              "value": "АТК: 600%",
+              "effects": [
+                "Ignores enemys DEF by 50",
+                "45% chance to impose [Red Virgo]",
+                "Reusing it during casting, skill activates",
+                "Damage increases in proportion to casting time",
+                "In max casting, skill/monster damage increase."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1200%"
+              "value": "АТК: 1200%",
+              "effects": [
+                "Ignores enemys DEF by 50",
+                "45% chance to impose [Red Virgo]",
+                "Reusing it during casting, skill activates",
+                "Damage increases in proportion to casting time",
+                "In max casting, skill/monster damage increase."
+              ]
             }
           ],
           "special": []
@@ -548,14 +699,26 @@
           "sp_cost": "800",
           "aggro": "400",
           "skill_type": "Shooting",
+          "consume_item": "Large Caliber Bullet x 25",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": [
+                "Ignores DEF of enemy by 60",
+                "45% Chance to [Red Virgo] Enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3600%"
+              "value": "АТК: 3600%",
+              "effects": [
+                "Ignores DEF of enemy by 60",
+                "45% Chance to [Red Virgo] Enemy"
+              ]
             }
           ],
           "special": []

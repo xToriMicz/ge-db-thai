@@ -34,7 +34,8 @@
       {
         "level": "Level 1",
         "effects": [
-          "Duration: 90sec.",
+          "Duration: 5 Minutes",
+          "A.R. +2",
           "ATK+2%",
           "Critical+1",
           "Move SPD+1%"
@@ -43,7 +44,8 @@
       {
         "level": "Level 10",
         "effects": [
-          "Duration: 90sec.",
+          "Duration: 5 Minutes",
+          "A.R. +2",
           "ATK+20%",
           "Critical+10",
           "Move SPD+10%"
@@ -52,31 +54,31 @@
       {
         "level": "Level 11",
         "effects": [
-          "Duration: 90sec.",
+          "Duration: 5 Minutes",
+          "A.R. +2",
           "ATK+22%",
           "Critical+11",
-          "Move SPD+11%",
-          "A.R.+1"
+          "Move SPD+11%"
         ]
       },
       {
         "level": "Level 12",
         "effects": [
-          "Duration: 90sec.",
+          "Duration: 5 Minutes",
+          "A.R. +2",
           "ATK+24%",
           "Critical+12",
-          "Move SPD+12%",
-          "A.R.+1"
+          "Move SPD+12%"
         ]
       },
       {
         "level": "Level 13",
         "effects": [
-          "Duration: 90sec.",
+          "Duration: 5 Minutes",
+          "A.R. +2",
           "ATK+26%",
           "Critical+13",
-          "Move SPD+13%",
-          "A.R.+1"
+          "Move SPD+13%"
         ]
       }
     ]
@@ -125,6 +127,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -169,6 +172,7 @@
         "Penetration": "10+15",
         "Immunity": "5+15"
       },
+      "consume": "Large Caliber Bullet x 1",
       "skills": [
         {
           "name": "Fute Shot",
@@ -183,14 +187,26 @@
           "sp_cost": "300",
           "aggro": "160",
           "skill_type": "Shooting",
+          "consume_item": "Large Caliber Bullet x 3",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "50%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1600%"
+              "value": "АТК: 1600%",
+              "effects": [
+                "Ignores enemy DEF by 50",
+                "[High Noon] ignores extra DEF of enemy equal to [DEX]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3200%"
+              "value": "АТК: 3200%",
+              "effects": [
+                "Ignores enemy DEF by 50",
+                "[High Noon] ignores extra DEF of enemy equal to [DEX]"
+              ]
             }
           ],
           "special": []
@@ -201,21 +217,45 @@
           "description": "Inflicts more fatal damage to enemies by using specially crafted bullets.",
           "target": "",
           "casting_time": "Instant",
-          "cooldown": "70 sec.",
+          "cooldown": "20 sec.",
           "duration": "0.7 sec.",
           "hits_flying": "No",
           "knock_down": "No",
           "sp_cost": "650",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "A.R. +1"
+              "value": "",
+              "effects": [
+                "A.R. +1",
+                "ATK +20%",
+                "Critical +15",
+                "Max Critical +10",
+                "Monster ATK increases in proportion to extra [DEX]",
+                "DEX +10",
+                "AGI +5",
+                "Normal attack damage increases based on [Barrel]s AGI, up to 15% per 20 AGI (Max. 100%)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "A.R. +1"
+              "value": "",
+              "effects": [
+                "A.R. +1",
+                "ATK +20%",
+                "Critical +15",
+                "Max Critical +10",
+                "Monster ATK increases in proportion to extra [DEX]",
+                "DEX +10",
+                "AGI +5",
+                "Normal attack damage increases based on [Barrel]s AGI, up to 15% per 20 AGI (Max. 100%)"
+              ]
             }
           ],
           "special": []
@@ -233,14 +273,26 @@
           "sp_cost": "400",
           "aggro": "230",
           "skill_type": "Shooting",
+          "consume_item": "Large Caliber Bullet x 10",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "50%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": [
+                "Ignores enemy DEF by 60",
+                "[High Noon] ignores extra DEF of enemy equal to [DEX]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3600%"
+              "value": "АТК: 3600%",
+              "effects": [
+                "Ignores enemy DEF by 60",
+                "[High Noon] ignores extra DEF of enemy equal to [DEX]"
+              ]
             }
           ],
           "special": []
@@ -258,14 +310,28 @@
           "sp_cost": "250",
           "aggro": "170",
           "skill_type": "Shooting",
+          "consume_item": "Large Caliber Bullet x 7",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "50%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "Ignores Block",
+                "Ignores enemy DEF by 70",
+                "[High Noon] ignores extra DEF of enemy equal to [DEX]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4400%"
+              "value": "АТК: 4400%",
+              "effects": [
+                "Ignores Block",
+                "Ignores enemy DEF by 70",
+                "[High Noon] ignores extra DEF of enemy equal to [DEX]"
+              ]
             }
           ],
           "special": []
@@ -283,14 +349,34 @@
           "sp_cost": "700",
           "aggro": "300",
           "skill_type": "Shooting",
+          "consume_item": "Large Caliber Bullet x 25",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "50%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1500%"
+              "value": "АТК: 1500%",
+              "effects": [
+                "Ignores enemy DEF by 75",
+                "When reusing skill during casting, immediately uses skill",
+                "Knockback range, time and damage increases in proportion to casting time",
+                "35% Chance to inflict [Stun]",
+                "Ignores debuff RES of enemy [PC]",
+                "[High Noon] ignores extra DEF of enemy equal to [DEX]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "Ignores enemy DEF by 75",
+                "When reusing skill during casting, immediately uses skill",
+                "Knockback range, time and damage increases in proportion to casting time",
+                "35% Chance to inflict [Stun]",
+                "Ignores debuff RES of enemy [PC]",
+                "[High Noon] ignores extra DEF of enemy equal to [DEX]"
+              ]
             }
           ],
           "special": []

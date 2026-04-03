@@ -78,6 +78,14 @@
         "x": 0,
         "y": -25
       }
+    },
+    {
+      "stance_name": "Savate",
+      "equipped_items": "Knuckle",
+      "icon_position": {
+        "x": 0,
+        "y": -25
+      }
     }
   ],
   "stances": [
@@ -106,6 +114,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -149,6 +158,7 @@
         "Penetration": "5+20",
         "Immunity": "15"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Pregarah",
@@ -163,14 +173,28 @@
           "sp_cost": "240",
           "aggro": "136",
           "skill_type": "COUNTER",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2500%"
+              "value": "АТК: 2500%",
+              "effects": [
+                "Fixed Melee DMG",
+                "Can counterattack any attack",
+                "Applies [Passion of Sainquis] Level +10 on successful counterattack"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5000%"
+              "value": "АТК: 5000%",
+              "effects": [
+                "Fixed Melee DMG",
+                "Can counterattack any attack",
+                "Applies [Passion of Sainquis] Level +10 on successful counterattack"
+              ]
             }
           ],
           "special": []
@@ -188,14 +212,32 @@
           "sp_cost": "560",
           "aggro": "342",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "60%",
+          "heavy_armor_atk": "160%",
+          "light_armor_atk": "140%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": [
+                "Ignores enemy DEF by 50",
+                "50% Chance to inflict [Mortal Wound]",
+                "Ignores Block",
+                "Ignores DEF of enemy shield by 1/2",
+                "100% Chance to increase level (or apply) [Passion of Sainquis] Level +1"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3600%"
+              "value": "АТК: 3600%",
+              "effects": [
+                "Ignores enemy DEF by 50",
+                "50% Chance to inflict [Mortal Wound]",
+                "Ignores Block",
+                "Ignores DEF of enemy shield by 1/2",
+                "100% Chance to increase level (or apply) [Passion of Sainquis] Level +1"
+              ]
             }
           ],
           "special": []
@@ -213,14 +255,30 @@
           "sp_cost": "750",
           "aggro": "128",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "60%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2000%"
+              "value": "АТК: 2000%",
+              "effects": [
+                "Ignores enemy DEF by 60",
+                "30% Chance to inflict [Stun]",
+                "Ignores DEF according to own current Max HP percentage (up to 100% Max HP / 100 DEF Ignored)",
+                "100% Chance to increase level (or apply) [Passion of Sainquis] Level +1"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4000%"
+              "value": "АТК: 4000%",
+              "effects": [
+                "Ignores enemy DEF by 60",
+                "30% Chance to inflict [Stun]",
+                "Ignores DEF according to own current Max HP percentage (up to 100% Max HP / 100 DEF Ignored)",
+                "100% Chance to increase level (or apply) [Passion of Sainquis] Level +1"
+              ]
             }
           ],
           "special": []
@@ -238,14 +296,34 @@
           "sp_cost": "480",
           "aggro": "186",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "75%",
+          "heavy_armor_atk": "130%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2100%"
+              "value": "АТК: 2100%",
+              "effects": [
+                "Ignores enemy DEF by 60",
+                "When reusing skill during casting, immediately uses skill",
+                "Knockback range, time and damage increases in proportion to casting time",
+                "50% Chance to inflict [Stun]",
+                "Skill damage increases according to fewer targets hit",
+                "100% Chance to increase level (or apply) [Passion of Sainquis] Level +1"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4200%"
+              "value": "АТК: 4200%",
+              "effects": [
+                "Ignores enemy DEF by 60",
+                "When reusing skill during casting, immediately uses skill",
+                "Knockback range, time and damage increases in proportion to casting time",
+                "50% Chance to inflict [Stun]",
+                "Skill damage increases according to fewer targets hit",
+                "100% Chance to increase level (or apply) [Passion of Sainquis] Level +1"
+              ]
             }
           ],
           "special": []
@@ -263,18 +341,43 @@
           "sp_cost": "540",
           "aggro": "435",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "60%",
+          "heavy_armor_atk": "175%",
+          "light_armor_atk": "145%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "Ignores enemy DEF by 75",
+                "Ignore Blocking",
+                "Ignores DEF of enemys shield by 1/2",
+                "Ignores DEF additionally in proportion to own max HP.",
+                "When hits the target, increases [Passion of Sainquis] Lv.1"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 6000%"
+              "value": "АТК: 6000%",
+              "effects": [
+                "Ignores enemy DEF by 75",
+                "Ignore Blocking",
+                "Ignores DEF of enemys shield by 1/2",
+                "Ignores DEF additionally in proportion to own max HP.",
+                "When hits the target, increases [Passion of Sainquis] Lv.1"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "АТК: 7200%"
+              "value": "АТК: 7200%",
+              "effects": [
+                "Ignores enemy DEF by 75",
+                "Ignores Blocking",
+                "Ignores enemy shield DEF by 1/2",
+                "Ignores DEF according to own current Max HP percentage (up to 100% Max HP / 100 DEF Ignored)",
+                "100% Chance to increase level (or apply) [Passion of Sainquis] Level +1"
+              ]
             }
           ],
           "special": []

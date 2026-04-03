@@ -39,9 +39,7 @@
           "ATK +40%",
           "Monster ATK +300%",
           "Mental PEN +25",
-          "Additionally Ignores RES of enemy [Monster] equal to extra [INT] + 50 per [Duplificar Type M] Level",
-          "Applies [Misery] to caster (allows splash damage)",
-          "100% Consumes [Misery] upon taking fatal damage from [PC] Skills."
+          "Additionally Ignores RES of enemy [Monster] equal to extra [INT] + 50 per [Duplificar Type M] Level."
         ]
       }
     ]
@@ -114,6 +112,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -154,6 +153,7 @@
         "Penetration": "5+20",
         "Immunity": "10+10"
       },
+      "consume": "Psychic Sphere x 1",
       "skills": [
         {
           "name": "Katana",
@@ -168,14 +168,20 @@
           "sp_cost": "150",
           "aggro": "50",
           "skill_type": "Magic",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1400%"
+              "value": "АТК: 1400%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2800%"
+              "value": "АТК: 2800%",
+              "effects": []
             }
           ],
           "special": []
@@ -193,14 +199,24 @@
           "sp_cost": "400",
           "aggro": "50",
           "skill_type": "Magic",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1600%"
+              "value": "АТК: 1600%",
+              "effects": [
+                "A Suit emphasized by light and shade, its showing strong self-esteem of Veil."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3200%"
+              "value": "АТК: 3200%",
+              "effects": [
+                "A Suit emphasized by light and shade, its showing strong self-esteem of Veil."
+              ]
             }
           ],
           "special": []
@@ -218,14 +234,20 @@
           "sp_cost": "400",
           "aggro": "50",
           "skill_type": "Magic",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4400%"
+              "value": "АТК: 4400%",
+              "effects": []
             }
           ],
           "special": []
@@ -243,26 +265,60 @@
           "sp_cost": "800",
           "aggro": "150",
           "skill_type": "Buff",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "1% chance to inflict ["
+              "value": "",
+              "effects": [
+                "1% chance to inflict [Whole Cancellation]",
+                "[Whole Cancellation] Duration 1.5 seconds",
+                "Unable to use skill, buffs or regenerate SP",
+                "Cancels transparency"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "90% chance to inflict ["
+              "value": "",
+              "effects": [
+                "90% chance to inflict [Whole Cancellation]",
+                "[Whole Cancellation] Duration 15 seconds",
+                "Unable to use skill, buffs or regenerate SP",
+                "Cancels transparency"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "100% chance to inflict ["
+              "value": "",
+              "effects": [
+                "100% chance to inflict [Whole Cancellation]",
+                "[Whole Cancellation] Duration 16.5 seconds",
+                "Unable to use skill, buffs or regenerate SP",
+                "Cancels transparency"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "110% chance to inflict ["
+              "value": "",
+              "effects": [
+                "110% chance to inflict [Whole Cancellation]",
+                "[Whole Cancellation] Duration 18 seconds",
+                "Unable to use skill, buffs or regenerate SP",
+                "Cancels transparency"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "120% chance to inflict ["
+              "value": "",
+              "effects": [
+                "120% chance to inflict [Whole Cancellation]",
+                "[Whole Cancellation] Duration 19.5 seconds",
+                "Unable to use skill, buffs or regenerate SP",
+                "Cancels transparency"
+              ]
             }
           ],
           "special": []
@@ -280,14 +336,24 @@
           "sp_cost": "500",
           "aggro": "200",
           "skill_type": "Magic",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "30% chance to inflict [Critical Wound] on the enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 6000%"
+              "value": "АТК: 6000%",
+              "effects": [
+                "30% chance to inflict [Critical Wound] on the enemy"
+              ]
             }
           ],
           "special": []
@@ -336,6 +402,7 @@
         "Penetration": "5+25",
         "Immunity": "10+5"
       },
+      "consume": "Psychic Sphere x 2",
       "skills": [
         {
           "name": "Tener Pode",
@@ -350,26 +417,60 @@
           "sp_cost": "300",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 25",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 600 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 600 seconds",
+                "ATK +20%",
+                "ATK against monsters +50%",
+                "A.R. +1"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 600 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 600 seconds",
+                "ATK +20%",
+                "ATK against monsters +50%",
+                "A.R. +1"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 600 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 600 seconds",
+                "ATK +20%",
+                "ATK against monsters +50%",
+                "A.R. +1"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 600 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 600 seconds",
+                "ATK +20%",
+                "ATK against monsters +50%",
+                "A.R. +1"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 600 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 600 seconds",
+                "ATK +20%",
+                "ATK against monsters +50%",
+                "A.R. +1"
+              ]
             }
           ],
           "special": []
@@ -387,14 +488,28 @@
           "sp_cost": "450",
           "aggro": "100",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 8",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2300%"
+              "value": "АТК: 2300%",
+              "effects": [
+                "20% Chance to inflict [Improve Disease]",
+                "Skill Damage increases by 9% of extra [INT]",
+                "Damage increases inversely proportional to the amount of enemies (up to 3x)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4600%"
+              "value": "АТК: 4600%",
+              "effects": [
+                "20% Chance to inflict [Improve Disease]",
+                "Skill Damage increases by 9% of extra [INT]",
+                "Damage increases inversely proportional to the amount of enemies (up to 3x)"
+              ]
             }
           ],
           "special": []
@@ -412,14 +527,28 @@
           "sp_cost": "500",
           "aggro": "100",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 12",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2600%"
+              "value": "АТК: 2600%",
+              "effects": [
+                "20% Chance to inflict [Fear]",
+                "Skill Damage increases by 9% of extra [INT]",
+                "Damage increases proportional to the amount of enemies (up to 3x)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5200%"
+              "value": "АТК: 5200%",
+              "effects": [
+                "20% Chance to inflict [Fear]",
+                "Skill Damage increases by 9% of extra [INT]",
+                "Damage increases proportional to the amount of enemies (up to 3x)"
+              ]
             }
           ],
           "special": []
@@ -437,14 +566,28 @@
           "sp_cost": "750",
           "aggro": "200",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 30",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Upon hit, apply one of the following effects:"
+              "value": "",
+              "effects": [
+                "Upon hit, apply one of the following effects:",
+                "[PC] [Duplificar Type E] Applies additional stats according to casting time (Max. 50)",
+                "[Monster] [Duplificar Type M] Skill Damage increases according to casting time (Max. 300%). Applies additional ATK and Monster ATK."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Upon hit, apply one of the following effects:"
+              "value": "",
+              "effects": [
+                "Upon hit, apply one of the following effects:",
+                "[PC] [Duplificar Type E] Applies additional stats according to casting time (Max. 50)",
+                "[Monster] [Duplificar Type M] Skill Damage increases according to casting time (Max. 300%). Applies additional ATK and Monster ATK."
+              ]
             }
           ],
           "special": []
@@ -455,21 +598,39 @@
           "description": "Transforms painful memories into a sharp rain of blades and makes it pour.",
           "target": "",
           "casting_time": "2.733 sec.",
-          "cooldown": "40 sec.",
+          "cooldown": "30 sec.",
           "duration": "2.733 sec.",
           "hits_flying": "Yes",
           "knock_down": "No",
           "sp_cost": "600",
           "aggro": "125",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 25",
+          "soft_armor_atk": "20%",
+          "heavy_armor_atk": "20%",
+          "light_armor_atk": "20%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1177%"
+              "value": "АТК: 1177%",
+              "effects": [
+                "Skill Damage increases by 8% of extra [INT]",
+                "Unleash up to 24 attacks while channeling",
+                "Reuse during casting to cancel early",
+                "Each attack applies skill damage",
+                "Each attack has a 20% chance to inflict [Mortal Wound]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2354%"
+              "value": "АТК: 2354%",
+              "effects": [
+                "Skill Damage increases by 8% of extra [INT]",
+                "Unleash up to 24 attacks while channeling",
+                "Reuse during casting to cancel early",
+                "Each attack applies skill damage",
+                "Each attack has a 20% chance to inflict [Mortal Wound]"
+              ]
             }
           ],
           "special": []

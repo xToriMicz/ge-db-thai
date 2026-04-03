@@ -88,6 +88,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -131,6 +132,7 @@
         "Penetration": "5+10",
         "Immunity": "15+20"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Carga",
@@ -145,14 +147,44 @@
           "sp_cost": "300",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 300s"
+              "value": "",
+              "effects": [
+                "Duration: 300s",
+                "For [Nicole]",
+                "A.R. +1",
+                "Magic DMG taken -25%",
+                "Unaffected by knockback skills",
+                "For [Family Members + Nicole]",
+                "ATK +7%",
+                "Monster ATK +15%",
+                "STR +7",
+                "DEF +5",
+                "IMM +5"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 300s"
+              "value": "",
+              "effects": [
+                "Duration: 300s",
+                "For [Nicole]",
+                "A.R. +1",
+                "Magic DMG taken -25%",
+                "Unaffected by knockback skills",
+                "For [Family Members + Nicole]",
+                "ATK +7%",
+                "Monster ATK +15%",
+                "STR +7",
+                "DEF +5",
+                "IMM +5"
+              ]
             }
           ],
           "special": []
@@ -170,14 +202,26 @@
           "sp_cost": "450",
           "aggro": "50",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "Skill damage increases proportional to the casters maximum HP (10000 * 0.50)",
+                "Maximum output increases by 10x (PvE only)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4400%"
+              "value": "АТК: 4400%",
+              "effects": [
+                "Skill damage increases proportional to the casters maximum HP (10000 * 0.50)",
+                "Maximum output increases by 10x (PvE only)"
+              ]
             }
           ],
           "special": []
@@ -195,14 +239,26 @@
           "sp_cost": "500",
           "aggro": "81",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2500%"
+              "value": "АТК: 2500%",
+              "effects": [
+                "Skill damage increases proportional to the casters maximum HP (10000 * 0.50)",
+                "Maximum output increases by 10x (PvE only)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5000%"
+              "value": "АТК: 5000%",
+              "effects": [
+                "Skill damage increases proportional to the casters maximum HP (10000 * 0.50)",
+                "Maximum output increases by 10x (PvE only)"
+              ]
             }
           ],
           "special": []
@@ -220,14 +276,34 @@
           "sp_cost": "650",
           "aggro": "91",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2800%"
+              "value": "АТК: 2800%",
+              "effects": [
+                "Ignore Block",
+                "Ignore 50% shield DEF",
+                "20% chance to inflict [Suppression] to enemy PC",
+                "Ignore debuff RES",
+                "Skill damage increases proportional to the casters maximum HP (10000 * 0.50)",
+                "Maximum output increases by 10x (PvE only)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5600%"
+              "value": "АТК: 5600%",
+              "effects": [
+                "Ignore Block",
+                "Ignore 50% shield DEF",
+                "20% chance to inflict [Suppression] to enemy PC",
+                "Ignore debuff RES",
+                "Skill damage increases proportional to the casters maximum HP (10000 * 0.50)",
+                "Maximum output increases by 10x (PvE only)"
+              ]
             }
           ],
           "special": []
@@ -245,14 +321,34 @@
           "sp_cost": "650",
           "aggro": "130",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "Ignore Block",
+                "Ignore 50% shield DEF",
+                "20% chance to inflict [Suppression] to enemy PC",
+                "Ignore debuff RES",
+                "Skill damage increases proportional to the casters maximum HP (10000 * 0.50)",
+                "Maximum output increases by 10x (PvE only)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 6000%"
+              "value": "АТК: 6000%",
+              "effects": [
+                "Ignore Block",
+                "Ignore 50% shield DEF",
+                "20% chance to inflict [Suppression] to enemy PC",
+                "Ignore debuff RES",
+                "Skill damage increases proportional to the casters maximum HP (10000 * 0.50)",
+                "Maximum output increases by 10x (PvE only)"
+              ]
             }
           ],
           "special": []

@@ -87,6 +87,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -129,6 +130,7 @@
         "Penetration": "5+20",
         "Immunity": "10"
       },
+      "consume": "Steel Bullet x 3",
       "skills": [
         {
           "name": "Point Blank",
@@ -143,14 +145,28 @@
           "sp_cost": "280",
           "aggro": "60",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bullet x 1",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "120%",
+          "light_armor_atk": "90%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 800%"
+              "value": "АТК: 800%",
+              "effects": [
+                "Ignores enemy DEF 50",
+                "The closer to the target, the more damage",
+                "[Firm Resolve] buff level reduces."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1600%"
+              "value": "АТК: 1600%",
+              "effects": [
+                "Ignores enemy DEF 50",
+                "The closer to the target, the more damage",
+                "[Firm Resolve] buff level reduces."
+              ]
             }
           ],
           "special": []
@@ -168,14 +184,30 @@
           "sp_cost": "300",
           "aggro": "100",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bullet x 4",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "70%",
+          "light_armor_atk": "130%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1200%"
+              "value": "АТК: 1200%",
+              "effects": [
+                "Ignores enemy DEF 50",
+                "Ignores Block",
+                "[Firm Resolve] buff level reduces.",
+                "Cancels Invincible skill of enemy."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "Ignores enemy DEF 50",
+                "Ignores Block",
+                "[Firm Resolve] buff level reduces.",
+                "Cancels Invincible skill of enemy."
+              ]
             }
           ],
           "special": []
@@ -193,14 +225,34 @@
           "sp_cost": "450",
           "aggro": "195",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bullet x 6",
+          "soft_armor_atk": "25%",
+          "heavy_armor_atk": "15%",
+          "light_armor_atk": "25%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 900%"
+              "value": "АТК: 900%",
+              "effects": [
+                "Ignores enemy DEF 50",
+                "Attacks 10 times during the casting time",
+                "When re-casting during the casting, the cast stops.",
+                "Applies to skill damage in every attack",
+                "10% of [Control] in every attack",
+                "[Firm Resolve] buff level reduces."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": [
+                "Ignores enemy DEF 50",
+                "Attacks 10 times during the casting time",
+                "When re-casting during the casting, the cast stops.",
+                "Applies to skill damage in every attack",
+                "10% of [Control] in every attack",
+                "[Firm Resolve] buff level reduces."
+              ]
             }
           ],
           "special": []
@@ -218,14 +270,34 @@
           "sp_cost": "580",
           "aggro": "34",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bullet x 1",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 800%"
+              "value": "АТК: 800%",
+              "effects": [
+                "Ignores enemys DEF by 75",
+                "When reusing the skill during casting, the skill activates",
+                "Knockback range and time increases in proportion to casting time",
+                "Skill Damage increases according to cast time",
+                "Blocking",
+                "[Firm Determination] buffs Lv. reduces."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1600%"
+              "value": "АТК: 1600%",
+              "effects": [
+                "Ignores enemys DEF by 75",
+                "When reusing the skill during casting, the skill activates",
+                "Knockback range and time increases in proportion to casting time",
+                "Skill Damage increases according to cast time",
+                "Blocking",
+                "[Firm Determination] buffs Lv. reduces."
+              ]
             }
           ],
           "special": []
@@ -236,21 +308,43 @@
           "description": "By firing a pistol filled with the spirit of Ophelia Melissa, annihilates all the enemies.",
           "target": "Up to 10 enemies within a range of 9m",
           "casting_time": "2.9 sec.",
-          "cooldown": "50 sec.",
+          "cooldown": "25 sec.",
           "duration": "Permanent",
           "hits_flying": "Yes",
           "knock_down": "No",
           "sp_cost": "680",
           "aggro": "59",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bullet x 7",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "Ignores enemy DEF by 75",
+                "50% Chance of enemys [Requiem]",
+                "With successful attack, [Firm Resolve] buff is given to you",
+                "Duration: 120 sec.",
+                "ATK+30%",
+                "Ignores DEF by 3%",
+                "A.R.+1"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 6000%"
+              "value": "АТК: 6000%",
+              "effects": [
+                "Ignores enemy DEF by 75",
+                "50% Chance of enemys [Requiem]",
+                "With successful attack, [Firm Resolve] buff is given to you",
+                "Duration: Permanent",
+                "ATK+30%",
+                "Ignores DEF by 3%",
+                "A.R.+1"
+              ]
             }
           ],
           "special": []

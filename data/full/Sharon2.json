@@ -67,6 +67,22 @@
         "x": -150,
         "y": 0
       }
+    },
+    {
+      "stance_name": "Psychokinesis",
+      "equipped_items": "Rod",
+      "icon_position": {
+        "x": -200,
+        "y": -100
+      }
+    },
+    {
+      "stance_name": "Fate Sentence",
+      "equipped_items": "Rod",
+      "icon_position": {
+        "x": -150,
+        "y": 0
+      }
     }
   ],
   "stances": [
@@ -95,6 +111,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [
         {
           "name": "Strike Back",
@@ -109,14 +126,20 @@
           "sp_cost": "60",
           "aggro": "84",
           "skill_type": "Magic",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 358%"
+              "value": "АТК: 358%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 716%"
+              "value": "АТК: 716%",
+              "effects": []
             }
           ],
           "special": []
@@ -134,26 +157,45 @@
           "sp_cost": "120",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "80% chance to ["
+              "value": "",
+              "effects": [
+                "80% chance to [Immobilize] enemy for 3 sec."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "80% chance to ["
+              "value": "",
+              "effects": [
+                "80% chance to [Immobilize] enemy for 12 sec."
+              ]
             },
             {
               "level": "Level 11",
-              "value": "80% chance to ["
+              "value": "",
+              "effects": [
+                "80% chance to [Immobilize] enemy for 13 sec."
+              ]
             },
             {
               "level": "Level 12",
-              "value": "80% chance to ["
+              "value": "",
+              "effects": [
+                "80% chance to [Immobilize] enemy for 14 sec."
+              ]
             },
             {
               "level": "Level 13",
-              "value": "80% chance to ["
+              "value": "",
+              "effects": [
+                "80% chance to [Immobilize] enemy for 15 sec."
+              ]
             }
           ],
           "special": []
@@ -171,14 +213,20 @@
           "sp_cost": "150",
           "aggro": "64",
           "skill_type": "Magic",
+          "consume_item": "Magical Orb x 1",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 216%"
+              "value": "АТК: 216%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 432%"
+              "value": "АТК: 432%",
+              "effects": []
             }
           ],
           "special": []
@@ -196,18 +244,32 @@
           "sp_cost": "180",
           "aggro": "43",
           "skill_type": "Magic",
+          "consume_item": "Magical Orb x 1",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 157%"
+              "value": "АТК: 157%",
+              "effects": [
+                "100% chance to make enemy unable to skill for 20 sec."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 314%"
+              "value": "АТК: 314%",
+              "effects": [
+                "100% chance to make enemy unable to skill for 20 sec."
+              ]
             },
             {
               "level": "Level 11",
-              "value": "АТК: 345%"
+              "value": "АТК: 345%",
+              "effects": [
+                "100% chance to make enemy unable to skill for 20 sec.",
+                "Enemys D.R. -1"
+              ]
             }
           ],
           "special": []
@@ -254,6 +316,7 @@
         "Penetration": "10+25",
         "Immunity": "5+5"
       },
+      "consume": "Psychic Sphere x 3",
       "skills": [
         {
           "name": "Sailient",
@@ -268,14 +331,36 @@
           "sp_cost": "550",
           "aggro": "72",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "40%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "90%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1300%"
+              "value": "АТК: 1300%",
+              "effects": [
+                "[Sentence] level of caster +1",
+                "[Rampunt] level of target +1",
+                "Ignore RES equal to [Sentence] Level * 50",
+                "Ignore RES equal to [Rampunt] Level * 25",
+                "Skill Damage increases equal to 7% of extra [INT] + [Sentence] Level * 1.5",
+                "Skill Damage increases by 1 * [Sentence] Level",
+                "[Rampunt] : RES -3, [PC] Movement Speed -3% (Max. Lv. 10)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2600%"
+              "value": "АТК: 2600%",
+              "effects": [
+                "[Sentence] level of caster +1",
+                "[Rampunt] level of target +1",
+                "Ignore RES equal to [Sentence] Level * 50",
+                "Ignore RES equal to [Rampunt] Level * 25",
+                "Skill Damage increases equal to 7% of extra [INT] + [Sentence] Level * 1.5",
+                "Skill Damage increases by 1 * [Sentence] Level",
+                "[Rampunt] : RES -3, [PC] Movement Speed -3% (Max. Lv. 10)"
+              ]
             }
           ],
           "special": []
@@ -293,14 +378,36 @@
           "sp_cost": "440",
           "aggro": "49",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "45%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "90%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1500%"
+              "value": "АТК: 1500%",
+              "effects": [
+                "[Sentence] level of caster +1",
+                "[Rampunt] level of target +1",
+                "Ignore RES equal to [Sentence] Level * 50",
+                "Ignore RES equal to [Rampunt] Level * 25",
+                "Skill Damage increases equal to 7% of extra [INT] + [Sentence] Level * 1.5",
+                "Skill Damage increases by 1 * [Sentence] Level",
+                "[Rampunt] : RES -3, [PC] Movement Speed -3% (Max. Lv. 10)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "[Sentence] level of caster +1",
+                "[Rampunt] level of target +1",
+                "Ignore RES equal to [Sentence] Level * 50",
+                "Ignore RES equal to [Rampunt] Level * 25",
+                "Skill Damage increases equal to 7% of extra [INT] + [Sentence] Level * 1.5",
+                "Skill Damage increases by 1 * [Sentence] Level",
+                "[Rampunt] : RES -3, [PC] Movement Speed -3% (Max. Lv. 10)"
+              ]
             }
           ],
           "special": []
@@ -318,14 +425,36 @@
           "sp_cost": "680",
           "aggro": "72",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 8",
+          "soft_armor_atk": "45%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "95%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": [
+                "[Sentence] level of caster +1",
+                "[Rampunt] level of target +1",
+                "Ignore RES equal to [Sentence] Level * 50",
+                "Ignore RES equal to [Rampunt] Level * 25",
+                "Skill Damage increases equal to 7% of extra [INT] + [Sentence] Level * 1.5",
+                "Skill Damage increases by 1 * [Sentence] Level",
+                "[Rampunt] : RES -3, [PC] Movement Speed -3% (Max. Lv. 10)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3600%"
+              "value": "АТК: 3600%",
+              "effects": [
+                "[Sentence] level of caster +1",
+                "[Rampunt] level of target +1",
+                "Ignore RES equal to [Sentence] Level * 50",
+                "Ignore RES equal to [Rampunt] Level * 25",
+                "Skill Damage increases equal to 7% of extra [INT] + [Sentence] Level * 1.5",
+                "Skill Damage increases by 1 * [Sentence] Level",
+                "[Rampunt] : RES -3, [PC] Movement Speed -3% (Max. Lv. 10)"
+              ]
             }
           ],
           "special": []
@@ -343,14 +472,36 @@
           "sp_cost": "760",
           "aggro": "245",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "45%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "[Sentence] level of caster +1",
+                "[Rampunt] level of target +1",
+                "Ignore RES equal to [Sentence] Level * 50",
+                "Ignore RES equal to [Rampunt] Level * 25",
+                "Skill Damage increases equal to 7% of extra [INT] + [Sentence] Level * 1.5",
+                "Skill Damage increases by 1 * [Sentence] Level",
+                "[Rampunt] : RES -3, [PC] Movement Speed -3% (Max. Lv. 10)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4400%"
+              "value": "АТК: 4400%",
+              "effects": [
+                "[Sentence] level of caster +1",
+                "[Rampunt] level of target +1",
+                "Ignore RES equal to [Sentence] Level * 50",
+                "Ignore RES equal to [Rampunt] Level * 25",
+                "Skill Damage increases equal to 7% of extra [INT] + [Sentence] Level * 1.5",
+                "Skill Damage increases by 1 * [Sentence] Level",
+                "[Rampunt] : RES -3, [PC] Movement Speed -3% (Max. Lv. 10)"
+              ]
             }
           ],
           "special": []
@@ -368,14 +519,36 @@
           "sp_cost": "920",
           "aggro": "245",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 15",
+          "soft_armor_atk": "45%",
+          "heavy_armor_atk": "130%",
+          "light_armor_atk": "120%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "[Sentence] level of caster +1",
+                "[Rampunt] level of target +1",
+                "Ignore RES equal to [Sentence] Level * 50",
+                "Ignore RES equal to [Rampunt] Level * 25",
+                "Skill Damage increases equal to 7% of extra [INT] + [Sentence] Level * 1.5",
+                "Skill Damage increases by 1 * [Sentence] Level",
+                "[Rampunt] : RES -3, [PC] Movement Speed -3% (Max. Lv. 10)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4800%"
+              "value": "АТК: 4800%",
+              "effects": [
+                "[Sentence] level of caster +1",
+                "[Rampunt] level of target +1",
+                "Ignore RES equal to [Sentence] Level * 50",
+                "Ignore RES equal to [Rampunt] Level * 25",
+                "Skill Damage increases equal to 7% of extra [INT] + [Sentence] Level * 1.5",
+                "Skill Damage increases by 1 * [Sentence] Level",
+                "[Rampunt] : RES -3, [PC] Movement Speed -3% (Max. Lv. 10)"
+              ]
             }
           ],
           "special": []

@@ -135,6 +135,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -178,6 +179,7 @@
         "Penetration": "15+20",
         "Immunity": "5+15"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Grittium",
@@ -192,14 +194,28 @@
           "sp_cost": "150",
           "aggro": "150",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "90%",
+          "light_armor_atk": "120%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "Ignores Blocking",
+                "50% chance to inflict [Mortal Wound] on enemy PCs on hit",
+                "Ignore debuff RES"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4400%"
+              "value": "АТК: 4400%",
+              "effects": [
+                "Ignores Blocking",
+                "50% chance to inflict [Mortal Wound] on enemy PCs on hit",
+                "Ignore debuff RES"
+              ]
             }
           ],
           "special": []
@@ -217,26 +233,100 @@
           "sp_cost": "1200",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 12",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 300s"
+              "value": "",
+              "effects": [
+                "Duration: 300s",
+                "A.R. +1",
+                "ATK +20%",
+                "Melee ATK +40%",
+                "DEF +15",
+                "STR +15",
+                "Ignores all debuffs",
+                "Additional Effect for [Haas]",
+                "STR +15",
+                "AGI +15",
+                "Maximum HP +10%",
+                "Block +10"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 300s"
+              "value": "",
+              "effects": [
+                "Duration: 300s",
+                "A.R. +1",
+                "ATK +20%",
+                "Melee ATK +40%",
+                "DEF +15",
+                "STR +15",
+                "Ignores all debuffs",
+                "Additional Effect for [Haas]",
+                "STR +15",
+                "AGI +15",
+                "Maximum HP +10%",
+                "Block +10"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 300s"
+              "value": "",
+              "effects": [
+                "Duration: 300s",
+                "A.R. +1",
+                "ATK +20%",
+                "Melee ATK +40%",
+                "DEF +15",
+                "STR +15",
+                "Ignores all debuffs",
+                "Additional Effect for [Haas]",
+                "STR +15",
+                "AGI +15",
+                "Maximum HP +10%",
+                "Block +10"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 300s"
+              "value": "",
+              "effects": [
+                "Duration: 300s",
+                "A.R. +1",
+                "ATK +20%",
+                "Melee ATK +40%",
+                "DEF +15",
+                "STR +15",
+                "Ignores all debuffs",
+                "Additional Effect for [Haas]",
+                "STR +15",
+                "AGI +15",
+                "Maximum HP +10%",
+                "Block +10"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 300s"
+              "value": "",
+              "effects": [
+                "Duration: 300s",
+                "A.R. +1",
+                "ATK +20%",
+                "Melee ATK +40%",
+                "DEF +15",
+                "STR +15",
+                "Ignores all debuffs",
+                "Additional Effect for [Haas]",
+                "STR +15",
+                "AGI +15",
+                "Maximum HP +10%",
+                "Block +10"
+              ]
             }
           ],
           "special": [
@@ -260,14 +350,26 @@
           "sp_cost": "500",
           "aggro": "150",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "70%",
+          "heavy_armor_atk": "130%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "30% chance to inflict [Bleeding] on enemy PCs on hit",
+                "Skill Damage increases in proportional to [Breatueinnea]s Buff LV (Max. 3x)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4800%"
+              "value": "АТК: 4800%",
+              "effects": [
+                "30% chance to inflict [Bleeding] on enemy PCs on hit",
+                "Skill Damage increases in proportional to [Breatueinnea]s Buff LV (Max. 3x)"
+              ]
             }
           ],
           "special": []
@@ -285,14 +387,32 @@
           "sp_cost": "700",
           "aggro": "242",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2600%"
+              "value": "АТК: 2600%",
+              "effects": [
+                "Ignores Blocking",
+                "Ignore 1/2 of enemy shield DEF",
+                "30% chance to inflict [Bleeding] on enemy PCs on hit",
+                "Skill Damage increases against enemy with [Bleeding] debuff (up to 2x DMG)",
+                "The more targets hit, the higher the skill damage (up to 3x)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5200%"
+              "value": "АТК: 5200%",
+              "effects": [
+                "Ignores Blocking",
+                "Ignore 1/2 of enemy shield DEF",
+                "30% chance to inflict [Bleeding] on enemy PCs on hit",
+                "Skill Damage increases against enemy with [Bleeding] debuff (up to 2x DMG)",
+                "The more targets hit, the higher the skill damage (up to 3x)"
+              ]
             }
           ],
           "special": []
@@ -310,14 +430,32 @@
           "sp_cost": "900",
           "aggro": "242",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "120%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2800%"
+              "value": "АТК: 2800%",
+              "effects": [
+                "Ignores Blocking",
+                "Ignore 1/2 of enemy shield DEF",
+                "30% chance to inflict [Bleeding] on enemy PCs on hit",
+                "Skill Damage increases against enemy with [Mortal Wound] debuff (up to 2x DMG)",
+                "The more targets hit, the higher the skill damage (up to 3x)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5600%"
+              "value": "АТК: 5600%",
+              "effects": [
+                "Ignores Blocking",
+                "Ignore 1/2 of enemy shield DEF",
+                "30% chance to inflict [Bleeding] on enemy PCs on hit",
+                "Skill Damage increases against enemy with [Mortal Wound] debuff (up to 2x DMG)",
+                "The more targets hit, the higher the skill damage (up to 3x)"
+              ]
             }
           ],
           "special": []
@@ -370,6 +508,7 @@
         "Immunity": "5+5",
         "DEF": "5"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Quaarte Melqua",
@@ -384,14 +523,30 @@
           "sp_cost": "800",
           "aggro": "120",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "120%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2500%"
+              "value": "АТК: 2500%",
+              "effects": [
+                "[Phoenixa] Level +1",
+                "30% chance to inflict [Mortal Wound] on the enemy",
+                "Ignore debuff RES",
+                "Ignore enemy defense proportional to [Phoenixa] level (up to 80)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5000%"
+              "value": "АТК: 5000%",
+              "effects": [
+                "[Phoenixa] Level +1",
+                "30% chance to inflict [Mortal Wound] on the enemy",
+                "Ignore debuff RES",
+                "Ignore enemy defense proportional to [Phoenixa] level (up to 80)"
+              ]
             }
           ],
           "special": []
@@ -409,26 +564,75 @@
           "sp_cost": "1000",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 20",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 300s"
+              "value": "",
+              "effects": [
+                "Duration: 300s",
+                "A.R. +1 at Lv. 11+",
+                "ATK +10%",
+                "ASPD +10%",
+                "Physical PEN +15",
+                "All Damage Taken -10%",
+                "Increase [Phoenixa] Lv. upon accurate skill hits"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 300s"
+              "value": "",
+              "effects": [
+                "Duration: 300s",
+                "A.R. +1 at Lv. 11+",
+                "ATK +10%",
+                "ASPD +10%",
+                "Physical PEN +15",
+                "All Damage Taken -10%",
+                "Increase [Phoenixa] Lv. upon accurate skill hits"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 300s"
+              "value": "",
+              "effects": [
+                "Duration: 300s",
+                "A.R. +1 at Lv. 11+",
+                "ATK +10%",
+                "ASPD +10%",
+                "Physical PEN +15",
+                "All Damage Taken -10%",
+                "Increase [Phoenixa] Lv. upon accurate skill hits"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 300s"
+              "value": "",
+              "effects": [
+                "Duration: 300s",
+                "A.R. +1 at Lv. 11+",
+                "ATK +10%",
+                "ASPD +10%",
+                "Physical PEN +15",
+                "All Damage Taken -10%",
+                "Increase [Phoenixa] Lv. upon accurate skill hits"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 300s"
+              "value": "",
+              "effects": [
+                "Duration: 300s",
+                "A.R. +1 at Lv. 11+",
+                "ATK +10%",
+                "ASPD +10%",
+                "Physical PEN +15",
+                "All Damage Taken -10%",
+                "Increase [Phoenixa] Lv. upon accurate skill hits"
+              ]
             }
           ],
           "special": []
@@ -446,14 +650,32 @@
           "sp_cost": "700",
           "aggro": "150",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 8",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2800%"
+              "value": "АТК: 2800%",
+              "effects": [
+                "[Phoenixa] Level +1",
+                "The more targets hit, the higher the skill damage according to [Phoenixa] level (up to 3x)",
+                "Ignore enemy defense proportional to [Phoenixa] level (up to 80)",
+                "In [Retornador] state, ignore 100 defense of enemies (halved for PCs)",
+                "In [Piedad] state, skill damage doubles"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5600%"
+              "value": "АТК: 5600%",
+              "effects": [
+                "[Phoenixa] Level +1",
+                "The more targets hit, the higher the skill damage according to [Phoenixa] level (up to 3x)",
+                "Ignore enemy defense proportional to [Phoenixa] level (up to 80)",
+                "In [Retornador] state, ignore 100 defense of enemies (halved for PCs)",
+                "In [Piedad] state, skill damage doubles"
+              ]
             }
           ],
           "special": []
@@ -471,14 +693,30 @@
           "sp_cost": "800",
           "aggro": "242",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 8",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2600%"
+              "value": "АТК: 2600%",
+              "effects": [
+                "On hit, increase [Phoenixa] by 1 level",
+                "Ignore enemy defense proportional to [Phoenixa] level (up to 80)",
+                "The more targets hit, the higher the skill damage according to [Phoenixa] level (up to 3x)",
+                "In [Retornador] state, ignore 100 defense of enemies (halved for PCs)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5200%"
+              "value": "АТК: 5200%",
+              "effects": [
+                "On hit, increase [Phoenixa] by 1 level",
+                "Ignore enemy defense proportional to [Phoenixa] level (up to 80)",
+                "The more targets hit, the higher the skill damage according to [Phoenixa] level (up to 3x)",
+                "In [Retornador] state, ignore 100 defense of enemies (halved for PCs)"
+              ]
             }
           ],
           "special": []
@@ -496,14 +734,34 @@
           "sp_cost": "1000",
           "aggro": "270",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 16",
+          "soft_armor_atk": "85%",
+          "heavy_armor_atk": "120%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2900%"
+              "value": "АТК: 2900%",
+              "effects": [
+                "[Phoenixa] Level +1",
+                "Skill damage up to 2 times proportional to the casters lost HP",
+                "Ignore enemy defense proportional to [Phoenixa] level (up to 100)",
+                "Skill damage against monsters up to 3 times proportional to [Phoenixa] level",
+                "In [Retornador] state, ignore 100 defense of enemies (halved for PCs)",
+                "In [Piedad] state, damage triples"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5800%"
+              "value": "АТК: 5800%",
+              "effects": [
+                "[Phoenixa] Level +1",
+                "Skill damage up to 2 times proportional to the casters lost HP",
+                "Ignore enemy defense proportional to [Phoenixa] level (up to 100)",
+                "Skill damage against monsters up to 3 times proportional to [Phoenixa] level",
+                "In [Retornador] state, ignore 100 defense of enemies (halved for PCs)",
+                "In [Piedad] state, damage triples"
+              ]
             }
           ],
           "special": []

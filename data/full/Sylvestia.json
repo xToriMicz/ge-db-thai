@@ -36,6 +36,7 @@
         "effects": [
           "Duration: 300s",
           "A.R. +1",
+          "D.R. +1",
           "ATK +20%",
           "When wearing [Leather Armor]",
           "Additional Damage to [Heavy Armor] type enemy PCs +30%",
@@ -111,6 +112,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "[RE: PvE] Skill DMG increases equal to 8% of extra [STR]",
@@ -158,6 +160,7 @@
         "Critical": "+10",
         "Immunity": "10"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Spara nel Ferro",
@@ -172,14 +175,28 @@
           "sp_cost": "350",
           "aggro": "50",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "90%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": [
+                "Fixed melee damage",
+                "Ignore Evasion",
+                "80% chance to inflict [Silence] on hit"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3600%"
+              "value": "АТК: 3600%",
+              "effects": [
+                "Fixed melee damage",
+                "Ignore Evasion",
+                "80% chance to inflict [Silence] on hit"
+              ]
             }
           ],
           "special": []
@@ -197,14 +214,30 @@
           "sp_cost": "515",
           "aggro": "75",
           "skill_type": "COUNTER",
+          "consume_item": "Ancient Star Orb x 8",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "Fixed melee damage",
+                "Detect and counter melee or ranged attack skills within 10m",
+                "Cannot counter magic",
+                "Gain [Bellaverde] buff and switch to [Rafinata] stance upon a successful counter"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4400%"
+              "value": "АТК: 4400%",
+              "effects": [
+                "Fixed melee damage",
+                "Detect and counter melee or ranged attack skills within 10m",
+                "Cannot counter magic",
+                "Gain [Bellaverde] buff and switch to [Rafinata] stance upon a successful counter"
+              ]
             }
           ],
           "special": []
@@ -222,14 +255,32 @@
           "sp_cost": "570",
           "aggro": "90",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 9",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "130%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2500%"
+              "value": "АТК: 2500%",
+              "effects": [
+                "Fixed melee damage",
+                "Ignore Evasion",
+                "40% chance to inflict [Critical Injury] on hit",
+                "Absorb 80% of the damage as HP on hit",
+                "Gain [Bellanera] buff and switch to [Rafinata] stance on hit"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5000%"
+              "value": "АТК: 5000%",
+              "effects": [
+                "Fixed melee damage",
+                "Ignore Evasion",
+                "40% chance to inflict [Critical Injury] on hit",
+                "Absorb 80% of the damage as HP on hit",
+                "Gain [Bellanera] buff and switch to [Rafinata] stance on hit"
+              ]
             }
           ],
           "special": []
@@ -282,12 +333,13 @@
         "Penetration": "5+20",
         "Immunity": "15"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Parare il Punto",
           "image": "rfnt_parareilpunto.jpg",
           "description": "Stab a nearby enemy twice deeply, then push them away with an umbrella.",
-          "target": "",
+          "target": "Up to 1 enemy within 2m radius.",
           "casting_time": "Instant",
           "cooldown": "12 sec.",
           "duration": "2.433 sec.",
@@ -296,14 +348,30 @@
           "sp_cost": "300",
           "aggro": "50",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 6",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "105%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": [
+                "Ignore Evasion",
+                "Ignore enemy defense 50 + (additional [Strength] *1) on the third hit",
+                "60% chance to inflict [Critical Injury] on hit",
+                "Ignore All RES"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3600%"
+              "value": "АТК: 3600%",
+              "effects": [
+                "Ignore Evasion",
+                "Ignore enemy defense 50 + (additional [Strength] *1) on the third hit",
+                "60% chance to inflict [Critical Injury] on hit",
+                "Ignore All RES"
+              ]
             }
           ],
           "special": []
@@ -312,7 +380,7 @@
           "name": "Parate Taliando",
           "image": "rfnt_paratetagliando.jpg",
           "description": "Straighten your posture, then dash forward with a rapier thrust.",
-          "target": "",
+          "target": "Up to 8 enemies within 8m radius in the designated direction with a 2m width",
           "casting_time": "0.967 sec.",
           "cooldown": "16 sec.",
           "duration": "1.166 sec.",
@@ -321,14 +389,28 @@
           "sp_cost": "450",
           "aggro": "75",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 12",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "105%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "Ignore Evasion",
+                "Ignore enemy defense 50 + (additional [Strength] *1) on the third hit",
+                "Skill damage increases with more targets hit (up to 4 times)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4400%"
+              "value": "АТК: 4400%",
+              "effects": [
+                "Ignore Evasion",
+                "Ignore enemy defense 50 + (additional [Strength] *1) on the third hit",
+                "Skill damage increases with more targets hit (up to 4 times)"
+              ]
             }
           ],
           "special": []
@@ -337,7 +419,7 @@
           "name": "Spara Pinete",
           "image": "rfnt_sparafinte.jpg",
           "description": "Leap into the designated area and perform a mixed attack with two swords. Reuse the skill during the casting time to perform an additional variant attack [Spara Terzo].",
-          "target": "",
+          "target": "Up to 3 enemies within 4m radius in the designated direction",
           "casting_time": "Instant",
           "cooldown": "23 sec.",
           "duration": "2.2 sec.",
@@ -346,14 +428,38 @@
           "sp_cost": "650",
           "aggro": "0",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 17",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2600%"
+              "value": "АТК: 2600%",
+              "effects": [
+                "Ignore enemy defense 50 + (additional [Strength] *1) on the third hit",
+                "Skill damage increases 4 times when attacking from the front (halved for PCs)",
+                "Skill damage increases 2 times in [Bellaverde], [Counter] state",
+                "Skill damage increases 2 times against [Critical Injury] enemies in [Bellanera] state",
+                "[Spara Terzo]",
+                "Ignore enemy defense 100",
+                "50% chance to inflict [Critical Injury] on hit",
+                "Ignore enemy defense 80 + (additional [Strength] *1) on the third hit"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5200%"
+              "value": "АТК: 5200%",
+              "effects": [
+                "Ignore enemy defense 50 + (additional [Strength] *1) on the third hit",
+                "Skill damage increases 4 times when attacking from the front (halved for PCs)",
+                "Skill damage increases 2 times in [Bellaverde], [Counter] state",
+                "Skill damage increases 2 times against [Critical Injury] enemies in [Bellanera] state",
+                "[Spara Terzo]",
+                "Ignore enemy defense 100",
+                "50% chance to inflict [Critical Injury] on hit",
+                "Ignore enemy defense 80 + (additional [Strength] *1) on the third hit"
+              ]
             }
           ],
           "special": []
@@ -371,14 +477,40 @@
           "sp_cost": "950",
           "aggro": "0",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 20",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2760%"
+              "value": "АТК: 2760%",
+              "effects": [
+                "Ignore enemy defense 50 + (additional [Strength] *1) on the third hit",
+                "Skill damage increases 4 times when attacking from the front (halved for PCs)",
+                "Skill damage increases 2 times in [Bellaverde], [Counter] state",
+                "Skill damage increases 2 times against [Critical Injury] enemies in [Bellanera] state",
+                "[Score Quarte]",
+                "Ignore enemy defense 100",
+                "50% chance to inflict [Critical Injury] on hit",
+                "Ignore enemy defense 80 + (additional [Strength] *1) on the third hit",
+                "Skill damage increases 4 times when attacking from behind (halved for PCs)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5520%"
+              "value": "АТК: 5520%",
+              "effects": [
+                "Ignore enemy defense 50 + (additional [Strength] *1) on the third hit",
+                "Skill damage increases 4 times when attacking from the front (halved for PCs)",
+                "Skill damage increases 2 times in [Bellaverde], [Counter] state",
+                "Skill damage increases 2 times against [Critical Injury] enemies in [Bellanera] state",
+                "[Score Quarte]",
+                "Ignore enemy defense 100",
+                "50% chance to inflict [Critical Injury] on hit",
+                "Ignore enemy defense 80 + (additional [Strength] *1) on the third hit",
+                "Skill damage increases 4 times when attacking from behind (halved for PCs)"
+              ]
             }
           ],
           "special": []
@@ -396,14 +528,30 @@
           "sp_cost": "1270",
           "aggro": "165",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 28",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "115%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2800%"
+              "value": "АТК: 2800%",
+              "effects": [
+                "Ignore enemy defense 50 + (additional [Strength] *1) on the third hit",
+                "Skill damage increases 4 times when attacking from the front (halved for PCs)",
+                "Skill damage increases 2 times in [Bellaverde], [Counter] state",
+                "Skill damage increases 2 times against [Critical Injury] enemies in [Bellanera] state"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5600%"
+              "value": "АТК: 5600%",
+              "effects": [
+                "Ignore enemy defense 50 + (additional [Strength] *1) on the third hit",
+                "Skill damage increases 4 times when attacking from the front (halved for PCs)",
+                "Skill damage increases 2 times in [Bellaverde], [Counter] state",
+                "Skill damage increases 2 times against [Critical Injury] enemies in [Bellanera] state"
+              ]
             }
           ],
           "special": []

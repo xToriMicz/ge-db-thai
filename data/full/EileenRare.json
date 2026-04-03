@@ -88,6 +88,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -131,6 +132,7 @@
         "Penetration": "10+25",
         "Immunity": "5+10"
       },
+      "consume": "Elemental Sphere x 3",
       "skills": [
         {
           "name": "Aurel Shock",
@@ -145,14 +147,32 @@
           "sp_cost": "50",
           "aggro": "30",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 1",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 499%"
+              "value": "АТК: 499%",
+              "effects": [
+                "100% chance to inflict [Golden Circle Mark] on enemy",
+                "100% chance to inflict [Electrical Burn] on enemy",
+                "The further away from a target, the more damage",
+                "Increases skill damage by 3% of extra [INT]",
+                "50% chance to reduce other skills cooldowns by 5 seconds"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 998%"
+              "value": "АТК: 998%",
+              "effects": [
+                "100% chance to inflict [Golden Circle Mark] on enemy",
+                "100% chance to inflict [Electrical Burn] on enemy",
+                "The further away from a target, the more damage",
+                "Increases skill damage by 3% of extra [INT]",
+                "50% chance to reduce other skills cooldowns by 5 seconds"
+              ]
             }
           ],
           "special": []
@@ -170,26 +190,71 @@
           "sp_cost": "250",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 360 sec."
+              "value": "",
+              "effects": [
+                "Duration: 360 sec.",
+                "Lightning Penetration+1",
+                "Lightning Attribute extra damage +30",
+                "10% chance to impose [Golden Circle Mark] on the enemy that attacks you",
+                "INT increases equal to Max SP / 250 (Max. 10)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 360 sec."
+              "value": "",
+              "effects": [
+                "Duration: 360 sec.",
+                "Lightning Penetration+10",
+                "Lightning Attribute extra damage +300",
+                "10% chance to impose [Golden Circle Mark] on the enemy that attacks you",
+                "INT increases equal to Max SP / 250 (Max. 10)"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 360 sec."
+              "value": "",
+              "effects": [
+                "Duration: 360 sec.",
+                "A.R.+1",
+                "Lightning Penetration+11",
+                "Lightning Attribute extra damage +330",
+                "10% chance to impose [Golden Circle Mark] on the enemy that attacks you",
+                "INT increases equal to Max SP / 250 (Max. 20)",
+                "Accuracy +20"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 360 sec."
+              "value": "",
+              "effects": [
+                "Duration: 360 sec.",
+                "A.R.+1",
+                "Lightning Penetration+12",
+                "Lightning Attribute extra damage +360",
+                "10% chance to impose [Golden Circle Mark] on the enemy that attacks you",
+                "INT increases equal to Max SP / 250 (Max. 20)",
+                "Accuracy +20"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 360 sec."
+              "value": "",
+              "effects": [
+                "Duration: 360 sec.",
+                "A.R.+1",
+                "Lightning Penetration+13",
+                "Lightning Attribute extra damage +390",
+                "10% chance to impose [Golden Circle Mark] on the enemy that attacks you",
+                "INT increases equal to Max SP / 250 (Max. 20)",
+                "Accuracy +20"
+              ]
             }
           ],
           "special": []
@@ -207,14 +272,32 @@
           "sp_cost": "300",
           "aggro": "81",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1345%"
+              "value": "АТК: 1345%",
+              "effects": [
+                "100% chance to inflict [Golden Circle Mark]",
+                "50% chance to inflict [Hold]",
+                "The less max SP of enemy PC [Golden Circle Mark] than the casters max SP, the more damage.",
+                "Skill damage to enemy monster increases during [Golden Circle Mark].",
+                "50% chance to reduce other skills cooldowns by 5 seconds"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2690%"
+              "value": "АТК: 2690%",
+              "effects": [
+                "100% chance to inflict [Golden Circle Mark]",
+                "50% chance to inflict [Hold]",
+                "The less max SP of enemy PC [Golden Circle Mark] than the casters max SP, the more damage.",
+                "Skill damage to enemy monster increases during [Golden Circle Mark].",
+                "50% chance to reduce other skills cooldowns by 5 seconds"
+              ]
             }
           ],
           "special": []
@@ -232,14 +315,36 @@
           "sp_cost": "680",
           "aggro": "200",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "20%",
+          "heavy_armor_atk": "20%",
+          "light_armor_atk": "20%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 715%"
+              "value": "АТК: 715%",
+              "effects": [
+                "100% chance to inflict [Golden Circle Mark]",
+                "During channeling, Max. 13 attacks",
+                "Reusing during casting, skill finish attack",
+                "Skill damage for every attack",
+                "15% chance to inflict [Dyna]",
+                "The less max SP of enemy PC with [Golden Circle Mark] than the casters max SP, the more damage.",
+                "More skill damage to enemy monster with [Golden Circle Mark]."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1430%"
+              "value": "АТК: 1430%",
+              "effects": [
+                "100% chance to inflict [Golden Circle Mark]",
+                "During channeling, Max. 13 attacks",
+                "Reusing during casting, skill finish attack",
+                "Skill damage for every attack",
+                "15% chance to inflict [Dyna]",
+                "The less max SP of enemy PC with [Golden Circle Mark] than the casters max SP, the more damage.",
+                "More skill damage to enemy monster with [Golden Circle Mark]."
+              ]
             }
           ],
           "special": []
@@ -257,14 +362,32 @@
           "sp_cost": "1000",
           "aggro": "225",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 15",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1845%"
+              "value": "АТК: 1845%",
+              "effects": [
+                "100% chance to inflict [Golden Circle Mark]",
+                "50% chance to inflict [Hold]",
+                "The less max SP of enemy PC [Golden Circle Mark] than the casters max SP, the more damage.",
+                "Skill damage to enemy monster increases during [Golden Circle Mark].",
+                "50% chance to reduce other skills cooldowns by 5 seconds"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3690%"
+              "value": "АТК: 3690%",
+              "effects": [
+                "100% chance to inflict [Golden Circle Mark]",
+                "50% chance to inflict [Hold]",
+                "The less max SP of enemy PC [Golden Circle Mark] than the casters max SP, the more damage.",
+                "Skill damage to enemy monster increases during [Golden Circle Mark].",
+                "50% chance to reduce other skills cooldowns by 5 seconds"
+              ]
             }
           ],
           "special": []

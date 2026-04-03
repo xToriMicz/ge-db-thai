@@ -35,6 +35,8 @@
         "level": "Level 1",
         "effects": [
           "Duration 5 Minutes",
+          "ATK +25%",
+          "Monster ATK +50%",
           "Physical Penetration +1",
           "Casts [Pierced Wound] by 100% as many as hits made with normal ATK",
           "Every normal attack hit inflicts [Pierced Wound]. Skill attacks have 100% chance to change enemys [Pierced Wound] to [Enhanced Pierced Wound]"
@@ -44,6 +46,8 @@
         "level": "Level 10",
         "effects": [
           "Duration 5 Minutes",
+          "ATK +25%",
+          "Monster ATK +50%",
           "Physical Penetration +10",
           "Casts [Pierced Wound] by 100% as many as hits made with normal ATK",
           "Every normal attack hit inflicts [Pierced Wound]. Skill attacks have 100% chance to change enemys [Pierced Wound] to [Enhanced Pierced Wound]"
@@ -53,6 +57,8 @@
         "level": "Level 11",
         "effects": [
           "Duration 5 Minutes",
+          "ATK +25%",
+          "Monster ATK +50%",
           "Physical Penetration +11",
           "A.R. +1",
           "Casts [Pierced Wound] by 100% as many as hits made with normal ATK",
@@ -63,6 +69,8 @@
         "level": "Level 12",
         "effects": [
           "Duration 5 Minutes",
+          "ATK +25%",
+          "Monster ATK +50%",
           "Physical Penetration +12",
           "A.R. +1",
           "Casts [Pierced Wound] by 100% as many as hits made with normal ATK",
@@ -73,6 +81,8 @@
         "level": "Level 13",
         "effects": [
           "Duration 5 Minutes",
+          "ATK +25%",
+          "Monster ATK +50%",
           "Physical Penetration +13",
           "A.R. +1",
           "Casts [Pierced Wound] by 100% as many as hits made with normal ATK",
@@ -133,6 +143,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -168,6 +179,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "equipped_items": "Dagger",
       "icon_position": {
@@ -208,6 +220,7 @@
         "Penetration": "5+30",
         "Immunity": "5+10"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Bloody Dagger",
@@ -216,20 +229,32 @@
           "target": "1 enemy within a range of 10m",
           "casting_time": "Instant",
           "cooldown": "8 sec.",
-          "duration": "300 seconds",
+          "duration": "2.6 sec.",
           "hits_flying": "Yes",
           "knock_down": "Yes",
           "sp_cost": "100",
           "aggro": "120",
           "skill_type": "Shooting",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 900%"
+              "value": "АТК: 900%",
+              "effects": [
+                "Ignores enemys DEF by 30",
+                "30% damage per level of [Pierced Wound] imposed on enemy, Ignores DEF by 9."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": [
+                "Ignores enemys DEF by 30",
+                "30% damage per level of [Pierced Wound] imposed on enemy, Ignores DEF by 9."
+              ]
             }
           ],
           "special": []
@@ -247,14 +272,26 @@
           "sp_cost": "350",
           "aggro": "160",
           "skill_type": "Shooting",
+          "consume_item": "Ancient Star Orb x 3",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1100%"
+              "value": "АТК: 1100%",
+              "effects": [
+                "Ignores enemys DEF by 30",
+                "30% damage per level of [Pierced Wound] imposed on enemy, Ignores DEF by 9."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "Ignores enemys DEF by 30",
+                "30% damage per level of [Pierced Wound] imposed on enemy, Ignores DEF by 9."
+              ]
             }
           ],
           "special": []
@@ -272,26 +309,78 @@
           "sp_cost": "400",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 5 Minutes."
+              "value": "",
+              "effects": [
+                "Duration: 5 Minutes.",
+                "ATK+5%",
+                "DEX +10",
+                "D.R. +1",
+                "Monster ATK +25%",
+                "Evasion+1%",
+                "Critical+1%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 5 Minutes."
+              "value": "",
+              "effects": [
+                "Duration: 5 Minutes.",
+                "ATK+50%",
+                "DEX +10",
+                "D.R. +1",
+                "Monster ATK +25%",
+                "Evasion+10%",
+                "Critical+10%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 5 Minutes."
+              "value": "",
+              "effects": [
+                "Duration: 5 Minutes.",
+                "ATK+55%",
+                "DEX +10",
+                "D.R. +1",
+                "Monster ATK +25%",
+                "Evasion+11%",
+                "Critical+11%",
+                "A.R.+1"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 5 Minutes."
+              "value": "",
+              "effects": [
+                "Duration: 5 Minutes.",
+                "ATK+60%",
+                "DEX +10",
+                "D.R. +1",
+                "Monster ATK +25%",
+                "Evasion+12%",
+                "Critical+12%",
+                "A.R.+1"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 5 Minutes."
+              "value": "",
+              "effects": [
+                "Duration: 5 Minutes.",
+                "ATK+65%",
+                "DEX +10",
+                "D.R. +1",
+                "Monster ATK +25%",
+                "Evasion+13%",
+                "Critical+13%",
+                "A.R.+1"
+              ]
             }
           ],
           "special": []
@@ -309,14 +398,26 @@
           "sp_cost": "400",
           "aggro": "180",
           "skill_type": "Shooting",
+          "consume_item": "Ancient Star Orb x 4",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "120%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1400%"
+              "value": "АТК: 1400%",
+              "effects": [
+                "Ignores enemys DEF by 40",
+                "30% damage per level of [Pierced Wound] imposed on enemy, Ignores DEF by 9."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2800%"
+              "value": "АТК: 2800%",
+              "effects": [
+                "Ignores enemys DEF by 40",
+                "30% damage per level of [Pierced Wound] imposed on enemy, Ignores DEF by 9."
+              ]
             }
           ],
           "special": []
@@ -334,14 +435,28 @@
           "sp_cost": "450",
           "aggro": "200",
           "skill_type": "Shooting",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "120%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2500%"
+              "value": "АТК: 2500%",
+              "effects": [
+                "50% chance to impose [Bleeding]",
+                "Ignores enemys DEF by 50",
+                "30% damage per level of [Pierced Wound] imposed on enemy, Ignores DEF by 9."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5000%"
+              "value": "АТК: 5000%",
+              "effects": [
+                "50% chance to impose [Bleeding]",
+                "Ignores enemys DEF by 50",
+                "30% damage per level of [Pierced Wound] imposed on enemy, Ignores DEF by 9."
+              ]
             }
           ],
           "special": []

@@ -90,6 +90,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -131,6 +132,7 @@
         "Penetration": "10+15",
         "Immunity": "10+10"
       },
+      "consume": "Elemental Sphere x 1",
       "skills": [
         {
           "name": "Call Lightning",
@@ -145,26 +147,80 @@
           "sp_cost": "700",
           "aggro": "50",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2000%"
+              "value": "АТК: 2000%",
+              "effects": [
+                "Duration: 300s",
+                "A.R. +1",
+                "ATK +10%",
+                "Accuracy +10",
+                "Movement Speed +10%",
+                "[Ziz] Monster ATK +250%, Cast Time -20%, Movement Speed Limit +2.50",
+                "[Silaen] Monster ATK +50%, Movement Speed Limit +1.50",
+                "Skill Damage towards enemy [PC] increases according to level of [Celestial Swift]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4000%"
+              "value": "АТК: 4000%",
+              "effects": [
+                "Duration: 300s",
+                "A.R. +1",
+                "ATK +10%",
+                "Accuracy +10",
+                "Movement Speed +10%",
+                "[Ziz] Monster ATK +250%, Cast Time -20%, Movement Speed Limit +2.50",
+                "[Silaen] Monster ATK +50%, Movement Speed Limit +1.50",
+                "Skill Damage towards enemy [PC] increases according to level of [Celestial Swift]"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "АТК: 4400%"
+              "value": "АТК: 4400%",
+              "effects": [
+                "Duration: 300s",
+                "A.R. +1",
+                "ATK +10%",
+                "Accuracy +10",
+                "Movement Speed +10%",
+                "[Ziz] Monster ATK +250%, Cast Time -20%, Movement Speed Limit +2.50",
+                "[Silaen] Monster ATK +50%, Movement Speed Limit +1.50",
+                "Skill Damage towards enemy [PC] increases according to level of [Celestial Swift]"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "АТК: 4800%"
+              "value": "АТК: 4800%",
+              "effects": [
+                "Duration: 300s",
+                "A.R. +1",
+                "ATK +10%",
+                "Accuracy +10",
+                "Movement Speed +10%",
+                "[Ziz] Monster ATK +250%, Cast Time -20%, Movement Speed Limit +2.50",
+                "[Silaen] Monster ATK +50%, Movement Speed Limit +1.50",
+                "Skill Damage towards enemy [PC] increases according to level of [Celestial Swift]"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "АТК: 4800%"
+              "value": "АТК: 4800%",
+              "effects": [
+                "Duration: 300s",
+                "A.R. +1",
+                "ATK +10%",
+                "Accuracy +10",
+                "Movement Speed +10%",
+                "[Ziz] Monster ATK +250%, Cast Time -20%, Movement Speed Limit +2.50",
+                "[Silaen] Monster ATK +50%, Movement Speed Limit +1.50",
+                "Skill Damage towards enemy [PC] increases according to level of [Celestial Swift]"
+              ]
             }
           ],
           "special": []
@@ -182,14 +238,30 @@
           "sp_cost": "400",
           "aggro": "100",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 7",
+          "soft_armor_atk": "120%",
+          "heavy_armor_atk": "70%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2300%"
+              "value": "АТК: 2300%",
+              "effects": [
+                "50% Chance to inflict [Bleeding]",
+                "Skill Damage increases by x3 when [Call Lightning] is active",
+                "[Ziz] Ignores 25 RES from enemy [PC]",
+                "[Silaen] Ignores 60 RES from enemy [Monster]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4600%"
+              "value": "АТК: 4600%",
+              "effects": [
+                "50% Chance to inflict [Bleeding]",
+                "Skill Damage increases by x3 when [Call Lightning] is active",
+                "[Ziz] Ignores 25 RES from enemy [PC]",
+                "[Silaen] Ignores 60 RES from enemy [Monster]"
+              ]
             }
           ],
           "special": []
@@ -207,14 +279,36 @@
           "sp_cost": "750",
           "aggro": "125",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 15",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "120%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2460%"
+              "value": "АТК: 2460%",
+              "effects": [
+                "50% Chance to inflict [Shock]",
+                "Applies [Ziz Aftershock] towards enemy",
+                "Skill Damage increases up to 3x according to number of fewer targets (1/3 for [PC])",
+                "Increases [Celestial Swift] by +1 Level per enemy hit",
+                "Skill Damage increases up to 1.5x against enemy when [Celestial Swift] is active",
+                "[Ziz] Applies [Shackles] Lv. 5 to enemy [PC]",
+                "[Silaen] Ignores 45 RES from enemy [Monster]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4920%"
+              "value": "АТК: 4920%",
+              "effects": [
+                "50% Chance to inflict [Shock]",
+                "Applies [Ziz Aftershock] towards enemy",
+                "Skill Damage increases up to 3x according to number of fewer targets (1/3 for [PC])",
+                "Increases [Celestial Swift] by +1 Level per enemy hit",
+                "Skill Damage increases up to 1.5x against enemy when [Celestial Swift] is active",
+                "[Ziz] Applies [Shackles] Lv. 5 to enemy [PC]",
+                "[Silaen] Ignores 45 RES from enemy [Monster]"
+              ]
             }
           ],
           "special": []
@@ -232,14 +326,38 @@
           "sp_cost": "850",
           "aggro": "150",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 20",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "120%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2600%"
+              "value": "АТК: 2600%",
+              "effects": [
+                "50% Chance to inflict [Shock]",
+                "Applies [Ziz Aftershock] towards enemy",
+                "Skill Damage increases up to 3x according to number of fewer targets (1/3 for [PC])",
+                "Skill Damage additionally increases by 3x when enemy has [Ziz Aftershock]",
+                "Increases [Celestial Swift] by +1 Level per enemy hit",
+                "Skill Damage increases up to 1.5x against enemy when [Celestial Swift] is active",
+                "[Ziz] Applies [Web] Lv. 3 to enemy [PC] and prevents knockback towards enemy [PC]",
+                "[Silaen] Ignores 35 RES from enemy [Monster]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5200%"
+              "value": "АТК: 5200%",
+              "effects": [
+                "50% Chance to inflict [Shock]",
+                "Applies [Ziz Aftershock] towards enemy",
+                "Skill Damage increases up to 3x according to number of fewer targets (1/3 for [PC])",
+                "Skill Damage additionally increases by 3x when enemy has [Ziz Aftershock]",
+                "Increases [Celestial Swift] by +1 Level per enemy hit",
+                "Skill Damage increases up to 1.5x against enemy when [Celestial Swift] is active",
+                "[Ziz] Applies [Web] Lv. 3 to enemy [PC] and prevents knockback towards enemy [PC]",
+                "[Silaen] Ignores 35 RES from enemy [Monster]"
+              ]
             }
           ],
           "special": []
@@ -257,14 +375,32 @@
           "sp_cost": "1100",
           "aggro": "150",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 25",
+          "soft_armor_atk": "120%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 3300%"
+              "value": "АТК: 3300%",
+              "effects": [
+                "20% Chance to inflict [Shock]",
+                "Applies [Ziz Aftershock] towards enemy",
+                "Skill Damage additionally increases by 3x when enemy has [Ziz Aftershock]",
+                "When [Electric Charge] is active, [Celestial Swift] level +10",
+                "Ignores 75 RES from enemy [Monster]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 6600%"
+              "value": "АТК: 6600%",
+              "effects": [
+                "20% Chance to inflict [Shock]",
+                "Applies [Ziz Aftershock] towards enemy",
+                "Skill Damage additionally increases by 3x when enemy has [Ziz Aftershock]",
+                "When [Electric Charge] is active, [Celestial Swift] level +10",
+                "Ignores 75 RES from enemy [Monster]"
+              ]
             }
           ],
           "special": []

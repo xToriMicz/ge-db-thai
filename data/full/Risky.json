@@ -2,7 +2,7 @@
   "slug": "Risky",
   "equipment": {
     "category": "Usable Equipment",
-    "medal": "Spirit of Arsene A lazy afternoon of reading",
+    "medal": "Spirit of Arsene A lazy afternoon of reading My dream is to be a magician!",
     "head": "None",
     "earring": "Earring",
     "face": "None",
@@ -91,6 +91,7 @@
       "lv25_bonus": {
         "ATK SPD": "+10%"
       },
+      "consume": "",
       "skills": [],
       "equipped_items": "None",
       "icon_position": {
@@ -129,6 +130,7 @@
         "Penetration": "10+10",
         "Immunity": "5+5"
       },
+      "consume": "Psychic Sphere x 1",
       "skills": [
         {
           "name": "One Card",
@@ -143,14 +145,26 @@
           "sp_cost": "450",
           "aggro": "160",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 2",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "125%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1400%"
+              "value": "АТК: 1400%",
+              "effects": [
+                "50% chance to inflict [Joker] on enemy",
+                "Skill damage increases in proportion to HP of enemy that got more HP than the casters HP."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2800%"
+              "value": "АТК: 2800%",
+              "effects": [
+                "50% chance to inflict [Joker] on enemy",
+                "Skill damage increases in proportion to HP of enemy that got more HP than the casters HP."
+              ]
             }
           ],
           "special": []
@@ -168,14 +182,30 @@
           "sp_cost": "500",
           "aggro": "0",
           "skill_type": "Build",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Random summon of the Four Devas"
+              "value": "",
+              "effects": [
+                "Random summon of the Four Devas",
+                "According to the skill level and INT, the bonus ability of the Four Devas will be applied.",
+                "Extinction after the attack",
+                "The summoned Four Devas will disappear if there was no enemy within 7m."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Random summon of the Four Devas"
+              "value": "",
+              "effects": [
+                "Random summon of the Four Devas",
+                "According to the skill level and INT, the bonus ability of the Four Devas will be applied.",
+                "Extinction after the attack",
+                "The summoned Four Devas will disappear if there was no enemy within 7m."
+              ]
             }
           ],
           "special": [
@@ -196,14 +226,26 @@
           "sp_cost": "800",
           "aggro": "200",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "50%",
+          "heavy_armor_atk": "125%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": [
+                "50% chance to inflict [Dice of Death] on enemy",
+                "Skill damage increases in proportion to HP of enemy that got more HP than the casters max HP."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3600%"
+              "value": "АТК: 3600%",
+              "effects": [
+                "50% chance to inflict [Dice of Death] on enemy",
+                "Skill damage increases in proportion to HP of enemy that got more HP than the casters max HP."
+              ]
             }
           ],
           "special": []
@@ -221,14 +263,24 @@
           "sp_cost": "750",
           "aggro": "116",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 7",
+          "soft_armor_atk": "50%",
+          "heavy_armor_atk": "125%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "Skill damage increases in proportion to HP of enemy that got more HP than the casters max HP."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4800%"
+              "value": "АТК: 4800%",
+              "effects": [
+                "Skill damage increases in proportion to HP of enemy that got more HP than the casters max HP."
+              ]
             }
           ],
           "special": []
@@ -246,14 +298,26 @@
           "sp_cost": "1050",
           "aggro": "128",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "60%",
+          "heavy_armor_atk": "125%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2800%"
+              "value": "АТК: 2800%",
+              "effects": [
+                "75% chance to inflict [Bleeding] on enemy",
+                "Skill damage increases in proportion to HP of enemy that got more HP than the casters max HP."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5600%"
+              "value": "АТК: 5600%",
+              "effects": [
+                "75% chance to inflict [Bleeding] on enemy",
+                "Skill damage increases in proportion to HP of enemy that got more HP than the casters max HP."
+              ]
             }
           ],
           "special": []

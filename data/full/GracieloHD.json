@@ -110,11 +110,19 @@
       }
     },
     {
-      "stance_name": "Bare Knuckle",
+      "stance_name": "Martial Arts Book-Chap. of Wind",
       "equipped_items": "Knuckle",
       "icon_position": {
-        "x": -150,
-        "y": 0
+        "x": -100,
+        "y": -200
+      }
+    },
+    {
+      "stance_name": "Martial Arts Book-Chap.Lightning",
+      "equipped_items": "Knuckle",
+      "icon_position": {
+        "x": -400,
+        "y": -125
       }
     },
     {
@@ -210,6 +218,7 @@
       "lv25_bonus": {
         "ATK SPD": "+10%"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Side Kick",
@@ -224,14 +233,20 @@
           "sp_cost": "100",
           "aggro": "74",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 314%"
+              "value": "АТК: 314%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 628%"
+              "value": "АТК: 628%",
+              "effects": []
             }
           ],
           "special": []
@@ -241,6 +256,448 @@
       "icon_position": {
         "x": -150,
         "y": 0
+      }
+    },
+    {
+      "name": "Martial Arts Book-Chap. of Wind",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "3",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes"
+      },
+      "stats": {
+        "ASPD": "178",
+        "Bonus ATK": "200%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "100",
+        "EVA": "15",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+15%",
+        "Evasion": "+15",
+        "Critical": "+10"
+      },
+      "consume": "",
+      "skills": [
+        {
+          "name": "Tornado Vortex",
+          "image": "mas_tornadovortex.jpg",
+          "description": "A whirlwind attack that cuts down enemy lines.",
+          "target": "Up to 5 Enemies within a range of 2.5m",
+          "casting_time": "Instant",
+          "cooldown": "0 sec.",
+          "duration": "2.03 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "150",
+          "aggro": "56",
+          "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 223%",
+              "effects": []
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 446%",
+              "effects": []
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Dragon Kick",
+          "image": "mas_dragonkick.jpg",
+          "description": "A fiery series of kicks that knocks the enemy down.",
+          "target": "Up to 6 enemies 7.2 away and within 3 width",
+          "casting_time": "Instant",
+          "cooldown": "15 sec.",
+          "duration": "1.83 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "250",
+          "aggro": "81",
+          "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 328%",
+              "effects": []
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 656%",
+              "effects": []
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Atomic Crazy Rush",
+          "image": "mas_atomiccrazyrush.jpg",
+          "description": "Strikes explosive blows on the enemy with the swiftness of a storm.",
+          "target": "1 adjacent enemy",
+          "casting_time": "Instant",
+          "cooldown": "20 sec.",
+          "duration": "4.9 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "444",
+          "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2165%",
+              "effects": []
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4330%",
+              "effects": []
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [STR]",
+        "[PVP/PVE Maps] Additional 4% DMG according to extra [STR]",
+        "Ignore additional DEF according to extra [STR] * 4",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 4 * 50"
+      ],
+      "equipped_items": "Knuckle",
+      "icon_position": {
+        "x": -100,
+        "y": -200
+      }
+    },
+    {
+      "name": "Martial Arts Book-Chap.Lightning",
+      "info": {
+        "Targets": "1 enemy",
+        "Range": "1m away",
+        "Splash": "None",
+        "Hits per attack": "3",
+        "Hits flying": "No",
+        "Flying": "No",
+        "Regenerate SP": "Yes",
+        "Physical DMG": "-20%"
+      },
+      "stats": {
+        "ASPD": "178",
+        "Bonus ATK": "300%",
+        "MSPD": "1",
+        "MSPD Limit": "8.50",
+        "ACC": "63",
+        "EVA": "20",
+        "BLK": "0",
+        "Fire RES": "0",
+        "Ice RES": "0",
+        "Lightning RES": "0",
+        "Abnormal RES": "0"
+      },
+      "lv25_bonus": {
+        "ATK SPD": "+25%",
+        "Evasion": "+15",
+        "Critical": "+15",
+        "Penetration": "15",
+        "Immunity": "10"
+      },
+      "consume": "",
+      "skills": [
+        {
+          "name": "Third Eye",
+          "image": "masn_mindeye.jpg",
+          "description": "Uses DEF of enemy by reading the enemys weakness with the minds eye.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "30 sec.",
+          "duration": "300 sec",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "600",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "",
+              "effects": [
+                "Duration: 300 sec",
+                "Monster Damage +10%"
+              ]
+            },
+            {
+              "level": "Level 10",
+              "value": "",
+              "effects": [
+                "Duration: 300 sec",
+                "A.R +1",
+                "Monster Damage +100%"
+              ]
+            },
+            {
+              "level": "Level 11",
+              "value": "",
+              "effects": [
+                "Duration: 300 sec",
+                "A.R +1",
+                "Monster Damage +110%"
+              ]
+            },
+            {
+              "level": "Level 12",
+              "value": "",
+              "effects": [
+                "Duration: 300 sec",
+                "A.R +1",
+                "Monster Damage +120%"
+              ]
+            },
+            {
+              "level": "Level 13",
+              "value": "",
+              "effects": [
+                "Duration: 300 sec",
+                "A.R +1",
+                "Monster Damage +130%"
+              ]
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Enhanced Lion Heart",
+          "image": "mma_enhancedlionheart.jpg",
+          "description": "Push the physical and mental limits.",
+          "target": "",
+          "casting_time": "Instant",
+          "cooldown": "40 sec.",
+          "duration": "5 minutes (missions only).",
+          "hits_flying": "No",
+          "knock_down": "No",
+          "sp_cost": "650",
+          "aggro": "0",
+          "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 3",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "",
+              "effects": [
+                "Duration: 21sec.",
+                "ATK+55%",
+                "Move SPD+35%",
+                "Attack SPD+12%",
+                "Evasion Limit rises to 90",
+                "Duration: 5 minutes (missions only)."
+              ]
+            },
+            {
+              "level": "Level 10",
+              "value": "",
+              "effects": [
+                "Duration: 30sec.",
+                "ATK+100%",
+                "Move SPD+80%",
+                "Attack SPD+30%",
+                "Evasion Limit rises to 90",
+                "Duration: 5 minutes (missions only)."
+              ]
+            },
+            {
+              "level": "Level 11",
+              "value": "",
+              "effects": [
+                "Duration: 31sec.",
+                "ATK+105%",
+                "Move SPD+85%",
+                "Attack SPD+32%",
+                "Evasion Limit rises to 90",
+                "A.R.+1",
+                "Duration: 5 minutes (missions only)."
+              ]
+            },
+            {
+              "level": "Level 12",
+              "value": "",
+              "effects": [
+                "Duration: 32sec.",
+                "ATK+110%",
+                "Move SPD+90%",
+                "Attack SPD+34%",
+                "Evasion Limit rises to 90",
+                "A.R.+1",
+                "Duration: 5 minutes (missions only)."
+              ]
+            },
+            {
+              "level": "Level 13",
+              "value": "",
+              "effects": [
+                "Duration: 33sec.",
+                "ATK+115%",
+                "Move SPD+95%",
+                "Attack SPD+36%",
+                "Evasion Limit rises to 90",
+                "A.R.+1",
+                "Duration: 5 minutes (missions only)."
+              ]
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Stormy Helix Circle",
+          "image": "masn_tornadovortex.jpg",
+          "description": "Wipes out surrounding enemies with a movement similar to a storm.",
+          "target": "Up to 5 enemies 6m away",
+          "casting_time": "0.75 sec.",
+          "cooldown": "10 sec.",
+          "duration": "2.03 sec.",
+          "hits_flying": "Yes",
+          "knock_down": "Yes",
+          "sp_cost": "300",
+          "aggro": "80",
+          "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1000%",
+              "effects": [
+                "Deals [Electrical Field] with 50% chance"
+              ]
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 2000%",
+              "effects": [
+                "Deals [Electrical Field] with 50% chance"
+              ]
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Blue Dragon Rising",
+          "image": "masn_dragonkick.jpg",
+          "description": "Rushes quickly like a dragon soaring to the skies.",
+          "target": "Up to 6 enemies 7.2 away and within 3 width",
+          "casting_time": "1.8 sec.",
+          "cooldown": "15 sec.",
+          "duration": "1.83 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "400",
+          "aggro": "100",
+          "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 1500%",
+              "effects": [
+                "Deals [Electrical Field] with 50% chance"
+              ]
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 3000%",
+              "effects": [
+                "Deals [Electrical Field] with 50% chance"
+              ]
+            }
+          ],
+          "special": []
+        },
+        {
+          "name": "Whirlwind Blow",
+          "image": "masn_atomiccrazyrush.jpg",
+          "description": "Attacks an enemy as fast as the wind, smooth like a cloud and strong like lightning.",
+          "target": "1 adjacent enemy",
+          "casting_time": "1.89 sec.",
+          "cooldown": "30 sec.",
+          "duration": "4.9 sec.",
+          "hits_flying": "No",
+          "knock_down": "Yes",
+          "sp_cost": "500",
+          "aggro": "444",
+          "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
+          "levels": [
+            {
+              "level": "Level 1",
+              "value": "АТК: 2000%",
+              "effects": [
+                "50% chance to inflict [Electric Shock] on enemy",
+                "During [Third Eye] status, increases Monster Damage depending on the enemys DEF"
+              ]
+            },
+            {
+              "level": "Level 10",
+              "value": "АТК: 4000%",
+              "effects": [
+                "50% chance to inflict [Electric Shock] on enemy",
+                "During [Third Eye] status, increases Monster Damage depending on the enemys DEF"
+              ]
+            }
+          ],
+          "special": []
+        }
+      ],
+      "lv25_bonus_extra": [
+        "[RE: PvE] Skill DMG increases equal to 8% of extra [STR]",
+        "[PVP/PVE Maps] Additional 3% DMG according to extra [STR]",
+        "Ignore additional DEF according to extra [STR] * 4",
+        "Additional DMG against [PC] + 1x",
+        "Additional DMG against Monster according to 5 * 50"
+      ],
+      "equipped_items": "Knuckle",
+      "icon_position": {
+        "x": -400,
+        "y": -125
       }
     },
     {
@@ -259,7 +716,7 @@
       },
       "stats": {
         "ASPD": "157",
-        "Bonus ATK": "200%",
+        "Bonus ATK": "300%",
         "MSPD": "1",
         "MSPD Limit": "8.50",
         "ACC": "63",
@@ -277,6 +734,7 @@
         "Penetration": "5+15",
         "Immunity": "5+15"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Enhanced Elemental Kick",
@@ -291,14 +749,32 @@
           "sp_cost": "240",
           "aggro": "136",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "150%",
+          "light_armor_atk": "130%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 739.29%"
+              "value": "АТК: 739.29%",
+              "effects": [
+                "Ignores enemys DEF by 30",
+                "50% chance to impose [Enervation]",
+                "With [Enhanced Lion Heart] Buff, Skill damage increases in proportion to [STR]",
+                "In [Strong] state, changes 15% of total received damage to extra Skill ATK",
+                "Cancel [Strong]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1478%"
+              "value": "АТК: 1478%",
+              "effects": [
+                "Ignores enemys DEF by 30",
+                "50% chance to impose [Enervation]",
+                "With [Enhanced Lion Heart] Buff, Skill damage increases in proportion to [STR]",
+                "In [Strong] state, changes 15% of total received damage to extra Skill ATK",
+                "Cancel [Strong]"
+              ]
             }
           ],
           "special": []
@@ -316,26 +792,73 @@
           "sp_cost": "650",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 3",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 21sec."
+              "value": "",
+              "effects": [
+                "Duration: 21sec.",
+                "ATK+55%",
+                "Move SPD+35%",
+                "Attack SPD+12%",
+                "Evasion Limit rises to 90",
+                "Duration: 5 minutes (missions only)."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 30sec."
+              "value": "",
+              "effects": [
+                "Duration: 30sec.",
+                "ATK+100%",
+                "Move SPD+80%",
+                "Attack SPD+30%",
+                "Evasion Limit rises to 90",
+                "Duration: 5 minutes (missions only)."
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 31sec."
+              "value": "",
+              "effects": [
+                "Duration: 31sec.",
+                "ATK+105%",
+                "Move SPD+85%",
+                "Attack SPD+32%",
+                "Evasion Limit rises to 90",
+                "A.R.+1",
+                "Duration: 5 minutes (missions only)."
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 32sec."
+              "value": "",
+              "effects": [
+                "Duration: 32sec.",
+                "ATK+110%",
+                "Move SPD+90%",
+                "Attack SPD+34%",
+                "Evasion Limit rises to 90",
+                "A.R.+1",
+                "Duration: 5 minutes (missions only)."
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 33sec."
+              "value": "",
+              "effects": [
+                "Duration: 33sec.",
+                "ATK+115%",
+                "Move SPD+95%",
+                "Attack SPD+36%",
+                "Evasion Limit rises to 90",
+                "A.R.+1",
+                "Duration: 5 minutes (missions only)."
+              ]
             }
           ],
           "special": []
@@ -353,14 +876,32 @@
           "sp_cost": "340",
           "aggro": "186",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "130%",
+          "light_armor_atk": "120%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1019.69%"
+              "value": "АТК: 1019.69%",
+              "effects": [
+                "Ignores enemys DEF by 60",
+                "50% chance to impose [Stun]",
+                "With [Enhanced Lion Heart] Buff, Skill damage increases in proportion to [STR]",
+                "In [Strong] state, changes 15% of total received damage to extra Skill ATK",
+                "Cancel [Strong]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2039%"
+              "value": "АТК: 2039%",
+              "effects": [
+                "Ignores enemys DEF by 60",
+                "50% chance to impose [Stun]",
+                "With [Enhanced Lion Heart] Buff, Skill damage increases in proportion to [STR]",
+                "In [Strong] state, changes 15% of total received damage to extra Skill ATK",
+                "Cancel [Strong]"
+              ]
             }
           ],
           "special": []
@@ -378,14 +919,38 @@
           "sp_cost": "440",
           "aggro": "342",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "170%",
+          "light_armor_atk": "140%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1907.82%"
+              "value": "АТК: 1907.82%",
+              "effects": [
+                "Ignores enemys DEF by 70",
+                "Ignores enemys Blocking",
+                "Ignores DEF of enemys shield by 1/2",
+                "If enemy is in [Burn]/[Freeze]/[Ice Wizard]/[Paralysis]/[Stun] state, ignores DEF by 10~40",
+                "With [Enhanced Lion Heart] Buff, Skill damage increases in proportion to [STR]",
+                "In [Strong] state, changes 15% of total received damage to extra Skill ATK",
+                "Cancel [Strong]",
+                "Damage to Blocking type enemy+1% for each Blocking"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3815%"
+              "value": "АТК: 3815%",
+              "effects": [
+                "Ignores enemys DEF by 70",
+                "Ignores enemys Blocking",
+                "Ignores DEF of enemys shield by 1/2",
+                "If enemy is in [Burn]/[Freeze]/[Ice Wizard]/[Paralysis]/[Stun] state, ignores DEF by 10~40",
+                "With [Enhanced Lion Heart] Buff, Skill damage increases in proportion to [STR]",
+                "In [Strong] state, changes 15% of total received damage to extra Skill ATK",
+                "Cancel [Strong]",
+                "Damage to Blocking type enemy+1% for each Blocking"
+              ]
             }
           ],
           "special": []
@@ -403,14 +968,38 @@
           "sp_cost": "540",
           "aggro": "435",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "190%",
+          "light_armor_atk": "130%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2492.73%"
+              "value": "АТК: 2492.73%",
+              "effects": [
+                "Ignores enemys DEF by 80",
+                "Ignores enemys Blocking",
+                "Ignores DEF of enemys shield by 1/2",
+                "If enemy is in [Burn]/[Freeze]/[Ice Wizard]/[Paralysis]/[Stun] state, ignores DEF by 10~40",
+                "With [Enhanced Lion Heart] Buff, Skill damage increases in proportion to [STR]",
+                "In [Strong] state, changes 15% of total received damage to extra Skill ATK",
+                "Cancel [Strong]",
+                "Damage to Blocking type enemy+1% for each Blocking"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4985%"
+              "value": "АТК: 4985%",
+              "effects": [
+                "Ignores enemys DEF by 80",
+                "Ignores enemys Blocking",
+                "Ignores DEF of enemys shield by 1/2",
+                "If enemy is in [Burn]/[Freeze]/[Ice Wizard]/[Paralysis]/[Stun] state, ignores DEF by 10~40",
+                "With [Enhanced Lion Heart] Buff, Skill damage increases in proportion to [STR]",
+                "In [Strong] state, changes 15% of total received damage to extra Skill ATK",
+                "Cancel [Strong]",
+                "Damage to Blocking type enemy+1% for each Blocking"
+              ]
             }
           ],
           "special": []
@@ -463,6 +1052,7 @@
         "Immunity": "5+15",
         "DEF": "5"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Swift Dash",
@@ -477,14 +1067,34 @@
           "sp_cost": "560",
           "aggro": "500",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 1",
+          "soft_armor_atk": "75%",
+          "heavy_armor_atk": "125%",
+          "light_armor_atk": "150%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1500%"
+              "value": "АТК: 1500%",
+              "effects": [
+                "Ignore 60 enemy DEF",
+                "Ignore Block",
+                "Ignore DEF of enemy shield by 1/2",
+                "50% chance to inflict [Mortal Wound] on the enemy",
+                "Ignore additional DEF - extra [STR] * 0.8",
+                "Increases Skill ATK - extra [STR] * 5%, x4 applied to the monster"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "Ignore 60 enemy DEF",
+                "Ignore Block",
+                "Ignore DEF of enemy shield by 1/2",
+                "50% chance to inflict [Mortal Wound] on the enemy",
+                "Ignore additional DEF - extra [STR] * 0.8",
+                "Increases Skill ATK - extra [STR] * 5%, x4 applied to the monster"
+              ]
             }
           ],
           "special": []
@@ -502,14 +1112,26 @@
           "sp_cost": "100",
           "aggro": "226",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 20",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": [
+                "Ignores 80 enemy DEF",
+                "100% chance to inflict [Dragon Fear] on the enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3600%"
+              "value": "АТК: 3600%",
+              "effects": [
+                "Ignores 80 enemy DEF",
+                "100% chance to inflict [Dragon Fear] on the enemy"
+              ]
             }
           ],
           "special": []
@@ -527,14 +1149,32 @@
           "sp_cost": "950",
           "aggro": "342",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "125%",
+          "heavy_armor_atk": "75%",
+          "light_armor_atk": "150%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1500%"
+              "value": "АТК: 1500%",
+              "effects": [
+                "Ignore 75 enemy DEF",
+                "Ignore Block",
+                "Ignore DEF of enemy shield by 1/2",
+                "Ignore additional DEF - extra [STR] * 0.8",
+                "Increases Skill ATK- extra [STR] * 5%, x4 applied to the monster"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "Ignore 75 enemy DEF",
+                "Ignore Block",
+                "Ignore DEF of enemy shield by 1/2",
+                "Ignore additional DEF - extra [STR] * 0.8",
+                "Increases Skill ATK- extra [STR] * 5%, x4 applied to the monster"
+              ]
             }
           ],
           "special": []
@@ -552,14 +1192,34 @@
           "sp_cost": "1050",
           "aggro": "444",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 8",
+          "soft_armor_atk": "150%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "150%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2500%"
+              "value": "АТК: 2500%",
+              "effects": [
+                "Ignore 85 enemy DEF",
+                "Ignore Block",
+                "Ignore DEF of enemy shield by 1/2",
+                "Ignore Shield D.R.",
+                "Ignore additional DEF - extra [STR] * 0.8",
+                "Increases Skill ATK - extra [STR] * 5%, x4 applied to the monster"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5000%"
+              "value": "АТК: 5000%",
+              "effects": [
+                "Ignore 85 enemy DEF",
+                "Ignore Block",
+                "Ignore DEF of enemy shield by 1/2",
+                "Ignore Shield D.R.",
+                "Ignore additional DEF - extra [STR] * 0.8",
+                "Increases Skill ATK - extra [STR] * 5%, x4 applied to the monster"
+              ]
             }
           ],
           "special": []
@@ -577,26 +1237,60 @@
           "sp_cost": "650",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration : 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration : 300 seconds",
+                "STR +2, ATK +75%, Monster ATK +100%, Evasion +2, Movement speed and limit +20%, Received Skill Damage -2%, A.R. +2",
+                "Normal attacks inflict [Dragon Fear]",
+                "Skill damage increases by (4x + (5% of extra [STR])) (1% in PvP)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration : 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration : 300 seconds",
+                "STR +20, ATK +75%, Monster ATK +100%, Evasion +20, Movement speed and limit +20%, Received Skill Damage -2%, A.R. +2",
+                "Normal attacks inflict [Dragon Fear]",
+                "Skill damage increases by (4x + (5% of extra [STR])) (1% in PvP)"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration : 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration : 300 seconds",
+                "STR +22, ATK +75%, Monster ATK +100%, Evasion +22, Movement speed and limit +20%, Received Skill Damage -2%, A.R. +2",
+                "Normal attacks inflict [Dragon Fear]",
+                "Skill damage increases by (4x + (5% of extra [STR])) (1% in PvP)"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration : 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration : 300 seconds",
+                "STR +24, ATK +75%, Monster ATK +100%, Evasion +24, Movement speed and limit +20%, Received Skill Damage -2%, A.R. +2",
+                "Normal attacks inflict [Dragon Fear]",
+                "Skill damage increases by (4x + (5% of extra [STR])) (1% in PvP)"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration : 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration : 300 seconds",
+                "STR +26, ATK +75%, Monster ATK +100%, Evasion +26, Movement speed and limit +20%, Received Skill Damage -2%, A.R. +2",
+                "Normal attacks inflict [Dragon Fear]",
+                "Skill damage increases by (4x + (5% of extra [STR])) (1% in PvP)"
+              ]
             }
           ],
           "special": []
@@ -613,321 +1307,6 @@
       "icon_position": {
         "x": -150,
         "y": -275
-      }
-    },
-    {
-      "name": "Martial Arts Book-Chap. of Wind",
-      "info": {
-        "Targets": "1 enemy",
-        "Range": "1m away",
-        "Splash": "None",
-        "Hits per attack": "3",
-        "Hits flying": "No",
-        "Flying": "No",
-        "Regenerate SP": "Yes"
-      },
-      "stats": {
-        "ASPD": "178",
-        "Bonus ATK": "200%",
-        "MSPD": "1",
-        "MSPD Limit": "8.50",
-        "ACC": "100",
-        "EVA": "15",
-        "BLK": "0",
-        "Fire RES": "0",
-        "Ice RES": "0",
-        "Lightning RES": "0",
-        "Abnormal RES": "0"
-      },
-      "lv25_bonus": {
-        "ATK SPD": "+15%",
-        "Evasion": "+15",
-        "Critical": "+10"
-      },
-      "skills": [
-        {
-          "name": "Tornado Vortex",
-          "image": "mas_tornadovortex.jpg",
-          "description": "A whirlwind attack that cuts down enemy lines.",
-          "target": "Up to 5 Enemies within a range of 2.5m",
-          "casting_time": "Instant",
-          "cooldown": "0 sec.",
-          "duration": "2.03 sec.",
-          "hits_flying": "Yes",
-          "knock_down": "Yes",
-          "sp_cost": "150",
-          "aggro": "56",
-          "skill_type": "Melee",
-          "levels": [
-            {
-              "level": "Level 1",
-              "value": "АТК: 223%"
-            },
-            {
-              "level": "Level 10",
-              "value": "АТК: 446%"
-            }
-          ],
-          "special": []
-        },
-        {
-          "name": "Dragon Kick",
-          "image": "mas_dragonkick.jpg",
-          "description": "A fiery series of kicks that knocks the enemy down.",
-          "target": "Up to 6 enemies 7.2 away and within 3 width",
-          "casting_time": "Instant",
-          "cooldown": "15 sec.",
-          "duration": "1.83 sec.",
-          "hits_flying": "No",
-          "knock_down": "Yes",
-          "sp_cost": "250",
-          "aggro": "81",
-          "skill_type": "Melee",
-          "levels": [
-            {
-              "level": "Level 1",
-              "value": "АТК: 328%"
-            },
-            {
-              "level": "Level 10",
-              "value": "АТК: 656%"
-            }
-          ],
-          "special": []
-        },
-        {
-          "name": "Atomic Crazy Rush",
-          "image": "mas_atomiccrazyrush.jpg",
-          "description": "Strikes explosive blows on the enemy with the swiftness of a storm.",
-          "target": "1 adjacent enemy",
-          "casting_time": "Instant",
-          "cooldown": "20 sec.",
-          "duration": "4.9 sec.",
-          "hits_flying": "No",
-          "knock_down": "Yes",
-          "sp_cost": "300",
-          "aggro": "444",
-          "skill_type": "Melee",
-          "levels": [
-            {
-              "level": "Level 1",
-              "value": "АТК: 2165%"
-            },
-            {
-              "level": "Level 10",
-              "value": "АТК: 4330%"
-            }
-          ],
-          "special": []
-        }
-      ],
-      "lv25_bonus_extra": [
-        "[RE: PvE] Skill DMG increases equal to 8% of extra [STR]",
-        "[PVP/PVE Maps] Additional 4% DMG according to extra [STR]",
-        "Ignore additional DEF according to extra [STR] * 4",
-        "Additional DMG against [PC] + 1x",
-        "Additional DMG against Monster according to 4 * 50"
-      ],
-      "equipped_items": "Leguard",
-      "icon_position": {
-        "x": -100,
-        "y": -200
-      }
-    },
-    {
-      "name": "Martial Arts Book-Chap.Lightning",
-      "info": {
-        "Targets": "1 enemy",
-        "Range": "1m away",
-        "Splash": "None",
-        "Hits per attack": "3",
-        "Hits flying": "No",
-        "Flying": "No",
-        "Regenerate SP": "Yes",
-        "Physical DMG": "-20%"
-      },
-      "stats": {
-        "ASPD": "178",
-        "Bonus ATK": "300%",
-        "MSPD": "1",
-        "MSPD Limit": "8.50",
-        "ACC": "63",
-        "EVA": "20",
-        "BLK": "0",
-        "Fire RES": "0",
-        "Ice RES": "0",
-        "Lightning RES": "0",
-        "Abnormal RES": "0"
-      },
-      "lv25_bonus": {
-        "ATK SPD": "+25%",
-        "Evasion": "+15",
-        "Critical": "+15",
-        "Penetration": "15",
-        "Immunity": "10"
-      },
-      "skills": [
-        {
-          "name": "Third Eye",
-          "image": "masn_mindeye.jpg",
-          "description": "Uses DEF of enemy by reading the enemys weakness with the minds eye.",
-          "target": "",
-          "casting_time": "Instant",
-          "cooldown": "30 sec.",
-          "duration": "300 sec",
-          "hits_flying": "No",
-          "knock_down": "No",
-          "sp_cost": "600",
-          "aggro": "0",
-          "skill_type": "Buff",
-          "levels": [
-            {
-              "level": "Level 1",
-              "value": "Duration: 300 sec"
-            },
-            {
-              "level": "Level 10",
-              "value": "Duration: 300 sec"
-            },
-            {
-              "level": "Level 11",
-              "value": "Duration: 300 sec"
-            },
-            {
-              "level": "Level 12",
-              "value": "Duration: 300 sec"
-            },
-            {
-              "level": "Level 13",
-              "value": "Duration: 300 sec"
-            }
-          ],
-          "special": []
-        },
-        {
-          "name": "Enhanced Lion Heart",
-          "image": "mma_enhancedlionheart.jpg",
-          "description": "Push the physical and mental limits.",
-          "target": "",
-          "casting_time": "Instant",
-          "cooldown": "40 sec.",
-          "duration": "5 minutes (missions only).",
-          "hits_flying": "No",
-          "knock_down": "No",
-          "sp_cost": "650",
-          "aggro": "0",
-          "skill_type": "Buff",
-          "levels": [
-            {
-              "level": "Level 1",
-              "value": "Duration: 21sec."
-            },
-            {
-              "level": "Level 10",
-              "value": "Duration: 30sec."
-            },
-            {
-              "level": "Level 11",
-              "value": "Duration: 31sec."
-            },
-            {
-              "level": "Level 12",
-              "value": "Duration: 32sec."
-            },
-            {
-              "level": "Level 13",
-              "value": "Duration: 33sec."
-            }
-          ],
-          "special": []
-        },
-        {
-          "name": "Stormy Helix Circle",
-          "image": "masn_tornadovortex.jpg",
-          "description": "Wipes out surrounding enemies with a movement similar to a storm.",
-          "target": "Up to 5 enemies 6m away",
-          "casting_time": "0.75 sec.",
-          "cooldown": "10 sec.",
-          "duration": "2.03 sec.",
-          "hits_flying": "Yes",
-          "knock_down": "Yes",
-          "sp_cost": "300",
-          "aggro": "80",
-          "skill_type": "Melee",
-          "levels": [
-            {
-              "level": "Level 1",
-              "value": "АТК: 1000%"
-            },
-            {
-              "level": "Level 10",
-              "value": "АТК: 2000%"
-            }
-          ],
-          "special": []
-        },
-        {
-          "name": "Blue Dragon Rising",
-          "image": "masn_dragonkick.jpg",
-          "description": "Rushes quickly like a dragon soaring to the skies.",
-          "target": "Up to 6 enemies 7.2 away and within 3 width",
-          "casting_time": "1.8 sec.",
-          "cooldown": "15 sec.",
-          "duration": "1.83 sec.",
-          "hits_flying": "No",
-          "knock_down": "Yes",
-          "sp_cost": "400",
-          "aggro": "100",
-          "skill_type": "Melee",
-          "levels": [
-            {
-              "level": "Level 1",
-              "value": "АТК: 1500%"
-            },
-            {
-              "level": "Level 10",
-              "value": "АТК: 3000%"
-            }
-          ],
-          "special": []
-        },
-        {
-          "name": "Whirlwind Blow",
-          "image": "masn_atomiccrazyrush.jpg",
-          "description": "Attacks an enemy as fast as the wind, smooth like a cloud and strong like lightning.",
-          "target": "1 adjacent enemy",
-          "casting_time": "1.89 sec.",
-          "cooldown": "30 sec.",
-          "duration": "4.9 sec.",
-          "hits_flying": "No",
-          "knock_down": "Yes",
-          "sp_cost": "500",
-          "aggro": "444",
-          "skill_type": "Melee",
-          "levels": [
-            {
-              "level": "Level 1",
-              "value": "АТК: 2000%"
-            },
-            {
-              "level": "Level 10",
-              "value": "АТК: 4000%"
-            }
-          ],
-          "special": []
-        }
-      ],
-      "lv25_bonus_extra": [
-        "[RE: PvE] Skill DMG increases equal to 8% of extra [STR]",
-        "[PVP/PVE Maps] Additional 3% DMG according to extra [STR]",
-        "Ignore additional DEF according to extra [STR] * 4",
-        "Additional DMG against [PC] + 1x",
-        "Additional DMG against Monster according to 5 * 50"
-      ],
-      "equipped_items": "Leguard",
-      "icon_position": {
-        "x": -400,
-        "y": -125
       }
     }
   ]

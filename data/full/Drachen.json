@@ -94,6 +94,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -138,6 +139,7 @@
         "Penetration": "5+15",
         "Immunity": "5+20"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Iroas",
@@ -152,14 +154,42 @@
           "sp_cost": "1000",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 30",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "[Draken]: Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "[Draken]: Duration: 300 seconds",
+                "A.R. +1",
+                "D.R. +1",
+                "DEF +20",
+                "IMM +20",
+                "Skill damage increases by (10% of [STR])",
+                "[All other allies]: Duration: 120 seconds",
+                "D.R. +1",
+                "DEF +10",
+                "IMM +10"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "[Draken]: Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "[Draken]: Duration: 300 seconds",
+                "A.R. +1",
+                "D.R. +1",
+                "DEF +20",
+                "IMM +20",
+                "Skill damage increases by (10% of [STR])",
+                "[All other allies]: Duration: 120 seconds",
+                "D.R. +1",
+                "DEF +10",
+                "IMM +10"
+              ]
             }
           ],
           "special": []
@@ -177,14 +207,36 @@
           "sp_cost": "660",
           "aggro": "500",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1600%"
+              "value": "АТК: 1600%",
+              "effects": [
+                "Ignores Evasion",
+                "[Aniphoros] level +1 on skill usage",
+                "20% Chance to inflict [Armor Crasher] on PC",
+                "Ignores Debuff RES",
+                "Ignore additional DEF while affected by [Aniphoros] by (total [HP] x0.2)",
+                "Skill damage increases in proportion to casters Max HP (10000 x0.1)",
+                "Skill damage increases by 2x against enemies affected by [Armor Crasher]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3200%"
+              "value": "АТК: 3200%",
+              "effects": [
+                "Ignores Evasion",
+                "[Aniphoros] level +1 on skill usage",
+                "20% Chance to inflict [Armor Crasher] on PC",
+                "Ignores Debuff RES",
+                "Ignore additional DEF while affected by [Aniphoros] by (total [HP] x0.2)",
+                "Skill damage increases in proportion to casters Max HP (10000 x0.1)",
+                "Skill damage increases by 2x against enemies affected by [Armor Crasher]"
+              ]
             }
           ],
           "special": []
@@ -202,14 +254,38 @@
           "sp_cost": "860",
           "aggro": "650",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "150%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2000%"
+              "value": "АТК: 2000%",
+              "effects": [
+                "Ignores Evasion",
+                "[Aniphoros] level +1 on skill usage",
+                "[Euphrotasos] level +1 on skill usage",
+                "[Charged Skill]: Re-use to finish casting immediately",
+                "[Euphrotasos] Level increases in proportion to casting time",
+                "Ignore additional DEF while affected by [Aniphoros] by (total [HP] x0.2)",
+                "Skill damage increases in proportion to casters Max HP (10000 x0.1)",
+                "Skill damage increases by 2x against enemies affected by [Armor Crasher]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4000%"
+              "value": "АТК: 4000%",
+              "effects": [
+                "Ignores Evasion",
+                "[Aniphoros] level +1 on skill usage",
+                "[Euphrotasos] level +1 on skill usage",
+                "[Charged Skill]: Re-use to finish casting immediately",
+                "[Euphrotasos] Level increases in proportion to casting time",
+                "Ignore additional DEF while affected by [Aniphoros] by (total [HP] x0.2)",
+                "Skill damage increases in proportion to casters Max HP (10000 x0.1)",
+                "Skill damage increases by 2x against enemies affected by [Armor Crasher]"
+              ]
             }
           ],
           "special": []
@@ -227,14 +303,36 @@
           "sp_cost": "480",
           "aggro": "500",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "90%",
+          "light_armor_atk": "130%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2500%"
+              "value": "АТК: 2500%",
+              "effects": [
+                "Ignores Evasion",
+                "[Aniphoros] level +1 on skill usage",
+                "20% Chance to inflict [Armor Crasher] on PC",
+                "Ignores Debuff RES",
+                "Ignore additional DEF while affected by [Aniphoros] by (total [HP] x0.2)",
+                "Skill damage increases in proportion to casters Max HP (10000 x0.1)",
+                "Skill damage increases by 2x against enemies affected by [Armor Crasher]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5000%"
+              "value": "АТК: 5000%",
+              "effects": [
+                "Ignores Evasion",
+                "[Aniphoros] level +1 on skill usage",
+                "20% Chance to inflict [Armor Crasher] on PC",
+                "Ignores Debuff RES",
+                "Ignore additional DEF while affected by [Aniphoros] by (total [HP] x0.2)",
+                "Skill damage increases in proportion to casters Max HP (10000 x0.1)",
+                "Skill damage increases by 2x against enemies affected by [Armor Crasher]"
+              ]
             }
           ],
           "special": []
@@ -252,26 +350,81 @@
           "sp_cost": "1500",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 40",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 5 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 5 seconds",
+                "Damage from Monsters -20%",
+                "Blocking cannot be negated",
+                "Knockback Time -5%",
+                "Magical Damage from [PC] -20%",
+                "Reflect 50% of Magical Damage taken from enemy [PC]",
+                "Physical Damage Taken +20%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 50 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 50 seconds",
+                "Damage from Monsters -20%",
+                "Blocking cannot be negated",
+                "Knockback Time -50%",
+                "Magical Damage from [PC] -20%",
+                "Reflect 50% of Magical Damage taken from enemy PC",
+                "Physical Damage Taken +20%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 55 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 55 seconds",
+                "Damage from Monsters -20%",
+                "All Stats +1",
+                "D.R. +1",
+                "Blocking cannot be negated",
+                "Knockback Time -55%",
+                "Magical Damage from [PC] -20%",
+                "Reflect 50% of Magical Damage taken from enemy PC",
+                "Physical Damage Taken +20%"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 60 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 60 seconds",
+                "Damage from Monsters -20%",
+                "All Stats +2",
+                "D.R. +1",
+                "Blocking cannot be negated",
+                "Knockback Time -60%",
+                "Magical Damage from [PC] -20%",
+                "Reflect 50% of Magical Damage taken from enemy PC",
+                "Physical Damage Taken +20%"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 65 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 65 seconds",
+                "Damage from Monsters -20%",
+                "All Stats +3",
+                "D.R. +1",
+                "Blocking cannot be negated",
+                "Knockback Time -65%",
+                "Magical Damage from [PC] -20%",
+                "Reflect 50% of Magical Damage taken from enemy PC",
+                "Physical Damage Taken +20%"
+              ]
             }
           ],
           "special": []

@@ -176,6 +176,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -218,6 +219,7 @@
         "Penetration": "5+25",
         "Immunity": "5+10"
       },
+      "consume": "Steel Bolt x 1",
       "skills": [
         {
           "name": "Latrea",
@@ -232,14 +234,38 @@
           "sp_cost": "220",
           "aggro": "100",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bolt x 1",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "105%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1600%"
+              "value": "АТК: 1600%",
+              "effects": [
+                "Ignores 10 DEF",
+                "Removes [Invulnerable]",
+                "[Skopelos], [Asteri], [Kribo], and [Aspro] Level +1",
+                "[Kribo]s duration refreshes",
+                "[Skopelos] Skill Damage x3 ([PC] x2.2)",
+                "[Kribo] Skill Damage x2 ([PC] 1.2)",
+                "[Cosmos] Skill Damage increases by 15% of [DEX]",
+                "Skill Damage x1 per [Cosmos] Level (not applicable to [PC] targets)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3200%"
+              "value": "АТК: 3200%",
+              "effects": [
+                "Ignores 10 DEF",
+                "Removes [Invulnerable]",
+                "[Skopelos], [Asteri], [Kribo], and [Aspro] Level +1",
+                "[Kribo]s duration refreshes",
+                "[Skopelos] Skill Damage x3 ([PC] x2.2)",
+                "[Kribo] Skill Damage x2 ([PC] 1.2)",
+                "[Cosmos] Skill Damage increases by 15% of [DEX]",
+                "Skill Damage x1 per [Cosmos] Level (not applicable to [PC] targets)"
+              ]
             }
           ],
           "special": []
@@ -257,14 +283,38 @@
           "sp_cost": "350",
           "aggro": "230",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bolt x 10",
+          "soft_armor_atk": "85%",
+          "heavy_armor_atk": "115%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1000%"
+              "value": "АТК: 1000%",
+              "effects": [
+                "Ignores 50 DEF",
+                "Ignores 6% DEF ([PC] 1/2)",
+                "[Asteri]/[Aspro] Ignores 1% DEF per level",
+                "[Skopelos] Skill Damage x4 ([PC] x2.2)",
+                "[Kribo] Skill Damage x3 ([PC] x1.2)",
+                "[Cosmos] Skill Damage increases by 15% of [DEX]",
+                "Skill Damage increases by 5% per [Cosmos] Level (1/2 for [PC])",
+                "[Cosmos] Level increases proportional to the number of successfully hit targets"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2000%"
+              "value": "АТК: 2000%",
+              "effects": [
+                "Ignores 50 DEF",
+                "Ignores 6% DEF ([PC] 1/2)",
+                "[Asteri]/[Aspro] Ignores 1% DEF per level",
+                "[Skopelos] Skill Damage x4 ([PC] x2.2)",
+                "[Kribo] Skill Damage x3 ([PC] x1.2)",
+                "[Cosmos] Skill Damage increases by 15% of [DEX]",
+                "Skill Damage increases by 5% per [Cosmos] Level (1/2 for [PC])",
+                "[Cosmos] Level increases proportional to the number of successfully hit targets"
+              ]
             }
           ],
           "special": []
@@ -282,14 +332,42 @@
           "sp_cost": "590",
           "aggro": "358",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bolt x 5",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "105%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 800%"
+              "value": "АТК: 800%",
+              "effects": [
+                "Ignores 50 DEF",
+                "Instantly activates skill when reused during casting",
+                "Damage, knockback range and knockback time increase proportional to cast time",
+                "Ignores 2% DEF ([PC] 1/2)",
+                "[Asteri]/[Aspro] Ignores 1% DEF per level",
+                "[Skopelos] Skill Damage x4 ([PC] x2.2)",
+                "[Kribo] Skill Damage x3 ([PC] x1.2)",
+                "[Cosmos] Skill Damage increases by 15% of [DEX]",
+                "Skill Damage increases by 6% per [Cosmos] Level ([PC] 1/2)",
+                "[Cosmos] Level increases proportional to the number of successfully hit targets"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1600%"
+              "value": "АТК: 1600%",
+              "effects": [
+                "Ignores 50 DEF",
+                "Instantly activates skill when reused during casting",
+                "Damage, knockback range and knockback time increase proportional to cast time",
+                "Ignores 2% DEF ([PC] 1/2)",
+                "[Asteri]/[Aspro] Ignores 1% DEF per level",
+                "[Skopelos] Skill Damage x4 ([PC] x2.2)",
+                "[Kribo] Skill Damage x3 ([PC] x1.2)",
+                "[Cosmos] Skill Damage increases by 15% of [DEX]",
+                "Skill Damage increases by 6% per [Cosmos] Level ([PC] 1/2)",
+                "[Cosmos] Level increases proportional to the number of successfully hit targets"
+              ]
             }
           ],
           "special": []
@@ -307,14 +385,38 @@
           "sp_cost": "600",
           "aggro": "415",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bolt x 3",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "120%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1400%"
+              "value": "АТК: 1400%",
+              "effects": [
+                "Ignores 60 DEF",
+                "Ignores 7% DEF ([PC] 1/2)",
+                "[Asteri]/[Aspro] Ignores 1% DEF per level",
+                "[Skopelos] Skill Damage x4 ([PC] x2.2)",
+                "[Kribo] Skill Damage x3 ([PC] x1.2)",
+                "[Cosmos] Skill Damage increases by 15% of [DEX]",
+                "Skill Damage increases by 6% per level of [Cosmos] ([PC] 1/2)",
+                "[Cosmos] Level increases proportional to the number of successfully hit targets"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2800%"
+              "value": "АТК: 2800%",
+              "effects": [
+                "Ignores 60 DEF",
+                "Ignores 7% DEF ([PC] 1/2)",
+                "[Asteri]/[Aspro] Ignores 1% DEF per level",
+                "[Skopelos] Skill Damage x4 ([PC] x2.2)",
+                "[Kribo] Skill Damage x3 ([PC] x1.2)",
+                "[Cosmos] Skill Damage increases by 15% of [DEX]",
+                "Skill Damage increases by 6% per level of [Cosmos] ([PC] 1/2)",
+                "[Cosmos] Level increases proportional to the number of successfully hit targets"
+              ]
             }
           ],
           "special": []
@@ -332,14 +434,38 @@
           "sp_cost": "610",
           "aggro": "660",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bolt x 9",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "120%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1600%"
+              "value": "АТК: 1600%",
+              "effects": [
+                "Ignores 100 DEF",
+                "Ignores Block",
+                "Ignores 10% DEF ([PC] 2%)",
+                "[Asteri]/[Aspro] Ignores 1% of enemys DEF per level",
+                "[Skopelos] Skill Damage x5 ([PC] x2.5)",
+                "[Kribo] Skill Damage x4 ([PC] x1.5)",
+                "[Cosmos] Skill Damage increases by 15% of [DEX]",
+                "Skill Damage increases by 10% per level of [Cosmos] (1/2 for [PC])"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3200%"
+              "value": "АТК: 3200%",
+              "effects": [
+                "Ignores 100 DEF",
+                "Ignores Block",
+                "Ignores 10% DEF ([PC] 2%)",
+                "[Asteri]/[Aspro] Ignores 1% of enemys DEF per level",
+                "[Skopelos] Skill Damage x5 ([PC] x2.5)",
+                "[Kribo] Skill Damage x4 ([PC] x1.5)",
+                "[Cosmos] Skill Damage increases by 15% of [DEX]",
+                "Skill Damage increases by 10% per level of [Cosmos] (1/2 for [PC])"
+              ]
             }
           ],
           "special": []

@@ -105,6 +105,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -143,6 +144,7 @@
         "ATK SPD": "+3%",
         "Block": "+14"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Deep Straight",
@@ -157,14 +159,20 @@
           "sp_cost": "100",
           "aggro": "78",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 300%"
+              "value": "АТК: 300%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 600%"
+              "value": "АТК: 600%",
+              "effects": []
             }
           ],
           "special": []
@@ -182,14 +190,20 @@
           "sp_cost": "150",
           "aggro": "68",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 400%"
+              "value": "АТК: 400%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 800%"
+              "value": "АТК: 800%",
+              "effects": []
             }
           ],
           "special": []
@@ -207,14 +221,24 @@
           "sp_cost": "200",
           "aggro": "105",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 600%"
+              "value": "АТК: 600%",
+              "effects": [
+                "Double Damage to enemies with [Soft Armor]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1200%"
+              "value": "АТК: 1200%",
+              "effects": [
+                "Double Damage to enemies with [Soft Armor]"
+              ]
             }
           ],
           "special": [
@@ -235,14 +259,20 @@
           "sp_cost": "250",
           "aggro": "210",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 800%"
+              "value": "АТК: 800%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1600%"
+              "value": "АТК: 1600%",
+              "effects": []
             }
           ],
           "special": []
@@ -285,6 +315,7 @@
         "Penetration": "15+15",
         "Immunity": "10+10"
       },
+      "consume": "",
       "skills": [
         {
           "name": "A Summary Conviction",
@@ -299,26 +330,60 @@
           "sp_cost": "300",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 2",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration : 5 sec."
+              "value": "",
+              "effects": [
+                "Duration : 5 sec.",
+                "ATK +5%",
+                "HP decrease consistently in proportion of Max HP",
+                "Using item is impossible."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration : 50 sec."
+              "value": "",
+              "effects": [
+                "Duration : 50 sec.",
+                "ATK +50%",
+                "HP decrease consistently in proportion of Max HP",
+                "Using item is impossible."
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration : 55 sec."
+              "value": "",
+              "effects": [
+                "Duration : 55 sec.",
+                "ATK +55%",
+                "HP decrease consistently in proportion of Max HP",
+                "Using item is impossible."
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration : 60 sec."
+              "value": "",
+              "effects": [
+                "Duration : 60 sec.",
+                "ATK +60%",
+                "HP decrease consistently in proportion of Max HP",
+                "Using item is impossible."
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration : 65 sec."
+              "value": "",
+              "effects": [
+                "Duration : 65 sec.",
+                "ATK +65%",
+                "HP decrease consistently in proportion of Max HP",
+                "Using item is impossible."
+              ]
             }
           ],
           "special": []
@@ -336,14 +401,26 @@
           "sp_cost": "600",
           "aggro": "0",
           "skill_type": "Build",
+          "consume_item": "Ancient Star Orb x 25",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Possible to summon max 1 person"
+              "value": "",
+              "effects": [
+                "Possible to summon max 1 person",
+                "According to skill level, ability bonus for Blood Navy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Possible to summon max 1 person"
+              "value": "",
+              "effects": [
+                "Possible to summon max 1 person",
+                "According to skill level, ability bonus for Blood Navy"
+              ]
             }
           ],
           "special": [
@@ -364,14 +441,30 @@
           "sp_cost": "250",
           "aggro": "100",
           "skill_type": "Shooting",
+          "consume_item": "",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "90%",
+          "light_armor_atk": "130%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 800%"
+              "value": "АТК: 800%",
+              "effects": [
+                "Ignores enemys DEF by 30",
+                "50% chance to impose [Mortal Wound] on enemy",
+                "Ignores Evasion",
+                "Damage to Evasion type enemies +1% per 1 evasion"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1600%"
+              "value": "АТК: 1600%",
+              "effects": [
+                "Ignores enemys DEF by 30",
+                "50% chance to impose [Mortal Wound] on enemy",
+                "Ignores Evasion",
+                "Damage to Evasion type enemies +1% per 1 evasion"
+              ]
             }
           ],
           "special": []
@@ -389,14 +482,26 @@
           "sp_cost": "300",
           "aggro": "175",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "120%",
+          "light_armor_atk": "120%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1600%"
+              "value": "АТК: 1600%",
+              "effects": [
+                "Ignores Enemy DEF",
+                "Damage increases when enemy is in [Mortal Wound] status."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3200%"
+              "value": "АТК: 3200%",
+              "effects": [
+                "Ignores Enemy DEF",
+                "Damage increases when enemy is in [Mortal Wound] status."
+              ]
             }
           ],
           "special": []
@@ -414,14 +519,26 @@
           "sp_cost": "350",
           "aggro": "250",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "125%",
+          "light_armor_atk": "140%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2000%"
+              "value": "АТК: 2000%",
+              "effects": [
+                "Ignores enemy DEF by 60",
+                "Increases damage when enemy is in [Mortal Wound] state."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4000%"
+              "value": "АТК: 4000%",
+              "effects": [
+                "Ignores enemy DEF by 60",
+                "Increases damage when enemy is in [Mortal Wound] state."
+              ]
             }
           ],
           "special": []
@@ -474,6 +591,7 @@
         "Penetration": "5+20",
         "Immunity": "20"
       },
+      "consume": "Metal Shell Ammo x 3",
       "skills": [
         {
           "name": "Eos",
@@ -488,14 +606,36 @@
           "sp_cost": "560",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration : 300s"
+              "value": "",
+              "effects": [
+                "Duration : 300s",
+                "A.R. +1",
+                "ATK +35%",
+                "PEN +12",
+                "Critical -25",
+                "Ignore DEF by 10%",
+                "Attacks cannot be evaded or blocked"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration : 300s"
+              "value": "",
+              "effects": [
+                "Duration : 300s",
+                "A.R. +1",
+                "ATK +35%",
+                "PEN +12",
+                "Critical -25",
+                "Ignore DEF by 10%",
+                "Attacks cannot be evaded or blocked"
+              ]
             }
           ],
           "special": []
@@ -513,14 +653,34 @@
           "sp_cost": "760",
           "aggro": "162",
           "skill_type": "Shooting",
+          "consume_item": "Metal Shell Ammo x 3",
+          "soft_armor_atk": "125%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1500%"
+              "value": "АТК: 1500%",
+              "effects": [
+                "Ignores enemy DEF by 25%",
+                "50% chance to inflict [Mortal Wound] on enemy",
+                "Damage increases when higher the targets DEF (Effect increases against monster)",
+                "Skill Damage increases by 3% of extra [DEX]. If [Eos] is active: 4x + 3% of extra [DEX]",
+                "Skill Damage increases additionally according to enemys [Bloody Salute] Lv.",
+                "Ignores Enemy DEF additionally by 5% of extra [DEX]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "Ignores enemy DEF by 25%",
+                "50% chance to inflict [Mortal Wound] on enemy",
+                "Damage increases when higher the targets DEF (Effect increases against monster)",
+                "Skill Damage increases by 3% of extra [DEX]. If [Eos] is active: 4x + 3% of extra [DEX]",
+                "Skill Damage increases additionally according to enemys [Bloody Salute] Lv.",
+                "Ignores Enemy DEF additionally by 5% of extra [DEX]"
+              ]
             }
           ],
           "special": []
@@ -538,14 +698,34 @@
           "sp_cost": "920",
           "aggro": "166",
           "skill_type": "Shooting",
+          "consume_item": "Metal Shell Ammo x 1",
+          "soft_armor_atk": "150%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": [
+                "Ignores enemy DEF by 25%",
+                "60% chance to inflict [Burn] on enemy",
+                "Damage increases when higher the targets DEF (Effect increases against monster)",
+                "Skill Damage increases by 3% of extra [DEX]. If [Eos] is active: 4x + 3% of extra [DEX]",
+                "Skill Damage increases additionally according to enemys [Bloody Salute] Lv.",
+                "Ignores Enemy DEF additionally by 5% of extra [DEX]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3600%"
+              "value": "АТК: 3600%",
+              "effects": [
+                "Ignores enemy DEF by 25%",
+                "60% chance to inflict [Burn] on enemy",
+                "Damage increases when higher the targets DEF (Effect increases against monster)",
+                "Skill Damage increases by 3% of extra [DEX]. If [Eos] is active: 4x + 3% of extra [DEX]",
+                "Skill Damage increases additionally according to enemys [Bloody Salute] Lv.",
+                "Ignores Enemy DEF additionally by 5% of extra [DEX]"
+              ]
             }
           ],
           "special": []
@@ -563,14 +743,36 @@
           "sp_cost": "1050",
           "aggro": "100",
           "skill_type": "Shooting",
+          "consume_item": "Ancient Star Orb x 8",
+          "soft_armor_atk": "150%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "150%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2000%"
+              "value": "АТК: 2000%",
+              "effects": [
+                "Ignore Block",
+                "Ignores enemy DEF by 25%",
+                "80% chance to inflict [Stun] on enemy",
+                "Damage increases when higher the targets DEF (Effect increases against monster)",
+                "Skill Damage increases by 3% of extra [DEX]. If [Eos] is active: 4x + 3% of extra [DEX]",
+                "Skill Damage increases additionally according to enemys [Bloody Salute] Lv.",
+                "Ignores Enemy DEF additionally by 5% of extra [DEX]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4000%"
+              "value": "АТК: 4000%",
+              "effects": [
+                "Ignore Block",
+                "Ignores enemy DEF by 25%",
+                "80% chance to inflict [Stun] on enemy",
+                "Damage increases when higher the targets DEF (Effect increases against monster)",
+                "Skill Damage increases by 3% of extra [DEX]. If [Eos] is active: 4x + 3% of extra [DEX]",
+                "Skill Damage increases additionally according to enemys [Bloody Salute] Lv.",
+                "Ignores Enemy DEF additionally by 5% of extra [DEX]"
+              ]
             }
           ],
           "special": []
@@ -588,14 +790,34 @@
           "sp_cost": "840",
           "aggro": "166",
           "skill_type": "Shooting",
+          "consume_item": "Ancient Star Orb x 15",
+          "soft_armor_atk": "125%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "150%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "Ignore Block",
+                "Ignores enemy DEF by 25%",
+                "Damage increases when higher the targets DEF (Effect increases against monster)",
+                "Skill Damage increases by 3% of extra [DEX]. If [Eos] is active: 4x + 3% of extra [DEX]",
+                "Skill Damage increases additionally according to enemys [Bloody Salute] Lv.",
+                "Ignores Enemy DEF additionally by 5% of extra [DEX]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4800%"
+              "value": "АТК: 4800%",
+              "effects": [
+                "Ignore Block",
+                "Ignores enemy DEF by 25%",
+                "Damage increases when higher the targets DEF (Effect increases against monster)",
+                "Skill Damage increases by 3% of extra [DEX]. If [Eos] is active: 4x + 3% of extra [DEX]",
+                "Skill Damage increases additionally according to enemys [Bloody Salute] Lv.",
+                "Ignores Enemy DEF additionally by 5% of extra [DEX]"
+              ]
             }
           ],
           "special": []

@@ -2,7 +2,7 @@
   "slug": "Hildegard",
   "equipment": {
     "category": "Usable Equipment",
-    "medal": "Blessing of Archbishop",
+    "medal": "Blessing of Archbishop My dream is to be a magician!",
     "head": "None",
     "earring": "Earring",
     "face": "Brown Bowing Sunglasses Event Brown Bowing Sunglasses",
@@ -102,6 +102,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -147,6 +148,7 @@
         "Penetration": "5+25",
         "Immunity": "5+25"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Spin Uriela",
@@ -161,14 +163,34 @@
           "sp_cost": "560",
           "aggro": "342",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "50%",
+          "heavy_armor_atk": "125%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1200%"
+              "value": "АТК: 1200%",
+              "effects": [
+                "Ignores enemys DEF by 50",
+                "Enemys [Squashed Armor]s Lv. +1 with a successful hit",
+                "Your [Sages Teaching]s Lv. +1 with a successful hit",
+                "Extra ignores enemy PCs DEF in proportion to [Squashed Armor]s Lv. and additional [INT]",
+                "Increases Monster Damage in proportion to [Squashed Armor]s Lv. and additional [INT]",
+                "Once [Squashed Armor]s Lv. is 3, a successful hit will lift it"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "Ignores enemys DEF by 50",
+                "Enemys [Squashed Armor]s Lv. +1 with a successful hit",
+                "Your [Sages Teaching]s Lv. +1 with a successful hit",
+                "Extra ignores enemy PCs DEF in proportion to [Squashed Armor]s Lv. and additional [INT]",
+                "Increases Monster Damage in proportion to [Squashed Armor]s Lv. and additional [INT]",
+                "Once [Squashed Armor]s Lv. is 3, a successful hit will lift it"
+              ]
             }
           ],
           "special": []
@@ -186,14 +208,38 @@
           "sp_cost": "1050",
           "aggro": "120",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "30%",
+          "heavy_armor_atk": "135%",
+          "light_armor_atk": "120%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": [
+                "Ignores enemys DEF by 60",
+                "Ignores Block",
+                "Ignores enemy shields DEF by 1/2",
+                "Enemys [Squashed Armor]s Lv. +1 with a successful hit",
+                "Your [Sages Teaching]s Lv. +1 with a successful hit",
+                "Extra ignores enemy PCs DEF in proportion to [Squashed Armor]s Lv. and additional [INT]",
+                "Increases Monster Damage in proportion to [Squashed Armor]s Lv. and additional [INT]",
+                "Once [Squashed Armor]s Lv. is 3, a successful hit will lift it"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3600%"
+              "value": "АТК: 3600%",
+              "effects": [
+                "Ignores enemys DEF by 60",
+                "Ignores Block",
+                "Ignores enemy shields DEF by 1/2",
+                "Enemys [Squashed Armor]s Lv. +1 with a successful hit",
+                "Your [Sages Teaching]s Lv. +1 with a successful hit",
+                "Extra ignores enemy PCs DEF in proportion to [Squashed Armor]s Lv. and additional [INT]",
+                "Increases Monster Damage in proportion to [Squashed Armor]s Lv. and additional [INT]",
+                "Once [Squashed Armor]s Lv. is 3, a successful hit will lift it"
+              ]
             }
           ],
           "special": []
@@ -211,14 +257,38 @@
           "sp_cost": "820",
           "aggro": "132",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "30%",
+          "heavy_armor_atk": "135%",
+          "light_armor_atk": "120%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "Ignores enemys DEF by 75",
+                "Ignores Block",
+                "Ignores enemy shields DEF by 1/2",
+                "Enemys [Squashed Armor]s Lv. +1 with a successful hit",
+                "Your [Sages Teaching]s Lv. +1 with a successful hit",
+                "Extra ignores enemy PCs DEF in proportion to [Squashed Armor]s Lv. and additional [INT]",
+                "Increases Monster Damage in proportion to [Squashed Armor]s Lv. and additional [INT]",
+                "Once [Squashed Armor]s Lv. is 3, a successful hit will lift it"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4800%"
+              "value": "АТК: 4800%",
+              "effects": [
+                "Ignores enemys DEF by 75",
+                "Ignores Block",
+                "Ignores enemy shields DEF by 1/2",
+                "Enemys [Squashed Armor]s Lv. +1 with a successful hit",
+                "Your [Sages Teaching]s Lv. +1 with a successful hit",
+                "Extra ignores enemy PCs DEF in proportion to [Squashed Armor]s Lv. and additional [INT]",
+                "Increases Monster Damage in proportion to [Squashed Armor]s Lv. and additional [INT]",
+                "Once [Squashed Armor]s Lv. is 3, a successful hit will lift it"
+              ]
             }
           ],
           "special": []
@@ -236,14 +306,38 @@
           "sp_cost": "1150",
           "aggro": "132",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "35%",
+          "heavy_armor_atk": "150%",
+          "light_armor_atk": "150%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2600%"
+              "value": "АТК: 2600%",
+              "effects": [
+                "Ignores enemys DEF by 85",
+                "Ignores Block",
+                "Ignores enemy shields DEF by 1/2",
+                "Enemys [Squashed Armor]s Lv. +1 with a successful hit",
+                "Your [Sages Teaching]s Lv. +1 with a successful hit",
+                "Extra ignores enemy PCs DEF in proportion to [Squashed Armor]s Lv. and additional [INT]",
+                "Increases Monster Damage in proportion to [Squashed Armor]s Lv. and additional [INT]",
+                "Once [Squashed Armor]s Lv. is 3, a successful hit will lift it"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5200%"
+              "value": "АТК: 5200%",
+              "effects": [
+                "Ignores enemys DEF by 85",
+                "Ignores Block",
+                "Ignores enemy shields DEF by 1/2",
+                "Enemys [Squashed Armor]s Lv. +1 with a successful hit",
+                "Your [Sages Teaching]s Lv. +1 with a successful hit",
+                "Extra ignores enemy PCs DEF in proportion to [Squashed Armor]s Lv. and additional [INT]",
+                "Increases Monster Damage in proportion to [Squashed Armor]s Lv. and additional [INT]",
+                "Once [Squashed Armor]s Lv. is 3, a successful hit will lift it"
+              ]
             }
           ],
           "special": []
@@ -261,14 +355,38 @@
           "sp_cost": "980",
           "aggro": "342",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "30%",
+          "heavy_armor_atk": "150%",
+          "light_armor_atk": "150%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2440%"
+              "value": "АТК: 2440%",
+              "effects": [
+                "Ignores enemys DEF by 60",
+                "Ignores Block",
+                "Ignores enemy shields DEF by 1/2",
+                "Enemys [Squashed Armor]s Lv. +1 with a successful hit",
+                "Your [Sages Teaching]s Lv. +1 with a successful hit",
+                "Extra ignores enemy PCs DEF in proportion to [Squashed Armor]s Lv. and additional [INT]",
+                "Increases Monster Damage in proportion to [Squashed Armor]s Lv. and additional [INT]",
+                "Once [Squashed Armor]s Lv. is 3, a successful hit will lift it"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4880%"
+              "value": "АТК: 4880%",
+              "effects": [
+                "Ignores enemys DEF by 60",
+                "Ignores Block",
+                "Ignores enemy shields DEF by 1/2",
+                "Enemys [Squashed Armor]s Lv. +1 with a successful hit",
+                "Your [Sages Teaching]s Lv. +1 with a successful hit",
+                "Extra ignores enemy PCs DEF in proportion to [Squashed Armor]s Lv. and additional [INT]",
+                "Increases Monster Damage in proportion to [Squashed Armor]s Lv. and additional [INT]",
+                "Once [Squashed Armor]s Lv. is 3, a successful hit will lift it"
+              ]
             }
           ],
           "special": []

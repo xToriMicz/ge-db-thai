@@ -143,6 +143,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -181,6 +182,7 @@
         "ATK SPD": "+3%",
         "Block": "+14"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Deep Straight",
@@ -195,14 +197,20 @@
           "sp_cost": "100",
           "aggro": "78",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 300%"
+              "value": "АТК: 300%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 600%"
+              "value": "АТК: 600%",
+              "effects": []
             }
           ],
           "special": []
@@ -220,14 +228,20 @@
           "sp_cost": "150",
           "aggro": "68",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 400%"
+              "value": "АТК: 400%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 800%"
+              "value": "АТК: 800%",
+              "effects": []
             }
           ],
           "special": []
@@ -245,14 +259,24 @@
           "sp_cost": "200",
           "aggro": "105",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 600%"
+              "value": "АТК: 600%",
+              "effects": [
+                "Double Damage to enemies with [Soft Armor]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1200%"
+              "value": "АТК: 1200%",
+              "effects": [
+                "Double Damage to enemies with [Soft Armor]"
+              ]
             }
           ],
           "special": [
@@ -273,14 +297,20 @@
           "sp_cost": "250",
           "aggro": "210",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 800%"
+              "value": "АТК: 800%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1600%"
+              "value": "АТК: 1600%",
+              "effects": []
             }
           ],
           "special": []
@@ -319,6 +349,7 @@
       "lv25_bonus": {
         "Block": "+24"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Slash Down",
@@ -333,14 +364,20 @@
           "sp_cost": "100",
           "aggro": "56",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1200%"
+              "value": "АТК: 1200%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": []
             }
           ],
           "special": []
@@ -358,26 +395,58 @@
           "sp_cost": "150",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration 10 sec"
+              "value": "",
+              "effects": [
+                "Duration 10 sec",
+                "Block +8",
+                "Movement Speed -30%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration 10 sec"
+              "value": "",
+              "effects": [
+                "Duration 10 sec",
+                "Block +35",
+                "Movement Speed -30%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration 10 sec"
+              "value": "",
+              "effects": [
+                "Duration 10 sec",
+                "Block +38",
+                "Movement Speed -30%",
+                "D.R. +1"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration 10 sec"
+              "value": "",
+              "effects": [
+                "Duration 10 sec",
+                "Block +41",
+                "Movement Speed -30%",
+                "D.R. +1"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration 10 sec"
+              "value": "",
+              "effects": [
+                "Duration 10 sec",
+                "Block +44",
+                "Movement Speed -30%",
+                "D.R. +1"
+              ]
             }
           ],
           "special": []
@@ -395,14 +464,26 @@
           "sp_cost": "200",
           "aggro": "117",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 700%"
+              "value": "АТК: 700%",
+              "effects": [
+                "Disregards DEF of small/medium enemies",
+                "Ineffective on large enemies"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1400%"
+              "value": "АТК: 1400%",
+              "effects": [
+                "Disregards DEF of small/medium enemies",
+                "Ineffective on large enemies"
+              ]
             }
           ],
           "special": []
@@ -420,14 +501,24 @@
           "sp_cost": "300",
           "aggro": "136",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 900%"
+              "value": "АТК: 900%",
+              "effects": [
+                "25% Chance to [Stun] Enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": [
+                "25% Chance to [Stun] Enemy"
+              ]
             }
           ],
           "special": []
@@ -469,6 +560,7 @@
         "Penetration": "10+5",
         "Immunity": "15+25"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Pray",
@@ -483,14 +575,30 @@
           "sp_cost": "270",
           "aggro": "300",
           "skill_type": "Buff",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration : 5 Minutes"
+              "value": "",
+              "effects": [
+                "Duration : 5 Minutes",
+                "[Pray] - Level doesnt rise while using the skil",
+                "IMM +1",
+                "From the skill level 10, applies [Holy] instead of [Pray]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration : 5 Minutes"
+              "value": "",
+              "effects": [
+                "Duration : 5 Minutes",
+                "Increases [Holy] level",
+                "IMM +10",
+                "Decreases all damage by 2% per 1 level of Holy, Knock-down Time -5%"
+              ]
             }
           ],
           "special": []
@@ -508,18 +616,32 @@
           "sp_cost": "100",
           "aggro": "500",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1200%"
+              "value": "АТК: 1200%",
+              "effects": [
+                "30% chance to inflict [Stun]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "30% chance to inflict [Stun]"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "АТК: 2640%"
+              "value": "АТК: 2640%",
+              "effects": [
+                "30% chance to [Stun] on enemy",
+                "Increases [Holy] level in every attack access on an enemy"
+              ]
             }
           ],
           "special": []
@@ -537,18 +659,43 @@
           "sp_cost": "250",
           "aggro": "300",
           "skill_type": "BUILD2",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Creates a sanctuary on a targeted area"
+              "value": "",
+              "effects": [
+                "Creates a sanctuary on a targeted area",
+                "Available to summon maximum 1 at the same time",
+                "Sanctuary Duration: 5 sec",
+                "Increases damage depending on skill level and STR stat",
+                "100% chance to inflict [Slow] on enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Creates a sanctuary on a targeted area"
+              "value": "",
+              "effects": [
+                "Creates a sanctuary on a targeted area",
+                "Available to summon maximum 1 at the same time",
+                "Sanctuary Duration: 10 sec",
+                "Increases damage depending on skill level and STR stat",
+                "100% chance to inflict [Slow] on enemy"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Creates a sanctuary on a targeted area"
+              "value": "",
+              "effects": [
+                "Creates a sanctuary on a targeted area",
+                "Available to summon maximum 1 at the same time",
+                "Sanctuary Duration: 11 sec",
+                "Increases damage depending on skill level and STR stat",
+                "100% chance to inflict [Slow] on enemy"
+              ]
             }
           ],
           "special": []
@@ -566,14 +713,26 @@
           "sp_cost": "400",
           "aggro": "400",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "130%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": [
+                "100% chance to inflict [Electric Shock] on enemy",
+                "Increases [Holy] level in every successful attack on an enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3600%"
+              "value": "АТК: 3600%",
+              "effects": [
+                "100% chance to inflict [Electric Shock] on enemy",
+                "Increases [Holy] level in every successful attack on an enemy"
+              ]
             }
           ],
           "special": []
@@ -591,26 +750,75 @@
           "sp_cost": "540",
           "aggro": "500",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 3",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 5 Minutes"
+              "value": "",
+              "effects": [
+                "Duration: 5 Minutes",
+                "Damage from all attacks -25%",
+                "Knock-down Time -50%",
+                "IMM +15",
+                "Max HP +10% per 1 level of consumed [Holy] buff",
+                "DR. +2",
+                "Cancels [Holy] buff"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 5 Minutes"
+              "value": "",
+              "effects": [
+                "Duration: 5 Minutes",
+                "Damage from all attacks -25%",
+                "Knock-down Time -50%",
+                "IMM +15",
+                "Max HP +10% per 1 level of consumed [Holy] buff",
+                "DR. +2",
+                "Cancels [Holy] buff"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 5 Minutes"
+              "value": "",
+              "effects": [
+                "Duration: 5 Minutes",
+                "Damage from all attacks -25%",
+                "Knock-down Time -50%",
+                "IMM +15",
+                "Max HP +10% per 1 level of consumed [Holy] buff",
+                "DR. +2",
+                "Cancels [Holy] buff"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 5 Minutes"
+              "value": "",
+              "effects": [
+                "Duration: 5 Minutes",
+                "Damage from all attacks -25%",
+                "Knock-down Time -50%",
+                "IMM +15",
+                "Max HP +10% per 1 level of consumed [Holy] buff",
+                "DR. +2",
+                "Cancels [Holy] buff"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 5 Minutes"
+              "value": "",
+              "effects": [
+                "Duration: 5 Minutes",
+                "Damage from all attacks -25%",
+                "Knock-down Time -50%",
+                "IMM +15",
+                "Max HP +10% per 1 level of consumed [Holy] buff",
+                "DR. +2",
+                "Cancels [Holy] buff"
+              ]
             }
           ],
           "special": []

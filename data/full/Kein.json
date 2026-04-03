@@ -86,6 +86,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -128,6 +129,7 @@
         "Penetration": "5+25",
         "Immunity": "15"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Avius",
@@ -142,18 +144,35 @@
           "sp_cost": "620",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "[Mad Clown] level +1 when inflicting basic attack"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "[Mad Clown] level +1 when inflicting basic attack"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "A.R. +1",
+                "[Mad Clown] level +1 when inflicting basic attack"
+              ]
             }
           ],
           "special": []
@@ -171,14 +190,28 @@
           "sp_cost": "560",
           "aggro": "286",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 3",
+          "soft_armor_atk": "150%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "150%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 974%"
+              "value": "АТК: 974%",
+              "effects": [
+                "Ignores DEF of enemy by 60",
+                "Ignore Block",
+                "50% chance to inflict [Stun] on enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1948%"
+              "value": "АТК: 1948%",
+              "effects": [
+                "Ignores DEF of enemy by 60",
+                "Ignore Block",
+                "50% chance to inflict [Stun] on enemy"
+              ]
             }
           ],
           "special": []
@@ -196,14 +229,26 @@
           "sp_cost": "840",
           "aggro": "297",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "150%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "150%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1368%"
+              "value": "АТК: 1368%",
+              "effects": [
+                "Ignores 75 DEF",
+                "Ignore Blocking"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2736%"
+              "value": "АТК: 2736%",
+              "effects": [
+                "Ignores 75 DEF",
+                "Ignore Blocking"
+              ]
             }
           ],
           "special": []
@@ -212,7 +257,7 @@
           "name": "Corriente",
           "image": "flc2_corient.jpg",
           "description": "Move forward and slash the enemy by swinging the dagger like youre dancing. Cast [Corriente Impact] or an even more powerful [Corriente Strike] at a 33% chance when re-casting the skill.",
-          "target": "",
+          "target": "Max Range 5m / Radius 4m / Max 5 enemies",
           "casting_time": "Instant",
           "cooldown": "12 sec.",
           "duration": "1.6 sec.",
@@ -221,14 +266,26 @@
           "sp_cost": "1050",
           "aggro": "200",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "150%",
+          "heavy_armor_atk": "75%",
+          "light_armor_atk": "150%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1614%"
+              "value": "АТК: 1614%",
+              "effects": [
+                "Ignores 75 DEF",
+                "80% chance to inflict [Shackles] to target"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3228%"
+              "value": "АТК: 3228%",
+              "effects": [
+                "Ignores 75 DEF",
+                "80% chance to inflict [Shackles] to target"
+              ]
             }
           ],
           "special": []
@@ -246,14 +303,30 @@
           "sp_cost": "1250",
           "aggro": "342",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 15",
+          "soft_armor_atk": "150%",
+          "heavy_armor_atk": "75%",
+          "light_armor_atk": "150%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1833%"
+              "value": "АТК: 1833%",
+              "effects": [
+                "Ignores 85 enemy DEF",
+                "Ignore Block",
+                "[Control] enemy by a50% chance",
+                "[Amarrer Strike] : Ignore enemy DEF"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3665%"
+              "value": "АТК: 3665%",
+              "effects": [
+                "Ignores 85 enemy DEF",
+                "Ignore Block",
+                "[Control] enemy by a50% chance",
+                "[Amarrer Strike] : Ignore enemy DEF"
+              ]
             }
           ],
           "special": []

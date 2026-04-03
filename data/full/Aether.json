@@ -88,6 +88,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -130,6 +131,7 @@
         "Penetration": "5+25",
         "Immunity": "5+25"
       },
+      "consume": "Steel Bullet x 2",
       "skills": [
         {
           "name": "Barrett",
@@ -144,14 +146,26 @@
           "sp_cost": "330",
           "aggro": "160",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bullet x 8",
+          "soft_armor_atk": "115%",
+          "heavy_armor_atk": "70%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 800%"
+              "value": "АТК: 800%",
+              "effects": [
+                "Remove [Invincible] from the enemy",
+                "Skill Damage x3 upon accurate hit (effect halved against PC targets)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1600%"
+              "value": "АТК: 1600%",
+              "effects": [
+                "Remove [Invincible] from the enemy",
+                "Skill Damage x3 upon accurate hit (effect halved against PC targets)"
+              ]
             }
           ],
           "special": []
@@ -169,22 +183,66 @@
           "sp_cost": "460",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 8",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Evade every attack during the skills animation"
+              "value": "",
+              "effects": [
+                "Evade every attack during the skills animation",
+                "Duration : 15 seconds",
+                "Detects [Invisible] enemies",
+                "Critical +2",
+                "Max. Critical +2",
+                "Casting Time -25%",
+                "Ignore DEF +5%",
+                "[Stability Supplement]: Increase Skill Damage by (2% of extra [DEX]) (Does not apply versus PC)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Evade every attack during the skills animation"
+              "value": "",
+              "effects": [
+                "Evade every attack during the skills animation",
+                "Duration : 24 seconds",
+                "Detects [Invisible] enemies",
+                "Critical +20",
+                "Max. Critical +20",
+                "Casting Time -25%",
+                "Ignore DEF +5%",
+                "[Stability Supplement]: Increase Skill Damage by (2% of extra [DEX]) (Does not apply versus PC)"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Evade every attack during the skills animation"
+              "value": "",
+              "effects": [
+                "Evade every attack during the skills animation",
+                "Duration : 25 seconds",
+                "Detects [Invisible] enemies",
+                "Critical +22",
+                "Max. Critical +22",
+                "Casting Time -25%",
+                "Ignore DEF +5%",
+                "[Stability Supplement]: Increase Skill Damage by (2% of extra [DEX]) (Does not apply versus PC)"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Evade every attack during the skills animation"
+              "value": "",
+              "effects": [
+                "Evade every attack during the skills animation",
+                "Duration : 25 seconds",
+                "Detects [Invisible] enemies",
+                "Critical +25",
+                "Max. Critical +25",
+                "Casting Time -25%",
+                "Ignore DEF +5%",
+                "[Stability Supplement]: Increase Skill Damage by (2% of extra [DEX]) (Does not apply versus PC)"
+              ]
             }
           ],
           "special": []
@@ -202,14 +260,28 @@
           "sp_cost": "500",
           "aggro": "358",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bullet x 12",
+          "soft_armor_atk": "75%",
+          "heavy_armor_atk": "125%",
+          "light_armor_atk": "105%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1200%"
+              "value": "АТК: 1200%",
+              "effects": [
+                "Ignore Block",
+                "20% chance to inflict [Burn]",
+                "Skill Damage x3 upon accurate hit (effect halved against PC targets)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "Ignore Block",
+                "20% chance to inflict [Burn]",
+                "Skill Damage x3 upon accurate hit (effect halved against PC targets)"
+              ]
             }
           ],
           "special": []
@@ -227,14 +299,26 @@
           "sp_cost": "530",
           "aggro": "458",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bullet x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1500%"
+              "value": "АТК: 1500%",
+              "effects": [
+                "40% chance to inflict [Enervation]",
+                "Skill Damage x4 upon accurate hit (effect halved against PC targets)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "40% chance to inflict [Enervation]",
+                "Skill Damage x4 upon accurate hit (effect halved against PC targets)"
+              ]
             }
           ],
           "special": []
@@ -243,7 +327,7 @@
           "name": "Fusillade",
           "image": "sentn_fusillade.jpg",
           "description": "Activate the ultimate power of Atlas, then fire at the target in unison.",
-          "target": "",
+          "target": "Max Range 14m / Radius 2m / Max 6 enemies",
           "casting_time": "2.033 sec.",
           "cooldown": "25 sec.",
           "duration": "3.033 sec.",
@@ -252,14 +336,26 @@
           "sp_cost": "610",
           "aggro": "560",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bullet x 15",
+          "soft_armor_atk": "120%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2500%"
+              "value": "АТК: 2500%",
+              "effects": [
+                "50% chance to inflict [Enervation]",
+                "Skill Damage x5~6 upon accurate hit (effect halved against PC targets)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5000%"
+              "value": "АТК: 5000%",
+              "effects": [
+                "50% chance to inflict [Enervation]",
+                "Skill Damage x5~6 upon accurate hit (effect halved against PC targets)"
+              ]
             }
           ],
           "special": []

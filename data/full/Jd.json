@@ -318,6 +318,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -355,6 +356,7 @@
       "lv25_bonus": {
         "ATK SPD": "+3%"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Deep Straight",
@@ -369,14 +371,20 @@
           "sp_cost": "100",
           "aggro": "78",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 328%"
+              "value": "АТК: 328%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 656%"
+              "value": "АТК: 656%",
+              "effects": []
             }
           ],
           "special": []
@@ -394,14 +402,20 @@
           "sp_cost": "200",
           "aggro": "68",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 288%"
+              "value": "АТК: 288%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 576%"
+              "value": "АТК: 576%",
+              "effects": []
             }
           ],
           "special": []
@@ -419,14 +433,24 @@
           "sp_cost": "250",
           "aggro": "105",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 469%"
+              "value": "АТК: 469%",
+              "effects": [
+                "Double Damage to enemies with [Soft Armor]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 938%"
+              "value": "АТК: 938%",
+              "effects": [
+                "Double Damage to enemies with [Soft Armor]"
+              ]
             }
           ],
           "special": [
@@ -447,14 +471,20 @@
           "sp_cost": "300",
           "aggro": "210",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 990%"
+              "value": "АТК: 990%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1980%"
+              "value": "АТК: 1980%",
+              "effects": []
             }
           ],
           "special": []
@@ -494,6 +524,7 @@
         "ATK SPD": "+25%",
         "Critical": "+8"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Crescent Moon",
@@ -508,14 +539,20 @@
           "sp_cost": "150",
           "aggro": "47",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 180%"
+              "value": "АТК: 180%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 360%"
+              "value": "АТК: 360%",
+              "effects": []
             }
           ],
           "special": []
@@ -533,14 +570,20 @@
           "sp_cost": "200",
           "aggro": "88",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 386%"
+              "value": "АТК: 386%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 772%"
+              "value": "АТК: 772%",
+              "effects": []
             }
           ],
           "special": []
@@ -558,14 +601,20 @@
           "sp_cost": "300",
           "aggro": "62",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 246%"
+              "value": "АТК: 246%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 492%"
+              "value": "АТК: 492%",
+              "effects": []
             }
           ],
           "special": []
@@ -605,6 +654,7 @@
         "ATK SPD": "+30%",
         "Critical": "+12"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Triskelion",
@@ -619,14 +669,20 @@
           "sp_cost": "100",
           "aggro": "96",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 427%"
+              "value": "АТК: 427%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 853%"
+              "value": "АТК: 853%",
+              "effects": []
             }
           ],
           "special": []
@@ -644,14 +700,20 @@
           "sp_cost": "150",
           "aggro": "52",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 205%"
+              "value": "АТК: 205%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 409%"
+              "value": "АТК: 409%",
+              "effects": []
             }
           ],
           "special": []
@@ -669,14 +731,24 @@
           "sp_cost": "250",
           "aggro": "118",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 535%"
+              "value": "АТК: 535%",
+              "effects": [
+                "Double Damage to enemies with [Soft Armor]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1070%"
+              "value": "АТК: 1070%",
+              "effects": [
+                "Double Damage to enemies with [Soft Armor]"
+              ]
             }
           ],
           "special": [
@@ -697,14 +769,24 @@
           "sp_cost": "300",
           "aggro": "256",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1223%"
+              "value": "АТК: 1223%",
+              "effects": [
+                "Enemy DEF -50"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2446%"
+              "value": "АТК: 2446%",
+              "effects": [
+                "Enemy DEF -50"
+              ]
             }
           ],
           "special": []
@@ -745,6 +827,7 @@
         "Penetration": "15",
         "Immunity": "10"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Call Zeppelin",
@@ -759,26 +842,60 @@
           "sp_cost": "300",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration20 secs."
+              "value": "",
+              "effects": [
+                "Duration20 secs.",
+                "ATK +2%",
+                "ATK SPD +1%",
+                "After deactivation, goes into [Air Strike Ready] mode for 20 secs."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration20 secs."
+              "value": "",
+              "effects": [
+                "Duration20 secs.",
+                "ATK +20%",
+                "ATK SPD +10%",
+                "After deactivation, goes into [Air Strike Ready] mode for 20 secs."
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration15 secs."
+              "value": "",
+              "effects": [
+                "Duration15 secs.",
+                "ATK +22%",
+                "ATK SPD +11%",
+                "In case of cancel apply [Air Strike Ready] for 25 seconds"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration12 sec"
+              "value": "",
+              "effects": [
+                "Duration12 sec",
+                "ATK +24%",
+                "ATK SPD +12%",
+                "Applies [Air Strike Ready] for 25 sec in case of cancelation"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration12 sec"
+              "value": "",
+              "effects": [
+                "Duration12 sec",
+                "ATK +26%",
+                "ATK SPD +13%",
+                "Applies [Air Strike Ready] for 25 sec in case of cancelation"
+              ]
             }
           ],
           "special": []
@@ -787,7 +904,7 @@
           "name": "Blast Stinger",
           "image": "bco_stinger.jpg",
           "description": "Charges fastly from a long distance and stabs the target. When the weapon is pulled out, causes explosion dealing damage to nearby targets.",
-          "target": "",
+          "target": "Max Range 9m / Radius 3m / Max 4 Targets",
           "casting_time": "0.466 sec.",
           "cooldown": "15 sec.",
           "duration": "2.566 sec.",
@@ -796,14 +913,28 @@
           "sp_cost": "300",
           "aggro": "177",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "125%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 900%"
+              "value": "АТК: 900%",
+              "effects": [
+                "Ignores DEF 30",
+                "50% chance to inflict [Mortal Wound] on enemy",
+                "When equipped Rapier, if the skill hits the target 3 times, ignores Enemy DEF -50 additionally"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": [
+                "Ignores DEF 30",
+                "50% chance to inflict [Mortal Wound] on enemy",
+                "When equipped Rapier, if the skill hits the target 3 times, ignores Enemy DEF -50 additionally"
+              ]
             }
           ],
           "special": []
@@ -812,7 +943,7 @@
           "name": "Detonate",
           "image": "bco_detonation.jpg",
           "description": "Scatter gunpowder on the ground and make a spark to detonate.",
-          "target": "Up to 15 enemies within a range of 10m",
+          "target": "Up to 15 enemies within a range of 13m",
           "casting_time": "2.3 sec.",
           "cooldown": "25 sec.",
           "duration": "4.1 sec.",
@@ -821,18 +952,35 @@
           "sp_cost": "400",
           "aggro": "250",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 3",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1100%"
+              "value": "АТК: 1100%",
+              "effects": [
+                "100% chance to inflict [Burn] on enemy",
+                "When equipped Rapier, if the skill hits the target 3 times, damage +30%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "100% chance to inflict [Burn] on enemy",
+                "When equipped Rapier, if the skill hits the target 3 times, damage +30%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "АТК: 2420%"
+              "value": "АТК: 2420%",
+              "effects": [
+                "100% chance to inflict [Burn] on enemy",
+                "When equipped Rapier, if the skill hits the target 3 times, damage +20%",
+                "In case of casting, 10% chance to apply [Air Strike Ready] for 25 sec"
+              ]
             }
           ],
           "special": []
@@ -850,14 +998,30 @@
           "sp_cost": "500",
           "aggro": "260",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "125%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "150%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1380%"
+              "value": "АТК: 1380%",
+              "effects": [
+                "Ignores enemys DEF by 75",
+                "Ignores Evasion",
+                "Damage to Evasion type enemies +1% per 1 evasion",
+                "Wearing Rapier, it ignores enemys DEF by 50 additionally after 3rd skill accuracy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2760%"
+              "value": "АТК: 2760%",
+              "effects": [
+                "Ignores enemys DEF by 75",
+                "Ignores Evasion",
+                "Damage to Evasion type enemies +1% per 1 evasion",
+                "Wearing Rapier, it ignores enemys DEF by 50 additionally after 3rd skill accuracy"
+              ]
             }
           ],
           "special": []
@@ -875,18 +1039,37 @@
           "sp_cost": "500",
           "aggro": "238",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 8",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "150%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "100% chance to inflict [Burn] on enemy",
+                "When equipped Rapier, if the skill hits the target 3 times, damage +20%",
+                "After casting, 10% chance to renew the time of [Air Strike Ready] for 20 sec"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4400%"
+              "value": "АТК: 4400%",
+              "effects": [
+                "100% chance to inflict [Burn] on enemy",
+                "When equipped Rapier, if the skill hits the target 3 times, damage +20%",
+                "After casting, 10% chance to renew the time of [Air Strike Ready] for 20 sec"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "АТК: 4840%"
+              "value": "АТК: 4840%",
+              "effects": [
+                "100% chance to inflict [Burn] on enemy",
+                "When equipped Rapier, if the skill hits the target 3 times, damage +20%",
+                "After casting, 10% chance to renew the time of [Air Strike Ready] for 20 sec"
+              ]
             }
           ],
           "special": []
@@ -938,6 +1121,7 @@
         "Penetration": "15+25",
         "Immunity": "10+20"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Shrouded in Darkness",
@@ -952,14 +1136,50 @@
           "sp_cost": "100",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 2",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "A.R. +1"
+              "value": "",
+              "effects": [
+                "A.R. +1",
+                "D.R. +1",
+                "ATK +75%",
+                "Monster Damage +75%",
+                "Critical +15",
+                "Max. Critical +15",
+                "Critical Damage +75%",
+                "All attacks scale by (5% of extra [STR]) (effectiveness reduced in PvP)",
+                "The following debuffs provide additional effects:",
+                "[Gloomy Present] Attacks dealt against J.D. deal 25% less damage, with a 10% chance to completely miss",
+                "[Enervation] J.D.s attacks become guaranteed criticals",
+                "[Prophecy] J.Ds attacks ignore 15% Immunity and always bypasses Block",
+                "[Pressure] J.D.s attacks will restore his HP according to 1% of damage dealt",
+                "[Eclipse] J.D.s attacks deal an additional 200% damage"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "A.R. +1"
+              "value": "",
+              "effects": [
+                "A.R. +1",
+                "D.R. +1",
+                "ATK +75%",
+                "Monster Damage +75%",
+                "Critical +15",
+                "Max. Critical +15",
+                "Critical Damage +75%",
+                "All attacks scale by (5% of extra [STR]) (effectiveness reduced in PvP)",
+                "The following debuffs provide additional effects:",
+                "[Gloomy Present] Attacks dealt against J.D. deal 25% less damage, with a 10% chance to completely miss",
+                "[Enervation] J.D.s attacks become guaranteed criticals",
+                "[Prophecy] J.Ds attacks ignore 15% Immunity and always bypasses Block",
+                "[Pressure] J.D.s attacks will restore his HP according to 1% of damage dealt",
+                "[Eclipse] J.D.s attacks deal an additional 200% damage"
+              ]
             }
           ],
           "special": []
@@ -977,14 +1197,30 @@
           "sp_cost": "250",
           "aggro": "47",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 1",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1400%"
+              "value": "АТК: 1400%",
+              "effects": [
+                "Ignores 90 DEF",
+                "50% chance to inflict [Gloomy Present] (chance halved in PvP)",
+                "100% chance to inflict [Dark Eclipse]",
+                "Ignores Debuff RES"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2800%"
+              "value": "АТК: 2800%",
+              "effects": [
+                "Ignores 90 DEF",
+                "50% chance to inflict [Gloomy Present] (chance halved in PvP)",
+                "100% chance to inflict [Dark Eclipse]",
+                "Ignores Debuff RES"
+              ]
             }
           ],
           "special": []
@@ -993,7 +1229,7 @@
           "name": "Infernal Detonate",
           "image": "cod_darkdetonate.jpg",
           "description": "Darkness surrounds your weapon. Defeat the enemy with wind pressure from a dark crescent-shaped slash.",
-          "target": "Up to 15 enemies within a range of 10m",
+          "target": "Up to 15 enemies within a range of 13m",
           "casting_time": "2.3 sec.",
           "cooldown": "10 sec.",
           "duration": "4.1 sec.",
@@ -1002,14 +1238,30 @@
           "sp_cost": "250",
           "aggro": "250",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": [
+                "Ignores 100 DEF",
+                "50% chance to inflict [Enervation] (chance halved in PvP)",
+                "100% chance to inflict [Dark Eclipse]",
+                "Ignores Debuff RES"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3600%"
+              "value": "АТК: 3600%",
+              "effects": [
+                "Ignores 100 DEF",
+                "50% chance to inflict [Enervation] (chance halved in PvP)",
+                "100% chance to inflict [Dark Eclipse]",
+                "Ignores Debuff RES"
+              ]
             }
           ],
           "special": []
@@ -1027,14 +1279,32 @@
           "sp_cost": "888",
           "aggro": "95",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "160%",
+          "light_armor_atk": "160%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "Ignores 110 DEF",
+                "Ignores Block",
+                "50% chance to inflict [Prophecy] (chance halved in PvP)",
+                "100% chance to inflict [Dark Eclipse]",
+                "Ignores Debuff RES"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4800%"
+              "value": "АТК: 4800%",
+              "effects": [
+                "Ignores 110 DEF",
+                "Ignores Block",
+                "50% chance to inflict [Prophecy] (chance halved in PvP)",
+                "100% chance to inflict [Dark Eclipse]",
+                "Ignores Debuff RES"
+              ]
             }
           ],
           "special": []
@@ -1052,14 +1322,32 @@
           "sp_cost": "1200",
           "aggro": "238",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 20",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "160%",
+          "light_armor_atk": "160%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1950%"
+              "value": "АТК: 1950%",
+              "effects": [
+                "Ignores 120 DEF",
+                "Ignores Block",
+                "50% chance to inflict [Pressure] (chance halved in PvP)",
+                "100% chance to inflict [Dark Eclipse]",
+                "Ignores Debuff RES"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3900%"
+              "value": "АТК: 3900%",
+              "effects": [
+                "Ignores 120 DEF",
+                "Ignores Block",
+                "50% chance to inflict [Pressure] (chance halved in PvP)",
+                "100% chance to inflict [Dark Eclipse]",
+                "Ignores Debuff RES"
+              ]
             }
           ],
           "special": []

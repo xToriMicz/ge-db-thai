@@ -98,6 +98,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -141,6 +142,7 @@
         "Penetration": "20",
         "Immunity": "10+10"
       },
+      "consume": "Metal Shell Ammo x 2",
       "skills": [
         {
           "name": "Direct Shot",
@@ -155,14 +157,26 @@
           "sp_cost": "210",
           "aggro": "30",
           "skill_type": "Shooting",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1200%"
+              "value": "АТК: 1200%",
+              "effects": [
+                "Specialized in damage against structures",
+                "Grants the caster [Counterweight] +1 level (up to level 4) when used on an enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "Specialized in damage against structures",
+                "Grants the caster [Counterweight] +1 level (up to level 4) when used on an enemy"
+              ]
             }
           ],
           "special": []
@@ -180,14 +194,28 @@
           "sp_cost": "460",
           "aggro": "50",
           "skill_type": "Shooting",
+          "consume_item": "Enhanced Heavy Shell Ammo x 1",
+          "soft_armor_atk": "115%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1400%"
+              "value": "АТК: 1400%",
+              "effects": [
+                "60% chance to inflict [Excidio] on enemy PCs",
+                "In [Ballistics - Siege] state, skill damage is doubled (effect halved for PCs)",
+                "Skill damage increases up to 2x with more targets hit"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2800%"
+              "value": "АТК: 2800%",
+              "effects": [
+                "60% chance to inflict [Excidio] on enemy PCs",
+                "In [Ballistics - Siege] state, skill damage is doubled (effect halved for PCs)",
+                "Skill damage increases up to 2x with more targets hit"
+              ]
             }
           ],
           "special": []
@@ -205,14 +233,30 @@
           "sp_cost": "520",
           "aggro": "150",
           "skill_type": "Shooting",
+          "consume_item": "Ancient Star Orb x 15",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "50% chance to inflict [Darkness] on enemy PCs",
+                "Cancels enemy stealth and grants [Intimidation] to revealed PCs (ignores resistance)",
+                "In [Ballistics - Siege] state, skill damage is doubled (effect halved for PCs)",
+                "Skill damage increases up to 2x with more targets hit"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4400%"
+              "value": "АТК: 4400%",
+              "effects": [
+                "50% chance to inflict [Darkness] on enemy PCs",
+                "Cancels enemy stealth and grants [Intimidation] to revealed PCs (ignores resistance)",
+                "In [Ballistics - Siege] state, skill damage is doubled (effect halved for PCs)",
+                "Skill damage increases up to 2x with more targets hit"
+              ]
             }
           ],
           "special": []
@@ -230,14 +274,30 @@
           "sp_cost": "630",
           "aggro": "150",
           "skill_type": "Shooting",
+          "consume_item": "Enhanced Heavy Shell Ammo x 1",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "50% chance to inflict [Inferno] on enemy PCs",
+                "Cancels enemy invincibility",
+                "In [Ballistics - Siege] state, skill damage is doubled (effect halved for PCs)",
+                "Skill damage increases up to 2x with more targets hit"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4800%"
+              "value": "АТК: 4800%",
+              "effects": [
+                "50% chance to inflict [Inferno] on enemy PCs",
+                "Cancels enemy invincibility",
+                "In [Ballistics - Siege] state, skill damage is doubled (effect halved for PCs)",
+                "Skill damage increases up to 2x with more targets hit"
+              ]
             }
           ],
           "special": []
@@ -255,14 +315,30 @@
           "sp_cost": "1100",
           "aggro": "150",
           "skill_type": "Shooting",
+          "consume_item": "Anti Castle Heavy Shell Ammo x 1",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "150%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1650%"
+              "value": "АТК: 1650%",
+              "effects": [
+                "Specialized in damage against structures",
+                "Amplifies damage to structures",
+                "100% chance to inflict [Siege Initiation] on enemy structures upon casting",
+                "Grants caster [Counterweight] +1 level (up to level 4) when used on an enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3300%"
+              "value": "АТК: 3300%",
+              "effects": [
+                "Specialized in damage against structures",
+                "Amplifies damage to structures",
+                "100% chance to inflict [Siege Initiation] on enemy structures upon casting",
+                "Grants caster [Counterweight] +1 level (up to level 4) when used on an enemy"
+              ]
             }
           ],
           "special": []
@@ -312,6 +388,7 @@
         "Penetration": "5+25",
         "Immunity": "5+10"
       },
+      "consume": "Metal Shell Ammo x 3",
       "skills": [
         {
           "name": "Compression Wave",
@@ -326,14 +403,30 @@
           "sp_cost": "430",
           "aggro": "50",
           "skill_type": "Shooting",
+          "consume_item": "",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1700%"
+              "value": "АТК: 1700%",
+              "effects": [
+                "50% chance to inflict [Stun] on enemies",
+                "Deals additional damage according to [Chamber Overheat] Lv. (halved for [PC])",
+                "In [Stance Control] state, skill damage doubles for nearby enemies (effect halved for PCs)",
+                "Additionally ignores 0.4% of enemy PC defense based on [Technique]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3400%"
+              "value": "АТК: 3400%",
+              "effects": [
+                "50% chance to inflict [Stun] on enemies",
+                "Deals additional damage according to [Chamber Overheat] Lv. (halved for [PC])",
+                "In [Stance Control] state, skill damage doubles for nearby enemies (effect halved for PCs)",
+                "Additionally ignores 0.4% of enemy PC defense based on [Technique]"
+              ]
             }
           ],
           "special": [
@@ -354,14 +447,26 @@
           "sp_cost": "520",
           "aggro": "30",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 20",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Grants buff ["
+              "value": "",
+              "effects": [
+                "Grants buff [Overheat Shutdown], [Stance Control] level +1 by converting 10 levels of [Chamber Overheat]",
+                "Grants [Chamber Overheat] if level is under 10"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Grants buff ["
+              "value": "",
+              "effects": [
+                "Grants buff [Overheat Shutdown], [Stance Control] level +1 by converting 10 levels of [Chamber Overheat]",
+                "Grants [Chamber Overheat] if level is under 10"
+              ]
             }
           ],
           "special": []
@@ -379,14 +484,32 @@
           "sp_cost": "840",
           "aggro": "50",
           "skill_type": "Shooting",
+          "consume_item": "Metal Shell Ammo x 10",
+          "soft_armor_atk": "120%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "105%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "55% chance to inflict [Suppression] on enemies",
+                "Reduces [Chamber Overheat] by 1 level when used on an enemy",
+                "Skill damage increases proportionally to [Chamber Overheat] level (effect halved for PCs)",
+                "In [Stance Control] state, skill damage doubles for distant enemies (effect halved for PCs)",
+                "Additionally ignores 0.4% of enemy PC defense based on [Technique]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4400%"
+              "value": "АТК: 4400%",
+              "effects": [
+                "55% chance to inflict [Suppression] on enemies",
+                "Reduces [Chamber Overheat] by 1 level when used on an enemy",
+                "Skill damage increases proportionally to [Chamber Overheat] level (effect halved for PCs)",
+                "In [Stance Control] state, skill damage doubles for distant enemies (effect halved for PCs)",
+                "Additionally ignores 0.4% of enemy PC defense based on [Technique]"
+              ]
             }
           ],
           "special": [
@@ -407,14 +530,36 @@
           "sp_cost": "2100",
           "aggro": "70",
           "skill_type": "Shooting",
+          "consume_item": "Metal Shell Ammo x 12",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2500%"
+              "value": "АТК: 2500%",
+              "effects": [
+                "Can be used in [Stance Control] state",
+                "Reusing during casting activates the skill",
+                "Knockdown distance, knockdown time, and damage increase in proportion to casting time (up to 4x)",
+                "Skill damage further increases at maximum casting time (up to 2x)",
+                "[Chamber Overheat] buff level increases in proportion to casting time (up to level 4)",
+                "Cancels enemys invincibility",
+                "Grants the caster [Invincibility] for 2 seconds upon hitting an enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5000%"
+              "value": "АТК: 5000%",
+              "effects": [
+                "Can be used in [Stance Control] state",
+                "Reusing during casting activates the skill",
+                "Knockdown distance, knockdown time, and damage increase in proportion to casting time (up to 4x)",
+                "Skill damage further increases at maximum casting time (up to 2x)",
+                "[Chamber Overheat] buff level increases in proportion to casting time (up to level 4)",
+                "Cancels enemys invincibility",
+                "Grants the caster [Invincibility] for 2 seconds upon hitting an enemy"
+              ]
             }
           ],
           "special": []
@@ -432,14 +577,32 @@
           "sp_cost": "950",
           "aggro": "100",
           "skill_type": "Shooting",
+          "consume_item": "Metal Shell Ammo x 10",
+          "soft_armor_atk": "120%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 3200%"
+              "value": "АТК: 3200%",
+              "effects": [
+                "65% chance to [Bind] the enemy",
+                "Reduces [Chamber Overheat] by 1 level when used on an enemy",
+                "Skill damage increases inversely proportional to [Chamber Overheat] level (effect halved for PCs)",
+                "In [Stance Control] state, skill damage is doubled for distant enemies (effect halved for PCs)",
+                "Additionally ignores enemy PC defense by 0.4% of [Technique]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 6400%"
+              "value": "АТК: 6400%",
+              "effects": [
+                "65% chance to [Bind] the enemy",
+                "Reduces [Chamber Overheat] by 1 level when used on an enemy",
+                "Skill damage increases inversely proportional to [Chamber Overheat] level (effect halved for PCs)",
+                "In [Stance Control] state, skill damage is doubled for distant enemies (effect halved for PCs)",
+                "Additionally ignores enemy PC defense by 0.4% of [Technique]"
+              ]
             }
           ],
           "special": [

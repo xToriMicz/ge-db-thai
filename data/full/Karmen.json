@@ -87,6 +87,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -128,6 +129,7 @@
         "Penetration": "10+20",
         "Immunity": "5+10"
       },
+      "consume": "Metal Shell Ammo x 1",
       "skills": [
         {
           "name": "Aria",
@@ -142,26 +144,75 @@
           "sp_cost": "250",
           "aggro": "50",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "A.R. +1",
+                "ATK +5% per Level",
+                "Monster ATK +25% per Level",
+                "DEX +1 per Level",
+                "Ignores 25 DEF per Level",
+                "[Aria] Buff Lv. increases upon using skills (Max Level. 5)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "A.R. +1",
+                "ATK +5% per Level",
+                "Monster ATK +25% per Level",
+                "DEX +1 per Level",
+                "Ignores 25 DEF per Level",
+                "[Aria] Buff Lv. increases upon using skills (Max Level. 5)"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "A.R. +1",
+                "ATK +5% per Level",
+                "Monster ATK +25% per Level",
+                "DEX +1 per Level",
+                "Ignores 25 DEF per Level",
+                "[Aria] Buff Lv. increases upon using skills (Max Level. 5)"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "A.R. +1",
+                "ATK +5% per Level",
+                "Monster ATK +25% per Level",
+                "DEX +1 per Level",
+                "Ignores 25 DEF per Level",
+                "[Aria] Buff Lv. increases upon using skills (Max Level. 5)"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "A.R. +1",
+                "ATK +5% per Level",
+                "Monster ATK +25% per Level",
+                "DEX +1 per Level",
+                "Ignores 25 DEF per Level",
+                "[Aria] Buff Lv. increases upon using skills (Max Level. 5)"
+              ]
             }
           ],
           "special": []
@@ -179,14 +230,32 @@
           "sp_cost": "300",
           "aggro": "100",
           "skill_type": "Shooting",
+          "consume_item": "Metal Shell Ammo x 1",
+          "soft_armor_atk": "120%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1300%"
+              "value": "АТК: 1300%",
+              "effects": [
+                "Ignores 5% DEF",
+                "Ignores Block",
+                "90% chance to inflict [Burn]",
+                "Skill damage x8 against monsters while affected by [Aria]",
+                "Skill damage increases up to 2 times inversely proportional to the amount of targets"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2600%"
+              "value": "АТК: 2600%",
+              "effects": [
+                "Ignores 5% DEF",
+                "Ignores Block",
+                "90% chance to inflict [Burn]",
+                "Skill damage x8 against monsters while affected by [Aria]",
+                "Skill damage increases up to 2 times inversely proportional to the amount of targets"
+              ]
             }
           ],
           "special": []
@@ -204,14 +273,32 @@
           "sp_cost": "450",
           "aggro": "125",
           "skill_type": "Shooting",
+          "consume_item": "Metal Shell Ammo x 5",
+          "soft_armor_atk": "50%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "50%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1500%"
+              "value": "АТК: 1500%",
+              "effects": [
+                "Ignores 5% DEF",
+                "90% chance to inflict [Burn]",
+                "Removes [Invincible]",
+                "Skill damage x8 against monsters while affected by [Aria]",
+                "Skill damage increases up to 2 times inversely proportional to the amount of targets"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "Ignores 5% DEF",
+                "90% chance to inflict [Burn]",
+                "Removes [Invincible]",
+                "Skill damage x8 against monsters while affected by [Aria]",
+                "Skill damage increases up to 2 times inversely proportional to the amount of targets"
+              ]
             }
           ],
           "special": []
@@ -229,14 +316,28 @@
           "sp_cost": "550",
           "aggro": "150",
           "skill_type": "Shooting",
+          "consume_item": "Metal Shell Ammo x 1",
+          "soft_armor_atk": "50%",
+          "heavy_armor_atk": "125%",
+          "light_armor_atk": "50%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1600%"
+              "value": "АТК: 1600%",
+              "effects": [
+                "Ignores 10% DEF",
+                "50% chance to ignore Block",
+                "Skill damage x8 against monsters while affected by [Aria]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3200%"
+              "value": "АТК: 3200%",
+              "effects": [
+                "Ignores 10% DEF",
+                "50% chance to ignore Block",
+                "Skill damage x8 against monsters while affected by [Aria]"
+              ]
             }
           ],
           "special": []
@@ -254,14 +355,30 @@
           "sp_cost": "500",
           "aggro": "150",
           "skill_type": "Shooting",
+          "consume_item": "Metal Shell Ammo x 5",
+          "soft_armor_atk": "50%",
+          "heavy_armor_atk": "150%",
+          "light_armor_atk": "50%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": [
+                "Ignores 8% DEF",
+                "90% chance to inflict [Burn]",
+                "Skill damage x8 against monsters while affected by [Aria]",
+                "Skill damage increases up to 3 times inversely proportional to the amount of targets"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3600%"
+              "value": "АТК: 3600%",
+              "effects": [
+                "Ignores 8% DEF",
+                "90% chance to inflict [Burn]",
+                "Skill damage x8 against monsters while affected by [Aria]",
+                "Skill damage increases up to 3 times inversely proportional to the amount of targets"
+              ]
             }
           ],
           "special": []

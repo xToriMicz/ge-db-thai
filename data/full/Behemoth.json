@@ -36,8 +36,8 @@
         "effects": [
           "[Ebediot]",
           "Duration: 300",
-          "A.R. +1",
-          "ATK +20%",
+          "A.R. +2",
+          "ATK +40%",
           "Monster ATK +100%",
           "Max Fire RES +10",
           "Ice Resistance -30",
@@ -97,6 +97,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -138,6 +139,7 @@
         "Penetration": "10+15",
         "Immunity": "10+5"
       },
+      "consume": "Elemental Sphere x 2",
       "skills": [
         {
           "name": "Ar Almak",
@@ -152,14 +154,26 @@
           "sp_cost": "250",
           "aggro": "50",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 12",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "105%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1600%"
+              "value": "АТК: 1600%",
+              "effects": [
+                "60% Chance to inflict [Burn] on enemy",
+                "Skill Damage increases inversely proportional to Fire PEN (1x per 50, Max: 5x)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3200%"
+              "value": "АТК: 3200%",
+              "effects": [
+                "60% Chance to inflict [Burn] on enemy",
+                "Skill Damage increases inversely proportional to Fire PEN (1x per 50, Max: 5x)"
+              ]
             }
           ],
           "special": []
@@ -177,14 +191,26 @@
           "sp_cost": "680",
           "aggro": "100",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 14",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "105%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "50% Chance to inflict [Burn] on enemy",
+                "Skill Damage increases inversely proportional to Fire PEN (1x per 50, Max: 5x)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4400%"
+              "value": "АТК: 4400%",
+              "effects": [
+                "50% Chance to inflict [Burn] on enemy",
+                "Skill Damage increases inversely proportional to Fire PEN (1x per 50, Max: 5x)"
+              ]
             }
           ],
           "special": []
@@ -202,14 +228,28 @@
           "sp_cost": "1050",
           "aggro": "125",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 17",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "125%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2500%"
+              "value": "АТК: 2500%",
+              "effects": [
+                "30% chance to inflict [Burn] on the target",
+                "Skill damage increases proportional to [Ebediot] Level (up to 5x, reduced effect on PCs)",
+                "Switches to a single-target skill when [Ashayokar] is active"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5000%"
+              "value": "АТК: 5000%",
+              "effects": [
+                "30% chance to inflict [Burn] on the target",
+                "Skill damage increases proportional to [Ebediot] Level (up to 5x, reduced effect on PCs)",
+                "Switches to a single-target skill when [Ashayokar] is active"
+              ]
             }
           ],
           "special": []
@@ -227,14 +267,30 @@
           "sp_cost": "1800",
           "aggro": "150",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 28",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "125%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2800%"
+              "value": "АТК: 2800%",
+              "effects": [
+                "30% chance to inflict [Blaze] on the target",
+                "Skill damage increases proportional to [Ebediot] Level (up to 5x, reduced effect on PCs)",
+                "Creates an Ashes Grave that grants [Kul Urden] in the area for 10 seconds",
+                "Targets knocked back are drawn to the center"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5600%"
+              "value": "АТК: 5600%",
+              "effects": [
+                "30% chance to inflict [Blaze] on the target",
+                "Skill damage increases proportional to [Ebediot] Level (up to 5x, reduced effect on PCs)",
+                "Creates an Ashes Grave that grants [Kul Urden] in the area for 10 seconds",
+                "Targets knocked back are drawn to the center"
+              ]
             }
           ],
           "special": []
@@ -252,14 +308,28 @@
           "sp_cost": "2300",
           "aggro": "150",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 42",
+          "soft_armor_atk": "85%",
+          "heavy_armor_atk": "130%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 3200%"
+              "value": "АТК: 3200%",
+              "effects": [
+                "40% Chance to inflict [Burn] on enemy",
+                "Skill Damage increases inversely proportional to Fire PEN (1x per 50, Max: 5x)",
+                "Skill Damage increases closer to the center (up to 2x)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 6400%"
+              "value": "АТК: 6400%",
+              "effects": [
+                "40% Chance to inflict [Burn] on enemy",
+                "Skill Damage increases inversely proportional to Fire PEN (1x per 50, Max: 5x)",
+                "Skill Damage increases closer to the center (up to 2x)"
+              ]
             }
           ],
           "special": []

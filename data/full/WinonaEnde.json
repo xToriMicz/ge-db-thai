@@ -148,6 +148,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -188,6 +189,7 @@
         "Penetration": "20+10",
         "Immunity": "10+5"
       },
+      "consume": "Psychic Sphere x 1",
       "skills": [
         {
           "name": "Joint Penalty",
@@ -202,26 +204,60 @@
           "sp_cost": "500",
           "aggro": "650",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1200%"
+              "value": "АТК: 1200%",
+              "effects": [
+                "100% Chance to inflict [Joint Penalty] to nearby targets of AoE Circle",
+                "Skill Damage increases up to 3x according to number of targets with [Joint Penalty]",
+                "Monsters take 10%~100% of damage from the inital target of [Joint Penalty]",
+                "[Joint Penalty] is removed upon hit by [Hangmans Sickle] and is replaced with [Pressure]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "100% Chance to inflict [Joint Penalty] to nearby targets of AoE Circle",
+                "Skill Damage increases up to 3x according to number of targets with [Joint Penalty]",
+                "Monsters take 10%~100% of damage from the inital target of [Joint Penalty]",
+                "[Joint Penalty] is removed upon hit by [Hangmans Sickle] and is replaced with [Pressure]"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "АТК: 2640%"
+              "value": "АТК: 2640%",
+              "effects": [
+                "100% Chance to inflict [Joint Penalty] to nearby targets of AoE Circle",
+                "Skill Damage increases up to 3x according to number of targets with [Joint Penalty]",
+                "Monsters take 10%~100% of damage from the inital target of [Joint Penalty]",
+                "[Joint Penalty] is removed upon hit by [Hangmans Sickle] and is replaced with [Pressure]"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "АТК: 2880%"
+              "value": "АТК: 2880%",
+              "effects": [
+                "100% Chance to inflict [Joint Penalty] to nearby targets of AoE Circle",
+                "Skill Damage increases up to 3x according to number of targets with [Joint Penalty]",
+                "Monsters take 10%~100% of damage from the inital target of [Joint Penalty]",
+                "[Joint Penalty] is removed upon hit by [Hangmans Sickle] and is replaced with [Pressure]"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "АТК: 2880%"
+              "value": "АТК: 2880%",
+              "effects": [
+                "100% Chance to inflict [Joint Penalty] to nearby targets of AoE Circle",
+                "Skill Damage increases up to 3x according to number of targets with [Joint Penalty]",
+                "Monsters take 10%~100% of damage from the inital target of [Joint Penalty]",
+                "[Joint Penalty] is removed upon hit by [Hangmans Sickle] and is replaced with [Pressure]"
+              ]
             }
           ],
           "special": []
@@ -239,14 +275,24 @@
           "sp_cost": "600",
           "aggro": "330",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 8",
+          "soft_armor_atk": "120%",
+          "heavy_armor_atk": "80%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1400%"
+              "value": "АТК: 1400%",
+              "effects": [
+                "Pull all knockbackable targets towards the inital target"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2800%"
+              "value": "АТК: 2800%",
+              "effects": [
+                "Pull all knockbackable targets towards the inital target"
+              ]
             }
           ],
           "special": []
@@ -264,14 +310,28 @@
           "sp_cost": "500",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 300s"
+              "value": "",
+              "effects": [
+                "Duration: 300s",
+                "Max HP +50%",
+                "When a linked ally recieves damage, so does the caster and a certain amount of damage is reduced"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 300s"
+              "value": "",
+              "effects": [
+                "Duration: 300s",
+                "Max HP +50%",
+                "When a linked ally recieves damage, so does the caster and a certain amount of damage is reduced"
+              ]
             }
           ],
           "special": []
@@ -289,14 +349,30 @@
           "sp_cost": "500",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 300s"
+              "value": "",
+              "effects": [
+                "Duration: 300s",
+                "All Stats +10",
+                "HP/SP Regeneration 4.5% per second",
+                "Applies [Miracle] to family members"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 300s"
+              "value": "",
+              "effects": [
+                "Duration: 300s",
+                "All Stats +10",
+                "HP/SP Regeneration 4.5% per second",
+                "Applies [Miracle] to family members"
+              ]
             }
           ],
           "special": []
@@ -314,14 +390,32 @@
           "sp_cost": "800",
           "aggro": "288",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 20",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 300s"
+              "value": "",
+              "effects": [
+                "Duration: 300s",
+                "AoE Magic DMG taken -25%",
+                "All RES +25",
+                "IMM +10",
+                "Applies [Shearing Booster] , [Protection Booster] and [Spiritual Chain] to family members"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 300s"
+              "value": "",
+              "effects": [
+                "Duration: 300s",
+                "AoE Magic DMG taken -25%",
+                "All RES +25",
+                "IMM +10",
+                "Applies [Shearing Booster] , [Protection Booster] and [Spiritual Chain] to family members"
+              ]
             }
           ],
           "special": []
@@ -369,6 +463,7 @@
         "Penetration": "30+10",
         "Immunity": "20+5"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Slow",
@@ -383,14 +478,26 @@
           "sp_cost": "700",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "100% Chance to inflict ["
+              "value": "",
+              "effects": [
+                "100% Chance to inflict [Slow]",
+                "Ignores debuff RES"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "100% Chance to inflict ["
+              "value": "",
+              "effects": [
+                "100% Chance to inflict [Slow]",
+                "Ignores debuff RES"
+              ]
             }
           ],
           "special": []
@@ -408,14 +515,32 @@
           "sp_cost": "700",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 300s"
+              "value": "",
+              "effects": [
+                "Duration: 300s",
+                "A.R. +1",
+                "Magical ATK +25%",
+                "PEN +10",
+                "Casting Time -10%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 300s"
+              "value": "",
+              "effects": [
+                "Duration: 300s",
+                "A.R. +1",
+                "Magical ATK +25%",
+                "PEN +10",
+                "Casting Time -10%"
+              ]
             }
           ],
           "special": []
@@ -433,14 +558,32 @@
           "sp_cost": "1600",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 120s"
+              "value": "",
+              "effects": [
+                "Duration: 120s",
+                "MSPD +100%",
+                "MSPD Limit +100%",
+                "ASPD +100%",
+                "50% Chance of cooldown of skills reduce by 1s upon successful skill hit"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 120s"
+              "value": "",
+              "effects": [
+                "Duration: 120s",
+                "MSPD +100%",
+                "MSPD Limit +100%",
+                "ASPD +100%",
+                "50% Chance of cooldown of skills reduce by 1s upon successful skill hit"
+              ]
             }
           ],
           "special": []
@@ -458,14 +601,26 @@
           "sp_cost": "500",
           "aggro": "0",
           "skill_type": "Healing",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Resurrect up to 12 targets of downed allies"
+              "value": "",
+              "effects": [
+                "Resurrect up to 12 targets of downed allies",
+                "Resurrected ally recovers 50% of their HP"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Resurrect up to 12 targets of downed allies"
+              "value": "",
+              "effects": [
+                "Resurrect up to 12 targets of downed allies",
+                "Resurrected ally recovers 50% of their HP"
+              ]
             }
           ],
           "special": []
@@ -483,14 +638,24 @@
           "sp_cost": "800",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Fully reset cooldowns of an ally"
+              "value": "",
+              "effects": [
+                "Fully reset cooldowns of an ally"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Fully reset cooldowns of an ally"
+              "value": "",
+              "effects": [
+                "Fully reset cooldowns of an ally"
+              ]
             }
           ],
           "special": []

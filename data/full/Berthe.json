@@ -39,7 +39,7 @@
           "Debuff Immunity",
           "ATK +40%",
           "Monster Damage +100%",
-          "Mental Penetration +50",
+          "Ice Penetration +50",
           "Received Physical Damage -30%",
           "Received Ranged Damage +10%",
           "HP and SP Regeneration +100"
@@ -53,7 +53,7 @@
           "Debuff Immunity",
           "ATK +40%",
           "Monster Damage +100%",
-          "Mental Penetration +50",
+          "Ice Penetration +50",
           "Received Physical Damage -30%",
           "Received Ranged Damage +10%",
           "HP and SP Regeneration +1000"
@@ -67,7 +67,7 @@
           "Debuff Immunity",
           "ATK +40%",
           "Monster Damage +100%",
-          "Mental Penetration +50",
+          "Ice Penetration +50",
           "Received Physical Damage -30%",
           "Received Ranged Damage +10%",
           "HP and SP Regeneration +1100"
@@ -81,7 +81,7 @@
           "Debuff Immunity",
           "ATK +40%",
           "Monster Damage +100%",
-          "Mental Penetration +50",
+          "Ice Penetration +50",
           "Received Physical Damage -30%",
           "Received Ranged Damage +10%",
           "HP and SP Regeneration +1200"
@@ -95,7 +95,7 @@
           "Debuff Immunity",
           "ATK +40%",
           "Monster Damage +100%",
-          "Mental Penetration +50",
+          "Ice Penetration +50",
           "Received Physical Damage -30%",
           "Received Ranged Damage +10%",
           "HP and SP Regeneration +1300"
@@ -155,6 +155,7 @@
         "Abnormal RES": "15"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [
         {
           "name": "Sandman",
@@ -169,26 +170,45 @@
           "sp_cost": "60",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "80% chance to inflict ["
+              "value": "",
+              "effects": [
+                "80% chance to inflict [Sleep] on enemy for 11 sec."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "80% chance to inflict ["
+              "value": "",
+              "effects": [
+                "80% chance to inflict [Sleep] on enemy for 20 sec."
+              ]
             },
             {
               "level": "Level 11",
-              "value": "80% chance to inflict ["
+              "value": "",
+              "effects": [
+                "80% chance to inflict [Sleep] on enemy for 21 sec."
+              ]
             },
             {
               "level": "Level 12",
-              "value": "80% chance to inflict ["
+              "value": "",
+              "effects": [
+                "80% chance to inflict [Sleep] on enemy for 22 sec."
+              ]
             },
             {
               "level": "Level 13",
-              "value": "80% chance to inflict ["
+              "value": "",
+              "effects": [
+                "80% chance to inflict [Sleep] on enemy for 23 sec."
+              ]
             }
           ],
           "special": []
@@ -206,26 +226,50 @@
           "sp_cost": "90",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration : 16.5 sec."
+              "value": "",
+              "effects": [
+                "Duration : 16.5 sec.",
+                "100% chance to inflict Attribute RES on enemy -30"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration : 30 sec."
+              "value": "",
+              "effects": [
+                "Duration : 30 sec.",
+                "100% chance to inflict Attribute RES on enemy -75"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration : 31.5 sec."
+              "value": "",
+              "effects": [
+                "Duration : 31.5 sec.",
+                "100% chance to inflict Attribute RES on enemy -80"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration : 33 sec."
+              "value": "",
+              "effects": [
+                "Duration : 33 sec.",
+                "100% chance to inflict Attribute RES on enemy -85"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration : 34.5 sec."
+              "value": "",
+              "effects": [
+                "Duration : 34.5 sec.",
+                "100% chance to inflict Attribute RES on enemy -90"
+              ]
             }
           ],
           "special": []
@@ -243,26 +287,48 @@
           "sp_cost": "150",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "80% chance to decrease enemys ATK/MOVE Speed -33% for 8.8 sec."
+              "value": "",
+              "effects": [
+                "80% chance to decrease enemys ATK/MOVE Speed -33% for 8.8 sec."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "80% chance to decrease enemys ATK/MOVE Speed -60% for 16 sec."
+              "value": "",
+              "effects": [
+                "80% chance to decrease enemys ATK/MOVE Speed -60% for 16 sec."
+              ]
             },
             {
               "level": "Level 11",
-              "value": "80% chance to decrease enemys ATK/MOVE Speed -63% for 16.8 sec."
+              "value": "",
+              "effects": [
+                "80% chance to decrease enemys ATK/MOVE Speed -63% for 16.8 sec.",
+                "Enemys A.R. -1"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "80% chance to decrease enemys ATK/MOVE Speed -66% for 17.6 sec."
+              "value": "",
+              "effects": [
+                "80% chance to decrease enemys ATK/MOVE Speed -66% for 17.6 sec.",
+                "Enemys A.R. -1"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "80% chance to decrease enemys ATK/MOVE Speed -69% for 18.4 sec."
+              "value": "",
+              "effects": [
+                "80% chance to decrease enemys ATK/MOVE Speed -69% for 18.4 sec.",
+                "Enemys A.R. -1"
+              ]
             }
           ],
           "special": []
@@ -280,26 +346,50 @@
           "sp_cost": "180",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Magical Orb x 2",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration : 17.5 sec"
+              "value": "",
+              "effects": [
+                "Duration : 17.5 sec",
+                "After use, applying [Skill Standby] buff"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration : 40 sec"
+              "value": "",
+              "effects": [
+                "Duration : 40 sec",
+                "After use, applying [Skill Standby] buff"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration : 42.5 sec"
+              "value": "",
+              "effects": [
+                "Duration : 42.5 sec",
+                "After use, applying [Skill Standby] buff"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration : 45 sec"
+              "value": "",
+              "effects": [
+                "Duration : 45 sec",
+                "After use, applying [Skill Standby] buff"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration : 47.5 sec"
+              "value": "",
+              "effects": [
+                "Duration : 47.5 sec",
+                "After use, applying [Skill Standby] buff"
+              ]
             }
           ],
           "special": []
@@ -342,6 +432,7 @@
         "Penetration": "10+15",
         "Immunity": "5+5"
       },
+      "consume": "Psychic Sphere x 1",
       "skills": [
         {
           "name": "Necromancy",
@@ -356,14 +447,28 @@
           "sp_cost": "200",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 3",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Possible to summon 3 simultaneously"
+              "value": "",
+              "effects": [
+                "Possible to summon 3 simultaneously",
+                "Ability bonus of Soul, given by skill level and INT",
+                "The Soul will not be attacked"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Possible to summon 3 simultaneously"
+              "value": "",
+              "effects": [
+                "Possible to summon 3 simultaneously",
+                "Ability bonus of Soul, given by skill level and INT",
+                "The Soul will not be attacked"
+              ]
             }
           ],
           "special": [
@@ -384,26 +489,65 @@
           "sp_cost": "250",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 2",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 30 sec."
+              "value": "",
+              "effects": [
+                "Duration: 30 sec.",
+                "Skill damage increases up to 4.8x according to max SP",
+                "All SP is expended upon using [Soul Explosion]",
+                "Absorb 0.3% of your max SP upon normal attacks",
+                "Received skill damage from other damage types -30%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 300 sec."
+              "value": "",
+              "effects": [
+                "Duration: 300 sec.",
+                "Skill damage increases up to 4.8x according to max SP",
+                "All SP is expended upon using [Soul Explosion]",
+                "Absorb 3% of your max SP upon normal attacks",
+                "Received skill damage from other damage types -30%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 330 sec."
+              "value": "",
+              "effects": [
+                "Duration: 330 sec.",
+                "Skill damage increases up to 4.8x according to max SP",
+                "All SP is expended upon using [Soul Explosion]",
+                "Absorb 3.3% of your max SP upon normal attacks",
+                "Received skill damage from other damage types -30%"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 360 sec."
+              "value": "",
+              "effects": [
+                "Duration: 360 sec.",
+                "Skill damage increases up to 4.8x according to max SP",
+                "All SP is expended upon using [Soul Explosion]",
+                "Absorb 3.6% of your max SP upon normal attacks",
+                "Received skill damage from other damage types -30%"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 390 sec."
+              "value": "",
+              "effects": [
+                "Duration: 390 sec.",
+                "Skill damage increases up to 4.8x according to max SP",
+                "All SP is expended upon using [Soul Explosion]",
+                "Absorb 3.9% of your max SP upon normal attacks",
+                "Received skill damage from other damage types -30%"
+              ]
             }
           ],
           "special": []
@@ -421,14 +565,34 @@
           "sp_cost": "300",
           "aggro": "172",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 3",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "120%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1500%"
+              "value": "АТК: 1500%",
+              "effects": [
+                "20% chance to apply [Ice Magic]",
+                "Damage increases with less number of targets",
+                "Caster gains [Frost Power] buff equal to the number of enemies hit",
+                "Increases DMG in proportion to [Frost Power] level",
+                "[PvE only] Skill damage increases by (3% of extra [INT])",
+                "Additionally, ignores the following amount of RES: 20 + (level of [Frost Power] / 2)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "20% chance to apply [Ice Magic]",
+                "Damage increases with less number of targets",
+                "Caster gains [Frost Power] buff equal to the number of enemies hit",
+                "Increases DMG in proportion to [Frost Power] level",
+                "[PvE only] Skill damage increases by (3% of extra [INT])",
+                "Additionally, ignores the following amount of RES: 20 + (level of [Frost Power] / 2)"
+              ]
             }
           ],
           "special": [
@@ -449,14 +613,24 @@
           "sp_cost": "500",
           "aggro": "100",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "120%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1400%"
+              "value": "АТК: 1400%",
+              "effects": [
+                "100% chance to inflict [Ritardi]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2800%"
+              "value": "АТК: 2800%",
+              "effects": [
+                "100% chance to inflict [Ritardi]"
+              ]
             }
           ],
           "special": []
@@ -467,21 +641,31 @@
           "description": "Gather the power of the surrounding floating souls and create a big chain explosion.",
           "target": "",
           "casting_time": "3 sec.",
-          "cooldown": "40 sec.",
+          "cooldown": "25 sec.",
           "duration": "5.033 sec.",
           "hits_flying": "Yes",
           "knock_down": "Yes",
           "sp_cost": "700",
           "aggro": "198",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 8",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "120%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2000%"
+              "value": "АТК: 2000%",
+              "effects": [
+                "30% chance to inflict [Requiem]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4000%"
+              "value": "АТК: 4000%",
+              "effects": [
+                "30% chance to inflict [Requiem]"
+              ]
             }
           ],
           "special": []

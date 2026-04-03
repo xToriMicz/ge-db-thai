@@ -40,8 +40,7 @@
           "ATK+50%",
           "Monster Damage+50%",
           "DEF increases in proportion to own INT",
-          "Immunity increases in proportion to own INT",
-          "Move SPD -20%"
+          "Immunity increases in proportion to own INT"
         ]
       }
     ]
@@ -98,6 +97,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -138,6 +138,7 @@
         "Penetration": "5+25",
         "Immunity": "5+25"
       },
+      "consume": "Psychic Sphere x 3",
       "skills": [
         {
           "name": "Carya",
@@ -152,14 +153,26 @@
           "sp_cost": "590",
           "aggro": "160",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 2",
+          "soft_armor_atk": "70%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 800%"
+              "value": "АТК: 800%",
+              "effects": [
+                "65% chance to impose [Cold Wave] to enemyChance increases when the enemy is a monster",
+                "Ignores enemys Debuff RES"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1600%"
+              "value": "АТК: 1600%",
+              "effects": [
+                "65% chance to impose [Cold Wave] to enemyChance increases when the enemy is a monster",
+                "Ignores enemys Debuff RES"
+              ]
             }
           ],
           "special": []
@@ -177,14 +190,28 @@
           "sp_cost": "720",
           "aggro": "172",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 7",
+          "soft_armor_atk": "70%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1200%"
+              "value": "АТК: 1200%",
+              "effects": [
+                "60% chance to impose [Agony] to enemy",
+                "Ignores enemys Debuff RESChance increases when the enemy is a monster",
+                "Ignores RES of PC enemy in [Cold Wave] stateIncreases Damage to monsters under [Cold Wave]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "60% chance to impose [Agony] to enemy",
+                "Ignores enemys Debuff RESChance increases when the enemy is a monster",
+                "Ignores RES of PC enemy in [Cold Wave] stateIncreases Damage to monsters under [Cold Wave]"
+              ]
             }
           ],
           "special": []
@@ -202,14 +229,28 @@
           "sp_cost": "880",
           "aggro": "223",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 6",
+          "soft_armor_atk": "70%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": [
+                "65% chance to impose to enemy [Frostbite]",
+                "Ignores enemys Debuff RESChance increases when the enemy is a monster",
+                "Ignores RES of PC enemy in [Agony] stateIncreases Damage to monsters under [Pain]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3600%"
+              "value": "АТК: 3600%",
+              "effects": [
+                "65% chance to impose to enemy [Frostbite]",
+                "Ignores enemys Debuff RESChance increases when the enemy is a monster",
+                "Ignores RES of PC enemy in [Agony] stateIncreases Damage to monsters under [Pain]"
+              ]
             }
           ],
           "special": []
@@ -220,21 +261,41 @@
           "description": "Fills the designated ground with ice storms.",
           "target": "",
           "casting_time": "1.9 sec.",
-          "cooldown": "32 sec.",
+          "cooldown": "18 sec.",
           "duration": "5.58 sec.",
           "hits_flying": "No",
           "knock_down": "No",
           "sp_cost": "950",
           "aggro": "195",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "20%",
+          "heavy_armor_atk": "40%",
+          "light_armor_atk": "30%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1000%"
+              "value": "АТК: 1500%",
+              "effects": [
+                "Max. 10 attacks during casting time",
+                "Finish Attack when used again while casting",
+                "Skill Damage applies per every attack",
+                "50% chance to apply random one of [Cold Wave], [Agony] or [Frostbite] debuffs on enemies when hit",
+                "Ignores RES of enemy PC under [Cold Wave], [Agony] or [Frostbite] is applied",
+                "Increases Damage against monsters under [Cold Wave], [Agony] or [Frostbite] according to the number of effects"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "Max. 10 attacks during casting time",
+                "Finish Attack when used again while casting",
+                "Skill Damage applies per every attack",
+                "50% chance to apply random one of [Cold Wave], [Agony] or [Frostbite] debuffs on enemies when hit",
+                "Ignores RES of enemy PC under [Cold Wave], [Agony] or [Frostbite] is applied",
+                "Increases Damage against monsters under [Cold Wave], [Agony] or [Frostbite] according to the number of effects"
+              ]
             }
           ],
           "special": []
@@ -252,14 +313,36 @@
           "sp_cost": "1050",
           "aggro": "200",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 12",
+          "soft_armor_atk": "70%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1400%"
+              "value": "АТК: 1400%",
+              "effects": [
+                "50% chance of applying [Cold Wave], [Agony] or [Frostbite] when hit",
+                "Ignores enemys Debuff RES",
+                "Chance increases when the enemy is a monster",
+                "Use again while casting to perform skill",
+                "Knockdown distance and time, and damage increase in proportion to cast time",
+                "Additional Damage increase at max. casting",
+                "Increases Damage against monsters under [Cold Wave], [Agony] or [Frostbite] according to the number of effects"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2800%"
+              "value": "АТК: 2800%",
+              "effects": [
+                "50% chance of applying [Cold Wave], [Agony] or [Frostbite] when hit",
+                "Ignores enemys Debuff RES",
+                "Chance increases when the enemy is a monster",
+                "Use again while casting to perform skill",
+                "Knockdown distance and time, and damage increase in proportion to cast time",
+                "Additional Damage increase at max. casting",
+                "Increases Damage against monsters under [Cold Wave], [Agony] or [Frostbite] according to the number of effects"
+              ]
             }
           ],
           "special": [

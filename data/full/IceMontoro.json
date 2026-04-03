@@ -160,6 +160,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [
         {
           "name": "Strike Back",
@@ -174,14 +175,20 @@
           "sp_cost": "60",
           "aggro": "84",
           "skill_type": "Magic",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 358%"
+              "value": "АТК: 358%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 716%"
+              "value": "АТК: 716%",
+              "effects": []
             }
           ],
           "special": []
@@ -199,26 +206,45 @@
           "sp_cost": "120",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "80% chance to ["
+              "value": "",
+              "effects": [
+                "80% chance to [Immobilize] enemy for 3 sec."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "80% chance to ["
+              "value": "",
+              "effects": [
+                "80% chance to [Immobilize] enemy for 12 sec."
+              ]
             },
             {
               "level": "Level 11",
-              "value": "80% chance to ["
+              "value": "",
+              "effects": [
+                "80% chance to [Immobilize] enemy for 13 sec."
+              ]
             },
             {
               "level": "Level 12",
-              "value": "80% chance to ["
+              "value": "",
+              "effects": [
+                "80% chance to [Immobilize] enemy for 14 sec."
+              ]
             },
             {
               "level": "Level 13",
-              "value": "80% chance to ["
+              "value": "",
+              "effects": [
+                "80% chance to [Immobilize] enemy for 15 sec."
+              ]
             }
           ],
           "special": []
@@ -236,14 +262,20 @@
           "sp_cost": "150",
           "aggro": "64",
           "skill_type": "Magic",
+          "consume_item": "Magical Orb x 1",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 216%"
+              "value": "АТК: 216%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 432%"
+              "value": "АТК: 432%",
+              "effects": []
             }
           ],
           "special": []
@@ -261,18 +293,32 @@
           "sp_cost": "180",
           "aggro": "43",
           "skill_type": "Magic",
+          "consume_item": "Magical Orb x 1",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 157%"
+              "value": "АТК: 157%",
+              "effects": [
+                "100% chance to make enemy unable to skill for 20 sec."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 314%"
+              "value": "АТК: 314%",
+              "effects": [
+                "100% chance to make enemy unable to skill for 20 sec."
+              ]
             },
             {
               "level": "Level 11",
-              "value": "АТК: 345%"
+              "value": "АТК: 345%",
+              "effects": [
+                "100% chance to make enemy unable to skill for 20 sec.",
+                "Enemys D.R. -1"
+              ]
             }
           ],
           "special": []
@@ -312,6 +358,7 @@
         "Abnormal RES": "15"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [
         {
           "name": "Sandman",
@@ -326,26 +373,45 @@
           "sp_cost": "60",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "80% chance to inflict ["
+              "value": "",
+              "effects": [
+                "80% chance to inflict [Sleep] on enemy for 11 sec."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "80% chance to inflict ["
+              "value": "",
+              "effects": [
+                "80% chance to inflict [Sleep] on enemy for 20 sec."
+              ]
             },
             {
               "level": "Level 11",
-              "value": "80% chance to inflict ["
+              "value": "",
+              "effects": [
+                "80% chance to inflict [Sleep] on enemy for 21 sec."
+              ]
             },
             {
               "level": "Level 12",
-              "value": "80% chance to inflict ["
+              "value": "",
+              "effects": [
+                "80% chance to inflict [Sleep] on enemy for 22 sec."
+              ]
             },
             {
               "level": "Level 13",
-              "value": "80% chance to inflict ["
+              "value": "",
+              "effects": [
+                "80% chance to inflict [Sleep] on enemy for 23 sec."
+              ]
             }
           ],
           "special": []
@@ -363,26 +429,50 @@
           "sp_cost": "90",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration : 16.5 sec."
+              "value": "",
+              "effects": [
+                "Duration : 16.5 sec.",
+                "100% chance to inflict Attribute RES on enemy -30"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration : 30 sec."
+              "value": "",
+              "effects": [
+                "Duration : 30 sec.",
+                "100% chance to inflict Attribute RES on enemy -75"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration : 31.5 sec."
+              "value": "",
+              "effects": [
+                "Duration : 31.5 sec.",
+                "100% chance to inflict Attribute RES on enemy -80"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration : 33 sec."
+              "value": "",
+              "effects": [
+                "Duration : 33 sec.",
+                "100% chance to inflict Attribute RES on enemy -85"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration : 34.5 sec."
+              "value": "",
+              "effects": [
+                "Duration : 34.5 sec.",
+                "100% chance to inflict Attribute RES on enemy -90"
+              ]
             }
           ],
           "special": []
@@ -400,26 +490,48 @@
           "sp_cost": "150",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "80% chance to decrease enemys ATK/MOVE Speed -33% for 8.8 sec."
+              "value": "",
+              "effects": [
+                "80% chance to decrease enemys ATK/MOVE Speed -33% for 8.8 sec."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "80% chance to decrease enemys ATK/MOVE Speed -60% for 16 sec."
+              "value": "",
+              "effects": [
+                "80% chance to decrease enemys ATK/MOVE Speed -60% for 16 sec."
+              ]
             },
             {
               "level": "Level 11",
-              "value": "80% chance to decrease enemys ATK/MOVE Speed -63% for 16.8 sec."
+              "value": "",
+              "effects": [
+                "80% chance to decrease enemys ATK/MOVE Speed -63% for 16.8 sec.",
+                "Enemys A.R. -1"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "80% chance to decrease enemys ATK/MOVE Speed -66% for 17.6 sec."
+              "value": "",
+              "effects": [
+                "80% chance to decrease enemys ATK/MOVE Speed -66% for 17.6 sec.",
+                "Enemys A.R. -1"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "80% chance to decrease enemys ATK/MOVE Speed -69% for 18.4 sec."
+              "value": "",
+              "effects": [
+                "80% chance to decrease enemys ATK/MOVE Speed -69% for 18.4 sec.",
+                "Enemys A.R. -1"
+              ]
             }
           ],
           "special": []
@@ -437,26 +549,50 @@
           "sp_cost": "180",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Magical Orb x 2",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration : 17.5 sec"
+              "value": "",
+              "effects": [
+                "Duration : 17.5 sec",
+                "After use, applying [Skill Standby] buff"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration : 40 sec"
+              "value": "",
+              "effects": [
+                "Duration : 40 sec",
+                "After use, applying [Skill Standby] buff"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration : 42.5 sec"
+              "value": "",
+              "effects": [
+                "Duration : 42.5 sec",
+                "After use, applying [Skill Standby] buff"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration : 45 sec"
+              "value": "",
+              "effects": [
+                "Duration : 45 sec",
+                "After use, applying [Skill Standby] buff"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration : 47.5 sec"
+              "value": "",
+              "effects": [
+                "Duration : 47.5 sec",
+                "After use, applying [Skill Standby] buff"
+              ]
             }
           ],
           "special": []
@@ -493,6 +629,7 @@
         "Abnormal RES": "20"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [
         {
           "name": "Confusion",
@@ -507,26 +644,45 @@
           "sp_cost": "100",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Magical Orb x 1",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "80% chance to inflict ["
+              "value": "",
+              "effects": [
+                "80% chance to inflict [Confusion] on enemy for 11.5 sec."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "80% chance to inflict ["
+              "value": "",
+              "effects": [
+                "80% chance to inflict [Confusion] on enemy for 25 sec."
+              ]
             },
             {
               "level": "Level 11",
-              "value": "80% chance to inflict ["
+              "value": "",
+              "effects": [
+                "80% chance to inflict [Confusion] on enemy for 26.5 sec."
+              ]
             },
             {
               "level": "Level 12",
-              "value": "80% chance to inflict ["
+              "value": "",
+              "effects": [
+                "80% chance to inflict [Confusion] on enemy for 28 sec."
+              ]
             },
             {
               "level": "Level 13",
-              "value": "80% chance to inflict ["
+              "value": "",
+              "effects": [
+                "80% chance to inflict [Confusion] on enemy for 29.5 sec."
+              ]
             }
           ],
           "special": []
@@ -544,26 +700,45 @@
           "sp_cost": "150",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Magical Orb x 1",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "80% chance to inflict ["
+              "value": "",
+              "effects": [
+                "80% chance to inflict [Enervation] on enemy for 11 sec."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "80% chance to inflict ["
+              "value": "",
+              "effects": [
+                "80% chance to inflict [Enervation] on enemy for 20 sec."
+              ]
             },
             {
               "level": "Level 11",
-              "value": "80% chance to inflict ["
+              "value": "",
+              "effects": [
+                "80% chance to inflict [Enervation] on enemy for 21 sec."
+              ]
             },
             {
               "level": "Level 12",
-              "value": "80% chance to inflict ["
+              "value": "",
+              "effects": [
+                "80% chance to inflict [Enervation] on enemy for 22 sec."
+              ]
             },
             {
               "level": "Level 13",
-              "value": "80% chance to inflict ["
+              "value": "",
+              "effects": [
+                "80% chance to inflict [Enervation] on enemy for 23 sec."
+              ]
             }
           ],
           "special": []
@@ -581,26 +756,48 @@
           "sp_cost": "200",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Magical Orb x 3",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "80% chance to blow 3 times damage to enemy for 6 sec."
+              "value": "",
+              "effects": [
+                "80% chance to blow 3 times damage to enemy for 6 sec."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "80% chance to blow 3 times damage to enemy for 15 sec."
+              "value": "",
+              "effects": [
+                "80% chance to blow 3 times damage to enemy for 15 sec."
+              ]
             },
             {
               "level": "Level 11",
-              "value": "80% chance to blow 3 times damage to enemy for 16 sec."
+              "value": "",
+              "effects": [
+                "80% chance to blow 3 times damage to enemy for 16 sec.",
+                "Enemys D.R. -1"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "80% chance to blow 3 times damage to enemy for 17 sec."
+              "value": "",
+              "effects": [
+                "80% chance to blow 3 times damage to enemy for 17 sec.",
+                "Enemys D.R. -1"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "80% chance to blow 3 times damage to enemy for 18 sec."
+              "value": "",
+              "effects": [
+                "80% chance to blow 3 times damage to enemy for 18 sec.",
+                "Enemys D.R. -1"
+              ]
             }
           ],
           "special": []
@@ -618,14 +815,28 @@
           "sp_cost": "1050",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Disappearance of Dead enemies"
+              "value": "",
+              "effects": [
+                "Disappearance of Dead enemies",
+                "No level-up",
+                "Item consumed for casting"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Disappearance of Dead enemies"
+              "value": "",
+              "effects": [
+                "Disappearance of Dead enemies",
+                "No level-up",
+                "Item consumed for casting"
+              ]
             }
           ],
           "special": []
@@ -643,26 +854,45 @@
           "sp_cost": "300",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Magical Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "80% chance to ["
+              "value": "",
+              "effects": [
+                "80% chance to [Petrify] for 13 sec."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "80% chance to ["
+              "value": "",
+              "effects": [
+                "80% chance to [Petrify] for 40 sec."
+              ]
             },
             {
               "level": "Level 11",
-              "value": "80% chance to ["
+              "value": "",
+              "effects": [
+                "80% chance to [Petrify] for 43 sec."
+              ]
             },
             {
               "level": "Level 12",
-              "value": "80% chance to ["
+              "value": "",
+              "effects": [
+                "80% chance to [Petrify] for 46 sec."
+              ]
             },
             {
               "level": "Level 13",
-              "value": "80% chance to ["
+              "value": "",
+              "effects": [
+                "80% chance to [Petrify] for 49 sec."
+              ]
             }
           ],
           "special": []
@@ -704,6 +934,7 @@
         "Penetration": "10+20",
         "Immunity": "5+5"
       },
+      "consume": "Psychic Sphere x 1",
       "skills": [
         {
           "name": "Levine Scamper",
@@ -718,14 +949,24 @@
           "sp_cost": "100",
           "aggro": "50",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 1",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 220%"
+              "value": "АТК: 220%",
+              "effects": [
+                "50% chance to inflict [Mortal Wound] on enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 440%"
+              "value": "АТК: 440%",
+              "effects": [
+                "50% chance to inflict [Mortal Wound] on enemy"
+              ]
             }
           ],
           "special": []
@@ -743,14 +984,24 @@
           "sp_cost": "600",
           "aggro": "223",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "50%",
+          "heavy_armor_atk": "150%",
+          "light_armor_atk": "135%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 975%"
+              "value": "АТК: 975%",
+              "effects": [
+                "20% chance to inflict [Requiem]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1950%"
+              "value": "АТК: 1950%",
+              "effects": [
+                "20% chance to inflict [Requiem]"
+              ]
             }
           ],
           "special": []
@@ -768,26 +1019,70 @@
           "sp_cost": "300",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration : 60sec."
+              "value": "",
+              "effects": [
+                "Duration : 60sec.",
+                "Mental Penetration +6",
+                "DEF +1",
+                "Monster Damage +1%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration : 330sec."
+              "value": "",
+              "effects": [
+                "Duration : 330sec.",
+                "Mental Penetration +15",
+                "A.R.+1",
+                "DEF +10",
+                "Monster Damage +10%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration : 360sec."
+              "value": "",
+              "effects": [
+                "Duration : 360sec.",
+                "Mental Penetration +16",
+                "A.R.+2",
+                "DEF +11",
+                "Monster Damage +20%",
+                "Attack skills damage against monster x2 + (3% of extra INT)",
+                "INT +3"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration : 390sec."
+              "value": "",
+              "effects": [
+                "Duration : 390sec.",
+                "Mental Penetration +17",
+                "A.R.+2",
+                "DEF +12",
+                "Monster Damage +50%",
+                "Attack skills damage against monster x2 + (3% of extra INT)",
+                "INT +5"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration : 420sec."
+              "value": "",
+              "effects": [
+                "Duration : 420sec.",
+                "Mental Penetration +18",
+                "A.R.+2",
+                "DEF +13",
+                "Monster Damage +50%",
+                "Attack skills damage against monster x2 + (3% of extra INT)",
+                "INT +5"
+              ]
             }
           ],
           "special": []
@@ -805,26 +1100,50 @@
           "sp_cost": "700",
           "aggro": "10",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "50%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 575%"
+              "value": "АТК: 575%",
+              "effects": [
+                "20% Chance to inflict [Paralysis] on enemy",
+                "Sustained damage around the snowflake for 2 sec."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1150%"
+              "value": "АТК: 1150%",
+              "effects": [
+                "20% Chance to inflict [Paralysis] on enemy",
+                "Sustained damage around the snowflake for 20 sec."
+              ]
             },
             {
               "level": "Level 11",
-              "value": "АТК: 1265%"
+              "value": "АТК: 1265%",
+              "effects": [
+                "20% Chance to inflict [Paralysis] on enemy",
+                "Sustained damage around the snowflake for 22 sec."
+              ]
             },
             {
               "level": "Level 12",
-              "value": "АТК: 1380%"
+              "value": "АТК: 1380%",
+              "effects": [
+                "20% Chance to inflict [Paralysis] on enemy",
+                "Sustained damage around the snowflake for 24 sec."
+              ]
             },
             {
               "level": "Level 13",
-              "value": "АТК: 1380%"
+              "value": "АТК: 1380%",
+              "effects": [
+                "20% Chance to inflict [Paralysis] on enemy",
+                "Sustained damage around the snowflake for 26 sec."
+              ]
             }
           ],
           "special": []
@@ -842,14 +1161,26 @@
           "sp_cost": "5000",
           "aggro": "353",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "50%",
+          "heavy_armor_atk": "125%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2040%"
+              "value": "АТК: 2040%",
+              "effects": [
+                "5000 of HP consumed",
+                "100% chance to inflict [Fear] on enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4079%"
+              "value": "АТК: 4079%",
+              "effects": [
+                "5000 of HP consumed",
+                "100% chance to inflict [Fear] on enemy"
+              ]
             }
           ],
           "special": []
@@ -901,6 +1232,7 @@
         "Immunity": "10",
         "DEF": "5"
       },
+      "consume": "Psychic Sphere x 1",
       "skills": [
         {
           "name": "Recreate Dread",
@@ -915,14 +1247,26 @@
           "sp_cost": "1000",
           "aggro": "0",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 30",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1200%"
+              "value": "АТК: 1200%",
+              "effects": [
+                "100% Chance to inflict [Corrosion]",
+                "Skill Damage increases according to number of targets hit."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "100% Chance to inflict [Corrosion]",
+                "Skill Damage increases according to number of targets hit."
+              ]
             }
           ],
           "special": []
@@ -940,14 +1284,28 @@
           "sp_cost": "1000",
           "aggro": "0",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 20",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1600%"
+              "value": "АТК: 1600%",
+              "effects": [
+                "100% Chance to inflict [Curse]",
+                "Additionally, randomly applies a random debuff from list: [Magical Piercing], [Panic], [Powerful Ritardi]",
+                "Skill Damage increases according to number of targets hit."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3200%"
+              "value": "АТК: 3200%",
+              "effects": [
+                "100% Chance to inflict [Curse]",
+                "Additionally, randomly applies a random debuff from list: [Magical Piercing], [Panic], [Powerful Ritardi]",
+                "Skill Damage increases according to number of targets hit."
+              ]
             }
           ],
           "special": [
@@ -968,14 +1326,26 @@
           "sp_cost": "1000",
           "aggro": "0",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 20",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "100% Chance to inflict [Deep Sleep]",
+                "Skill Damage increases according to number of targets hit."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4400%"
+              "value": "АТК: 4400%",
+              "effects": [
+                "100% Chance to inflict [Deep Sleep]",
+                "Skill Damage increases according to number of targets hit."
+              ]
             }
           ],
           "special": []
@@ -993,14 +1363,26 @@
           "sp_cost": "1000",
           "aggro": "0",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 25",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2500%"
+              "value": "АТК: 2500%",
+              "effects": [
+                "40% Chance to inflict [Paralysis]",
+                "Skill Damage increases according to number of targets hit."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5000%"
+              "value": "АТК: 5000%",
+              "effects": [
+                "40% Chance to inflict [Paralysis]",
+                "Skill Damage increases according to number of targets hit."
+              ]
             }
           ],
           "special": []
@@ -1008,7 +1390,7 @@
         {
           "name": "Immense Disaster",
           "image": "siger_disaster.jpg",
-          "description": "Skill Damage increases according to number of enemies hit",
+          "description": "Unleashes a surge of crackling energy that tears through enemies in front of the caster, striking with relentless force.",
           "target": "",
           "casting_time": "3.6 sec.",
           "cooldown": "75 sec.",
@@ -1018,14 +1400,24 @@
           "sp_cost": "5000",
           "aggro": "0",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 50",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2000%"
+              "value": "АТК: 2000%",
+              "effects": [
+                "Skill Damage increases according to number of enemies hit"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4000%"
+              "value": "АТК: 4000%",
+              "effects": [
+                "Skill Damage increases according to number of enemies hit"
+              ]
             }
           ],
           "special": []

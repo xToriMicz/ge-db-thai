@@ -2,7 +2,7 @@
   "slug": "Beretta",
   "equipment": {
     "category": "Usable Equipment",
-    "medal": "Shall we start hunting? Blessings of the 2026 New Year",
+    "medal": "Shall we start hunting? Blessings of the 2026 New Year 20th Anniversary with Linden",
     "head": "None",
     "earring": "Earring",
     "face": "None",
@@ -95,6 +95,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -140,6 +141,7 @@
         "Penetration": "15+20",
         "Immunity": "5+15"
       },
+      "consume": "Large Caliber Bullet x 2",
       "skills": [
         {
           "name": "Illusion",
@@ -154,14 +156,26 @@
           "sp_cost": "300",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 12",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "When cast, ["
+              "value": "",
+              "effects": [
+                "When cast, [Unhittable]",
+                "When cast, [Inner Bilith] cooldown reset"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "When cast, ["
+              "value": "",
+              "effects": [
+                "When cast, [Unhittable]",
+                "When cast, [Inner Bilith] cooldown reset"
+              ]
             }
           ],
           "special": []
@@ -179,14 +193,30 @@
           "sp_cost": "150",
           "aggro": "40",
           "skill_type": "Shooting",
+          "consume_item": "Large Caliber Bullet x 3",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "90%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1060%"
+              "value": "АТК: 1060%",
+              "effects": [
+                "When cast, [Unhittable]",
+                "When hit, 60% chance to [Critical Wound] the enemy",
+                "Increases skill damage in proportion to [Celerity] level (up to 3x, up to 1.5x for PC)",
+                "When cast, [Celerity] +1"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2120%"
+              "value": "АТК: 2120%",
+              "effects": [
+                "When cast, [Unhittable]",
+                "When hit, 60% chance to [Critical Wound] the enemy",
+                "Increases skill damage in proportion to [Celerity] level (up to 3x, up to 1.5x for PC)",
+                "When cast, [Celerity] +1"
+              ]
             }
           ],
           "special": []
@@ -204,14 +234,26 @@
           "sp_cost": "450",
           "aggro": "80",
           "skill_type": "Shooting",
+          "consume_item": "Large Caliber Bullet x 12",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "90%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1680%"
+              "value": "АТК: 1680%",
+              "effects": [
+                "Increases skill damage proportional to [Celerity] level (up to 3x, up to 1.5x for PC)",
+                "When cast, [Celerity] +1"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3360%"
+              "value": "АТК: 3360%",
+              "effects": [
+                "Increases skill damage proportional to [Celerity] level (up to 3x, up to 1.5x for PC)",
+                "When cast, [Celerity] +1"
+              ]
             }
           ],
           "special": []
@@ -229,14 +271,26 @@
           "sp_cost": "150",
           "aggro": "60",
           "skill_type": "Shooting",
+          "consume_item": "Large Caliber Bullet x 3",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "80%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1220%"
+              "value": "АТК: 1220%",
+              "effects": [
+                "Skill damage increases in proportion to [Celerity] level (up to 3x, up to 1.5x for PC)",
+                "When cast, [Celerity] +1"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2440%"
+              "value": "АТК: 2440%",
+              "effects": [
+                "Skill damage increases in proportion to [Celerity] level (up to 3x, up to 1.5x for PC)",
+                "When cast, [Celerity] +1"
+              ]
             }
           ],
           "special": []
@@ -254,14 +308,32 @@
           "sp_cost": "400",
           "aggro": "100",
           "skill_type": "Shooting",
+          "consume_item": "Large Caliber Bullet x 1",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "130%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1420%"
+              "value": "АТК: 1420%",
+              "effects": [
+                "Ignores additional defense equal to [Skill] * 0.25 to monsters (maximum 50)",
+                "Skill damage increases in proportion to [Celerity] level (maximum 3x, maximum 1.5x for PC)",
+                "Double skill damage to enemies in [Abet] status (1.5x for PC)",
+                "If [Celerity] is level 5 or higher, guaranteed critical hit is applied",
+                "[Celerity] +2 when cast"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2840%"
+              "value": "АТК: 2840%",
+              "effects": [
+                "Ignores additional defense equal to [Skill] * 0.25 to monsters (maximum 50)",
+                "Skill damage increases in proportion to [Celerity] level (maximum 3x, maximum 1.5x for PC)",
+                "Double skill damage to enemies in [Abet] status (1.5x for PC)",
+                "If [Celerity] is level 5 or higher, guaranteed critical hit is applied",
+                "[Celerity] +2 when cast"
+              ]
             }
           ],
           "special": []
@@ -311,6 +383,7 @@
         "Penetration": "15+25",
         "Immunity": "5+10"
       },
+      "consume": "Large Caliber Bullet x 2",
       "skills": [
         {
           "name": "Convergen",
@@ -325,14 +398,38 @@
           "sp_cost": "300",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 12",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "When cast, removes stealth from enemies within 17m and inflicts ["
+              "value": "",
+              "effects": [
+                "When cast, removes stealth from enemies within 17m and inflicts [Intimidation] on removed enemies (ignores status resistance).",
+                "When cast with Beretta as the leader, [Unhittable], [Gloomy Present].",
+                "[Convergen]",
+                "Duration: 600 seconds",
+                "Accuracy +25",
+                "Critical Damage +20%",
+                "Movement Speed +20%",
+                "Movement Speed Limit +1.00"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "When cast, removes stealth from enemies within 17m and inflicts ["
+              "value": "",
+              "effects": [
+                "When cast, removes stealth from enemies within 17m and inflicts [Intimidation] on removed enemies (ignores status resistance).",
+                "When cast with Beretta as the leader, [Unhittable], [Gloomy Present].",
+                "[Convergen]",
+                "Duration: 600 seconds",
+                "Accuracy +25",
+                "Critical Damage +20%",
+                "Movement Speed +20%",
+                "Movement Speed Limit +1.00"
+              ]
             }
           ],
           "special": []
@@ -350,14 +447,28 @@
           "sp_cost": "200",
           "aggro": "40",
           "skill_type": "Shooting",
+          "consume_item": "Large Caliber Bullet x 6",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "80%",
+          "light_armor_atk": "120%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1040%"
+              "value": "АТК: 1040%",
+              "effects": [
+                "Increases skill damage proportional to [Celerity] level (up to 3x, up to 1.5x for PC)",
+                "Double skill damage to enemies in [Abet] status (1.5x for PC)",
+                "[Celerity] +1 when cast"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2080%"
+              "value": "АТК: 2080%",
+              "effects": [
+                "Increases skill damage proportional to [Celerity] level (up to 3x, up to 1.5x for PC)",
+                "Double skill damage to enemies in [Abet] status (1.5x for PC)",
+                "[Celerity] +1 when cast"
+              ]
             }
           ],
           "special": []
@@ -375,14 +486,32 @@
           "sp_cost": "200",
           "aggro": "60",
           "skill_type": "Shooting",
+          "consume_item": "Large Caliber Bullet x 1",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "80%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1530%"
+              "value": "АТК: 1530%",
+              "effects": [
+                "70% chance on hit to [Abet] enemy",
+                "Triple Damage to Monsters",
+                "Ignores status ailment resistance",
+                "Increases skill damage in proportion to [Celerity] level (up to 3x, up to 1.5x for PC)",
+                "When cast, [Celerity] +2"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3060%"
+              "value": "АТК: 3060%",
+              "effects": [
+                "70% chance on hit to [Abet] enemy",
+                "Triple Damage to Monsters",
+                "Ignores status ailment resistance",
+                "Increases skill damage in proportion to [Celerity] level (up to 3x, up to 1.5x for PC)",
+                "When cast, [Celerity] +2"
+              ]
             }
           ],
           "special": []
@@ -400,14 +529,36 @@
           "sp_cost": "600",
           "aggro": "80",
           "skill_type": "Shooting",
+          "consume_item": "Large Caliber Bullet x 12",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "90%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1410%"
+              "value": "АТК: 1410%",
+              "effects": [
+                "Removes enemy invincibility",
+                "When hitting, 50% chance to inflict [Abet] on the enemy",
+                "For monsters, chance x1.5",
+                "Ignores status ailment resistance",
+                "When cast, [Unhittable]",
+                "Increases skill damage proportional to [Celerity] level (up to 3x, up to 1.5x for PC)",
+                "When cast, [Celerity] +2"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2820%"
+              "value": "АТК: 2820%",
+              "effects": [
+                "Removes enemy invincibility",
+                "When hitting, 50% chance to inflict [Abet] on the enemy",
+                "For monsters, chance x1.5",
+                "Ignores status ailment resistance",
+                "When cast, [Unhittable]",
+                "Increases skill damage proportional to [Celerity] level (up to 3x, up to 1.5x for PC)",
+                "When cast, [Celerity] +2"
+              ]
             }
           ],
           "special": []
@@ -425,14 +576,34 @@
           "sp_cost": "750",
           "aggro": "100",
           "skill_type": "Shooting",
+          "consume_item": "Large Caliber Bullet x 3",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1370%"
+              "value": "АТК: 1370%",
+              "effects": [
+                "Ignores additional defense equal to [Skill] * 0.5 to monsters (maximum 100)",
+                "Skill damage increases in proportion to [Celerity] level (maximum 3x, maximum 1.5x for PC)",
+                "Skill damage doubles against enemies in [Abet] status (1.5x for PC)",
+                "If [Celerity] is level 5 or higher, critical damage is not applied",
+                "If [Celerity] is level 5 or higher, skill damage increases by the amount of additional critical damage",
+                "When casting, [Celerity] +1"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2740%"
+              "value": "АТК: 2740%",
+              "effects": [
+                "Ignores additional defense equal to [Skill] * 0.5 to monsters (maximum 100)",
+                "Skill damage increases in proportion to [Celerity] level (maximum 3x, maximum 1.5x for PC)",
+                "Skill damage doubles against enemies in [Abet] status (1.5x for PC)",
+                "If [Celerity] is level 5 or higher, critical damage is not applied",
+                "If [Celerity] is level 5 or higher, skill damage increases by the amount of additional critical damage",
+                "When casting, [Celerity] +1"
+              ]
             }
           ],
           "special": []

@@ -86,6 +86,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -130,6 +131,7 @@
         "Penetration": "15+10",
         "Immunity": "5+15"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Rapu",
@@ -144,26 +146,65 @@
           "sp_cost": "560",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 5 Minutes."
+              "value": "",
+              "effects": [
+                "Duration: 5 Minutes.",
+                "Damage from monster -1%",
+                "Blocking+1",
+                "Evasion+1",
+                "Wide skill damage -30%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 5 Minutes."
+              "value": "",
+              "effects": [
+                "Duration: 5 Minutes.",
+                "Damage from monster -10%",
+                "Blocking+10",
+                "Evasion+10",
+                "Wide skill damage -30%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 5 Minutes."
+              "value": "",
+              "effects": [
+                "Duration: 5 Minutes.",
+                "Damage from monster -11%",
+                "Blocking+11",
+                "Evasion+11",
+                "Wide skill damage -30%"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 5 Minutes."
+              "value": "",
+              "effects": [
+                "Duration: 5 Minutes.",
+                "Damage from monster -12%",
+                "Blocking+12",
+                "Evasion+12",
+                "Wide skill damage -30%"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 5 Minutes."
+              "value": "",
+              "effects": [
+                "Duration: 5 Minutes.",
+                "Damage from monster -13%",
+                "Blocking+13",
+                "Evasion+13",
+                "Wide skill damage -30%"
+              ]
             }
           ],
           "special": []
@@ -181,14 +222,28 @@
           "sp_cost": "780",
           "aggro": "342",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "75%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1200%"
+              "value": "АТК: 1200%",
+              "effects": [
+                "Ignores enemys DEF by 50",
+                "50% chance to impose [Mortal Wound]",
+                "In [Destruido] state, extra ignores enemys DEF in proportion to Max HP"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "Ignores enemys DEF by 50",
+                "50% chance to impose [Mortal Wound]",
+                "In [Destruido] state, extra ignores enemys DEF in proportion to Max HP"
+              ]
             }
           ],
           "special": []
@@ -206,14 +261,30 @@
           "sp_cost": "940",
           "aggro": "250",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "75%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "Ignores enemys DEF by 60",
+                "Ignores Evasion",
+                "Damage to Evasion type enemies +1% per 1 evasion",
+                "In [Destruido] state, extra ignores enemys DEF in proportion to casters Max HP."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4800%"
+              "value": "АТК: 4800%",
+              "effects": [
+                "Ignores enemys DEF by 60",
+                "Ignores Evasion",
+                "Damage to Evasion type enemies +1% per 1 evasion",
+                "In [Destruido] state, extra ignores enemys DEF in proportion to casters Max HP."
+              ]
             }
           ],
           "special": []
@@ -231,14 +302,30 @@
           "sp_cost": "1050",
           "aggro": "270",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "125%",
+          "heavy_armor_atk": "75%",
+          "light_armor_atk": "150%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2350%"
+              "value": "АТК: 2350%",
+              "effects": [
+                "Ignores enemys DEF by 75",
+                "Ignores Evasion",
+                "Damage to Evasion type enemies +1% per 1 evasion",
+                "In [Destruido] state, extra ignores enemys DEF in proportion to casters Max HP."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4700%"
+              "value": "АТК: 4700%",
+              "effects": [
+                "Ignores enemys DEF by 75",
+                "Ignores Evasion",
+                "Damage to Evasion type enemies +1% per 1 evasion",
+                "In [Destruido] state, extra ignores enemys DEF in proportion to casters Max HP."
+              ]
             }
           ],
           "special": []
@@ -247,7 +334,7 @@
           "name": "Equiltario",
           "image": "pir_equiltario.jpg",
           "description": "Makes a powerful attack by focusing on the mind and leaping to the target.",
-          "target": "",
+          "target": "Max Range 12m/ Up to 1 specified enemy",
           "casting_time": "1.1 sec.",
           "cooldown": "17 sec.",
           "duration": "1.9 sec.",
@@ -256,14 +343,30 @@
           "sp_cost": "1280",
           "aggro": "270",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "75%",
+          "light_armor_atk": "150%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2500%"
+              "value": "АТК: 2500%",
+              "effects": [
+                "Ignores enemys DEF by 75",
+                "Ignores Evasion",
+                "Damage to Evasion type enemies +1% per 1 evasion",
+                "In [Destruido] state, extra ignores enemys DEF in proportion to casters Max HP."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5000%"
+              "value": "АТК: 5000%",
+              "effects": [
+                "Ignores enemys DEF by 75",
+                "Ignores Evasion",
+                "Damage to Evasion type enemies +1% per 1 evasion",
+                "In [Destruido] state, extra ignores enemys DEF in proportion to casters Max HP."
+              ]
             }
           ],
           "special": []

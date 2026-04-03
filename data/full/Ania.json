@@ -143,6 +143,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -180,6 +181,7 @@
       "lv25_bonus": {
         "ATK SPD": "+3%"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Deep Straight",
@@ -194,14 +196,20 @@
           "sp_cost": "100",
           "aggro": "78",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 328%"
+              "value": "АТК: 328%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 656%"
+              "value": "АТК: 656%",
+              "effects": []
             }
           ],
           "special": []
@@ -219,14 +227,20 @@
           "sp_cost": "200",
           "aggro": "68",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 288%"
+              "value": "АТК: 288%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 576%"
+              "value": "АТК: 576%",
+              "effects": []
             }
           ],
           "special": []
@@ -244,14 +258,24 @@
           "sp_cost": "250",
           "aggro": "105",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 469%"
+              "value": "АТК: 469%",
+              "effects": [
+                "Double Damage to enemies with [Soft Armor]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 938%"
+              "value": "АТК: 938%",
+              "effects": [
+                "Double Damage to enemies with [Soft Armor]"
+              ]
             }
           ],
           "special": [
@@ -272,14 +296,20 @@
           "sp_cost": "300",
           "aggro": "210",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 990%"
+              "value": "АТК: 990%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1980%"
+              "value": "АТК: 1980%",
+              "effects": []
             }
           ],
           "special": []
@@ -320,6 +350,7 @@
         "Block": "+15",
         "Critical": "+10"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Battle Smash",
@@ -334,14 +365,26 @@
           "sp_cost": "100",
           "aggro": "83",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 421.7%"
+              "value": "АТК: 421.7%",
+              "effects": [
+                "Enemy DEF -20",
+                "50% Chance to [Stun] Enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 843%"
+              "value": "АТК: 843%",
+              "effects": [
+                "Enemy DEF -20",
+                "50% Chance to [Stun] Enemy"
+              ]
             }
           ],
           "special": []
@@ -359,14 +402,24 @@
           "sp_cost": "150",
           "aggro": "36",
           "skill_type": "Magic",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 139%"
+              "value": "АТК: 139%",
+              "effects": [
+                "66% Chance to cast [Electrical Field] on Enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 278%"
+              "value": "АТК: 278%",
+              "effects": [
+                "66% Chance to cast [Electrical Field] on Enemy"
+              ]
             }
           ],
           "special": []
@@ -384,14 +437,24 @@
           "sp_cost": "200",
           "aggro": "84",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 414.9%"
+              "value": "АТК: 414.9%",
+              "effects": [
+                "Enemy DEF -30"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 829%"
+              "value": "АТК: 829%",
+              "effects": [
+                "Enemy DEF -30"
+              ]
             }
           ],
           "special": []
@@ -409,14 +472,24 @@
           "sp_cost": "250",
           "aggro": "94",
           "skill_type": "Shooting",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 471.95%"
+              "value": "АТК: 471.95%",
+              "effects": [
+                "Enemy DEF -50"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 943%"
+              "value": "АТК: 943%",
+              "effects": [
+                "Enemy DEF -50"
+              ]
             }
           ],
           "special": []
@@ -434,14 +507,24 @@
           "sp_cost": "300",
           "aggro": "222",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1201.13%"
+              "value": "АТК: 1201.13%",
+              "effects": [
+                "Enemy DEF -50"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2402%"
+              "value": "АТК: 2402%",
+              "effects": [
+                "Enemy DEF -50"
+              ]
             }
           ],
           "special": []
@@ -486,6 +569,7 @@
         "Penetration": "5+20",
         "Immunity": "10+10"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Turning Force",
@@ -500,14 +584,32 @@
           "sp_cost": "240",
           "aggro": "99",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "40%",
+          "heavy_armor_atk": "120%",
+          "light_armor_atk": "170%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1200%"
+              "value": "АТК: 1200%",
+              "effects": [
+                "Ignores enemys DEF by 60",
+                "Ignores Block",
+                "Ignore enemys shield DEF 1/2",
+                "60% chance to inflict [Slow]",
+                "Double damage while using [Counterattack]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "Ignores enemys DEF by 60",
+                "Ignores Block",
+                "Ignore enemys shield DEF 1/2",
+                "60% chance to inflict [Slow]",
+                "Double damage while using [Counterattack]"
+              ]
             }
           ],
           "special": []
@@ -525,14 +627,26 @@
           "sp_cost": "340",
           "aggro": "185",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "50%",
+          "heavy_armor_atk": "150%",
+          "light_armor_atk": "130%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "70% chance to inflict [Mortal Wound] on enemy",
+                "Enemy DEF -40"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4400%"
+              "value": "АТК: 4400%",
+              "effects": [
+                "70% chance to inflict [Mortal Wound] on enemy",
+                "Enemy DEF -40"
+              ]
             }
           ],
           "special": []
@@ -550,14 +664,30 @@
           "sp_cost": "440",
           "aggro": "142",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "50%",
+          "heavy_armor_atk": "310%",
+          "light_armor_atk": "120%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2100%"
+              "value": "АТК: 2100%",
+              "effects": [
+                "Ignoring enemys DEF by 60",
+                "Ignoring Blocking",
+                "Ignoring enemy shields DEF by 1/2",
+                "In [AGI] state, extra ignoring DEF in proportion to [AGI] value"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4200%"
+              "value": "АТК: 4200%",
+              "effects": [
+                "Ignoring enemys DEF by 60",
+                "Ignoring Blocking",
+                "Ignoring enemy shields DEF by 1/2",
+                "In [AGI] state, extra ignoring DEF in proportion to [AGI] value"
+              ]
             }
           ],
           "special": []
@@ -575,26 +705,73 @@
           "sp_cost": "650",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration : 30sec."
+              "value": "",
+              "effects": [
+                "Duration : 30sec.",
+                "AGI +20",
+                "Damage +1.5 times with normal attack",
+                "Skill ATK rises in proportion to AGI"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration : 300sec."
+              "value": "",
+              "effects": [
+                "Duration : 300sec.",
+                "AGI +20",
+                "Damage +1.5 times with normal attack",
+                "Skill ATK rises in proportion to AGI"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration : 330sec."
+              "value": "",
+              "effects": [
+                "Duration : 330sec.",
+                "AGI +30",
+                "ATK : +5%",
+                "ATK SPD : +5%",
+                "Movement Speed +5%",
+                "Damage +1.5 times with normal attack",
+                "Skill ATK rises in proportion to AGI"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration : 360sec."
+              "value": "",
+              "effects": [
+                "Duration : 360sec.",
+                "AGI +30",
+                "A.R. +1",
+                "D.R. +1",
+                "ATK +5%",
+                "ATK SPD +5%",
+                "Movement Speed +5%",
+                "Damage +1.5 times with normal attack",
+                "Skill ATK rises in proportion to AGI"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration : 390sec."
+              "value": "",
+              "effects": [
+                "Duration : 390sec.",
+                "AGI +30",
+                "A.R. +1",
+                "D.R. +1",
+                "ATK +5%",
+                "ATK SPD +5%",
+                "Movement Speed +5%",
+                "Damage +1.5 times with normal attack",
+                "Skill ATK rises in proportion to AGI"
+              ]
             }
           ],
           "special": []
@@ -612,14 +789,34 @@
           "sp_cost": "540",
           "aggro": "288",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "45%",
+          "heavy_armor_atk": "230%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2500%"
+              "value": "АТК: 2500%",
+              "effects": [
+                "Ignoring enemys DEF by 75",
+                "Ignoring Blocking",
+                "Ignoring enemy shields DEF by 1/2",
+                "In [Counterattack] state, damage x2",
+                "Using in [Counterattack] state, [Counterattack] is canceled",
+                "In [AGI] state, extra ignoring DEF in proportion to [AGI] value"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5000%"
+              "value": "АТК: 5000%",
+              "effects": [
+                "Ignoring enemys DEF by 75",
+                "Ignoring Blocking",
+                "Ignoring enemy shields DEF by 1/2",
+                "In [Counterattack] state, damage x2",
+                "Using in [Counterattack] state, [Counterattack] is canceled",
+                "In [AGI] state, extra ignoring DEF in proportion to [AGI] value"
+              ]
             }
           ],
           "special": []
