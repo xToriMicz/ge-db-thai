@@ -190,7 +190,8 @@ async function handleAPI(request: Request, env: Env): Promise<Response> {
     const skillDetails = await env.DB.prepare(
       `SELECT sd.skill_name, sd.stance_name, sd.skill_image, sd.description, sd.target,
               sd.casting_time, sd.cooldown, sd.duration, sd.sp_cost, sd.aggro, sd.skill_type,
-              sd.hits_flying, sd.knock_down, sd.levels, sd.special
+              sd.hits_flying, sd.knock_down, sd.levels, sd.special,
+              sd.consume_item, sd.soft_armor_atk, sd.heavy_armor_atk, sd.light_armor_atk
        FROM skill_details sd
        WHERE sd.character_slug = ?`
     ).bind(slug).all();
@@ -212,6 +213,10 @@ async function handleAPI(request: Request, env: Env): Promise<Response> {
         skill_type: s.skill_type,
         hits_flying: s.hits_flying,
         knock_down: s.knock_down,
+        consume_item: s.consume_item || null,
+        soft_armor_atk: s.soft_armor_atk || null,
+        heavy_armor_atk: s.heavy_armor_atk || null,
+        light_armor_atk: s.light_armor_atk || null,
         levels: JSON.parse(s.levels || "[]"),
         special: JSON.parse(s.special || "[]"),
       });
@@ -254,6 +259,7 @@ async function handleAPI(request: Request, env: Env): Promise<Response> {
           lightning: detail?.lightning_res,
           abnormal: detail?.abnormal_res,
         },
+        consume: detail?.consume || null,
         lv25_bonus: detail?.lv25_bonus ? JSON.parse(detail.lv25_bonus) : {},
         lv25_bonus_extra: detail?.lv25_bonus_extra ? JSON.parse(detail.lv25_bonus_extra) : [],
         skills: skillsByStance[st.name] || [],
