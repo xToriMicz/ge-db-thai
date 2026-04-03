@@ -95,6 +95,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -134,6 +135,7 @@
         "Block": "+10",
         "Critical": "+10"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Blandir Cadena",
@@ -148,14 +150,24 @@
           "sp_cost": "100",
           "aggro": "115",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 522%"
+              "value": "АТК: 522%",
+              "effects": [
+                "Additional 50% damage to enemies with [Heavy Armor]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1044%"
+              "value": "АТК: 1044%",
+              "effects": [
+                "Additional 50% damage to enemies with [Heavy Armor]"
+              ]
             }
           ],
           "special": [
@@ -176,14 +188,20 @@
           "sp_cost": "200",
           "aggro": "83",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 364%"
+              "value": "АТК: 364%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 728%"
+              "value": "АТК: 728%",
+              "effects": []
             }
           ],
           "special": []
@@ -201,14 +219,24 @@
           "sp_cost": "300",
           "aggro": "109",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 481%"
+              "value": "АТК: 481%",
+              "effects": [
+                "30% chance to inflict [Stun]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 961%"
+              "value": "АТК: 961%",
+              "effects": [
+                "30% chance to inflict [Stun]"
+              ]
             }
           ],
           "special": []
@@ -251,6 +279,7 @@
         "Penetration": "15+10",
         "Immunity": "5+15"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Supervia",
@@ -265,26 +294,55 @@
           "sp_cost": "500",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration : 30 sec"
+              "value": "",
+              "effects": [
+                "Duration : 30 sec",
+                "[Squad Members] ATK +1%, Penetration +3",
+                "[Judith/Empyrium Judith] A.R. +1, ATK +50%, Penetration +10"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration : 300 sec"
+              "value": "",
+              "effects": [
+                "Duration : 300 sec",
+                "[Squad Members] ATK +10%, Penetration +3",
+                "[Judith/Empyrium Judith] A.R. +1, ATK +50%, Penetration +10"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration : 330 sec"
+              "value": "",
+              "effects": [
+                "Duration : 330 sec",
+                "[Squad Members] ATK +11%, Penetration +3",
+                "[Judith/Empyrium Judith] A.R. +1, ATK +50%, Penetration +10"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration : 360 sec"
+              "value": "",
+              "effects": [
+                "Duration : 360 sec",
+                "[Squad Members] ATK +12%, Penetration +3, STR +1",
+                "[Judith/Empyrium Judith] A.R. +1, ATK +50%, Penetration +10"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration : 390 sec"
+              "value": "",
+              "effects": [
+                "Duration : 390 sec",
+                "[Squad Members] ATK +13%, Penetration +3, STR +1",
+                "[Judith/Empyrium Judith] A.R. +1, ATK +50%, Penetration +10"
+              ]
             }
           ],
           "special": []
@@ -302,14 +360,38 @@
           "sp_cost": "500",
           "aggro": "300",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "130%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 800%"
+              "value": "АТК: 800%",
+              "effects": [
+                "Fixed Physical Damage",
+                "Ignores Block",
+                "Cooldown: 20 sec.",
+                "Up to twice",
+                "50% chance to impose [Enervation]",
+                "Absorbs damages 80% as HP",
+                "In skill accuracy, [Penance] is activated.",
+                "In skill accuracy to enemy PC, [Quasars Scar] is activated(absorbing damages 50% if HP recovered by [Gula] exceeds Max HP)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1600%"
+              "value": "АТК: 1600%",
+              "effects": [
+                "Fixed Physical Damage",
+                "Ignores Block",
+                "Cooldown: 20 sec.",
+                "Up to twice",
+                "50% chance to impose [Enervation]",
+                "Absorbs damages 80% as HP",
+                "In skill accuracy, [Penance] is activated.",
+                "In skill accuracy to enemy PC, [Quasars Scar] is activated(absorbing damages 50% if HP recovered by [Gula] exceeds Max HP)"
+              ]
             }
           ],
           "special": []
@@ -327,14 +409,28 @@
           "sp_cost": "2000",
           "aggro": "200",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "130%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1200%"
+              "value": "АТК: 1200%",
+              "effects": [
+                "Ignoring enemys DEF by 50",
+                "In the [Confession] state, extra ignoring enemys DEF in proportion to enemys Max HP",
+                "(HP -2000)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "Ignoring enemys DEF by 50",
+                "In the [Confession] state, extra ignoring enemys DEF in proportion to enemys Max HP",
+                "(HP -2000)"
+              ]
             }
           ],
           "special": []
@@ -352,14 +448,28 @@
           "sp_cost": "5000",
           "aggro": "250",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "130%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": [
+                "Ignoring enemys DEF by 70",
+                "In the [Confession] state, extra ignoring enemys DEF in proportion to enemys Max HP",
+                "(HP -5000)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3600%"
+              "value": "АТК: 3600%",
+              "effects": [
+                "Ignoring enemys DEF by 70",
+                "In the [Confession] state, extra ignoring enemys DEF in proportion to enemys Max HP",
+                "(HP -5000)"
+              ]
             }
           ],
           "special": []
@@ -377,14 +487,28 @@
           "sp_cost": "3000",
           "aggro": "250",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "120%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "120%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2000%"
+              "value": "АТК: 2000%",
+              "effects": [
+                "Ignoring enemys DEF by 80",
+                "In the [Confession] state, extra ignoring enemys DEF in proportion to enemys Max HP",
+                "(HP -3000)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4000%"
+              "value": "АТК: 4000%",
+              "effects": [
+                "Ignoring enemys DEF by 80",
+                "In the [Confession] state, extra ignoring enemys DEF in proportion to enemys Max HP",
+                "(HP -3000)"
+              ]
             }
           ],
           "special": []

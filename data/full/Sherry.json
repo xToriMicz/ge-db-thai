@@ -58,6 +58,14 @@
         "x": -150,
         "y": -225
       }
+    },
+    {
+      "stance_name": "Flamenco",
+      "equipped_items": "Knuckle",
+      "icon_position": {
+        "x": -150,
+        "y": -225
+      }
     }
   ],
   "stances": [
@@ -86,6 +94,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -128,6 +137,7 @@
         "Penetration": "5+25",
         "Immunity": "15"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Calentar",
@@ -142,14 +152,32 @@
           "sp_cost": "500",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "3rd successful skill hit: chance of debuff applied is 100%",
+                "Skill damage increases equal to (3% of extra [STR])",
+                "Normal ATK increases equal to (2% of extra [STR])",
+                "Ignore DEF of enemy equal to (3% of extra [STR])"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "3rd successful skill hit: chance of debuff applied is 100%",
+                "Skill damage increases equal to (3% of extra [STR])",
+                "Normal ATK increases equal to (2% of extra [STR])",
+                "Ignore DEF of enemy equal to (3% of extra [STR])"
+              ]
             }
           ],
           "special": []
@@ -167,14 +195,26 @@
           "sp_cost": "650",
           "aggro": "200",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "75%",
+          "heavy_armor_atk": "125%",
+          "light_armor_atk": "150%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1023%"
+              "value": "АТК: 1023%",
+              "effects": [
+                "Ignores DEF of enemy by 60",
+                "25% chance to inflict [Hold] to enemy PC - Ignore Debuff RES"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2046%"
+              "value": "АТК: 2046%",
+              "effects": [
+                "Ignores DEF of enemy by 60",
+                "25% chance to inflict [Hold] to enemy PC - Ignore Debuff RES"
+              ]
             }
           ],
           "special": []
@@ -192,14 +232,28 @@
           "sp_cost": "840",
           "aggro": "342",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 3",
+          "soft_armor_atk": "75%",
+          "heavy_armor_atk": "125%",
+          "light_armor_atk": "150%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1505%"
+              "value": "АТК: 1505%",
+              "effects": [
+                "Ignores DEF of enemy by 75",
+                "Ignore Block",
+                "25% chance to inflict [Armor Crasher] to enemy PC - Ignore Debuff RES"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3010%"
+              "value": "АТК: 3010%",
+              "effects": [
+                "Ignores DEF of enemy by 75",
+                "Ignore Block",
+                "25% chance to inflict [Armor Crasher] to enemy PC - Ignore Debuff RES"
+              ]
             }
           ],
           "special": []
@@ -217,14 +271,26 @@
           "sp_cost": "920",
           "aggro": "200",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1994%"
+              "value": "АТК: 1994%",
+              "effects": [
+                "Ignores DEF of enemy by 75",
+                "25% chance to inflict [Stun] to enemy PC - Ignore Debuff RES"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3988%"
+              "value": "АТК: 3988%",
+              "effects": [
+                "Ignores DEF of enemy by 75",
+                "25% chance to inflict [Stun] to enemy PC - Ignore Debuff RES"
+              ]
             }
           ],
           "special": []
@@ -242,14 +308,28 @@
           "sp_cost": "840",
           "aggro": "47",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 1",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "125%",
+          "light_armor_atk": "150%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2035%"
+              "value": "АТК: 2035%",
+              "effects": [
+                "Ignores DEF of enemy by 75",
+                "Ignore Block",
+                "25% chance to inflict [Control] to enemy PC - Ignore Debuff RES"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4070%"
+              "value": "АТК: 4070%",
+              "effects": [
+                "Ignores DEF of enemy by 75",
+                "Ignore Block",
+                "25% chance to inflict [Control] to enemy PC - Ignore Debuff RES"
+              ]
             }
           ],
           "special": []

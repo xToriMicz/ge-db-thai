@@ -91,6 +91,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -134,6 +135,7 @@
         "Penetration": "12+13",
         "Immunity": "5+13"
       },
+      "consume": "Steel Bullet x 1",
       "skills": [
         {
           "name": "Aim Forward",
@@ -148,14 +150,38 @@
           "sp_cost": "300",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 300s"
+              "value": "",
+              "effects": [
+                "Duration: 300s",
+                "A.R. +2",
+                "ATK +35%",
+                "Monster ATK +300%",
+                "DEX +7",
+                "ATK SPD Limit decreases",
+                "Ignore enemy [PC] IMM equal to 40% of [DEX]",
+                "During [Aimed Forward] 100% Chance to inflict [Aimed] during skill usage"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 300s"
+              "value": "",
+              "effects": [
+                "Duration: 300s",
+                "A.R. +2",
+                "ATK +35%",
+                "Monster ATK +300%",
+                "DEX +7",
+                "ATK SPD Limit decreases",
+                "Ignore enemy [PC] IMM equal to 40% of [DEX]",
+                "During [Aimed Forward] 100% Chance to inflict [Aimed] during skill usage"
+              ]
             }
           ],
           "special": []
@@ -173,14 +199,30 @@
           "sp_cost": "380",
           "aggro": "245",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bullet x 2",
+          "soft_armor_atk": "115%",
+          "heavy_armor_atk": "120%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1400%"
+              "value": "АТК: 1400%",
+              "effects": [
+                "Ignores 30 DEF",
+                "Skill Damage +70% and ignores DEF by 100 per enemy [Aimed] Lv",
+                "Skill Damage increases by 7% of extra [DEX]",
+                "Chance to inflict [Control] in proportion to [Aim Forward]s Buff Level"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2800%"
+              "value": "АТК: 2800%",
+              "effects": [
+                "Ignores 30 DEF",
+                "Skill Damage +70% and ignores DEF by 100 per enemy [Aimed] Lv",
+                "Skill Damage increases by 7% of extra [DEX]",
+                "Chance to inflict [Control] in proportion to [Aim Forward]s Buff Level"
+              ]
             }
           ],
           "special": []
@@ -198,14 +240,30 @@
           "sp_cost": "550",
           "aggro": "245",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bullet x 9",
+          "soft_armor_atk": "120%",
+          "heavy_armor_atk": "90%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1600%"
+              "value": "АТК: 1600%",
+              "effects": [
+                "Ignores 45 DEF",
+                "Skill Damage +70% and ignores DEF by 100 per enemy [Aimed] Lv",
+                "Skill Damage increases by 7% of extra [DEX]",
+                "Chance to inflict [Control] in proportion to [Aim Forward]s Buff Level"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3200%"
+              "value": "АТК: 3200%",
+              "effects": [
+                "Ignores 45 DEF",
+                "Skill Damage +70% and ignores DEF by 100 per enemy [Aimed] Lv",
+                "Skill Damage increases by 7% of extra [DEX]",
+                "Chance to inflict [Control] in proportion to [Aim Forward]s Buff Level"
+              ]
             }
           ],
           "special": []
@@ -223,14 +281,30 @@
           "sp_cost": "700",
           "aggro": "90",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bullet x 10",
+          "soft_armor_atk": "120%",
+          "heavy_armor_atk": "85%",
+          "light_armor_atk": "105%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": [
+                "Ignores 25 DEF",
+                "Skill Damage +70% and ignores DEF by 100 per enemy [Aimed] Lv",
+                "Skill Damage increases by 7% of extra [DEX]",
+                "Chance to inflict [Control] in proportion to [Aim Forward]s Buff Level"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3600%"
+              "value": "АТК: 3600%",
+              "effects": [
+                "Ignores 25 DEF",
+                "Skill Damage +70% and ignores DEF by 100 per enemy [Aimed] Lv",
+                "Skill Damage increases by 7% of extra [DEX]",
+                "Chance to inflict [Control] in proportion to [Aim Forward]s Buff Level"
+              ]
             }
           ],
           "special": []
@@ -248,14 +322,30 @@
           "sp_cost": "920",
           "aggro": "200",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bullet x 4",
+          "soft_armor_atk": "130%",
+          "heavy_armor_atk": "140%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1300%"
+              "value": "АТК: 1300%",
+              "effects": [
+                "Ignores 50 DEF",
+                "Skill Damage +70% and ignores DEF by 100 per enemy [Aimed] Lv",
+                "Skill Damage increases by 7% of extra [DEX]",
+                "Chance to inflict [Control] in proportion to [Aim Forward]s Buff Level"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2600%"
+              "value": "АТК: 2600%",
+              "effects": [
+                "Ignores 50 DEF",
+                "Skill Damage +70% and ignores DEF by 100 per enemy [Aimed] Lv",
+                "Skill Damage increases by 7% of extra [DEX]",
+                "Chance to inflict [Control] in proportion to [Aim Forward]s Buff Level"
+              ]
             }
           ],
           "special": []

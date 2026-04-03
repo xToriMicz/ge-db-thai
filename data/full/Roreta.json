@@ -150,6 +150,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -192,6 +193,7 @@
         "Penetration": "20+20",
         "Immunity": "5+10"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Sling",
@@ -206,14 +208,28 @@
           "sp_cost": "150",
           "aggro": "60",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 800%"
+              "value": "АТК: 800%",
+              "effects": [
+                "Ignore 20 DEF",
+                "Ignores Block",
+                "100% chance to inflict [Stun]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1600%"
+              "value": "АТК: 1600%",
+              "effects": [
+                "Ignore 20 DEF",
+                "Ignores Block",
+                "100% chance to inflict [Stun]"
+              ]
             }
           ],
           "special": []
@@ -231,14 +247,30 @@
           "sp_cost": "230",
           "aggro": "130",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "120%",
+          "light_armor_atk": "150%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1400%"
+              "value": "АТК: 1400%",
+              "effects": [
+                "Ignores 50 DEF",
+                "Ignores Block",
+                "Skill damage increases when attacking from behind or sides of enemies - 100% + extra [STR] *3%",
+                "Give [Mortal Wound] by 50% chance"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2800%"
+              "value": "АТК: 2800%",
+              "effects": [
+                "Ignores 50 DEF",
+                "Ignores Block",
+                "Skill damage increases when attacking from behind or sides of enemies - 100% + extra [STR] *3%",
+                "Give [Mortal Wound] by 50% chance"
+              ]
             }
           ],
           "special": []
@@ -256,14 +288,26 @@
           "sp_cost": "320",
           "aggro": "150",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "120%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": [
+                "Ignore DEF 45",
+                "Give [Mortal Wound] by 60% chance"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3600%"
+              "value": "АТК: 3600%",
+              "effects": [
+                "Ignore DEF 45",
+                "Give [Mortal Wound] by 60% chance"
+              ]
             }
           ],
           "special": []
@@ -281,14 +325,26 @@
           "sp_cost": "350",
           "aggro": "170",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2000%"
+              "value": "АТК: 2000%",
+              "effects": [
+                "Ignore 45 DEF",
+                "70% chance to inflict [Darkness]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4000%"
+              "value": "АТК: 4000%",
+              "effects": [
+                "Ignore 45 DEF",
+                "70% chance to inflict [Darkness]"
+              ]
             }
           ],
           "special": []
@@ -306,14 +362,30 @@
           "sp_cost": "400",
           "aggro": "200",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "150%",
+          "light_armor_atk": "150%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2500%"
+              "value": "АТК: 2500%",
+              "effects": [
+                "Ignores 75 DEF",
+                "Ignores Block",
+                "Skill damage increases when attacking from behind or sides of enemies - 100% + extra [STR] *3%",
+                "Give [Mortal Wound] by 70% chance"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5000%"
+              "value": "АТК: 5000%",
+              "effects": [
+                "Ignores 75 DEF",
+                "Ignores Block",
+                "Skill damage increases when attacking from behind or sides of enemies - 100% + extra [STR] *3%",
+                "Give [Mortal Wound] by 70% chance"
+              ]
             }
           ],
           "special": []
@@ -365,6 +437,7 @@
         "Penetration": "5+15",
         "Immunity": "15+10"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Counterforce",
@@ -379,14 +452,42 @@
           "sp_cost": "560",
           "aggro": "500",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 2",
+          "soft_armor_atk": "125%",
+          "heavy_armor_atk": "75%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": [
+                "Ignore enemy DEF by 50",
+                "Ignore Block",
+                "60% chance to inflict [Slow] on enemy.",
+                "Skill Damage increases by 30% of extra [AGI]",
+                "Extra ignores DEF of enemy PC in [Paralysis Poison] state in proportion to [Paralysis Poison]s Lv.",
+                "Reaching Max Lv., extra DEF ignoring for enemy PC +50%",
+                "Extra ignores DEF of monster in [Paralysis Poison] state in proportion to [Paralysis Poison]s Lv.",
+                "Reaching Max Lv., extra DEF ignoring for monster increases greatly",
+                "With skill accuracy, [Paralysis Poison] is lifted",
+                "With skill accuracy, [Bleeding Poison] applies."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3600%"
+              "value": "АТК: 3600%",
+              "effects": [
+                "Ignore enemy DEF by 50",
+                "Ignore Block",
+                "60% chance to inflict [Slow] on enemy.",
+                "Skill Damage increases by 30% of extra [AGI]",
+                "Extra ignores DEF of enemy PC in [Paralysis Poison] state in proportion to [Paralysis Poison]s Lv.",
+                "Reaching Max Lv., extra DEF ignoring for enemy PC +50%",
+                "Extra ignores DEF of monster in [Paralysis Poison] state in proportion to [Paralysis Poison]s Lv.",
+                "Reaching Max Lv., extra DEF ignoring for monster increases greatly",
+                "With skill accuracy, [Paralysis Poison] is lifted",
+                "With skill accuracy, [Bleeding Poison] applies."
+              ]
             }
           ],
           "special": []
@@ -404,14 +505,42 @@
           "sp_cost": "300",
           "aggro": "103",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 2",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "80%",
+          "light_armor_atk": "115%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "Ignore enemy DEF by 95",
+                "Ignore Block",
+                "50% chance to inflict [Bleeding] on enemy.",
+                "Skill Damage increases by 40% of extra [AGI]",
+                "Extra ignores DEF of enemy PC in [Paralysis Poison] state in proportion to [Paralysis Poison]s Lv.",
+                "Reaching Max Lv., extra DEF ignoring for enemy PC +50%",
+                "Extra ignores DEF of monster in [Paralysis Poison] state in proportion to [Paralysis Poison]s Lv.",
+                "Reaching Max Lv., extra DEF ignoring for monster increases greatly",
+                "With skill accuracy, [Paralysis Poison] is lifted",
+                "With skill accuracy, [Bleeding Poison] applies."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4400%"
+              "value": "АТК: 4400%",
+              "effects": [
+                "Ignore enemy DEF by 95",
+                "Ignore Block",
+                "50% chance to inflict [Bleeding] on enemy.",
+                "Skill Damage increases by 40% of extra [AGI]",
+                "Extra ignores DEF of enemy PC in [Paralysis Poison] state in proportion to [Paralysis Poison]s Lv.",
+                "Reaching Max Lv., extra DEF ignoring for enemy PC +50%",
+                "Extra ignores DEF of monster in [Paralysis Poison] state in proportion to [Paralysis Poison]s Lv.",
+                "Reaching Max Lv., extra DEF ignoring for monster increases greatly",
+                "With skill accuracy, [Paralysis Poison] is lifted",
+                "With skill accuracy, [Bleeding Poison] applies."
+              ]
             }
           ],
           "special": []
@@ -429,14 +558,42 @@
           "sp_cost": "560",
           "aggro": "142",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 4",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "150%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "Ignore enemy DEF by 95",
+                "Ignore Block",
+                "40% chance to inflict [Armor Crasher] on enemy.",
+                "Skill Damage increases by 40% of extra [AGI]",
+                "Extra ignores DEF of enemy PC in [Paralysis Poison] state in proportion to [Paralysis Poison]s Lv.",
+                "Reaching Max Lv., extra DEF ignoring for enemy PC +50%",
+                "Extra ignores DEF of monster in [Paralysis Poison] state in proportion to [Paralysis Poison]s Lv.",
+                "Reaching Max Lv., extra DEF ignoring for monster increases greatly",
+                "With skill accuracy, [Paralysis Poison] is lifted",
+                "With skill accuracy, [Bleeding Poison] applies."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4800%"
+              "value": "АТК: 4800%",
+              "effects": [
+                "Ignore enemy DEF by 95",
+                "Ignore Block",
+                "40% chance to inflict [Armor Crasher] on enemy.",
+                "Skill Damage increases by 40% of extra [AGI]",
+                "Extra ignores DEF of enemy PC in [Paralysis Poison] state in proportion to [Paralysis Poison]s Lv.",
+                "Reaching Max Lv., extra DEF ignoring for enemy PC +50%",
+                "Extra ignores DEF of monster in [Paralysis Poison] state in proportion to [Paralysis Poison]s Lv.",
+                "Reaching Max Lv., extra DEF ignoring for monster increases greatly",
+                "With skill accuracy, [Paralysis Poison] is lifted",
+                "With skill accuracy, [Bleeding Poison] applies."
+              ]
             }
           ],
           "special": []
@@ -454,14 +611,46 @@
           "sp_cost": "720",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration : 300 sec."
+              "value": "",
+              "effects": [
+                "Duration : 300 sec.",
+                "A.R. +1",
+                "STR +10",
+                "AGI +10",
+                "HP +10",
+                "ATK rises by (20 + (2% of [AGI]))",
+                "ATK to Monster +30%",
+                "Penetration rises additionally by (10 + (3% of [STR]))",
+                "Block -35",
+                "Skill Evasion +1%",
+                "In normal attack, [Paralysis Poison]s Lv. +1",
+                "Applies [Silent Move]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration : 300 sec."
+              "value": "",
+              "effects": [
+                "Duration : 300 sec.",
+                "A.R. +1",
+                "STR +10",
+                "AGI +10",
+                "HP +10",
+                "ATK rises by (20 + (2% of [AGI]))",
+                "ATK to Monster +30%",
+                "Penetration rises additionally by (10 + (3% of [STR]))",
+                "Block -35",
+                "Skill Evasion +1%",
+                "In normal attack, [Paralysis Poison]s Lv. +1",
+                "Applies [Silent Move]"
+              ]
             }
           ],
           "special": []
@@ -479,14 +668,42 @@
           "sp_cost": "820",
           "aggro": "288",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "220%",
+          "light_armor_atk": "135%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2700%"
+              "value": "АТК: 2700%",
+              "effects": [
+                "Ignore enemy DEF by 95",
+                "Ignore Block",
+                "80% chance to inflict [Paralysis] on enemy.",
+                "Skill Damage increases by 80% of extra [AGI]",
+                "Extra ignores DEF of enemy PC in [Paralysis Poison] state in proportion to [Paralysis Poison]s Lv.",
+                "Reaching Max Lv., extra DEF ignoring for enemy PC +50%",
+                "Extra ignores DEF of monster in [Paralysis Poison] state in proportion to [Paralysis Poison]s Lv.",
+                "Reaching Max Lv., extra DEF ignoring for monster increases greatly",
+                "With skill accuracy, [Paralysis Poison] is lifted",
+                "With skill accuracy, [Bleeding Poison] applies."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5400%"
+              "value": "АТК: 5400%",
+              "effects": [
+                "Ignore enemy DEF by 95",
+                "Ignore Block",
+                "80% chance to inflict [Paralysis] on enemy.",
+                "Skill Damage increases by 80% of extra [AGI]",
+                "Extra ignores DEF of enemy PC in [Paralysis Poison] state in proportion to [Paralysis Poison]s Lv.",
+                "Reaching Max Lv., extra DEF ignoring for enemy PC +50%",
+                "Extra ignores DEF of monster in [Paralysis Poison] state in proportion to [Paralysis Poison]s Lv.",
+                "Reaching Max Lv., extra DEF ignoring for monster increases greatly",
+                "With skill accuracy, [Paralysis Poison] is lifted",
+                "With skill accuracy, [Bleeding Poison] applies."
+              ]
             }
           ],
           "special": []

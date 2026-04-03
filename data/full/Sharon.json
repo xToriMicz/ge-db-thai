@@ -34,9 +34,14 @@
       {
         "level": "Level 10",
         "effects": [
-          "Duration: 20 sec.",
-          "DEF+20",
-          "Immunity+10",
+          "Duration: 5 Minutes",
+          "A.R. +1",
+          "D.R. +1",
+          "ATK +25%",
+          "INT +10",
+          "Mental Penetration +10",
+          "DEF+40",
+          "Immunity+25",
           "All RES+20",
           "Reflects 50% of the damage received from enemy PC.",
           "Cant reflect the damage exceeding HP."
@@ -45,9 +50,14 @@
       {
         "level": "Level 11",
         "effects": [
-          "Duration: 20 sec.",
-          "DEF+20",
-          "Immunity+10",
+          "Duration: 5 Minutes",
+          "A.R. +1",
+          "D.R. +1",
+          "ATK +25%",
+          "INT +10",
+          "Mental Penetration +10",
+          "DEF+40",
+          "Immunity+25",
           "All RES+20",
           "Reflects 50% of the damage received from enemy PC.",
           "Cant reflect the damage exceeding HP.",
@@ -88,6 +98,30 @@
         "x": -350,
         "y": -150
       }
+    },
+    {
+      "stance_name": "Psychokinesis",
+      "equipped_items": "Rod",
+      "icon_position": {
+        "x": -200,
+        "y": -100
+      }
+    },
+    {
+      "stance_name": "Levitation",
+      "equipped_items": "Rod",
+      "icon_position": {
+        "x": -100,
+        "y": -175
+      }
+    },
+    {
+      "stance_name": "Trikinesis",
+      "equipped_items": "Rod",
+      "icon_position": {
+        "x": -350,
+        "y": -150
+      }
     }
   ],
   "stances": [
@@ -116,6 +150,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [
         {
           "name": "Strike Back",
@@ -130,14 +165,20 @@
           "sp_cost": "60",
           "aggro": "84",
           "skill_type": "Magic",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 358%"
+              "value": "АТК: 358%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 716%"
+              "value": "АТК: 716%",
+              "effects": []
             }
           ],
           "special": []
@@ -155,26 +196,45 @@
           "sp_cost": "120",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "80% chance to ["
+              "value": "",
+              "effects": [
+                "80% chance to [Immobilize] enemy for 3 sec."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "80% chance to ["
+              "value": "",
+              "effects": [
+                "80% chance to [Immobilize] enemy for 12 sec."
+              ]
             },
             {
               "level": "Level 11",
-              "value": "80% chance to ["
+              "value": "",
+              "effects": [
+                "80% chance to [Immobilize] enemy for 13 sec."
+              ]
             },
             {
               "level": "Level 12",
-              "value": "80% chance to ["
+              "value": "",
+              "effects": [
+                "80% chance to [Immobilize] enemy for 14 sec."
+              ]
             },
             {
               "level": "Level 13",
-              "value": "80% chance to ["
+              "value": "",
+              "effects": [
+                "80% chance to [Immobilize] enemy for 15 sec."
+              ]
             }
           ],
           "special": []
@@ -192,14 +252,20 @@
           "sp_cost": "150",
           "aggro": "64",
           "skill_type": "Magic",
+          "consume_item": "Magical Orb x 1",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 216%"
+              "value": "АТК: 216%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 432%"
+              "value": "АТК: 432%",
+              "effects": []
             }
           ],
           "special": []
@@ -217,18 +283,32 @@
           "sp_cost": "180",
           "aggro": "43",
           "skill_type": "Magic",
+          "consume_item": "Magical Orb x 1",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 157%"
+              "value": "АТК: 157%",
+              "effects": [
+                "100% chance to make enemy unable to skill for 20 sec."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 314%"
+              "value": "АТК: 314%",
+              "effects": [
+                "100% chance to make enemy unable to skill for 20 sec."
+              ]
             },
             {
               "level": "Level 11",
-              "value": "АТК: 345%"
+              "value": "АТК: 345%",
+              "effects": [
+                "100% chance to make enemy unable to skill for 20 sec.",
+                "Enemys D.R. -1"
+              ]
             }
           ],
           "special": []
@@ -268,6 +348,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [
         {
           "name": "Reverse",
@@ -282,26 +363,45 @@
           "sp_cost": "60",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "80% chance to ["
+              "value": "",
+              "effects": [
+                "80% chance to [Immobilize] enemy for 3 sec."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "80% chance to ["
+              "value": "",
+              "effects": [
+                "80% chance to [Immobilize] enemy for 12 sec."
+              ]
             },
             {
               "level": "Level 11",
-              "value": "80% chance to ["
+              "value": "",
+              "effects": [
+                "80% chance to [Immobilize] enemy for 13 sec."
+              ]
             },
             {
               "level": "Level 12",
-              "value": "80% chance to ["
+              "value": "",
+              "effects": [
+                "80% chance to [Immobilize] enemy for 14 sec."
+              ]
             },
             {
               "level": "Level 13",
-              "value": "80% chance to ["
+              "value": "",
+              "effects": [
+                "80% chance to [Immobilize] enemy for 15 sec."
+              ]
             }
           ],
           "special": []
@@ -319,14 +419,20 @@
           "sp_cost": "240",
           "aggro": "72",
           "skill_type": "Magic",
+          "consume_item": "Magical Orb x 3",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 305%"
+              "value": "АТК: 305%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 610%"
+              "value": "АТК: 610%",
+              "effects": []
             }
           ],
           "special": []
@@ -344,26 +450,65 @@
           "sp_cost": "740",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 3",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "18 sec"
+              "value": "",
+              "effects": [
+                "18 sec",
+                "Mental Attribute ATK : +13",
+                "SP : +70",
+                "Movement Speed : -1"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "180 sec"
+              "value": "",
+              "effects": [
+                "180 sec",
+                "Mental Attribute ATK : +40",
+                "SP : +250",
+                "Movement Speed : -10"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "198 sec"
+              "value": "",
+              "effects": [
+                "198 sec",
+                "Mental Attribute ATK : +43",
+                "SP : +270",
+                "Movement Speed : -11",
+                "A.R. : +1"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "216 sec"
+              "value": "",
+              "effects": [
+                "216 sec",
+                "Mental Attribute ATK : +46",
+                "SP : +290",
+                "Movement Speed : -12",
+                "A.R. : +1",
+                "D.R. : +1"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "234 sec"
+              "value": "",
+              "effects": [
+                "234 sec",
+                "Mental Attribute ATK : +49",
+                "SP : +310",
+                "Movement Speed : -13",
+                "A.R. : +1",
+                "D.R. : +1"
+              ]
             }
           ],
           "special": []
@@ -381,14 +526,24 @@
           "sp_cost": "280",
           "aggro": "49",
           "skill_type": "Magic",
+          "consume_item": "Magical Orb x 4",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 190%"
+              "value": "АТК: 190%",
+              "effects": [
+                "75% chance to inflict [Stun]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 380%"
+              "value": "АТК: 380%",
+              "effects": [
+                "75% chance to inflict [Stun]"
+              ]
             }
           ],
           "special": []
@@ -430,6 +585,7 @@
         "Penetration": "10+25",
         "Immunity": "5+15"
       },
+      "consume": "Psychic Sphere x 1",
       "skills": [
         {
           "name": "Deception",
@@ -444,14 +600,26 @@
           "sp_cost": "600",
           "aggro": "120",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 2",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1400%"
+              "value": "АТК: 1400%",
+              "effects": [
+                "50% probability on enemy [Stun]",
+                "Increase level in Mind Absorb"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2800%"
+              "value": "АТК: 2800%",
+              "effects": [
+                "50% probability on enemy [Stun]",
+                "Increase level in Mind Absorb"
+              ]
             }
           ],
           "special": []
@@ -469,14 +637,26 @@
           "sp_cost": "700",
           "aggro": "180",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 8",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1600%"
+              "value": "АТК: 1600%",
+              "effects": [
+                "50% chance to inflict [Reverse] on enemy",
+                "Ignores Debuff RES"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3200%"
+              "value": "АТК: 3200%",
+              "effects": [
+                "50% chance to inflict [Reverse] on enemy",
+                "Ignores Debuff RES"
+              ]
             }
           ],
           "special": []
@@ -494,14 +674,28 @@
           "sp_cost": "1000",
           "aggro": "120",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 8",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "100% chance to inflict [Dark Bleeding]",
+                "Increase Level of Mind Absorb",
+                "Increase Level of Mind Absorb to 3 by fixed probability"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4400%"
+              "value": "АТК: 4400%",
+              "effects": [
+                "100% chance to inflict [Dark Bleeding]",
+                "Increase Level of Mind Absorb",
+                "Increase Level of Mind Absorb to 3 by fixed probability"
+              ]
             }
           ],
           "special": []
@@ -519,14 +713,34 @@
           "sp_cost": "1000",
           "aggro": "150",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "75%",
+          "heavy_armor_atk": "125%",
+          "light_armor_atk": "150%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2500%"
+              "value": "АТК: 2500%",
+              "effects": [
+                "Changes debuff depending on the Mind Absorb Level",
+                "Mind Absorb Level 1 : [Fear]",
+                "Mind Absorb Level 2 : [Paralysis]",
+                "Mind Absorb Level 3 : [Improved Curse]",
+                "50% Probability",
+                "Ignores Debuff RES"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5000%"
+              "value": "АТК: 5000%",
+              "effects": [
+                "Changes debuff depending on the Mind Absorb Level",
+                "Mind Absorb Level 1 : [Fear]",
+                "Mind Absorb Level 2 : [Paralysis]",
+                "Mind Absorb Level 3 : [Improved Curse]",
+                "50% Probability",
+                "Ignores Debuff RES"
+              ]
             }
           ],
           "special": []
@@ -544,14 +758,26 @@
           "sp_cost": "600",
           "aggro": "130",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 8",
+          "soft_armor_atk": "75%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "150%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2800%"
+              "value": "АТК: 2800%",
+              "effects": [
+                "100% chance to inflict [Reverse] on enemy",
+                "Increase ATK by 33% per level of Mind Absorb"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5600%"
+              "value": "АТК: 5600%",
+              "effects": [
+                "100% chance to inflict [Reverse] on enemy",
+                "Increase ATK by 33% per level of Mind Absorb"
+              ]
             }
           ],
           "special": []

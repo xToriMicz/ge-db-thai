@@ -98,6 +98,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -142,6 +143,7 @@
         "Penetration": "15+15",
         "Immunity": "5+10"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Baton Smack",
@@ -156,14 +158,30 @@
           "sp_cost": "300",
           "aggro": "30",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "105%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1600%"
+              "value": "АТК: 1600%",
+              "effects": [
+                "Ignores 150 DEF",
+                "Ignores Evasion",
+                "Ignores 60 additional DEF for every [Yin and Yang] Lv. (30 for PC)",
+                "When [Yin And Yang] is active, [Yin and Yang] Lv. +2"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3200%"
+              "value": "АТК: 3200%",
+              "effects": [
+                "Ignores 150 DEF",
+                "Ignores Evasion",
+                "Ignores 60 additional DEF for every [Yin and Yang] Lv. (30 for PC)",
+                "When [Yin And Yang] is active, [Yin and Yang] Lv. +2"
+              ]
             }
           ],
           "special": []
@@ -181,14 +199,32 @@
           "sp_cost": "400",
           "aggro": "50",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "105%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "Ignores 200 DEF",
+                "Ignores Evasion",
+                "70% Chance to inflict [Stun] to enemy [PC]",
+                "Ignores 60 additional DEF for every [Yin and Yang] Lv. (30 for PC)",
+                "When [Yin And Yang] is active, [Yin and Yang] Lv. +3"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4400%"
+              "value": "АТК: 4400%",
+              "effects": [
+                "Ignores 200 DEF",
+                "Ignores Evasion",
+                "70% Chance to inflict [Stun] to enemy [PC]",
+                "Ignores 60 additional DEF for every [Yin and Yang] Lv. (30 for PC)",
+                "When [Yin And Yang] is active, [Yin and Yang] Lv. +3"
+              ]
             }
           ],
           "special": []
@@ -199,21 +235,35 @@
           "description": "Predicts the enemys attack to be able to dodge it.",
           "target": "",
           "casting_time": "Instant",
-          "cooldown": "45 sec.",
+          "cooldown": "20 sec.",
           "duration": "180s",
           "hits_flying": "No",
           "knock_down": "No",
           "sp_cost": "650",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 180s"
+              "value": "",
+              "effects": [
+                "Duration: 180s",
+                "Can only be used once [Yin and Yang] is level 5 or higher",
+                "[Yin and Yang] Lv. -5"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 180s"
+              "value": "",
+              "effects": [
+                "Duration: 180s",
+                "Can only be used once [Yin and Yang] is level 5 or higher",
+                "[Yin and Yang] Lv. -5"
+              ]
             }
           ],
           "special": []
@@ -231,14 +281,34 @@
           "sp_cost": "500",
           "aggro": "15",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "90%",
+          "light_armor_atk": "105%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "Ignores 50 DEF",
+                "Ignores 60 additional DEF for every [Yin and Yang] Lv. (30 for PC)",
+                "Ignores Evasion",
+                "100% Chance to inflict [Skill Seal] to enemy [PC]",
+                "Skill damage scales with [Yin and Yang] up to 3x DMG",
+                "When [Yin And Yang] is active, [Yin and Yang] Lv. +3"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4800%"
+              "value": "АТК: 4800%",
+              "effects": [
+                "Ignores 50 DEF",
+                "Ignores 60 additional DEF for every [Yin and Yang] Lv. (30 for PC)",
+                "Ignores Evasion",
+                "100% Chance to inflict [Skill Seal] to enemy [PC]",
+                "Skill damage scales with [Yin and Yang] up to 3x DMG",
+                "When [Yin And Yang] is active, [Yin and Yang] Lv. +3"
+              ]
             }
           ],
           "special": []
@@ -256,14 +326,52 @@
           "sp_cost": "600",
           "aggro": "30",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 20",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "150%",
+          "light_armor_atk": "120%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2500%"
+              "value": "АТК: 2500%",
+              "effects": [
+                "Ignores 50 DEF",
+                "Ignores 60 additional DEF for every [Yin and Yang] Lv. (30 for PC)",
+                "When [Yin And Yang] is active, [Yin and Yang] Lv. +1",
+                "Randomly uses 1 of three skills when used",
+                "[Kage-no-Bunshin] deals lesser damage",
+                "Ignores debuff RES",
+                "[Thunder and Lightning]",
+                "30% Chance to inflict [Electric Field] to enemy [PC]",
+                "Skill Damage increases up to 3x on enemies with [Freeze] debuff",
+                "[Lava Explosion]",
+                "30% Chance to inflict [Burn] to enemy [PC]",
+                "Skill Damage increases up to 3x on enemies with [Electric Field] debuff",
+                "[Storm Surge]",
+                "30% Chance to inflict [Freeze] to enemy [PC]",
+                "Skill Damage increases up to 3x on enemies with [Burn] debuff"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5000%"
+              "value": "АТК: 5000%",
+              "effects": [
+                "Ignores 50 DEF",
+                "Ignores 60 additional DEF for every [Yin and Yang] Lv. (30 for PC)",
+                "When [Yin And Yang] is active, [Yin and Yang] Lv. +1",
+                "Randomly uses 1 of three skills when used",
+                "[Kage-no-Bunshin] deals lesser damage",
+                "Ignores debuff RES",
+                "[Thunder and Lightning]",
+                "30% Chance to inflict [Electric Field] to enemy [PC]",
+                "Skill Damage increases up to 3x on enemies with [Freeze] debuff",
+                "[Lava Explosion]",
+                "30% Chance to inflict [Burn] to enemy [PC]",
+                "Skill Damage increases up to 3x on enemies with [Electric Field] debuff",
+                "[Storm Surge]",
+                "30% Chance to inflict [Freeze] to enemy [PC]",
+                "Skill Damage increases up to 3x on enemies with [Burn] debuff"
+              ]
             }
           ],
           "special": []
@@ -316,6 +424,7 @@
         "Penetration": "15+15",
         "Immunity": "5+10"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Illusionary Arts",
@@ -330,14 +439,34 @@
           "sp_cost": "750",
           "aggro": "200",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 15",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "105%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1900%"
+              "value": "АТК: 1900%",
+              "effects": [
+                "Ignores DEF completely",
+                "[Yin and Yang] Lv. -2 (if possible)",
+                "When [Yin and Yang] is below Lv. 5",
+                "100% Chance to inflict [Confusion] to enemy [PC]",
+                "When [Yin and Yang] is above Lv. 6",
+                "20% Chance to inflict [Dreaming Sickness] to enemy [PC]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3800%"
+              "value": "АТК: 3800%",
+              "effects": [
+                "Ignores DEF completely",
+                "[Yin and Yang] Lv. -2 (if possible)",
+                "When [Yin and Yang] is below Lv. 5",
+                "100% Chance to inflict [Confusion] to enemy [PC]",
+                "When [Yin and Yang] is above Lv. 6",
+                "20% Chance to inflict [Dreaming Sickness] to enemy [PC]"
+              ]
             }
           ],
           "special": []
@@ -355,14 +484,30 @@
           "sp_cost": "300",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 20",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "100% Chance to detect users stealthed nearby upon moving to designated area"
+              "value": "",
+              "effects": [
+                "100% Chance to detect users stealthed nearby upon moving to designated area",
+                "[Yin and Yang] Lv. -3 (if possible)",
+                "When [Yin and Yang] is above Lv. 2",
+                "Applies [Invulnerable]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "100% Chance to detect users stealthed nearby upon moving to designated area"
+              "value": "",
+              "effects": [
+                "100% Chance to detect users stealthed nearby upon moving to designated area",
+                "[Yin and Yang] Lv. -3 (if possible)",
+                "When [Yin and Yang] is above Lv. 2",
+                "Applies [Invulnerable]"
+              ]
             }
           ],
           "special": []
@@ -380,14 +525,48 @@
           "sp_cost": "650",
           "aggro": "50",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 15",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2500%"
+              "value": "АТК: 2500%",
+              "effects": [
+                "Ignores 100 DEF",
+                "Ignores 60 additional DEF for every [Yin and Yang] Lv. (30 for PC)",
+                "Ignores Blocking",
+                "Inflicts enemy with [Self-Harm]",
+                "When [Yin And Yang] is active, [Yin and Yang] Lv. +1",
+                "[Kage-no-Bunshin] deals lesser damage",
+                "Skill damage increases up to 3x inversely proportional to the amount of targets",
+                "Skill damage increases additionally up to 2x according to enemy [Self-Harm] Lv.",
+                "Ignores Debuff RES",
+                "Randomly uses 1 of three skills when used",
+                "[Byakko: Claws of Demise] 50% Chance to inflict [Mortal Wound]",
+                "[Suzaku: Phoenixs Ashen Explosion] Knockback distance and knockdown time doubled",
+                "[Seiryu: Azure Dragons Rending] Skill Damage increases by 1.5x"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5000%"
+              "value": "АТК: 5000%",
+              "effects": [
+                "Ignores 100 DEF",
+                "Ignores 60 additional DEF for every [Yin and Yang] Lv. (30 for PC)",
+                "Ignores Blocking",
+                "Inflicts enemy with [Self-Harm]",
+                "When [Yin And Yang] is active, [Yin and Yang] Lv. +1",
+                "[Kage-no-Bunshin] deals lesser damage",
+                "Skill damage increases up to 3x inversely proportional to the amount of targets",
+                "Skill damage increases additionally up to 2x according to enemy [Self-Harm] Lv.",
+                "Ignores Debuff RES",
+                "Randomly uses 1 of three skills when used",
+                "[Byakko: Claws of Demise] 50% Chance to inflict [Mortal Wound]",
+                "[Suzaku: Phoenixs Ashen Explosion] Knockback distance and knockdown time doubled",
+                "[Seiryu: Azure Dragons Rending] Skill Damage increases by 1.5x"
+              ]
             }
           ],
           "special": []
@@ -405,14 +584,34 @@
           "sp_cost": "1000",
           "aggro": "30",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 15",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "90%",
+          "light_armor_atk": "90%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "Ignores 100 DEF",
+                "Ignores 60 additional DEF for every [Yin and Yang] Lv. (30 for PC)",
+                "When [Yin And Yang] is active, [Yin and Yang] Lv. +1",
+                "When [Omnipresence] is active, all buffs (except Cash Buffs) are removed from enemy",
+                "Ignores 60 additional DEF for every [Yin and Yang] Lv. (30 for PC)",
+                "Skill damage scales with [Yin and Yang] up to 3x DMG"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 6000%"
+              "value": "АТК: 6000%",
+              "effects": [
+                "Ignores 100 DEF",
+                "Ignores 60 additional DEF for every [Yin and Yang] Lv. (30 for PC)",
+                "When [Yin And Yang] is active, [Yin and Yang] Lv. +1",
+                "When [Omnipresence] is active, all buffs (except Cash Buffs) are removed from enemy",
+                "Ignores 60 additional DEF for every [Yin and Yang] Lv. (30 for PC)",
+                "Skill damage scales with [Yin and Yang] up to 3x DMG"
+              ]
             }
           ],
           "special": []
@@ -430,22 +629,74 @@
           "sp_cost": "2500",
           "aggro": "0",
           "skill_type": "Build",
+          "consume_item": "Ancient Star Orb x 30",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 300s"
+              "value": "",
+              "effects": [
+                "Duration: 300s",
+                "Can only be used once [Omnipresence] is active",
+                "Summons 1 [Kage-no-Bunshin] (up to 4 [Kage-no-Bunshin] can be summoned)",
+                "Additional stats according to [Yin and Yang] Lv.",
+                "Additional ATK, Physical PEN, DEF and IMM based on [Caster]s total [STR]",
+                "Bonus A.R. according to [Caster]s A.R.",
+                "[Kage-no-Bunshin] follows up on certain skills and can attack.",
+                "[Moonlight Illusion]",
+                "All DMG -5%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 300s"
+              "value": "",
+              "effects": [
+                "Duration: 300s",
+                "Can only be used once [Omnipresence] is active",
+                "Summons 1 [Kage-no-Bunshin] (up to 4 [Kage-no-Bunshin] can be summoned)",
+                "Additional stats according to [Yin and Yang] Lv.",
+                "Additional ATK, Physical PEN, DEF and IMM based on [Caster]s total [STR]",
+                "Bonus A.R. according to [Caster]s A.R.",
+                "[Kage-no-Bunshin] follows up on certain skills and can attack.",
+                "[Moonlight Illusion]",
+                "All DMG -5%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 300s"
+              "value": "",
+              "effects": [
+                "Duration: 300s",
+                "Can only be used once [Omnipresence] is active",
+                "Summons 1 [Kage-no-Bunshin] (up to 4 [Kage-no-Bunshin] can be summoned)",
+                "Additional stats according to [Yin and Yang] Lv.",
+                "Additional ATK, Physical PEN, DEF and IMM based on [Caster]s total [STR]",
+                "Bonus A.R. according to [Caster]s A.R.",
+                "[Kage-no-Bunshin] follows up on certain skills and can attack.",
+                "[Moonlight Illusion]",
+                "All DMG -5%",
+                "Ignores Debuffs",
+                "D.R. +1"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 300s"
+              "value": "",
+              "effects": [
+                "Duration: 300s",
+                "Can only be used once [Omnipresence] is active",
+                "Summons 1 [Kage-no-Bunshin] (up to 4 [Kage-no-Bunshin] can be summoned)",
+                "Additional stats according to [Yin and Yang] Lv.",
+                "Additional ATK, Physical PEN, DEF and IMM based on [Caster]s total [STR]",
+                "Bonus A.R. according to [Caster]s A.R.",
+                "[Kage-no-Bunshin] follows up on certain skills and can attack.",
+                "[Moonlight Illusion]",
+                "All DMG -5%",
+                "Ignores Debuffs",
+                "D.R. +1"
+              ]
             }
           ],
           "special": [

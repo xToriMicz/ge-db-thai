@@ -2,7 +2,7 @@
   "slug": "Rosie",
   "equipment": {
     "category": "Usable Equipment",
-    "medal": "Killer of the Ten Nobles Frost Crown Pioneer of Stars An opportunity that has returned! The Legend Pioneering Legend With a Cool Mind Blessings of the 2026 New Year",
+    "medal": "Killer of the Ten Nobles Frost Crown Pioneer of Stars An opportunity that has returned! The Legend Pioneering Legend With a Cool Mind Blessings of the 2026 New Year 20th Anniversary with Linden",
     "head": "None",
     "earring": "Earring",
     "face": "None",
@@ -95,6 +95,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -138,6 +139,7 @@
         "Penetration": "10+25",
         "Immunity": "5+25"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Soul Weapon",
@@ -152,18 +154,47 @@
           "sp_cost": "300",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration : 360 seconds"
+              "value": "",
+              "effects": [
+                "Duration : 360 seconds",
+                "STR +10",
+                "ATK +25%",
+                "ATK to monsters +100%",
+                "Penetration +5",
+                "Move SPD +5%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration : 360 seconds"
+              "value": "",
+              "effects": [
+                "Duration : 360 seconds",
+                "STR +10",
+                "ATK +25%",
+                "ATK to monsters +100%",
+                "Penetration +5",
+                "Move SPD +5%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration : 360 seconds"
+              "value": "",
+              "effects": [
+                "Duration : 360 seconds",
+                "STR +10",
+                "ATK +25%",
+                "ATK to monsters +100%",
+                "Penetration +5",
+                "Move SPD +5%",
+                "A.R. +1"
+              ]
             }
           ],
           "special": []
@@ -181,14 +212,26 @@
           "sp_cost": "250",
           "aggro": "73",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 811%"
+              "value": "АТК: 811%",
+              "effects": [
+                "3x damage during [Link] / [Soul Weapon]",
+                "Skill damage increases inversely proportional to the amount of targets (max. 3 times)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1622%"
+              "value": "АТК: 1622%",
+              "effects": [
+                "3x damage during [Link] / [Soul Weapon]",
+                "Skill damage increases inversely proportional to the amount of targets (max. 3 times)"
+              ]
             }
           ],
           "special": []
@@ -206,14 +249,26 @@
           "sp_cost": "550",
           "aggro": "95",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "120%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1522%"
+              "value": "АТК: 1522%",
+              "effects": [
+                "3x damage during [Link] / [Soul Weapon]",
+                "Skill damage increases inversely proportional to the amount of targets (max. 3 times)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3044%"
+              "value": "АТК: 3044%",
+              "effects": [
+                "3x damage during [Link] / [Soul Weapon]",
+                "Skill damage increases inversely proportional to the amount of targets (max. 3 times)"
+              ]
             }
           ],
           "special": []
@@ -231,14 +286,26 @@
           "sp_cost": "650",
           "aggro": "56",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2233%"
+              "value": "АТК: 2233%",
+              "effects": [
+                "3x damage during [Link] / [Soul Weapon]",
+                "Skill damage increases inversely proportional to the amount of targets (max. 3 times)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4466%"
+              "value": "АТК: 4466%",
+              "effects": [
+                "3x damage during [Link] / [Soul Weapon]",
+                "Skill damage increases inversely proportional to the amount of targets (max. 3 times)"
+              ]
             }
           ],
           "special": []
@@ -256,14 +323,26 @@
           "sp_cost": "750",
           "aggro": "73",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "130%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1944%"
+              "value": "АТК: 1944%",
+              "effects": [
+                "3x damage during [Link] / [Soul Weapon]",
+                "Skill damage increases inversely proportional to the amount of targets (max. 3 times)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3888%"
+              "value": "АТК: 3888%",
+              "effects": [
+                "3x damage during [Link] / [Soul Weapon]",
+                "Skill damage increases inversely proportional to the amount of targets (max. 3 times)"
+              ]
             }
           ],
           "special": []

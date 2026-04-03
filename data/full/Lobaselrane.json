@@ -88,6 +88,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -128,6 +129,7 @@
         "Penetration": "5+25",
         "Immunity": "15"
       },
+      "consume": "Psychic Sphere x 2",
       "skills": [
         {
           "name": "Etoile Filante",
@@ -142,14 +144,28 @@
           "sp_cost": "350",
           "aggro": "120",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 6",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1412%"
+              "value": "АТК: 1412%",
+              "effects": [
+                "80% chance chance to inflict [Web] to enemy PC",
+                "Applies [Lapin] to the target",
+                "[Lapin] All RES -15, Maximum SP -50%, [PC] Upon hit by skill from [Lady Lorraine]: Applies one debuff from list: [Tenseness], [Time Slow], [Ritardi], or [Enervation]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2824%"
+              "value": "АТК: 2824%",
+              "effects": [
+                "80% chance chance to inflict [Web] to enemy PC",
+                "Applies [Lapin] to the target",
+                "[Lapin] All RES -15, Maximum SP -50%, [PC] Upon hit by skill from [Lady Lorraine]: Applies one debuff from list: [Tenseness], [Time Slow], [Ritardi], or [Enervation]"
+              ]
             }
           ],
           "special": []
@@ -167,14 +183,28 @@
           "sp_cost": "590",
           "aggro": "150",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 8",
+          "soft_armor_atk": "95%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1602%"
+              "value": "АТК: 1602%",
+              "effects": [
+                "10% chance to inflict [Reverse] to enemy PC",
+                "Applies [Lapin] to the target",
+                "[Lapin] All RES -15, Maximum SP -50%, [PC] Upon hit by skill from [Lady Lorraine]: Applies one debuff from list: [Tenseness], [Time Slow], [Ritardi], or [Enervation]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3204%"
+              "value": "АТК: 3204%",
+              "effects": [
+                "10% chance to inflict [Reverse] to enemy PC",
+                "Applies [Lapin] to the target",
+                "[Lapin] All RES -15, Maximum SP -50%, [PC] Upon hit by skill from [Lady Lorraine]: Applies one debuff from list: [Tenseness], [Time Slow], [Ritardi], or [Enervation]"
+              ]
             }
           ],
           "special": []
@@ -192,14 +222,28 @@
           "sp_cost": "650",
           "aggro": "170",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 8",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1810%"
+              "value": "АТК: 1810%",
+              "effects": [
+                "Gathers targets to the center of the designated area",
+                "Applies [Lapin] to the target",
+                "[Lapin] All RES -15, Maximum SP -50%, [PC] Upon hit by skill from [Lady Lorraine]: Applies one debuff from list: [Tenseness], [Time Slow], [Ritardi], or [Enervation]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3620%"
+              "value": "АТК: 3620%",
+              "effects": [
+                "Gathers targets to the center of the designated area",
+                "Applies [Lapin] to the target",
+                "[Lapin] All RES -15, Maximum SP -50%, [PC] Upon hit by skill from [Lady Lorraine]: Applies one debuff from list: [Tenseness], [Time Slow], [Ritardi], or [Enervation]"
+              ]
             }
           ],
           "special": []
@@ -217,14 +261,26 @@
           "sp_cost": "670",
           "aggro": "285",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 13",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2220%"
+              "value": "АТК: 2220%",
+              "effects": [
+                "Applies [Lapin] to the target",
+                "[Lapin] All RES -15, Maximum SP -50%, [PC] Upon hit by skill from [Lady Lorraine]: Applies one debuff from list: [Tenseness], [Time Slow], [Ritardi], or [Enervation]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4440%"
+              "value": "АТК: 4440%",
+              "effects": [
+                "Applies [Lapin] to the target",
+                "[Lapin] All RES -15, Maximum SP -50%, [PC] Upon hit by skill from [Lady Lorraine]: Applies one debuff from list: [Tenseness], [Time Slow], [Ritardi], or [Enervation]"
+              ]
             }
           ],
           "special": []
@@ -242,14 +298,28 @@
           "sp_cost": "805",
           "aggro": "328",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 14",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2561%"
+              "value": "АТК: 2561%",
+              "effects": [
+                "5% chance to inflict [Requiem]",
+                "Applies [Lapin] to the target",
+                "[Lapin] All RES -15, Maximum SP -50%, [PC] Upon hit by skill from [Lady Lorraine]: Applies one debuff from list: [Tenseness], [Time Slow], [Ritardi], or [Enervation]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5122%"
+              "value": "АТК: 5122%",
+              "effects": [
+                "5% chance to inflict [Requiem]",
+                "Applies [Lapin] to the target",
+                "[Lapin] All RES -15, Maximum SP -50%, [PC] Upon hit by skill from [Lady Lorraine]: Applies one debuff from list: [Tenseness], [Time Slow], [Ritardi], or [Enervation]"
+              ]
             }
           ],
           "special": []

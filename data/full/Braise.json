@@ -2,7 +2,7 @@
   "slug": "Braise",
   "equipment": {
     "category": "Usable Equipment",
-    "medal": "An Avatar Born from the Ashes Blessings of the 2026 New Year",
+    "medal": "An Avatar Born from the Ashes Blessings of the 2026 New Year 20th Anniversary with Linden",
     "head": "None",
     "earring": "Earring",
     "face": "None",
@@ -87,6 +87,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -130,6 +131,7 @@
         "Penetration": "5+25",
         "Immunity": "5+10"
       },
+      "consume": "Metal Shell Ammo x 3",
       "skills": [
         {
           "name": "Vals de Lepine",
@@ -144,14 +146,38 @@
           "sp_cost": "200",
           "aggro": "75",
           "skill_type": "Shooting",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1100%"
+              "value": "АТК: 1100%",
+              "effects": [
+                "Not treated as an attack skill in the [Reshofman] buff.",
+                "When hitting a monster, [Cicatrice] hits the enemy.",
+                "When hitting an enemy PC, [not twice] hits the enemy.",
+                "When hitting an enemy that can be knocked back, pulls the enemy toward Braise.",
+                "[Cicatrice] Duration: 60 seconds.",
+                "Attack speed -10%, movement speed -10%, DEF Rating -1.",
+                "[not twice] Duration: 60 seconds.",
+                "Will not be pulled toward Braise during the duration."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "Not treated as an attack skill in the [Reshofman] buff.",
+                "When hitting a monster, [Cicatrice] hits the enemy.",
+                "When hitting an enemy PC, [not twice] hits the enemy.",
+                "When hitting an enemy that can be knocked back, pulls the enemy toward Braise.",
+                "[Cicatrice] Duration: 60 seconds.",
+                "Attack speed -10%, movement speed -10%, DEF Rating -1.",
+                "[not twice] Duration: 60 seconds.",
+                "Will not be pulled toward Braise during the duration."
+              ]
             }
           ],
           "special": []
@@ -169,26 +195,90 @@
           "sp_cost": "250",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "When cast, ["
+              "value": "",
+              "effects": [
+                "When cast, [Reshofman Stage 2]",
+                "[Reshofman Stage 1] Duration: 60 seconds",
+                "Attack Rating +1, Physical Penetration +1, Attack Power against Monsters +4%",
+                "Casting Time -2%",
+                "When casting an attack skill, [Reshofman Stage 1] effect is applied to that skill",
+                "When casting an attack skill, [Reshofman Stage 1] is removed",
+                "[Reshofman Stage 2] Duration: 15 seconds",
+                "The stat buff effect of [Reshofman Stage 1] is multiplied by 1.4",
+                "When casting an attack skill, [Reshofman Stage 1] is applied to that skill, [Reshofman Stage 2] effect applied",
+                "When casting an attack skill, remove [Reshofman Stage 2] and apply [Reshofman Stage 1]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "When casting ["
+              "value": "",
+              "effects": [
+                "When casting [Reshofman Stage 2]",
+                "[Reshofman Stage 1] duration: 60 seconds",
+                "Attack rating +1, physical penetration +15, attack power against monsters +40%",
+                "Casting time -25%",
+                "When casting an attack skill, apply [Reshofman Stage 1] effect to that skill",
+                "When casting an attack skill, remove [Reshofman Stage 1]",
+                "[Reshofman Stage 2] duration: 15 seconds",
+                "1.85x the stat buff effect of [Reshofman Stage 1]",
+                "When casting an attack skill, apply [Reshofman Stage 1], [Reshofman Stage 2] effects to that skill",
+                "Attack skill When casting, remove [Reshofman Stage 2] and apply [Reshofman Stage 1]"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "When casting, remove ["
+              "value": "",
+              "effects": [
+                "When casting, remove [Reshofman Stage 2]",
+                "[Reshofman Stage 1] Duration: 60 seconds",
+                "Attack Rating +1, Physical Penetration +16, Attack Power against Monsters +44%",
+                "Casting Time -27%",
+                "When casting an attack skill, apply [Reshofman Stage 1] effect to that skill",
+                "When casting an attack skill, remove [Reshofman Stage 1]",
+                "[Reshofman Stage 2] Duration: 15 seconds",
+                "1.9x the stat buff effect of [Reshofman Stage 1]",
+                "When casting an attack skill, apply [Reshofman Stage 1], [Reshofman Stage 2] effects to that skill",
+                "When casting an attack skill, remove [Reshofman Stage 2] [Reshofman Stage 1] applied"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "When cast, ["
+              "value": "",
+              "effects": [
+                "When cast, [Reshofman Stage 2]",
+                "[Reshofman Stage 1] Duration: 60 seconds",
+                "Attack Rating +1, Physical Penetration +18, Attack Power against Monsters +48%",
+                "Casting Time -30%",
+                "When casting an attack skill, [Reshofman Stage 1] effect is applied to that skill",
+                "When casting an attack skill, [Reshofman Stage 1] is removed",
+                "[Reshofman Stage 2] Duration: 15 seconds",
+                "1.95x the stat buff effect of [Reshofman Stage 1]",
+                "When casting an attack skill, [Reshofman Stage 1] and [Reshofman Stage 2] effects are applied to that skill",
+                "When casting an attack skill, [Reshofman Stage 2] is removed and [Reshofman Stage 1] is applied"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "When cast, ["
+              "value": "",
+              "effects": [
+                "When cast, [Reshofman Stage 2]",
+                "[Reshofman Stage 1] Duration: 60 seconds",
+                "Attack Rating +1, Physical Penetration +19, Attack Power against Monsters +52%",
+                "Casting Time -32%",
+                "When casting an attack skill, [Reshofman Stage 1] effect is applied to that skill",
+                "When casting an attack skill, [Reshofman Stage 1] is removed",
+                "[Reshofman Stage 2] Duration: 15 seconds",
+                "Double the stat buff effect of [Reshofman Stage 1]",
+                "When casting an attack skill, [Reshofman Stage 1] and [Reshofman Stage 2] effects are applied to that skill",
+                "When casting an attack skill, [Reshofman Stage 2] is removed and [Reshofman Stage 1] is applied"
+              ]
             }
           ],
           "special": []
@@ -206,14 +296,36 @@
           "sp_cost": "220",
           "aggro": "80",
           "skill_type": "Shooting",
+          "consume_item": "Metal Shell Ammo x 12",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "85%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1451%"
+              "value": "АТК: 1451%",
+              "effects": [
+                "Double skill damage to monsters when in [Cicatrice] state.",
+                "The closer the distance to the enemy, the higher the skill damage. (Up to 1.5x for PC.)",
+                "Ignores up to 50 additional defenses equal to the sum of [DEX] and [Agility] * 0.167.",
+                "When in [Reshofman Stage 1] state.",
+                "Increases the number of hits to 15.",
+                "When in [Reshofman Stage 2] state.",
+                "Applies the same damage at all distances."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2902%"
+              "value": "АТК: 2902%",
+              "effects": [
+                "Double skill damage to monsters when in [Cicatrice] state.",
+                "The closer the distance to the enemy, the higher the skill damage. (Up to 1.5x for PC.)",
+                "Ignores up to 50 additional defenses equal to the sum of [DEX] and [Agility] * 0.167.",
+                "When in [Reshofman Stage 1] state.",
+                "Increases the number of hits to 15.",
+                "When in [Reshofman Stage 2] state.",
+                "Applies the same damage at all distances."
+              ]
             }
           ],
           "special": []
@@ -231,14 +343,36 @@
           "sp_cost": "600",
           "aggro": "150",
           "skill_type": "Shooting",
+          "consume_item": "Ancient Star Orb x 15",
+          "soft_armor_atk": "105%",
+          "heavy_armor_atk": "95%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2132%"
+              "value": "АТК: 2132%",
+              "effects": [
+                "When hit, 75% chance to [Critical Wound] the enemy",
+                "Apply the same damage at all ranges",
+                "When in [Cicatrice] status, double skill damage to monsters",
+                "When in [Reshofman Stage 1] status, ignore blocking",
+                "1.5x skill damage to monsters",
+                "When in [Reshofman Stage 2] status, 1.5x skill damage to monsters",
+                "Ignore up to 50 additional defense equal to the sum of [DEX] and [Agility] * 0.167 to monsters"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4264%"
+              "value": "АТК: 4264%",
+              "effects": [
+                "When hit, 75% chance to [Critical Wound] the enemy",
+                "Apply the same damage at all ranges",
+                "When in [Cicatrice] status, double skill damage to monsters",
+                "When in [Reshofman Stage 1] status, ignore blocking",
+                "1.5x skill damage to monsters",
+                "When in [Reshofman Stage 2] status, 1.5x skill damage to monsters",
+                "Ignore up to 50 additional defense equal to the sum of [DEX] and [Agility] * 0.167 to monsters"
+              ]
             }
           ],
           "special": []
@@ -256,14 +390,38 @@
           "sp_cost": "600",
           "aggro": "150",
           "skill_type": "Shooting",
+          "consume_item": "Ancient Star Orb x 15",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "85%",
+          "light_armor_atk": "105%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2284%"
+              "value": "АТК: 2284%",
+              "effects": [
+                "Applies the same damage at all distances.",
+                "Double skill damage to monsters during [Cicatrice] status.",
+                "Double skill damage to monsters during [Reshofman Stage 1] status.",
+                "No critical chance penalty to monsters.",
+                "Double critical chance to monsters.",
+                "1.5x skill damage to monsters during [Reshofman Stage 2] status.",
+                "1.5x skill damage to monsters.",
+                "Ignores defense by up to 30 points equal to the sum of [DEX] and [Agility] * 0.1."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4568%"
+              "value": "АТК: 4568%",
+              "effects": [
+                "Applies the same damage at all distances.",
+                "Double skill damage to monsters during [Cicatrice] status.",
+                "Double skill damage to monsters during [Reshofman Stage 1] status.",
+                "No critical chance penalty to monsters.",
+                "Double critical chance to monsters.",
+                "1.5x skill damage to monsters during [Reshofman Stage 2] status.",
+                "1.5x skill damage to monsters.",
+                "Ignores defense by up to 30 points equal to the sum of [DEX] and [Agility] * 0.1."
+              ]
             }
           ],
           "special": []

@@ -89,6 +89,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -131,6 +132,7 @@
         "Penetration": "5+25",
         "Immunity": "5+25"
       },
+      "consume": "Metal Shell Ammo x 5",
       "skills": [
         {
           "name": "Los Cremor",
@@ -145,14 +147,26 @@
           "sp_cost": "100",
           "aggro": "150",
           "skill_type": "Build",
+          "consume_item": "Ancient Star Orb x 3",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Installs up to 5 simultaneously"
+              "value": "",
+              "effects": [
+                "Installs up to 5 simultaneously",
+                "With explosion, [Electric Charging]s Lv.+1. Up to Lv.5."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Installs up to 5 simultaneously"
+              "value": "",
+              "effects": [
+                "Installs up to 5 simultaneously",
+                "With explosion, [Electric Charging]s Lv.+1. Up to Lv.5."
+              ]
             }
           ],
           "special": []
@@ -170,14 +184,28 @@
           "sp_cost": "340",
           "aggro": "150",
           "skill_type": "Shooting",
+          "consume_item": "Ancient Star Orb x 3",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "75%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "Ignores enemy DEF by 50",
+                "20% chance to impose [Shock]",
+                "With skill [Los Cremor] accuracy, [Los Cremor] explodes."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4400%"
+              "value": "АТК: 4400%",
+              "effects": [
+                "Ignores enemy DEF by 50",
+                "20% chance to impose [Shock]",
+                "With skill [Los Cremor] accuracy, [Los Cremor] explodes."
+              ]
             }
           ],
           "special": []
@@ -195,14 +223,32 @@
           "sp_cost": "750",
           "aggro": "90",
           "skill_type": "Shooting",
+          "consume_item": "Ancient Star Orb x 6",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "75%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2500%"
+              "value": "АТК: 2500%",
+              "effects": [
+                "Ignores enemy DEF by 60",
+                "20% chance to impose [Shock]",
+                "Extra ignoring enemy DEF in proportion to [Winding Up] Lv.",
+                "[Winding Up] Lv. down.",
+                "[Electric Charging] Lv. down."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5000%"
+              "value": "АТК: 5000%",
+              "effects": [
+                "Ignores enemy DEF by 60",
+                "20% chance to impose [Shock]",
+                "Extra ignoring enemy DEF in proportion to [Winding Up] Lv.",
+                "[Winding Up] Lv. down.",
+                "[Electric Charging] Lv. down."
+              ]
             }
           ],
           "special": []
@@ -220,14 +266,34 @@
           "sp_cost": "1250",
           "aggro": "34",
           "skill_type": "Shooting",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1200%"
+              "value": "АТК: 1200%",
+              "effects": [
+                "Ignores enemys DEF by 60",
+                "When reusing the skill during casting, the skill activates",
+                "Knockback range and time increases in proportion to casting time",
+                "Skill Damage increases according to cast time",
+                "[Wind-up]s Lv. reduces",
+                "[Electric Charging]s Lv. reduces"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "Ignores enemys DEF by 60",
+                "When reusing the skill during casting, the skill activates",
+                "Knockback range and time increases in proportion to casting time",
+                "Skill Damage increases according to cast time",
+                "[Wind-up]s Lv. reduces",
+                "[Electric Charging]s Lv. reduces"
+              ]
             }
           ],
           "special": []
@@ -236,7 +302,7 @@
           "name": "EMP-0314",
           "image": "lig_empatk.jpg",
           "description": "Receiving strong particle wave from Misas mechanical parts, it emits the wave. Everyone including enemy/ally/caster within the skill range falls into the [Discharge] state.",
-          "target": "Up to 15 enemies within a range of 10m",
+          "target": "Up to 15 enemies within a range of 13m",
           "casting_time": "5 sec.",
           "cooldown": "60 sec.",
           "duration": "2.3 sec.",
@@ -245,14 +311,38 @@
           "sp_cost": "1500",
           "aggro": "200",
           "skill_type": "Shooting",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1500%"
+              "value": "АТК: 1500%",
+              "effects": [
+                "Ignores enemys DEF by 60",
+                "When reusing the skill during casting, the skill activates",
+                "Knockback range and time increases in proportion to casting time",
+                "Skill Damage increases according to cast time",
+                "100% chance to impose PC/ally PC/caster []",
+                "Extra ignores enemys DEF in proportion to [Wind-up]s Lv.",
+                "[Wind-up]s Lv. reduces",
+                "[Electric Charging]s Lv. reduces"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "Ignores enemys DEF by 60",
+                "When reusing the skill during casting, the skill activates",
+                "Knockback range and time increases in proportion to casting time",
+                "Skill Damage increases according to cast time",
+                "100% chance to impose PC/ally PC/caster []",
+                "Extra ignores enemys DEF in proportion to [Wind-up]s Lv.",
+                "[Wind-up]s Lv. reduces",
+                "[Electric Charging]s Lv. reduces"
+              ]
             }
           ],
           "special": []

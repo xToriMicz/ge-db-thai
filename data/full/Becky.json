@@ -38,7 +38,8 @@
           "Cant do any action except using skills and not attacked during Duration",
           "In using skill, [Ice Blocking] buff is lifted",
           "If [Ice Blocking] buff is lifted, [Gallied] buff is added",
-          "[Gallied] buffs Duration: 60 sec. ATK+60%, A.R.+1, Every damage -10%"
+          "[Gallied] buffs Duration: 60 sec. ATK+60%, A.R.+1, Every damage -10%",
+          "When cast, also applies : Icy Skin"
         ]
       }
     ]
@@ -87,6 +88,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -129,6 +131,7 @@
         "Penetration": "10+25",
         "Immunity": "5+15"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Ice Shot",
@@ -143,14 +146,30 @@
           "sp_cost": "50",
           "aggro": "30",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 1",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1500%"
+              "value": "АТК: 1500%",
+              "effects": [
+                "75% chance to inflict [Cold Wave] to enemy",
+                "Recharging time 10 sec.",
+                "Max 2 times of use",
+                "After using 2 times, recharging."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "75% chance to inflict [Cold Wave] to enemy",
+                "Recharging time 10 sec.",
+                "Max 2 times of use",
+                "After using 2 times, recharging."
+              ]
             }
           ],
           "special": []
@@ -168,26 +187,73 @@
           "sp_cost": "250",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 3",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 5 Minutes."
+              "value": "",
+              "effects": [
+                "Duration: 5 Minutes.",
+                "A.R. +1",
+                "D.R. +1",
+                "Immunity+1",
+                "Ice RES+5",
+                "5% chance to impose [Freeze] to the enemy that attacked you."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 5 Minutes."
+              "value": "",
+              "effects": [
+                "Duration: 5 Minutes.",
+                "A.R. +1",
+                "D.R. +1",
+                "Immunity+10",
+                "Ice RES+50",
+                "5% chance to impose [Freeze] to the enemy that attacked you."
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 5 Minutes."
+              "value": "",
+              "effects": [
+                "Duration: 5 Minutes.",
+                "A.R. +1",
+                "D.R. +1",
+                "Immunity+11",
+                "Ice RES+55",
+                "D.R.+1",
+                "5% chance to impose [Freeze] to the enemy that attacked you."
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 5 Minutes."
+              "value": "",
+              "effects": [
+                "Duration: 5 Minutes.",
+                "A.R. +1",
+                "D.R. +1",
+                "Immunity+12",
+                "Ice RES+60",
+                "D.R.+1",
+                "5% chance to impose [Freeze] to the enemy that attacked you."
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 5 Minutes."
+              "value": "",
+              "effects": [
+                "Duration: 5 Minutes.",
+                "A.R. +1",
+                "D.R. +1",
+                "Immunity+13",
+                "Ice RES+65",
+                "D.R.+1",
+                "5% chance to impose [Freeze] to the enemy that attacked you."
+              ]
             }
           ],
           "special": []
@@ -205,14 +271,36 @@
           "sp_cost": "300",
           "aggro": "81",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 4",
+          "soft_armor_atk": "70%",
+          "heavy_armor_atk": "125%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2000%"
+              "value": "АТК: 2000%",
+              "effects": [
+                "50% chance of [Ice Magic]",
+                "Recharging time 25sec.",
+                "Can use up to twice",
+                "After using once, recharge",
+                "With each attack success to an individual enemy, [Ice Age] skill cooldown -5sec.",
+                "With skill accuracy, Casters [Frozen Charging] Lv.+1",
+                "With skill accuracy in [Frozen Charging] Lv.2 state to enemy PC, 100% chance of [Ice Magic]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4000%"
+              "value": "АТК: 4000%",
+              "effects": [
+                "50% chance of [Ice Magic]",
+                "Recharging time 25sec.",
+                "Can use up to twice",
+                "After using once, recharge",
+                "With each attack success to an individual enemy, [Ice Age] skill cooldown -5sec.",
+                "With skill accuracy, Casters [Frozen Charging] Lv.+1",
+                "With skill accuracy in [Frozen Charging] Lv.2 state to enemy PC, 100% chance of [Ice Magic]"
+              ]
             }
           ],
           "special": []
@@ -230,14 +318,30 @@
           "sp_cost": "400",
           "aggro": "150",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "70%",
+          "heavy_armor_atk": "125%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "70% chance of [Ice Magic]",
+                "With each attack success to an individual enemy, [Ice Age] skill cooldown -5sec.",
+                "With skill accuracy, Casters [Frozen Charging] Lv.+1",
+                "With skill accuracy in [Frozen Charging] Lv.2 state to enemy PC, 100% Chance of [Ice Magic]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4800%"
+              "value": "АТК: 4800%",
+              "effects": [
+                "70% chance of [Ice Magic]",
+                "With each attack success to an individual enemy, [Ice Age] skill cooldown -5sec.",
+                "With skill accuracy, Casters [Frozen Charging] Lv.+1",
+                "With skill accuracy in [Frozen Charging] Lv.2 state to enemy PC, 100% Chance of [Ice Magic]"
+              ]
             }
           ],
           "special": []
@@ -255,14 +359,28 @@
           "sp_cost": "800",
           "aggro": "245",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2900%"
+              "value": "АТК: 2900%",
+              "effects": [
+                "50% chance to impose [Ice Magic] on enemy",
+                "Ignores enemys Debuff RES RES",
+                "If enemy is in [Freeze], [Ice Magic], [Cold Wave], damage rises"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5800%"
+              "value": "АТК: 5800%",
+              "effects": [
+                "50% chance to impose [Ice Magic] on enemy",
+                "Ignores enemys Debuff RES RES",
+                "If enemy is in [Freeze], [Ice Magic], [Cold Wave], damage rises"
+              ]
             }
           ],
           "special": []

@@ -197,6 +197,7 @@
       "lv25_bonus": {
         "Evasion": "+5"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Recover",
@@ -211,14 +212,24 @@
           "sp_cost": "25",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Mithridart x 1",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Cure abnormal status, ["
+              "value": "",
+              "effects": [
+                "Cure abnormal status, [Darkness]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Cure abnormal status, ["
+              "value": "",
+              "effects": [
+                "Cure abnormal status, [Darkness], [Poison], [Fear], [Ritardi], [Freeze]"
+              ]
             }
           ],
           "special": []
@@ -236,26 +247,45 @@
           "sp_cost": "25",
           "aggro": "0",
           "skill_type": "Healing",
+          "consume_item": "Resurrect Potion x 1",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Restores HP by 5% after resurrection"
+              "value": "",
+              "effects": [
+                "Restores HP by 5% after resurrection"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Restores HP by 50% after resurrection"
+              "value": "",
+              "effects": [
+                "Restores HP by 50% after resurrection"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Restores HP by 55% after resurrection"
+              "value": "",
+              "effects": [
+                "Restores HP by 55% after resurrection"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Restores HP by 60% after resurrection"
+              "value": "",
+              "effects": [
+                "Restores HP by 60% after resurrection"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Restores HP by 65% after resurrection"
+              "value": "",
+              "effects": [
+                "Restores HP by 65% after resurrection"
+              ]
             }
           ],
           "special": []
@@ -273,14 +303,20 @@
           "sp_cost": "50",
           "aggro": "0",
           "skill_type": "Healing",
+          "consume_item": "Healing Liquor x 1",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Level 10"
+              "value": "",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "<img src=\"./images/Skills/aid_masscure.jpg\""
+              "value": "",
+              "effects": []
             }
           ],
           "special": []
@@ -298,10 +334,20 @@
           "sp_cost": "100",
           "aggro": "0",
           "skill_type": "Healing",
+          "consume_item": "Healing Potion x 3",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Level 10"
+              "value": "",
+              "effects": []
+            },
+            {
+              "level": "Level 10",
+              "value": "",
+              "effects": []
             }
           ],
           "special": []
@@ -339,6 +385,7 @@
       "lv25_bonus": {
         "Evasion": "+5"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Intensify",
@@ -353,26 +400,53 @@
           "sp_cost": "100",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 330 sec."
+              "value": "",
+              "effects": [
+                "Duration: 330 sec.",
+                "ATK+6%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 600 sec."
+              "value": "",
+              "effects": [
+                "Duration: 600 sec.",
+                "ATK+15%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 630 sec."
+              "value": "",
+              "effects": [
+                "Duration: 630 sec.",
+                "ATK+16%",
+                "A.R.+1"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 660 sec."
+              "value": "",
+              "effects": [
+                "Duration: 660 sec.",
+                "ATK+17%",
+                "A.R.+1"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 690 sec."
+              "value": "",
+              "effects": [
+                "Duration: 690 sec.",
+                "ATK+18%",
+                "A.R.+1"
+              ]
             }
           ],
           "special": []
@@ -390,26 +464,53 @@
           "sp_cost": "100",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 330 sec."
+              "value": "",
+              "effects": [
+                "Duration: 330 sec.",
+                "Max HP+11%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 600 sec."
+              "value": "",
+              "effects": [
+                "Duration: 600 sec.",
+                "Max HP+20%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 630 sec."
+              "value": "",
+              "effects": [
+                "Duration: 630 sec.",
+                "Max HP+21%",
+                "D.R.+1"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 660 sec."
+              "value": "",
+              "effects": [
+                "Duration: 660 sec.",
+                "Max HP+22%",
+                "D.R.+1"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 690 sec."
+              "value": "",
+              "effects": [
+                "Duration: 690 sec.",
+                "Max HP+23%",
+                "D.R.+1"
+              ]
             }
           ],
           "special": []
@@ -427,26 +528,55 @@
           "sp_cost": "100",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 330 sec."
+              "value": "",
+              "effects": [
+                "Duration: 330 sec.",
+                "Attack SPD+6%",
+                "Move SPD+6%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 600 sec."
+              "value": "",
+              "effects": [
+                "Duration: 600 sec.",
+                "Attack SPD+20%",
+                "Move SPD+20%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 630 sec."
+              "value": "",
+              "effects": [
+                "Duration: 630 sec.",
+                "Attack SPD+21%",
+                "Move SPD+21%"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 660 sec."
+              "value": "",
+              "effects": [
+                "Duration: 660 sec.",
+                "Attack SPD+23%",
+                "Move SPD+23%"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 690 sec."
+              "value": "",
+              "effects": [
+                "Duration: 690 sec.",
+                "Attack SPD+24%",
+                "Move SPD+24%"
+              ]
             }
           ],
           "special": []
@@ -464,26 +594,54 @@
           "sp_cost": "100",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 330 sec."
+              "value": "",
+              "effects": [
+                "Duration: 330 sec.",
+                "HP Regen.+12",
+                "SP Regen.+6"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 600 sec."
+              "value": "",
+              "effects": [
+                "Duration: 600 sec.",
+                "HP Regen.+30",
+                "SP Regen.+15"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 630 sec."
+              "value": "",
+              "effects": [
+                "Duration: 630 sec.",
+                "HP Regen.+32",
+                "SP Regen.+16"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Restore 15% of maximum HP"
+              "value": "",
+              "effects": [
+                "Restore 15% of maximum HP",
+                "Remove harmful effect of own character"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 690 sec."
+              "value": "",
+              "effects": [
+                "Duration: 690 sec.",
+                "HP Regen.+36",
+                "SP Regen.+18"
+              ]
             }
           ],
           "special": []
@@ -520,6 +678,7 @@
         "Abnormal RES": "25"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [
         {
           "name": "Spiritual Shield",
@@ -534,26 +693,55 @@
           "sp_cost": "60",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 165 sec."
+              "value": "",
+              "effects": [
+                "Duration: 165 sec.",
+                "AStat RES+17",
+                "Mental RES+11"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 300 sec."
+              "value": "",
+              "effects": [
+                "Duration: 300 sec.",
+                "AStat RES+35",
+                "Mental RES+20"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 315 sec."
+              "value": "",
+              "effects": [
+                "Duration: 315 sec.",
+                "AStat RES+37",
+                "Mental RES+21"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 330 sec."
+              "value": "",
+              "effects": [
+                "Duration: 330 sec.",
+                "AStat RES+39",
+                "Mental RES+22"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 345 sec."
+              "value": "",
+              "effects": [
+                "Duration: 345 sec.",
+                "AStat RES+41",
+                "Mental RES+23"
+              ]
             }
           ],
           "special": []
@@ -571,26 +759,60 @@
           "sp_cost": "90",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 165 sec."
+              "value": "",
+              "effects": [
+                "Duration: 165 sec.",
+                "Fire RES+11",
+                "Ice RES+11",
+                "Lightning RES+11"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 300 sec."
+              "value": "",
+              "effects": [
+                "Duration: 300 sec.",
+                "Fire RES+20",
+                "Ice RES+20",
+                "Lightning RES+20"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 315 sec."
+              "value": "",
+              "effects": [
+                "Duration: 315 sec.",
+                "Fire RES+21",
+                "Ice RES+21",
+                "Lightning RES+21"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 330 sec."
+              "value": "",
+              "effects": [
+                "Duration: 330 sec.",
+                "Fire RES+22",
+                "Ice RES+22",
+                "Lightning RES+22"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 345 sec."
+              "value": "",
+              "effects": [
+                "Duration: 345 sec.",
+                "Fire RES+23",
+                "Ice RES+23",
+                "Lightning RES+23"
+              ]
             }
           ],
           "special": []
@@ -608,26 +830,53 @@
           "sp_cost": "120",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration : 18 sec"
+              "value": "",
+              "effects": [
+                "Duration : 18 sec",
+                "DEF +53"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration : 45 sec"
+              "value": "",
+              "effects": [
+                "Duration : 45 sec",
+                "DEF +80"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration : 48 sec"
+              "value": "",
+              "effects": [
+                "Duration : 48 sec",
+                "DEF +83",
+                "D.R. +1"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration : 51 sec"
+              "value": "",
+              "effects": [
+                "Duration : 51 sec",
+                "DEF +86",
+                "D.R. +1"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration : 54 sec"
+              "value": "",
+              "effects": [
+                "Duration : 54 sec",
+                "DEF +89",
+                "D.R. +1"
+              ]
             }
           ],
           "special": []
@@ -645,26 +894,50 @@
           "sp_cost": "180",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Magical Orb x 2",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Removes all buffs/curses"
+              "value": "",
+              "effects": [
+                "Removes all buffs/curses",
+                "Reduces SP Recovery, Duration 4.4 sec"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Removes all buffs/curses"
+              "value": "",
+              "effects": [
+                "Removes all buffs/curses",
+                "Reduces SP Recovery, Duration 8 sec"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Removes all buffs/curses"
+              "value": "",
+              "effects": [
+                "Removes all buffs/curses",
+                "Reduces SP Recovery, Duration 8.4 sec"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Removes all buffs/curses"
+              "value": "",
+              "effects": [
+                "Removes all buffs/curses",
+                "Reduces SP Recovery, Duration 8.8 sec"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Removes all buffs/curses"
+              "value": "",
+              "effects": [
+                "Removes all buffs/curses",
+                "Reduces SP Recovery, Duration 9.2 sec"
+              ]
             }
           ],
           "special": []
@@ -701,6 +974,7 @@
         "Abnormal RES": "30"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [
         {
           "name": "Magic Barrier",
@@ -715,26 +989,55 @@
           "sp_cost": "100",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Magical Orb x 1",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 105 sec."
+              "value": "",
+              "effects": [
+                "Duration: 105 sec.",
+                "3% chance to ignore enemys Magic attack",
+                "Fire/Ice/Lightning RES+1"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 240 sec."
+              "value": "",
+              "effects": [
+                "Duration: 240 sec.",
+                "30% chance to ignore enemys Magic attack",
+                "Fire/Ice/Lightning RES+10"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 255 sec."
+              "value": "",
+              "effects": [
+                "Duration: 255 sec.",
+                "33% chance to ignore enemys Magic attack",
+                "Fire/Ice/Lightning RES+11"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 270 sec."
+              "value": "",
+              "effects": [
+                "Duration: 270 sec.",
+                "36% chance to ignore enemys Magic attack",
+                "Fire/Ice/Lightning RES+12"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 285 sec."
+              "value": "",
+              "effects": [
+                "Duration: 285 sec.",
+                "39% chance to ignore enemys Magic attack",
+                "Fire/Ice/Lightning RES+13"
+              ]
             }
           ],
           "special": []
@@ -752,26 +1055,55 @@
           "sp_cost": "150",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Magical Orb x 1",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 105 sec."
+              "value": "",
+              "effects": [
+                "Duration: 105 sec.",
+                "5% chance to ignore enemys Debuff attack",
+                "Mental/Debuff RES+1"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 240 sec."
+              "value": "",
+              "effects": [
+                "Duration: 240 sec.",
+                "50% chance to ignore enemys Debuff attack",
+                "Mental/Debuff RES+10"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 255 sec."
+              "value": "",
+              "effects": [
+                "Duration: 255 sec.",
+                "55% chance to ignore enemys Debuff attack",
+                "Mental/Debuff RES+11"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 270 sec."
+              "value": "",
+              "effects": [
+                "Duration: 270 sec.",
+                "60% chance to ignore enemys Debuff attack",
+                "Mental/Debuff RES+12"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 285 sec."
+              "value": "",
+              "effects": [
+                "Duration: 285 sec.",
+                "65% chance to ignore enemys Debuff attack",
+                "Mental/Debuff RES+13"
+              ]
             }
           ],
           "special": []
@@ -789,26 +1121,63 @@
           "sp_cost": "250",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Magical Orb x 3",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration : 3 sec"
+              "value": "",
+              "effects": [
+                "Duration : 3 sec (halved in PvP maps)",
+                "Turn in Invincibility status for the duration",
+                "Skill Player Damage -95%",
+                "Max SP -95%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration : 12 sec"
+              "value": "",
+              "effects": [
+                "Duration : 12 sec (halved in PvP maps)",
+                "Turn in Invincibility status for the duration",
+                "Skill Player Damage -95%",
+                "Max SP -95%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration : 13 sec"
+              "value": "",
+              "effects": [
+                "Duration : 13 sec (halved in PvP maps)",
+                "Turn in Invincibility status for the duration",
+                "Skill Player Damage -95%",
+                "Max SP -95%",
+                "D.R. +1"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration : 14 sec"
+              "value": "",
+              "effects": [
+                "Duration : 14 sec (halved in PvP maps)",
+                "Turn in Invincibility status for the duration",
+                "Skill Player Damage -95%",
+                "Max SP -95%",
+                "D.R. +1"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration : 15 sec"
+              "value": "",
+              "effects": [
+                "Duration : 15 sec (halved in PvP maps)",
+                "Turn in Invincibility status for the duration",
+                "Skill Player Damage -95%",
+                "Max SP -95%",
+                "D.R. +1"
+              ]
             }
           ],
           "special": []
@@ -826,26 +1195,45 @@
           "sp_cost": "300",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Magical Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "100% chance to send enemy into Panic status for 5.5 sec."
+              "value": "",
+              "effects": [
+                "100% chance to send enemy into Panic status for 5.5 sec."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "100% chance to send enemy into Panic status for 10 sec."
+              "value": "",
+              "effects": [
+                "100% chance to send enemy into Panic status for 10 sec."
+              ]
             },
             {
               "level": "Level 11",
-              "value": "100% chance to send enemy into Panic status for 10.5 sec."
+              "value": "",
+              "effects": [
+                "100% chance to send enemy into Panic status for 10.5 sec."
+              ]
             },
             {
               "level": "Level 12",
-              "value": "100% chance to send enemy into Panic status for 11 sec."
+              "value": "",
+              "effects": [
+                "100% chance to send enemy into Panic status for 11 sec."
+              ]
             },
             {
               "level": "Level 13",
-              "value": "100% chance to send enemy into Panic status for 11.5 sec."
+              "value": "",
+              "effects": [
+                "100% chance to send enemy into Panic status for 11.5 sec."
+              ]
             }
           ],
           "special": []
@@ -887,6 +1275,7 @@
         "ATK SPD": "+8%",
         "Immunity": "10"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Deep Sleep",
@@ -901,26 +1290,45 @@
           "sp_cost": "640",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 1",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "1% chance to inflict ["
+              "value": "",
+              "effects": [
+                "1% chance to inflict [Deep Sleep] for 1 sec"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "90% chance to inflict ["
+              "value": "",
+              "effects": [
+                "90% chance to inflict [Deep Sleep] for 10 sec"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "100% chance to inflict ["
+              "value": "",
+              "effects": [
+                "100% chance to inflict [Deep Sleep] for 11 sec"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "110% chance to inflict ["
+              "value": "",
+              "effects": [
+                "110% chance to inflict [Deep Sleep] for 12 sec"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "120% chance to inflict ["
+              "value": "",
+              "effects": [
+                "120% chance to inflict [Deep Sleep] for 13 sec"
+              ]
             }
           ],
           "special": []
@@ -938,26 +1346,78 @@
           "sp_cost": "640",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 2",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "1% chance to inflict for 2 sec"
+              "value": "",
+              "effects": [
+                "1% chance to inflict for 2 sec",
+                "Immobilize",
+                "Unable to use on enemies in the air",
+                "Evasion : -2",
+                "Block : -13",
+                "All RES : -13",
+                "DEF : +14"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "90% chance to inflict for 20 sec"
+              "value": "",
+              "effects": [
+                "90% chance to inflict for 20 sec",
+                "Immobilize",
+                "Unable to use on enemies in the air",
+                "Evasion : -20",
+                "Block : -40",
+                "All RES : -40",
+                "DEF : +50"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "100% chance to inflict for 22 sec"
+              "value": "",
+              "effects": [
+                "100% chance to inflict for 22 sec",
+                "Immobilize",
+                "Unable to use on enemies in the air",
+                "Evasion : -22",
+                "Block : -43",
+                "All RES : -43",
+                "DEF : +54",
+                "D.R. : -1"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "110% chance to inflict for 24 sec"
+              "value": "",
+              "effects": [
+                "110% chance to inflict for 24 sec",
+                "Immobilize",
+                "Unable to use on enemies in the air",
+                "Evasion : -24",
+                "Block : -46",
+                "All RES : -46",
+                "DEF : +58",
+                "D.R. : -2"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "120% chance to inflict for 26 sec"
+              "value": "",
+              "effects": [
+                "120% chance to inflict for 26 sec",
+                "Immobilize",
+                "Unable to use on enemies in the air",
+                "Evasion : -26",
+                "Block : -49",
+                "All RES : -49",
+                "DEF : +62",
+                "D.R. : -2"
+              ]
             }
           ],
           "special": []
@@ -975,26 +1435,65 @@
           "sp_cost": "940",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 3",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "1% chance to inflict for 18 sec"
+              "value": "",
+              "effects": [
+                "1% chance to inflict for 18 sec",
+                "Max HP : -12%",
+                "Max SP : -6%",
+                "DEF : -23",
+                "Movement Speed : -12"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "90% chance to inflict for 180 sec"
+              "value": "",
+              "effects": [
+                "90% chance to inflict for 180 sec",
+                "Max HP : -30%",
+                "Max SP : -15%",
+                "DEF : -50",
+                "Movement Speed : -30"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "100% chance to inflict for 198 sec"
+              "value": "",
+              "effects": [
+                "100% chance to inflict for 198 sec",
+                "Max HP : -32%",
+                "Max SP : -16%",
+                "DEF : -53",
+                "Movement Speed : -32"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "110% chance to inflict for 216 sec"
+              "value": "",
+              "effects": [
+                "110% chance to inflict for 216 sec",
+                "Max HP : -34%",
+                "Max SP : -17%",
+                "DEF : -56",
+                "Movement Speed : -34"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "120% chance to inflict for 234 sec"
+              "value": "",
+              "effects": [
+                "120% chance to inflict for 234 sec",
+                "Max HP : -36%",
+                "Max SP : -18%",
+                "DEF : -59",
+                "Movement Speed : -36"
+              ]
             }
           ],
           "special": []
@@ -1012,26 +1511,60 @@
           "sp_cost": "940",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 3",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "1% chance to inflict for 6 sec"
+              "value": "",
+              "effects": [
+                "1% chance to inflict for 6 sec",
+                "Eyesight Interruption",
+                "Unable to use on enemies in the air",
+                "Movement Speed : -12"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "90% chance to inflict for 60 sec"
+              "value": "",
+              "effects": [
+                "90% chance to inflict for 60 sec",
+                "Eyesight Interruption",
+                "Unable to use on enemies in the air",
+                "Movement Speed : -30"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "100% chance to inflict for 66 sec"
+              "value": "",
+              "effects": [
+                "100% chance to inflict for 66 sec",
+                "Eyesight Interruption",
+                "Unable to use on enemies in the air",
+                "Movement Speed : -32"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "110% chance to inflict for 72 sec"
+              "value": "",
+              "effects": [
+                "110% chance to inflict for 72 sec",
+                "Eyesight Interruption",
+                "Unable to use on enemies in the air",
+                "Movement Speed : -34"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "120% chance to inflict for 78 sec"
+              "value": "",
+              "effects": [
+                "120% chance to inflict for 78 sec",
+                "Eyesight Interruption",
+                "Unable to use on enemies in the air",
+                "Movement Speed : -36"
+              ]
             }
           ],
           "special": []
@@ -1049,26 +1582,60 @@
           "sp_cost": "840",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 3",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "1% chance to inflict for 1.5 sec"
+              "value": "",
+              "effects": [
+                "1% chance to inflict for 1.5 sec",
+                "Skill Limit",
+                "Debuff",
+                "Transparency Detecting"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "90% chance to inflict for 15 sec"
+              "value": "",
+              "effects": [
+                "90% chance to inflict for 15 sec",
+                "Skill Limit",
+                "Debuff",
+                "Transparency Detecting"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "100% chance to inflict for 16.5 sec"
+              "value": "",
+              "effects": [
+                "100% chance to inflict for 16.5 sec",
+                "Skill Limit",
+                "Debuff",
+                "Transparency Detecting"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "110% chance to inflict for 18 sec"
+              "value": "",
+              "effects": [
+                "110% chance to inflict for 18 sec",
+                "Skill Limit",
+                "Debuff",
+                "Transparency Detecting"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "120% chance to inflict for 19.5 sec"
+              "value": "",
+              "effects": [
+                "120% chance to inflict for 19.5 sec",
+                "Skill Limit",
+                "Debuff",
+                "Transparency Detecting"
+              ]
             }
           ],
           "special": []
@@ -1109,6 +1676,7 @@
         "Penetration": "15+25",
         "Immunity": "5+10"
       },
+      "consume": "Psychic Sphere x 1",
       "skills": [
         {
           "name": "Wind Pressure",
@@ -1123,14 +1691,26 @@
           "sp_cost": "100",
           "aggro": "50",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1200%"
+              "value": "АТК: 1200%",
+              "effects": [
+                "Enemy DEF -50",
+                "100% chance to inflict [Mortal Wound] on enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "Enemy DEF -50",
+                "100% chance to inflict [Mortal Wound] on enemy"
+              ]
             }
           ],
           "special": []
@@ -1148,14 +1728,30 @@
           "sp_cost": "300",
           "aggro": "100",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1600%"
+              "value": "АТК: 1600%",
+              "effects": [
+                "Ignores enemys DEF by 50",
+                "100% Chance to inflict [Stun] on enemy",
+                "Up to 3x additional Damage against monsters in proportion to the casters final [INT] value while under [Coruscation] buff",
+                "Additional 100 DEF removed against PC in proportion to the casters final [INT] value"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3200%"
+              "value": "АТК: 3200%",
+              "effects": [
+                "Ignores enemys DEF by 50",
+                "100% Chance to inflict [Stun] on enemy",
+                "Up to 3x additional Damage against monsters in proportion to the casters final [INT] value while under [Coruscation] buff",
+                "Additional 100 DEF removed against PC in proportion to the casters final [INT] value"
+              ]
             }
           ],
           "special": [
@@ -1176,14 +1772,26 @@
           "sp_cost": "500",
           "aggro": "150",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "Enemy DEF -50",
+                "100% chance to inflict [Mortal Wound] on enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4400%"
+              "value": "АТК: 4400%",
+              "effects": [
+                "Enemy DEF -50",
+                "100% chance to inflict [Mortal Wound] on enemy"
+              ]
             }
           ],
           "special": []
@@ -1201,26 +1809,60 @@
           "sp_cost": "800",
           "aggro": "250",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "1% chance to inflict for 1.5 sec"
+              "value": "",
+              "effects": [
+                "1% chance to inflict for 1.5 sec",
+                "Skill Limit",
+                "Cancel Good Buff",
+                "Transparency Detecting"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "90% chance to inflict for 15 sec"
+              "value": "",
+              "effects": [
+                "90% chance to inflict for 15 sec",
+                "Skill Limit",
+                "Cancel Good Buff",
+                "Transparency Detecting"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "100% chance to inflict for 16.5 sec"
+              "value": "",
+              "effects": [
+                "100% chance to inflict for 16.5 sec",
+                "Skill Limit",
+                "Cancel Good Buff",
+                "Transparency Detecting"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "110% chance to inflict for 18 sec"
+              "value": "",
+              "effects": [
+                "110% chance to inflict for 18 sec",
+                "Skill Limit",
+                "Cancel Good Buff",
+                "Transparency Detecting"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "120% chance to inflict for 19.5 sec"
+              "value": "",
+              "effects": [
+                "120% chance to inflict for 19.5 sec",
+                "Skill Limit",
+                "Cancel Good Buff",
+                "Transparency Detecting"
+              ]
             }
           ],
           "special": []
@@ -1238,14 +1880,30 @@
           "sp_cost": "800",
           "aggro": "500",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2800%"
+              "value": "АТК: 2800%",
+              "effects": [
+                "Ignores enemys DEF by 80",
+                "100% Chance to inflict [Stun] on enemy",
+                "Up to 3x additional Damage against monsters in proportion to the casters final [INT] value while under [Coruscation] buff",
+                "Additional 100 DEF removed against PC in proportion to the casters final [INT] value"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5600%"
+              "value": "АТК: 5600%",
+              "effects": [
+                "Ignores enemys DEF by 80",
+                "100% Chance to inflict [Stun] on enemy",
+                "Up to 3x additional Damage against monsters in proportion to the casters final [INT] value while under [Coruscation] buff",
+                "Additional 100 DEF removed against PC in proportion to the casters final [INT] value"
+              ]
             }
           ],
           "special": [
@@ -1300,6 +1958,7 @@
         "Immunity": "10+10",
         "DEF": "5"
       },
+      "consume": "Psychic Sphere x 1",
       "skills": [
         {
           "name": "Raeloss",
@@ -1314,14 +1973,28 @@
           "sp_cost": "240",
           "aggro": "72",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 2",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "125%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 943%"
+              "value": "АТК: 943%",
+              "effects": [
+                "100% chance to inflict [Raeloss] to target",
+                "[Raeloss] Duration: 20 seconds, Movement Speed -10%",
+                "Increase skill damage to monster enemy with [Raeloss],[Raeloss Break]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1886%"
+              "value": "АТК: 1886%",
+              "effects": [
+                "100% chance to inflict [Raeloss] to target",
+                "[Raeloss] Duration: 20 seconds, Movement Speed -10%",
+                "Increase skill damage to monster enemy with [Raeloss],[Raeloss Break]"
+              ]
             }
           ],
           "special": []
@@ -1339,14 +2012,28 @@
           "sp_cost": "240",
           "aggro": "72",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 2",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "125%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1141.5%"
+              "value": "АТК: 1141.5%",
+              "effects": [
+                "100% chance to inflict [Katore]",
+                "[Katore] Duration: 20 seconds, ATK SPD -10%",
+                "Increase skill damage to monster enemy with [Katore],[Katore Break]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2283%"
+              "value": "АТК: 2283%",
+              "effects": [
+                "100% chance to inflict [Katore]",
+                "[Katore] Duration: 20 seconds, ATK SPD -10%",
+                "Increase skill damage to monster enemy with [Katore],[Katore Break]"
+              ]
             }
           ],
           "special": []
@@ -1364,14 +2051,32 @@
           "sp_cost": "500",
           "aggro": "150",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "150%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1926%"
+              "value": "АТК: 1926%",
+              "effects": [
+                "[Raeloss Break] will be triggered if a skill hits the target with [Raeloss]",
+                "[Katore Break] will be triggered if a skill hits the target with [Katore]",
+                "[Raeloss Break] D.R. -1, DEF -15, PC Movement Speed -90%, Duration: 10 seconds",
+                "[Katore Break] D.R. -1, Attribute RES -10, Unable to use item, Duration: 10 seconds",
+                "Increase skill damage to monster enemy with [Raeloss],[Raeloss Break],[Katore],[Katore Break]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3852%"
+              "value": "АТК: 3852%",
+              "effects": [
+                "[Raeloss Break] will be triggered if a skill hits the target with [Raeloss]",
+                "[Katore Break] will be triggered if a skill hits the target with [Katore]",
+                "[Raeloss Break] D.R. -1, DEF -15, PC Movement Speed -90%, Duration: 10 seconds",
+                "[Katore Break] D.R. -1, Attribute RES -10, Unable to use item, Duration: 10 seconds",
+                "Increase skill damage to monster enemy with [Raeloss],[Raeloss Break],[Katore],[Katore Break]"
+              ]
             }
           ],
           "special": []
@@ -1389,14 +2094,34 @@
           "sp_cost": "280",
           "aggro": "49",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "140%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1648.8%"
+              "value": "АТК: 1648.8%",
+              "effects": [
+                "80% chance to inflict [Stun] to target",
+                "[Raeloss Break] will be triggered if a skill hits the target with [Raeloss]",
+                "[Katore Break] will be triggered if a skill hits the target with [Katore]",
+                "[Raeloss Break] D.R. -1, DEF -15, PC Movement Speed -90%, Duration: 10 seconds",
+                "[Katore Break] D.R. -1, Attribute RES -10, Unable to use item, Duration: 10 seconds",
+                "Increase skill damage to monster enemy with [Raeloss],[Raeloss Break],[Katore],[Katore Break]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3297%"
+              "value": "АТК: 3297%",
+              "effects": [
+                "80% chance to inflict [Stun] to target",
+                "[Raeloss Break] will be triggered if a skill hits the target with [Raeloss]",
+                "[Katore Break] will be triggered if a skill hits the target with [Katore]",
+                "[Raeloss Break] D.R. -1, DEF -15, PC Movement Speed -90%, Duration: 10 seconds",
+                "[Katore Break] D.R. -1, Attribute RES -10, Unable to use item, Duration: 10 seconds",
+                "Increase skill damage to monster enemy with [Raeloss],[Raeloss Break],[Katore],[Katore Break]"
+              ]
             }
           ],
           "special": []
@@ -1414,26 +2139,66 @@
           "sp_cost": "650",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Magical Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 5 Minutes."
+              "value": "",
+              "effects": [
+                "Duration: 5 Minutes.",
+                "INT +1",
+                "Movement Speed and Movement Speed Limit +20%",
+                "Monster Damage +150%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 5 Minutes."
+              "value": "",
+              "effects": [
+                "Duration: 5 Minutes.",
+                "INT +10",
+                "Movement Speed and Movement Speed Limit +20%",
+                "Monster Damage +150%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 5 Minutes."
+              "value": "",
+              "effects": [
+                "Duration: 5 Minutes.",
+                "INT +11",
+                "Penetration +11",
+                "A.R. +1",
+                "Movement Speed and Movement Speed Limit +20%",
+                "Monster Damage +150%"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 5 Minutes."
+              "value": "",
+              "effects": [
+                "Duration: 5 Minutes.",
+                "INT +12",
+                "Penetration +12",
+                "A.R. +2",
+                "Movement Speed and Movement Speed Limit +20%",
+                "Monster Damage +150%"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 5 Minutes."
+              "value": "",
+              "effects": [
+                "Duration: 5 Minutes.",
+                "INT +13",
+                "Penetration +13",
+                "A.R. +2",
+                "Movement Speed and Movement Speed Limit +20%",
+                "Monster Damage +150%"
+              ]
             }
           ],
           "special": []
@@ -1478,6 +2243,7 @@
       "lv25_bonus": {
         "Evasion": "+5"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Consolidation",
@@ -1492,26 +2258,53 @@
           "sp_cost": "200",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Mithridart x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration : 330 sec"
+              "value": "",
+              "effects": [
+                "Duration : 330 sec",
+                "Penetration +1"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration : 600 sec"
+              "value": "",
+              "effects": [
+                "Duration : 600 sec",
+                "Penetration +10"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration : 630 sec"
+              "value": "",
+              "effects": [
+                "Duration : 630 sec",
+                "Penetration +11",
+                "ATK +2%"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration : 660 sec"
+              "value": "",
+              "effects": [
+                "Duration : 660 sec",
+                "Penetration +12",
+                "ATK +4%"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration : 690 sec"
+              "value": "",
+              "effects": [
+                "Duration : 690 sec",
+                "Penetration +13",
+                "ATK +6%"
+              ]
             }
           ],
           "special": []
@@ -1529,26 +2322,53 @@
           "sp_cost": "200",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Mithridart x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration : 330 Sec"
+              "value": "",
+              "effects": [
+                "Duration : 330 Sec",
+                "Casting Time -2.5%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration : 600 Sec"
+              "value": "",
+              "effects": [
+                "Duration : 600 Sec",
+                "Casting Time -25%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration : 630 Sec"
+              "value": "",
+              "effects": [
+                "Duration : 630 Sec",
+                "Casting Time -27.5%",
+                "ATK SPD +2%"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration : 660 Sec"
+              "value": "",
+              "effects": [
+                "Duration : 660 Sec",
+                "Casting Time -30%",
+                "ATK SPD +4%"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration : 690 Sec"
+              "value": "",
+              "effects": [
+                "Duration : 690 Sec",
+                "Casting Time -32.5%",
+                "ATK SPD +6%"
+              ]
             }
           ],
           "special": []
@@ -1566,26 +2386,60 @@
           "sp_cost": "200",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Mithridart x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration : 330 sec"
+              "value": "",
+              "effects": [
+                "Duration : 330 sec",
+                "HP Regeneration +50",
+                "SP Regeneration +10"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration : 600 sec"
+              "value": "",
+              "effects": [
+                "Duration : 600 sec",
+                "HP Regeneration +500",
+                "SP Regeneration +100"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration : 630 sec"
+              "value": "",
+              "effects": [
+                "Duration : 630 sec",
+                "HP Regeneration +550",
+                "SP Regeneration +110",
+                "HP Regeneration during Knockdown status"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration : 660 sec"
+              "value": "",
+              "effects": [
+                "Duration : 660 sec",
+                "HP Regeneration +600",
+                "SP Regeneration +120",
+                "HP Regeneration during Knockdown status",
+                "SP Restores"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration : 690 sec"
+              "value": "",
+              "effects": [
+                "Duration : 690 sec",
+                "HP Regeneration +650",
+                "SP Regeneration +130",
+                "HP Regeneration during Knockdown status",
+                "SP Restores"
+              ]
             }
           ],
           "special": []
@@ -1603,14 +2457,28 @@
           "sp_cost": "5000",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "5000 HP by using",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Cure abnormal status, ["
+              "value": "",
+              "effects": [
+                "Cure abnormal status, [Stun]",
+                "Reset Cooldown of target character",
+                "Consumes 5000 HP by using"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Cure abnormal status, ["
+              "value": "",
+              "effects": [
+                "Cure abnormal status, [Stun], [Mortal Wound], [Confusion], [Enervation], [Petrify]",
+                "Reset Cooldown of target character",
+                "Consume 5000 HP by using"
+              ]
             }
           ],
           "special": []
@@ -1653,6 +2521,7 @@
         "Evasion": "+20",
         "Immunity": "5+10"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Principal",
@@ -1667,26 +2536,90 @@
           "sp_cost": "600",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 15",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration : 30 sec"
+              "value": "",
+              "effects": [
+                "Duration : 30 sec",
+                "Monster Damage : +2%",
+                "ATK : +2%",
+                "ATK SPD : +2%",
+                "Movement Speed : +6%",
+                "Max HP : +3%",
+                "Accuracy : +1",
+                "Immunity : +1",
+                "Penetration : +1"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration : 300 sec"
+              "value": "",
+              "effects": [
+                "Duration : 300 sec",
+                "Monster Damage : +20%",
+                "ATK : +20%",
+                "ATK SPD : +20%",
+                "Movement Speed : +15%",
+                "Max HP : +30%",
+                "Accuracy : +10",
+                "Immunity : +10",
+                "Penetration : +10"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration : 330 sec"
+              "value": "",
+              "effects": [
+                "Duration : 330 sec",
+                "Monster Damage : +22%",
+                "D.R. : +1",
+                "ATK : +22%",
+                "ATK SPD : +22%",
+                "Movement Speed : +16%",
+                "Max HP : +33%",
+                "Accuracy : +11",
+                "Immunity : +11",
+                "Penetration : +11"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration : 360 sec"
+              "value": "",
+              "effects": [
+                "Duration : 360 sec",
+                "Monster Damage : +24%",
+                "A.R. : +1",
+                "D.R. : +1",
+                "ATK : +24%",
+                "ATK SPD : +24%",
+                "Movement Speed : +17%",
+                "Max HP : +36%",
+                "Accuracy : +12",
+                "Immunity : +12",
+                "Penetration : +12"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration : 390 sec"
+              "value": "",
+              "effects": [
+                "Duration : 390 sec",
+                "Monster Damage : +26%",
+                "A.R. : +1",
+                "D.R. : +1",
+                "ATK : +26%",
+                "ATK SPD : +26%",
+                "Movement Speed : +18%",
+                "Max HP : +39%",
+                "Accuracy : +13",
+                "Immunity : +13",
+                "Penetration : +13"
+              ]
             }
           ],
           "special": []
@@ -1704,26 +2637,66 @@
           "sp_cost": "500",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 30 sec."
+              "value": "",
+              "effects": [
+                "Duration: 30 sec.",
+                "Melee Stance ATK+6%",
+                "DEF+2",
+                "Max HP+2%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 300 sec."
+              "value": "",
+              "effects": [
+                "Duration: 300 sec.",
+                "Melee Stance ATK+15%",
+                "DEF+20",
+                "Max HP+20%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 330 sec."
+              "value": "",
+              "effects": [
+                "Duration: 330 sec.",
+                "Melee Stance ATK+16%",
+                "DEF+22",
+                "Max HP+33%",
+                "D.R. +1",
+                "Immunity+6"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 360 sec."
+              "value": "",
+              "effects": [
+                "Duration: 360 sec.",
+                "Melee Stance ATK+17%",
+                "DEF+24",
+                "Max HP+36%",
+                "D.R. +1",
+                "Immunity+7"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 390 sec."
+              "value": "",
+              "effects": [
+                "Duration: 390 sec.",
+                "Melee Stance ATK+18%",
+                "DEF+26",
+                "Max HP+39%",
+                "D.R. +1",
+                "Immunity+7"
+              ]
             }
           ],
           "special": []
@@ -1741,26 +2714,66 @@
           "sp_cost": "500",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 30 sec."
+              "value": "",
+              "effects": [
+                "Duration: 30 sec.",
+                "Magic Stance ATK+6%",
+                "Max SP+11%",
+                "Casting time -2%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 300 sec."
+              "value": "",
+              "effects": [
+                "Duration: 300 sec.",
+                "Magic Stance ATK+15%",
+                "Max SP+20%",
+                "Casting time -20%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 330 sec."
+              "value": "",
+              "effects": [
+                "Duration: 330 sec.",
+                "Magic Stance ATK+16%",
+                "Max SP+21%",
+                "Casting time -22%",
+                "A.R.+1",
+                "Magic Penetration+6"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 360 sec."
+              "value": "",
+              "effects": [
+                "Duration: 360 sec.",
+                "Magic Stance ATK+17%",
+                "Max SP+22%",
+                "Casting time -24%",
+                "A.R.+1",
+                "Magic Penetration+7"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 390 sec."
+              "value": "",
+              "effects": [
+                "Duration: 390 sec.",
+                "Magic Stance ATK+18%",
+                "Max SP+23%",
+                "Casting time -26%",
+                "A.R.+1",
+                "Magic Penetration+7"
+              ]
             }
           ],
           "special": []
@@ -1778,26 +2791,71 @@
           "sp_cost": "500",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration30 sec."
+              "value": "",
+              "effects": [
+                "Duration30 sec.",
+                "Shoot Stance ATK+6%",
+                "Attack SPD+6%",
+                "Accuracy+6",
+                "Critical Rate+2"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration300 sec."
+              "value": "",
+              "effects": [
+                "Duration300 sec.",
+                "Shoot Stance ATK+15%",
+                "Attack SPD+15%",
+                "Accuracy+15",
+                "Critical Rate+20"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration330 sec."
+              "value": "",
+              "effects": [
+                "Duration330 sec.",
+                "Shoot Stance ATK+16%",
+                "Attack SPD+16%",
+                "Accuracy+16",
+                "Critical Rate+22",
+                "A.R.+1",
+                "Physical Penetration+6"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration360 sec."
+              "value": "",
+              "effects": [
+                "Duration360 sec.",
+                "Shoot Stance ATK+17%",
+                "Attack SPD+17%",
+                "Accuracy+17",
+                "Critical Rate+24",
+                "A.R.+1",
+                "Physical Penetration+7"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration390 sec."
+              "value": "",
+              "effects": [
+                "Duration390 sec.",
+                "Shoot Stance ATK+18%",
+                "Attack SPD+18%",
+                "Accuracy+18",
+                "Critical Rate+26",
+                "A.R.+1",
+                "Physical Penetration+7"
+              ]
             }
           ],
           "special": []
@@ -1815,26 +2873,86 @@
           "sp_cost": "300",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration : 1.5 secs."
+              "value": "",
+              "effects": [
+                "Duration : 1.5 secs.",
+                "[Darkness] Debuff RES +1%",
+                "Invisibility Detection",
+                "Cancel [Deep Sleep]",
+                "Cancel [Crescent Curse]",
+                "Cancel [Pierced Wound]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration : 15 secs."
+              "value": "",
+              "effects": [
+                "Duration : 15 secs.",
+                "[Darkness] Debuff RES +10%",
+                "Invisibility Detection",
+                "Cancel [Deep Sleep]",
+                "Cancel [Crescent Curse]",
+                "Cancel [Pierced Wound]",
+                "Cancel [Gravitation]",
+                "Cancel [Blood Curse]",
+                "Cancel [Gloomy Present]",
+                "Cancel [Whole Cancellation]"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration : 30 secs."
+              "value": "",
+              "effects": [
+                "Duration : 30 secs.",
+                "[Darkness] Debuff RES +11%",
+                "Invisibility Detection",
+                "Cancel [Deep Sleep]",
+                "Cancel [Crescent Curse]",
+                "Cancel [Pierced Wound]",
+                "Cancel [Gravitation]",
+                "Cancel [Blood Curse]",
+                "Cancel [Gloomy Present]",
+                "Cancel [Whole Cancellation]"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration : 30 secs."
+              "value": "",
+              "effects": [
+                "Duration : 30 secs.",
+                "[Darkness] Debuff RES +12%",
+                "Invisibility Detection",
+                "Cancel [Deep Sleep]",
+                "Cancel [Crescent Curse]",
+                "Cancel [Pierced Wound]",
+                "Cancel [Gravitation]",
+                "Cancel [Blood Curse]",
+                "Cancel [Gloomy Present]",
+                "Cancel [Whole Cancellation]"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration : 30 secs."
+              "value": "",
+              "effects": [
+                "Duration : 30 secs.",
+                "[Darkness] Debuff RES +13%",
+                "Invisibility Detection",
+                "Cancel [Deep Sleep]",
+                "Cancel [Crescent Curse]",
+                "Cancel [Pierced Wound]",
+                "Cancel [Gravitation]",
+                "Cancel [Blood Curse]",
+                "Cancel [Gloomy Present]",
+                "Cancel [Whole Cancellation]"
+              ]
             }
           ],
           "special": []
@@ -1876,6 +2994,7 @@
       "lv25_bonus": {
         "Immunity": "10+20"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Miracle",
@@ -1890,26 +3009,71 @@
           "sp_cost": "500",
           "aggro": "150",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 20",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 10 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 10 seconds",
+                "Maximum HP +1000",
+                "Max. SP +100",
+                "All Damage Received -1",
+                "Damage against monster +4%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 100 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 100 seconds",
+                "Maximum HP +10000",
+                "Max. SP +1000",
+                "All Stats +5",
+                "All Damage Received -10",
+                "Damage against monster +40%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 110 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 110 seconds",
+                "Maximum HP +11000",
+                "Max. SP +1100",
+                "All Stats +5",
+                "All Damage Received -11",
+                "Damage against monster +44%"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 120 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 120 seconds",
+                "Maximum HP +12000",
+                "Max. SP +1200",
+                "All Stats +10",
+                "All Damage Received -12",
+                "Damage against monster +48%"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 130 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 130 seconds",
+                "D.R. +1",
+                "A.R. +1",
+                "Maximum HP +13000",
+                "Max. SP +1300",
+                "All Stats +10",
+                "All Damage Received -13",
+                "Damage against monster +52%"
+              ]
             }
           ],
           "special": []
@@ -1927,26 +3091,70 @@
           "sp_cost": "500",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 30 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 30 seconds",
+                "DEF +1",
+                "IMM +1",
+                "Block +1",
+                "Evasion +1",
+                "Knockdown duration -1%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "DEF +10",
+                "IMM +10",
+                "Block +10",
+                "Evasion +10",
+                "Knockdown duration -10%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 330 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 330 seconds",
+                "DEF +11",
+                "IMM +11",
+                "Block +11",
+                "Evasion +11",
+                "Knockdown duration -11%"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 360 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 360 seconds",
+                "DEF +12",
+                "IMM +12",
+                "Block +12",
+                "Evasion +12",
+                "Knockdown duration -12%"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 390 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 390 seconds",
+                "DEF +13",
+                "IMM +13",
+                "Block +13",
+                "Evasion +13",
+                "Knockdown duration -13%"
+              ]
             }
           ],
           "special": []
@@ -1964,26 +3172,65 @@
           "sp_cost": "500",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 30 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 30 seconds",
+                "ATK +1%",
+                "Penetration +1",
+                "Critical +1",
+                "Critical Damage +2%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "ATK +10%",
+                "Penetration +10",
+                "Critical +10",
+                "Critical Damage +20%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 330 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 330 seconds",
+                "ATK +11%",
+                "Penetration +11",
+                "Critical +11",
+                "Critical Damage +22%"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 360 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 360 seconds",
+                "ATK +12%",
+                "Penetration +12",
+                "Critical +12",
+                "Critical Damage +24%"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 390 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 390 seconds",
+                "ATK +13%",
+                "Penetration +13",
+                "Critical +13",
+                "Critical Damage +26%"
+              ]
             }
           ],
           "special": []
@@ -2001,14 +3248,26 @@
           "sp_cost": "500",
           "aggro": "150",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 20",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Restore 15% of maximum HP"
+              "value": "",
+              "effects": [
+                "Restore 15% of maximum HP",
+                "Remove harmful effect of own character"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Restore 15% of maximum HP"
+              "value": "",
+              "effects": [
+                "Restore 15% of maximum HP",
+                "Remove harmful effect of own character"
+              ]
             }
           ],
           "special": []
@@ -2026,14 +3285,24 @@
           "sp_cost": "500",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Increase all skills level by enhancing your own tactical capacity."
+              "value": "",
+              "effects": [
+                "Increase all skills level by enhancing your own tactical capacity."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Increase all skills level by enhancing your own tactical capacity."
+              "value": "",
+              "effects": [
+                "Increase all skills level by enhancing your own tactical capacity."
+              ]
             }
           ],
           "special": []
@@ -2078,6 +3347,7 @@
         "Immunity": "5+20",
         "DEF": "5"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Encourage",
@@ -2092,26 +3362,65 @@
           "sp_cost": "750",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 15",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "Penetration +2",
+                "Critical +2",
+                "Critical Damage +2%",
+                "ATK against monsters +15%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "Penetration +20",
+                "Critical +20",
+                "Critical Damage +20%",
+                "ATK against monsters +60%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "Penetration +22",
+                "Critical +22",
+                "Critical Damage +22%",
+                "ATK against monsters +65%"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "Penetration +24",
+                "Critical +24",
+                "Critical Damage +24%",
+                "ATK against monsters +70%"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "Penetration +26",
+                "Critical +26",
+                "Critical Damage +26%",
+                "ATK against monsters +75%"
+              ]
             }
           ],
           "special": []
@@ -2129,26 +3438,60 @@
           "sp_cost": "600",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "Attack speed +2%",
+                "Movement speed +2%",
+                "Casting time -0.5%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "Attack speed +20%",
+                "Movement speed +20%",
+                "Casting time -5%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "Attack speed +22%",
+                "Movement speed +22%",
+                "Casting time -5.5%"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "Attack speed +24%",
+                "Movement speed +24%",
+                "Casting time -6%"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "Attack speed +26%",
+                "Movement speed +26%",
+                "Casting time -6.5%"
+              ]
             }
           ],
           "special": []
@@ -2166,26 +3509,63 @@
           "sp_cost": "600",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "Increases ATK according to allys active stance.",
+                "Melee/Hybrid: Melee ATK +2%",
+                "Ranged: Ranged ATK +2%",
+                "Magic: Magic ATK +2%",
+                "Increases stats by +5 according to the active stance or attribute."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Level 11"
+              "value": "",
+              "effects": []
             },
             {
               "level": "Level 11",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "Increases ATK according to allys active stance.",
+                "Melee/Hybrid: Melee ATK +22%",
+                "Ranged: Ranged ATK +22%",
+                "Magic: Magic ATK +22%",
+                "Increases stats by +14 according to the active stance or attribute."
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "Increases ATK according to allys active stance.",
+                "Melee/Hybrid: Melee ATK +24%",
+                "Ranged: Ranged ATK +24%",
+                "Magic: Magic ATK +24%",
+                "Increases stats by +15 according to the active stance or attribute."
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "Increases ATK according to allys active stance.",
+                "Melee/Hybrid: Melee ATK +26%",
+                "Ranged: Ranged ATK +26%",
+                "Magic: Magic ATK +26%",
+                "Increases stats by +16 according to the active stance or attribute."
+              ]
             }
           ],
           "special": []
@@ -2203,26 +3583,80 @@
           "sp_cost": "900",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 20",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 20 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 20 seconds",
+                "Increases ATK by the highest stat * 0.2",
+                "Increases additional ATK against all races by the highest stat * 0.07",
+                "Maximum SP + 2,000",
+                "Upon casting, enters [Nether] state",
+                "While in [Nether] state, if [Netherworld] is recast, applies [Aether] state",
+                "While in [Aether] state, if [Netherworld] is recast, applies [Nether] state",
+                "Buffs does not stack with [Brute Force Solution]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 200 second"
+              "value": "",
+              "effects": [
+                "Duration: 200 second",
+                "Increases ATK by the highest stat * 0.2",
+                "Increases additional ATK against all races by the highest stat * 0.07",
+                "Maximum SP + 2,000",
+                "Upon casting, enters [Nether] state",
+                "While in [Nether] state, if [Netherworld] is recast, applies [Aether] state",
+                "While in [Aether] state, if [Netherworld] is recast, applies [Nether] state",
+                "Buffs does not stack with [Brute Force Solution]"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 220 second"
+              "value": "",
+              "effects": [
+                "Duration: 220 second",
+                "Increases ATK by the highest stat * 0.2",
+                "Increases additional ATK against all races by the highest stat * 0.07",
+                "Maximum SP + 2,000",
+                "Upon casting, enters [Nether] state",
+                "While in [Nether] state, if [Netherworld] is recast, applies [Aether] state",
+                "While in [Aether] state, if [Netherworld] is recast, applies [Nether] state",
+                "Buffs does not stack with [Brute Force Solution]"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 240 second"
+              "value": "",
+              "effects": [
+                "Duration: 240 second",
+                "Increases ATK by the highest stat * 0.2",
+                "Increases additional ATK against all races by the highest stat * 0.07",
+                "Maximum SP + 2,000",
+                "Upon casting, enters [Nether] state",
+                "While in [Nether] state, if [Netherworld] is recast, applies [Aether] state",
+                "While in [Aether] state, if [Netherworld] is recast, applies [Nether] state",
+                "Buffs does not stack with [Brute Force Solution]"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 260 second"
+              "value": "",
+              "effects": [
+                "Duration: 260 second",
+                "Increases ATK by the highest stat * 0.2",
+                "Increases additional ATK against all races by the highest stat * 0.07",
+                "Maximum SP + 2,000",
+                "Upon casting, enters [Nether] state",
+                "While in [Nether] state, if [Netherworld] is recast, applies [Aether] state",
+                "While in [Aether] state, if [Netherworld] is recast, applies [Nether] state",
+                "Buffs does not stack with [Brute Force Solution]"
+              ]
             }
           ],
           "special": []
@@ -2240,14 +3674,30 @@
           "sp_cost": "1000",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 30",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Install a self-destruct trap"
+              "value": "",
+              "effects": [
+                "Install a self-destruct trap",
+                "Can install up to 1",
+                "The trap detects hidden enemies within 15m and self-destructs towards enemies within 6m",
+                "Applies harmful debuff and Increases cooldown of enemy when hit."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Install a self-destruct trap"
+              "value": "",
+              "effects": [
+                "Install a self-destruct trap",
+                "Can install up to 1",
+                "The trap detects hidden enemies within 15m and self-destructs towards enemies within 6m",
+                "Applies harmful debuff and Increases cooldown of enemy when hit."
+              ]
             }
           ],
           "special": []

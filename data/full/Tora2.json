@@ -90,6 +90,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -136,6 +137,7 @@
         "Penetration": "5+30",
         "Immunity": "5+5"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Near Death",
@@ -150,14 +152,28 @@
           "sp_cost": "150",
           "aggro": "50",
           "skill_type": "Shooting",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "80%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": [
+                "Ignore 60 enemy DEF",
+                "Apply lv.5 [Delight of Vengeance] to the caster when the skill is hit accurately, Max. level 50",
+                "Apply lv.1 [Mark of Vengeance] to the enemy hit, Max. level 50"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3600%"
+              "value": "АТК: 3600%",
+              "effects": [
+                "Ignore 60 enemy DEF",
+                "Apply lv.5 [Delight of Vengeance] to the caster when the skill is hit accurately, Max. level 50",
+                "Apply lv.1 [Mark of Vengeance] to the enemy hit, Max. level 50"
+              ]
             }
           ],
           "special": []
@@ -175,14 +191,30 @@
           "sp_cost": "300",
           "aggro": "134",
           "skill_type": "Shooting",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "80%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "Ignore 50 enemy DEF",
+                "Apply [Darkness] on the enemy by 40% chance",
+                "Apply lv.5 [Delight of Vengeance] to the caster when the skill is hit accurately, Max. level 50",
+                "Apply lv.2 [Mark of Vengeance] to the enemy hit, Max. level 50"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4400%"
+              "value": "АТК: 4400%",
+              "effects": [
+                "Ignore 50 enemy DEF",
+                "Apply [Darkness] on the enemy by 40% chance",
+                "Apply lv.5 [Delight of Vengeance] to the caster when the skill is hit accurately, Max. level 50",
+                "Apply lv.2 [Mark of Vengeance] to the enemy hit, Max. level 50"
+              ]
             }
           ],
           "special": []
@@ -200,14 +232,28 @@
           "sp_cost": "200",
           "aggro": "120",
           "skill_type": "Shooting",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "115%",
+          "heavy_armor_atk": "75%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "Ignore 60 enemy DEF",
+                "Apply lv.5 [Delight of Vengeance] to the caster when the skill is hit accurately, Max. level 50",
+                "Apply lv.2 [Mark of Vengeance] to the enemy hit, Max. level 50"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4800%"
+              "value": "АТК: 4800%",
+              "effects": [
+                "Ignore 60 enemy DEF",
+                "Apply lv.5 [Delight of Vengeance] to the caster when the skill is hit accurately, Max. level 50",
+                "Apply lv.2 [Mark of Vengeance] to the enemy hit, Max. level 50"
+              ]
             }
           ],
           "special": []
@@ -225,14 +271,34 @@
           "sp_cost": "200",
           "aggro": "121",
           "skill_type": "Shooting",
+          "consume_item": "Ancient Star Orb x 15",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "80%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1400%"
+              "value": "АТК: 1400%",
+              "effects": [
+                "Ignore 50 enemy DEF",
+                "Cast again during casting to activate skill",
+                "Increases Knockdown range, time, and damage in proportion to Casting Time",
+                "Damage increases additionally and additional damage against monster when casting until the maximum",
+                "Apply lv.5 [Delight of Vengeance] to the caster when the skill is hit accurately, Max. level 50",
+                "Apply lv.2 [Mark of Vengeance] to the enemy hit, Max. level 50"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2800%"
+              "value": "АТК: 2800%",
+              "effects": [
+                "Ignore 50 enemy DEF",
+                "Cast again during casting to activate skill",
+                "Increases Knockdown range, time, and damage in proportion to Casting Time",
+                "Damage increases additionally and additional damage against monster when casting until the maximum",
+                "Apply lv.5 [Delight of Vengeance] to the caster when the skill is hit accurately, Max. level 50",
+                "Apply lv.2 [Mark of Vengeance] to the enemy hit, Max. level 50"
+              ]
             }
           ],
           "special": []
@@ -250,14 +316,30 @@
           "sp_cost": "250",
           "aggro": "50",
           "skill_type": "Shooting",
+          "consume_item": "Ancient Star Orb x 20",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "80%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "Ignore 55 enemy DEF",
+                "Apply lv.5 [Delight of Vengeance] to the caster when the skill is hit accurately, Max. level 50",
+                "Skill ATK increases in proportion to [Mark of Vengeance] level applied on enemy monster",
+                "Ignore DEF in proportion to [Mark of Vengeance] level applied on enemy PC"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 6000%"
+              "value": "АТК: 6000%",
+              "effects": [
+                "Ignore 55 enemy DEF",
+                "Apply lv.5 [Delight of Vengeance] to the caster when the skill is hit accurately, Max. level 50",
+                "Skill ATK increases in proportion to [Mark of Vengeance] level applied on enemy monster",
+                "Ignore DEF in proportion to [Mark of Vengeance] level applied on enemy PC"
+              ]
             }
           ],
           "special": []

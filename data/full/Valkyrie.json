@@ -85,6 +85,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -129,6 +130,7 @@
         "Penetration": "5+25",
         "Immunity": "10+25"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Kashta",
@@ -143,14 +145,40 @@
           "sp_cost": "300",
           "aggro": "120",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 2",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "50%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1200%"
+              "value": "АТК: 1200%",
+              "effects": [
+                "Ignores 50 DEF",
+                "The further away from the target, the more damage",
+                "With a successful skill during [Queens Wrath], level of [Aradwhas Curse] increases by 1",
+                "Ignores PC enemys DEF in proportion to [Aradwhas Curse] Lv. and Extra [STR]",
+                "Increases Monster Damage enemy in proportion to [Aradwhas Curse] Lv. and (4% of extra [STR])",
+                "With a successful skill during [Aradwhas Curse] Lv.6, [Aradwhas Curse] is lifted",
+                "With a successful skill during [Queens Coldness], level of [Valkyries Curse] increases by 1",
+                "Enemys ability decreases depending on [Valkyries Curse] Lv.",
+                "With a successful skill, Cooldown of [Hoog]/[Pastier]/[Ginnung]/[Fimbul] -2 seconds"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "Ignores 50 DEF",
+                "The further away from the target, the more damage",
+                "With a successful skill during [Queens Wrath], level of [Aradwhas Curse] increases by 1",
+                "Ignores PC enemys DEF in proportion to [Aradwhas Curse] Lv. and Extra [STR]",
+                "Increases Monster Damage enemy in proportion to [Aradwhas Curse] Lv. and (4% of extra [STR])",
+                "With a successful skill during [Aradwhas Curse] Lv.6, [Aradwhas Curse] is lifted",
+                "With a successful skill during [Queens Coldness], level of [Valkyries Curse] increases by 1",
+                "Enemys ability decreases depending on [Valkyries Curse] Lv.",
+                "With a successful skill, Cooldown of [Hoog]/[Pastier]/[Ginnung]/[Fimbul] -2 seconds"
+              ]
             }
           ],
           "special": []
@@ -168,14 +196,40 @@
           "sp_cost": "450",
           "aggro": "250",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "120%",
+          "heavy_armor_atk": "70%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": [
+                "Ignores 70 DEF",
+                "Damage rises in proportion to the number of the attacked",
+                "If its number is more than 50% of Max, damage x1.5 ~ up to x3",
+                "With a successful skill during [Queens Wrath], level of [Aradwhas Curse] increases by 1",
+                "Ignores PC enemys DEF in proportion to [Aradwhas Curse] Lv. and Extra [STR]",
+                "Increases Monster Damage enemy in proportion to [Aradwhas Curse] Lv. and (4% of extra [STR])",
+                "With a successful skill during [Aradwhas Curse] Lv.6, [Aradwhas Curse] is lifted",
+                "With a successful skill during [Queens Coldness], level of [Valkyries Curse] increases by 1",
+                "Enemys ability decreases depending on [Valkyries Curse] Lv."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3600%"
+              "value": "АТК: 3600%",
+              "effects": [
+                "Ignores 70 DEF",
+                "Damage rises in proportion to the number of the attacked",
+                "If its number is more than 50% of Max, damage x1.5 ~ up to x3",
+                "With a successful skill during [Queens Wrath], level of [Aradwhas Curse] increases by 1",
+                "Ignores PC enemys DEF in proportion to [Aradwhas Curse] Lv. and Extra [STR]",
+                "Increases Monster Damage enemy in proportion to [Aradwhas Curse] Lv. and (4% of extra [STR])",
+                "With a successful skill during [Aradwhas Curse] Lv.6, [Aradwhas Curse] is lifted",
+                "With a successful skill during [Queens Coldness], level of [Valkyries Curse] increases by 1",
+                "Enemys ability decreases depending on [Valkyries Curse] Lv."
+              ]
             }
           ],
           "special": []
@@ -193,14 +247,40 @@
           "sp_cost": "550",
           "aggro": "300",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "30%",
+          "light_armor_atk": "120%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2000%"
+              "value": "АТК: 2000%",
+              "effects": [
+                "[Queens Dignity] is applied while casting",
+                "Re-use it during casting to stop",
+                "With the final attack, skill damage is applied",
+                "With a successful skill during [Queens Wrath], level of [Aradwhas Curse] increases by 1",
+                "Ignores PC enemys DEF in proportion to [Aradwhas Curse] Lv. and Extra [STR]",
+                "Increases Monster Damage enemy in proportion to [Aradwhas Curse] Lv. and (4% of extra [STR])",
+                "With a successful skill during [Aradwhas Curse] Lv.6, [Aradwhas Curse] is lifted",
+                "With a successful skill during [Queens Coldness], level of [Valkyries Curse] increases by 1",
+                "Enemys ability decreases depending on [Valkyries Curse] Lv."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4000%"
+              "value": "АТК: 4000%",
+              "effects": [
+                "[Queens Dignity] is applied while casting",
+                "Re-use it during casting to stop",
+                "With the final attack, skill damage is applied",
+                "With a successful skill during [Queens Wrath], level of [Aradwhas Curse] increases by 1",
+                "Ignores PC enemys DEF in proportion to [Aradwhas Curse] Lv. and Extra [STR]",
+                "Increases Monster Damage enemy in proportion to [Aradwhas Curse] Lv. and (4% of extra [STR])",
+                "With a successful skill during [Aradwhas Curse] Lv.6, [Aradwhas Curse] is lifted",
+                "With a successful skill during [Queens Coldness], level of [Valkyries Curse] increases by 1",
+                "Enemys ability decreases depending on [Valkyries Curse] Lv."
+              ]
             }
           ],
           "special": []
@@ -218,14 +298,42 @@
           "sp_cost": "600",
           "aggro": "200",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "115%",
+          "heavy_armor_atk": "60%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "Ignores 60 DEF",
+                "50% chance to inflict [Stun]",
+                "Applies [Queens Protection] to 10 nearby allies",
+                "Increases [Queens Protection]s effectiveness in proportion to ATK",
+                "With a successful skill during [Queens Wrath], level of [Aradwhas Curse] increases by 1",
+                "Ignores PC enemys DEF in proportion to [Aradwhas Curse] Lv. and Extra [STR]",
+                "Increases Monster Damage enemy in proportion to [Aradwhas Curse] Lv. and (4% of extra [STR])",
+                "With a successful skill during [Aradwhas Curse] Lv.6, [Aradwhas Curse] is lifted",
+                "With a successful skill during [Queens Coldness], level of [Valkyries Curse] increases by 1",
+                "Enemys ability decreases depending on [Valkyries Curse] Lv."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 6000%"
+              "value": "АТК: 6000%",
+              "effects": [
+                "Ignores 60 DEF",
+                "50% chance to inflict [Stun]",
+                "Applies [Queens Protection] to 10 nearby allies",
+                "Increases [Queens Protection]s effectiveness in proportion to ATK",
+                "With a successful skill during [Queens Wrath], level of [Aradwhas Curse] increases by 1",
+                "Ignores PC enemys DEF in proportion to [Aradwhas Curse] Lv. and Extra [STR]",
+                "Increases Monster Damage enemy in proportion to [Aradwhas Curse] Lv. and (4% of extra [STR])",
+                "With a successful skill during [Aradwhas Curse] Lv.6, [Aradwhas Curse] is lifted",
+                "With a successful skill during [Queens Coldness], level of [Valkyries Curse] increases by 1",
+                "Enemys ability decreases depending on [Valkyries Curse] Lv."
+              ]
             }
           ],
           "special": []
@@ -243,14 +351,38 @@
           "sp_cost": "700",
           "aggro": "200",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 8",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "70%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "Ignores 70 DEF",
+                "The further away from the target, the more damage",
+                "With a successful skill during [Queens Wrath], level of [Aradwhas Curse] increases by 1",
+                "Ignores PC enemys DEF in proportion to [Aradwhas Curse] Lv. and Extra [STR]",
+                "Increases Monster Damage enemy in proportion to [Aradwhas Curse] Lv. and (4% of extra [STR])",
+                "With a successful skill during [Aradwhas Curse] Lv.6, [Aradwhas Curse] is lifted",
+                "With a successful skill during [Queens Coldness], level of [Valkyries Curse] increases by 1",
+                "Enemys ability decreases depending on [Valkyries Curse] Lv."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 6000%"
+              "value": "АТК: 6000%",
+              "effects": [
+                "Ignores 70 DEF",
+                "The further away from the target, the more damage",
+                "With a successful skill during [Queens Wrath], level of [Aradwhas Curse] increases by 1",
+                "Ignores PC enemys DEF in proportion to [Aradwhas Curse] Lv. and Extra [STR]",
+                "Increases Monster Damage enemy in proportion to [Aradwhas Curse] Lv. and (4% of extra [STR])",
+                "With a successful skill during [Aradwhas Curse] Lv.6, [Aradwhas Curse] is lifted",
+                "With a successful skill during [Queens Coldness], level of [Valkyries Curse] increases by 1",
+                "Enemys ability decreases depending on [Valkyries Curse] Lv."
+              ]
             }
           ],
           "special": []

@@ -120,6 +120,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -160,6 +161,7 @@
         "Critical": "+8",
         "Penetration": "8"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Sharp Eyes",
@@ -174,26 +176,63 @@
           "sp_cost": "100",
           "aggro": "0",
           "skill_type": "Shooting",
+          "consume_item": "Mithridart x 3",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration : 330 sec"
+              "value": "",
+              "effects": [
+                "Duration : 330 sec",
+                "Accuracy +6",
+                "ATK SPD +1%",
+                "Penetration : +2"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration : 600 sec"
+              "value": "",
+              "effects": [
+                "Duration : 600 sec",
+                "Accuracy +15",
+                "ATK SPD +10%",
+                "Penetration : +20"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration : 630 sec"
+              "value": "",
+              "effects": [
+                "Duration : 630 sec",
+                "Accuracy +16",
+                "ATK SPD +11%",
+                "A.R. +1",
+                "Penetration : +22"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration : 660 sec"
+              "value": "",
+              "effects": [
+                "Duration : 660 sec",
+                "Accuracy +17",
+                "ATK SPD +12%",
+                "A.R. +1",
+                "Penetration : +24"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration : 690 sec"
+              "value": "",
+              "effects": [
+                "Duration : 690 sec",
+                "Accuracy +18",
+                "ATK SPD +13%",
+                "A.R. +1",
+                "Penetration : +26"
+              ]
             }
           ],
           "special": []
@@ -211,14 +250,24 @@
           "sp_cost": "150",
           "aggro": "42",
           "skill_type": "Shooting",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 500%"
+              "value": "АТК: 500%",
+              "effects": [
+                "50% chance to inflict [Mortal Wound] on enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1000%"
+              "value": "АТК: 1000%",
+              "effects": [
+                "50% chance to inflict [Mortal Wound] on enemy"
+              ]
             }
           ],
           "special": []
@@ -236,14 +285,24 @@
           "sp_cost": "200",
           "aggro": "47",
           "skill_type": "Shooting",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 600%"
+              "value": "АТК: 600%",
+              "effects": [
+                "50% chance to inflict [Slow]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1200%"
+              "value": "АТК: 1200%",
+              "effects": [
+                "50% chance to inflict [Slow]"
+              ]
             }
           ],
           "special": []
@@ -261,14 +320,20 @@
           "sp_cost": "250",
           "aggro": "35",
           "skill_type": "Shooting",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 900%"
+              "value": "АТК: 900%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": []
             }
           ],
           "special": []
@@ -286,14 +351,24 @@
           "sp_cost": "300",
           "aggro": "130",
           "skill_type": "Shooting",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1200%"
+              "value": "АТК: 1200%",
+              "effects": [
+                "10% chance to inflict [Hold]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "10% chance to inflict [Hold]"
+              ]
             }
           ],
           "special": []
@@ -341,6 +416,7 @@
         "Penetration": "25",
         "Immunity": "10"
       },
+      "consume": "Steel Bolt x 2",
       "skills": [
         {
           "name": "Shining Machine Shot",
@@ -355,14 +431,26 @@
           "sp_cost": "150",
           "aggro": "138",
           "skill_type": "Shooting",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "Increased damage during [Silent Move] status",
+                "Ignores enermy DEF by 40"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4400%"
+              "value": "АТК: 4400%",
+              "effects": [
+                "Increased damage during [Silent Move] status",
+                "Ignores enermy DEF by 40"
+              ]
             }
           ],
           "special": []
@@ -380,14 +468,28 @@
           "sp_cost": "250",
           "aggro": "73",
           "skill_type": "Shooting",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "Ignores enemy DEF by 50",
+                "Deals [Burn] with 100% chance",
+                "Increased damage if [Silent Move] is activated"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4800%"
+              "value": "АТК: 4800%",
+              "effects": [
+                "Ignores enemy DEF by 50",
+                "Deals [Burn] with 100% chance",
+                "Increased damage if [Silent Move] is activated"
+              ]
             }
           ],
           "special": []
@@ -405,14 +507,28 @@
           "sp_cost": "340",
           "aggro": "48",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bolt x 1",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2500%"
+              "value": "АТК: 2500%",
+              "effects": [
+                "Ignores DEF 30",
+                "100% chance to inflict [Drain] on the enemy",
+                "Increased damage during [Silent Move] status"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5000%"
+              "value": "АТК: 5000%",
+              "effects": [
+                "Ignores DEF 30",
+                "100% chance to inflict [Drain] on the enemy",
+                "Increased damage during [Silent Move] status"
+              ]
             }
           ],
           "special": []
@@ -430,14 +546,28 @@
           "sp_cost": "540",
           "aggro": "134",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bolt x 15",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "125%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "Ignores enemy DEF by 60",
+                "Deals [Burn] with 100% chance",
+                "Increased damage if [Silent Move] is activated"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 6000%"
+              "value": "АТК: 6000%",
+              "effects": [
+                "Ignores enemy DEF by 60",
+                "Deals [Burn] with 100% chance",
+                "Increased damage if [Silent Move] is activated"
+              ]
             }
           ],
           "special": []
@@ -455,14 +585,26 @@
           "sp_cost": "540",
           "aggro": "185",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bolt x 3",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "175%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "Ignores enemy DEF by 60",
+                "Increased damage during [Silent Move] status"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 6000%"
+              "value": "АТК: 6000%",
+              "effects": [
+                "Ignores enemy DEF by 60",
+                "Increased damage during [Silent Move] status"
+              ]
             }
           ],
           "special": []

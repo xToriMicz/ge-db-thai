@@ -114,6 +114,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -152,6 +153,7 @@
         "ATK SPD": "+16%",
         "Critical": "+20"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Fente",
@@ -166,14 +168,20 @@
           "sp_cost": "100",
           "aggro": "92",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 406%"
+              "value": "АТК: 406%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 811%"
+              "value": "АТК: 811%",
+              "effects": []
             }
           ],
           "special": []
@@ -191,14 +199,24 @@
           "sp_cost": "200",
           "aggro": "141",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 652%"
+              "value": "АТК: 652%",
+              "effects": [
+                "Double Damage to enemies with [Soft Armor]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1304%"
+              "value": "АТК: 1304%",
+              "effects": [
+                "Double Damage to enemies with [Soft Armor]"
+              ]
             }
           ],
           "special": [
@@ -219,14 +237,20 @@
           "sp_cost": "250",
           "aggro": "119",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 513%"
+              "value": "АТК: 513%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1026%"
+              "value": "АТК: 1026%",
+              "effects": []
             }
           ],
           "special": []
@@ -244,14 +268,20 @@
           "sp_cost": "300",
           "aggro": "267",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1280%"
+              "value": "АТК: 1280%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2560%"
+              "value": "АТК: 2560%",
+              "effects": []
             }
           ],
           "special": []
@@ -297,6 +327,7 @@
         "Penetration": "15+25",
         "Immunity": "10+10"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Counter Step",
@@ -311,14 +342,28 @@
           "sp_cost": "300",
           "aggro": "30",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "120%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 800%"
+              "value": "АТК: 800%",
+              "effects": [
+                "Ignores enemy DEF by 40",
+                "1.5~3 times damage in [Awaken] status",
+                "Ignores enemy DEF by 50 additionally after 3rd skill accuracy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1600%"
+              "value": "АТК: 1600%",
+              "effects": [
+                "Ignores enemy DEF by 40",
+                "1.5~3 times damage in [Awaken] status",
+                "Ignores enemy DEF by 50 additionally after 3rd skill accuracy"
+              ]
             }
           ],
           "special": []
@@ -336,14 +381,30 @@
           "sp_cost": "400",
           "aggro": "110",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 3",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 400%"
+              "value": "АТК: 400%",
+              "effects": [
+                "Melee Fixed damage",
+                "100% chance to impose [Voidness] on enemy",
+                "Ignores enemys Abnormal state RES",
+                "With Skill accuracy x3, damage +20%."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 800%"
+              "value": "АТК: 800%",
+              "effects": [
+                "Melee Fixed damage",
+                "100% chance to impose [Voidness] on enemy",
+                "Ignores enemys Abnormal state RES",
+                "With Skill accuracy x3, damage +20%."
+              ]
             }
           ],
           "special": []
@@ -361,14 +422,30 @@
           "sp_cost": "500",
           "aggro": "160",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "150%",
+          "light_armor_atk": "120%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1600%"
+              "value": "АТК: 1600%",
+              "effects": [
+                "Ignores enemy DEF by 50",
+                "Double damage to [human type] enemy",
+                "60% chance to inflict [Stun] on enemy",
+                "Ignores enemy DEF by 50 additionally after 3rd skill accuracy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3200%"
+              "value": "АТК: 3200%",
+              "effects": [
+                "Ignores enemy DEF by 50",
+                "Double damage to [human type] enemy",
+                "60% chance to inflict [Stun] on enemy",
+                "Ignores enemy DEF by 50 additionally after 3rd skill accuracy"
+              ]
             }
           ],
           "special": []
@@ -386,14 +463,32 @@
           "sp_cost": "400",
           "aggro": "175",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "120%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "150%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1820%"
+              "value": "АТК: 1820%",
+              "effects": [
+                "Ignores enemys DEF by 70",
+                "Ignores Evasion",
+                "Damage to Evasion type enemies +1% per 1 evasion",
+                "In [Awakening] state, damage x1.5~3",
+                "With Skill accuracy 3 times, extra ignores enemys DEF by 50"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3640%"
+              "value": "АТК: 3640%",
+              "effects": [
+                "Ignores enemys DEF by 70",
+                "Ignores Evasion",
+                "Damage to Evasion type enemies +1% per 1 evasion",
+                "In [Awakening] state, damage x1.5~3",
+                "With Skill accuracy 3 times, extra ignores enemys DEF by 50"
+              ]
             }
           ],
           "special": []
@@ -404,21 +499,39 @@
           "description": "Launch fatal energy to enemies surrounding a targeted enemy.",
           "target": "Up to 5 enemies 12m away and within 3m radius",
           "casting_time": "1.233 sec.",
-          "cooldown": "32 sec.",
+          "cooldown": "25 sec.",
           "duration": "7.266 sec.",
           "hits_flying": "Yes",
           "knock_down": "No",
           "sp_cost": "700",
           "aggro": "180",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 8",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1500%"
+              "value": "АТК: 1500%",
+              "effects": [
+                "Melee Fixed damage",
+                "Ignores Evasion",
+                "With casting in [Awakening] state, invincible state for 7 sec.",
+                "Damage x1.5~3 in [Awakening] state",
+                "With Skill accuracy x3, damage +20%."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "Melee Fixed damage",
+                "Ignores Evasion",
+                "With casting in [Awakening] state, invincible state for 7 sec.",
+                "Damage x1.5~3 in [Awakening] state",
+                "With Skill accuracy x3, damage +20%."
+              ]
             }
           ],
           "special": []
@@ -469,6 +582,7 @@
         "Evasion": "+25",
         "Immunity": "5+10"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Principal",
@@ -483,26 +597,90 @@
           "sp_cost": "600",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 15",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration : 30 sec"
+              "value": "",
+              "effects": [
+                "Duration : 30 sec",
+                "Monster Damage : +2%",
+                "ATK : +2%",
+                "ATK SPD : +2%",
+                "Movement Speed : +6%",
+                "Max HP : +3%",
+                "Accuracy : +1",
+                "Immunity : +1",
+                "Penetration : +1"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration : 300 sec"
+              "value": "",
+              "effects": [
+                "Duration : 300 sec",
+                "Monster Damage : +20%",
+                "ATK : +20%",
+                "ATK SPD : +20%",
+                "Movement Speed : +15%",
+                "Max HP : +30%",
+                "Accuracy : +10",
+                "Immunity : +10",
+                "Penetration : +10"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration : 330 sec"
+              "value": "",
+              "effects": [
+                "Duration : 330 sec",
+                "Monster Damage : +22%",
+                "D.R. : +1",
+                "ATK : +22%",
+                "ATK SPD : +22%",
+                "Movement Speed : +16%",
+                "Max HP : +33%",
+                "Accuracy : +11",
+                "Immunity : +11",
+                "Penetration : +11"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration : 360 sec"
+              "value": "",
+              "effects": [
+                "Duration : 360 sec",
+                "Monster Damage : +24%",
+                "A.R. : +1",
+                "D.R. : +1",
+                "ATK : +24%",
+                "ATK SPD : +24%",
+                "Movement Speed : +17%",
+                "Max HP : +36%",
+                "Accuracy : +12",
+                "Immunity : +12",
+                "Penetration : +12"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration : 390 sec"
+              "value": "",
+              "effects": [
+                "Duration : 390 sec",
+                "Monster Damage : +26%",
+                "A.R. : +1",
+                "D.R. : +1",
+                "ATK : +26%",
+                "ATK SPD : +26%",
+                "Movement Speed : +18%",
+                "Max HP : +39%",
+                "Accuracy : +13",
+                "Immunity : +13",
+                "Penetration : +13"
+              ]
             }
           ],
           "special": []
@@ -520,26 +698,66 @@
           "sp_cost": "500",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 30 sec."
+              "value": "",
+              "effects": [
+                "Duration: 30 sec.",
+                "Melee Stance ATK+6%",
+                "DEF+2",
+                "Max HP+2%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 300 sec."
+              "value": "",
+              "effects": [
+                "Duration: 300 sec.",
+                "Melee Stance ATK+15%",
+                "DEF+20",
+                "Max HP+20%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 330 sec."
+              "value": "",
+              "effects": [
+                "Duration: 330 sec.",
+                "Melee Stance ATK+16%",
+                "DEF+22",
+                "Max HP+33%",
+                "D.R. +1",
+                "Immunity+6"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 360 sec."
+              "value": "",
+              "effects": [
+                "Duration: 360 sec.",
+                "Melee Stance ATK+17%",
+                "DEF+24",
+                "Max HP+36%",
+                "D.R. +1",
+                "Immunity+7"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 390 sec."
+              "value": "",
+              "effects": [
+                "Duration: 390 sec.",
+                "Melee Stance ATK+18%",
+                "DEF+26",
+                "Max HP+39%",
+                "D.R. +1",
+                "Immunity+7"
+              ]
             }
           ],
           "special": []
@@ -557,26 +775,66 @@
           "sp_cost": "500",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 30 sec."
+              "value": "",
+              "effects": [
+                "Duration: 30 sec.",
+                "Magic Stance ATK+6%",
+                "Max SP+11%",
+                "Casting time -2%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 300 sec."
+              "value": "",
+              "effects": [
+                "Duration: 300 sec.",
+                "Magic Stance ATK+15%",
+                "Max SP+20%",
+                "Casting time -20%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 330 sec."
+              "value": "",
+              "effects": [
+                "Duration: 330 sec.",
+                "Magic Stance ATK+16%",
+                "Max SP+21%",
+                "Casting time -22%",
+                "A.R.+1",
+                "Magic Penetration+6"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 360 sec."
+              "value": "",
+              "effects": [
+                "Duration: 360 sec.",
+                "Magic Stance ATK+17%",
+                "Max SP+22%",
+                "Casting time -24%",
+                "A.R.+1",
+                "Magic Penetration+7"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 390 sec."
+              "value": "",
+              "effects": [
+                "Duration: 390 sec.",
+                "Magic Stance ATK+18%",
+                "Max SP+23%",
+                "Casting time -26%",
+                "A.R.+1",
+                "Magic Penetration+7"
+              ]
             }
           ],
           "special": []
@@ -594,26 +852,71 @@
           "sp_cost": "500",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration30 sec."
+              "value": "",
+              "effects": [
+                "Duration30 sec.",
+                "Shoot Stance ATK+6%",
+                "Attack SPD+6%",
+                "Accuracy+6",
+                "Critical Rate+2"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration300 sec."
+              "value": "",
+              "effects": [
+                "Duration300 sec.",
+                "Shoot Stance ATK+15%",
+                "Attack SPD+15%",
+                "Accuracy+15",
+                "Critical Rate+20"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration330 sec."
+              "value": "",
+              "effects": [
+                "Duration330 sec.",
+                "Shoot Stance ATK+16%",
+                "Attack SPD+16%",
+                "Accuracy+16",
+                "Critical Rate+22",
+                "A.R.+1",
+                "Physical Penetration+6"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration360 sec."
+              "value": "",
+              "effects": [
+                "Duration360 sec.",
+                "Shoot Stance ATK+17%",
+                "Attack SPD+17%",
+                "Accuracy+17",
+                "Critical Rate+24",
+                "A.R.+1",
+                "Physical Penetration+7"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration390 sec."
+              "value": "",
+              "effects": [
+                "Duration390 sec.",
+                "Shoot Stance ATK+18%",
+                "Attack SPD+18%",
+                "Accuracy+18",
+                "Critical Rate+26",
+                "A.R.+1",
+                "Physical Penetration+7"
+              ]
             }
           ],
           "special": []
@@ -631,26 +934,86 @@
           "sp_cost": "300",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration : 1.5 secs."
+              "value": "",
+              "effects": [
+                "Duration : 1.5 secs.",
+                "[Darkness] Debuff RES +1%",
+                "Invisibility Detection",
+                "Cancel [Deep Sleep]",
+                "Cancel [Crescent Curse]",
+                "Cancel [Pierced Wound]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration : 15 secs."
+              "value": "",
+              "effects": [
+                "Duration : 15 secs.",
+                "[Darkness] Debuff RES +10%",
+                "Invisibility Detection",
+                "Cancel [Deep Sleep]",
+                "Cancel [Crescent Curse]",
+                "Cancel [Pierced Wound]",
+                "Cancel [Gravitation]",
+                "Cancel [Blood Curse]",
+                "Cancel [Gloomy Present]",
+                "Cancel [Whole Cancellation]"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration : 30 secs."
+              "value": "",
+              "effects": [
+                "Duration : 30 secs.",
+                "[Darkness] Debuff RES +11%",
+                "Invisibility Detection",
+                "Cancel [Deep Sleep]",
+                "Cancel [Crescent Curse]",
+                "Cancel [Pierced Wound]",
+                "Cancel [Gravitation]",
+                "Cancel [Blood Curse]",
+                "Cancel [Gloomy Present]",
+                "Cancel [Whole Cancellation]"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration : 30 secs."
+              "value": "",
+              "effects": [
+                "Duration : 30 secs.",
+                "[Darkness] Debuff RES +12%",
+                "Invisibility Detection",
+                "Cancel [Deep Sleep]",
+                "Cancel [Crescent Curse]",
+                "Cancel [Pierced Wound]",
+                "Cancel [Gravitation]",
+                "Cancel [Blood Curse]",
+                "Cancel [Gloomy Present]",
+                "Cancel [Whole Cancellation]"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration : 30 secs."
+              "value": "",
+              "effects": [
+                "Duration : 30 secs.",
+                "[Darkness] Debuff RES +13%",
+                "Invisibility Detection",
+                "Cancel [Deep Sleep]",
+                "Cancel [Crescent Curse]",
+                "Cancel [Pierced Wound]",
+                "Cancel [Gravitation]",
+                "Cancel [Blood Curse]",
+                "Cancel [Gloomy Present]",
+                "Cancel [Whole Cancellation]"
+              ]
             }
           ],
           "special": []

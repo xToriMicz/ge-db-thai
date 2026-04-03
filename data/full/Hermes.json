@@ -91,6 +91,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -134,6 +135,7 @@
         "Penetration": "10+15",
         "Immunity": "2+10"
       },
+      "consume": "Metal Shell Ammo x 1",
       "skills": [
         {
           "name": "Rikenas",
@@ -148,14 +150,30 @@
           "sp_cost": "380",
           "aggro": "60",
           "skill_type": "Shooting",
+          "consume_item": "Metal Shell Ammo x 1",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "125%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 400%"
+              "value": "АТК: 400%",
+              "effects": [
+                "Ignores enemys DEF by 100",
+                "[Sainquis Cynical Smile] Lv. +1",
+                "Skill Damage increases by 3x",
+                "100% Chance to inflict [Mortal Wound]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 800%"
+              "value": "АТК: 800%",
+              "effects": [
+                "Ignores enemys DEF by 100",
+                "[Sainquis Cynical Smile] Lv. +1",
+                "Skill Damage increases by 3x",
+                "100% Chance to inflict [Mortal Wound]"
+              ]
             }
           ],
           "special": []
@@ -173,14 +191,34 @@
           "sp_cost": "620",
           "aggro": "160",
           "skill_type": "Shooting",
+          "consume_item": "Metal Shell Ammo x 1",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "120%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 700%"
+              "value": "АТК: 700%",
+              "effects": [
+                "Ignores enemys DEF by 80s",
+                "[Sainquis Cynical Smile] Lv. +2",
+                "Additional effect according to casting time",
+                "Max Casting: Range of skill increases by 2x, and removes enemy [Invulnerable]",
+                "Ignores enemys DEF in proportion to the distance between target and caster",
+                "Damage increases in proportion to the distance between target and caster"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1400%"
+              "value": "АТК: 1400%",
+              "effects": [
+                "Ignores enemys DEF by 80s",
+                "[Sainquis Cynical Smile] Lv. +2",
+                "Additional effect according to casting time",
+                "Max Casting: Range of skill increases by 2x, and removes enemy [Invulnerable]",
+                "Ignores enemys DEF in proportion to the distance between target and caster",
+                "Damage increases in proportion to the distance between target and caster"
+              ]
             }
           ],
           "special": [
@@ -201,14 +239,30 @@
           "sp_cost": "760",
           "aggro": "104",
           "skill_type": "Shooting",
+          "consume_item": "Metal Shell Ammo x 3",
+          "soft_armor_atk": "70%",
+          "heavy_armor_atk": "125%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1100%"
+              "value": "АТК: 1100%",
+              "effects": [
+                "Ignores enemys DEF by 90",
+                "Applies [Sight of the Sniper] on caster upon successful hit",
+                "[Sight of the Sniper] Detect invisible enemies nearby, and apply [Fear]",
+                "100% Chance to remove [Invulnerable] status from enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "Ignores enemys DEF by 90",
+                "Applies [Sight of the Sniper] on caster upon successful hit",
+                "[Sight of the Sniper] Detect invisible enemies nearby, and apply [Fear]",
+                "100% Chance to remove [Invulnerable] status from enemy"
+              ]
             }
           ],
           "special": []
@@ -226,14 +280,30 @@
           "sp_cost": "400",
           "aggro": "121",
           "skill_type": "Shooting",
+          "consume_item": "Metal Shell Ammo x 1",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1200%"
+              "value": "АТК: 1200%",
+              "effects": [
+                "Ignores enemys DEF by 100",
+                "[Sainquis Cynical Smile] Lv. +1",
+                "Skill Damage increases by 3x",
+                "Skill Damage additionally increases according to the range between targets and caster"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "Ignores enemys DEF by 100",
+                "[Sainquis Cynical Smile] Lv. +1",
+                "Skill Damage increases by 3x",
+                "Skill Damage additionally increases according to the range between targets and caster"
+              ]
             }
           ],
           "special": []
@@ -242,7 +312,7 @@
           "name": "Heavy Pressure",
           "image": "wsp_heavypressure.jpg",
           "description": "Fire a bullet to follow the target until the very end, offering eternal rest.",
-          "target": "",
+          "target": "Max Range 16m/ Radius 2m/ Up to 3 enemies",
           "casting_time": "5 sec.",
           "cooldown": "0 sec.",
           "duration": "2.52 sec.",
@@ -251,14 +321,34 @@
           "sp_cost": "620",
           "aggro": "160",
           "skill_type": "Shooting",
+          "consume_item": "Metal Shell Ammo x 4",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1500%"
+              "value": "АТК: 1500%",
+              "effects": [
+                "Ignores enemys DEF by 120",
+                "[Sainquis Cynical Smile] Lv. +5",
+                "Additional effect according to casting time",
+                "Max Casting: Range of skill increases by 2x, and removes enemy [Invulnerable]",
+                "Ignores enemys DEF in proportion to the distance between target and caster",
+                "Damage increases in proportion to the distance between target and caster"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "Ignores enemys DEF by 120",
+                "[Sainquis Cynical Smile] Lv. +5",
+                "Additional effect according to casting time",
+                "Max Casting: Range of skill increases by 2x, and removes enemy [Invulnerable]",
+                "Ignores enemys DEF in proportion to the distance between target and caster",
+                "Damage increases in proportion to the distance between target and caster"
+              ]
             }
           ],
           "special": [

@@ -42,8 +42,8 @@
           "Duration: 300 seconds",
           "Doubles normal attack range",
           "Enhances normal attack damage based on critical damage increase (up to 2x)",
-          "Increases ATK by an additional [Strength]*0.2%",
-          "Increases defense ignore by an additional [Agility]*0.1%",
+          "Increases ATK by an additional [DEX]*0.2%",
+          "Increases defense ignore by an additional [Agility]*0.07%",
           "Physical Penetration +10",
           "Damage to Monsters +50%"
         ]
@@ -94,6 +94,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -139,6 +140,7 @@
         "Penetration": "5+15",
         "Immunity": "10+5"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Albireo",
@@ -147,32 +149,80 @@
           "target": "",
           "casting_time": "Instant",
           "cooldown": "20 sec.",
-          "duration": "32 seconds",
+          "duration": "5MinutesA.R. +2",
           "hits_flying": "Yes",
           "knock_down": "No",
           "sp_cost": "850",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 12",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 32 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 5Minutes",
+                "A.R. +2",
+                "Monster ATK +100%",
+                "ATK +1%",
+                "Critical Damage +5%",
+                "Agility +1DEX +1",
+                "Ignores magical skill attacks from enemy PCs that exceed own Max HP"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 32 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 5Minutes",
+                "A.R. +2",
+                "Monster ATK +100%",
+                "ATK +10%",
+                "Critical Damage +50%",
+                "Agility +10DEX +10",
+                "Ignores magical skill attacks from enemy PCs that exceed own Max HP"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 32 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 5Minutes",
+                "A.R. +2",
+                "Monster ATK +100%",
+                "ATK +11%",
+                "Critical Damage +55%",
+                "Agility +11DEX +11",
+                "Ignores magical skill attacks from enemy PCs that exceed own Max HP"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 32 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 5Minutes",
+                "A.R. +2",
+                "Monster ATK +100%",
+                "ATK +12%",
+                "Critical Damage +60%",
+                "Agility +12DEX +12",
+                "Ignores magical skill attacks from enemy PCs that exceed own Max HP"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 32 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 5MinutesA.R. +2",
+                "Monster ATK +100%",
+                "ATK +13%",
+                "Critical Damage +65%",
+                "Agility +13DEX +13",
+                "Ignores magical skill attacks from enemy PCs that exceed own Max HP"
+              ]
             }
           ],
           "special": []
@@ -181,7 +231,7 @@
           "name": "Pawaris",
           "image": "zhrt_fawaris.jpg",
           "description": "Creates a sandstorm that crushes enemies on the ground.",
-          "target": "",
+          "target": "Max Range: 12m / Radius: 5m / Max 10 enemies",
           "casting_time": "Instant",
           "cooldown": "6 sec.",
           "duration": "3.1 sec.",
@@ -190,14 +240,28 @@
           "sp_cost": "360",
           "aggro": "30",
           "skill_type": "Shooting",
+          "consume_item": "Ancient Star Orb x 14",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "90%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": [
+                "30% chance to inflict [Prophecy] on enemy PC upon hit",
+                "Deals double skill damage to aerial enemies",
+                "Deals double skill damage when used in [Stealth]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3600%"
+              "value": "АТК: 3600%",
+              "effects": [
+                "30% chance to inflict [Prophecy] on enemy PC upon hit",
+                "Deals double skill damage to aerial enemies",
+                "Deals double skill damage when used in [Stealth]"
+              ]
             }
           ],
           "special": []
@@ -215,14 +279,28 @@
           "sp_cost": "550",
           "aggro": "30",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 17",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "90%",
+          "light_armor_atk": "120%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2500%"
+              "value": "АТК: 2500%",
+              "effects": [
+                "30% chance to inflict [Seal] on enemy PC upon hit",
+                "Ignores evasion",
+                "Deals double skill damage when used in [Stealth]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5000%"
+              "value": "АТК: 5000%",
+              "effects": [
+                "30% chance to inflict [Seal] on enemy PC upon hit",
+                "Ignores evasion",
+                "Deals double skill damage when used in [Stealth]"
+              ]
             }
           ],
           "special": []
@@ -240,14 +318,34 @@
           "sp_cost": "550",
           "aggro": "0",
           "skill_type": "Build",
+          "consume_item": "Ancient Star Orb x 33",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Summons ["
+              "value": "",
+              "effects": [
+                "Summons [Daneves Illusion] at a designated location within a 5m radius of the caster",
+                "Applies [Will of Bakir] when [Daneves Illusion] is present",
+                "Grants [Stealth Art] proportional to skill level when cast",
+                "Additional bonuses to the stats of the summoned [Daneves Illusion] based on skill level",
+                "Additional bonuses to immunity, max HP, defense, and elemental resistance proportional to the casters total [Strength]",
+                "Additional defense level bonus proportional to the casters total [Strength]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Summons ["
+              "value": "",
+              "effects": [
+                "Summons [Daneves Illusion] at a designated location within a 5m radius of the caster",
+                "Applies [Will of Bakir] when [Daneves Illusion] is present",
+                "Grants [Stealth Art] proportional to skill level when cast",
+                "Additional bonuses to the stats of the summoned [Daneves Illusion] based on skill level",
+                "Additional bonuses to immunity, max HP, defense, and elemental resistance proportional to the casters total [Strength]",
+                "Additional defense level bonus proportional to the casters total [Strength]"
+              ]
             }
           ],
           "special": [
@@ -272,14 +370,28 @@
           "sp_cost": "950",
           "aggro": "30",
           "skill_type": "Shooting",
+          "consume_item": "Ancient Star Orb x 21",
+          "soft_armor_atk": "85%",
+          "heavy_armor_atk": "85%",
+          "light_armor_atk": "135%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2800%"
+              "value": "АТК: 2800%",
+              "effects": [
+                "30% chance to inflict [Shackles] on enemy PC upon hit",
+                "Deals triple skill damage when hitting casting enemies",
+                "Deals double skill damage when used in [Stealth], increases knockdown time when hitting aerial enemies"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5600%"
+              "value": "АТК: 5600%",
+              "effects": [
+                "30% chance to inflict [Shackles] on enemy PC upon hit",
+                "Deals triple skill damage when hitting casting enemies",
+                "Deals double skill damage when used in [Stealth], increases knockdown time when hitting aerial enemies"
+              ]
             }
           ],
           "special": []

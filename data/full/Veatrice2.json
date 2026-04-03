@@ -90,6 +90,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -133,6 +134,7 @@
         "Penetration": "5+25",
         "Immunity": "5+10"
       },
+      "consume": "Elemental Sphere x 2",
       "skills": [
         {
           "name": "Return Stroke",
@@ -147,14 +149,36 @@
           "sp_cost": "200",
           "aggro": "0",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1500%"
+              "value": "АТК: 1500%",
+              "effects": [
+                "20% chance to inflict [Electric Shock]",
+                "[Red Lightning] level +1 with a successful hit",
+                "Apply [Red Lightning - Activate] to caster when [Red Lightning] is level 5",
+                "Apply [Lightning Field] to caster during [Red Lightning - Activate]",
+                "Recharge Duration: 20 seconds",
+                "Can be used maximum 3 times",
+                "Recharges after using 1 time"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "20% chance to inflict [Electric Shock]",
+                "[Red Lightning] level +1 with a successful hit",
+                "Apply [Red Lightning - Activate] to caster when [Red Lightning] is level 5",
+                "Apply [Lightning Field] to caster during [Red Lightning - Activate]",
+                "Recharge Duration: 20 seconds",
+                "Can be used maximum 3 times",
+                "Recharges after using 1 time"
+              ]
             }
           ],
           "special": []
@@ -172,14 +196,34 @@
           "sp_cost": "250",
           "aggro": "105",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": [
+                "40% chance to inflict [Electric Burn]",
+                "[Red Lightning] level +1 with a successful hit",
+                "Apply [Red Lightning - Activate] to caster when [Red Lightning] is level 5",
+                "Skill damage increases by (2% of extra [INT]) during [Red Lightning - Activate]",
+                "Ignore monsters Immunity by (30% of extra [INT]) during [Red Lightning - Activate]",
+                "[Red Lightning - Activate] amount decreases when using [Electrocution] during [Red Lightning - Activate]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3600%"
+              "value": "АТК: 3600%",
+              "effects": [
+                "40% chance to inflict [Electric Burn]",
+                "[Red Lightning] level +1 with a successful hit",
+                "Apply [Red Lightning - Activate] to caster when [Red Lightning] is level 5",
+                "Skill damage increases by (2% of extra [INT]) during [Red Lightning - Activate]",
+                "Ignore monsters Immunity by (30% of extra [INT]) during [Red Lightning - Activate]",
+                "[Red Lightning - Activate] amount decreases when using [Electrocution] during [Red Lightning - Activate]"
+              ]
             }
           ],
           "special": []
@@ -197,14 +241,30 @@
           "sp_cost": "500",
           "aggro": "200",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "130%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1600%"
+              "value": "АТК: 1600%",
+              "effects": [
+                "40% chance to inflict [Electric Burn]",
+                "[Red Lightning] level +1 with a successful hit",
+                "Apply [Red Lightning - Activate] to caster when [Red Lightning] is level 5",
+                "Apply [Lightning Field] to caster during [Red Lightning - Activate]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3200%"
+              "value": "АТК: 3200%",
+              "effects": [
+                "40% chance to inflict [Electric Burn]",
+                "[Red Lightning] level +1 with a successful hit",
+                "Apply [Red Lightning - Activate] to caster when [Red Lightning] is level 5",
+                "Apply [Lightning Field] to caster during [Red Lightning - Activate]"
+              ]
             }
           ],
           "special": []
@@ -222,14 +282,32 @@
           "sp_cost": "400",
           "aggro": "45",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "70%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "130%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1900%"
+              "value": "АТК: 1900%",
+              "effects": [
+                "20% chance to inflict [Electric Shock]",
+                "[Red Lightning] level +2 with a successful hit",
+                "Apply [Red Lightning - Activate] to caster when [Red Lightning] is level 5",
+                "Apply [Lightning Field] to caster during [Red Lightning - Activate]",
+                "Increases skill damage inversely proportional to the amount of targets"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3800%"
+              "value": "АТК: 3800%",
+              "effects": [
+                "20% chance to inflict [Electric Shock]",
+                "[Red Lightning] level +2 with a successful hit",
+                "Apply [Red Lightning - Activate] to caster when [Red Lightning] is level 5",
+                "Apply [Lightning Field] to caster during [Red Lightning - Activate]",
+                "Increases skill damage inversely proportional to the amount of targets"
+              ]
             }
           ],
           "special": []
@@ -247,14 +325,32 @@
           "sp_cost": "500",
           "aggro": "200",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 15",
+          "soft_armor_atk": "55%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "145%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1600%"
+              "value": "АТК: 1600%",
+              "effects": [
+                "20% chance to inflict [Electric Shock]",
+                "[Red Lightning] level +2 with a successful hit",
+                "Apply [Red Lightning - Activate] to caster when [Red Lightning] is level 5",
+                "Apply [Lightning Field] to caster during [Red Lightning - Activate]",
+                "Increases skill damage proportional to the distance from the target"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3200%"
+              "value": "АТК: 3200%",
+              "effects": [
+                "20% chance to inflict [Electric Shock]",
+                "[Red Lightning] level +2 with a successful hit",
+                "Apply [Red Lightning - Activate] to caster when [Red Lightning] is level 5",
+                "Apply [Lightning Field] to caster during [Red Lightning - Activate]",
+                "Increases skill damage proportional to the distance from the target"
+              ]
             }
           ],
           "special": []

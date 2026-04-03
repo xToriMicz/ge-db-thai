@@ -86,6 +86,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -131,6 +132,7 @@
         "Penetration": "5+25",
         "Immunity": "5+25"
       },
+      "consume": "Steel Bullet x 2",
       "skills": [
         {
           "name": "Premeditation",
@@ -145,26 +147,70 @@
           "sp_cost": "600",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "1 of ["
+              "value": "",
+              "effects": [
+                "1 of [Plan A], [Plan B], or [Plan C] buff is applied by 2% chance when Basic Attack",
+                "1 of [Plan A], [Plan B], or [Plan C] buff is applied when used",
+                "[Sad Ending] applied when all [Plan A], [Plan B], and [Plan C] buff is applied",
+                "Recharge Duration: 20 seconds",
+                "Can be used max 2 times",
+                "Recharges after used twice"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "1 of ["
+              "value": "",
+              "effects": [
+                "1 of [Plan A], [Plan B], or [Plan C] buff is applied by 20% chance when Basic Attack",
+                "1 of [Plan A], [Plan B], or [Plan C] buff is applied when used",
+                "[Sad Ending] applied when all [Plan A], [Plan B], and [Plan C] buff is applied",
+                "Recharge Duration: 20 seconds",
+                "Can be used max 2 times",
+                "Recharges after used twice"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "1 of ["
+              "value": "",
+              "effects": [
+                "1 of [Plan A], [Plan B], or [Plan C] buff is applied by 22% chance when Basic Attack",
+                "1 of [Plan A], [Plan B], or [Plan C] buff is applied when used",
+                "[Sad Ending] applied when all [Plan A], [Plan B], and [Plan C] buff is applied",
+                "Recharge Duration: 20 seconds",
+                "Can be used max 2 times",
+                "Recharges after used twice"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "1 of ["
+              "value": "",
+              "effects": [
+                "1 of [Plan A], [Plan B], or [Plan C] buff is applied by 24% chance when Basic Attack",
+                "1 of [Plan A], [Plan B], or [Plan C] buff is applied when used",
+                "[Sad Ending] applied when all [Plan A], [Plan B], and [Plan C] buff is applied",
+                "Recharge Duration: 20 seconds",
+                "Can be used max 2 times",
+                "Recharges after used twice"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "1 of ["
+              "value": "",
+              "effects": [
+                "1 of [Plan A], [Plan B], or [Plan C] buff is applied by 26% chance when Basic Attack",
+                "1 of [Plan A], [Plan B], or [Plan C] buff is applied when used",
+                "[Sad Ending] applied when all [Plan A], [Plan B], and [Plan C] buff is applied",
+                "Recharge Duration: 20 seconds",
+                "Can be used max 2 times",
+                "Recharges after used twice"
+              ]
             }
           ],
           "special": []
@@ -182,14 +228,26 @@
           "sp_cost": "700",
           "aggro": "66",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bullet x 10",
+          "soft_armor_atk": "125%",
+          "heavy_armor_atk": "75%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2100%"
+              "value": "АТК: 2100%",
+              "effects": [
+                "Ignores 75 enemy DEF",
+                "Damage x4 when [Plan C] buff is applied"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4200%"
+              "value": "АТК: 4200%",
+              "effects": [
+                "Ignores 75 enemy DEF",
+                "Damage x4 when [Plan C] buff is applied"
+              ]
             }
           ],
           "special": []
@@ -207,14 +265,26 @@
           "sp_cost": "800",
           "aggro": "66",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bullet x 3",
+          "soft_armor_atk": "75%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2300%"
+              "value": "АТК: 2300%",
+              "effects": [
+                "Ignores 75 enemy DEF",
+                "Damage x4 when [Plan B] buff is applied"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4600%"
+              "value": "АТК: 4600%",
+              "effects": [
+                "Ignores 75 enemy DEF",
+                "Damage x4 when [Plan B] buff is applied"
+              ]
             }
           ],
           "special": []
@@ -232,14 +302,26 @@
           "sp_cost": "900",
           "aggro": "66",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bullet x 1",
+          "soft_armor_atk": "75%",
+          "heavy_armor_atk": "115%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2500%"
+              "value": "АТК: 2500%",
+              "effects": [
+                "Ignores 100 enemy DEF",
+                "Damage x4 when [Plan A] buff is applied"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5000%"
+              "value": "АТК: 5000%",
+              "effects": [
+                "Ignores 100 enemy DEF",
+                "Damage x4 when [Plan A] buff is applied"
+              ]
             }
           ],
           "special": []
@@ -257,14 +339,24 @@
           "sp_cost": "1050",
           "aggro": "108",
           "skill_type": "Shooting",
+          "consume_item": "Ancient Star Orb x 12",
+          "soft_armor_atk": "75%",
+          "heavy_armor_atk": "125%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2700%"
+              "value": "АТК: 2700%",
+              "effects": [
+                "Ignore 175 enemy DEF"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5400%"
+              "value": "АТК: 5400%",
+              "effects": [
+                "Ignore 175 enemy DEF"
+              ]
             }
           ],
           "special": []

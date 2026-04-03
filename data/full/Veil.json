@@ -114,6 +114,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -154,6 +155,7 @@
         "Critical": "+8",
         "Penetration": "25"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Hawkeye",
@@ -168,26 +170,58 @@
           "sp_cost": "100",
           "aggro": "0",
           "skill_type": "Shooting",
+          "consume_item": "Mithridart x 3",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration : 330 sec"
+              "value": "",
+              "effects": [
+                "Duration : 330 sec",
+                "Accuracy +6",
+                "ATK SPD +1%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration : 600 sec"
+              "value": "",
+              "effects": [
+                "Duration : 600 sec",
+                "Accuracy +15",
+                "ATK SPD +10%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration : 630 sec"
+              "value": "",
+              "effects": [
+                "Duration : 630 sec",
+                "Accuracy +16",
+                "ATK SPD +11%",
+                "A.R. +1"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration : 660 sec"
+              "value": "",
+              "effects": [
+                "Duration : 660 sec",
+                "Accuracy +17",
+                "ATK SPD +12%",
+                "A.R. +1"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration : 690 sec"
+              "value": "",
+              "effects": [
+                "Duration : 690 sec",
+                "Accuracy +18",
+                "ATK SPD +13%",
+                "A.R. +1"
+              ]
             }
           ],
           "special": []
@@ -205,14 +239,20 @@
           "sp_cost": "150",
           "aggro": "138",
           "skill_type": "Shooting",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 640%"
+              "value": "АТК: 640%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1280%"
+              "value": "АТК: 1280%",
+              "effects": []
             }
           ],
           "special": []
@@ -230,14 +270,24 @@
           "sp_cost": "200",
           "aggro": "96",
           "skill_type": "Shooting",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 429%"
+              "value": "АТК: 429%",
+              "effects": [
+                "80% chance to inflict [Hold]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 858%"
+              "value": "АТК: 858%",
+              "effects": [
+                "80% chance to inflict [Hold]"
+              ]
             }
           ],
           "special": []
@@ -255,14 +305,26 @@
           "sp_cost": "250",
           "aggro": "73",
           "skill_type": "Shooting",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 314%"
+              "value": "АТК: 314%",
+              "effects": [
+                "Enemy DEF -30",
+                "60% chance to inflict [Burn]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 628%"
+              "value": "АТК: 628%",
+              "effects": [
+                "Enemy DEF -30",
+                "60% chance to inflict [Burn]"
+              ]
             }
           ],
           "special": []
@@ -280,26 +342,50 @@
           "sp_cost": "300",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Magical Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration : 10.2 sec"
+              "value": "",
+              "effects": [
+                "Duration : 10.2 sec",
+                "Decreases Magical damage by 3%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration : 30 sec"
+              "value": "",
+              "effects": [
+                "Duration : 30 sec",
+                "Decreases Magical damage by 30%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration : 32.2 sec"
+              "value": "",
+              "effects": [
+                "Duration : 32.2 sec",
+                "Decreases Magical damage by 33%"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration : 34.4 sec"
+              "value": "",
+              "effects": [
+                "Duration : 34.4 sec",
+                "Decreases Magical damage by 36%"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration : 36.6 sec"
+              "value": "",
+              "effects": [
+                "Duration : 36.6 sec",
+                "Decreases Magical damage by 39%"
+              ]
             }
           ],
           "special": []
@@ -344,6 +430,7 @@
         "Penetration": "10+25",
         "Immunity": "5+5"
       },
+      "consume": "Steel Bolt x 3",
       "skills": [
         {
           "name": "Tactical Movement",
@@ -358,14 +445,30 @@
           "sp_cost": "350",
           "aggro": "30",
           "skill_type": "Shooting",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "130%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1077%"
+              "value": "АТК: 1077%",
+              "effects": [
+                "30% chance to ignore blocking.",
+                "On hit: inflicts [Unattackable].",
+                "On hit: 20% chance to inflict [Critical Wound] on enemy PCs.",
+                "Ignores status ailment resistance."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2154%"
+              "value": "АТК: 2154%",
+              "effects": [
+                "30% chance to ignore blocking.",
+                "On hit: inflicts [Unattackable].",
+                "On hit: 20% chance to inflict [Critical Wound] on enemy PCs.",
+                "Ignores status ailment resistance."
+              ]
             }
           ],
           "special": []
@@ -383,14 +486,28 @@
           "sp_cost": "800",
           "aggro": "120",
           "skill_type": "Shooting",
+          "consume_item": "",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "75%",
+          "light_armor_atk": "120%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1317%"
+              "value": "АТК: 1317%",
+              "effects": [
+                "On hit, 70% chance to inflict [Armor Penetration] on enemy PCs.",
+                "Ignores status ailment resistance.",
+                "[Additional Scorched] state: additional defense ignored (max 50)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2634%"
+              "value": "АТК: 2634%",
+              "effects": [
+                "On hit, 70% chance to inflict [Armor Penetration] on enemy PCs.",
+                "Ignores status ailment resistance.",
+                "[Additional Scorched] state: additional defense ignored (max 50)"
+              ]
             }
           ],
           "special": [
@@ -411,14 +528,30 @@
           "sp_cost": "750",
           "aggro": "100",
           "skill_type": "Shooting",
+          "consume_item": "",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "120%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1455%"
+              "value": "АТК: 1455%",
+              "effects": [
+                "Removes invincible status.",
+                "On hit, inflicts [Web] on airborne enemy PCs.",
+                "[Silent Move] state: skill damage tripled.",
+                "[Additional Scorched] state: additional defense ignored (max 50)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2910%"
+              "value": "АТК: 2910%",
+              "effects": [
+                "Removes invincible status.",
+                "On hit, inflicts [Web] on airborne enemy PCs.",
+                "[Silent Move] state: skill damage tripled.",
+                "[Additional Scorched] state: additional defense ignored (max 50)"
+              ]
             }
           ],
           "special": [
@@ -439,14 +572,28 @@
           "sp_cost": "800",
           "aggro": "0",
           "skill_type": "Shooting",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "80%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 760%"
+              "value": "АТК: 760%",
+              "effects": [
+                "On hit: inflicts [Unattackable].",
+                "Applies [Silent Move] on cast.",
+                "Additional defense ignored based on the difference between casters attack rating and enemy PCs defense rating (maximum 100)."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1520%"
+              "value": "АТК: 1520%",
+              "effects": [
+                "On hit: inflicts [Unattackable].",
+                "Applies [Silent Move] on cast.",
+                "Additional defense ignored based on the difference between casters attack rating and enemy PCs defense rating (maximum 100)."
+              ]
             }
           ],
           "special": [
@@ -467,14 +614,26 @@
           "sp_cost": "1000",
           "aggro": "50",
           "skill_type": "Shooting",
+          "consume_item": "",
+          "soft_armor_atk": "130%",
+          "heavy_armor_atk": "75%",
+          "light_armor_atk": "120%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1518%"
+              "value": "АТК: 1518%",
+              "effects": [
+                "[Additional Scorched] +1 level per enemy within skill range.",
+                "[Silent Move] state: skill damage tripled"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3036%"
+              "value": "АТК: 3036%",
+              "effects": [
+                "[Additional Scorched] +1 level per enemy within skill range.",
+                "[Silent Move] state: skill damage tripled"
+              ]
             }
           ],
           "special": [
@@ -522,6 +681,7 @@
         "Penetration": "25",
         "Immunity": "5"
       },
+      "consume": "Steel Bolt x 6",
       "skills": [
         {
           "name": "Eye of Wolf",
@@ -536,26 +696,75 @@
           "sp_cost": "650",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration : 300 sec"
+              "value": "",
+              "effects": [
+                "Duration : 300 sec",
+                "A.R. +2",
+                "ATK +5%",
+                "Penetration +4",
+                "Monster ATK +10%",
+                "Normal attack damage increases by (6% of extra [DEX])",
+                "Skill damage increases by (7% of extra [DEX])"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration : 300sec"
+              "value": "",
+              "effects": [
+                "Duration : 300sec",
+                "A.R. +2",
+                "ATK +50%",
+                "Penetration +40",
+                "Monster ATK +100%",
+                "Normal attack damage increases by (6% of extra [DEX])",
+                "Skill damage increases by (7% of extra [DEX])"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration : 300sec"
+              "value": "",
+              "effects": [
+                "Duration : 300sec",
+                "A.R. +2",
+                "ATK +55%",
+                "Penetration +44",
+                "Monster ATK +110%",
+                "Normal attack damage increases by (6% of extra [DEX])",
+                "Skill damage increases by (7% of extra [DEX])"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration : 300sec"
+              "value": "",
+              "effects": [
+                "Duration : 300sec",
+                "A.R. +2",
+                "ATK +60%",
+                "Penetration +48",
+                "Monster ATK +120%",
+                "Normal attack damage increases by (6% of extra [DEX])",
+                "Skill damage increases by (7% of extra [DEX])"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration : 300sec"
+              "value": "",
+              "effects": [
+                "Duration : 300sec",
+                "A.R. +2",
+                "ATK +65%",
+                "Penetration +52",
+                "Monster ATK +130%",
+                "Normal attack damage increases by (6% of extra [DEX])",
+                "Skill damage increases by (7% of extra [DEX])"
+              ]
             }
           ],
           "special": []
@@ -573,14 +782,24 @@
           "sp_cost": "250",
           "aggro": "50",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bolt x 2",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1200%"
+              "value": "АТК: 1200%",
+              "effects": [
+                "100% chance to inflict [Hold] on enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "100% chance to inflict [Hold] on enemy"
+              ]
             }
           ],
           "special": []
@@ -598,14 +817,24 @@
           "sp_cost": "340",
           "aggro": "132",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bolt x 10",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "120%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "Enemy DEF -30"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4400%"
+              "value": "АТК: 4400%",
+              "effects": [
+                "Enemy DEF -30"
+              ]
             }
           ],
           "special": []
@@ -623,14 +852,24 @@
           "sp_cost": "540",
           "aggro": "210",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bolt x 32",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "130%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "Enemy DEF -40"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4800%"
+              "value": "АТК: 4800%",
+              "effects": [
+                "Enemy DEF -40"
+              ]
             }
           ],
           "special": []
@@ -648,14 +887,24 @@
           "sp_cost": "540",
           "aggro": "234",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bolt x 8",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "150%",
+          "light_armor_atk": "120%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "Enemy DEF -50"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 6000%"
+              "value": "АТК: 6000%",
+              "effects": [
+                "Enemy DEF -50"
+              ]
             }
           ],
           "special": []

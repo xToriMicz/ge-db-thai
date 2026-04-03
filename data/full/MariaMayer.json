@@ -92,6 +92,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -135,6 +136,7 @@
         "Penetration": "10+20",
         "Immunity": "5+10"
       },
+      "consume": "Large Caliber Bullet x 1",
       "skills": [
         {
           "name": "Escape Record",
@@ -149,18 +151,37 @@
           "sp_cost": "550",
           "aggro": "150",
           "skill_type": "Shooting",
+          "consume_item": "Large Caliber Bullet x 3",
+          "soft_armor_atk": "125%",
+          "heavy_armor_atk": "75%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1700%"
+              "value": "АТК: 1700%",
+              "effects": [
+                "Ignores 120 DEF",
+                "80% Chance to inflict [Ankle Injury]",
+                "Invulnerable while casting",
+                "Skill Damage increases by 6.5% of extra [DEX]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3400%"
+              "value": "АТК: 3400%",
+              "effects": [
+                "Ignores 120 DEF",
+                "80% Chance to inflict [Ankle Injury]",
+                "Invulnerable while casting",
+                "Skill Damage increases by 6.5% of extra [DEX]"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "АТК: 4080%"
+              "value": "АТК: 4080%",
+              "effects": [
+                "Required Stance: [Frontier] Lv. 1"
+              ]
             }
           ],
           "special": []
@@ -178,18 +199,33 @@
           "sp_cost": "1050",
           "aggro": "150",
           "skill_type": "Shooting",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "150%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "150%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "Ignores 125 DEF",
+                "2x Damage towards casting targets"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4400%"
+              "value": "АТК: 4400%",
+              "effects": [
+                "Ignores 125 DEF",
+                "2x Damage towards casting targets"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "АТК: 5280%"
+              "value": "АТК: 5280%",
+              "effects": [
+                "Required Stance:[Frontier] Lv. 5"
+              ]
             }
           ],
           "special": []
@@ -207,18 +243,41 @@
           "sp_cost": "1250",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 20",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "A.R. +1"
+              "value": "",
+              "effects": [
+                "A.R. +1",
+                "Monster ATK +300%",
+                "Ignore DEF +5%",
+                "Critical Damage +25%",
+                "Critical Rate +30",
+                "Received magic damage -40%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "A.R. +1"
+              "value": "",
+              "effects": [
+                "A.R. +1",
+                "Monster ATK +300%",
+                "Ignore DEF +5%",
+                "Critical Damage +25%",
+                "Critical Rate +30",
+                "Received magic damage -40%"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Calyces hair matched to Pegadilla Officer Costume"
+              "value": "",
+              "effects": [
+                "Calyces hair matched to Pegadilla Officer Costume"
+              ]
             }
           ],
           "special": []
@@ -236,18 +295,35 @@
           "sp_cost": "1150",
           "aggro": "72",
           "skill_type": "Shooting",
+          "consume_item": "Ancient Star Orb x 15",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "90%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "Ignores 130 DEF",
+                "75% Chance to inflict [Sweltering]",
+                "Skill Damage increases in proportion to amount of enemies hit"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4800%"
+              "value": "АТК: 4800%",
+              "effects": [
+                "Ignores 130 DEF",
+                "75% Chance to inflict [Sweltering]",
+                "Skill Damage increases in proportion to amount of enemies hit"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "АТК: 5760%"
+              "value": "АТК: 5760%",
+              "effects": [
+                "Required Stance: [Frontier] Lv. 20"
+              ]
             }
           ],
           "special": []
@@ -265,18 +341,35 @@
           "sp_cost": "1250",
           "aggro": "72",
           "skill_type": "Shooting",
+          "consume_item": "Ancient Star Orb x 20",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2800%"
+              "value": "АТК: 2800%",
+              "effects": [
+                "Ignores 150 DEF",
+                "Additionally Ignores 200 DEF against monsters",
+                "Skill Damage increases in proportion to amount of enemies hit"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5600%"
+              "value": "АТК: 5600%",
+              "effects": [
+                "Ignores 150 DEF",
+                "Additionally Ignores 200 DEF against monsters",
+                "Skill Damage increases in proportion to amount of enemies hit"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "АТК: 6720%"
+              "value": "АТК: 6720%",
+              "effects": [
+                "Required Stance: [Frontier] Lv. 25"
+              ]
             }
           ],
           "special": [

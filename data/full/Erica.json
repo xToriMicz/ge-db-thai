@@ -96,6 +96,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -138,6 +139,7 @@
         "Penetration": "5+15",
         "Immunity": "15+10"
       },
+      "consume": "Psychic Sphere x 3",
       "skills": [
         {
           "name": "Cut Down",
@@ -152,14 +154,28 @@
           "sp_cost": "300",
           "aggro": "50",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 6",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1200%"
+              "value": "АТК: 1200%",
+              "effects": [
+                "100% Chance to inflict [Magic Restraint]",
+                "Skill Damage increases inversely proportional to distance (up to 3x)",
+                "Skill Damage increases additionally according to [Magic Restraint]s Level"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "100% Chance to inflict [Magic Restraint]",
+                "Skill Damage increases inversely proportional to distance (up to 3x)",
+                "Skill Damage increases additionally according to [Magic Restraint]s Level"
+              ]
             }
           ],
           "special": []
@@ -177,14 +193,32 @@
           "sp_cost": "700",
           "aggro": "50",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1600%"
+              "value": "АТК: 1600%",
+              "effects": [
+                "Attacks up to 12 times during casting",
+                "Cancel skill if reused during casting",
+                "Applies skill damage with each attack",
+                "Skill damage against monsters in proportion to the difference between Ericas [Mental PEN] and monsters [IMM] during [Offensive Magic]",
+                "Skill damage increases additionally by 1.5x ([PC] 3x) during [Energetic Surge]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3200%"
+              "value": "АТК: 3200%",
+              "effects": [
+                "Attacks up to 12 times during casting",
+                "Cancel skill if reused during casting",
+                "Applies skill damage with each attack",
+                "Skill damage against monsters in proportion to the difference between Ericas [Mental PEN] and monsters [IMM] during [Offensive Magic]",
+                "Skill damage increases additionally by 1.5x ([PC] 3x) during [Energetic Surge]"
+              ]
             }
           ],
           "special": []
@@ -202,14 +236,30 @@
           "sp_cost": "800",
           "aggro": "100",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 14",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "130%",
+          "light_armor_atk": "120%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": [
+                "20% Chance to inflict [Fear]",
+                "Ignores enemys Debuff RES",
+                "Skill damage increases inversely proportional to the number of targets (up to 1.5x)",
+                "Skill Damage increases additionally according to [Magic Restraint]s Level"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3600%"
+              "value": "АТК: 3600%",
+              "effects": [
+                "20% Chance to inflict [Fear]",
+                "Ignores enemys Debuff RES",
+                "Skill damage increases inversely proportional to the number of targets (up to 1.5x)",
+                "Skill Damage increases additionally according to [Magic Restraint]s Level"
+              ]
             }
           ],
           "special": []
@@ -218,7 +268,7 @@
           "name": "Arcane Blast",
           "image": "hath_arcaneblast.jpg",
           "description": "Repels all enemies around yourself while infusing yourself with magical power.",
-          "target": "",
+          "target": "Up to 12 enemies within 8m",
           "casting_time": "Instant",
           "cooldown": "18 sec.",
           "duration": "2.533 sec.",
@@ -227,14 +277,28 @@
           "sp_cost": "650",
           "aggro": "100",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 11",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "130%",
+          "light_armor_atk": "120%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1440%"
+              "value": "АТК: 1440%",
+              "effects": [
+                "100% Chance to inflict [Magic Restraint]",
+                "Skill damage increases proportional to the number of targets (up to 1.5x)",
+                "Skill damage increases additionally according to [Magic Restraint]s Level"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2880%"
+              "value": "АТК: 2880%",
+              "effects": [
+                "100% Chance to inflict [Magic Restraint]",
+                "Skill damage increases proportional to the number of targets (up to 1.5x)",
+                "Skill damage increases additionally according to [Magic Restraint]s Level"
+              ]
             }
           ],
           "special": []
@@ -252,14 +316,30 @@
           "sp_cost": "2000",
           "aggro": "300",
           "skill_type": "Magic",
+          "consume_item": "",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "200%",
+          "light_armor_atk": "150%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1315%"
+              "value": "АТК: 1315%",
+              "effects": [
+                "Ignores Block",
+                "Ignores 1/2 of enemys shield DEF",
+                "Ignore enemy DEF and become invulnerable during skills animation during [Energetic Surge]",
+                "Skill damage increases additionally according to [Magic Restraint]s Level"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2630%"
+              "value": "АТК: 2630%",
+              "effects": [
+                "Ignores Block",
+                "Ignores 1/2 of enemys shield DEF",
+                "Ignore enemy DEF and become invulnerable during skills animation during [Energetic Surge]",
+                "Skill damage increases additionally according to [Magic Restraint]s Level"
+              ]
             }
           ],
           "special": []

@@ -86,6 +86,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -129,6 +130,7 @@
         "Penetration": "20+15",
         "Immunity": "5+5"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Request Support",
@@ -143,26 +145,80 @@
           "sp_cost": "300",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Evasion +1"
+              "value": "",
+              "effects": [
+                "Evasion +1",
+                "Movement Speed +1%",
+                "Movement Speed limit +0.10",
+                "When a normal attack hits, [On Command!] Level +1",
+                "When a normal attack triggers critical hits, [On Command!] Level +2",
+                "When killing an enemy with a normal attack [On Command!] Level +1",
+                "[On Command!] Below level 50: Every 5 seconds [On Command!] Level +1",
+                "[On Command!] Level 51~90: Every 5 seconds [On Command!] Level -1"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Evasion +10"
+              "value": "",
+              "effects": [
+                "Evasion +10",
+                "Movement Speed +10%",
+                "Movement Speed limit +1.00",
+                "When a normal attack hits, [On Command!] Level +1",
+                "When a normal attack triggers critical hits, [Reload Completed!] Level +2",
+                "When killing an enemy with a normal attack [On Command!] Level +1",
+                "[On Command!] Below level 50: Every 5 seconds [On Command!] Level +1",
+                "[On Command!] Level 51~90: Every 5 seconds [On Command!] Level -1"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Evasion +11"
+              "value": "",
+              "effects": [
+                "Evasion +11",
+                "Movement Speed +11%",
+                "Movement Speed limit +1.10",
+                "When a normal attack hits, [On Command!] Level +1",
+                "When a normal attack triggers critical hits, [Reload Completed!] Level +2",
+                "When killing an enemy with a normal attack [On Command!] Level +1",
+                "[On Command!] Below level 50: Every 5 seconds [On Command!] Level +1",
+                "[On Command!] Level 51~90: Every 5 seconds [On Command!] Level -1"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Evasion +12"
+              "value": "",
+              "effects": [
+                "Evasion +12",
+                "Movement Speed +12%",
+                "Movement Speed limit +1.20",
+                "When a normal attack hits [On Command!] Level +1",
+                "When normal attack critical hit, [On Command!] Level +2",
+                "When killing an enemy with a normal attack [On Command!] Level +1",
+                "[On Command!] Below level 50: Every 5 seconds [On Command!] Level +1",
+                "[On Command!] Level 51~90: Every 5 seconds [On Command!] Level -1"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Evasion +13"
+              "value": "",
+              "effects": [
+                "Evasion +13",
+                "Movement Speed +13%",
+                "Movement Speed limit +1.30",
+                "When a normal attack hits, [Reload completed!] Level +1",
+                "When normal attack critical hit, [On Command!] Level +2",
+                "When killing an enemy with a normal attack [On Command!] Level +1",
+                "[On Command!] Below level 50: Every 5 seconds [On Command!] Level +1",
+                "[On Command!] Level 51~90: Every 5 seconds [On Command!] Level -1"
+              ]
             }
           ],
           "special": []
@@ -180,26 +236,90 @@
           "sp_cost": "250",
           "aggro": "150",
           "skill_type": "Melee",
+          "consume_item": "Large Caliber Bullet x 8",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1200%"
+              "value": "АТК: 1200%",
+              "effects": [
+                "Skill Damage increases by 1.5% of extra [STR]",
+                "When skill accurately hits while [Request Support] is active, [On Command!] Level +15",
+                "When killing an enemy while [Request Support] is active, [On Command!] Level +1",
+                "Apply [Correr]",
+                "[Correr]",
+                "Duration: 10 seconds",
+                "D.R. +1",
+                "Evasion +4",
+                "Movement Speed +1.5%",
+                "Movement Speed Limit +0.15"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "Skill Damage increases by 1.5% of extra [STR]",
+                "When skill accurately hits while [Request Support] is active, [On Command!] Level +15",
+                "When killing an enemy while [Request Support] is active, [On Command!] Level +1",
+                "Apply [Correr]",
+                "[Correr]",
+                "Duration: 10 seconds",
+                "D.R. +1",
+                "Evasion +40",
+                "Movement Speed +15%",
+                "Movement Speed Limit +1.50"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "АТК: 2640%"
+              "value": "АТК: 2640%",
+              "effects": [
+                "Skill Damage increases by 1.5% of extra [STR]",
+                "When skill accurately hits while [Request Support] is active, [On Command!] Level +15",
+                "When killing an enemy while [Request Support] is active, [On Command!] Level +1",
+                "Apply [Correr]",
+                "[Correr]",
+                "Duration: 10 seconds",
+                "D.R. +1",
+                "Evasion +44",
+                "Movement Speed +1.65%",
+                "Movement Speed Limit +1.65"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "АТК: 2880%"
+              "value": "АТК: 2880%",
+              "effects": [
+                "Skill Damage increases by 1.5% of extra [STR]",
+                "When skill accurately hits while [Request Support] is active, [On Command!] Level +15",
+                "When killing an enemy while [Request Support] is active, [On Command!] Level +1",
+                "Apply [Correr]",
+                "[Correr]",
+                "Duration: 10 seconds",
+                "D.R. +1",
+                "Evasion +48",
+                "Movement Speed +18%",
+                "Movement Speed Limit +1.80"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "АТК: 2880%"
+              "value": "АТК: 2880%",
+              "effects": [
+                "Skill Damage increases by 1.5% of extra [STR]",
+                "When skill accurately hits while [Request Support] is active, [On Command!] Level +15",
+                "When killing an enemy while [Request Support] is active, [On Command!] Level +1",
+                "Apply [Correr]",
+                "[Correr]",
+                "Duration: 10 seconds",
+                "D.R. +1",
+                "Evasion +52",
+                "Movement Speed +19.5%",
+                "Movement Speed Limit +1.95"
+              ]
             }
           ],
           "special": []
@@ -217,14 +337,28 @@
           "sp_cost": "350",
           "aggro": "250",
           "skill_type": "Melee",
+          "consume_item": "Large Caliber Bullet x 6",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1600%"
+              "value": "АТК: 1600%",
+              "effects": [
+                "Skill Damage increases by 1.5% of extra [STR]",
+                "When skill accurately hits while [Request Support] is active, [On Command!] Level +5",
+                "When killing an enemy while [Request Support] is active, [On Command!] Level +1"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3200%"
+              "value": "АТК: 3200%",
+              "effects": [
+                "Skill Damage increases by 1.5% of extra [STR]",
+                "When skill accurately hits while [Request Support] is active, [On Command!] Level +5",
+                "When killing an enemy while [Request Support] is active, [On Command!] Level +1"
+              ]
             }
           ],
           "special": []
@@ -242,14 +376,28 @@
           "sp_cost": "500",
           "aggro": "260",
           "skill_type": "Melee",
+          "consume_item": "Large Caliber Bullet x 1",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "150%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "Skill Damage increases by 1.5% of extra [STR]",
+                "When skill accurately hits while [Request Support] is active, [On Command!] Level +5",
+                "When killing an enemy while [Request Support] is active, [On Command!] Level +1"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4400%"
+              "value": "АТК: 4400%",
+              "effects": [
+                "Skill Damage increases by 1.5% of extra [STR]",
+                "When skill accurately hits while [Request Support] is active, [On Command!] Level +5",
+                "When killing an enemy while [Request Support] is active, [On Command!] Level +1"
+              ]
             }
           ],
           "special": []
@@ -267,14 +415,42 @@
           "sp_cost": "500",
           "aggro": "230",
           "skill_type": "Melee",
+          "consume_item": "Enhanced Heavy Shell Ammo x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "125%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "Removes [On Command!] upon casting",
+                "Apply additional damage based on Level of [On Command!] before removal",
+                "[On Command!] Level 1~30: Skill Damage increases by 1.5x",
+                "[On Command!] Level 31~60: Skill Damage increases by 3x",
+                "[On Command!] Level 61~90: Skill Damage increases by 4.5x",
+                "[On Command!] Level 91~100: Skill Damage increases by 5x",
+                "Apply [Detection]",
+                "[Detection]",
+                "Duration: 8 seconds",
+                "Removes enemy stealth within 15m of caster and detected enemy transparency is released and is applied [Panic]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4800%"
+              "value": "АТК: 4800%",
+              "effects": [
+                "Removes [On Command!] upon casting",
+                "Apply additional damage based on Level of [On Command!] before removal",
+                "[On Command!] Level 1~30: Skill Damage increases by 1.5x",
+                "[On Command!] Level 31~60: Skill Damage increases by 3x",
+                "[On Command!] Level 61~90: Skill Damage increases by 4.5x",
+                "[On Command!] Level 91~100: Skill Damage increases by 5x",
+                "Apply [Detection]",
+                "[Detection]",
+                "Duration: 8 seconds",
+                "Removes enemy stealth within 15m of caster and detected enemy transparency is released and is applied [Panic]"
+              ]
             }
           ],
           "special": []

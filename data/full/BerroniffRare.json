@@ -109,6 +109,7 @@
         "Penetration": "5+25",
         "Immunity": "5+10"
       },
+      "consume": "Elemental Sphere x 1",
       "skills": [
         {
           "name": "Slowdown Field",
@@ -123,14 +124,24 @@
           "sp_cost": "300",
           "aggro": "80",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": [
+                "50% chance to inflict [Alchemists Realm - Slow Down] (not applied if another [Alchemists Realm] debuff is present)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3600%"
+              "value": "АТК: 3600%",
+              "effects": [
+                "50% chance to inflict [Alchemists Realm - Slow Down] (not applied if another [Alchemists Realm] debuff is present)"
+              ]
             }
           ],
           "special": []
@@ -148,14 +159,24 @@
           "sp_cost": "500",
           "aggro": "80",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "50% chance to inflict [Alchemists Realm - Fire] (not applied if another [Alchemists Realm] debuff is present)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4400%"
+              "value": "АТК: 4400%",
+              "effects": [
+                "50% chance to inflict [Alchemists Realm - Fire] (not applied if another [Alchemists Realm] debuff is present)"
+              ]
             }
           ],
           "special": []
@@ -173,14 +194,24 @@
           "sp_cost": "800",
           "aggro": "80",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "60% chance to inflict [Alchemists Realm - Ice] (not applied if another [Alchemists Realm] debuff is present)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4800%"
+              "value": "АТК: 4800%",
+              "effects": [
+                "60% chance to inflict [Alchemists Realm - Ice] (not applied if another [Alchemists Realm] debuff is present)"
+              ]
             }
           ],
           "special": []
@@ -198,14 +229,24 @@
           "sp_cost": "1000",
           "aggro": "160",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 15",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2600%"
+              "value": "АТК: 2600%",
+              "effects": [
+                "60% chance to inflict [Alchemists Realm - Plague] (not applied if another [Alchemists Realm] debuff is present)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5200%"
+              "value": "АТК: 5200%",
+              "effects": [
+                "60% chance to inflict [Alchemists Realm - Plague] (not applied if another [Alchemists Realm] debuff is present)"
+              ]
             }
           ],
           "special": []
@@ -213,7 +254,7 @@
         {
           "name": "Imperial Protection",
           "image": "ihmts_imperialprotection.jpg",
-          "description": "Consumes Ancient Star Orb x 20",
+          "description": "All damage received -15%",
           "target": "Up to 24 allies within 8m",
           "casting_time": "2.366 sec.",
           "cooldown": "30 sec.",
@@ -223,26 +264,75 @@
           "sp_cost": "1050",
           "aggro": "50",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 20",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "D.R. +1",
+                "All stats +5",
+                "IMM +15",
+                "All damage received -15%",
+                "Damage received from [Magic] AoEs -20%",
+                "Cannot stack with [Saintess Blessing], [Chemical Protection] and [Operation : S]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "D.R. +1",
+                "All stats +5",
+                "IMM +15",
+                "All damage received -15%",
+                "Damage received from [Magic] AoEs -20%",
+                "Cannot stack with [Saintess Blessing], [Chemical Protection] and [Operation : S]"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "D.R. +1",
+                "All stats +5",
+                "IMM +15",
+                "All damage received -15%",
+                "Damage received from [Magic] AoEs -20%",
+                "Cannot stack with [Saintess Blessing], [Chemical Protection] and [Operation : S]"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "D.R. +1",
+                "All stats +5",
+                "IMM +15",
+                "All damage received -15%",
+                "Damage received from [Magic] AoEs -20%",
+                "Cannot stack with [Saintess Blessing], [Chemical Protection] and [Operation : S]"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "D.R. +1",
+                "All stats +5",
+                "IMM +15",
+                "All damage received -15%",
+                "Damage received from [Magic] AoEs -20%",
+                "Cannot stack with [Saintess Blessing], [Chemical Protection] and [Operation : S]"
+              ]
             }
           ],
           "special": []
@@ -292,6 +382,7 @@
         "Immunity": "10+10",
         "DEF": "5"
       },
+      "consume": "Elemental Sphere x 3",
       "skills": [
         {
           "name": "Crea",
@@ -306,14 +397,32 @@
           "sp_cost": "800",
           "aggro": "300",
           "skill_type": "Build",
+          "consume_item": "Ancient Star Orb x 25",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Up to 3 can be summoned"
+              "value": "",
+              "effects": [
+                "Up to 3 can be summoned",
+                "Its abilities additionally scale with skill level",
+                "Additional bonuses to certain stats in proportion to total [INT]",
+                "Randomy creates a homunculus of the original stock characters",
+                "Stats lowered in PvP Maps"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Up to 3 can be summoned"
+              "value": "",
+              "effects": [
+                "Up to 3 can be summoned",
+                "Its abilities additionally scale with skill level",
+                "Additional bonuses to certain stats in proportion to total [INT]",
+                "Randomy creates a homunculus of the original stock characters",
+                "Stats lowered in PvP Maps"
+              ]
             }
           ],
           "special": [
@@ -334,14 +443,26 @@
           "sp_cost": "500",
           "aggro": "150",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "120%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2800%"
+              "value": "АТК: 2800%",
+              "effects": [
+                "60% chance to inflict [Lightning Affliction]",
+                "Converts the homonculuss attack attribute to [Lightning]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5600%"
+              "value": "АТК: 5600%",
+              "effects": [
+                "60% chance to inflict [Lightning Affliction]",
+                "Converts the homonculuss attack attribute to [Lightning]"
+              ]
             }
           ],
           "special": []
@@ -359,14 +480,26 @@
           "sp_cost": "800",
           "aggro": "150",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2900%"
+              "value": "АТК: 2900%",
+              "effects": [
+                "20% chance to inflict [Ice Affliction]",
+                "Converts the homonculuss attack attribute to [Ice]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5800%"
+              "value": "АТК: 5800%",
+              "effects": [
+                "20% chance to inflict [Ice Affliction]",
+                "Converts the homonculuss attack attribute to [Ice]"
+              ]
             }
           ],
           "special": []
@@ -384,14 +517,26 @@
           "sp_cost": "1250",
           "aggro": "150",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 15",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "60% chance to inflict [Fire Affliction]",
+                "Converts the homonculuss attack attribute to [Fire]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 6000%"
+              "value": "АТК: 6000%",
+              "effects": [
+                "60% chance to inflict [Fire Affliction]",
+                "Converts the homonculuss attack attribute to [Fire]"
+              ]
             }
           ],
           "special": []
@@ -409,14 +554,26 @@
           "sp_cost": "600",
           "aggro": "300",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 20",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 5 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 5 seconds",
+                "Increase all stance skill level by 1"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 5 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 5 seconds",
+                "Increase all stance skill level by 1"
+              ]
             }
           ],
           "special": []
@@ -463,6 +620,7 @@
         "Immunity": "5+20",
         "DEF": "5"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Encourage",
@@ -477,26 +635,65 @@
           "sp_cost": "750",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 15",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "Penetration +2",
+                "Critical +2",
+                "Critical Damage +2%",
+                "ATK against monsters +15%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "Penetration +20",
+                "Critical +20",
+                "Critical Damage +20%",
+                "ATK against monsters +60%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "Penetration +22",
+                "Critical +22",
+                "Critical Damage +22%",
+                "ATK against monsters +65%"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "Penetration +24",
+                "Critical +24",
+                "Critical Damage +24%",
+                "ATK against monsters +70%"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "Penetration +26",
+                "Critical +26",
+                "Critical Damage +26%",
+                "ATK against monsters +75%"
+              ]
             }
           ],
           "special": []
@@ -514,26 +711,60 @@
           "sp_cost": "600",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "Attack speed +2%",
+                "Movement speed +2%",
+                "Casting time -0.5%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "Attack speed +20%",
+                "Movement speed +20%",
+                "Casting time -5%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "Attack speed +22%",
+                "Movement speed +22%",
+                "Casting time -5.5%"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "Attack speed +24%",
+                "Movement speed +24%",
+                "Casting time -6%"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "Attack speed +26%",
+                "Movement speed +26%",
+                "Casting time -6.5%"
+              ]
             }
           ],
           "special": []
@@ -551,26 +782,63 @@
           "sp_cost": "600",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "Increases ATK according to allys active stance.",
+                "Melee/Hybrid: Melee ATK +2%",
+                "Ranged: Ranged ATK +2%",
+                "Magic: Magic ATK +2%",
+                "Increases stats by +5 according to the active stance or attribute."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Level 11"
+              "value": "",
+              "effects": []
             },
             {
               "level": "Level 11",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "Increases ATK according to allys active stance.",
+                "Melee/Hybrid: Melee ATK +22%",
+                "Ranged: Ranged ATK +22%",
+                "Magic: Magic ATK +22%",
+                "Increases stats by +14 according to the active stance or attribute."
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "Increases ATK according to allys active stance.",
+                "Melee/Hybrid: Melee ATK +24%",
+                "Ranged: Ranged ATK +24%",
+                "Magic: Magic ATK +24%",
+                "Increases stats by +15 according to the active stance or attribute."
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "Increases ATK according to allys active stance.",
+                "Melee/Hybrid: Melee ATK +26%",
+                "Ranged: Ranged ATK +26%",
+                "Magic: Magic ATK +26%",
+                "Increases stats by +16 according to the active stance or attribute."
+              ]
             }
           ],
           "special": []
@@ -588,26 +856,80 @@
           "sp_cost": "900",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 20",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 20 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 20 seconds",
+                "Increases ATK by the highest stat * 0.2",
+                "Increases additional ATK against all races by the highest stat * 0.07",
+                "Maximum SP + 2,000",
+                "Upon casting, enters [Nether] state",
+                "While in [Nether] state, if [Netherworld] is recast, applies [Aether] state",
+                "While in [Aether] state, if [Netherworld] is recast, applies [Nether] state",
+                "Buffs does not stack with [Brute Force Solution]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 200 second"
+              "value": "",
+              "effects": [
+                "Duration: 200 second",
+                "Increases ATK by the highest stat * 0.2",
+                "Increases additional ATK against all races by the highest stat * 0.07",
+                "Maximum SP + 2,000",
+                "Upon casting, enters [Nether] state",
+                "While in [Nether] state, if [Netherworld] is recast, applies [Aether] state",
+                "While in [Aether] state, if [Netherworld] is recast, applies [Nether] state",
+                "Buffs does not stack with [Brute Force Solution]"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 220 second"
+              "value": "",
+              "effects": [
+                "Duration: 220 second",
+                "Increases ATK by the highest stat * 0.2",
+                "Increases additional ATK against all races by the highest stat * 0.07",
+                "Maximum SP + 2,000",
+                "Upon casting, enters [Nether] state",
+                "While in [Nether] state, if [Netherworld] is recast, applies [Aether] state",
+                "While in [Aether] state, if [Netherworld] is recast, applies [Nether] state",
+                "Buffs does not stack with [Brute Force Solution]"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 240 second"
+              "value": "",
+              "effects": [
+                "Duration: 240 second",
+                "Increases ATK by the highest stat * 0.2",
+                "Increases additional ATK against all races by the highest stat * 0.07",
+                "Maximum SP + 2,000",
+                "Upon casting, enters [Nether] state",
+                "While in [Nether] state, if [Netherworld] is recast, applies [Aether] state",
+                "While in [Aether] state, if [Netherworld] is recast, applies [Nether] state",
+                "Buffs does not stack with [Brute Force Solution]"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 260 second"
+              "value": "",
+              "effects": [
+                "Duration: 260 second",
+                "Increases ATK by the highest stat * 0.2",
+                "Increases additional ATK against all races by the highest stat * 0.07",
+                "Maximum SP + 2,000",
+                "Upon casting, enters [Nether] state",
+                "While in [Nether] state, if [Netherworld] is recast, applies [Aether] state",
+                "While in [Aether] state, if [Netherworld] is recast, applies [Nether] state",
+                "Buffs does not stack with [Brute Force Solution]"
+              ]
             }
           ],
           "special": []
@@ -625,14 +947,30 @@
           "sp_cost": "1000",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 30",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Install a self-destruct trap"
+              "value": "",
+              "effects": [
+                "Install a self-destruct trap",
+                "Can install up to 1",
+                "The trap detects hidden enemies within 15m and self-destructs towards enemies within 6m",
+                "Applies harmful debuff and Increases cooldown of enemy when hit."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Install a self-destruct trap"
+              "value": "",
+              "effects": [
+                "Install a self-destruct trap",
+                "Can install up to 1",
+                "The trap detects hidden enemies within 15m and self-destructs towards enemies within 6m",
+                "Applies harmful debuff and Increases cooldown of enemy when hit."
+              ]
             }
           ],
           "special": []

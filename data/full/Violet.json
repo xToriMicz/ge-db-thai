@@ -34,11 +34,13 @@
       {
         "level": "Level 10",
         "effects": [
-          "Duration: 300 seconds",
+          "Duration: 5 Minutes",
           "A.R. +2",
+          "D.R. +1",
+          "Physical Penetration +10",
+          "ATK against monsters +100%",
           "Increases ATK in proportion to extra [STR](extra [STR] * 0.3)",
-          "Increases DEF in proportion to extra [HP](extra [HP] * 0.2)",
-          "ATK against monsters +10%"
+          "Increases DEF in proportion to extra [HP](extra [HP] * 0.2)"
         ]
       }
     ]
@@ -87,6 +89,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -129,6 +132,7 @@
         "Penetration": "5+10",
         "Immunity": "15+15"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Von Larr",
@@ -143,26 +147,55 @@
           "sp_cost": "820",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "Skill ATK +30%",
+                "Physical ATK +1%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "Skill ATK +30%",
+                "Physical ATK +10%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "Skill ATK +30%",
+                "Physical ATK +11%"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "Skill ATK +30%",
+                "Physical ATK +12%"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "Skill ATK +30%",
+                "Physical ATK +13%"
+              ]
             }
           ],
           "special": []
@@ -180,26 +213,65 @@
           "sp_cost": "940",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration : 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration : 300 seconds",
+                "Damage received from Shooting -1%",
+                "Critical Damage Received -1%",
+                "Status Ailment RES +1",
+                "Knockdown Duration -1%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration : 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration : 300 seconds",
+                "Damage received from Shooting -10%",
+                "Critical Damage Received -10%",
+                "Status Ailment RES +10",
+                "Knockdown Duration -10%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration : 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration : 300 seconds",
+                "Damage received from Shooting -11%",
+                "???? ?? ??? -11%",
+                "Status Ailment RES +11",
+                "Knockdown Duration -11%"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration : 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration : 300 seconds",
+                "Damage received from Shooting -12%",
+                "Critical Damage Received -12%",
+                "Status Ailment RES +12",
+                "Knockdown Duration -12%"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration : 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration : 300 seconds",
+                "Damage received from Shooting -13%",
+                "Critical Damage Received -13%",
+                "Status Ailment RES +13",
+                "Knockdown Duration -13%"
+              ]
             }
           ],
           "special": []
@@ -217,14 +289,28 @@
           "sp_cost": "840",
           "aggro": "89",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 1",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "200%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1157%"
+              "value": "АТК: 1157%",
+              "effects": [
+                "Ignores DEF of enemy by 60",
+                "Apply [Mortal Wound] to enemy by 75% chance",
+                "Increase in skill ATK to enemies with [Mortal Wound] [Stun] [Impact]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2314%"
+              "value": "АТК: 2314%",
+              "effects": [
+                "Ignores DEF of enemy by 60",
+                "Apply [Mortal Wound] to enemy by 75% chance",
+                "Increase in skill ATK to enemies with [Mortal Wound] [Stun] [Impact]"
+              ]
             }
           ],
           "special": []
@@ -242,14 +328,32 @@
           "sp_cost": "1050",
           "aggro": "266",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 4",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "180%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1788%"
+              "value": "АТК: 1788%",
+              "effects": [
+                "Ignores enemys DEF by 75",
+                "Ignores Block",
+                "Ignores enemys shield DEF 1/2",
+                "100% chance to inflict [Stun]",
+                "Increases skill ATK to enemies with [Mortal Wound] [Stun] [Impact]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3576%"
+              "value": "АТК: 3576%",
+              "effects": [
+                "Ignores enemys DEF by 75",
+                "Ignores Block",
+                "Ignores enemys shield DEF 1/2",
+                "100% chance to inflict [Stun]",
+                "Increases skill ATK to enemies with [Mortal Wound] [Stun] [Impact]"
+              ]
             }
           ],
           "special": []
@@ -267,26 +371,58 @@
           "sp_cost": "1050",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "ATK +1%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "ATK +10%",
+                "STR +5",
+                "HP +5"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "ATK +21%",
+                "STR +5",
+                "HP +5"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "ATK +22%",
+                "STR +6",
+                "HP +6"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "ATK +23%",
+                "STR +6",
+                "HP +6"
+              ]
             }
           ],
           "special": []

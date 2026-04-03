@@ -35,6 +35,8 @@
         "level": "Level 1",
         "effects": [
           "Duration 5 Minutes",
+          "ATK +25%",
+          "Monster ATK +50%",
           "Physical Penetration +1",
           "Casts [Pierced Wound] by 100% as many as hits made with normal ATK",
           "Every normal attack hit inflicts [Pierced Wound]. Skill attacks have 100% chance to change enemys [Pierced Wound] to [Enhanced Pierced Wound]"
@@ -44,6 +46,8 @@
         "level": "Level 10",
         "effects": [
           "Duration 5 Minutes",
+          "ATK +25%",
+          "Monster ATK +50%",
           "Physical Penetration +10",
           "Casts [Pierced Wound] by 100% as many as hits made with normal ATK",
           "Every normal attack hit inflicts [Pierced Wound]. Skill attacks have 100% chance to change enemys [Pierced Wound] to [Enhanced Pierced Wound]"
@@ -53,6 +57,8 @@
         "level": "Level 11",
         "effects": [
           "Duration 5 Minutes",
+          "ATK +25%",
+          "Monster ATK +50%",
           "Physical Penetration +11",
           "A.R. +1",
           "Casts [Pierced Wound] by 100% as many as hits made with normal ATK",
@@ -63,6 +69,8 @@
         "level": "Level 12",
         "effects": [
           "Duration 5 Minutes",
+          "ATK +25%",
+          "Monster ATK +50%",
           "Physical Penetration +12",
           "A.R. +1",
           "Casts [Pierced Wound] by 100% as many as hits made with normal ATK",
@@ -73,6 +81,8 @@
         "level": "Level 13",
         "effects": [
           "Duration 5 Minutes",
+          "ATK +25%",
+          "Monster ATK +50%",
           "Physical Penetration +13",
           "A.R. +1",
           "Casts [Pierced Wound] by 100% as many as hits made with normal ATK",
@@ -125,6 +135,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -168,6 +179,7 @@
         "Penetration": "10+20",
         "Immunity": "10+5"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Dagger Felt",
@@ -182,26 +194,75 @@
           "sp_cost": "150",
           "aggro": "60",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "70%",
+          "light_armor_atk": "120%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1500%"
+              "value": "АТК: 1500%",
+              "effects": [
+                "Ignores enemys DEF by 50",
+                "50% chance to impose [Paralysis]",
+                "Ignores enemys Debuff RES",
+                "Damage+30% for each level of [Pierced Wound] applied to enemy, Ignores enemy PCs DEF by 9",
+                "[Paralysis]",
+                "PC: Move SPD -10%, Attack SPD -10%, Female targets DEF -20",
+                "Monster: Resistance Heyrans Critical Damage +150%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "Ignores enemys DEF by 50",
+                "50% chance to impose [Paralysis]",
+                "Ignores enemys Debuff RES",
+                "Damage+30% for each level of [Pierced Wound] applied to enemy, Ignores enemy PCs DEF by 9",
+                "[Paralysis]",
+                "PC: Move SPD -100%, Attack SPD -100%, Female targets DEF -20",
+                "Monster: Resistance Heyrans Critical Damage +150%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "АТК: 3300%"
+              "value": "АТК: 3300%",
+              "effects": [
+                "Ignores enemys DEF by 50",
+                "50% chance to impose [Paralysis]",
+                "Ignores enemys Debuff RES",
+                "Damage+30% for each level of [Pierced Wound] applied to enemy, Ignores enemy PCs DEF by 9",
+                "[Paralysis]",
+                "PC: Move SPD -110%, Attack SPD -110%, Female targets DEF -20",
+                "Monster: Resistance Heyrans Critical Damage +150%"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "АТК: 3600%"
+              "value": "АТК: 3600%",
+              "effects": [
+                "Ignores enemys DEF by 50",
+                "50% chance to impose [Paralysis]",
+                "Ignores enemys Debuff RES",
+                "Damage+30% for each level of [Pierced Wound] applied to enemy, Ignores enemy PCs DEF by 9",
+                "[Paralysis]",
+                "PC: Move SPD -120%, Attack SPD -120%, Female targets DEF -20",
+                "Monster: Resistance Heyrans Critical Damage +150%"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "АТК: 3600%"
+              "value": "АТК: 3600%",
+              "effects": [
+                "Ignores enemys DEF by 50",
+                "50% chance to impose [Paralysis]",
+                "Ignores enemys Debuff RES",
+                "Damage+30% for each level of [Pierced Wound] applied to enemy, Ignores enemy PCs DEF by 9",
+                "[Paralysis]",
+                "PC: Move SPD -130%, Attack SPD -130%, Female targets DEF -20",
+                "Monster: Resistance Heyrans Critical Damage +150%"
+              ]
             }
           ],
           "special": []
@@ -219,26 +280,75 @@
           "sp_cost": "300",
           "aggro": "103",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 2",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "80%",
+          "light_armor_atk": "115%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 900%"
+              "value": "АТК: 900%",
+              "effects": [
+                "Ignores enemys DEF by 75",
+                "50% chance to impose [Paralysis]",
+                "Ignores enemys Debuff RES",
+                "Damage+30% for each level of [Pierced Wound] applied to enemy, Ignores enemy PCs DEF by 9",
+                "[Paralysis]",
+                "PC: Move SPD -10%, Attack SPD -10%, Female targets DEF -20",
+                "Monster: Resistance Heyrans Critical Damage +150%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": [
+                "Ignores enemys DEF by 75",
+                "50% chance to impose [Paralysis]",
+                "Ignores enemys Debuff RES",
+                "Damage+30% for each level of [Pierced Wound] applied to enemy, Ignores enemy PCs DEF by 9",
+                "[Paralysis]",
+                "PC: Move SPD -100%, Attack SPD -100%, Female targets DEF -20",
+                "Monster: Resistance Heyrans Critical Damage +150%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "АТК: 1980%"
+              "value": "АТК: 1980%",
+              "effects": [
+                "Ignores enemys DEF by 75",
+                "50% chance to impose [Paralysis]",
+                "Ignores enemys Debuff RES",
+                "Damage+30% for each level of [Pierced Wound] applied to enemy, Ignores enemy PCs DEF by 9",
+                "[Paralysis]",
+                "PC: Move SPD -110%, Attack SPD -110%, Female targets DEF -20",
+                "Monster: Resistance Heyrans Critical Damage +150%"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "АТК: 2160%"
+              "value": "АТК: 2160%",
+              "effects": [
+                "Ignores enemys DEF by 75",
+                "50% chance to impose [Paralysis]",
+                "Ignores enemys Debuff RES",
+                "Damage+30% for each level of [Pierced Wound] applied to enemy, Ignores enemy PCs DEF by 9",
+                "[Paralysis]",
+                "PC: Move SPD -120%, Attack SPD -120%, Female targets DEF -20",
+                "Monster: Resistance Heyrans Critical Damage +150%"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "АТК: 2160%"
+              "value": "АТК: 2160%",
+              "effects": [
+                "Ignores enemys DEF by 75",
+                "50% chance to impose [Paralysis]",
+                "Ignores enemys Debuff RES",
+                "Damage+30% for each level of [Pierced Wound] applied to enemy, Ignores enemy PCs DEF by 9",
+                "[Paralysis]",
+                "PC: Move SPD -130%, Attack SPD -130%, Female targets DEF -20",
+                "Monster: Resistance Heyrans Critical Damage +150%"
+              ]
             }
           ],
           "special": []
@@ -256,14 +366,28 @@
           "sp_cost": "600",
           "aggro": "150",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "115%",
+          "heavy_armor_atk": "65%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2500%"
+              "value": "АТК: 2500%",
+              "effects": [
+                "Ignores enemys DEF by 80",
+                "25% chance to impose [Drain]",
+                "Damage+30% for each level of [Pierced Wound] applied to enemy, Ignores enemy PCs DEF by 9"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5000%"
+              "value": "АТК: 5000%",
+              "effects": [
+                "Ignores enemys DEF by 80",
+                "25% chance to impose [Drain]",
+                "Damage+30% for each level of [Pierced Wound] applied to enemy, Ignores enemy PCs DEF by 9"
+              ]
             }
           ],
           "special": []
@@ -281,26 +405,66 @@
           "sp_cost": "300",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration 5 Minutes."
+              "value": "",
+              "effects": [
+                "Duration 5 Minutes.",
+                "Evasion+6",
+                "Evasion Limit rises up to 90",
+                "Evades Shoot Attack"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration 5 Minutes."
+              "value": "",
+              "effects": [
+                "Duration 5 Minutes.",
+                "Evasion+20",
+                "Evasion Limit rises up to 90",
+                "Evades Shoot Attack"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration 5 Minutes."
+              "value": "",
+              "effects": [
+                "Duration 5 Minutes.",
+                "Evasion+21",
+                "Evasion Limit rises up to 90",
+                "Evades Shoot Attack",
+                "D.R.+1",
+                "Physical Penetration+11"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration 5 Minutes."
+              "value": "",
+              "effects": [
+                "Duration 5 Minutes.",
+                "Evasion+23",
+                "Evasion Limit rises up to 90",
+                "Evades Shoot Attack",
+                "D.R.+1",
+                "Physical Penetration+12"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration 5 Minutes."
+              "value": "",
+              "effects": [
+                "Duration 5 Minutes.",
+                "Evasion+24",
+                "Evasion Limit rises up to 90",
+                "Evades Shoot Attack",
+                "D.R.+1",
+                "Physical Penetration+13"
+              ]
             }
           ],
           "special": []
@@ -318,14 +482,26 @@
           "sp_cost": "400",
           "aggro": "80",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "85%",
+          "light_armor_atk": "115%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "Ignores enemys DEF by 85",
+                "Damage+30% for each level of [Pierced Wound] applied to enemy, Ignores enemy PCs DEF by 9"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 6000%"
+              "value": "АТК: 6000%",
+              "effects": [
+                "Ignores enemys DEF by 85",
+                "Damage+30% for each level of [Pierced Wound] applied to enemy, Ignores enemy PCs DEF by 9"
+              ]
             }
           ],
           "special": []

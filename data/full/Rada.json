@@ -94,6 +94,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -134,12 +135,13 @@
         "Penetration": "10+0",
         "Immunity": "20+0"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Moras",
           "image": "atl_morass.jpg",
           "description": "Summon a bog and curse the enemies on the bog.",
-          "target": "",
+          "target": "Max Range 15m / Radius 5m / Up to 3 enemies",
           "casting_time": "0.833 sec.",
           "cooldown": "12 sec.",
           "duration": "0.733 sec.",
@@ -148,26 +150,50 @@
           "sp_cost": "120",
           "aggro": "100",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 3",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "100% chance of enemy ["
+              "value": "",
+              "effects": [
+                "100% chance of enemy [Curse of Bog]",
+                "[Curse of Bog] Duration 2sec., Move SPD -5%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "100% chance of enemy ["
+              "value": "",
+              "effects": [
+                "100% chance of enemy [Curse of Bog]",
+                "[Curse of Bog] Duration 2sec., Move SPD -50%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "100% chance of enemy ["
+              "value": "",
+              "effects": [
+                "100% chance of enemy [Curse of Bog]",
+                "[Curse of Bog] Duration 2sec., Move SPD -55%, In case of PC, Max HP -10000"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "100% chance of enemy ["
+              "value": "",
+              "effects": [
+                "100% chance of enemy [Curse of Bog]",
+                "[Curse of Bog] Duration 2sec., Move SPD -60%, In case of PC, Max HP -10000"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "100% chance of enemy ["
+              "value": "",
+              "effects": [
+                "100% chance of enemy [Curse of Bog]",
+                "[Curse of Bog] Duration 2sec., Move SPD -65%, In case of PC, Max HP -10000"
+              ]
             }
           ],
           "special": []
@@ -176,7 +202,7 @@
           "name": "Gazer",
           "image": "atl_geyser.jpg",
           "description": "It jumps into the middle of the enemy and gives damage to the enemy at the landing point, causing the enemy to attack oneself.",
-          "target": "",
+          "target": "Max Range 18m / Radius 5m / Up to 5 enemies",
           "casting_time": "0.4 sec.",
           "cooldown": "10 sec.",
           "duration": "1.333 sec.",
@@ -185,26 +211,50 @@
           "sp_cost": "200",
           "aggro": "250",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "90%",
+          "light_armor_atk": "120%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 800%"
+              "value": "АТК: 800%",
+              "effects": [
+                "[Aura of Threat] to oneself",
+                "[Aura of Threat] Duration 3 sec, lure monsters within 15m to attack oneself."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1600%"
+              "value": "АТК: 1600%",
+              "effects": [
+                "[Aura of Threat] to oneself",
+                "[Aura of Threat] Duration 30 sec, lure monsters within 15m to attack oneself."
+              ]
             },
             {
               "level": "Level 11",
-              "value": "АТК: 1760%"
+              "value": "АТК: 1760%",
+              "effects": [
+                "[Aura of Threat] to oneself",
+                "[Aura of Threat] Duration 33 sec, lure monsters within 15m to attack oneself."
+              ]
             },
             {
               "level": "Level 12",
-              "value": "АТК: 1920%"
+              "value": "АТК: 1920%",
+              "effects": [
+                "[Aura of Threat] to oneself",
+                "[Aura of Threat] Duration 36 sec, lure monsters within 15m to attack oneself."
+              ]
             },
             {
               "level": "Level 13",
-              "value": "АТК: 1920%"
+              "value": "АТК: 1920%",
+              "effects": [
+                "[Aura of Threat] to oneself",
+                "[Aura of Threat] Duration 39 sec, lure monsters within 15m to attack oneself."
+              ]
             }
           ],
           "special": []
@@ -222,26 +272,50 @@
           "sp_cost": "300",
           "aggro": "400",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "80%",
+          "light_armor_atk": "130%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1700%"
+              "value": "АТК: 1700%",
+              "effects": [
+                "[Aura of Threat] to oneself",
+                "[Aura of Threat] Duration 3 sec, lure monsters within 15m to attack oneself."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3400%"
+              "value": "АТК: 3400%",
+              "effects": [
+                "[Aura of Threat] to oneself",
+                "[Aura of Threat] Duration 30 sec, lure monsters within 15m to attack oneself."
+              ]
             },
             {
               "level": "Level 11",
-              "value": "АТК: 3740%"
+              "value": "АТК: 3740%",
+              "effects": [
+                "[Aura of Threat] to oneself",
+                "[Aura of Threat] Duration 33 sec, lure monsters within 15m to attack oneself."
+              ]
             },
             {
               "level": "Level 12",
-              "value": "АТК: 4080%"
+              "value": "АТК: 4080%",
+              "effects": [
+                "[Aura of Threat] to oneself",
+                "[Aura of Threat] Duration 36 sec, lure monsters within 15m to attack oneself."
+              ]
             },
             {
               "level": "Level 13",
-              "value": "АТК: 4080%"
+              "value": "АТК: 4080%",
+              "effects": [
+                "[Aura of Threat] to oneself",
+                "[Aura of Threat] Duration 39 sec, lure monsters within 15m to attack oneself."
+              ]
             }
           ],
           "special": []
@@ -259,14 +333,38 @@
           "sp_cost": "1070",
           "aggro": "100",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 15",
+          "soft_armor_atk": "20%",
+          "heavy_armor_atk": "15%",
+          "light_armor_atk": "25%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 900%"
+              "value": "АТК: 900%",
+              "effects": [
+                "Up to 8 attacks while casting, reuse to finish casting",
+                "Skill Damage applies to each attack, with finish dealing extra damage",
+                "While Casting:",
+                "- Restores HP by 10% per second and become immune to debuffs for the duration",
+                "- Inflict [Katara tes Ges] to enemy",
+                "[Katara tes Ges]",
+                "D.R. -1",
+                "All DMG +30%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": [
+                "Up to 8 attacks while casting, reuse to finish casting",
+                "Skill Damage applies to each attack, with finish dealing extra damage",
+                "While Casting:",
+                "- Restores HP by 10% per second and become immune to debuffs for the duration",
+                "- Inflict [Katara tes Ges] to enemy",
+                "[Katara tes Ges]",
+                "D.R. -1",
+                "All DMG +30%"
+              ]
             }
           ],
           "special": []
@@ -284,22 +382,42 @@
           "sp_cost": "780",
           "aggro": "700",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 7",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "80%",
+          "light_armor_atk": "120%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1500%"
+              "value": "АТК: 1500%",
+              "effects": [
+                "The smaller own HP, the more damage amplification"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "The smaller own HP, the more damage amplification"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "АТК: 3300%"
+              "value": "АТК: 3300%",
+              "effects": [
+                "50% chance to inflict [Great Confusion]",
+                "[Great Confusion] Moves randomly for 10 seconds.",
+                "The smaller own HP, the more damage amplification"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "АТК: 3600%"
+              "value": "АТК: 3600%",
+              "effects": [
+                "100% chance to inflict [Great Confusion]",
+                "[Great Confusion] Moves randomly for 10 seconds.",
+                "The smaller own HP, the more damage amplification"
+              ]
             }
           ],
           "special": []

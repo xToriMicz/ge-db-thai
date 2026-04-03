@@ -92,6 +92,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -136,6 +137,7 @@
         "Penetration": "5+20",
         "Immunity": "5+15"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Erinis",
@@ -150,14 +152,34 @@
           "sp_cost": "280",
           "aggro": "125",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 4",
+          "soft_armor_atk": "85%",
+          "heavy_armor_atk": "95%",
+          "light_armor_atk": "105%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1214%"
+              "value": "АТК: 1214%",
+              "effects": [
+                "Ignores 100 DEF",
+                "Increases [Pathos] level upon a successful skill (up to 10 levels)",
+                "Change [Pathos] type upon reaching certain levels",
+                "[Pathos - I] Level 1 ~ 6",
+                "[Pathos - II] Level 7 ~ 9",
+                "[Pathos - III] Level 10"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2428%"
+              "value": "АТК: 2428%",
+              "effects": [
+                "Ignores 100 DEF",
+                "Increases [Pathos] level upon a successful skill (up to 10 levels)",
+                "Change [Pathos] type upon reaching certain levels",
+                "[Pathos - I] Level 1 ~ 6",
+                "[Pathos - II] Level 7 ~ 9",
+                "[Pathos - III] Level 10"
+              ]
             }
           ],
           "special": []
@@ -175,14 +197,38 @@
           "sp_cost": "220",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 3",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Apply ["
+              "value": "",
+              "effects": [
+                "Apply [Rhamnusia] to yourself (level equal to the amount of [Pathos]s level)",
+                "[Level 1-6] Level 4",
+                "[Level 8-10] Level 7",
+                "[Rhamnusia]",
+                "Duration: 300 seconds",
+                "DEF, Monster Damage, Penetration, and All Stats increase in proportion to the buffs level",
+                "Damage increases equal to 7% of extra [STR] (decreased to 1.8% in PVP)",
+                "Ignore DEF equal to extra [STR] (Max. 200 DEF Ignored, decreased to 25 in PVP)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Apply ["
+              "value": "",
+              "effects": [
+                "Apply [Rhamnusia] to yourself (level equal to the amount of [Pathos]s level)",
+                "[Level 1-6] Level 4",
+                "[Level 8-10] Level 7",
+                "[Rhamnusia]",
+                "Duration: 300 seconds",
+                "DEF, Monster Damage, Penetration, and All Stats increase in proportion to the buffs level",
+                "Damage increases equal to 7% of extra [STR] (decreased to 1.8% in PVP)",
+                "Ignore DEF equal to extra [STR] (Max. 200 DEF Ignored, decreased to 25 in PVP)"
+              ]
             }
           ],
           "special": []
@@ -200,14 +246,36 @@
           "sp_cost": "290",
           "aggro": "190",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 6",
+          "soft_armor_atk": "85%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1711%"
+              "value": "АТК: 1711%",
+              "effects": [
+                "Ignores 100 DEF",
+                "Ignore Block",
+                "Increases [Pathos] level upon a successful skill (up to 10 levels)",
+                "Change [Pathos] type upon reaching certain levels",
+                "[Pathos - I] Level 1 ~ 6",
+                "[Pathos - II] Level 7 ~ 9",
+                "[Pathos - III] Level 10"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3422%"
+              "value": "АТК: 3422%",
+              "effects": [
+                "Ignores 100 DEF",
+                "Ignore Block",
+                "Increases [Pathos] level upon a successful skill (up to 10 levels)",
+                "Change [Pathos] type upon reaching certain levels",
+                "[Pathos - I] Level 1 ~ 6",
+                "[Pathos - II] Level 7 ~ 9",
+                "[Pathos - III] Level 10"
+              ]
             }
           ],
           "special": []
@@ -225,14 +293,34 @@
           "sp_cost": "150",
           "aggro": "47",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1841%"
+              "value": "АТК: 1841%",
+              "effects": [
+                "Ignores 100 DEF",
+                "Increases [Pathos] level upon a successful skill (up to 10 levels)",
+                "Change [Pathos] type upon reaching certain levels",
+                "[Pathos - I] Level 1 ~ 6",
+                "[Pathos - II] Level 7 ~ 9",
+                "[Pathos - III] Level 10"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3682%"
+              "value": "АТК: 3682%",
+              "effects": [
+                "Ignores 100 DEF",
+                "Increases [Pathos] level upon a successful skill (up to 10 levels)",
+                "Change [Pathos] type upon reaching certain levels",
+                "[Pathos - I] Level 1 ~ 6",
+                "[Pathos - II] Level 7 ~ 9",
+                "[Pathos - III] Level 10"
+              ]
             }
           ],
           "special": []
@@ -250,14 +338,36 @@
           "sp_cost": "300",
           "aggro": "99",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 12",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "120%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2520%"
+              "value": "АТК: 2520%",
+              "effects": [
+                "Ignores 100 DEF",
+                "Ignore Block",
+                "Increases [Pathos] level upon a successful skill (up to 10 levels)",
+                "Change [Pathos] type upon reaching certain levels",
+                "[Pathos - I] Level 1 ~ 6",
+                "[Pathos - II] Level 7 ~ 9",
+                "[Pathos - III] Level 10"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5040%"
+              "value": "АТК: 5040%",
+              "effects": [
+                "Ignores 100 DEF",
+                "Ignore Block",
+                "Increases [Pathos] level upon a successful skill (up to 10 levels)",
+                "Change [Pathos] type upon reaching certain levels",
+                "[Pathos - I] Level 1 ~ 6",
+                "[Pathos - II] Level 7 ~ 9",
+                "[Pathos - III] Level 10"
+              ]
             }
           ],
           "special": []

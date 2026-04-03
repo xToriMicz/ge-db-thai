@@ -134,6 +134,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -178,6 +179,7 @@
         "Penetration": "10+25",
         "Immunity": "5+25"
       },
+      "consume": "Elemental Sphere x 4",
       "skills": [
         {
           "name": "Storm Blitz",
@@ -192,14 +194,30 @@
           "sp_cost": "200",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 3",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Can summon Max 3 simultaneously"
+              "value": "",
+              "effects": [
+                "Can summon Max 3 simultaneously",
+                "According to the skill level and the intelligence value, spheres bonus ability appears",
+                "Sphere isnt attacked",
+                "According to spheres number, [Protection of Sphere] level rises."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Can summon Max 3 simultaneously"
+              "value": "",
+              "effects": [
+                "Can summon Max 3 simultaneously",
+                "According to the skill level and the intelligence value, spheres bonus ability appears",
+                "Sphere isnt attacked",
+                "According to spheres number, [Protection of Sphere] level rises."
+              ]
             }
           ],
           "special": [
@@ -220,26 +238,71 @@
           "sp_cost": "250",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 360 sec."
+              "value": "",
+              "effects": [
+                "Duration: 360 sec.",
+                "Lightning Penetration +1",
+                "Lightning extra damage +30",
+                "10% Chance to impose [Black Cross Mark] on the enemy who attacked you.",
+                "INT increases equal to Max SP / 1000 (Max. 5)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 360 sec."
+              "value": "",
+              "effects": [
+                "Duration: 360 sec.",
+                "Lightning Penetration +10",
+                "Lightning extra damage +300",
+                "10% Chance to impose [Black Cross Mark] on the enemy who attacked you.",
+                "INT increases equal to Max SP / 1000 (Max. 5)"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 360 sec."
+              "value": "",
+              "effects": [
+                "Duration: 360 sec.",
+                "D.R.+1",
+                "Lightning Penetration +11",
+                "Lightning extra damage +330",
+                "10% Chance to impose [Black Cross Mark] on the enemy who attacked you.",
+                "INT increases equal to Max SP / 1000 (Max. 10)",
+                "Accuracy +10"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 360 sec."
+              "value": "",
+              "effects": [
+                "Duration: 360 sec.",
+                "D.R.+1",
+                "Lightning Penetration +12",
+                "Lightning extra damage +360",
+                "10% Chance to impose [Black Cross Mark] on the enemy who attacked you.",
+                "INT increases equal to Max SP / 1000 (Max. 10)",
+                "Accuracy +10"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 360 sec."
+              "value": "",
+              "effects": [
+                "Duration: 360 sec.",
+                "D.R.+1",
+                "Lightning Penetration +13",
+                "Lightning extra damage +390",
+                "10% Chance to impose [Black Cross Mark] on the enemy who attacked you.",
+                "INT increases equal to Max SP / 1000 (Max. 10)",
+                "Accuracy +10"
+              ]
             }
           ],
           "special": []
@@ -257,14 +320,28 @@
           "sp_cost": "300",
           "aggro": "81",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1345%"
+              "value": "АТК: 1345%",
+              "effects": [
+                "80% chance to inflict [Arxon]",
+                "With skill accuracy, SP evaporates in proportion to [Black Cross Mark]",
+                "Skill damage rises in proportion to evaporated SP"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2690%"
+              "value": "АТК: 2690%",
+              "effects": [
+                "80% chance to inflict [Arxon]",
+                "With skill accuracy, SP evaporates in proportion to [Black Cross Mark]",
+                "Skill damage rises in proportion to evaporated SP"
+              ]
             }
           ],
           "special": []
@@ -282,14 +359,30 @@
           "sp_cost": "680",
           "aggro": "200",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "20%",
+          "heavy_armor_atk": "20%",
+          "light_armor_atk": "20%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 715%"
+              "value": "АТК: 715%",
+              "effects": [
+                "Max 15 times attacks during casting",
+                "In reusing it during casting, skill finish attack",
+                "Skill damage for every attack",
+                "15% chance to inflict [Dyna] for every attack"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1430%"
+              "value": "АТК: 1430%",
+              "effects": [
+                "Max 15 times attacks during casting",
+                "In reusing it during casting, skill finish attack",
+                "Skill damage for every attack",
+                "15% chance to inflict [Dyna] for every attack"
+              ]
             }
           ],
           "special": []
@@ -307,14 +400,28 @@
           "sp_cost": "1000",
           "aggro": "225",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 15",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1845%"
+              "value": "АТК: 1845%",
+              "effects": [
+                "100% chance to inflict [Arxon]",
+                "With skill accuracy, SP evaporates in proportion to [Black Cross Mark]",
+                "Skill damage rises in proportion to evaporated SP"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3690%"
+              "value": "АТК: 3690%",
+              "effects": [
+                "100% chance to inflict [Arxon]",
+                "With skill accuracy, SP evaporates in proportion to [Black Cross Mark]",
+                "Skill damage rises in proportion to evaporated SP"
+              ]
             }
           ],
           "special": []

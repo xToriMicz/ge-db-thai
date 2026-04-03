@@ -105,6 +105,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -146,6 +147,7 @@
         "Penetration": "10+15",
         "Immunity": "5+15"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Flame Suit",
@@ -160,14 +162,26 @@
           "sp_cost": "50",
           "aggro": "30",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 1",
+          "soft_armor_atk": "50%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1200%"
+              "value": "АТК: 1200%",
+              "effects": [
+                "75% chance to impose [Burn]",
+                "The closer target is, the powerful damage is."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "75% chance to impose [Burn]",
+                "The closer target is, the powerful damage is."
+              ]
             }
           ],
           "special": []
@@ -185,26 +199,58 @@
           "sp_cost": "250",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 3",
+          "soft_armor_atk": "50%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 30 sec."
+              "value": "",
+              "effects": [
+                "Duration: 30 sec.",
+                "ATK+2%",
+                "Fire Penetration+2"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 300 sec."
+              "value": "",
+              "effects": [
+                "Duration: 300 sec.",
+                "ATK+20%",
+                "Fire Penetration+20"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 330 sec."
+              "value": "",
+              "effects": [
+                "Duration: 330 sec.",
+                "ATK+22%",
+                "Fire Penetration+22",
+                "A.R.+1"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 360 sec."
+              "value": "",
+              "effects": [
+                "Duration: 360 sec.",
+                "ATK+24%",
+                "Fire Penetration+24",
+                "A.R.+1"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 390 sec."
+              "value": "",
+              "effects": [
+                "Duration: 390 sec.",
+                "ATK+26%",
+                "Fire Penetration+26",
+                "A.R.+1"
+              ]
             }
           ],
           "special": []
@@ -215,21 +261,33 @@
           "description": "Rushes forward and creates a path full of flames.",
           "target": "Up to 6 enemies 12m away and within 6m",
           "casting_time": "0.866 sec.",
-          "cooldown": "5 sec.",
+          "cooldown": "9 sec.",
           "duration": "2.1 sec.",
           "hits_flying": "No",
           "knock_down": "Yes",
           "sp_cost": "300",
           "aggro": "81",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 4",
+          "soft_armor_atk": "50%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2000%"
+              "value": "АТК: 2000%",
+              "effects": [
+                "100% chance to impose [Burn]",
+                "The less targets, the more Skill Damage"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4000%"
+              "value": "АТК: 4000%",
+              "effects": [
+                "100% chance to impose [Burn]",
+                "The less targets, the more Skill Damage"
+              ]
             }
           ],
           "special": []
@@ -247,14 +305,26 @@
           "sp_cost": "400",
           "aggro": "150",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "50%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "100% chance to impose [Burn]",
+                "The less targets, the more Skill Damage"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 6000%"
+              "value": "АТК: 6000%",
+              "effects": [
+                "100% chance to impose [Burn]",
+                "The less targets, the more Skill Damage"
+              ]
             }
           ],
           "special": []
@@ -272,14 +342,26 @@
           "sp_cost": "800",
           "aggro": "245",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "50%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "100% chance to impose [Burn]",
+                "The less targets, the more Skill Damage"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 6000%"
+              "value": "АТК: 6000%",
+              "effects": [
+                "100% chance to impose [Burn]",
+                "The less targets, the more Skill Damage"
+              ]
             }
           ],
           "special": []
@@ -329,6 +411,7 @@
         "Penetration": "5+25",
         "Immunity": "15"
       },
+      "consume": "Elemental Sphere x 4",
       "skills": [
         {
           "name": "Lama-El",
@@ -343,14 +426,30 @@
           "sp_cost": "50",
           "aggro": "30",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 1",
+          "soft_armor_atk": "50%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "130%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1900%"
+              "value": "АТК: 1900%",
+              "effects": [
+                "30% chance to inflict [Burn]",
+                "Ignore 50 Fire RES",
+                "[Blessing of the Red Crown] level +1, up to level 3",
+                "Skill Damage increases by 300% per [Blessing of the Red Crown] level"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3800%"
+              "value": "АТК: 3800%",
+              "effects": [
+                "30% chance to inflict [Burn]",
+                "Ignore 50 Fire RES",
+                "[Blessing of the Red Crown] level +1, up to level 3",
+                "Skill Damage increases by 300% per [Blessing of the Red Crown] level"
+              ]
             }
           ],
           "special": []
@@ -368,14 +467,30 @@
           "sp_cost": "650",
           "aggro": "180",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "50%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "130%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2300%"
+              "value": "АТК: 2300%",
+              "effects": [
+                "50% chance to inflict [Heat]",
+                "Ignore 50 Fire RES",
+                "[Blessing of the Red Crown] level +1, up to level 3",
+                "Skill Damage increases by 300% per [Blessing of the Red Crown] level"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4600%"
+              "value": "АТК: 4600%",
+              "effects": [
+                "50% chance to inflict [Heat]",
+                "Ignore 50 Fire RES",
+                "[Blessing of the Red Crown] level +1, up to level 3",
+                "Skill Damage increases by 300% per [Blessing of the Red Crown] level"
+              ]
             }
           ],
           "special": []
@@ -386,21 +501,43 @@
           "description": "Shoots consecutive fireballs towards the specified target.",
           "target": "1 enemy within a range of 17m",
           "casting_time": "2.3 sec.",
-          "cooldown": "3.5 sec.",
+          "cooldown": "10 sec.",
           "duration": "1.2 sec.",
           "hits_flying": "No",
           "knock_down": "Yes",
           "sp_cost": "500",
           "aggro": "150",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "50%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "130%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2600%"
+              "value": "АТК: 2600%",
+              "effects": [
+                "Cooldown: 30 sec.",
+                "Can use it up to 3 times",
+                "After using twice, recharge",
+                "30% chance to inflict [Burn]",
+                "Ignore 50 Fire RES",
+                "[Blessing of the Red Crown] level +1, up to level 3",
+                "Skill Damage increases by 300% per [Blessing of the Red Crown] level"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5200%"
+              "value": "АТК: 5200%",
+              "effects": [
+                "Cooldown: 30 sec.",
+                "Can use it up to 3 times",
+                "After using twice, recharge",
+                "30% chance to inflict [Burn]",
+                "Ignore 50 Fire RES",
+                "[Blessing of the Red Crown] level +1, up to level 3",
+                "Skill Damage increases by 300% per [Blessing of the Red Crown] level"
+              ]
             }
           ],
           "special": []
@@ -418,14 +555,30 @@
           "sp_cost": "1000",
           "aggro": "200",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "50%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "130%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "75% chance to inflict [Heat]",
+                "Ignore 50 Fire RES",
+                "[Blessing of the Red Crown] level +1, up to level 3",
+                "Skill Damage increases by 300% per [Blessing of the Red Crown] level"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 6000%"
+              "value": "АТК: 6000%",
+              "effects": [
+                "75% chance to inflict [Heat]",
+                "Ignore 50 Fire RES",
+                "[Blessing of the Red Crown] level +1, up to level 3",
+                "Skill Damage increases by 300% per [Blessing of the Red Crown] level"
+              ]
             }
           ],
           "special": []
@@ -443,14 +596,30 @@
           "sp_cost": "1000",
           "aggro": "120",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 8",
+          "soft_armor_atk": "50%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "130%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "30% chance to inflict [Scald]",
+                "Ignore 50 Fire RES",
+                "[Blessing of the Red Crown] level +1, up to level 3",
+                "Skill Damage increases by 300% per [Blessing of the Red Crown] level"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 6000%"
+              "value": "АТК: 6000%",
+              "effects": [
+                "30% chance to inflict [Scald]",
+                "Ignore 50 Fire RES",
+                "[Blessing of the Red Crown] level +1, up to level 3",
+                "Skill Damage increases by 300% per [Blessing of the Red Crown] level"
+              ]
             }
           ],
           "special": []
@@ -500,6 +669,7 @@
         "ATK SPD": "+5%",
         "Penetration": "15+25"
       },
+      "consume": "Elemental Sphere x 2",
       "skills": [
         {
           "name": "Pyroclasm",
@@ -514,14 +684,34 @@
           "sp_cost": "550",
           "aggro": "197",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 3",
+          "soft_armor_atk": "50%",
+          "heavy_armor_atk": "125%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "100% Chance to increase [Infernal Wane] Level by 1 (Max. Lv 20, Ignores Debuff RES)",
+                "Skill Damage increases by 9% of extra [INT]",
+                "Ignores 5 RES per [Infernal Wane] Lv.",
+                "Skill Damage increases additionally proportional to the amount of targets",
+                "While [Ashen Flame] is applied to caster, Skill Damage x2",
+                "While [Infernal Wane] is applied to monster, Skill Damage x1.5"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4400%"
+              "value": "АТК: 4400%",
+              "effects": [
+                "100% Chance to increase [Infernal Wane] Level by 1 (Max. Lv 20, Ignores Debuff RES)",
+                "Skill Damage increases by 9% of extra [INT]",
+                "Ignores 5 RES per [Infernal Wane] Lv.",
+                "Skill Damage increases additionally proportional to the amount of targets",
+                "While [Ashen Flame] is applied to caster, Skill Damage x2",
+                "While [Infernal Wane] is applied to monster, Skill Damage x1.5"
+              ]
             }
           ],
           "special": []
@@ -539,14 +729,38 @@
           "sp_cost": "350",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 20",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 300s"
+              "value": "",
+              "effects": [
+                "Duration: 300s",
+                "A.R. +1",
+                "D.R. +1",
+                "Immune to Debuffs",
+                "Movement Speed +20%",
+                "Movement Speed Limit +2.00",
+                "Normal Attack Damage x5",
+                "Ignore enemy RES by 150"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 300s"
+              "value": "",
+              "effects": [
+                "Duration: 300s",
+                "A.R. +1",
+                "D.R. +1",
+                "Immune to Debuffs",
+                "Movement Speed +20%",
+                "Movement Speed Limit +2.00",
+                "Normal Attack Damage x5",
+                "Ignore enemy RES by 150"
+              ]
             }
           ],
           "special": []
@@ -564,14 +778,38 @@
           "sp_cost": "600",
           "aggro": "221",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "20%",
+          "heavy_armor_atk": "20%",
+          "light_armor_atk": "20%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1400%"
+              "value": "АТК: 1400%",
+              "effects": [
+                "Attacks up to 12 times while casting",
+                "Cancel casting upon re-use",
+                "Skill Damage is applied with every attack",
+                "[Infernal Wane] Level +1 per attack (Max. Lv 20, Ignores Debuff RES)",
+                "Skill Damage increases by 4% of extra [INT]",
+                "Ignores 5 RES per [Infernal Wane] Lv.",
+                "While [Ashen Flame] is applied to caster, Skill Damage x2",
+                "While [Infernal Wane] is applied to monster, Skill Damage x1.5"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2800%"
+              "value": "АТК: 2800%",
+              "effects": [
+                "Attacks up to 12 times while casting",
+                "Cancel casting upon re-use",
+                "Skill Damage is applied with every attack",
+                "[Infernal Wane] Level +1 per attack (Max. Lv 20, Ignores Debuff RES)",
+                "Skill Damage increases by 4% of extra [INT]",
+                "Ignores 5 RES per [Infernal Wane] Lv.",
+                "While [Ashen Flame] is applied to caster, Skill Damage x2",
+                "While [Infernal Wane] is applied to monster, Skill Damage x1.5"
+              ]
             }
           ],
           "special": []
@@ -589,14 +827,34 @@
           "sp_cost": "350",
           "aggro": "60",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 15",
+          "soft_armor_atk": "75%",
+          "heavy_armor_atk": "125%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1230%"
+              "value": "АТК: 1230%",
+              "effects": [
+                "100% Chance to increase [Infernal Wane] Level by 1 (Max. Lv 20, Ignores Debuff RES)",
+                "Skill Damage increases by 9% of extra [INT]",
+                "Ignores 5 RES per [Infernal Wane] Lv.",
+                "Skill Damage increases additionally proportional to the amount of targets",
+                "While [Ashen Flame] is applied to caster, Skill Damage x2",
+                "While [Infernal Wane] is applied to monster, Skill Damage x1.5"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2460%"
+              "value": "АТК: 2460%",
+              "effects": [
+                "100% Chance to increase [Infernal Wane] Level by 1 (Max. Lv 20, Ignores Debuff RES)",
+                "Skill Damage increases by 9% of extra [INT]",
+                "Ignores 5 RES per [Infernal Wane] Lv.",
+                "Skill Damage increases additionally proportional to the amount of targets",
+                "While [Ashen Flame] is applied to caster, Skill Damage x2",
+                "While [Infernal Wane] is applied to monster, Skill Damage x1.5"
+              ]
             }
           ],
           "special": []
@@ -614,14 +872,46 @@
           "sp_cost": "10000",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "50,000 HP",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Consumes 50,000 HP"
+              "value": "",
+              "effects": [
+                "Consumes 50,000 HP",
+                "Resurrects all nearby allies and then applies buff to nearby allies",
+                "A.R. +1",
+                "ATK +20%",
+                "Monster ATK +20%",
+                "All Stats +5",
+                "Casting Speed +10%",
+                "Fire PEN +15",
+                "Fire RES +50",
+                "HP/SP Regeneration +2%",
+                "For Cassandra, Quiritatio Guardian, Noah, Stella, Chloe, Code Name C, and Orden, skill damage x2",
+                "For Charlotte, buff effect doubles and damage against targets afflicted with [Quiritatio Scar], [Polluted Water], [Cursed Star], or [Umbral Death] +25%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Consumes 50,000 HP"
+              "value": "",
+              "effects": [
+                "Consumes 50,000 HP",
+                "Resurrects all nearby allies and then applies buff to nearby allies",
+                "A.R. +1",
+                "ATK +20%",
+                "Monster ATK +20%",
+                "All Stats +5",
+                "Casting Speed +10%",
+                "Fire PEN +15",
+                "Fire RES +50",
+                "HP/SP Regeneration +2%",
+                "For Cassandra, Quiritatio Guardian, Noah, Stella, Chloe, Code Name C, and Orden, skill damage x2",
+                "For Charlotte, buff effect doubles and damage against targets afflicted with [Quiritatio Scar], [Polluted Water], [Cursed Star], or [Umbral Death] +25%"
+              ]
             }
           ],
           "special": []

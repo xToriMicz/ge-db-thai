@@ -90,6 +90,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -133,6 +134,7 @@
         "Penetration": "20+10",
         "Immunity": "5+10"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Endless Ocean",
@@ -147,22 +149,68 @@
           "sp_cost": "500",
           "aggro": "50",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 600 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 600 seconds",
+                "A.R. +1",
+                "Monster ATK +50%",
+                "Max HP Increases in proportion to [STR]",
+                "Normal damage increases in proportion to [Ocean Current] Lv",
+                "Attacks increase [Ocean Current] Lv +1",
+                "Ignore 10 Immunity per [Ocean Current] Lv (Max. 100)",
+                "Movement Speed +2%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 600 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 600 seconds",
+                "A.R. +1",
+                "Monster ATK +50%",
+                "Max HP Increases in proportion to [STR]",
+                "Normal damage increases in proportion to [Ocean Current] Lv",
+                "Attacks increase [Ocean Current] Lv +1",
+                "Ignore 10 Immunity per [Ocean Current] Lv (Max. 100)",
+                "Movement Speed +20%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 600 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 600 seconds",
+                "A.R. +1",
+                "Monster ATK +50%",
+                "Max HP Increases in proportion to [STR]",
+                "Normal damage increases in proportion to [Ocean Current] Lv",
+                "Attacks increase [Ocean Current] Lv +1",
+                "Ignore 10 Immunity per [Ocean Current] Lv (Max. 100)",
+                "Movement Speed +20%",
+                "Movement Speed Limit +2.00"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 600 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 600 seconds",
+                "A.R. +1",
+                "Monster ATK +50%",
+                "Max HP Increases in proportion to [STR]",
+                "Normal damage increases in proportion to [Ocean Current] Lv",
+                "Attacks increase [Ocean Current] Lv +1",
+                "Ignore 10 Immunity per [Ocean Current] Lv (Max. 100)",
+                "Movement Speed +20%",
+                "Movement Speed Limit +2.00"
+              ]
             }
           ],
           "special": []
@@ -180,14 +228,28 @@
           "sp_cost": "300",
           "aggro": "150",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1400%"
+              "value": "АТК: 1400%",
+              "effects": [
+                "50% Chance to inflict [Cold Wave]",
+                "Ignores additional DEF according to extra [STR] * 1.3",
+                "Skill damage increases according to number of fewer targets (up to 3x)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2800%"
+              "value": "АТК: 2800%",
+              "effects": [
+                "50% Chance to inflict [Cold Wave]",
+                "Ignores additional DEF according to extra [STR] * 1.3",
+                "Skill damage increases according to number of fewer targets (up to 3x)"
+              ]
             }
           ],
           "special": []
@@ -205,14 +267,28 @@
           "sp_cost": "450",
           "aggro": "100",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "90%",
+          "light_armor_atk": "90%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1700%"
+              "value": "АТК: 1700%",
+              "effects": [
+                "65% Chance to inflict [Agony]",
+                "Ignores additional DEF according to extra [STR] * 1.3",
+                "Skill damage increases according to number of numerous targets (up to 3x)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3400%"
+              "value": "АТК: 3400%",
+              "effects": [
+                "65% Chance to inflict [Agony]",
+                "Ignores additional DEF according to extra [STR] * 1.3",
+                "Skill damage increases according to number of numerous targets (up to 3x)"
+              ]
             }
           ],
           "special": []
@@ -230,14 +306,28 @@
           "sp_cost": "550",
           "aggro": "150",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 15",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "90%",
+          "light_armor_atk": "90%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "100% Chance to inflict [Frostbite]",
+                "Ignores additional DEF according to extra [STR] * 1.3",
+                "Skill Damage increases additionally while in [Bird Set Free] buff by 7x"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4400%"
+              "value": "АТК: 4400%",
+              "effects": [
+                "100% Chance to inflict [Frostbite]",
+                "Ignores additional DEF according to extra [STR] * 1.3",
+                "Skill Damage increases additionally while in [Bird Set Free] buff by 7x"
+              ]
             }
           ],
           "special": []
@@ -255,14 +345,32 @@
           "sp_cost": "600",
           "aggro": "150",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 15",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "80%",
+          "light_armor_atk": "80%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2600%"
+              "value": "АТК: 2600%",
+              "effects": [
+                "100% Chance to inflict [Polluted Water]",
+                "Ignores additional DEF according to extra [STR] * 1.3",
+                "Skill Damage increases in proportion to [Ocean Current] Level (up to 6x)",
+                "Skill Damage increases additionally while in [Bird Set Free] buff by 2x",
+                "Skill Damage increases according to number of fewer targets (up to 3x)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5200%"
+              "value": "АТК: 5200%",
+              "effects": [
+                "100% Chance to inflict [Polluted Water]",
+                "Ignores additional DEF according to extra [STR] * 1.3",
+                "Skill Damage increases in proportion to [Ocean Current] Level (up to 6x)",
+                "Skill Damage increases additionally while in [Bird Set Free] buff by 2x",
+                "Skill Damage increases according to number of fewer targets (up to 3x)"
+              ]
             }
           ],
           "special": []

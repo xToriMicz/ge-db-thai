@@ -153,6 +153,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -196,6 +197,7 @@
         "Penetration": "5+25",
         "Immunity": "5+15"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Arroar",
@@ -210,26 +212,70 @@
           "sp_cost": "250",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 3",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration : 5 Minutes."
+              "value": "",
+              "effects": [
+                "Duration : 5 Minutes.",
+                "A.R. +1",
+                "ATK +50%",
+                "Penetration +15",
+                "Immunity +30",
+                "Ignore Def +10%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration : 5 Minutes."
+              "value": "",
+              "effects": [
+                "Duration : 5 Minutes.",
+                "A.R. +1",
+                "ATK +50%",
+                "Penetration +15",
+                "Immunity +30",
+                "Ignore Def +10%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration : 5 Minutes."
+              "value": "",
+              "effects": [
+                "Duration : 5 Minutes.",
+                "A.R. +1",
+                "ATK +50%",
+                "Penetration +15",
+                "Immunity +30",
+                "Ignore Def +10%"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration : 5 Minutes."
+              "value": "",
+              "effects": [
+                "Duration : 5 Minutes.",
+                "A.R. +1",
+                "ATK +50%",
+                "Penetration +15",
+                "Immunity +30",
+                "Ignore Def +10%"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration : 5 Minutes."
+              "value": "",
+              "effects": [
+                "Duration : 5 Minutes.",
+                "A.R. +1",
+                "ATK +50%",
+                "Penetration +15",
+                "Immunity +30",
+                "Ignore Def +10%"
+              ]
             }
           ],
           "special": []
@@ -247,14 +293,40 @@
           "sp_cost": "540",
           "aggro": "435",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "45%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "135%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1500%"
+              "value": "АТК: 1500%",
+              "effects": [
+                "Ignores enemys DEF by 50",
+                "Ignores Evasion",
+                "Damage to Evasion type enemies +1% per 1 evasion",
+                "Extra ignores DEF of enemy PC in [Paralysis Poison] state in proportion to [Paralysis Poison]s Lv.",
+                "Reaching Max Lv., extra ignores enemy PCs DEF by 50%",
+                "Extra ignores DEF of monster in [Paralysis Poison] state in proportion to [Paralysis Poison]s Lv.",
+                "Reaching Max Lv., extra DEF ignoring for monster increases greatly",
+                "With skill accuracy, [Paralysis Poison] is lifted",
+                "With skill accuracy, [Bleeding Poison] applies."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "Ignores enemys DEF by 50",
+                "Ignores Evasion",
+                "Damage to Evasion type enemies +1% per 1 evasion",
+                "Extra ignores DEF of enemy PC in [Paralysis Poison] state in proportion to [Paralysis Poison]s Lv.",
+                "Reaching Max Lv., extra ignores enemy PCs DEF by 50%",
+                "Extra ignores DEF of monster in [Paralysis Poison] state in proportion to [Paralysis Poison]s Lv.",
+                "Reaching Max Lv., extra DEF ignoring for monster increases greatly",
+                "With skill accuracy, [Paralysis Poison] is lifted",
+                "With skill accuracy, [Bleeding Poison] applies."
+              ]
             }
           ],
           "special": []
@@ -272,14 +344,36 @@
           "sp_cost": "560",
           "aggro": "342",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "45%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "150%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2000%"
+              "value": "АТК: 2000%",
+              "effects": [
+                "Ignores enemy DEF by 60",
+                "Extra ignores DEF of enemy PC in [Paralysis Poison] state in proportion to [Paralysis Poison]s Lv.",
+                "Reaching Max Lv., extra DEF ignoring for enemy PC +50%",
+                "Extra ignores DEF of monster in [Paralysis Poison] state in proportion to [Paralysis Poison]s Lv.",
+                "Reaching Max Lv., extra DEF ignoring for monster increases greatly",
+                "With skill accuracy, [Paralysis Poison] is lifted",
+                "With skill accuracy, [Bleeding Poison] applies."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4000%"
+              "value": "АТК: 4000%",
+              "effects": [
+                "Ignores enemy DEF by 60",
+                "Extra ignores DEF of enemy PC in [Paralysis Poison] state in proportion to [Paralysis Poison]s Lv.",
+                "Reaching Max Lv., extra DEF ignoring for enemy PC +50%",
+                "Extra ignores DEF of monster in [Paralysis Poison] state in proportion to [Paralysis Poison]s Lv.",
+                "Reaching Max Lv., extra DEF ignoring for monster increases greatly",
+                "With skill accuracy, [Paralysis Poison] is lifted",
+                "With skill accuracy, [Bleeding Poison] applies."
+              ]
             }
           ],
           "special": []
@@ -297,14 +391,36 @@
           "sp_cost": "540",
           "aggro": "435",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "55%",
+          "heavy_armor_atk": "125%",
+          "light_armor_atk": "140%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": [
+                "Ignores enemy DEF by 60",
+                "Extra ignores DEF of enemy PC in [Paralysis Poison] state in proportion to [Paralysis Poison]s Lv.",
+                "Reaching Max Lv., extra ignores enemy PCs DEF by 50%",
+                "Extra ignores DEF of monster in [Paralysis Poison] state in proportion to [Paralysis Poison]s Lv.",
+                "Reaching Max Lv., extra DEF ignoring for monster increases greatly",
+                "With skill accuracy, [Paralysis Poison] is lifted",
+                "With skill accuracy, [Bleeding Poison] applies."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3600%"
+              "value": "АТК: 3600%",
+              "effects": [
+                "Ignores enemy DEF by 60",
+                "Extra ignores DEF of enemy PC in [Paralysis Poison] state in proportion to [Paralysis Poison]s Lv.",
+                "Reaching Max Lv., extra ignores enemy PCs DEF by 50%",
+                "Extra ignores DEF of monster in [Paralysis Poison] state in proportion to [Paralysis Poison]s Lv.",
+                "Reaching Max Lv., extra DEF ignoring for monster increases greatly",
+                "With skill accuracy, [Paralysis Poison] is lifted",
+                "With skill accuracy, [Bleeding Poison] applies."
+              ]
             }
           ],
           "special": []
@@ -322,14 +438,40 @@
           "sp_cost": "540",
           "aggro": "435",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "60%",
+          "heavy_armor_atk": "130%",
+          "light_armor_atk": "150%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2500%"
+              "value": "АТК: 2500%",
+              "effects": [
+                "Ignores enemy DEF by 75",
+                "Ignores Evasion",
+                "Damage to Evasion type enemies +1% per 1 evasion",
+                "Extra ignores DEF of enemy PC in [Paralysis Poison] state in proportion to [Paralysis Poison]s Lv.",
+                "Reaching Max Lv., extra ignores enemy PCs DEF by 50%",
+                "Extra ignores DEF of monster in [Paralysis Poison] state in proportion to [Paralysis Poison]s Lv.",
+                "Reaching Max Lv., extra DEF ignoring for monster increases greatly",
+                "With skill accuracy, [Paralysis Poison] is lifted",
+                "With skill accuracy, [Bleeding Poison] applies."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5000%"
+              "value": "АТК: 5000%",
+              "effects": [
+                "Ignores enemy DEF by 75",
+                "Ignores Evasion",
+                "Damage to Evasion type enemies +1% per 1 evasion",
+                "Extra ignores DEF of enemy PC in [Paralysis Poison] state in proportion to [Paralysis Poison]s Lv.",
+                "Reaching Max Lv., extra ignores enemy PCs DEF by 50%",
+                "Extra ignores DEF of monster in [Paralysis Poison] state in proportion to [Paralysis Poison]s Lv.",
+                "Reaching Max Lv., extra DEF ignoring for monster increases greatly",
+                "With skill accuracy, [Paralysis Poison] is lifted",
+                "With skill accuracy, [Bleeding Poison] applies."
+              ]
             }
           ],
           "special": []
@@ -381,6 +523,7 @@
         "Immunity": "5+15",
         "DEF": "5"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Swift Dash",
@@ -395,14 +538,34 @@
           "sp_cost": "560",
           "aggro": "500",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 1",
+          "soft_armor_atk": "75%",
+          "heavy_armor_atk": "125%",
+          "light_armor_atk": "150%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1500%"
+              "value": "АТК: 1500%",
+              "effects": [
+                "Ignore 60 enemy DEF",
+                "Ignore Block",
+                "Ignore DEF of enemy shield by 1/2",
+                "50% chance to inflict [Mortal Wound] on the enemy",
+                "Ignore additional DEF - extra [STR] * 0.8",
+                "Increases Skill ATK - extra [STR] * 5%, x4 applied to the monster"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "Ignore 60 enemy DEF",
+                "Ignore Block",
+                "Ignore DEF of enemy shield by 1/2",
+                "50% chance to inflict [Mortal Wound] on the enemy",
+                "Ignore additional DEF - extra [STR] * 0.8",
+                "Increases Skill ATK - extra [STR] * 5%, x4 applied to the monster"
+              ]
             }
           ],
           "special": []
@@ -420,14 +583,26 @@
           "sp_cost": "100",
           "aggro": "226",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 20",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": [
+                "Ignores 80 enemy DEF",
+                "100% chance to inflict [Dragon Fear] on the enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3600%"
+              "value": "АТК: 3600%",
+              "effects": [
+                "Ignores 80 enemy DEF",
+                "100% chance to inflict [Dragon Fear] on the enemy"
+              ]
             }
           ],
           "special": []
@@ -445,14 +620,32 @@
           "sp_cost": "950",
           "aggro": "342",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "125%",
+          "heavy_armor_atk": "75%",
+          "light_armor_atk": "150%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1500%"
+              "value": "АТК: 1500%",
+              "effects": [
+                "Ignore 75 enemy DEF",
+                "Ignore Block",
+                "Ignore DEF of enemy shield by 1/2",
+                "Ignore additional DEF - extra [STR] * 0.8",
+                "Increases Skill ATK- extra [STR] * 5%, x4 applied to the monster"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "Ignore 75 enemy DEF",
+                "Ignore Block",
+                "Ignore DEF of enemy shield by 1/2",
+                "Ignore additional DEF - extra [STR] * 0.8",
+                "Increases Skill ATK- extra [STR] * 5%, x4 applied to the monster"
+              ]
             }
           ],
           "special": []
@@ -470,14 +663,34 @@
           "sp_cost": "1050",
           "aggro": "444",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 8",
+          "soft_armor_atk": "150%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "150%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2500%"
+              "value": "АТК: 2500%",
+              "effects": [
+                "Ignore 85 enemy DEF",
+                "Ignore Block",
+                "Ignore DEF of enemy shield by 1/2",
+                "Ignore Shield D.R.",
+                "Ignore additional DEF - extra [STR] * 0.8",
+                "Increases Skill ATK - extra [STR] * 5%, x4 applied to the monster"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5000%"
+              "value": "АТК: 5000%",
+              "effects": [
+                "Ignore 85 enemy DEF",
+                "Ignore Block",
+                "Ignore DEF of enemy shield by 1/2",
+                "Ignore Shield D.R.",
+                "Ignore additional DEF - extra [STR] * 0.8",
+                "Increases Skill ATK - extra [STR] * 5%, x4 applied to the monster"
+              ]
             }
           ],
           "special": []
@@ -495,26 +708,60 @@
           "sp_cost": "650",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration : 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration : 300 seconds",
+                "STR +2, ATK +75%, Monster ATK +100%, Evasion +2, Movement speed and limit +20%, Received Skill Damage -2%, A.R. +2",
+                "Normal attacks inflict [Dragon Fear]",
+                "Skill damage increases by (4x + (5% of extra [STR])) (1% in PvP)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration : 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration : 300 seconds",
+                "STR +20, ATK +75%, Monster ATK +100%, Evasion +20, Movement speed and limit +20%, Received Skill Damage -2%, A.R. +2",
+                "Normal attacks inflict [Dragon Fear]",
+                "Skill damage increases by (4x + (5% of extra [STR])) (1% in PvP)"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration : 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration : 300 seconds",
+                "STR +22, ATK +75%, Monster ATK +100%, Evasion +22, Movement speed and limit +20%, Received Skill Damage -2%, A.R. +2",
+                "Normal attacks inflict [Dragon Fear]",
+                "Skill damage increases by (4x + (5% of extra [STR])) (1% in PvP)"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration : 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration : 300 seconds",
+                "STR +24, ATK +75%, Monster ATK +100%, Evasion +24, Movement speed and limit +20%, Received Skill Damage -2%, A.R. +2",
+                "Normal attacks inflict [Dragon Fear]",
+                "Skill damage increases by (4x + (5% of extra [STR])) (1% in PvP)"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration : 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration : 300 seconds",
+                "STR +26, ATK +75%, Monster ATK +100%, Evasion +26, Movement speed and limit +20%, Received Skill Damage -2%, A.R. +2",
+                "Normal attacks inflict [Dragon Fear]",
+                "Skill damage increases by (4x + (5% of extra [STR])) (1% in PvP)"
+              ]
             }
           ],
           "special": []

@@ -35,7 +35,7 @@
         "level": "Level 10",
         "effects": [
           "Duration: 600 seconds",
-          "A.R. +1",
+          "A.R. +2",
           "ATK against monster +50%",
           "Mental Penetration +30",
           "Casting Time -20%"
@@ -87,6 +87,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -128,6 +129,7 @@
         "Penetration": "10+25",
         "Immunity": "10+25"
       },
+      "consume": "Psychic Sphere x 2",
       "skills": [
         {
           "name": "Army Brute",
@@ -142,14 +144,32 @@
           "sp_cost": "720",
           "aggro": "0",
           "skill_type": "Build",
+          "consume_item": "Ancient Star Orb x 15",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Can summon Max. 1"
+              "value": "",
+              "effects": [
+                "Can summon Max. 1",
+                "Brutes Penetration is affected by Isaacs Mental Penetration",
+                "Additional bonus to Brutes stats according to Isaacs INT",
+                "Enhanced Stats - A.R., ATK, Penetration",
+                "100% chance to inflict [Rabbit Bruise] when Brute inflicts any sort of attack"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Can summon Max. 1"
+              "value": "",
+              "effects": [
+                "Can summon Max. 1",
+                "Brutes Penetration is affected by Isaacs Mental Penetration",
+                "Additional bonus to Brutes stats according to Isaacs INT",
+                "Enhanced Stats - A.R., ATK, Penetration",
+                "100% chance to inflict [Rabbit Bruise] when Brute inflicts any sort of attack"
+              ]
             }
           ],
           "special": [
@@ -170,14 +190,26 @@
           "sp_cost": "480",
           "aggro": "30",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 3",
+          "soft_armor_atk": "85%",
+          "heavy_armor_atk": "120%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1200%"
+              "value": "АТК: 1200%",
+              "effects": [
+                "When the selected target is within 20m from Brute, Brute casts [Yes, Master]",
+                "Skill Damage x3 when the target is under [Rabbit Bruise]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "When the selected target is within 20m from Brute, Brute casts [Yes, Master]",
+                "Skill Damage x3 when the target is under [Rabbit Bruise]"
+              ]
             }
           ],
           "special": []
@@ -195,14 +227,32 @@
           "sp_cost": "750",
           "aggro": "50",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1500%"
+              "value": "АТК: 1500%",
+              "effects": [
+                "60% chance to inflict [Panic] on enemy PC",
+                "Ignore Debuff RES",
+                "Apply [Rabbit Cheer] on Brute for 30 seconds in proportion to the amount of targets",
+                "[Rabbit Cheer] - ATK +500%, Penetration +20, ATK SPD +250%",
+                "Skill Damage x3 when the target is under [Rabbit Bruise]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "60% chance to inflict [Panic] on enemy PC",
+                "Ignore Debuff RES",
+                "Apply [Rabbit Cheer] on Brute for 30 seconds in proportion to the amount of targets",
+                "[Rabbit Cheer] - ATK +500%, Penetration +20, ATK SPD +250%",
+                "Skill Damage x3 when the target is under [Rabbit Bruise]"
+              ]
             }
           ],
           "special": []
@@ -220,14 +270,34 @@
           "sp_cost": "860",
           "aggro": "45",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 15",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "105%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1200%"
+              "value": "АТК: 1200%",
+              "effects": [
+                "Max. 10 attacks during the duration",
+                "Make a finishing attack when the skill is re-cast while channeling",
+                "Skill Damage applies with every attack",
+                "Brute casts [Furry Hammer]",
+                "Skill Damage increases by caster INT * 2%",
+                "Skill Damage x3 when the target is affected by [Rabbit Bruise]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "Max. 10 attacks during the duration",
+                "Make a finishing attack when the skill is re-cast while channeling",
+                "Skill Damage applies with every attack",
+                "Brute casts [Furry Hammer]",
+                "Skill Damage increases by caster INT * 2%",
+                "Skill Damage x3 when the target is affected by [Rabbit Bruise]"
+              ]
             }
           ],
           "special": []
@@ -245,14 +315,28 @@
           "sp_cost": "1000",
           "aggro": "80",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "Brute casts [Leporin Attack]",
+                "Skill Damage increases by caster INT * 2%",
+                "Skill Damage x3 and ignore 10 Mental RES when the target is affected by [Rabbit Bruise]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 6000%"
+              "value": "АТК: 6000%",
+              "effects": [
+                "Brute casts [Leporin Attack]",
+                "Skill Damage increases by caster INT * 2%",
+                "Skill Damage x3 and ignore 10 Mental RES when the target is affected by [Rabbit Bruise]"
+              ]
             }
           ],
           "special": []

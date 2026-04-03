@@ -113,6 +113,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -157,6 +158,7 @@
         "Penetration": "5+25",
         "Immunity": "5+10"
       },
+      "consume": "Metal Shell Ammo x 3",
       "skills": [
         {
           "name": "Leg Breaker",
@@ -171,14 +173,36 @@
           "sp_cost": "150",
           "aggro": "50",
           "skill_type": "Shooting",
+          "consume_item": "Metal Shell Ammo x 10",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "80%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "Ignores 60 enemy DEF",
+                "Apply [Slow] on enemy by 40% chance when skill is accurately hit",
+                "Additional Damage by casters extra [DEX] * 2% when [Upgrade Firepower] is applied",
+                "When [Upgrade Firepower] is applied to a PC,",
+                "Knockdown Duration increases up to x3 in reverse proportion to the distance from the caster",
+                "Knockdown Duration: Max. 6 seconds",
+                "Skill Cooldown resets every 10 seconds when [Upgrade Firepower] is applied"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 6000%"
+              "value": "АТК: 6000%",
+              "effects": [
+                "Ignores 60 enemy DEF",
+                "Apply [Slow] on enemy by 40% chance when skill is accurately hit",
+                "Additional Damage by casters extra [DEX] * 2% when [Upgrade Firepower] is applied",
+                "When [Upgrade Firepower] is applied to a PC,",
+                "Knockdown Duration increases up to x3 in reverse proportion to the distance from the caster",
+                "Knockdown Duration: Max. 6 seconds",
+                "Skill Cooldown resets every 10 seconds when [Upgrade Firepower] is applied"
+              ]
             }
           ],
           "special": [
@@ -199,26 +223,80 @@
           "sp_cost": "100",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "5 Metal Shell Ammo when inflicting basic attack",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 30 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 30 seconds",
+                "Max. Range: 6m",
+                "Hit Range: 1m, Target: 2",
+                "Consume 5 Metal Shell Ammo when inflicting basic attack",
+                "ATK +10%",
+                "Critical Damage +1%",
+                "Additional Damage by casters extra [DEX] * 1% when basic attack is hit accurately",
+                "Up to x2 additional damage applied"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "Max. Range: 6m",
+                "Hit Range: 1m, Target: 2",
+                "Consume 5 Metal Shell Ammo when inflicting basic attack",
+                "ATK +100%",
+                "Critical Damage +10%",
+                "Additional Damage by casters extra [DEX] * 1% when basic attack is hit accurately",
+                "Up to x2 additional damage applied"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 330 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 330 seconds",
+                "Max. Range: 6m",
+                "Hit Range: 1m, Target: 2",
+                "Consume 5 Metal Shell Ammo when inflicting basic attack",
+                "ATK +110%",
+                "Critical Damage +11%",
+                "Additional Damage by casters extra [DEX] * 1% when basic attack is hit accurately",
+                "Up to x2 additional damage applied"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 360 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 360 seconds",
+                "Max. Range: 6m",
+                "Hit Range: 1m, Target: 2",
+                "Consume 5 Metal Shell Ammo when inflicting basic attack",
+                "ATK +120%",
+                "Critical Damage +12%",
+                "Additional Damage by casters extra [DEX] * 1% when basic attack is hit accurately",
+                "Up to x2 additional damage applied"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 390 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 390 seconds",
+                "Max. Range: 6m",
+                "Hit Range: 1m, Target: 2",
+                "Consume 5 Metal Shell Ammo when inflicting basic attack",
+                "ATK +130%",
+                "Critical Damage +13%",
+                "Additional Damage by casters extra [DEX] * 1% when basic attack is hit accurately",
+                "Up to x2 additional damage applied"
+              ]
             }
           ],
           "special": [
@@ -242,26 +320,70 @@
           "sp_cost": "100",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "10 Metal Shell Ammo when inflicting basic attack",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 30 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 30 seconds",
+                "Max. Range: 10m",
+                "Hit Range: 6m, Target: 10",
+                "Consume 10 Metal Shell Ammo when inflicting basic attack",
+                "ATK SPD -30%",
+                "When Max. HP of enemy PC is 50% or more, enemy knockdown by 80% chance at a basic attack of Meister Lorch"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "Max. Range: 10m",
+                "Hit Range: 6m, Target: 10",
+                "Consume 10 Metal Shell Ammo when inflicting basic attack",
+                "ATK SPD -30%",
+                "When Max. HP of enemy PC is 50% or more, enemy knockdown by 80% chance at a basic attack of Meister Lorch"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 330 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 330 seconds",
+                "Max. Range: 10m",
+                "Hit Range: 6m, Target: 10",
+                "Consume 10 Metal Shell Ammo when inflicting basic attack",
+                "ATK SPD -30%",
+                "When Max. HP of enemy PC is 50% or more, enemy knockdown by 80% chance at a basic attack of Meister Lorch"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 360 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 360 seconds",
+                "Max. Range: 10m",
+                "Hit Range: 6m, Target: 10",
+                "Consume 10 Metal Shell Ammo when inflicting basic attack",
+                "ATK SPD -30%",
+                "When Max. HP of enemy PC is 50% or more, enemy knockdown by 80% chance at a basic attack of Meister Lorch"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 390 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 390 seconds",
+                "Max. Range: 10m",
+                "Hit Range: 6m, Target: 10",
+                "Consume 10 Metal Shell Ammo when inflicting basic attack",
+                "ATK SPD -30%",
+                "When Max. HP of enemy PC is 50% or more, enemy knockdown by 80% chance at a basic attack of Meister Lorch"
+              ]
             }
           ],
           "special": []
@@ -279,26 +401,55 @@
           "sp_cost": "100",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 30 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 30 seconds",
+                "Cannot inflict basic attack",
+                "Skill Cooldown resets every 10 seconds when [Upgrade Firepower] is applied"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "Cannot inflict basic attack",
+                "Skill Cooldown resets every 10 seconds when [Upgrade Firepower] is applied"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 330 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 330 seconds",
+                "Cannot inflict basic attack",
+                "Skill Cooldown resets every 10 seconds when [Upgrade Firepower] is applied"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 360 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 360 seconds",
+                "Cannot inflict basic attack",
+                "Skill Cooldown resets every 10 seconds when [Upgrade Firepower] is applied"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 390 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 390 seconds",
+                "Cannot inflict basic attack",
+                "Skill Cooldown resets every 10 seconds when [Upgrade Firepower] is applied"
+              ]
             }
           ],
           "special": []
@@ -316,14 +467,34 @@
           "sp_cost": "300",
           "aggro": "60",
           "skill_type": "Shooting",
+          "consume_item": "Metal Shell Ammo x 20",
+          "soft_armor_atk": "125%",
+          "heavy_armor_atk": "75%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2700%"
+              "value": "АТК: 2700%",
+              "effects": [
+                "Ignores 65 enemy DEF",
+                "Additional Damage by casters extra [DEX] * 2% when [Upgrade Firepower] is applied",
+                "When [Upgrade Firepower] is applied to a PC,",
+                "Knockdown Duration increases up to x3 in reverse proportion to the distance from the caster",
+                "Knockdown Duration: Max. 6 seconds",
+                "Skill Cooldown resets every 10 seconds when [Upgrade Firepower] is applied"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5400%"
+              "value": "АТК: 5400%",
+              "effects": [
+                "Ignores 65 enemy DEF",
+                "Additional Damage by casters extra [DEX] * 2% when [Upgrade Firepower] is applied",
+                "When [Upgrade Firepower] is applied to a PC,",
+                "Knockdown Duration increases up to x3 in reverse proportion to the distance from the caster",
+                "Knockdown Duration: Max. 6 seconds",
+                "Skill Cooldown resets every 10 seconds when [Upgrade Firepower] is applied"
+              ]
             }
           ],
           "special": [

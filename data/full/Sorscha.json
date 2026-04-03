@@ -35,6 +35,7 @@
         "level": "Level 10",
         "effects": [
           "Duration: 300 seconds",
+          "A.R. +1",
           "D.R. +1",
           "DEF +20",
           "IMM +30",
@@ -88,6 +89,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -133,6 +135,7 @@
         "Penetration": "5+25",
         "Immunity": "10"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Fret",
@@ -147,14 +150,36 @@
           "sp_cost": "300",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "A.R. +1",
+                "ATK +50%",
+                "Monster ATK +200%",
+                "PEN +10",
+                "IMM +10",
+                "Maximum Movement Speed Limit +15%, Max Evasion Increases by 15"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "A.R. +1",
+                "ATK +50%",
+                "Monster ATK +200%",
+                "PEN +10",
+                "IMM +10",
+                "Maximum Movement Speed Limit +15%, Max Evasion Increases by 15"
+              ]
             }
           ],
           "special": []
@@ -172,14 +197,30 @@
           "sp_cost": "600",
           "aggro": "75",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "140%",
+          "light_armor_atk": "130%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1200%"
+              "value": "АТК: 1200%",
+              "effects": [
+                "Ignores 100 DEF",
+                "Ignore enemy DEF by (50 + (100% of extra [STR])",
+                "Skill Damage increases by 9% of extra [STR] (1% for [PC])",
+                "Skill Damage additionally increases by 2x~4x"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "Ignores 100 DEF",
+                "Ignore enemy DEF by (50 + (100% of extra [STR])",
+                "Skill Damage increases by 9% of extra [STR] (1% for [PC])",
+                "Skill Damage additionally increases by 2x~4x"
+              ]
             }
           ],
           "special": []
@@ -197,14 +238,30 @@
           "sp_cost": "650",
           "aggro": "90",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "140%",
+          "light_armor_atk": "130%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": [
+                "Ignores 100 DEF",
+                "Ignore enemy DEF by (50 + (100% of extra [STR])",
+                "Skill Damage increases by 9% of extra [STR] (1% for [PC])",
+                "Skill Damage additionally increases by 2x~4x"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3600%"
+              "value": "АТК: 3600%",
+              "effects": [
+                "Ignores 100 DEF",
+                "Ignore enemy DEF by (50 + (100% of extra [STR])",
+                "Skill Damage increases by 9% of extra [STR] (1% for [PC])",
+                "Skill Damage additionally increases by 2x~4x"
+              ]
             }
           ],
           "special": []
@@ -222,14 +279,30 @@
           "sp_cost": "700",
           "aggro": "95",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "140%",
+          "light_armor_atk": "130%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "Ignores 110 DEF",
+                "Ignore enemy DEF by (25 + (100% of extra [STR])",
+                "Skill Damage increases by 9% of extra [STR] (1% for [PC])",
+                "Skill Damage additionally increases by 2x~4x"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4800%"
+              "value": "АТК: 4800%",
+              "effects": [
+                "Ignores 110 DEF",
+                "Ignore enemy DEF by (25 + (100% of extra [STR])",
+                "Skill Damage increases by 9% of extra [STR] (1% for [PC])",
+                "Skill Damage additionally increases by 2x~4x"
+              ]
             }
           ],
           "special": []
@@ -238,7 +311,7 @@
           "name": "Remise",
           "image": "fencer_remise.jpg",
           "description": "Attack the enemy with a flurry of stabs.",
-          "target": "Up to 6 enemies 3m away and within a 2m radius",
+          "target": "Up to 6 enemies 5m away and within a 4m radius",
           "casting_time": "0.6 sec.",
           "cooldown": "15 sec.",
           "duration": "10 sec.",
@@ -247,14 +320,38 @@
           "sp_cost": "800",
           "aggro": "100",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 15",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "140%",
+          "light_armor_atk": "130%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2500%"
+              "value": "АТК: 2500%",
+              "effects": [
+                "Ignores 50 DEF",
+                "20% Chance to inflict [Control] on enemy [PC] on every attack",
+                "Ignore enemy DEF by (100 + (100% of extra [STR])",
+                "Skill Damage increases by 6% of extra [STR] (1% for [PC])",
+                "Skill Damage additionally increases by 3x",
+                "Attack up to 30 times within the duration",
+                "The skill is canceled on re-cast",
+                "Skill damage is applied on every attack"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5000%"
+              "value": "АТК: 5000%",
+              "effects": [
+                "Ignores 50 DEF",
+                "20% Chance to inflict [Control] on enemy [PC] on every attack",
+                "Ignore enemy DEF by (100 + (100% of extra [STR])",
+                "Skill Damage increases by 6% of extra [STR] (1% for [PC])",
+                "Skill Damage additionally increases by 3x",
+                "Attack up to 30 times within the duration",
+                "The skill is canceled on re-cast",
+                "Skill damage is applied on every attack"
+              ]
             }
           ],
           "special": []

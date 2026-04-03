@@ -129,6 +129,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -171,6 +172,7 @@
         "Penetration": "10+10",
         "Immunity": "5+10"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Tempete de Neige",
@@ -185,14 +187,40 @@
           "sp_cost": "450",
           "aggro": "50",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Apply ["
+              "value": "",
+              "effects": [
+                "Apply [Tempete de Neige I] to yourself",
+                "A.R. +1",
+                "ATK against monsters +30%",
+                "Ice Penetration +5",
+                "Cast Time -75%",
+                "Attack type changes to [Ice Magic]",
+                "[Tempete de Neige] advances to the next stage with a successful hit",
+                "Normal Attack Damage increases and might inflict [Cold Wave], [Frostbite] or [Agony] (chance depends on [Tempete de Neige] stage)",
+                "Normal Attack Damage increases additionally when the enemy is affected by [Cold Wave], [Frostbite], or [Agony]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Apply ["
+              "value": "",
+              "effects": [
+                "Apply [Tempete de Neige I] to yourself",
+                "A.R. +1",
+                "ATK against monsters +30%",
+                "Ice Penetration +5",
+                "Cast Time -75%",
+                "Attack type changes to [Ice Magic]",
+                "[Tempete de Neige] advances to the next stage with a successful hit",
+                "Normal Attack Damage increases and might inflict [Cold Wave], [Frostbite] or [Agony] (chance depends on [Tempete de Neige] stage)",
+                "Normal Attack Damage increases additionally when the enemy is affected by [Cold Wave], [Frostbite], or [Agony]"
+              ]
             }
           ],
           "special": []
@@ -210,14 +238,38 @@
           "sp_cost": "480",
           "aggro": "75",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "80%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 900%"
+              "value": "АТК: 900%",
+              "effects": [
+                "Recharge Duration: 20 seconds",
+                "Max. 2 times available",
+                "Recharge after using 2 times",
+                "30% chance to inflict [Cold Wave]",
+                "Skill Damage increases by 2% of extra [STR]",
+                "[Tempete de Neige] advances to the next stage with a successful hit",
+                "Ignores enemy DEF by 50 + (extra [STR] * 1) with every 3rd skill",
+                "Skill Damage x1.5 with every 3rd skill during [Tempete de Neige]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": [
+                "Recharge Duration: 20 seconds",
+                "Max. 2 times available",
+                "Recharge after using 2 times",
+                "30% chance to inflict [Cold Wave]",
+                "Skill Damage increases by 2% of extra [STR]",
+                "[Tempete de Neige] advances to the next stage with a successful hit",
+                "Ignores enemy DEF by 50 + (extra [STR] * 1) with every 3rd skill",
+                "Skill Damage x1.5 with every 3rd skill during [Tempete de Neige]"
+              ]
             }
           ],
           "special": []
@@ -235,14 +287,34 @@
           "sp_cost": "750",
           "aggro": "90",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 3",
+          "soft_armor_atk": "85%",
+          "heavy_armor_atk": "115%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1200%"
+              "value": "АТК: 1200%",
+              "effects": [
+                "30% chance to inflict [Frostbite]",
+                "Skill Damage increases by 2% of extra [STR]",
+                "Knocks enemy towards the caster with a successful hit",
+                "[Tempete de Neige] advances to the next stage with a successful hit",
+                "Ignores enemy DEF by 50 + (extra [STR] * 1) with every 3rd skill",
+                "Skill Damage x1.5 with every 3rd skill during [Tempete de Neige]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "30% chance to inflict [Frostbite]",
+                "Skill Damage increases by 2% of extra [STR]",
+                "Knocks enemy towards the caster with a successful hit",
+                "[Tempete de Neige] advances to the next stage with a successful hit",
+                "Ignores enemy DEF by 50 + (extra [STR] * 1) with every 3rd skill",
+                "Skill Damage x1.5 with every 3rd skill during [Tempete de Neige]"
+              ]
             }
           ],
           "special": []
@@ -260,14 +332,32 @@
           "sp_cost": "600",
           "aggro": "120",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": [
+                "30% chance to inflict [Agony]",
+                "Skill Damage increases by 2% of extra [STR]",
+                "[Tempete de Neige] advances to the next stage with a successful hit",
+                "Ignores enemy DEF by 50 + (extra [STR] * 1) with every 3rd skill",
+                "Skill Damage x1.5 with every 3rd skill during [Tempete de Neige]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3600%"
+              "value": "АТК: 3600%",
+              "effects": [
+                "30% chance to inflict [Agony]",
+                "Skill Damage increases by 2% of extra [STR]",
+                "[Tempete de Neige] advances to the next stage with a successful hit",
+                "Ignores enemy DEF by 50 + (extra [STR] * 1) with every 3rd skill",
+                "Skill Damage x1.5 with every 3rd skill during [Tempete de Neige]"
+              ]
             }
           ],
           "special": []
@@ -278,21 +368,45 @@
           "description": "Blow sharp ice crystals towards the target.",
           "target": "Up to 3 enemies 12m away and within 2.5m radius",
           "casting_time": "1.2 sec.",
-          "cooldown": "20 sec.",
+          "cooldown": "15 sec.",
           "duration": "2.0333 sec.",
           "hits_flying": "Yes",
           "knock_down": "Yes",
           "sp_cost": "900",
           "aggro": "165",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "120%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "Recharge Duration: 20 seconds",
+                "Max. 2 times available",
+                "Recharge after using 2 times",
+                "Skill Damage increases by 2% of extra [STR]",
+                "100% chance to inflict [Ice Magic]",
+                "[Tempete de Neige] decreases to stage 1 when used",
+                "Ignores enemy DEF by 50 + (extra [STR] * 1) with every 3rd skill",
+                "Skill Damage x1.5 with every 3rd skill during [Tempete de Neige Blanche]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4800%"
+              "value": "АТК: 4800%",
+              "effects": [
+                "Recharge Duration: 20 seconds",
+                "Max. 2 times available",
+                "Recharge after using 2 times",
+                "Skill Damage increases by 2% of extra [STR]",
+                "100% chance to inflict [Ice Magic]",
+                "[Tempete de Neige] decreases to stage 1 when used",
+                "Ignores enemy DEF by 50 + (extra [STR] * 1) with every 3rd skill",
+                "Skill Damage x1.5 with every 3rd skill during [Tempete de Neige Blanche]"
+              ]
             }
           ],
           "special": []

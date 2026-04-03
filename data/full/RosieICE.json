@@ -2,7 +2,7 @@
   "slug": "RosieICE",
   "equipment": {
     "category": "Usable Equipment",
-    "medal": "Frost Crown With a Cool Mind Blessings of the 2026 New Year",
+    "medal": "Frost Crown With a Cool Mind Blessings of the 2026 New Year 20th Anniversary with Linden",
     "head": "None",
     "earring": "Earring",
     "face": "None",
@@ -26,7 +26,7 @@
     "description": "Freely wield the frost-covered sword.",
     "target": "Self-buff (no target required)",
     "casting_time": "0 sec.",
-    "cooldown": "30 sec.",
+    "cooldown": "5 sec.",
     "duration": "2.333 sec.",
     "sp_cost": "300",
     "consume_item": "Ancient Star Orb × 20",
@@ -90,6 +90,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -131,6 +132,7 @@
         "Penetration": "10+20",
         "Immunity": "10+5"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Coldness",
@@ -145,26 +147,64 @@
           "sp_cost": "300",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 15",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 600 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 600 seconds",
+                "Attack Power +5%",
+                "Ice Penetration +2"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 600 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 600 seconds",
+                "Attack Damage +50%",
+                "Ice Penetration +20"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 600 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 600 seconds",
+                "Attack Rating +1",
+                "Attack Damage +55%",
+                "Ice Penetration +22",
+                "Movement Speed +10%",
+                "Movement Speed Limit +0.50"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 600 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 600 seconds",
+                "Attack Rating +1",
+                "Attack Damage +60%",
+                "Ice Penetration +24",
+                "Movement Speed +20%",
+                "Movement Speed Limit +1.00"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 600 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 600 seconds",
+                "Attack Rating +1",
+                "Attack Damage +65%",
+                "Ice Penetration +26",
+                "Movement Speed +30%",
+                "Movement Speed Limit +1.50"
+              ]
             }
           ],
           "special": []
@@ -182,14 +222,32 @@
           "sp_cost": "250",
           "aggro": "45",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 900%"
+              "value": "АТК: 900%",
+              "effects": [
+                "When hit, has a 70% chance to inflict [Frost]",
+                "[Blizzard] on an enemy PC that is not in the [Blizzard]",
+                "[Frosty] state. When hit, the following effects are applied to the enemy PC.",
+                "When wearing [Robe], skill damage to monsters is x4.",
+                "When wearing [Leather Armor], skill damage to enemy PCs is x2."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": [
+                "When hit, has a 70% chance to inflict [Frost]",
+                "[Blizzard] on an enemy PC that is not in the [Blizzard]",
+                "[Frosty] state. When hit, the following effects are applied to the enemy PC.",
+                "When wearing [Robe], skill damage to monsters is x4.",
+                "When wearing [Leather Armor], skill damage to enemy PCs is x2."
+              ]
             }
           ],
           "special": []
@@ -207,14 +265,32 @@
           "sp_cost": "550",
           "aggro": "85",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1200%"
+              "value": "АТК: 1200%",
+              "effects": [
+                "When hitting, there is a 70% chance to inflict [Frostbite]",
+                "When hitting an enemy PC that is not in the [Blizzard] state, the following effects are applied when the enemy is in the [Blizzard]",
+                "[Frosty] state.",
+                "When wearing [Robe], skill damage to monsters is 4x.",
+                "When wearing [Leather Armor], skill damage to enemy PCs is 2x."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "When hitting, there is a 70% chance to inflict [Frostbite]",
+                "When hitting an enemy PC that is not in the [Blizzard] state, the following effects are applied when the enemy is in the [Blizzard]",
+                "[Frosty] state.",
+                "When wearing [Robe], skill damage to monsters is 4x.",
+                "When wearing [Leather Armor], skill damage to enemy PCs is 2x."
+              ]
             }
           ],
           "special": []
@@ -232,14 +308,32 @@
           "sp_cost": "650",
           "aggro": "120",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 30",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2250%"
+              "value": "АТК: 2250%",
+              "effects": [
+                "When hitting an enemy PC that is not in the [Blizzard] state, [Blizzard] is activated.",
+                "Ignores 5 resistance from enemy PCs in the [Blizzard] state.",
+                "When in the [Frosty] state, the following effects are applied.",
+                "When wearing [Robe], skill damage to monsters is x7.",
+                "When wearing [Leather Armor], skill damage to enemy PCs is x3."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4500%"
+              "value": "АТК: 4500%",
+              "effects": [
+                "When hitting an enemy PC that is not in the [Blizzard] state, [Blizzard] is activated.",
+                "Ignores 5 resistance from enemy PCs in the [Blizzard] state.",
+                "When in the [Frosty] state, the following effects are applied.",
+                "When wearing [Robe], skill damage to monsters is x7.",
+                "When wearing [Leather Armor], skill damage to enemy PCs is x3."
+              ]
             }
           ],
           "special": []
@@ -257,14 +351,32 @@
           "sp_cost": "750",
           "aggro": "105",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 25",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2110%"
+              "value": "АТК: 2110%",
+              "effects": [
+                "When hitting an enemy PC that is not in the [Blizzard] state, [Blizzard] is activated.",
+                "Ignores 5 resistance from enemy PCs in the [Blizzard] state.",
+                "When in the [Frosty] state, the following effects are applied.",
+                "When wearing [Robe], skill damage to monsters is x7.",
+                "When wearing [Leather Armor], skill damage to enemy PCs is x3."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4220%"
+              "value": "АТК: 4220%",
+              "effects": [
+                "When hitting an enemy PC that is not in the [Blizzard] state, [Blizzard] is activated.",
+                "Ignores 5 resistance from enemy PCs in the [Blizzard] state.",
+                "When in the [Frosty] state, the following effects are applied.",
+                "When wearing [Robe], skill damage to monsters is x7.",
+                "When wearing [Leather Armor], skill damage to enemy PCs is x3."
+              ]
             }
           ],
           "special": []

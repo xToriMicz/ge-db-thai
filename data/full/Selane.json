@@ -99,6 +99,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [
         {
           "name": "Freezing Spear",
@@ -113,14 +114,24 @@
           "sp_cost": "60",
           "aggro": "42",
           "skill_type": "Magic",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 500%"
+              "value": "АТК: 500%",
+              "effects": [
+                "10% chance to inflict [Freeze] on enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1000%"
+              "value": "АТК: 1000%",
+              "effects": [
+                "10% chance to inflict [Freeze] on enemy"
+              ]
             }
           ],
           "special": []
@@ -138,26 +149,55 @@
           "sp_cost": "90",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Elemental Orb x 1",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 110 sec."
+              "value": "",
+              "effects": [
+                "Duration: 110 sec.",
+                "Ice RES+15",
+                "Extra Ice ATK+13"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 200 sec."
+              "value": "",
+              "effects": [
+                "Duration: 200 sec.",
+                "Ice RES+15",
+                "Extra Ice ATK+40"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 210 sec."
+              "value": "",
+              "effects": [
+                "Duration: 210 sec.",
+                "Ice RES+15",
+                "Extra Ice ATK+43"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 220 sec."
+              "value": "",
+              "effects": [
+                "Duration: 220 sec.",
+                "Ice RES+15",
+                "Extra Ice ATK+46"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 230 sec."
+              "value": "",
+              "effects": [
+                "Duration: 230 sec.",
+                "Ice RES+15",
+                "Extra Ice ATK+49"
+              ]
             }
           ],
           "special": []
@@ -175,14 +215,24 @@
           "sp_cost": "120",
           "aggro": "63",
           "skill_type": "Magic",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1200%"
+              "value": "АТК: 1200%",
+              "effects": [
+                "15% Chance to [Freeze] enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "15% Chance to [Freeze] enemy"
+              ]
             }
           ],
           "special": []
@@ -200,14 +250,24 @@
           "sp_cost": "180",
           "aggro": "186",
           "skill_type": "Magic",
+          "consume_item": "Elemental Orb x 1",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1500%"
+              "value": "АТК: 1500%",
+              "effects": [
+                "Summon Deluge"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "Summon Deluge"
+              ]
             }
           ],
           "special": []
@@ -254,6 +314,7 @@
         "Penetration": "5+25",
         "Immunity": "10"
       },
+      "consume": "Elemental Sphere x 1",
       "skills": [
         {
           "name": "Snow Storm",
@@ -268,14 +329,32 @@
           "sp_cost": "300",
           "aggro": "221",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "20%",
+          "heavy_armor_atk": "20%",
+          "light_armor_atk": "20%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "Attack maximum 12 times during the casting time",
+                "Cancels casting when re-used during casting",
+                "Skill Damage applied at every attack",
+                "Apply [Frostbite] to enemy by 10% chance at every attack",
+                "Increases damage against enemy monster under [Cold Wave][Freeze][Ice Magic][Agony][Frostbite]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 6000%"
+              "value": "АТК: 6000%",
+              "effects": [
+                "Attack maximum 12 times during the casting time",
+                "Cancels casting when re-used during casting",
+                "Skill Damage applied at every attack",
+                "Apply [Frostbite] to enemy by 10% chance at every attack",
+                "Increases damage against enemy monster under [Cold Wave][Freeze][Ice Magic][Agony][Frostbite]"
+              ]
             }
           ],
           "special": []
@@ -284,7 +363,7 @@
           "name": "Icicle",
           "image": "mog_icicle.jpg",
           "description": "Pierces enemy by throwing a sharp icy spear.",
-          "target": "1 enemy within a range of 15m",
+          "target": "1 enemy within a range of 13m",
           "casting_time": "5 sec.",
           "cooldown": "10 sec.",
           "duration": "2.7 sec.",
@@ -293,14 +372,30 @@
           "sp_cost": "300",
           "aggro": "50",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 196.5%"
+              "value": "АТК: 2000%",
+              "effects": [
+                "100% chance to impose [Mortal Wound]",
+                "When reusing the skill during casting, the skill activates",
+                "Knockback range and time increases in proportion to casting time",
+                "Skill Damage increases according to cast time"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 393%"
+              "value": "АТК: 4000%",
+              "effects": [
+                "100% chance to impose [Mortal Wound]",
+                "When reusing the skill during casting, the skill activates",
+                "Knockback range and time increases in proportion to casting time",
+                "Skill Damage increases according to cast time"
+              ]
             }
           ],
           "special": []
@@ -318,14 +413,30 @@
           "sp_cost": "300",
           "aggro": "72",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 176.4%"
+              "value": "АТК: 2100%",
+              "effects": [
+                "100% chance to impose [Pain]",
+                "When reusing the skill during casting, the skill activates",
+                "Knockback range and time increases in proportion to casting time",
+                "Skill Damage increases according to cast time"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 352%"
+              "value": "АТК: 4200%",
+              "effects": [
+                "100% chance to impose [Pain]",
+                "When reusing the skill during casting, the skill activates",
+                "Knockback range and time increases in proportion to casting time",
+                "Skill Damage increases according to cast time"
+              ]
             }
           ],
           "special": []
@@ -343,26 +454,78 @@
           "sp_cost": "600",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration : 45 sec"
+              "value": "",
+              "effects": [
+                "Duration : 5 Minutes",
+                "1% change to apply [Frostbite] to an enemy which attacked you",
+                "IMM +1",
+                "A.R. +1",
+                "INT +10",
+                "Ice PEN +10",
+                "Monster ATK +50%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration : 180 sec"
+              "value": "",
+              "effects": [
+                "Duration : 5 Minutes",
+                "10% change to apply [Frostbite] to an enemy which attacked you",
+                "IMM +10",
+                "A.R. +1",
+                "INT +10",
+                "Ice PEN +10",
+                "Monster ATK +50%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration : 195 sec"
+              "value": "",
+              "effects": [
+                "Duration : 5 Minutes",
+                "11% change to apply [Frostbite] to an enemy which attacked you",
+                "IMM +11",
+                "D.R. +1",
+                "A.R. +1",
+                "INT +10",
+                "Ice PEN +10",
+                "Monster ATK +50%"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration : 210 sec"
+              "value": "",
+              "effects": [
+                "Duration : 5 Minutes",
+                "12% change to apply [Frostbite] to an enemy which attacked you",
+                "IMM +12",
+                "D.R. +1",
+                "A.R. +1",
+                "INT +10",
+                "Ice PEN +10",
+                "Monster ATK +50%"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration : 225 sec"
+              "value": "",
+              "effects": [
+                "Duration : 5 Minutes",
+                "13% change to apply [Frostbite] to an enemy which attacked you",
+                "IMM +3",
+                "D.R. +1",
+                "A.R. +1",
+                "INT +10",
+                "Ice PEN +10",
+                "Monster ATK +50%"
+              ]
             }
           ],
           "special": []
@@ -380,14 +543,26 @@
           "sp_cost": "1000",
           "aggro": "197",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1715.99%"
+              "value": "АТК: 4000%",
+              "effects": [
+                "Increases damage by 30% per number of enemys [Frostbite], [Agony], and [Mortal Wound] debuffs",
+                "and by 10% per number of enemys [Decay], [Armor/Magic Grinding], [Broken Armor], and [Broken Weapon] debuffs"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3431%"
+              "value": "АТК: 8000%",
+              "effects": [
+                "Increases damage by 30% per number of enemys [Frostbite], [Agony], and [Mortal Wound] debuffs",
+                "and by 10% per number of enemys [Decay], [Armor/Magic Grinding], [Broken Armor], and [Broken Weapon] debuffs"
+              ]
             }
           ],
           "special": []

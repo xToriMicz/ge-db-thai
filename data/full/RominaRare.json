@@ -96,6 +96,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -140,6 +141,7 @@
         "Penetration": "5+15",
         "Immunity": "5+20"
       },
+      "consume": "Steel Bullet x 3",
       "skills": [
         {
           "name": "Share Tactics",
@@ -154,26 +156,60 @@
           "sp_cost": "820",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 300 sec."
+              "value": "",
+              "effects": [
+                "Duration: 300 sec.",
+                "ATK +15%",
+                "Critical Rate +15",
+                "Critical Damage +150%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 300 sec."
+              "value": "",
+              "effects": [
+                "Duration: 300 sec.",
+                "ATK +15%",
+                "Critical Rate +15",
+                "Critical Damage +150%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 300 sec."
+              "value": "",
+              "effects": [
+                "Duration: 300 sec.",
+                "ATK +15%",
+                "Critical Rate +15",
+                "Critical Damage +150%"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 300 sec."
+              "value": "",
+              "effects": [
+                "Duration: 300 sec.",
+                "ATK +15%",
+                "Critical Rate +15",
+                "Critical Damage +150%"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 300 sec."
+              "value": "",
+              "effects": [
+                "Duration: 300 sec.",
+                "ATK +15%",
+                "Critical Rate +15",
+                "Critical Damage +150%"
+              ]
             }
           ],
           "special": []
@@ -191,26 +227,70 @@
           "sp_cost": "940",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 300 sec."
+              "value": "",
+              "effects": [
+                "Duration: 300 sec.",
+                "Max HP +25%",
+                "DEF +15",
+                "IMM +15",
+                "Movement Speed Limit +15%",
+                "Magical damage received -25%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 300 sec."
+              "value": "",
+              "effects": [
+                "Duration: 300 sec.",
+                "Max HP +25%",
+                "DEF +15",
+                "IMM +15",
+                "Movement Speed Limit +15%",
+                "Magical damage received -25%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 300 sec."
+              "value": "",
+              "effects": [
+                "Duration: 300 sec.",
+                "Max HP +25%",
+                "DEF +15",
+                "IMM +15",
+                "Movement Speed Limit +15%",
+                "Magical damage received -25%"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 300 sec."
+              "value": "",
+              "effects": [
+                "Duration: 300 sec.",
+                "Max HP +25%",
+                "DEF +15",
+                "IMM +15",
+                "Movement Speed Limit +15%",
+                "Magical damage received -25%"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 300 sec."
+              "value": "",
+              "effects": [
+                "Duration: 300 sec.",
+                "Max HP +25%",
+                "DEF +15",
+                "IMM +15",
+                "Movement Speed Limit +15%",
+                "Magical damage received -25%"
+              ]
             }
           ],
           "special": []
@@ -219,7 +299,7 @@
           "name": "Supporting Shot",
           "image": "scs_copershot.jpg",
           "description": "Shoots the designated targets 3 times.",
-          "target": "1 enemy within a range of 15m",
+          "target": "1 enemy within a range of 13m",
           "casting_time": "0.8 sec.",
           "cooldown": "12 sec.",
           "duration": "2.04 sec.",
@@ -228,14 +308,34 @@
           "sp_cost": "740",
           "aggro": "50",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bullet x 3",
+          "soft_armor_atk": "75%",
+          "heavy_armor_atk": "75%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2800%"
+              "value": "АТК: 2800%",
+              "effects": [
+                "Ignores enemys DEF by 60",
+                "100% chance to inlict [Burn] on enemy PC",
+                "100% chance to inflict [Fear] on [Invisible] or [Invincible] enemies",
+                "Removes [Invisible] and [Invincible]",
+                "The father away from the target, the more damage",
+                "1.5x damage towards PC"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5600%"
+              "value": "АТК: 5600%",
+              "effects": [
+                "Ignores enemys DEF by 60",
+                "100% chance to inlict [Burn] on enemy PC",
+                "100% chance to inflict [Fear] on [Invisible] or [Invincible] enemies",
+                "Removes [Invisible] and [Invincible]",
+                "The father away from the target, the more damage",
+                "1.5x damage towards PC"
+              ]
             }
           ],
           "special": []
@@ -244,7 +344,7 @@
           "name": "Armor Break Shot",
           "image": "scs_armorbreakshot.jpg",
           "description": "Fires the fatal bullet at the designated target.",
-          "target": "1 enemy within a range of 15m",
+          "target": "1 enemy within a range of 13m",
           "casting_time": "1 sec.",
           "cooldown": "15 sec.",
           "duration": "1.32 sec.",
@@ -253,14 +353,28 @@
           "sp_cost": "820",
           "aggro": "50",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bullet x 1",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "75%",
+          "light_armor_atk": "150%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "Ignores enemys DEF by 75",
+                "100% chance to impose [Armor Break] on enemy",
+                "Ignores Debuff RES"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 6000%"
+              "value": "АТК: 6000%",
+              "effects": [
+                "Ignores enemys DEF by 75",
+                "100% chance to impose [Armor Break] on enemy",
+                "Ignores Debuff RES"
+              ]
             }
           ],
           "special": []
@@ -278,26 +392,80 @@
           "sp_cost": "1050",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 300 sec."
+              "value": "",
+              "effects": [
+                "Duration: 300 sec.",
+                "ATK +30%",
+                "DEX +10",
+                "AGI +10",
+                "For Ranged Users:",
+                "A.R. +1",
+                "D.R. +1",
+                "Damage towards [Armor Break] targets x1.5"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 300 sec."
+              "value": "",
+              "effects": [
+                "Duration: 300 sec.",
+                "ATK +30%",
+                "DEX +10",
+                "AGI +10",
+                "For Ranged Users:",
+                "A.R. +1",
+                "D.R. +1",
+                "Damage towards [Armor Break] targets x1.5"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 300 sec."
+              "value": "",
+              "effects": [
+                "Duration: 300 sec.",
+                "ATK +30%",
+                "DEX +10",
+                "AGI +10",
+                "For Ranged Users:",
+                "A.R. +1",
+                "D.R. +1",
+                "Damage towards [Armor Break] targets x1.5"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 300 sec."
+              "value": "",
+              "effects": [
+                "Duration: 300 sec.",
+                "ATK +30%",
+                "DEX +10",
+                "AGI +10",
+                "For Ranged Users:",
+                "A.R. +1",
+                "D.R. +1",
+                "Damage towards [Armor Break] targets x1.5"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 300 sec."
+              "value": "",
+              "effects": [
+                "Duration: 300 sec.",
+                "ATK +30%",
+                "DEX +10",
+                "AGI +10",
+                "For Ranged Users:",
+                "A.R. +1",
+                "D.R. +1",
+                "Damage towards [Armor Break] targets x1.5"
+              ]
             }
           ],
           "special": []

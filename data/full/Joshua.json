@@ -135,6 +135,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -173,12 +174,13 @@
         "Penetration": "10+20",
         "Immunity": "5+10"
       },
+      "consume": "Elemental Sphere x 2",
       "skills": [
         {
           "name": "Pell Arkis",
           "image": "sel_pellarkis.jpg",
           "description": "Alchemy creates a golden spark and launches it towards the enemy.",
-          "target": "Up to 3 enemies 10m away and within a 3m radius",
+          "target": "Up to 6 enemies 13m away and within a 3m radius",
           "casting_time": "Instant",
           "cooldown": "9 sec.",
           "duration": "2.2 sec.",
@@ -187,14 +189,24 @@
           "sp_cost": "450",
           "aggro": "64",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 3",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "125%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 894%"
+              "value": "АТК: 894%",
+              "effects": [
+                "30% chance to inflict [Burn] on enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1788%"
+              "value": "АТК: 1788%",
+              "effects": [
+                "30% chance to inflict [Burn] on enemy"
+              ]
             }
           ],
           "special": []
@@ -212,14 +224,24 @@
           "sp_cost": "560",
           "aggro": "80",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 945%"
+              "value": "АТК: 945%",
+              "effects": [
+                "100% chance to inflict [Chain of Gold] on enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1889%"
+              "value": "АТК: 1889%",
+              "effects": [
+                "100% chance to inflict [Chain of Gold] on enemy"
+              ]
             }
           ],
           "special": []
@@ -230,21 +252,39 @@
           "description": "Alchemy creates golden lava that explodes the ground.",
           "target": "",
           "casting_time": "1.94 sec.",
-          "cooldown": "20 sec.",
+          "cooldown": "15 sec.",
           "duration": "5.49 sec.",
           "hits_flying": "Yes",
           "knock_down": "No",
           "sp_cost": "560",
           "aggro": "200",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 7",
+          "soft_armor_atk": "20%",
+          "heavy_armor_atk": "25%",
+          "light_armor_atk": "20%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1285%"
+              "value": "АТК: 1285%",
+              "effects": [
+                "Attacks up to 10 times while casting",
+                "Reuse the skill to finish casting",
+                "Applies skill damage in every attack",
+                "100% chance to inflict [Chain of Gold] with every attack",
+                "Skill damage +20% per [Chain of Gold] Lv."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2570%"
+              "value": "АТК: 2570%",
+              "effects": [
+                "Attacks up to 10 times while casting",
+                "Reuse the skill to finish casting",
+                "Applies skill damage in every attack",
+                "100% chance to inflict [Chain of Gold] with every attack",
+                "Skill damage +20% per [Chain of Gold] Lv."
+              ]
             }
           ],
           "special": []
@@ -253,7 +293,7 @@
           "name": "Pell Sollast",
           "image": "sel_pellsollast.jpg",
           "description": "Through alchemy, it creates a large number of gold flame spheres, concentrating them on one enemy.",
-          "target": "1 enemy within a range of 15m",
+          "target": "1 enemy within a range of 13m",
           "casting_time": "2.48 sec.",
           "cooldown": "12 sec.",
           "duration": "1.8 sec.",
@@ -262,14 +302,28 @@
           "sp_cost": "500",
           "aggro": "60",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1459%"
+              "value": "АТК: 1459%",
+              "effects": [
+                "50% chance to inflict [Burn]",
+                "Skill damage +20% per [Chain of Gold] Lv.",
+                "When the skill hits a target, increases [Blessing of Gold] Lv."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2918%"
+              "value": "АТК: 2918%",
+              "effects": [
+                "50% chance to inflict [Burn]",
+                "Skill damage +20% per [Chain of Gold] Lv.",
+                "When the skill hits a target, increases [Blessing of Gold] Lv."
+              ]
             }
           ],
           "special": []
@@ -280,21 +334,39 @@
           "description": "Alchemy generates golden blast and crushes the designated surface.",
           "target": "",
           "casting_time": "2.07 sec.",
-          "cooldown": "28 sec.",
+          "cooldown": "20 sec.",
           "duration": "9.335 sec.",
           "hits_flying": "Yes",
           "knock_down": "No",
           "sp_cost": "820",
           "aggro": "200",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 15",
+          "soft_armor_atk": "20%",
+          "heavy_armor_atk": "25%",
+          "light_armor_atk": "20%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1264%"
+              "value": "АТК: 1264%",
+              "effects": [
+                "Attacks up to 15 times while casting",
+                "Reuse the skill to finish casting",
+                "Applies skill damage in every attack",
+                "100% chance to inflict [Chain of Gold] with every attack",
+                "Skill damage +20% per [Chain of Gold] Lv."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2528%"
+              "value": "АТК: 2528%",
+              "effects": [
+                "Attacks up to 15 times while casting",
+                "Reuse the skill to finish casting",
+                "Applies skill damage in every attack",
+                "100% chance to inflict [Chain of Gold] with every attack",
+                "Skill damage +20% per [Chain of Gold] Lv."
+              ]
             }
           ],
           "special": []

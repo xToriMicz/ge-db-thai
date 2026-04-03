@@ -103,6 +103,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -138,6 +139,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [
         {
           "name": "Hell Breath",
@@ -152,14 +154,24 @@
           "sp_cost": "80",
           "aggro": "67",
           "skill_type": "Magic",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1300%"
+              "value": "АТК: 1300%",
+              "effects": [
+                "25% chance to inflict [Burn] enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2600%"
+              "value": "АТК: 2600%",
+              "effects": [
+                "25% chance to inflict [Burn] enemy"
+              ]
             }
           ],
           "special": []
@@ -177,14 +189,24 @@
           "sp_cost": "160",
           "aggro": "184",
           "skill_type": "Magic",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "15% Chance to [Freeze] enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4400%"
+              "value": "АТК: 4400%",
+              "effects": [
+                "15% Chance to [Freeze] enemy"
+              ]
             }
           ],
           "special": []
@@ -202,14 +224,24 @@
           "sp_cost": "160",
           "aggro": "90",
           "skill_type": "Magic",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "20% Chance to inflict [Electric Shock] on enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4400%"
+              "value": "АТК: 4400%",
+              "effects": [
+                "20% Chance to inflict [Electric Shock] on enemy"
+              ]
             }
           ],
           "special": []
@@ -227,14 +259,20 @@
           "sp_cost": "300",
           "aggro": "67",
           "skill_type": "Magic",
+          "consume_item": "Elemental Orb x 3",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1400%"
+              "value": "АТК: 1400%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2800%"
+              "value": "АТК: 2800%",
+              "effects": []
             }
           ],
           "special": []
@@ -277,12 +315,13 @@
         "ATK SPD": "+10%",
         "Penetration": "10+25"
       },
+      "consume": "Psychic Sphere x 2",
       "skills": [
         {
           "name": "Rise Rodia",
           "image": "flo_raizrodia.jpg",
           "description": "Summons the root of the tree to give damage. Drags down flying enemies to the ground and holds them. Gives a continuous damage.",
-          "target": "Up to 6 enemies 10m away and within a 6m radius",
+          "target": "Up to 6 enemies 10m away and within a 7m radius",
           "casting_time": "1.716 sec.",
           "cooldown": "10 sec.",
           "duration": "1.26 sec.",
@@ -291,26 +330,50 @@
           "sp_cost": "200",
           "aggro": "50",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 948.67%"
+              "value": "АТК: 948.67%",
+              "effects": [
+                "100% chance to cast [Root of Restriction]",
+                "Holds an enemy for 0.5 sec"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1897%"
+              "value": "АТК: 1897%",
+              "effects": [
+                "100% chance to cast [Root of Restriction]",
+                "Holds an enemy for 5 sec"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "АТК: 2087%"
+              "value": "АТК: 2087%",
+              "effects": [
+                "100% chance to cast [Root of Restriction]",
+                "Holds an enemy for 5.5 sec"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "АТК: 2276%"
+              "value": "АТК: 2276%",
+              "effects": [
+                "100% chance to cast [Root of Restriction]",
+                "Holds an enemy for 6 sec"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "АТК: 2276%"
+              "value": "АТК: 2276%",
+              "effects": [
+                "100% chance to cast [Root of Restriction]",
+                "Holds an enemy for 6.5 sec"
+              ]
             }
           ],
           "special": []
@@ -328,14 +391,20 @@
           "sp_cost": "300",
           "aggro": "60",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2174.2%"
+              "value": "АТК: 2174.2%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4348%"
+              "value": "АТК: 4348%",
+              "effects": []
             }
           ],
           "special": []
@@ -353,14 +422,20 @@
           "sp_cost": "550",
           "aggro": "70",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "120%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 6000%"
+              "value": "АТК: 6000%",
+              "effects": []
             }
           ],
           "special": []
@@ -378,14 +453,28 @@
           "sp_cost": "600",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "One can be summoned at the same time"
+              "value": "",
+              "effects": [
+                "One can be summoned at the same time",
+                "Bonus to Mantara ability is applied depending on Skill Lv. and INT",
+                "If Mandaring is summoned, Rose Spirits ATK+50%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "One can be summoned at the same time"
+              "value": "",
+              "effects": [
+                "One can be summoned at the same time",
+                "Bonus to Mantara ability is applied depending on Skill Lv. and INT",
+                "If Mandaring is summoned, Rose Spirits ATK+50%"
+              ]
             }
           ],
           "special": []
@@ -403,14 +492,28 @@
           "sp_cost": "800",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "One can be summoned at the same time"
+              "value": "",
+              "effects": [
+                "One can be summoned at the same time",
+                "Bonus to Rose Heart ability is applied depending on Skill Lv. and INT",
+                "If Rose Heart is summoned, Rose Spirits ATK+50%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "One can be summoned at the same time"
+              "value": "",
+              "effects": [
+                "One can be summoned at the same time",
+                "Bonus to Rose Heart ability is applied depending on Skill Lv. and INT",
+                "If Rose Heart is summoned, Rose Spirits ATK+50%"
+              ]
             }
           ],
           "special": []

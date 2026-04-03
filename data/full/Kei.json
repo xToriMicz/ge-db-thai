@@ -35,9 +35,11 @@
         "level": "Level 10",
         "effects": [
           "Duration: 300sec.",
-          "A.R.+1",
+          "A.R.+2",
           "D.R.+1",
           "ATK+50%",
+          "Monster ATK +50%",
+          "STR +10",
           "Casting time -25%",
           "In Normal attack, enemys [Aggravation of Scar] Lv.+1",
           "Knock-down time -30%"
@@ -89,6 +91,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -130,6 +133,7 @@
         "Penetration": "5+20",
         "Immunity": "5+15"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Discordia",
@@ -144,14 +148,34 @@
           "sp_cost": "540",
           "aggro": "130",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "125%",
+          "heavy_armor_atk": "75%",
+          "light_armor_atk": "150%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 900%"
+              "value": "АТК: 2500%",
+              "effects": [
+                "Ignores enemys DEF by 50",
+                "Ignores Evasion",
+                "Damage to Evasion type enemies +1% per 1 evasion",
+                "100% chance to increase [Aggravation of Scar]s Lv. by 10",
+                "Ignore enemys Immunity in proportion to [Aggravation of Scar] level - 100% + 2% of extra [STR]",
+                "Damage+5% per [Aggravation of Scar]s level"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1800%"
+              "value": "АТК: 5000%",
+              "effects": [
+                "Ignores enemys DEF by 50",
+                "Ignores Evasion",
+                "Damage to Evasion type enemies +1% per 1 evasion",
+                "100% chance to increase [Aggravation of Scar]s Lv. by 10",
+                "Ignore enemys Immunity in proportion to [Aggravation of Scar] level - 100% + 2% of extra [STR]",
+                "Damage+5% per [Aggravation of Scar]s level"
+              ]
             }
           ],
           "special": []
@@ -169,14 +193,28 @@
           "sp_cost": "2000",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "HP 2,000 is consumed"
+              "value": "",
+              "effects": [
+                "HP 2,000 is consumed",
+                "Every DeBuff is lifted",
+                "Recovers 20% of own HP"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "HP 2,000 is consumed"
+              "value": "",
+              "effects": [
+                "HP 2,000 is consumed",
+                "Every DeBuff is lifted",
+                "Recovers 20% of own HP"
+              ]
             }
           ],
           "special": []
@@ -194,14 +232,34 @@
           "sp_cost": "650",
           "aggro": "43",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "120%",
+          "heavy_armor_atk": "80%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1600%"
+              "value": "АТК: 2300%",
+              "effects": [
+                "Ignores enemys DEF by 60",
+                "100% chance to increase [Aggravation of Scar]s Lv. by 10",
+                "Ignores Evasion",
+                "Damage to Evasion type enemies +1% per 1 evasion",
+                "Ignore enemys Immunity in proportion to [Aggravation of Scar] level - 100% + 2% of extra [STR]",
+                "Damage+5% per [Aggravation of Scar]s level"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3200%"
+              "value": "АТК: 4600%",
+              "effects": [
+                "Ignores enemys DEF by 60",
+                "100% chance to increase [Aggravation of Scar]s Lv. by 10",
+                "Ignores Evasion",
+                "Damage to Evasion type enemies +1% per 1 evasion",
+                "Ignore enemys Immunity in proportion to [Aggravation of Scar] level - 100% + 2% of extra [STR]",
+                "Damage+5% per [Aggravation of Scar]s level"
+              ]
             }
           ],
           "special": []
@@ -219,14 +277,36 @@
           "sp_cost": "300",
           "aggro": "160",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "125%",
+          "heavy_armor_atk": "75%",
+          "light_armor_atk": "150%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 700%"
+              "value": "АТК: 2000%",
+              "effects": [
+                "Ignores enemys DEF by 60",
+                "100% chance to increase [Aggravation of Scar]s Lv. by 10",
+                "When reusing the skill during casting, the skill activates",
+                "Knockback range and time increases in proportion to casting time",
+                "Skill Damage increases according to cast time",
+                "Ignore enemys Immunity in proportion to [Aggravation of Scar] level - 100% + 2% of extra [STR]",
+                "Damage+5% per [Aggravation of Scar]s Lv."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1400%"
+              "value": "АТК: 4000%",
+              "effects": [
+                "Ignores enemys DEF by 60",
+                "100% chance to increase [Aggravation of Scar]s Lv. by 10",
+                "When reusing the skill during casting, the skill activates",
+                "Knockback range and time increases in proportion to casting time",
+                "Skill Damage increases according to cast time",
+                "Ignore enemys Immunity in proportion to [Aggravation of Scar] level - 100% + 2% of extra [STR]",
+                "Damage+5% per [Aggravation of Scar]s Lv."
+              ]
             }
           ],
           "special": []
@@ -244,14 +324,38 @@
           "sp_cost": "1000",
           "aggro": "500",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 8",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2800%"
+              "value": "АТК: 3500%",
+              "effects": [
+                "Ignores enemys DEF by 75",
+                "100% chance to increase enemys [Aggravation of Scar] level by 25",
+                "Ignores Evasion",
+                "Damage to Evasion type enemies +1% per 1 evasion",
+                "Ignore enemys Immunity in proportion to [Aggravation of Scar] level - 100% + 2% of extra [STR]",
+                "Damage+5% per [Aggravation of Scar]s level",
+                "The more targets, the more damage increase",
+                "With skill accuracy, imposes [Curse of Geas] to oneself."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5600%"
+              "value": "АТК: 7000%",
+              "effects": [
+                "Ignores enemys DEF by 75",
+                "100% chance to increase enemys [Aggravation of Scar] level by 25",
+                "Ignores Evasion",
+                "Damage to Evasion type enemies +1% per 1 evasion",
+                "Ignore enemys Immunity in proportion to [Aggravation of Scar] level - 100% + 2% of extra [STR]",
+                "Damage+5% per [Aggravation of Scar]s level",
+                "The more targets, the more damage increase",
+                "With skill accuracy, imposes [Curse of Geas] to oneself."
+              ]
             }
           ],
           "special": []

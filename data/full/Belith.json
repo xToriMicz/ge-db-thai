@@ -143,6 +143,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -181,6 +182,7 @@
         "Penetration": "5+20",
         "Immunity": "10+10"
       },
+      "consume": "Elemental Sphere x 1",
       "skills": [
         {
           "name": "Color Insania",
@@ -195,18 +197,41 @@
           "sp_cost": "300",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 600 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 600 seconds",
+                "INT +10",
+                "ATK increases in proportion to extra [INT]",
+                "All damage received -20%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 600 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 600 seconds",
+                "INT +10",
+                "ATK increases in proportion to extra [INT]",
+                "All damage received -20%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 600 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 600 seconds",
+                "INT +20",
+                "ATK increases in proportion to extra [INT]",
+                "All damage received -20%",
+                "A.R. +1"
+              ]
             }
           ],
           "special": []
@@ -224,14 +249,30 @@
           "sp_cost": "450",
           "aggro": "50",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1177%"
+              "value": "АТК: 1177%",
+              "effects": [
+                "Damage increases proportional to the enemys distance (20% per 1m), up to 300%",
+                "Damage increases by (2% of extra [INT])",
+                "[Abyssos] debuff level +1 upon a successful hit",
+                "[Abyssos] DEF -3 per level, RES -3 per level; -1 D.R. (if above Lv. 10)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2354%"
+              "value": "АТК: 2354%",
+              "effects": [
+                "Damage increases proportional to the enemys distance (20% per 1m), up to 300%",
+                "Damage increases by (2% of extra [INT])",
+                "[Abyssos] debuff level +1 upon a successful hit",
+                "[Abyssos] DEF -3 per level, RES -3 per level; -1 D.R. (if above Lv. 10)"
+              ]
             }
           ],
           "special": []
@@ -249,14 +290,30 @@
           "sp_cost": "550",
           "aggro": "62",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 3",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1234%"
+              "value": "АТК: 1234%",
+              "effects": [
+                "Skill damage increases inversely proportional to the amount of targets, up to 300%",
+                "Damage increases by (2% of extra [INT])",
+                "[Abyssos] debuff level +1 upon a successful hit",
+                "[Abyssos] DEF -3 per level, RES -3 per level; -1 D.R. (if above Lv. 10)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2468%"
+              "value": "АТК: 2468%",
+              "effects": [
+                "Skill damage increases inversely proportional to the amount of targets, up to 300%",
+                "Damage increases by (2% of extra [INT])",
+                "[Abyssos] debuff level +1 upon a successful hit",
+                "[Abyssos] DEF -3 per level, RES -3 per level; -1 D.R. (if above Lv. 10)"
+              ]
             }
           ],
           "special": []
@@ -274,14 +331,32 @@
           "sp_cost": "650",
           "aggro": "120",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 7",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1434%"
+              "value": "АТК: 1434%",
+              "effects": [
+                "Damage increases as you get closer to the center of the designated area, up to 200%",
+                "Damage increases inversely proportional to the amount of targets, up to 200%",
+                "Damage increases by (2% of extra [INT])",
+                "[Abyssos] debuff level +1 upon a successful hit",
+                "[Abyssos] DEF -3 per level, RES -3 per level; -1 D.R. (if above Lv. 10)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2868%"
+              "value": "АТК: 2868%",
+              "effects": [
+                "Damage increases as you get closer to the center of the designated area, up to 200%",
+                "Damage increases inversely proportional to the amount of targets, up to 200%",
+                "Damage increases by (2% of extra [INT])",
+                "[Abyssos] debuff level +1 upon a successful hit",
+                "[Abyssos] DEF -3 per level, RES -3 per level; -1 D.R. (if above Lv. 10)"
+              ]
             }
           ],
           "special": []
@@ -299,14 +374,36 @@
           "sp_cost": "500",
           "aggro": "255",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 20",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1977%"
+              "value": "АТК: 1977%",
+              "effects": [
+                "Recharge time: 10 seconds",
+                "Can be used up to 3 times",
+                "Recharges when used more than 1 time",
+                "On every 3rd successful skill, damage increases by 300%",
+                "Damage increases by (2% of extra [INT])",
+                "[Abyssos] debuff level +1 upon a successful hit",
+                "[Abyssos] DEF -3 per level, RES -3 per level; -1 D.R. (if above Lv. 10)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3954%"
+              "value": "АТК: 3954%",
+              "effects": [
+                "Recharge time: 10 seconds",
+                "Can be used up to 3 times",
+                "Recharges when used more than 1 time",
+                "On every 3rd successful skill, damage increases by 300%",
+                "Damage increases by (2% of extra [INT])",
+                "[Abyssos] debuff level +1 upon a successful hit",
+                "[Abyssos] DEF -3 per level, RES -3 per level; -1 D.R. (if above Lv. 10)"
+              ]
             }
           ],
           "special": []
@@ -356,6 +453,7 @@
         "Penetration": "5+30",
         "Immunity": "15"
       },
+      "consume": "Elemental Sphere x 2",
       "skills": [
         {
           "name": "Tantum Una Verum",
@@ -370,18 +468,47 @@
           "sp_cost": "300",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 600 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 600 seconds",
+                "Normal attack type changes to [Splash]",
+                "Increases normal attack damage by 150%",
+                "Increases [INT] by 5% of total [INT]",
+                "Skills ignore the relevant 50 RES according to the bracelet worn",
+                "SP increases rapidly"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 600 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 600 seconds",
+                "Normal attack type changes to [Splash]",
+                "Increases normal attack damage by 150%",
+                "Increases [INT] by 5% of total [INT]",
+                "Skills ignore the relevant 50 RES according to the bracelet worn",
+                "SP increases rapidly"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 600 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 600 seconds",
+                "Normal attack type changes to [Splash]",
+                "Increases normal attack damage by 150%",
+                "Increases [INT] by 10% of total [INT]",
+                "Skills ignore the relevant 50 RES according to the bracelet worn",
+                "SP increases rapidly",
+                "A.R. +1"
+              ]
             }
           ],
           "special": []
@@ -399,14 +526,40 @@
           "sp_cost": "450",
           "aggro": "50",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 3",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1200%"
+              "value": "АТК: 1200%",
+              "effects": [
+                "Damage increases by (2% of extra [INT])",
+                "[Abyssos] debuff level +1 upon a successful hit",
+                "[Abyssos] DEF -3 per level, RES -3 per level; -1 D.R. (if above Lv. 10)",
+                "[Color Insania] is applied according to [Abyssos]s level ([Abyssos] is not removed)",
+                "[Pandaemonium] is applied once [Abyssos] reaches level 12 ([Abyssos] will be removed)",
+                "[Pandaemonium]",
+                "A.R. +1",
+                "Normal attack damage increases further",
+                "[PVE] Reduce cooldown of [Inugis] and [Flos Sanguinis] by 10s"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "Damage increases by (2% of extra [INT])",
+                "[Abyssos] debuff level +1 upon a successful hit",
+                "[Abyssos] DEF -3 per level, RES -3 per level; -1 D.R. (if above Lv. 10)",
+                "[Color Insania] is applied according to [Abyssos]s level ([Abyssos] is not removed)",
+                "[Pandaemonium] is applied once [Abyssos] reaches level 12 ([Abyssos] will be removed)",
+                "[Pandaemonium]",
+                "A.R. +1",
+                "Normal attack damage increases further",
+                "[PVE] Reduce cooldown of [Inugis] and [Flos Sanguinis] by 10s"
+              ]
             }
           ],
           "special": []
@@ -424,14 +577,28 @@
           "sp_cost": "550",
           "aggro": "62",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1400%"
+              "value": "АТК: 1400%",
+              "effects": [
+                "Damage increases by 300% when the enemys HP is 50% or above",
+                "Damage increases by (2% of extra [INT])",
+                "[PVE] Reduce cooldown of [Inugis] and [Flos Sanguinis] by 10s"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2800%"
+              "value": "АТК: 2800%",
+              "effects": [
+                "Damage increases by 300% when the enemys HP is 50% or above",
+                "Damage increases by (2% of extra [INT])",
+                "[PVE] Reduce cooldown of [Inugis] and [Flos Sanguinis] by 10s"
+              ]
             }
           ],
           "special": []
@@ -449,14 +616,24 @@
           "sp_cost": "700",
           "aggro": "0",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 7",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "Damage increases by (2% of extra [INT])"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4400%"
+              "value": "АТК: 4400%",
+              "effects": [
+                "Damage increases by (2% of extra [INT])"
+              ]
             }
           ],
           "special": []
@@ -474,14 +651,26 @@
           "sp_cost": "800",
           "aggro": "120",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 25",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2600%"
+              "value": "АТК: 2600%",
+              "effects": [
+                "Damage increases by (3% of extra [INT])",
+                "On every 3rd successful skill, damage increases by 150%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5200%"
+              "value": "АТК: 5200%",
+              "effects": [
+                "Damage increases by (3% of extra [INT])",
+                "On every 3rd successful skill, damage increases by 150%"
+              ]
             }
           ],
           "special": []

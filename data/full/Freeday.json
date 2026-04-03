@@ -100,6 +100,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -135,6 +136,7 @@
         "Abnormal RES": "15"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [
         {
           "name": "Shining Ballade",
@@ -149,26 +151,63 @@
           "sp_cost": "200",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Magical Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration : 165 sec"
+              "value": "",
+              "effects": [
+                "Duration : 165 sec",
+                "ATK +1%",
+                "ATK SPD +1%",
+                "Movement Speed +1%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration : 300 sec"
+              "value": "",
+              "effects": [
+                "Duration : 300 sec",
+                "ATK +10%",
+                "ATK SPD +10%",
+                "Movement Speed +10%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration : 315 sec"
+              "value": "",
+              "effects": [
+                "Duration : 315 sec",
+                "ATK +11%",
+                "ATK SPD +11%",
+                "Movement Speed +11%",
+                "Penetration +3"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration : 330 sec"
+              "value": "",
+              "effects": [
+                "Duration : 330 sec",
+                "ATK +12%",
+                "ATK SPD +12%",
+                "Movement Speed +12%",
+                "Penetration +6"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration : 345 sec"
+              "value": "",
+              "effects": [
+                "Duration : 345 sec",
+                "ATK +13%",
+                "ATK SPD +13%",
+                "Movement Speed +13%",
+                "Penetration +9"
+              ]
             }
           ],
           "special": []
@@ -186,26 +225,58 @@
           "sp_cost": "200",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Magical Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration : 165 sec"
+              "value": "",
+              "effects": [
+                "Duration : 165 sec",
+                "DEF +1",
+                "Physical Damage received -20%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration : 300 sec"
+              "value": "",
+              "effects": [
+                "Duration : 300 sec",
+                "DEF +10",
+                "Physical Damage received -20%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration : 315 sec"
+              "value": "",
+              "effects": [
+                "Duration : 315 sec",
+                "DEF +11",
+                "Physical Damage received -20%",
+                "IMM +3"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration : 330 sec"
+              "value": "",
+              "effects": [
+                "Duration : 330 sec",
+                "DEF +12",
+                "Physical Damage received -20%",
+                "IMM +6"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration : 345 sec"
+              "value": "",
+              "effects": [
+                "Duration : 345 sec",
+                "DEF +13",
+                "Physical Damage received -20%",
+                "IMM +9"
+              ]
             }
           ],
           "special": []
@@ -223,26 +294,58 @@
           "sp_cost": "200",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Magical Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration : 165 sec"
+              "value": "",
+              "effects": [
+                "Duration : 165 sec",
+                "Debuff RES +1",
+                "Reduces magical attack damage by 20%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration : 300 sec"
+              "value": "",
+              "effects": [
+                "Duration : 300 sec",
+                "Debuff RES +10",
+                "Reduces magical attack damage by 20%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration : 315 sec"
+              "value": "",
+              "effects": [
+                "Duration : 315 sec",
+                "Debuff RES +11",
+                "Reduces magical attack damage by 20%",
+                "IMM +3"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration : 330 sec"
+              "value": "",
+              "effects": [
+                "Duration : 330 sec",
+                "Debuff RES +12",
+                "Reduces magical attack damage by 20%",
+                "IMM +6"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration : 345 sec"
+              "value": "",
+              "effects": [
+                "Duration : 345 sec",
+                "Debuff RES +13",
+                "Reduces magical attack damage by 20%",
+                "IMM +9"
+              ]
             }
           ],
           "special": []
@@ -260,26 +363,50 @@
           "sp_cost": "2500",
           "aggro": "0",
           "skill_type": "Healing",
+          "consume_item": "2500 HP by using it",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Heals 5% of HP after Resurrection"
+              "value": "",
+              "effects": [
+                "Heals 5% of HP after Resurrection",
+                "Consumes 2500 HP by using it"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Heals 50% of HP after Resurrection"
+              "value": "",
+              "effects": [
+                "Heals 50% of HP after Resurrection",
+                "Consumes 2500 HP by using it"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Heals 55% of HP after Resurrection"
+              "value": "",
+              "effects": [
+                "Heals 55% of HP after Resurrection",
+                "Consumes 2500 HP by using it"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Heals 60% of HP after Resurrection"
+              "value": "",
+              "effects": [
+                "Heals 60% of HP after Resurrection",
+                "Consumes 2500 HP by using it"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Heals 65% of HP after Resurrection"
+              "value": "",
+              "effects": [
+                "Heals 65% of HP after Resurrection",
+                "Consumes 2500 HP by using it"
+              ]
             }
           ],
           "special": []
@@ -319,6 +446,7 @@
         "Penetration": "15+25",
         "Immunity": "10+10"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Chromatic",
@@ -326,33 +454,86 @@
           "description": "(Event) Teaching Practicing Day 13",
           "target": "",
           "casting_time": "Instant",
-          "cooldown": "60 sec.",
+          "cooldown": "20 sec.",
           "duration": "195 sec",
           "hits_flying": "Yes",
           "knock_down": "No",
           "sp_cost": "750",
           "aggro": "100",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration : 15 sec"
+              "value": "",
+              "effects": [
+                "Duration : 15 sec",
+                "Duration of [Freedom of Soul] +3 sec once applies [Freedom of Soul] buff in [Chromatic] status.",
+                "ATK+2%",
+                "Monster Damage+1%",
+                "ATK SPD +1%",
+                "Accuracy +1"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration : 150 sec"
+              "value": "",
+              "effects": [
+                "Duration : 150 sec",
+                "Duration of [Freedom of Soul] +30 sec once applies [Freedom of Soul] buff in [Chromatic] status.",
+                "ATK+20%",
+                "Monster Damage+10%",
+                "ATK SPD +10%",
+                "Accuracy +10"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 165 sec"
+              "value": "",
+              "effects": [
+                "Duration: 165 sec",
+                "Duration of [Freedom of Soul] +33 sec once [Freedom of Soul] buff is applied in [Chromatic] status.",
+                "A.R.+1",
+                "D.R.+1",
+                "ATK+20%",
+                "Monster Damage+15%",
+                "ATK SPD +14%",
+                "Accuracy +11",
+                "All RES -15"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 180 sec"
+              "value": "",
+              "effects": [
+                "Duration: 180 sec",
+                "Duration of [Freedom of Soul] +36 sec once [Freedom of Soul] buff is applied in [Chromatic] status.",
+                "A.R.+1",
+                "D.R.+1",
+                "ATK+20%",
+                "Monster Damage+20%",
+                "ATK SPD +18%",
+                "Accuracy +12",
+                "All RES -15"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 195 sec"
+              "value": "",
+              "effects": [
+                "Duration: 195 sec",
+                "Duration of [Freedom of Soul] +39 sec once [Freedom of Soul] buff is applied in [Chromatic] status.",
+                "A.R.+1",
+                "D.R.+1",
+                "ATK+20%",
+                "Monster Damage+20%",
+                "ATK SPD +18%",
+                "Accuracy +12",
+                "All RES -15"
+              ]
             }
           ],
           "special": []
@@ -370,14 +551,26 @@
           "sp_cost": "300",
           "aggro": "200",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 3",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1100%"
+              "value": "АТК: 1100%",
+              "effects": [
+                "Increases level of [Freedom of Soul] by 3 in case of successful attack on an enemy",
+                "Increases damage by 10% per 1 level of [Freedom of Soul]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "Increases level of [Freedom of Soul] by 3 in case of successful attack on an enemy",
+                "Increases damage by 10% per 1 level of [Freedom of Soul]"
+              ]
             }
           ],
           "special": []
@@ -395,26 +588,50 @@
           "sp_cost": "400",
           "aggro": "300",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 3",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1400%"
+              "value": "АТК: 1400%",
+              "effects": [
+                "Increases level of [Freedom of Soul] by 5 in case of successful attack on an enemy",
+                "Increases damage by 10% per 1 level of [Freedom of Soul]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2800%"
+              "value": "АТК: 2800%",
+              "effects": [
+                "Increases level of [Freedom of Soul] by 5 in case of successful attack on an enemy",
+                "Increases damage by 10% per 1 level of [Freedom of Soul]"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "АТК: 3080%"
+              "value": "АТК: 3080%",
+              "effects": [
+                "Increases level of [Freedom of Soul] by 6 in case of successful attack on an enemy",
+                "Increases damage by 10% per 1 level of [Freedom of Soul]"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "АТК: 3360%"
+              "value": "АТК: 3360%",
+              "effects": [
+                "Increases level of [Freedom of Soul] by 7 in case of successful attack on an enemy",
+                "Increases damage by 10% per 1 level of [Freedom of Soul]"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "АТК: 3360%"
+              "value": "АТК: 3360%",
+              "effects": [
+                "Increases level of [Freedom of Soul] by 8 in case of successful attack on an enemy",
+                "Increases damage by 10% per 1 level of [Freedom of Soul]"
+              ]
             }
           ],
           "special": []
@@ -432,26 +649,50 @@
           "sp_cost": "500",
           "aggro": "400",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1500%"
+              "value": "АТК: 1500%",
+              "effects": [
+                "Increases level of [Freedom of Soul] by 1 in case of successful attack on an enemy",
+                "Increases damage by 10% per 1 level of [Freedom of Soul]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "Increases level of [Freedom of Soul] by 1 ~ 10 in case of successful attack on an enemy",
+                "Increases damage by 10% per 1 level of [Freedom of Soul]"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "АТК: 3300%"
+              "value": "АТК: 3300%",
+              "effects": [
+                "Increases level of [Freedom of Soul] by 1 ~ 11 in case of successful attack on an enemy",
+                "Increases damage by 10% per 1 level of [Freedom of Soul]"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "АТК: 3600%"
+              "value": "АТК: 3600%",
+              "effects": [
+                "Increases level of [Freedom of Soul] by 1 ~ 12 in case of successful attack on an enemy",
+                "Increases damage by 10% per 1 level of [Freedom of Soul]"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "АТК: 3600%"
+              "value": "АТК: 3600%",
+              "effects": [
+                "Increases level of [Freedom of Soul] by 1 ~ 13 in case of successful attack on an enemy",
+                "Increases damage by 10% per 1 level of [Freedom of Soul]"
+              ]
             }
           ],
           "special": []
@@ -469,26 +710,50 @@
           "sp_cost": "800",
           "aggro": "500",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 8",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "[Freedom of Soul] Increase damage by 2% per level",
+                "100% chance to inflict [Panic]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4800%"
+              "value": "АТК: 4800%",
+              "effects": [
+                "[Freedom of Soul] Increase damage by 20% per level",
+                "100% chance to inflict [Panic]"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "АТК: 5280%"
+              "value": "АТК: 5280%",
+              "effects": [
+                "[Freedom of Soul] Increase damage by 23% per level",
+                "100% chance to inflict [Panic]"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "АТК: 5760%"
+              "value": "АТК: 5760%",
+              "effects": [
+                "[Freedom of Soul] Increase damage by 26% per level",
+                "100% chance to inflict [Panic]"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "АТК: 5760%"
+              "value": "АТК: 5760%",
+              "effects": [
+                "[Freedom of Soul] Increase damage by 29% per level",
+                "100% chance to inflict [Panic]"
+              ]
             }
           ],
           "special": []

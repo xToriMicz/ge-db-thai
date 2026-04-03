@@ -96,6 +96,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -134,6 +135,7 @@
         "Penetration": "5+10",
         "Immunity": "5+10"
       },
+      "consume": "",
       "skills": [],
       "equipped_items": "Cube",
       "icon_position": {
@@ -169,6 +171,7 @@
         "Penetration": "5+25",
         "Immunity": "5+10"
       },
+      "consume": "Psychic Sphere x 1",
       "skills": [
         {
           "name": "Overwhelm",
@@ -183,14 +186,28 @@
           "sp_cost": "300",
           "aggro": "115",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 1",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1000%"
+              "value": "АТК: 1000%",
+              "effects": [
+                "[Meditation] Buff Level +1 to [Caster] (Max Lv. 5)",
+                "[Monster] Skill Damage increases by 80% per [Meditation]s Lv. + 8% of extra [INT]",
+                "[PC] Skill Damage increases by 5% of targets Maximum HP and 5% per [Meditation]s Lv."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2000%"
+              "value": "АТК: 2000%",
+              "effects": [
+                "[Meditation] Buff Level +1 to [Caster] (Max Lv. 5)",
+                "[Monster] Skill Damage increases by 80% per [Meditation]s Lv. + 8% of extra [INT]",
+                "[PC] Skill Damage increases by 5% of targets Maximum HP and 5% per [Meditation]s Lv."
+              ]
             }
           ],
           "special": []
@@ -208,14 +225,30 @@
           "sp_cost": "750",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration : 300s"
+              "value": "",
+              "effects": [
+                "Duration : 300s",
+                "PEN +10",
+                "For [Sariel], A.R. +1, INT +10, DEF +10",
+                "For [Reaper Sariel], A.R. +1, INT +10, IMM +10"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration : 300s"
+              "value": "",
+              "effects": [
+                "Duration : 300s",
+                "PEN +10",
+                "For [Sariel], A.R. +1, INT +10, DEF +10",
+                "For [Reaper Sariel], A.R. +1, INT +10, IMM +10"
+              ]
             }
           ],
           "special": []
@@ -233,14 +266,30 @@
           "sp_cost": "800",
           "aggro": "135",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1500%"
+              "value": "АТК: 1500%",
+              "effects": [
+                "50% Chance to inflict [Confusion]",
+                "[Meditation] Buff Level +1 to [Caster] (Max Lv. 5)",
+                "[Monster] Skill Damage increases by 80% per [Meditation]s Lv. + 8% of extra [INT]",
+                "[PC] Skill Damage increases by 5% of targets Maximum HP and 5% per [Meditation]s Lv."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "50% Chance to inflict [Confusion]",
+                "[Meditation] Buff Level +1 to [Caster] (Max Lv. 5)",
+                "[Monster] Skill Damage increases by 80% per [Meditation]s Lv. + 8% of extra [INT]",
+                "[PC] Skill Damage increases by 5% of targets Maximum HP and 5% per [Meditation]s Lv."
+              ]
             }
           ],
           "special": []
@@ -258,14 +307,30 @@
           "sp_cost": "700",
           "aggro": "128",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2000%"
+              "value": "АТК: 2000%",
+              "effects": [
+                "50% Chance to inflict [Mortal Wound]",
+                "[Meditation] Buff Level +1 to [Caster] (Max Lv. 5)",
+                "[Monster] Skill Damage increases by 80% per [Meditation]s Lv. + 8% of extra [INT]",
+                "[PC] Skill Damage increases by 5% of targets Maximum HP and 5% per [Meditation]s Lv."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4000%"
+              "value": "АТК: 4000%",
+              "effects": [
+                "50% Chance to inflict [Mortal Wound]",
+                "[Meditation] Buff Level +1 to [Caster] (Max Lv. 5)",
+                "[Monster] Skill Damage increases by 80% per [Meditation]s Lv. + 8% of extra [INT]",
+                "[PC] Skill Damage increases by 5% of targets Maximum HP and 5% per [Meditation]s Lv."
+              ]
             }
           ],
           "special": []
@@ -283,14 +348,28 @@
           "sp_cost": "900",
           "aggro": "245",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "[Meditation] Buff Level +1 to [Caster] (Max Lv. 5)",
+                "[Monster] Skill Damage increases by 80% per [Meditation]s Lv. + 8% of extra [INT]",
+                "[PC] Skill Damage increases by 5% of targets Maximum HP and 5% per [Meditation]s Lv."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4800%"
+              "value": "АТК: 4800%",
+              "effects": [
+                "[Meditation] Buff Level +1 to [Caster] (Max Lv. 5)",
+                "[Monster] Skill Damage increases by 80% per [Meditation]s Lv. + 8% of extra [INT]",
+                "[PC] Skill Damage increases by 5% of targets Maximum HP and 5% per [Meditation]s Lv."
+              ]
             }
           ],
           "special": []

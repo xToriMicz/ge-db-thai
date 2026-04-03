@@ -2,7 +2,7 @@
   "slug": "Ronera",
   "equipment": {
     "category": "Usable Equipment",
-    "medal": "Seer of Souls What you see isnt everything",
+    "medal": "Seer of Souls What you see isnt everything 20th Anniversary with Linden",
     "head": "None",
     "earring": "Earring",
     "face": "None",
@@ -100,6 +100,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -144,12 +145,13 @@
         "Penetration": "10+20",
         "Immunity": "5+10"
       },
+      "consume": "Psychic Sphere x 4",
       "skills": [
         {
           "name": "Silar",
           "image": "anm_celare.jpg",
           "description": "Turns her body into a spirit, instantly moving to a designated point.",
-          "target": "",
+          "target": "Max Range 20m / Radius 3m / Max 3 targets",
           "casting_time": "1.6 sec.",
           "cooldown": "20 sec.",
           "duration": "1.9 sec.",
@@ -158,14 +160,30 @@
           "sp_cost": "250",
           "aggro": "50",
           "skill_type": "Shooting",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "105%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 320%"
+              "value": "АТК: 320%",
+              "effects": [
+                "On hit: 50% chance to inflict [Panic] on the enemy.",
+                "If [Asorbi] is active, use to renew its duration.",
+                "If [Asorbi] is at level 5, use to reset the [Concentra] cooldown.",
+                "Applies [Spari] to self after moving."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 640%"
+              "value": "АТК: 640%",
+              "effects": [
+                "On hit: 50% chance to inflict [Panic] on the enemy.",
+                "If [Asorbi] is active, use to renew its duration.",
+                "If [Asorbi] is at level 5, use to reset the [Concentra] cooldown.",
+                "Applies [Spari] to self after moving."
+              ]
             }
           ],
           "special": []
@@ -174,7 +192,7 @@
           "name": "Riposo",
           "image": "anm_riposo.jpg",
           "description": "Drains souls from the target and absorbs them.",
-          "target": "",
+          "target": "Max Range 20m / Radius 4m / Max 5 targets (Incapacitated or combat-incapable targets)",
           "casting_time": "1.033 sec.",
           "cooldown": "6 sec.",
           "duration": "1.766 sec.",
@@ -183,14 +201,32 @@
           "sp_cost": "400",
           "aggro": "100",
           "skill_type": "Shooting",
+          "consume_item": "Ancient Star Orb x 18",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 660%"
+              "value": "АТК: 660%",
+              "effects": [
+                "On hit: 30% chance to inflict [Death Foreboding] on the enemy.",
+                "Using it on an enemy applies [Asorbi] +2 to self.",
+                "Skill damage increases up to 5x based on [Asorbi] level (3x for PCs).",
+                "If the target is an enemy PCs summon or incapacitated character, applies [Asorbi] +1 to self per target.",
+                "If the target is an enemy PCs summon, hitting it inflicts high damage on the summon."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1320%"
+              "value": "АТК: 1320%",
+              "effects": [
+                "On hit: 30% chance to inflict [Death Foreboding] on the enemy.",
+                "Using it on an enemy applies [Asorbi] +2 to self.",
+                "Skill damage increases up to 5x based on [Asorbi] level (3x for PCs).",
+                "If the target is an enemy PCs summon or incapacitated character, applies [Asorbi] +1 to self per target.",
+                "If the target is an enemy PCs summon, hitting it inflicts high damage on the summon."
+              ]
             }
           ],
           "special": []
@@ -199,7 +235,7 @@
           "name": "Parade",
           "image": "anm_palude.jpg",
           "description": "Creates a swamp of ghosts and inflicts continuous damage at the designated point. However, [Malediz] does not stack with [Suhae], [Kul Uden], [Polluted Water], [Taabu].",
-          "target": "",
+          "target": "Max Range 15m / Radius 6m / Max 4 targets around the designated enemy",
           "casting_time": "1.7 sec.",
           "cooldown": "18 sec.",
           "duration": "10.433 sec.",
@@ -208,14 +244,48 @@
           "sp_cost": "950",
           "aggro": "150",
           "skill_type": "Shooting",
+          "consume_item": "Ancient Star Orb x 24",
+          "soft_armor_atk": "18%",
+          "heavy_armor_atk": "30%",
+          "light_armor_atk": "20%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 110%"
+              "value": "АТК: 110%",
+              "effects": [
+                "On hit: 30% chance to inflict [Block] on the enemy.",
+                "Attacks up to 13 times during the cast.",
+                "Recasting during the cast cancels the skill.",
+                "Each attack applies skill damage.",
+                "The final attack deals increased damage.",
+                "Creates a [Swamp of Ghosts] around the target enemy, inflicting [Malediz] on enemies within it.",
+                "Skill damage increases up to 5x based on [Asorbi] level (3x for PCs).",
+                "Maintains [Asorbi] duration during the cast.",
+                "Applies [Asorbi] +2 to self when the cast ends.",
+                "[Di Anima]",
+                "Skill damage increases up to 2x with more targets hit.",
+                "[Di Fantasma]",
+                "100% critical hit chance."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 220%"
+              "value": "АТК: 220%",
+              "effects": [
+                "On hit: 30% chance to inflict [Block] on the enemy.",
+                "Attacks up to 13 times during the cast.",
+                "Recasting during the cast cancels the skill.",
+                "Each attack applies skill damage.",
+                "The final attack deals increased damage.",
+                "Creates a [Swamp of Ghosts] around the target enemy, inflicting [Malediz] on enemies within it.",
+                "Skill damage increases up to 5x based on [Asorbi] level (3x for PCs).",
+                "Maintains [Asorbi] duration during the cast.",
+                "Applies [Asorbi] +2 to self when the cast ends.",
+                "[Di Anima]",
+                "Skill damage increases up to 2x with more targets hit.",
+                "[Di Fantasma]",
+                "100% critical hit chance."
+              ]
             }
           ],
           "special": []
@@ -233,14 +303,28 @@
           "sp_cost": "450",
           "aggro": "50",
           "skill_type": "Shooting",
+          "consume_item": "Ancient Star Orb x 17",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "75%",
+          "light_armor_atk": "150%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 710%"
+              "value": "АТК: 710%",
+              "effects": [
+                "On hit: 40% chance to inflict [Critical Wound] on the enemy.",
+                "Using it on an enemy applies [Asorbi] +1 to self.",
+                "Skill damage increases up to 5x based on [Asorbi] level (3x for PCs)."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1420%"
+              "value": "АТК: 1420%",
+              "effects": [
+                "On hit: 40% chance to inflict [Critical Wound] on the enemy.",
+                "Using it on an enemy applies [Asorbi] +1 to self.",
+                "Skill damage increases up to 5x based on [Asorbi] level (3x for PCs)."
+              ]
             }
           ],
           "special": []
@@ -258,14 +342,36 @@
           "sp_cost": "1100",
           "aggro": "200",
           "skill_type": "Shooting",
+          "consume_item": "Ancient Star Orb x 33",
+          "soft_armor_atk": "70%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 770%"
+              "value": "АТК: 770%",
+              "effects": [
+                "Casting time proportionally increases enemy knockdown distance, knockdown time, and skill damage (max 4x).",
+                "Maximum casting time doubles skill damage.",
+                "[Asorbi] is renewed on skill cast.",
+                "[Di Anima]",
+                "At [Asorbi] level 5, skill damage is doubled.",
+                "[Di Fantasma]",
+                "At [Asorbi] level 5, 100% critical hit chance is activated."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1540%"
+              "value": "АТК: 1540%",
+              "effects": [
+                "Casting time proportionally increases enemy knockdown distance, knockdown time, and skill damage (max 4x).",
+                "Maximum casting time doubles skill damage.",
+                "[Asorbi] is renewed on skill cast.",
+                "[Di Anima]",
+                "At [Asorbi] level 5, skill damage is doubled.",
+                "[Di Fantasma]",
+                "At [Asorbi] level 5, 100% critical hit chance is activated."
+              ]
             }
           ],
           "special": []

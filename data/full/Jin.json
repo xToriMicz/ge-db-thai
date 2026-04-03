@@ -111,6 +111,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -136,7 +137,7 @@
       },
       "stats": {
         "ASPD": "117",
-        "Bonus ATK": "150%",
+        "Bonus ATK": "250%",
         "MSPD": "1",
         "MSPD Limit": "8.50",
         "ACC": "50",
@@ -154,6 +155,7 @@
         "Penetration": "5+25",
         "Immunity": "5+10"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Death Shadow Flash",
@@ -168,14 +170,28 @@
           "sp_cost": "200",
           "aggro": "80",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "50%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 600%"
+              "value": "АТК: 600%",
+              "effects": [
+                "Ignores enemys DEF by 50",
+                "80% of chance to inflict [Confusion]",
+                "In [Hiding] state, damage x1.5"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1200%"
+              "value": "АТК: 1200%",
+              "effects": [
+                "Ignores enemys DEF by 50",
+                "80% of chance to inflict [Confusion]",
+                "In [Hiding] state, damage x1.5"
+              ]
             }
           ],
           "special": []
@@ -193,14 +209,28 @@
           "sp_cost": "280",
           "aggro": "90",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "120%",
+          "heavy_armor_atk": "75%",
+          "light_armor_atk": "90%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 400%"
+              "value": "АТК: 400%",
+              "effects": [
+                "Ignore enemy DEF by 60",
+                "100% chance to impose [Confusion]",
+                "Damage x4 for the enemy that is casting"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 800%"
+              "value": "АТК: 800%",
+              "effects": [
+                "Ignore enemy DEF by 60",
+                "100% chance to impose [Confusion]",
+                "Damage x4 for the enemy that is casting"
+              ]
             }
           ],
           "special": []
@@ -218,26 +248,50 @@
           "sp_cost": "400",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Ignore all attacks while moving"
+              "value": "",
+              "effects": [
+                "Ignore all attacks while moving",
+                "Hiding duration : 3 sec"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Ignore all attacks while moving"
+              "value": "",
+              "effects": [
+                "Ignore all attacks while moving",
+                "Hiding duration : 30 sec"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Ignore all attacks while moving"
+              "value": "",
+              "effects": [
+                "Ignore all attacks while moving",
+                "Hiding duration : 33 sec"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Ignore all attacks while moving"
+              "value": "",
+              "effects": [
+                "Ignore all attacks while moving",
+                "Hiding duration : 36 sec"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Ignore all attacks while moving"
+              "value": "",
+              "effects": [
+                "Ignore all attacks while moving",
+                "Hiding duration : 39 sec"
+              ]
             }
           ],
           "special": []
@@ -255,14 +309,28 @@
           "sp_cost": "340",
           "aggro": "120",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 800%"
+              "value": "АТК: 800%",
+              "effects": [
+                "Ignore enemy DEF by 60",
+                "60% chance to impose [Stun]",
+                "(Chance applies for every attack of Earthquake or Splash)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1600%"
+              "value": "АТК: 1600%",
+              "effects": [
+                "Ignore enemy DEF by 60",
+                "60% chance to impose [Stun]",
+                "(Chance applies for every attack of Earthquake or Splash)"
+              ]
             }
           ],
           "special": []
@@ -280,14 +348,28 @@
           "sp_cost": "300",
           "aggro": "250",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1625%"
+              "value": "АТК: 1625%",
+              "effects": [
+                "Ignore enemy DEF by 50",
+                "Lasts 1 second or until the Seal Stone is broken",
+                "Seal stone breaks after 1 attack"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3250%"
+              "value": "АТК: 3250%",
+              "effects": [
+                "Ignore enemy DEF by 60",
+                "Lasts for 2 secs in the sealed area or lasts until Seal stone is broken",
+                "Seal stone is broken by 2 shots."
+              ]
             }
           ],
           "special": []
@@ -338,6 +420,7 @@
         "Penetration": "15+15",
         "Immunity": "10+20"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Fox Trickery",
@@ -352,14 +435,38 @@
           "sp_cost": "440",
           "aggro": "111",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 900%"
+              "value": "АТК: 900%",
+              "effects": [
+                "70% Chance to inflict [Root] to enemy",
+                "Ignores 100 DEF",
+                "Skill damage increases equal to (5% of extra [STR])",
+                "Activate [Fox Form] on usage.",
+                "[Fox Form]",
+                "Additional stats increase in proportion to [STR]",
+                "Skills ignore DEF equal to 5% of extra [STR]",
+                "Monster DMG +250%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": [
+                "70% Chance to inflict [Root] to enemy",
+                "Ignores 100 DEF",
+                "Skill damage increases equal to (5% of extra [STR])",
+                "Activate [Fox Form] on usage.",
+                "[Fox Form]",
+                "Additional stats increase in proportion to [STR]",
+                "Skills ignore DEF equal to 5% of extra [STR]",
+                "Monster DMG +250%"
+              ]
             }
           ],
           "special": [
@@ -380,14 +487,32 @@
           "sp_cost": "300",
           "aggro": "250",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1300%"
+              "value": "АТК: 1300%",
+              "effects": [
+                "70% Chance to inflict [Gloomy Present] to enemy",
+                "Ignores 50 DEF",
+                "Skill damage increases equal to (5% of extra [STR])",
+                "Skill damage additionally increases by 10% per [Fox Bead] debuff on enemy",
+                "[Fox Bead] level increases +1 on skill usage. (Max. 10)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2600%"
+              "value": "АТК: 2600%",
+              "effects": [
+                "70% Chance to inflict [Gloomy Present] to enemy",
+                "Ignores 50 DEF",
+                "Skill damage increases equal to (5% of extra [STR])",
+                "Skill damage additionally increases by 10% per [Fox Bead] debuff on enemy",
+                "[Fox Bead] level increases +1 on skill usage. (Max. 10)"
+              ]
             }
           ],
           "special": []
@@ -405,14 +530,32 @@
           "sp_cost": "440",
           "aggro": "58",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": [
+                "100% Chance to inflict [Shackles] to enemy",
+                "Ignores 80 DEF",
+                "Skill damage increases equal to (5% of extra [STR])",
+                "Skill damage additionally increases by 10% per [Fox Bead] debuff on enemy",
+                "[Fox Bead] level increases +1 on skill usage. (Max. 10)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3600%"
+              "value": "АТК: 3600%",
+              "effects": [
+                "100% Chance to inflict [Shackles] to enemy",
+                "Ignores 80 DEF",
+                "Skill damage increases equal to (5% of extra [STR])",
+                "Skill damage additionally increases by 10% per [Fox Bead] debuff on enemy",
+                "[Fox Bead] level increases +1 on skill usage. (Max. 10)"
+              ]
             }
           ],
           "special": []
@@ -430,14 +573,32 @@
           "sp_cost": "440",
           "aggro": "111",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 20",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2500%"
+              "value": "АТК: 2500%",
+              "effects": [
+                "100% Chance to inflict [Requiem] to enemy",
+                "Ignores 80 DEF",
+                "Skill damage increases equal to (5% of extra [STR])",
+                "Skill damage additionally increases by 10% per [Fox Bead] debuff on enemy",
+                "[Fox Bead] level increases +1 on skill usage. (Max. 10)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5000%"
+              "value": "АТК: 5000%",
+              "effects": [
+                "100% Chance to inflict [Requiem] to enemy",
+                "Ignores 80 DEF",
+                "Skill damage increases equal to (5% of extra [STR])",
+                "Skill damage additionally increases by 10% per [Fox Bead] debuff on enemy",
+                "[Fox Bead] level increases +1 on skill usage. (Max. 10)"
+              ]
             }
           ],
           "special": []
@@ -455,14 +616,34 @@
           "sp_cost": "200",
           "aggro": "247",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 20",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2800%"
+              "value": "АТК: 2800%",
+              "effects": [
+                "100% Chance to inflict [Panic] to enemy",
+                "Ignores 150 DEF",
+                "Skill damage increases equal to (5% of extra [STR])",
+                "Skill damage additionally increases by 10% per [Fox Bead] debuff on enemy",
+                "[Fox Bead] level increases +1 on skill usage. (Max. 10)",
+                "Activates [Spirit of Fox] if [Fox Form] is active"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5600%"
+              "value": "АТК: 5600%",
+              "effects": [
+                "100% Chance to inflict [Panic] to enemy",
+                "Ignores 150 DEF",
+                "Skill damage increases equal to (5% of extra [STR])",
+                "Skill damage additionally increases by 10% per [Fox Bead] debuff on enemy",
+                "[Fox Bead] level increases +1 on skill usage. (Max. 10)",
+                "Activates [Spirit of Fox] if [Fox Form] is active"
+              ]
             }
           ],
           "special": []

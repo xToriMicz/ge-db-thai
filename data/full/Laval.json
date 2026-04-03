@@ -37,10 +37,16 @@
           "Duration: 300 seconds",
           "Skill Damage increases by 9% of extra [STR] (1% for PC)",
           "Ignores monster DEF according to total extra [STR]",
-          "A.R. +1",
+          "A.R. +2",
+          "D.R. +1",
           "ATK +50%",
           "ATK against monsters +200%",
-          "Physical Penetration +10"
+          "Physical Penetration +10",
+          "STR +10",
+          "HP +10",
+          "DEF +10",
+          "IMM +10",
+          "Damage recieved -10%"
         ]
       },
       {
@@ -49,7 +55,7 @@
           "Duration: 300 seconds",
           "Skill Damage increases by 9% of extra [STR] (1% for PC)",
           "Ignores monster DEF according to total extra [STR]",
-          "A.R. +1",
+          "A.R. +2",
           "D.R. +1",
           "ATK +55%",
           "ATK against monsters +210%",
@@ -67,7 +73,7 @@
           "Duration: 300 seconds",
           "Skill Damage increases by 9% of extra [STR] (1% for PC)",
           "Ignores monster DEF according to total extra [STR]",
-          "A.R. +1",
+          "A.R. +2",
           "D.R. +1",
           "ATK +60%",
           "ATK against monsters +220%",
@@ -85,7 +91,7 @@
           "Duration: 300 seconds",
           "Skill Damage increases by 9% of extra [STR] (1% for PC)",
           "Ignores monster DEF according to total extra [STR]",
-          "A.R. +1",
+          "A.R. +2",
           "D.R. +1",
           "ATK +65%",
           "ATK against monsters +230%",
@@ -151,6 +157,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -194,6 +201,7 @@
         "Penetration": "5+15",
         "Immunity": "20+10"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Lempurunter",
@@ -208,14 +216,40 @@
           "sp_cost": "1650",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 100",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 1800 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 1800 seconds",
+                "Forces stance switch to [Gestalt]",
+                "ATK +50%",
+                "Movement Speed +10%",
+                "Movement Speed Limit +1.00",
+                "Lightning RES +30",
+                "Normal Attack Damage x6",
+                "Inflict [Proliferating Wound] with Normal Attacks",
+                "Block +20 when Sierra is in the team"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 1800 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 1800 seconds",
+                "Forces stance switch to [Gestalt]",
+                "ATK +50%",
+                "Movement Speed +10%",
+                "Movement Speed Limit +1.00",
+                "Lightning RES +30",
+                "Normal Attack Damage x6",
+                "Inflict [Proliferating Wound] with Normal Attacks",
+                "Block +20 when Sierra is in the team"
+              ]
             }
           ],
           "special": []
@@ -233,14 +267,46 @@
           "sp_cost": "200",
           "aggro": "150",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "150%",
+          "light_armor_atk": "120%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": [
+                "[Ducir] applied to [Laval] on successful hit",
+                "Ignores 100 DEF",
+                "Ignores Block",
+                "Ignores 50% Shield DEF",
+                "15% Chance to inflict [Mortal Wound]",
+                "Recharge time: 15 seconds",
+                "Can be used up to 2 times",
+                "Recharges when used more than once",
+                "Overwhelm] level +1 on skill hits",
+                "Additionally ignores DEF according to [Overwhelm] level (up to 30, halved for monsters)",
+                "If target has [Overwhelm], skill damage is doubled (half for PC)",
+                "1.5x skill damage against [Mortal Wound] PC targets"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3600%"
+              "value": "АТК: 3600%",
+              "effects": [
+                "[Ducir] applied to [Laval] on successful hit",
+                "Ignores 100 DEF",
+                "Ignores Block",
+                "Ignores 50% Shield DEF",
+                "15% Chance to inflict [Mortal Wound]",
+                "Recharge time: 15 seconds",
+                "Can be used up to 2 times",
+                "Recharges when used more than once",
+                "Overwhelm] level +1 on skill hits",
+                "Additionally ignores DEF according to [Overwhelm] level (up to 30, halved for monsters)",
+                "If target has [Overwhelm], skill damage is doubled (half for PC)",
+                "1.5x skill damage against [Mortal Wound] PC targets"
+              ]
             }
           ],
           "special": [
@@ -261,14 +327,50 @@
           "sp_cost": "200",
           "aggro": "100",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "120%",
+          "heavy_armor_atk": "90%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "Ignores 120 DEF",
+                "5% Chance to inflict [Slow] to PC",
+                "[Overwhelm] level +1 on skill hits",
+                "After using the skill, when reusing [Romper] [Pinier], casts [Contera] [Corpo]",
+                "[Contera]",
+                "Ignores 80 DEF, ignores Evasion",
+                "Additionally ignores DEF according to [Overwhelm] level (up to 30, halved for monsters)",
+                "If target has [Overwhelm], skill damage is doubled (half for PC)",
+                "1.5x skill damage against [Mortal Wound] PC targets",
+                "[Corpo]",
+                "Ignores 60 DEF, Ignores Block, Ignores 50% Shield DEF, 50% Chance to inflict [Stun] on PC",
+                "Additionally ignores DEF according to [Overwhelm] level (up to 30, halved for monsters)",
+                "If target has [Overwhelm], skill damage is doubled (half for PC)",
+                "1.5x skill damage against [Mortal Wound] PC targets"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4400%"
+              "value": "АТК: 4400%",
+              "effects": [
+                "Ignores 120 DEF",
+                "5% Chance to inflict [Slow] to PC",
+                "[Overwhelm] level +1 on skill hits",
+                "After using the skill, when reusing [Romper] [Pinier], casts [Contera] [Corpo]",
+                "[Contera]",
+                "Ignores 80 DEF, ignores Evasion",
+                "Additionally ignores DEF according to [Overwhelm] level (up to 30, halved for monsters)",
+                "If target has [Overwhelm], skill damage is doubled (half for PC)",
+                "1.5x skill damage against [Mortal Wound] PC targets",
+                "[Corpo]",
+                "Ignores 60 DEF, Ignores Block, Ignores 50% Shield DEF, 50% Chance to inflict [Stun] on PC",
+                "Additionally ignores DEF according to [Overwhelm] level (up to 30, halved for monsters)",
+                "If target has [Overwhelm], skill damage is doubled (half for PC)",
+                "1.5x skill damage against [Mortal Wound] PC targets"
+              ]
             }
           ],
           "special": [
@@ -291,14 +393,40 @@
           "sp_cost": "500",
           "aggro": "200",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "130%",
+          "light_armor_atk": "115%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "Ignores 110 DEF",
+                "[Ducir] applied to [Laval] on successful hit",
+                "Ignores Block",
+                "Ignores 50% Shield DEF",
+                "15% Chance to inflict [Mortal Wound]",
+                "Enemy [Overwhelm] +1 level when skill hits",
+                "Additionally ignores DEF according to [Overwhelm] level (up to 40, halved for monsters)",
+                "If target has [Overwhelm], skill damage is tripled (half for PC)",
+                "2x skill damage against [Mortal Wound] PC targets"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 6000%"
+              "value": "АТК: 6000%",
+              "effects": [
+                "Ignores 110 DEF",
+                "[Ducir] applied to [Laval] on successful hit",
+                "Ignores Block",
+                "Ignores 50% Shield DEF",
+                "15% Chance to inflict [Mortal Wound]",
+                "Enemy [Overwhelm] +1 level when skill hits",
+                "Additionally ignores DEF according to [Overwhelm] level (up to 40, halved for monsters)",
+                "If target has [Overwhelm], skill damage is tripled (half for PC)",
+                "2x skill damage against [Mortal Wound] PC targets"
+              ]
             }
           ],
           "special": [
@@ -319,14 +447,40 @@
           "sp_cost": "600",
           "aggro": "300",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "150%",
+          "light_armor_atk": "120%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "Ignores 130 DEF",
+                "[Ducir] applied to [Laval] on successful hit",
+                "Ignores Block",
+                "Ignores 50% Shield DEF",
+                "15% Chance to inflict [Stun] on PC",
+                "Enemy [Overwhelm] +1 level when skill hits",
+                "Additionally ignores DEF according to [Overwhelm] level (up to 50, halved for monsters)",
+                "If target has [Overwhelm], skill damage is quadrupled (half for PC)",
+                "2x skill damage against [Mortal Wound] PC targets"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 6000%"
+              "value": "АТК: 6000%",
+              "effects": [
+                "Ignores 130 DEF",
+                "[Ducir] applied to [Laval] on successful hit",
+                "Ignores Block",
+                "Ignores 50% Shield DEF",
+                "15% Chance to inflict [Stun] on PC",
+                "Enemy [Overwhelm] +1 level when skill hits",
+                "Additionally ignores DEF according to [Overwhelm] level (up to 50, halved for monsters)",
+                "If target has [Overwhelm], skill damage is quadrupled (half for PC)",
+                "2x skill damage against [Mortal Wound] PC targets"
+              ]
             }
           ],
           "special": [
@@ -378,6 +532,7 @@
         "Penetration": "20+15",
         "Immunity": "5+10"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Esplocion",
@@ -392,14 +547,42 @@
           "sp_cost": "650",
           "aggro": "100",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 30",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "150%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2300%"
+              "value": "АТК: 2300%",
+              "effects": [
+                "Ignores 120 DEF",
+                "Ignores Block",
+                "Ignores 50% Shield DEF",
+                "15% Chance to inflict [Enervation]",
+                "Recharge time: 20 seconds",
+                "Can be used up to 2 times",
+                "Recharges when used more than once",
+                "Additionally ignores DEF according to [Proliferating Wound] level (up to 30, halved for monsters)",
+                "If target has [Proliferating Wound], skill damage is tripled (halved for PC)",
+                "2x skill damage against [Fear] PC targets"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4600%"
+              "value": "АТК: 4600%",
+              "effects": [
+                "Ignores 120 DEF",
+                "Ignores Block",
+                "Ignores 50% Shield DEF",
+                "15% Chance to inflict [Enervation]",
+                "Recharge time: 20 seconds",
+                "Can be used up to 2 times",
+                "Recharges when used more than once",
+                "Additionally ignores DEF according to [Proliferating Wound] level (up to 30, halved for monsters)",
+                "If target has [Proliferating Wound], skill damage is tripled (halved for PC)",
+                "2x skill damage against [Fear] PC targets"
+              ]
             }
           ],
           "special": [
@@ -420,14 +603,34 @@
           "sp_cost": "400",
           "aggro": "100",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 20",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "150%",
+          "light_armor_atk": "120%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "Ignores 150 DEF",
+                "Ignores Evasion",
+                "10% Chance to inflict [Fear] on PC",
+                "Additionally ignores DEF according to [Proliferating Wound] level (up to 40, halved for monsters)",
+                "If target has [Proliferating Wound], skill damage is quadrupled (halved for PC)",
+                "2x skill damage against [Fear] PC targets"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4800%"
+              "value": "АТК: 4800%",
+              "effects": [
+                "Ignores 150 DEF",
+                "Ignores Evasion",
+                "10% Chance to inflict [Fear] on PC",
+                "Additionally ignores DEF according to [Proliferating Wound] level (up to 40, halved for monsters)",
+                "If target has [Proliferating Wound], skill damage is quadrupled (halved for PC)",
+                "2x skill damage against [Fear] PC targets"
+              ]
             }
           ],
           "special": [
@@ -448,14 +651,48 @@
           "sp_cost": "550",
           "aggro": "50",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 60",
+          "soft_armor_atk": "120%",
+          "heavy_armor_atk": "90%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2460%"
+              "value": "АТК: 2460%",
+              "effects": [
+                "Ignores 200 DEF",
+                "10% Chance to inflict [Slow] on PC",
+                "After using the skill, when reusing [Romper Rosso] [Brandir Oscuro], casts [Corta Mars] [Corpo Oscuro]",
+                "[Corta Mars]",
+                "Ignores 50 DEF, Ignores Evasion, 10% chance to inflict [Slow] on PC",
+                "Additionally ignores DEF according to [Proliferating Wound] level (up to 30, halved for monsters)",
+                "If target has [Proliferating Wound], skill damage is tripled (halved for PC)",
+                "Damage increases inversely proportional to the amount of targets, up to 2x",
+                "[Corpo Oscuro]",
+                "Ignores 80 DEF, Ignores Block, ignores 50% Shield DEF, 5% Chance to inflict [Weakness] on PC",
+                "Additionally ignores DEF according to [Proliferating Wound] level (up to 40, halved for monsters)",
+                "If target has [Proliferating Wound], skill damage is quadrupled (halved for PC)",
+                "Damage increases inversely proportional to the amount of targets, up to 2x"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4920%"
+              "value": "АТК: 4920%",
+              "effects": [
+                "Ignores 200 DEF",
+                "10% Chance to inflict [Slow] on PC",
+                "After using the skill, when reusing [Romper Rosso] [Brandir Oscuro], casts [Corta Mars] [Corpo Oscuro]",
+                "[Corta Mars]",
+                "Ignores 50 DEF, Ignores Evasion, 10% chance to inflict [Slow] on PC",
+                "Additionally ignores DEF according to [Proliferating Wound] level (up to 30, halved for monsters)",
+                "If target has [Proliferating Wound], skill damage is tripled (halved for PC)",
+                "Damage increases inversely proportional to the amount of targets, up to 2x",
+                "[Corpo Oscuro]",
+                "Ignores 80 DEF, Ignores Block, ignores 50% Shield DEF, 5% Chance to inflict [Weakness] on PC",
+                "Additionally ignores DEF according to [Proliferating Wound] level (up to 40, halved for monsters)",
+                "If target has [Proliferating Wound], skill damage is quadrupled (halved for PC)",
+                "Damage increases inversely proportional to the amount of targets, up to 2x"
+              ]
             }
           ],
           "special": [
@@ -478,14 +715,36 @@
           "sp_cost": "550",
           "aggro": "200",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 30",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "150%",
+          "light_armor_atk": "120%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2700%"
+              "value": "АТК: 2700%",
+              "effects": [
+                "Ignores 150 DEF",
+                "Ignores Block",
+                "Ignores 50% Shield DEF",
+                "15% Chance to inflict [Fear] on PC",
+                "Additionally ignores DEF according to [Proliferating Wound] level (up to 40, halved for monsters)",
+                "If target has [Proliferating Wound], skill damage is quadrupled (halved for PC)",
+                "Damage increases inversely proportional to the amount of targets, up to 2x"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5400%"
+              "value": "АТК: 5400%",
+              "effects": [
+                "Ignores 150 DEF",
+                "Ignores Block",
+                "Ignores 50% Shield DEF",
+                "15% Chance to inflict [Fear] on PC",
+                "Additionally ignores DEF according to [Proliferating Wound] level (up to 40, halved for monsters)",
+                "If target has [Proliferating Wound], skill damage is quadrupled (halved for PC)",
+                "Damage increases inversely proportional to the amount of targets, up to 2x"
+              ]
             }
           ],
           "special": [
@@ -499,21 +758,41 @@
           "description": "The enraged Laval targets enemies, and their surroundings are devastated.",
           "target": "",
           "casting_time": "1.033 sec.",
-          "cooldown": "40 sec.",
+          "cooldown": "30 sec.",
           "duration": "5.266 sec.",
           "hits_flying": "Yes",
           "knock_down": "Yes",
           "sp_cost": "700",
           "aggro": "250",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 50",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "200%",
+          "light_armor_atk": "150%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2900%"
+              "value": "АТК: 2900%",
+              "effects": [
+                "Ignores 200 DEF",
+                "Ignores Block",
+                "20% Chance to inflict [Enervation]",
+                "Additionally ignores DEF according to [Proliferating Wound] level (up to 60, halved for monsters)",
+                "If target has [Proliferating Wound], skill damage x5 (halved for PC)",
+                "Damage increases inversely proportional to the amount of targets, up to 2x"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5800%"
+              "value": "АТК: 5800%",
+              "effects": [
+                "Ignores 200 DEF",
+                "Ignores Block",
+                "20% Chance to inflict [Enervation]",
+                "Additionally ignores DEF according to [Proliferating Wound] level (up to 60, halved for monsters)",
+                "If target has [Proliferating Wound], skill damage x5 (halved for PC)",
+                "Damage increases inversely proportional to the amount of targets, up to 2x"
+              ]
             }
           ],
           "special": [

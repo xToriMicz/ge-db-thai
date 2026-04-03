@@ -88,6 +88,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -131,6 +132,7 @@
         "Penetration": "5+20",
         "Immunity": "5+10"
       },
+      "consume": "Steel Bullet x 3",
       "skills": [
         {
           "name": "Merchen",
@@ -145,26 +147,67 @@
           "sp_cost": "750",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 15",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 20 sec."
+              "value": "",
+              "effects": [
+                "Duration: 20 sec.",
+                "Monster Damage+3%",
+                "Critical Damage+3%",
+                "Accuracy +2",
+                "Critical +3"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 200 sec."
+              "value": "",
+              "effects": [
+                "Duration: 200 sec.",
+                "Monster Damage+30%",
+                "Critical Damage+30%",
+                "Accuracy +20",
+                "Critical +30"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 220 sec."
+              "value": "",
+              "effects": [
+                "Duration: 220 sec.",
+                "Monster Damage+40%",
+                "Critical Damage+33%",
+                "Accuracy +22",
+                "Critical +33"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 240 sec."
+              "value": "",
+              "effects": [
+                "Duration: 240 sec.",
+                "Monster Damage+50%",
+                "Critical Damage+36%",
+                "Accuracy +24",
+                "Critical +36",
+                "Ignoring DEF+3%"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 390 sec."
+              "value": "",
+              "effects": [
+                "Duration: 390 sec.",
+                "Monster Damage+50%",
+                "Critical Damage+39%",
+                "Accuracy +26",
+                "Critical +39",
+                "Ignoring DEF+3%"
+              ]
             }
           ],
           "special": []
@@ -173,7 +216,7 @@
           "name": "Martus",
           "image": "bbs_martos.jpg",
           "description": "Fires diffusing bullets made of Devils claws toward the target and enemies around it.",
-          "target": "",
+          "target": "Max Range 13m/ Within a 4m radius/ Up to 3 enemies",
           "casting_time": "Instant",
           "cooldown": "0 sec.",
           "duration": "1.45 sec.",
@@ -182,14 +225,27 @@
           "sp_cost": "300",
           "aggro": "160",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bullet x 1",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "50%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 800%"
+              "value": "АТК: 800%",
+              "effects": [
+                "Ignores enemys DEF by 40",
+                "Cancels enemys Invincible skill"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1600%"
+              "value": "АТК: 1600%",
+              "effects": [
+                "Ignores enemys DEF by 40",
+                "Cancels enemys Invincible skill",
+                "[Magazine]s Lv. -8"
+              ]
             }
           ],
           "special": []
@@ -207,14 +263,32 @@
           "sp_cost": "400",
           "aggro": "121",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bullet x 1",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "50%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 900%"
+              "value": "АТК: 900%",
+              "effects": [
+                "Ignores enemys DEF by 50",
+                "[Magazine]s Lv. -10",
+                "When reusing the skill during casting, the skill activates",
+                "Knockback range and time increases in proportion to casting time",
+                "Skill Damage increases according to cast time"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": [
+                "Ignores enemys DEF by 50",
+                "[Magazine]s Lv. -10",
+                "When reusing the skill during casting, the skill activates",
+                "Knockback range and time increases in proportion to casting time",
+                "Skill Damage increases according to cast time"
+              ]
             }
           ],
           "special": []
@@ -232,14 +306,28 @@
           "sp_cost": "980",
           "aggro": "50",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bullet x 4",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "50%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1200%"
+              "value": "АТК: 1200%",
+              "effects": [
+                "Ignores enemys DEF by 60",
+                "[Magazine]s Lv. -12",
+                "In Skill Accuracy, [Cancer] is applied to Caster."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "Ignores enemys DEF by 60",
+                "[Magazine]s Lv. -12",
+                "In Skill Accuracy, [Cancer] is applied to Caster."
+              ]
             }
           ],
           "special": []
@@ -248,7 +336,7 @@
           "name": "Grand Pressure",
           "image": "bbs_grandpressure.jpg",
           "description": "Fire a bullet to follow the target until the very end, offering eternal rest.",
-          "target": "",
+          "target": "Max Range 12m/ within a 2m radius/ Up to 3 enemies",
           "casting_time": "5 sec.",
           "cooldown": "0 sec.",
           "duration": "2.52 sec.",
@@ -257,14 +345,34 @@
           "sp_cost": "1120",
           "aggro": "160",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bullet x 4",
+          "soft_armor_atk": "75%",
+          "heavy_armor_atk": "50%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1500%"
+              "value": "АТК: 1500%",
+              "effects": [
+                "Ignores enemys DEF by 75",
+                "[Magazine]s Lv. -16",
+                "Hit range increases in proportion to casting time",
+                "In Max casting, Hit range+10m",
+                "If PC enemy is farther away, extra ignores enemys DEF",
+                "If Monster enemy is farther away, damage increases."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "Ignores enemys DEF by 75",
+                "[Magazine]s Lv. -16",
+                "Hit range increases in proportion to casting time",
+                "In Max casting, Hit range+10m",
+                "If PC enemy is farther away, extra ignores enemys DEF",
+                "If Monster enemy is farther away, damage increases."
+              ]
             }
           ],
           "special": []

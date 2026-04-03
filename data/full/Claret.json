@@ -2,7 +2,7 @@
   "slug": "Claret",
   "equipment": {
     "category": "Usable Equipment",
-    "medal": "I havent been charged with a crime yet",
+    "medal": "I havent been charged with a crime yet 20th Anniversary with Linden",
     "head": "None",
     "earring": "Earring",
     "face": "None",
@@ -60,6 +60,14 @@
         "x": -350,
         "y": -175
       }
+    },
+    {
+      "stance_name": "Puricia",
+      "equipped_items": "Rod",
+      "icon_position": {
+        "x": -350,
+        "y": -175
+      }
     }
   ],
   "stances": [
@@ -88,6 +96,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -131,6 +140,7 @@
         "Penetration": "10+20",
         "Immunity": "5+10"
       },
+      "consume": "Psychic Sphere x 1",
       "skills": [
         {
           "name": "Venecuccio",
@@ -145,26 +155,88 @@
           "sp_cost": "450",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "A.R. +1"
+              "value": "",
+              "effects": [
+                "A.R. +1",
+                "D.R. +1",
+                "Removes harmful effects applied to your character when casting",
+                "[Purification] Duration: 300 seconds",
+                "Movement speed +2%",
+                "HP natural recovery amount +500",
+                "SP natural recovery amount +10",
+                "Defense +1",
+                "Buff active [Miracle], [Protection Booster], [Shearing Booster]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "A.R. +1"
+              "value": "",
+              "effects": [
+                "A.R. +1",
+                "D.R. +1",
+                "Removes harmful effects applied to your character when casting",
+                "[Purification] Duration: 300 seconds",
+                "Movement speed +20%",
+                "HP natural recovery amount +5000",
+                "SP natural recovery amount +100",
+                "Defense +10",
+                "Buff active [Miracle], [Protection Booster], [Shearing Booster]"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "A.R. +1"
+              "value": "",
+              "effects": [
+                "A.R. +1",
+                "D.R. +1",
+                "Removes harmful effects applied to your character when casting",
+                "[Purification] Duration: 300 seconds",
+                "Movement speed +22%",
+                "HP natural recovery amount +5500",
+                "SP natural recovery amount +110",
+                "Defense +11",
+                "Immunity +5",
+                "Buff active [Miracle], [Protection Booster], [Shearing Booster]"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "A.R. +1"
+              "value": "",
+              "effects": [
+                "A.R. +1",
+                "D.R. +1",
+                "Removes harmful effects applied to your character when casting",
+                "[Purification] Duration: 300 seconds",
+                "Movement speed +24%",
+                "HP natural recovery amount +6000",
+                "SP natural recovery amount +120",
+                "Defense +12",
+                "Immunity +6",
+                "Buff active [Miracle], [Protection Booster], [Shearing Booster]"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "A.R. +1"
+              "value": "",
+              "effects": [
+                "A.R. +1",
+                "D.R. +1",
+                "Removes harmful effects applied to your character when casting",
+                "[Purification] Duration: 300 seconds",
+                "Movement speed +26%",
+                "HP natural recovery amount +6500",
+                "SP natural recovery amount +130",
+                "Defense +13",
+                "Immunity +7",
+                "Buff active [Miracle], [Protection Booster], [Shearing Booster]"
+              ]
             }
           ],
           "special": []
@@ -182,14 +254,26 @@
           "sp_cost": "250",
           "aggro": "30",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 7",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "90%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1850%"
+              "value": "АТК: 1850%",
+              "effects": [
+                "When hit, [Sentence] the enemy",
+                "Ignores status ailment resistance"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3700%"
+              "value": "АТК: 3700%",
+              "effects": [
+                "When hit, [Sentence] the enemy",
+                "Ignores status ailment resistance"
+              ]
             }
           ],
           "special": []
@@ -207,14 +291,32 @@
           "sp_cost": "670",
           "aggro": "30",
           "skill_type": "BUILD2",
+          "consume_item": "Ancient Star Orb x 15",
+          "soft_armor_atk": "105%",
+          "heavy_armor_atk": "105%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "When cast, creates a sanctuary that lasts for 30 seconds in the range"
+              "value": "",
+              "effects": [
+                "When cast, creates a sanctuary that lasts for 30 seconds in the range",
+                "[Sanctuary]",
+                "Enemies within range [Sentence]",
+                "Allies &amp; Neutrals within range [Action], [Action - Acceleration]",
+                "Removes enemy stealth and [Suppresses] removed enemy PC within range"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "When cast, creates a sanctuary that lasts for 30 seconds in the range"
+              "value": "",
+              "effects": [
+                "When cast, creates a sanctuary that lasts for 30 seconds in the range",
+                "[Sanctuary]",
+                "Enemies within range [Sentence]",
+                "Allies &amp; Neutrals within range [Action], [Action - Acceleration]",
+                "Removes enemy stealth and [Suppresses] removed enemy PC within range"
+              ]
             }
           ],
           "special": []
@@ -232,14 +334,28 @@
           "sp_cost": "520",
           "aggro": "60",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 12",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "90%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2260%"
+              "value": "АТК: 2260%",
+              "effects": [
+                "45% chance to [Shock] enemy PC",
+                "3x damage to enemies in [Sentence] state (2x for PC)",
+                "Ignores 2 of enemys psychokinesis resistance in [Sentence] state"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4520%"
+              "value": "АТК: 4520%",
+              "effects": [
+                "45% chance to [Shock] enemy PC",
+                "3x damage to enemies in [Sentence] state (2x for PC)",
+                "Ignores 2 of enemys psychokinesis resistance in [Sentence] state"
+              ]
             }
           ],
           "special": []
@@ -257,14 +373,28 @@
           "sp_cost": "800",
           "aggro": "100",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 15",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "120%",
+          "light_armor_atk": "80%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 3240%"
+              "value": "АТК: 3240%",
+              "effects": [
+                "55% chance to [Fear] enemy PC",
+                "[Sentence] status enemy damage x4 (x2 for PC)",
+                "Ignores 3 of [Sentence] status enemys psychokinesis resistance"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 6480%"
+              "value": "АТК: 6480%",
+              "effects": [
+                "55% chance to [Fear] enemy PC",
+                "[Sentence] status enemy damage x4 (x2 for PC)",
+                "Ignores 3 of [Sentence] status enemys psychokinesis resistance"
+              ]
             }
           ],
           "special": []

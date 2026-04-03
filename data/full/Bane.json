@@ -37,7 +37,8 @@
           "Duration : 300 sec.",
           "Attack damage +40%(Max 200%) for each -10% of HP from Max HP",
           "Attack damage -10%(Max 30%) for each -10% of HP from Max HP",
-          "A.R.+1"
+          "A.R.+1",
+          "When cast also applies: Flame Protection buff"
         ]
       }
     ]
@@ -86,6 +87,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -128,6 +130,7 @@
         "Penetration": "10+25",
         "Immunity": "5+15"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Blow Cannon",
@@ -142,14 +145,26 @@
           "sp_cost": "50",
           "aggro": "30",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 1",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": [
+                "50% chance to inflict [Burn] on enemy",
+                "The closer to the target increases damage"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3600%"
+              "value": "АТК: 3600%",
+              "effects": [
+                "50% chance to inflict [Burn] on enemy",
+                "The closer to the target increases damage"
+              ]
             }
           ],
           "special": []
@@ -167,26 +182,68 @@
           "sp_cost": "250",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 3",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration : 30 sec."
+              "value": "",
+              "effects": [
+                "Duration : 30 sec.",
+                "Fire Penetration : +1",
+                "Fire RES : +5",
+                "[Flame] state grants to the enemy who attacked himself by 5% chance",
+                "[PvE only] A.R. +1, ATK +25%, Monster ATK +150%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration : 300 sec."
+              "value": "",
+              "effects": [
+                "Duration : 300 sec.",
+                "Fire Penetration : +10",
+                "Fire RES : +50",
+                "[Flame] state grants to the enemy who attacked himself by 5% chance",
+                "[PvE only] A.R. +1, ATK +25%, Monster ATK +150%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration : 330 sec."
+              "value": "",
+              "effects": [
+                "Duration : 330 sec.",
+                "Fire Penetration : +11",
+                "Fire RES : +55",
+                "D.R. +1",
+                "[Flame] state grants to the enemy who attacked himself by 5% chance",
+                "[PvE only] A.R. +1, ATK +25%, Monster ATK +150%"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration : 360 sec."
+              "value": "",
+              "effects": [
+                "Duration : 360 sec.",
+                "Fire Penetration : +12",
+                "Fire RES : +60",
+                "D.R. +1",
+                "[Flame] state grants to the enemy who attacked himself by 5% chance",
+                "[PvE only] A.R. +1, ATK +25%, Monster ATK +150%"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration : 390 sec."
+              "value": "",
+              "effects": [
+                "Duration : 390 sec.",
+                "Fire Penetration : +13",
+                "Fire RES : +65",
+                "D.R. +1",
+                "[Flame] state grants to the enemy who attacked himself by 5% chance",
+                "[PvE only] A.R. +1, ATK +25%, Monster ATK +150%"
+              ]
             }
           ],
           "special": []
@@ -204,14 +261,30 @@
           "sp_cost": "300",
           "aggro": "81",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 4",
+          "soft_armor_atk": "70%",
+          "heavy_armor_atk": "125%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "70% chance to [Burn]",
+                "With each attack success to an individual enemy, [Adios] skill cooldown -5sec.",
+                "With skill accuracy, Casters [Flame Charging] Lv.+1",
+                "With skill accuracy in [Flame Charging] Lv.2 state to enemy PC,, 100% Chance to [Burn]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4400%"
+              "value": "АТК: 4400%",
+              "effects": [
+                "70% chance to [Burn]",
+                "With each attack success to an individual enemy, [Adios] skill cooldown -5sec.",
+                "With skill accuracy, Casters [Flame Charging] Lv.+1",
+                "With skill accuracy in [Flame Charging] Lv.2 state to enemy PC,, 100% Chance to [Burn]"
+              ]
             }
           ],
           "special": []
@@ -229,14 +302,30 @@
           "sp_cost": "400",
           "aggro": "150",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "70%",
+          "heavy_armor_atk": "125%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "100% chance to [Burn]",
+                "With each attack success to an individual enemy, [Adios] skill cooldown -5sec.",
+                "With skill accuracy, Casters [Flame Charging] Lv.+1",
+                "With skill accuracy in [Flame Charging] Lv.2 state to enemy PC,, 100% Chance to [Burn]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4800%"
+              "value": "АТК: 4800%",
+              "effects": [
+                "100% chance to [Burn]",
+                "With each attack success to an individual enemy, [Adios] skill cooldown -5sec.",
+                "With skill accuracy, Casters [Flame Charging] Lv.+1",
+                "With skill accuracy in [Flame Charging] Lv.2 state to enemy PC,, 100% Chance to [Burn]"
+              ]
             }
           ],
           "special": []
@@ -254,14 +343,24 @@
           "sp_cost": "800",
           "aggro": "245",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "When enemy is in [Burn], [Burning Wave] or [Scald] state, it increases damage."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 6000%"
+              "value": "АТК: 6000%",
+              "effects": [
+                "When enemy is in [Burn], [Burning Wave] or [Scald] state, it increases damage."
+              ]
             }
           ],
           "special": []

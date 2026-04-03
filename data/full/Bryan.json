@@ -125,6 +125,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "Additional DMG against [PC] + 1x"
@@ -167,6 +168,7 @@
         "Penetration": "5+25",
         "Immunity": "5+10"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Fierce Blow",
@@ -181,14 +183,28 @@
           "sp_cost": "150",
           "aggro": "100",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1500%"
+              "value": "АТК: 1500%",
+              "effects": [
+                "Ignore DEF 60",
+                "100% chance to enemy [Stun]",
+                "Ignores additional DEF of enemy by 20% of casters DEF"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "Ignore DEF 60",
+                "100% chance to enemy [Stun]",
+                "Ignores additional DEF of enemy by 20% of casters DEF"
+              ]
             }
           ],
           "special": []
@@ -206,14 +222,32 @@
           "sp_cost": "200",
           "aggro": "89",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "120%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1900%"
+              "value": "АТК: 1900%",
+              "effects": [
+                "Ignores DEF 70",
+                "Ignores Block",
+                "Ignores DEF of enemys shield by 1/2",
+                "80% Chance to [Armor Crasher] enemy",
+                "Ignores additional DEF of enemy by 20% of caster DEF"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3800%"
+              "value": "АТК: 3800%",
+              "effects": [
+                "Ignores DEF 70",
+                "Ignores Block",
+                "Ignores DEF of enemys shield by 1/2",
+                "80% Chance to [Armor Crasher] enemy",
+                "Ignores additional DEF of enemy by 20% of caster DEF"
+              ]
             }
           ],
           "special": []
@@ -231,14 +265,34 @@
           "sp_cost": "350",
           "aggro": "150",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "145%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 700%"
+              "value": "АТК: 700%",
+              "effects": [
+                "Ignores enemys DEF by 55",
+                "Reusing it during casting, skill activates",
+                "Enemys Knock-down range/time/damage increases in proportion to casting time, Extra ignores enemys DEF",
+                "In max casting, extra damage increases, extra Monster Damage, Extra ignores enemys DEF by 50",
+                "Ignores Block",
+                "Ignores additional DEF of enemy by 20% of casters DEF"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1400%"
+              "value": "АТК: 1400%",
+              "effects": [
+                "Ignores enemys DEF by 55",
+                "Reusing it during casting, skill activates",
+                "Enemys Knock-down range/time/damage increases in proportion to casting time, Extra ignores enemys DEF",
+                "In max casting, extra damage increases, extra Monster Damage, Extra ignores enemys DEF by 50",
+                "Ignores Block",
+                "Ignores additional DEF of enemy by 20% of casters DEF"
+              ]
             }
           ],
           "special": []
@@ -256,14 +310,34 @@
           "sp_cost": "320",
           "aggro": "200",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "75%",
+          "heavy_armor_atk": "135%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 800%"
+              "value": "АТК: 800%",
+              "effects": [
+                "Ignores enemys DEF by 60",
+                "Reusing it during casting, skill activates",
+                "Enemys Knock-down range/time/damage increases in proportion to casting time, Extra ignores enemys DEF",
+                "In max casting, extra damage increases, extra Monster Damage, Extra ignores enemys DEF by 50",
+                "Ignores Block",
+                "Ignores additional DEF of enemy by 20% of casters DEF"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1600%"
+              "value": "АТК: 1600%",
+              "effects": [
+                "Ignores enemys DEF by 60",
+                "Reusing it during casting, skill activates",
+                "Enemys Knock-down range/time/damage increases in proportion to casting time, Extra ignores enemys DEF",
+                "In max casting, extra damage increases, extra Monster Damage, Extra ignores enemys DEF by 50",
+                "Ignores Block",
+                "Ignores additional DEF of enemy by 20% of casters DEF"
+              ]
             }
           ],
           "special": []
@@ -281,14 +355,28 @@
           "sp_cost": "400",
           "aggro": "250",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "150%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2500%"
+              "value": "АТК: 2500%",
+              "effects": [
+                "Ignores DEF of enemy by 75",
+                "Ignores Block",
+                "Ignores DEF of enemys shield by 1/2"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5000%"
+              "value": "АТК: 5000%",
+              "effects": [
+                "Ignores DEF of enemy by 75",
+                "Ignores Block",
+                "Ignores DEF of enemys shield by 1/2"
+              ]
             }
           ],
           "special": []

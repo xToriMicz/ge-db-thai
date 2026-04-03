@@ -121,6 +121,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -165,6 +166,7 @@
         "Penetration": "10+25",
         "Immunity": "5+25"
       },
+      "consume": "Steel Bullet x 2",
       "skills": [
         {
           "name": "Round Trip",
@@ -179,26 +181,65 @@
           "sp_cost": "300",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 4",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 300s"
+              "value": "",
+              "effects": [
+                "Duration: 300s",
+                "A.R. +1",
+                "ATK +30%",
+                "Critical Damage +30%",
+                "[Heat Barrel] Buff Enhanced"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 300s"
+              "value": "",
+              "effects": [
+                "Duration: 300s",
+                "A.R. +1",
+                "ATK +30%",
+                "Critical Damage +30%",
+                "[Heat Barrel] Buff Enhanced"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 300s"
+              "value": "",
+              "effects": [
+                "Duration: 300s",
+                "A.R. +1",
+                "ATK +30%",
+                "Critical Damage +30%",
+                "[Heat Barrel] Buff Enhanced"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 300s"
+              "value": "",
+              "effects": [
+                "Duration: 300s",
+                "A.R. +1",
+                "ATK +30%",
+                "Critical Damage +30%",
+                "[Heat Barrel] Buff Enhanced"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 300s"
+              "value": "",
+              "effects": [
+                "Duration: 300s",
+                "A.R. +1",
+                "ATK +30%",
+                "Critical Damage +30%",
+                "[Heat Barrel] Buff Enhanced"
+              ]
             }
           ],
           "special": []
@@ -216,14 +257,30 @@
           "sp_cost": "250",
           "aggro": "50",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bullet x 1",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1400%"
+              "value": "АТК: 1400%",
+              "effects": [
+                "Ignores enemy DEF by 120",
+                "2x Skill Damage to enemies in the air",
+                "[Increasing Output] Lv. +20",
+                "[Full Throttle] at level +70, the effect is doubled."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2800%"
+              "value": "АТК: 2800%",
+              "effects": [
+                "Ignores enemy DEF by 120",
+                "2x Skill Damage to enemies in the air",
+                "[Increasing Output] Lv. +20",
+                "[Full Throttle] at level +70, the effect is doubled."
+              ]
             }
           ],
           "special": []
@@ -241,14 +298,32 @@
           "sp_cost": "75",
           "aggro": "0",
           "skill_type": "Build",
+          "consume_item": "Ancient Star Orb x 3",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "5 traps can be installed simultaneously"
+              "value": "",
+              "effects": [
+                "5 traps can be installed simultaneously",
+                "Damage increases depending on Skill Lv./Extra AGI/Extra DEX",
+                "80% chance to impose [Ankle Injury]",
+                "Ignores Debuff RES",
+                "Unavailable for the enemies in the air"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "5 traps can be installed simultaneously"
+              "value": "",
+              "effects": [
+                "5 traps can be installed simultaneously",
+                "Damage increases depending on Skill Lv./Extra AGI/Extra DEX",
+                "80% chance to impose [Ankle Injury]",
+                "Ignores Debuff RES",
+                "Unavailable for the enemies in the air"
+              ]
             }
           ],
           "special": []
@@ -266,14 +341,30 @@
           "sp_cost": "350",
           "aggro": "60",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bullet x 1",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": [
+                "Ignores enemy DEF by 160",
+                "50% chance to inflict [Burn]",
+                "[Increasing Output] Level +34.",
+                "[Full Throttle] at level +70, the effect is doubled."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3600%"
+              "value": "АТК: 3600%",
+              "effects": [
+                "Ignores enemy DEF by 160",
+                "50% chance to inflict [Burn]",
+                "[Increasing Output] Level +34.",
+                "[Full Throttle] at level +70, the effect is doubled."
+              ]
             }
           ],
           "special": []
@@ -291,14 +382,32 @@
           "sp_cost": "400",
           "aggro": "45",
           "skill_type": "Shooting",
+          "consume_item": "Steel Bullet x 2",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2000%"
+              "value": "АТК: 2000%",
+              "effects": [
+                "Ignores enemy DEF by 200",
+                "30% chance to inflict [Burn]",
+                "[Increasing Output] Level +30.",
+                "[Full Throttle] at level +70, the effect is doubled.",
+                "Skill Damage increases If more than 50% of enemies are hit also the level of [Full Throttle] rises by 1.5x ~ 3x times."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4000%"
+              "value": "АТК: 4000%",
+              "effects": [
+                "Ignores enemy DEF by 200",
+                "30% chance to inflict [Burn]",
+                "[Increasing Output] Level +30.",
+                "[Full Throttle] at level +70, the effect is doubled.",
+                "Skill Damage increases If more than 50% of enemies are hit also the level of [Full Throttle] rises by 1.5x ~ 3x times."
+              ]
             }
           ],
           "special": []

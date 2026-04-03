@@ -95,6 +95,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -136,6 +137,7 @@
         "Penetration": "10+20",
         "Immunity": "5+10"
       },
+      "consume": "Elemental Sphere x 3",
       "skills": [
         {
           "name": "Blizzard Storm",
@@ -150,14 +152,32 @@
           "sp_cost": "300",
           "aggro": "221",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "20%",
+          "heavy_armor_atk": "20%",
+          "light_armor_atk": "20%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1070.4%"
+              "value": "АТК: 1070.4%",
+              "effects": [
+                "Attack maximum 12 times during the casting time",
+                "Cancels casting when re-used during casting",
+                "Skill Damage applied at every attack",
+                "Apply [Frostbite] to enemy by 10% chance at every attack",
+                "Increases damage against enemy under [Cold Wave][Freezing][Freeze][Ice Magic][Agony][Frostbite]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2140%"
+              "value": "АТК: 2140%",
+              "effects": [
+                "Attack maximum 12 times during the casting time",
+                "Cancels casting when re-used during casting",
+                "Skill Damage applied at every attack",
+                "Apply [Frostbite] to enemy by 10% chance at every attack",
+                "Increases damage against enemy under [Cold Wave][Freezing][Freeze][Ice Magic][Agony][Frostbite]"
+              ]
             }
           ],
           "special": []
@@ -166,7 +186,7 @@
           "name": "Ice Lance",
           "image": "dog_icicle.jpg",
           "description": "Pierces enemy by throwing a sharp icy spear.",
-          "target": "1 enemy within a range of 15m",
+          "target": "1 enemy within a range of 13m",
           "casting_time": "5 sec.",
           "cooldown": "10 sec.",
           "duration": "2.7 sec.",
@@ -175,14 +195,30 @@
           "sp_cost": "300",
           "aggro": "50",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 196.5%"
+              "value": "АТК: 196.5%",
+              "effects": [
+                "100% chance to impose [Mortal Wound]",
+                "When reusing the skill during casting, the skill activates",
+                "Knockback range and time increases in proportion to casting time",
+                "Skill Damage increases according to cast time"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 393%"
+              "value": "АТК: 393%",
+              "effects": [
+                "100% chance to impose [Mortal Wound]",
+                "When reusing the skill during casting, the skill activates",
+                "Knockback range and time increases in proportion to casting time",
+                "Skill Damage increases according to cast time"
+              ]
             }
           ],
           "special": []
@@ -200,14 +236,30 @@
           "sp_cost": "300",
           "aggro": "72",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 176.4%"
+              "value": "АТК: 176.4%",
+              "effects": [
+                "100% chance to impose [Pain]",
+                "When reusing the skill during casting, the skill activates",
+                "Knockback range and time increases in proportion to casting time",
+                "Skill Damage increases according to cast time"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 352%"
+              "value": "АТК: 352%",
+              "effects": [
+                "100% chance to impose [Pain]",
+                "When reusing the skill during casting, the skill activates",
+                "Knockback range and time increases in proportion to casting time",
+                "Skill Damage increases according to cast time"
+              ]
             }
           ],
           "special": []
@@ -225,26 +277,58 @@
           "sp_cost": "600",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration : 360 seconds"
+              "value": "",
+              "effects": [
+                "Duration : 360 seconds",
+                "ATK +1%",
+                "ATK against monster +3%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration : 360 seconds"
+              "value": "",
+              "effects": [
+                "Duration : 360 seconds",
+                "ATK +10%",
+                "ATK against monster +30%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration : 360 seconds"
+              "value": "",
+              "effects": [
+                "Duration : 360 seconds",
+                "ATK +11%",
+                "ATK against monster +33%",
+                "Penetration +5"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration : 360 seconds"
+              "value": "",
+              "effects": [
+                "Duration : 360 seconds",
+                "ATK +12%",
+                "ATK against monster +36%",
+                "Penetration +5"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration : 360 seconds"
+              "value": "",
+              "effects": [
+                "Duration : 360 seconds",
+                "ATK +13%",
+                "ATK against monster +39%",
+                "Penetration +5"
+              ]
             }
           ],
           "special": []
@@ -262,14 +346,28 @@
           "sp_cost": "1000",
           "aggro": "197",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1715.99%"
+              "value": "АТК: 1715.99%",
+              "effects": [
+                "50% chance to inflict [Frostbite] on enemy",
+                "Increases damage by 30% per number of enemys [Frostbite], [Agony], and [Mortal Wound] debuffs",
+                "and by 10% per number of enemys[Decay], [Physical/Magical Break], [Broken Armor], and [Broken Weapon] debuffs"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3431%"
+              "value": "АТК: 3431%",
+              "effects": [
+                "50% chance to inflict [Frostbite] on enemy",
+                "Increases damage by 30% per number of enemys [Frostbite], [Agony], and [Mortal Wound] debuffs",
+                "and by 10% per number of enemys[Decay], [Physical/Magical Break], [Broken Armor], and [Broken Weapon] debuffs"
+              ]
             }
           ],
           "special": []
@@ -318,6 +416,7 @@
         "Penetration": "10+25",
         "Immunity": "10+10"
       },
+      "consume": "Elemental Sphere x 5",
       "skills": [
         {
           "name": "Lensa",
@@ -332,14 +431,26 @@
           "sp_cost": "650",
           "aggro": "197",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 3",
+          "soft_armor_atk": "50%",
+          "heavy_armor_atk": "125%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1500%"
+              "value": "АТК: 1500%",
+              "effects": [
+                "Skill ATK increases inversely proportional to the number of enemies affected by [Special Effect : Magic Concentration]",
+                "Increases skill ATK against monsters in proportion to extra [INT]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "Skill ATK increases inversely proportional to the number of enemies affected by [Special Effect : Magic Concentration]",
+                "Increases skill ATK against monsters in proportion to extra [INT]"
+              ]
             }
           ],
           "special": []
@@ -357,26 +468,74 @@
           "sp_cost": "1050",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 20",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration : 360 seconds"
+              "value": "",
+              "effects": [
+                "Duration : 360 seconds",
+                "A.R. +2",
+                "ATK +1%",
+                "Movement SPD +20%",
+                "Normal attack damage increases in proportion to extra [INT]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration : 360 seconds"
+              "value": "",
+              "effects": [
+                "Duration : 360 seconds",
+                "A.R. +2",
+                "ATK +10%",
+                "Movement SPD +20%",
+                "Normal attack damage increases in proportion to extra [INT]"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration : 360 seconds"
+              "value": "",
+              "effects": [
+                "Duration : 360 seconds",
+                "A.R. +2",
+                "ATK +11%",
+                "Movement SPD +20%",
+                "ATK increases additionally in proportion to extra [INT]",
+                "Ice Penetration increases in proportion to extra [INT]",
+                "ATK against monster increases in proportion to extra [INT]",
+                "Normal attack damage increases in proportion to extra [INT]"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration : 360 seconds"
+              "value": "",
+              "effects": [
+                "Duration : 360 seconds",
+                "A.R. +2",
+                "ATK +12%",
+                "Movement SPD +20%",
+                "ATK increases additionally in proportion to extra [INT]",
+                "Ice Penetration increases in proportion to extra [INT]",
+                "ATK against monster increases in proportion to extra [INT]",
+                "Normal attack damage increases in proportion to extra [INT]"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration : 360 seconds"
+              "value": "",
+              "effects": [
+                "Duration : 360 seconds",
+                "A.R. +2",
+                "ATK +13%",
+                "Movement SPD +20%",
+                "ATK increases additionally in proportion to extra [INT]",
+                "Ice Penetration increases in proportion to extra [INT]",
+                "ATK against monster increases in proportion to extra [INT]",
+                "Normal attack damage increases in proportion to extra [INT]"
+              ]
             }
           ],
           "special": []
@@ -394,14 +553,26 @@
           "sp_cost": "1150",
           "aggro": "60",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 15",
+          "soft_armor_atk": "75%",
+          "heavy_armor_atk": "125%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2500%"
+              "value": "АТК: 2500%",
+              "effects": [
+                "Skill ATK increases inversely proportional to the number of enemies affected by [Special Effect : Magic Concentration]",
+                "Increases skill ATK against monsters in proportion to extra [INT]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5000%"
+              "value": "АТК: 5000%",
+              "effects": [
+                "Skill ATK increases inversely proportional to the number of enemies affected by [Special Effect : Magic Concentration]",
+                "Increases skill ATK against monsters in proportion to extra [INT]"
+              ]
             }
           ],
           "special": []
@@ -412,21 +583,33 @@
           "description": "Create multiple chunks of ice and drop them around.",
           "target": "Up to 18 enemies within a range of 12m",
           "casting_time": "2.7 sec.",
-          "cooldown": "32 sec.",
+          "cooldown": "25 sec.",
           "duration": "1.9 sec.",
           "hits_flying": "No",
           "knock_down": "Yes",
           "sp_cost": "1250",
           "aggro": "452",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 15",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2800%"
+              "value": "АТК: 2800%",
+              "effects": [
+                "Skill ATK increases inversely proportional to the number of enemies affected by [Special Effect : Magic Concentration]",
+                "Increases skill ATK against monsters in proportion to extra [INT]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5600%"
+              "value": "АТК: 5600%",
+              "effects": [
+                "Skill ATK increases inversely proportional to the number of enemies affected by [Special Effect : Magic Concentration]",
+                "Increases skill ATK against monsters in proportion to extra [INT]"
+              ]
             }
           ],
           "special": []
@@ -436,7 +619,7 @@
           "image": "cstg_tombofarc.jpg",
           "description": "Create multiple chunks of ice and shoot them to one target.",
           "target": "1 enemy within a range of 16m",
-          "casting_time": "2.5 sec.",
+          "casting_time": "1.6 sec.",
           "cooldown": "9 sec.",
           "duration": "1.2 sec.",
           "hits_flying": "Yes",
@@ -444,14 +627,24 @@
           "sp_cost": "1550",
           "aggro": "245",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 20",
+          "soft_armor_atk": "75%",
+          "heavy_armor_atk": "75%",
+          "light_armor_atk": "75%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "Increases skill ATK against enemy monster in proportion to extra [INT]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 6000%"
+              "value": "АТК: 6000%",
+              "effects": [
+                "Increases skill ATK against enemy monster in proportion to extra [INT]"
+              ]
             }
           ],
           "special": []

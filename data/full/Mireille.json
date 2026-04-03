@@ -97,6 +97,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -135,6 +136,7 @@
         "ATK SPD": "+16%",
         "Critical": "+20"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Fente",
@@ -149,14 +151,20 @@
           "sp_cost": "100",
           "aggro": "92",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 406%"
+              "value": "АТК: 406%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 811%"
+              "value": "АТК: 811%",
+              "effects": []
             }
           ],
           "special": []
@@ -174,14 +182,24 @@
           "sp_cost": "200",
           "aggro": "141",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 652%"
+              "value": "АТК: 652%",
+              "effects": [
+                "Double Damage to enemies with [Soft Armor]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1304%"
+              "value": "АТК: 1304%",
+              "effects": [
+                "Double Damage to enemies with [Soft Armor]"
+              ]
             }
           ],
           "special": [
@@ -202,14 +220,20 @@
           "sp_cost": "250",
           "aggro": "119",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 513%"
+              "value": "АТК: 513%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1026%"
+              "value": "АТК: 1026%",
+              "effects": []
             }
           ],
           "special": []
@@ -227,14 +251,20 @@
           "sp_cost": "300",
           "aggro": "267",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1280%"
+              "value": "АТК: 1280%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2560%"
+              "value": "АТК: 2560%",
+              "effects": []
             }
           ],
           "special": []
@@ -278,6 +308,7 @@
         "Penetration": "15+20",
         "Immunity": "5+15"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Triangle Slash",
@@ -292,14 +323,30 @@
           "sp_cost": "180",
           "aggro": "180",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1018.37%"
+              "value": "АТК: 1018.37%",
+              "effects": [
+                "Enemys [Lightning Dispel] Overlap +1.",
+                "Ignores enemy DEF by 30",
+                "With 3 times accurate Skill, ignores enemy DEF by 50 additionally",
+                "With 3 times accurate Skill in the [Lightning] state, Skill Damage+20%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2036%"
+              "value": "АТК: 2036%",
+              "effects": [
+                "Enemys [Lightning Dispel] Overlap +1.",
+                "Ignores enemy DEF by 30",
+                "With 3 times accurate Skill, ignores enemy DEF by 50 additionally",
+                "With 3 times accurate Skill in the [Lightning] state, Skill Damage+20%"
+              ]
             }
           ],
           "special": []
@@ -317,14 +364,26 @@
           "sp_cost": "450",
           "aggro": "200",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1300%"
+              "value": "АТК: 1300%",
+              "effects": [
+                "Enemys [Lightning Dispel] Overlap +1.",
+                "In [Lightning] status, skill damage +20% after 3rd skill accuracy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2600%"
+              "value": "АТК: 2600%",
+              "effects": [
+                "Enemys [Lightning Dispel] Overlap +1.",
+                "In [Lightning] status, skill damage +20% after 3rd skill accuracy"
+              ]
             }
           ],
           "special": []
@@ -342,14 +401,26 @@
           "sp_cost": "500",
           "aggro": "120",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1532.56%"
+              "value": "АТК: 1532.56%",
+              "effects": [
+                "Enemys [Lightning Dispel] Overlap +1.",
+                "In [Lightning] status, skill damage +20% after 3rd skill accuracy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3065%"
+              "value": "АТК: 3065%",
+              "effects": [
+                "Enemys [Lightning Dispel] Overlap +1.",
+                "In [Lightning] status, skill damage +20% after 3rd skill accuracy"
+              ]
             }
           ],
           "special": []
@@ -367,14 +438,30 @@
           "sp_cost": "350",
           "aggro": "250",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2545.93%"
+              "value": "АТК: 2545.93%",
+              "effects": [
+                "Enemys [Lightning Dispel] Overlap +1.",
+                "Ignores enemy DEF by 60",
+                "Ignores enemy DEF by 50 additionally after 3rd skill accuracy",
+                "In [Lightning] status, skill damage +20% after 3rd skill accuracy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5091%"
+              "value": "АТК: 5091%",
+              "effects": [
+                "Enemys [Lightning Dispel] Overlap +1.",
+                "Ignores enemy DEF by 60",
+                "Ignores enemy DEF by 50 additionally after 3rd skill accuracy",
+                "In [Lightning] status, skill damage +20% after 3rd skill accuracy"
+              ]
             }
           ],
           "special": []
@@ -392,14 +479,28 @@
           "sp_cost": "800",
           "aggro": "215",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 8",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1412.44%"
+              "value": "АТК: 1412.44%",
+              "effects": [
+                "Enemys [Lightning Dispel] Overlap +1.",
+                "50% chance to [Stun] on enemy",
+                "With 3 times accurate Skill, Skill Damage+20%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2824%"
+              "value": "АТК: 2824%",
+              "effects": [
+                "Enemys [Lightning Dispel] Overlap +1.",
+                "50% chance to [Stun] on enemy",
+                "With 3 times accurate Skill, Skill Damage+20%"
+              ]
             }
           ],
           "special": []

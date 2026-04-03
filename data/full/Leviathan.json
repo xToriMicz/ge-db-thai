@@ -90,6 +90,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -131,6 +132,7 @@
         "Penetration": "10+15",
         "Immunity": "5+10"
       },
+      "consume": "Elemental Sphere x 1",
       "skills": [
         {
           "name": "Pol Caer",
@@ -145,14 +147,38 @@
           "sp_cost": "350",
           "aggro": "50",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "105%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "Applies [Acelerar] upon successful hit",
+                "[Flood] Lv +1 upon enemies hit",
+                "Ignores Debuff RES",
+                "Skill Damage increases by 2x against enemies with [Flood] debuff",
+                "When [Flotte] is active, skill damage increases by 3x",
+                "While standing on [Flood Zone]:",
+                "Skill Damage increases by 3x",
+                "Ignores enemy RES by 100"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4400%"
+              "value": "АТК: 4400%",
+              "effects": [
+                "Applies [Acelerar] upon successful hit",
+                "[Flood] Lv +1 upon enemies hit",
+                "Ignores Debuff RES",
+                "Skill Damage increases by 2x against enemies with [Flood] debuff",
+                "When [Flotte] is active, skill damage increases by 3x",
+                "While standing on [Flood Zone]:",
+                "Skill Damage increases by 3x",
+                "Ignores enemy RES by 100"
+              ]
             }
           ],
           "special": []
@@ -170,14 +196,40 @@
           "sp_cost": "1200",
           "aggro": "100",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 18",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2600%"
+              "value": "АТК: 2600%",
+              "effects": [
+                "100% Chance to apply [Freeze]",
+                "Damage increases up to 3x times based on enemys MSPD",
+                "Skill Damage increases while [Acelerar] buff is active",
+                "Skill Damage increases by 2x against enemies with [Flood] debuff",
+                "When [Flotte] is active, skill damage increases by 3x",
+                "While standing on [Flood Zone]:",
+                "Applies [Invulnerable] to caster",
+                "Skill Damage increases by 3x",
+                "Ignores enemy RES by 125"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5200%"
+              "value": "АТК: 5200%",
+              "effects": [
+                "100% Chance to apply [Freeze]",
+                "Damage increases up to 3x times based on enemys MSPD",
+                "Skill Damage increases while [Acelerar] buff is active",
+                "Skill Damage increases by 2x against enemies with [Flood] debuff",
+                "When [Flotte] is active, skill damage increases by 3x",
+                "While standing on [Flood Zone]:",
+                "Applies [Invulnerable] to caster",
+                "Skill Damage increases by 3x",
+                "Ignores enemy RES by 125"
+              ]
             }
           ],
           "special": []
@@ -195,14 +247,44 @@
           "sp_cost": "650",
           "aggro": "125",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 14",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "105%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2800%"
+              "value": "АТК: 2800%",
+              "effects": [
+                "Attacks 5 times at the casting location",
+                "[Flotte] Level +1 to caster per hit",
+                "[Flood] Lv +1 upon enemies hit",
+                "Ignores Debuff RES",
+                "Damage increases up to 3x times based on enemys MSPD",
+                "Skill Damage increases by 2x against enemies with [Flood] debuff",
+                "When [Flotte] is active, skill damage increases by 3x",
+                "While standing on [Flood Zone]:",
+                "Refreshes skill upon enemy [PC] death",
+                "Skill Damage increases by 3x",
+                "Ignores enemy RES by 125"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5600%"
+              "value": "АТК: 5600%",
+              "effects": [
+                "Attacks 5 times at the casting location",
+                "[Flotte] Level +1 to caster per hit",
+                "[Flood] Lv +1 upon enemies hit",
+                "Ignores Debuff RES",
+                "Damage increases up to 3x times based on enemys MSPD",
+                "Skill Damage increases by 2x against enemies with [Flood] debuff",
+                "When [Flotte] is active, skill damage increases by 3x",
+                "While standing on [Flood Zone]:",
+                "Refreshes skill upon enemy [PC] death",
+                "Skill Damage increases by 3x",
+                "Ignores enemy RES by 125"
+              ]
             }
           ],
           "special": []
@@ -220,14 +302,36 @@
           "sp_cost": "1650",
           "aggro": "125",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 23",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2730%"
+              "value": "АТК: 2730%",
+              "effects": [
+                "100% Chance to inflict [Confusion]",
+                "Damage increases up to 3x times based on enemys MSPD",
+                "Skill Damage increases by 2x against enemies with [Flood] debuff",
+                "When [Flotte] is active, skill damage increases by 3x",
+                "While standing on [Flood Zone]:",
+                "Skill Damage increases by 3x",
+                "Ignores enemy RES by 125"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5460%"
+              "value": "АТК: 5460%",
+              "effects": [
+                "100% Chance to inflict [Confusion]",
+                "Damage increases up to 3x times based on enemys MSPD",
+                "Skill Damage increases by 2x against enemies with [Flood] debuff",
+                "When [Flotte] is active, skill damage increases by 3x",
+                "While standing on [Flood Zone]:",
+                "Skill Damage increases by 3x",
+                "Ignores enemy RES by 125"
+              ]
             }
           ],
           "special": []
@@ -245,14 +349,36 @@
           "sp_cost": "2100",
           "aggro": "150",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 32",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "120%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 3200%"
+              "value": "АТК: 3200%",
+              "effects": [
+                "Damage increases up to 3x times based on enemys MSPD",
+                "Skill Damage increases by 2x against enemies with [Flood] debuff",
+                "When [Flotte] is active, skill damage increases by 3x",
+                "Creates a [Flood Zone] in the area for 15s",
+                "Applies [Flotte] Lv +1 to allies and Leviathan per second",
+                "Applies [Flood] Lv +1 to enemies per second",
+                "When [Flotte] is above Lv. 10, A.R. +1"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 6400%"
+              "value": "АТК: 6400%",
+              "effects": [
+                "Damage increases up to 3x times based on enemys MSPD",
+                "Skill Damage increases by 2x against enemies with [Flood] debuff",
+                "When [Flotte] is active, skill damage increases by 3x",
+                "Creates a [Flood Zone] in the area for 15s",
+                "Applies [Flotte] Lv +1 to allies and Leviathan per second",
+                "Applies [Flood] Lv +1 to enemies per second",
+                "When [Flotte] is above Lv. 10, A.R. +1"
+              ]
             }
           ],
           "special": []

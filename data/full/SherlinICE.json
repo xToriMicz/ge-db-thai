@@ -114,6 +114,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [
         {
           "name": "Freezing Spear",
@@ -128,14 +129,24 @@
           "sp_cost": "60",
           "aggro": "42",
           "skill_type": "Magic",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 500%"
+              "value": "АТК: 500%",
+              "effects": [
+                "10% chance to inflict [Freeze] on enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1000%"
+              "value": "АТК: 1000%",
+              "effects": [
+                "10% chance to inflict [Freeze] on enemy"
+              ]
             }
           ],
           "special": []
@@ -153,26 +164,55 @@
           "sp_cost": "90",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Elemental Orb x 1",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 110 sec."
+              "value": "",
+              "effects": [
+                "Duration: 110 sec.",
+                "Ice RES+15",
+                "Extra Ice ATK+13"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 200 sec."
+              "value": "",
+              "effects": [
+                "Duration: 200 sec.",
+                "Ice RES+15",
+                "Extra Ice ATK+40"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 210 sec."
+              "value": "",
+              "effects": [
+                "Duration: 210 sec.",
+                "Ice RES+15",
+                "Extra Ice ATK+43"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 220 sec."
+              "value": "",
+              "effects": [
+                "Duration: 220 sec.",
+                "Ice RES+15",
+                "Extra Ice ATK+46"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 230 sec."
+              "value": "",
+              "effects": [
+                "Duration: 230 sec.",
+                "Ice RES+15",
+                "Extra Ice ATK+49"
+              ]
             }
           ],
           "special": []
@@ -190,14 +230,24 @@
           "sp_cost": "120",
           "aggro": "63",
           "skill_type": "Magic",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1200%"
+              "value": "АТК: 1200%",
+              "effects": [
+                "15% Chance to [Freeze] enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "15% Chance to [Freeze] enemy"
+              ]
             }
           ],
           "special": []
@@ -215,14 +265,24 @@
           "sp_cost": "180",
           "aggro": "186",
           "skill_type": "Magic",
+          "consume_item": "Elemental Orb x 1",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1500%"
+              "value": "АТК: 1500%",
+              "effects": [
+                "Summon Deluge"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "Summon Deluge"
+              ]
             }
           ],
           "special": []
@@ -262,6 +322,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [
         {
           "name": "Refriger Wave",
@@ -276,14 +337,24 @@
           "sp_cost": "80",
           "aggro": "54",
           "skill_type": "Magic",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1100%"
+              "value": "АТК: 1100%",
+              "effects": [
+                "30% chance to inflict [Freeze] on enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "30% chance to inflict [Freeze] on enemy"
+              ]
             }
           ],
           "special": []
@@ -301,14 +372,24 @@
           "sp_cost": "160",
           "aggro": "184",
           "skill_type": "Magic",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "15% Chance to [Freeze] enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4400%"
+              "value": "АТК: 4400%",
+              "effects": [
+                "15% Chance to [Freeze] enemy"
+              ]
             }
           ],
           "special": []
@@ -326,14 +407,24 @@
           "sp_cost": "240",
           "aggro": "189",
           "skill_type": "Magic",
+          "consume_item": "Elemental Orb x 2",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1000%"
+              "value": "АТК: 1000%",
+              "effects": [
+                "Summon Blizzard"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2000%"
+              "value": "АТК: 2000%",
+              "effects": [
+                "Summon Blizzard"
+              ]
             }
           ],
           "special": []
@@ -374,6 +465,7 @@
         "Penetration": "20",
         "Immunity": "10"
       },
+      "consume": "Elemental Sphere x 2",
       "skills": [
         {
           "name": "Snow Golem Control",
@@ -388,14 +480,28 @@
           "sp_cost": "500",
           "aggro": "0",
           "skill_type": "Build",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Available to summon maximum 1"
+              "value": "",
+              "effects": [
+                "Available to summon maximum 1",
+                "Provides bonus ability to the Golem according to skill level and INT stats",
+                "Enforces [Snow Flare] upon initial summon"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Available to summon maximum 1"
+              "value": "",
+              "effects": [
+                "Available to summon maximum 1",
+                "Provides bonus ability to the Golem according to skill level and INT stats",
+                "Enforces [Snow Flare] upon initial summon"
+              ]
             }
           ],
           "special": [
@@ -416,14 +522,26 @@
           "sp_cost": "500",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Teleports Snow Golem to your location."
+              "value": "",
+              "effects": [
+                "Teleports Snow Golem to your location.",
+                "Snow Golem : Uses [Snow Flare] to enemies on the ground."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Teleports Snow Golem to your location."
+              "value": "",
+              "effects": [
+                "Teleports Snow Golem to your location.",
+                "Snow Golem : Uses [Snow Flare] to enemies on the ground."
+              ]
             }
           ],
           "special": []
@@ -441,14 +559,26 @@
           "sp_cost": "400",
           "aggro": "128",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 8",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1100%"
+              "value": "АТК: 1100%",
+              "effects": [
+                "100% chance to inflict [Freeze] on enemy",
+                "Snow Golem: Use [Snow Clapper]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "100% chance to inflict [Freeze] on enemy",
+                "Snow Golem: Use [Snow Clapper]"
+              ]
             }
           ],
           "special": []
@@ -466,14 +596,32 @@
           "sp_cost": "700",
           "aggro": "189",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": [
+                "Recharging time 20 sec.",
+                "Possible to use max 3 times",
+                "Re-charge when use it over 1 time.",
+                "100% chance to inflict [Freezing] on enemy",
+                "Snow Golem : Use [Ice Spire] to ground type enemy."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3600%"
+              "value": "АТК: 3600%",
+              "effects": [
+                "Recharging time 20 sec.",
+                "Possible to use max 3 times",
+                "Re-charge when use it over 1 time.",
+                "100% chance to inflict [Freezing] on enemy",
+                "Snow Golem : Use [Ice Spire] to ground type enemy."
+              ]
             }
           ],
           "special": []
@@ -491,14 +639,26 @@
           "sp_cost": "800",
           "aggro": "240",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 8",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1500%"
+              "value": "АТК: 1500%",
+              "effects": [
+                "100% chance to inflict [Freezing] on enemy",
+                "Snow Golem : Use [Blizzard]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "100% chance to inflict [Freezing] on enemy",
+                "Snow Golem : Use [Blizzard]"
+              ]
             }
           ],
           "special": []

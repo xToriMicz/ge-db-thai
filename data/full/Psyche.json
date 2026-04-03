@@ -61,6 +61,14 @@
         "x": -200,
         "y": -100
       }
+    },
+    {
+      "stance_name": "Wed Descent",
+      "equipped_items": "Rod",
+      "icon_position": {
+        "x": -200,
+        "y": -100
+      }
     }
   ],
   "stances": [
@@ -89,6 +97,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -131,6 +140,7 @@
         "Penetration": "10+25",
         "Immunity": "5+5"
       },
+      "consume": "Psychic Sphere x 3",
       "skills": [
         {
           "name": "Ectoplasm",
@@ -145,26 +155,80 @@
           "sp_cost": "400",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 6",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration : 30 seconds"
+              "value": "",
+              "effects": [
+                "Duration : 30 seconds",
+                "Available with [Wed Resemble] buff",
+                "A.R. +1",
+                "Magic Penetration +1",
+                "Skill damage increases by (2% of extra [INT]",
+                "Skills ignore 50 RES",
+                "Increases normal attack Damage (Effect is enhanced by [Psychic] buff)",
+                "[Tele] applies with a successful normal attack (Skill damage additionally increases by 5% of extra [INT])"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration : 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration : 300 seconds",
+                "Available with [Wed Resemble] buff",
+                "A.R. +1",
+                "Magic Penetration +10",
+                "Skill damage increases by (2% of extra [INT]",
+                "Skills ignore 50 RES",
+                "Increases normal attack Damage (Effect is enhanced by [Psychic] buff)",
+                "[Tele] applies with a successful normal attack (Skill damage additionally increases by 5% of extra [INT])"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration : 330 seconds"
+              "value": "",
+              "effects": [
+                "Duration : 330 seconds",
+                "Available with [Wed Resemble] buff",
+                "A.R. +1",
+                "Magic Penetration +22",
+                "Skill damage increases by (2% of extra [INT]",
+                "Skills ignore 50 RES",
+                "Increases normal attack Damage (Effect is enhanced by [Psychic] buff)",
+                "[Tele] applies with a successful normal attack (Skill damage additionally increases by 5% of extra [INT])"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration : 360 seconds"
+              "value": "",
+              "effects": [
+                "Duration : 360 seconds",
+                "Available with [Wed Resemble] buff",
+                "A.R. +1",
+                "Magic Penetration +24",
+                "Skill damage increases by (2% of extra [INT]",
+                "Skills ignore 50 RES",
+                "Increases normal attack Damage (Effect is enhanced by [Psychic] buff)",
+                "[Tele] applies with a successful normal attack (Skill damage additionally increases by 5% of extra [INT])"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration : 390 seconds"
+              "value": "",
+              "effects": [
+                "Duration : 390 seconds",
+                "Available with [Wed Resemble] buff",
+                "A.R. +1",
+                "Magic Penetration +26",
+                "Skill damage increases by (2% of extra [INT]",
+                "Skills ignore 50 RES",
+                "Increases normal attack Damage (Effect is enhanced by [Psychic] buff)",
+                "[Tele] applies with a successful normal attack (Skill damage additionally increases by 5% of extra [INT])"
+              ]
             }
           ],
           "special": []
@@ -182,14 +246,28 @@
           "sp_cost": "440",
           "aggro": "85",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 8",
+          "soft_armor_atk": "75%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "130%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1600%"
+              "value": "АТК: 1600%",
+              "effects": [
+                "15% chance to inflict [Panic]",
+                "Applies [Psychic] to yourself with a successful hit",
+                "20% additional Damage with [Tele] (Effect decreases against PC)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3200%"
+              "value": "АТК: 3200%",
+              "effects": [
+                "15% chance to inflict [Panic]",
+                "Applies [Psychic] to yourself with a successful hit",
+                "20% additional Damage with [Tele] (Effect decreases against PC)"
+              ]
             }
           ],
           "special": []
@@ -199,7 +277,7 @@
           "image": "wedec_apparition.jpg",
           "description": "Lures the souls with the magic power and attacks by making enemies float around them.",
           "target": "Up to 7 enemies within a range of 8m",
-          "casting_time": "0.6 sec.",
+          "casting_time": "0.4 sec.",
           "cooldown": "20 sec.",
           "duration": "2.766 sec.",
           "hits_flying": "Yes",
@@ -207,14 +285,28 @@
           "sp_cost": "520",
           "aggro": "110",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 12",
+          "soft_armor_atk": "70%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "5% chance to inflict [Panic]",
+                "Applies [Psychic] to yourself with a successful hit",
+                "20% additional Damage with [Tele] (Effect decreases against PC)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4400%"
+              "value": "АТК: 4400%",
+              "effects": [
+                "5% chance to inflict [Panic]",
+                "Applies [Psychic] to yourself with a successful hit",
+                "20% additional Damage with [Tele] (Effect decreases against PC)"
+              ]
             }
           ],
           "special": []
@@ -232,14 +324,28 @@
           "sp_cost": "480",
           "aggro": "80",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "60%",
+          "heavy_armor_atk": "120%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2500%"
+              "value": "АТК: 2500%",
+              "effects": [
+                "30% chance to inflict [Web]",
+                "Applies [Psychic] to yourself with a successful hit",
+                "20% additional Damage with [Tele] (Effect decreases against PC)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5000%"
+              "value": "АТК: 5000%",
+              "effects": [
+                "30% chance to inflict [Web]",
+                "Applies [Psychic] to yourself with a successful hit",
+                "20% additional Damage with [Tele] (Effect decreases against PC)"
+              ]
             }
           ],
           "special": []
@@ -249,7 +355,7 @@
           "image": "wedec_witchcraft.jpg",
           "description": "Send the ghost-shaped magic power onto the floor, and detonate it.",
           "target": "Up to 6 enemies 12m away and within a 6m radius",
-          "casting_time": "1.766 sec.",
+          "casting_time": "0.8 sec.",
           "cooldown": "25 sec.",
           "duration": "2.133 sec.",
           "hits_flying": "Yes",
@@ -257,14 +363,28 @@
           "sp_cost": "600",
           "aggro": "120",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 15",
+          "soft_armor_atk": "70%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2600%"
+              "value": "АТК: 2600%",
+              "effects": [
+                "10% chance to inflict [Hold]",
+                "Applies [Psychic] to yourself with a successful hit",
+                "35% additional Damage with [Tele] (Effect decreases against PC)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5200%"
+              "value": "АТК: 5200%",
+              "effects": [
+                "10% chance to inflict [Hold]",
+                "Applies [Psychic] to yourself with a successful hit",
+                "35% additional Damage with [Tele] (Effect decreases against PC)"
+              ]
             }
           ],
           "special": []

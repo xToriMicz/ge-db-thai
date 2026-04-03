@@ -96,6 +96,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -131,6 +132,7 @@
         "Abnormal RES": "15"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [
         {
           "name": "Shining Ballade",
@@ -145,26 +147,63 @@
           "sp_cost": "200",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Magical Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration : 165 sec"
+              "value": "",
+              "effects": [
+                "Duration : 165 sec",
+                "ATK +1%",
+                "ATK SPD +1%",
+                "Movement Speed +1%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration : 300 sec"
+              "value": "",
+              "effects": [
+                "Duration : 300 sec",
+                "ATK +10%",
+                "ATK SPD +10%",
+                "Movement Speed +10%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration : 315 sec"
+              "value": "",
+              "effects": [
+                "Duration : 315 sec",
+                "ATK +11%",
+                "ATK SPD +11%",
+                "Movement Speed +11%",
+                "Penetration +3"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration : 330 sec"
+              "value": "",
+              "effects": [
+                "Duration : 330 sec",
+                "ATK +12%",
+                "ATK SPD +12%",
+                "Movement Speed +12%",
+                "Penetration +6"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration : 345 sec"
+              "value": "",
+              "effects": [
+                "Duration : 345 sec",
+                "ATK +13%",
+                "ATK SPD +13%",
+                "Movement Speed +13%",
+                "Penetration +9"
+              ]
             }
           ],
           "special": []
@@ -182,26 +221,58 @@
           "sp_cost": "200",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Magical Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration : 165 sec"
+              "value": "",
+              "effects": [
+                "Duration : 165 sec",
+                "DEF +1",
+                "Physical Damage received -20%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration : 300 sec"
+              "value": "",
+              "effects": [
+                "Duration : 300 sec",
+                "DEF +10",
+                "Physical Damage received -20%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration : 315 sec"
+              "value": "",
+              "effects": [
+                "Duration : 315 sec",
+                "DEF +11",
+                "Physical Damage received -20%",
+                "IMM +3"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration : 330 sec"
+              "value": "",
+              "effects": [
+                "Duration : 330 sec",
+                "DEF +12",
+                "Physical Damage received -20%",
+                "IMM +6"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration : 345 sec"
+              "value": "",
+              "effects": [
+                "Duration : 345 sec",
+                "DEF +13",
+                "Physical Damage received -20%",
+                "IMM +9"
+              ]
             }
           ],
           "special": []
@@ -219,26 +290,58 @@
           "sp_cost": "200",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Magical Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration : 165 sec"
+              "value": "",
+              "effects": [
+                "Duration : 165 sec",
+                "Debuff RES +1",
+                "Reduces magical attack damage by 20%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration : 300 sec"
+              "value": "",
+              "effects": [
+                "Duration : 300 sec",
+                "Debuff RES +10",
+                "Reduces magical attack damage by 20%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration : 315 sec"
+              "value": "",
+              "effects": [
+                "Duration : 315 sec",
+                "Debuff RES +11",
+                "Reduces magical attack damage by 20%",
+                "IMM +3"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration : 330 sec"
+              "value": "",
+              "effects": [
+                "Duration : 330 sec",
+                "Debuff RES +12",
+                "Reduces magical attack damage by 20%",
+                "IMM +6"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration : 345 sec"
+              "value": "",
+              "effects": [
+                "Duration : 345 sec",
+                "Debuff RES +13",
+                "Reduces magical attack damage by 20%",
+                "IMM +9"
+              ]
             }
           ],
           "special": []
@@ -256,26 +359,50 @@
           "sp_cost": "2500",
           "aggro": "0",
           "skill_type": "Healing",
+          "consume_item": "2500 HP by using it",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Heals 5% of HP after Resurrection"
+              "value": "",
+              "effects": [
+                "Heals 5% of HP after Resurrection",
+                "Consumes 2500 HP by using it"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Heals 50% of HP after Resurrection"
+              "value": "",
+              "effects": [
+                "Heals 50% of HP after Resurrection",
+                "Consumes 2500 HP by using it"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Heals 55% of HP after Resurrection"
+              "value": "",
+              "effects": [
+                "Heals 55% of HP after Resurrection",
+                "Consumes 2500 HP by using it"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Heals 60% of HP after Resurrection"
+              "value": "",
+              "effects": [
+                "Heals 60% of HP after Resurrection",
+                "Consumes 2500 HP by using it"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Heals 65% of HP after Resurrection"
+              "value": "",
+              "effects": [
+                "Heals 65% of HP after Resurrection",
+                "Consumes 2500 HP by using it"
+              ]
             }
           ],
           "special": []
@@ -318,6 +445,7 @@
         "Penetration": "5+25",
         "Immunity": "10+20"
       },
+      "consume": "Psychic Sphere x 3",
       "skills": [
         {
           "name": "Staccato",
@@ -332,26 +460,60 @@
           "sp_cost": "820",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration : 40 seconds"
+              "value": "",
+              "effects": [
+                "Duration : 40 seconds",
+                "Casting Time -1%",
+                "Skill Damage against Single Target +2%",
+                "ATK +15%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration : 40 seconds"
+              "value": "",
+              "effects": [
+                "Duration : 40 seconds",
+                "Casting Time -10%",
+                "Skill Damage against Single Target +20%",
+                "ATK +15%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration : 40 seconds"
+              "value": "",
+              "effects": [
+                "Duration : 40 seconds",
+                "Casting Time -11%",
+                "Skill Damage against Single Target +27%",
+                "ATK +15%"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration : 40 seconds"
+              "value": "",
+              "effects": [
+                "Duration : 40 seconds",
+                "Casting Time -12%",
+                "Skill Damage against Single Target +30%",
+                "ATK +15%"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration : 40 seconds"
+              "value": "",
+              "effects": [
+                "Duration : 40 seconds",
+                "Casting Time -15%",
+                "Skill Damage against Single Target +39%",
+                "ATK +15%"
+              ]
             }
           ],
           "special": []
@@ -363,32 +525,66 @@
           "target": "",
           "casting_time": "1.0333 sec.",
           "cooldown": "40 sec.",
-          "duration": "100 seconds",
+          "duration": "300 seconds",
           "hits_flying": "Yes",
           "knock_down": "No",
           "sp_cost": "940",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 100 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "All Damage received -1%",
+                "Additional Damage effect decreases when skill is hit",
+                "Additional Damage decrease rate increases when lower the total HP of the target is (Max. 15%)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 100 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "All Damage received -10%",
+                "Additional Damage effect decreases when skill is hit",
+                "Additional Damage decrease rate increases when lower the total HP of the target is (Max. 15%)"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 100 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "All Damage received -11%",
+                "Additional Damage effect decreases when skill is hit",
+                "Additional Damage decrease rate increases when lower the total HP of the target is (Max. 15%)"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 100 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "All Damage received -12%",
+                "Additional Damage effect decreases when skill is hit",
+                "Additional Damage decrease rate increases when lower the total HP of the target is (Max. 15%)"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 100 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "All Damage received -15%",
+                "Additional Damage effect decreases when skill is hit",
+                "Additional Damage decrease rate increases when lower the total HP of the target is (Max. 15%)"
+              ]
             }
           ],
           "special": [
@@ -417,14 +613,32 @@
           "sp_cost": "1050",
           "aggro": "82",
           "skill_type": "Magic",
+          "consume_item": "Psychic Sphere x 5",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "130%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1500%"
+              "value": "АТК: 1500%",
+              "effects": [
+                "Knockback Enemy when hit",
+                "70% chance to inflict [Decrescendo] on enemy",
+                "Effect increases according to skill level",
+                "Ignores Debuff RES of enemy",
+                "Additional Damage given by casters extra [INT] * 0.3%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "Knockback Enemy when hit",
+                "70% chance to inflict [Decrescendo] on enemy",
+                "Effect increases according to skill level",
+                "Ignores Debuff RES of enemy",
+                "Additional Damage given by casters extra [INT] * 0.3%"
+              ]
             }
           ],
           "special": [
@@ -445,14 +659,30 @@
           "sp_cost": "1050",
           "aggro": "108",
           "skill_type": "Magic",
+          "consume_item": "Psychic Sphere x 3",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "125%",
+          "light_armor_atk": "105%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "Knockback Enemy when hit",
+                "75% chance to inflict [Largo] on enemy",
+                "Effect increases according to skill level",
+                "Ignores Debuff RES of enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4800%"
+              "value": "АТК: 4800%",
+              "effects": [
+                "Knockback Enemy when hit",
+                "75% chance to inflict [Largo] on enemy",
+                "Effect increases according to skill level",
+                "Ignores Debuff RES of enemy"
+              ]
             }
           ],
           "special": []
@@ -470,26 +700,65 @@
           "sp_cost": "900",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "ATK +30%",
+                "INT +10",
+                "SEN +10",
+                "Skill Damage vs Monsters increases up to 2.5× in proportion to additional INT (max +100 INT from buff receiver)"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "ATK +30%",
+                "INT +10",
+                "SEN +10",
+                "Skill Damage vs Monsters increases up to 2.5× in proportion to additional INT (max +100 INT from buff receiver)"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "ATK +30%",
+                "INT +10",
+                "SEN +10",
+                "Skill Damage vs Monsters increases up to 2.5× in proportion to additional INT (max +100 INT from buff receiver)"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "ATK +30%",
+                "INT +10",
+                "SEN +10",
+                "Skill Damage vs Monsters increases up to 2.5× in proportion to additional INT (max +100 INT from buff receiver)"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "ATK +30%",
+                "INT +10",
+                "SEN +10",
+                "Skill Damage vs Monsters increases up to 2.5× in proportion to additional INT (max +100 INT from buff receiver)"
+              ]
             }
           ],
           "special": []

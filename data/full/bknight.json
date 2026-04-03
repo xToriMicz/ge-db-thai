@@ -104,6 +104,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -142,6 +143,7 @@
         "ATK SPD": "+3%",
         "Block": "+14"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Deep Straight",
@@ -156,14 +158,20 @@
           "sp_cost": "100",
           "aggro": "78",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 300%"
+              "value": "АТК: 300%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 600%"
+              "value": "АТК: 600%",
+              "effects": []
             }
           ],
           "special": []
@@ -181,14 +189,20 @@
           "sp_cost": "150",
           "aggro": "68",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 400%"
+              "value": "АТК: 400%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 800%"
+              "value": "АТК: 800%",
+              "effects": []
             }
           ],
           "special": []
@@ -206,14 +220,24 @@
           "sp_cost": "200",
           "aggro": "105",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 600%"
+              "value": "АТК: 600%",
+              "effects": [
+                "Double Damage to enemies with [Soft Armor]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1200%"
+              "value": "АТК: 1200%",
+              "effects": [
+                "Double Damage to enemies with [Soft Armor]"
+              ]
             }
           ],
           "special": [
@@ -234,14 +258,20 @@
           "sp_cost": "250",
           "aggro": "210",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 800%"
+              "value": "АТК: 800%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1600%"
+              "value": "АТК: 1600%",
+              "effects": []
             }
           ],
           "special": []
@@ -285,6 +315,7 @@
         "Penetration": "5+25",
         "Immunity": "5+25"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Oblivion",
@@ -299,26 +330,76 @@
           "sp_cost": "200",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 300 sec"
+              "value": "",
+              "effects": [
+                "Duration: 300 sec",
+                "A.R. +1",
+                "Max HP +200%",
+                "Normal DMG increases by 10x",
+                "Normal Attack Range increased by 3x",
+                "Critical DMG +50%",
+                "MSPD +25%",
+                "MPSD Limit +1",
+                "When attacking: Increase damage according to current Max HP"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 300 sec"
+              "value": "",
+              "effects": [
+                "Duration: 300 sec",
+                "A.R. +1",
+                "Max HP +200%",
+                "Normal DMG increases by 10x",
+                "Normal Attack Range increased by 3x",
+                "Critical DMG +50%",
+                "MSPD +25%",
+                "MPSD Limit +1",
+                "When attacking: Increase damage according to current Max HP"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration : 110 sec."
+              "value": "",
+              "effects": [
+                "Duration : 110 sec.",
+                "Increases 2 times of the range of normal attack",
+                "Critical Damage +55",
+                "When attacks enemy PC using normal attack, consuming own HP by 2% and gives additional damage of own current HP 3%.",
+                "When attacks enemy monster, consuming own HP by 2% and increases normal attack Monster Damage.",
+                "A.R.+1"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration : 120 sec."
+              "value": "",
+              "effects": [
+                "Duration : 120 sec.",
+                "Increases 2 times of the range of normal attack",
+                "Critical Damage +60",
+                "When attacks enemy PC using normal attack, consuming own HP by 2% and gives additional damage of own current HP 3%.",
+                "When attacks enemy monster, consuming own HP by 2% and increases normal attack Monster Damage.",
+                "A.R.+1"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration : 130 sec."
+              "value": "",
+              "effects": [
+                "Duration : 130 sec.",
+                "Increases 2 times of the range of normal attack",
+                "Critical Damage +65",
+                "When attacks enemy PC using normal attack, consuming own HP by 2% and gives additional damage of own current HP 3%.",
+                "When attacks enemy monster, consuming own HP by 2% and increases normal attack Monster Damage.",
+                "A.R.+1"
+              ]
             }
           ],
           "special": []
@@ -336,14 +417,40 @@
           "sp_cost": "450",
           "aggro": "200",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "50%",
+          "heavy_armor_atk": "125%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "Ignores enemys DEF by 60",
+                "100% Chance to apply [Mark of Death]",
+                "Ignores enemy debuff RES",
+                "Ignores Evasion",
+                "Damage to Evasion type enemies +1% per 1 evasion",
+                "Skill Damage increases according to enemy [PC]s remaining HP",
+                "Bypasses a percentage of enemy [PC]s DEF proportional to the enemys remaining HP",
+                "Upon killing enemy PC, Attack Skills Cooldown -3 sec. except [Imuditia]",
+                "Hitting enemy Monster, Attack Skills Cooldown -2 sec. except [Imuditia]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4400%"
+              "value": "АТК: 4400%",
+              "effects": [
+                "Ignores enemys DEF by 60",
+                "100% Chance to apply [Mark of Death]",
+                "Ignores enemy debuff RES",
+                "Ignores Evasion",
+                "Damage to Evasion type enemies +1% per 1 evasion",
+                "Skill Damage increases according to enemy [PC]s remaining HP",
+                "Bypasses a percentage of enemy [PC]s DEF proportional to the enemys remaining HP",
+                "Upon killing enemy PC, Attack Skills Cooldown -3 sec. except [Imuditia]",
+                "Hitting enemy Monster, Attack Skills Cooldown -2 sec. except [Imuditia]"
+              ]
             }
           ],
           "special": []
@@ -361,14 +468,40 @@
           "sp_cost": "560",
           "aggro": "342",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "50%",
+          "heavy_armor_atk": "140%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "Ignores enemys DEF by 75",
+                "100% Chance to apply [Mark of Death]",
+                "Ignores enemy debuff RES",
+                "Ignores Evasion",
+                "Damage to Evasion type enemies +1% per 1 evasion",
+                "Skill Damage increases according to enemy [PC]s remaining HP",
+                "Bypasses a percentage of enemy [PC]s DEF proportional to the enemys remaining HP",
+                "Upon killing enemy PC, Attack Skills Cooldown -3 sec. except [Kaedes]",
+                "Hitting enemy Monster, Attack Skills Cooldown -2 sec. except [Kaedes]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4800%"
+              "value": "АТК: 4800%",
+              "effects": [
+                "Ignores enemys DEF by 75",
+                "100% Chance to apply [Mark of Death]",
+                "Ignores enemy debuff RES",
+                "Ignores Evasion",
+                "Damage to Evasion type enemies +1% per 1 evasion",
+                "Skill Damage increases according to enemy [PC]s remaining HP",
+                "Bypasses a percentage of enemy [PC]s DEF proportional to the enemys remaining HP",
+                "Upon killing enemy PC, Attack Skills Cooldown -3 sec. except [Kaedes]",
+                "Hitting enemy Monster, Attack Skills Cooldown -2 sec. except [Kaedes]"
+              ]
             }
           ],
           "special": []
@@ -386,14 +519,40 @@
           "sp_cost": "820",
           "aggro": "170",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "150%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2600%"
+              "value": "АТК: 2600%",
+              "effects": [
+                "Ignores enemys DEF by 75",
+                "100% Chance to apply [Mark of Death]",
+                "Ignores enemy debuff RES",
+                "Ignores Evasion",
+                "Damage to Evasion type enemies +1% per 1 evasion",
+                "Skill Damage increases according to enemy [PC]s remaining HP",
+                "Bypasses a percentage of enemy [PC]s DEF proportional to the enemys remaining HP",
+                "Upon killing enemy PC, Attack Skills Cooldown -7 sec. except [Maledisite]",
+                "Hitting enemy Monster, Attack Skills Cooldown -7 sec. except [Maledisite]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5200%"
+              "value": "АТК: 5200%",
+              "effects": [
+                "Ignores enemys DEF by 75",
+                "100% Chance to apply [Mark of Death]",
+                "Ignores enemy debuff RES",
+                "Ignores Evasion",
+                "Damage to Evasion type enemies +1% per 1 evasion",
+                "Skill Damage increases according to enemy [PC]s remaining HP",
+                "Bypasses a percentage of enemy [PC]s DEF proportional to the enemys remaining HP",
+                "Upon killing enemy PC, Attack Skills Cooldown -7 sec. except [Maledisite]",
+                "Hitting enemy Monster, Attack Skills Cooldown -7 sec. except [Maledisite]"
+              ]
             }
           ],
           "special": []
@@ -411,14 +570,36 @@
           "sp_cost": "1050",
           "aggro": "150",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "50%",
+          "heavy_armor_atk": "125%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2800%"
+              "value": "АТК: 2800%",
+              "effects": [
+                "Ignores enemys DEF by 75",
+                "100% Chance to apply [Mark of Death]",
+                "Ignores enemy debuff RES",
+                "Ignores Evasion",
+                "Damage to Evasion type enemies +1% per 1 evasion",
+                "Skill Damage increases according to enemy [PC]s remaining HP",
+                "Bypasses a percentage of enemy [PC]s DEF proportional to the enemys remaining HP"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5600%"
+              "value": "АТК: 5600%",
+              "effects": [
+                "Ignores enemys DEF by 75",
+                "100% Chance to apply [Mark of Death]",
+                "Ignores enemy debuff RES",
+                "Ignores Evasion",
+                "Damage to Evasion type enemies +1% per 1 evasion",
+                "Skill Damage increases according to enemy [PC]s remaining HP",
+                "Bypasses a percentage of enemy [PC]s DEF proportional to the enemys remaining HP"
+              ]
             }
           ],
           "special": []

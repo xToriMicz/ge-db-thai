@@ -112,6 +112,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -154,6 +155,7 @@
         "Penetration": "5+20",
         "Immunity": "5+15"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Cavalry Force March",
@@ -168,14 +170,38 @@
           "sp_cost": "320",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "Max HP +10000",
+                "PEN +5",
+                "IMM +5",
+                "All DMG -10%",
+                "Continuously restores a small amount of HP in proportion to Max HP",
+                "Cannot apply to airborne characters",
+                "Effects doubled for [Bridget]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 300 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 300 seconds",
+                "Max HP +10000",
+                "PEN +5",
+                "IMM +5",
+                "All DMG -10%",
+                "Continuously restores a small amount of HP in proportion to Max HP",
+                "Cannot apply to airborne characters",
+                "Effects doubled for [Bridget]"
+              ]
             }
           ],
           "special": []
@@ -193,14 +219,34 @@
           "sp_cost": "360",
           "aggro": "60",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 3",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1288%"
+              "value": "АТК: 1288%",
+              "effects": [
+                "Ignores 90 DEF",
+                "Ignores Block",
+                "Damage to block type enemies +1% per 1 block",
+                "Skill damage increases by 3x ([PC] 1.5x)",
+                "Skill damage increases and ignores DEF by 3% of extra [STR]",
+                "If [Cavalry Force March] is active: [Lance]s level increases upon a successful hit"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2576%"
+              "value": "АТК: 2576%",
+              "effects": [
+                "Ignores 90 DEF",
+                "Ignores Block",
+                "Damage to block type enemies +1% per 1 block",
+                "Skill damage increases by 3x ([PC] 1.5x)",
+                "Skill damage increases and ignores DEF by 3% of extra [STR]",
+                "If [Cavalry Force March] is active: [Lance]s level increases upon a successful hit"
+              ]
             }
           ],
           "special": []
@@ -218,14 +264,34 @@
           "sp_cost": "380",
           "aggro": "150",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 4",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1555%"
+              "value": "АТК: 1555%",
+              "effects": [
+                "Ignores 90 DEF",
+                "Ignores Block",
+                "Damage to block type enemies +1% per 1 block",
+                "Skill damage increases by 3x ([PC] 1.5x)",
+                "Skill damage increases and ignores DEF by 3% of extra [STR]",
+                "If [Cavalry Force March] is active: [Lance]s level increases upon a successful hit"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3110%"
+              "value": "АТК: 3110%",
+              "effects": [
+                "Ignores 90 DEF",
+                "Ignores Block",
+                "Damage to block type enemies +1% per 1 block",
+                "Skill damage increases by 3x ([PC] 1.5x)",
+                "Skill damage increases and ignores DEF by 3% of extra [STR]",
+                "If [Cavalry Force March] is active: [Lance]s level increases upon a successful hit"
+              ]
             }
           ],
           "special": []
@@ -243,14 +309,38 @@
           "sp_cost": "600",
           "aggro": "220",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "125%",
+          "light_armor_atk": "140%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1837%"
+              "value": "АТК: 1837%",
+              "effects": [
+                "Ignores 60 DEF",
+                "Ignores Block",
+                "Damage to block type enemies +1% per 1 block",
+                "10% chance to inflict [Slow]",
+                "Skill damage increases by 3x ([PC] 1.5x)",
+                "Skill damage increases and ignores DEF by 3% of extra [STR]",
+                "Temporarily become [Invincible] upon a successful hit",
+                "If [Cavalry Force March] is active: [Lance]s level increases upon a successful hit"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3674%"
+              "value": "АТК: 3674%",
+              "effects": [
+                "Ignores 60 DEF",
+                "Ignores Block",
+                "Damage to block type enemies +1% per 1 block",
+                "10% chance to inflict [Slow]",
+                "Skill damage increases by 3x ([PC] 1.5x)",
+                "Skill damage increases and ignores DEF by 3% of extra [STR]",
+                "Temporarily become [Invincible] upon a successful hit",
+                "If [Cavalry Force March] is active: [Lance]s level increases upon a successful hit"
+              ]
             }
           ],
           "special": []
@@ -268,14 +358,34 @@
           "sp_cost": "650",
           "aggro": "220",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "150%",
+          "light_armor_atk": "140%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2263%"
+              "value": "АТК: 2263%",
+              "effects": [
+                "Ignores 120 DEF",
+                "30% chance to inflict [Slow]",
+                "Skill damage increases by 3x ([PC] 1.5x)",
+                "Skill damage increases and ignores DEF by 4% of extra [STR]",
+                "Temporarily become [Invincible] while casting",
+                "If [Cavalry Force March] is active: [Lance]s level increases upon a successful hit"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4526%"
+              "value": "АТК: 4526%",
+              "effects": [
+                "Ignores 120 DEF",
+                "30% chance to inflict [Slow]",
+                "Skill damage increases by 3x ([PC] 1.5x)",
+                "Skill damage increases and ignores DEF by 4% of extra [STR]",
+                "Temporarily become [Invincible] while casting",
+                "If [Cavalry Force March] is active: [Lance]s level increases upon a successful hit"
+              ]
             }
           ],
           "special": []

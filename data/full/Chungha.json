@@ -26,7 +26,7 @@
     "description": "Reinforces the rapidity by embracing the power of the goblins.",
     "target": "Self-buff",
     "casting_time": "0 sec.",
-    "cooldown": "30 sec.",
+    "cooldown": "15 sec.",
     "duration": "1.5 sec.",
     "sp_cost": "560",
     "consume_item": "Ancient Star Orb × 10",
@@ -35,7 +35,10 @@
         "level": "Level 10",
         "effects": [
           "Duration: 300 sec.",
-          "A.R.+1",
+          "A.R.+2",
+          "ATK +30%",
+          "Physical Penetration + 20",
+          "Monster ATK +100%",
           "[AGI]+20",
           "Move SPD+20%",
           "Move SPD Limit+20%",
@@ -104,6 +107,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -131,7 +135,7 @@
       },
       "stats": {
         "ASPD": "158",
-        "Bonus ATK": "300%",
+        "Bonus ATK": "330%",
         "MSPD": "1",
         "MSPD Limit": "8.50",
         "ACC": "30",
@@ -148,6 +152,7 @@
         "Penetration": "5+25",
         "Immunity": "5+10"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Naraka Form I: Point",
@@ -162,14 +167,30 @@
           "sp_cost": "580",
           "aggro": "130",
           "skill_type": "Shooting",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "150%",
+          "heavy_armor_atk": "50%",
+          "light_armor_atk": "110%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 800%"
+              "value": "АТК: 800%",
+              "effects": [
+                "Ignores enemys DEF by 60",
+                "Ignores Evasion",
+                "80% chance to impose [Goblin Mark]",
+                "With skill accuracy, changes to [Naraka, Flash]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1600%"
+              "value": "АТК: 1600%",
+              "effects": [
+                "Ignores enemys DEF by 60",
+                "Ignores Evasion",
+                "80% chance to impose [Goblin Mark]",
+                "With skill accuracy, changes to [Naraka, Flash]"
+              ]
             }
           ],
           "special": []
@@ -187,14 +208,30 @@
           "sp_cost": "580",
           "aggro": "105",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "150%",
+          "heavy_armor_atk": "75%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1200%"
+              "value": "АТК: 1200%",
+              "effects": [
+                "Ignores enemys DEF by 60",
+                "Ignores Evasion",
+                "60% chance to impose [Armor Crasher]",
+                "Absorbs enemy damages 20% as HP"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "Ignores enemys DEF by 60",
+                "Ignores Evasion",
+                "60% chance to impose [Armor Crasher]",
+                "Absorbs enemy damages 20% as HP"
+              ]
             }
           ],
           "special": []
@@ -212,14 +249,28 @@
           "sp_cost": "720",
           "aggro": "394",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 1",
+          "soft_armor_atk": "125%",
+          "heavy_armor_atk": "75%",
+          "light_armor_atk": "150%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2500%"
+              "value": "АТК: 2500%",
+              "effects": [
+                "Ignores enemys DEF by 75",
+                "Ignores Evasion",
+                "Absorbs enemy damages 20% as HP"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5000%"
+              "value": "АТК: 5000%",
+              "effects": [
+                "Ignores enemys DEF by 75",
+                "Ignores Evasion",
+                "Absorbs enemy damages 20% as HP"
+              ]
             }
           ],
           "special": []
@@ -255,7 +306,7 @@
       },
       "stats": {
         "ASPD": "260",
-        "Bonus ATK": "300%",
+        "Bonus ATK": "330%",
         "MSPD": "1",
         "MSPD Limit": "8.50",
         "ACC": "30",
@@ -272,6 +323,7 @@
         "Penetration": "5+25",
         "Immunity": "5+10"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Naraka Form II: Advance",
@@ -286,14 +338,36 @@
           "sp_cost": "720",
           "aggro": "301",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "125%",
+          "heavy_armor_atk": "50%",
+          "light_armor_atk": "150%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1500%"
+              "value": "АТК: 1500%",
+              "effects": [
+                "Ignores enemys DEF by 60",
+                "Ignores Evasion",
+                "With skill accuracy, [Naraka Form]s Lv.+1",
+                "Reaching [Naraka Form]s Lv.5, changes to [Ghostly Blade]",
+                "If [Ghostly Blade] is applied, changes to [Naraka - Ghost]",
+                "[PC] In [Naraka Form] state, Skill ATK increases in proportion to extra [AGI](Max 300%)",
+                "[Monster] Increase Skill ATK by 2 times + (6% of extra [AGI]) if [Naraka Form] is active"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "Ignores enemys DEF by 60",
+                "Ignores Evasion",
+                "With skill accuracy, [Naraka Form]s Lv.+1",
+                "Reaching [Naraka Form]s Lv.5, changes to [Ghostly Blade]",
+                "If [Ghostly Blade] is applied, changes to [Naraka - Ghost]",
+                "[PC] In [Naraka Form] state, Skill ATK increases in proportion to extra [AGI](Max 300%)",
+                "[Monster] Increase Skill ATK by 2 times + (6% of extra [AGI]) if [Naraka Form] is active"
+              ]
             }
           ],
           "special": []
@@ -311,14 +385,36 @@
           "sp_cost": "750",
           "aggro": "314",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 1",
+          "soft_armor_atk": "150%",
+          "heavy_armor_atk": "50%",
+          "light_armor_atk": "150%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2500%"
+              "value": "АТК: 2500%",
+              "effects": [
+                "Ignores enemys DEF by 75",
+                "Ignores Evasion",
+                "With skill accuracy, [Naraka Form]s Lv.+1",
+                "Reaching [Naraka Form]s Lv.5, changes to [Ghostly Blade]",
+                "If [Ghostly Blade] is applied, changes to [Naraka - Ghost]",
+                "[PC] In [Naraka Form] state, Skill ATK increases in proportion to extra [AGI](Max 300%)",
+                "[Monster] Increase Skill ATK by 2 times + (6% of extra [AGI]) if [Naraka Form] is active"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5000%"
+              "value": "АТК: 5000%",
+              "effects": [
+                "Ignores enemys DEF by 75",
+                "Ignores Evasion",
+                "With skill accuracy, [Naraka Form]s Lv.+1",
+                "Reaching [Naraka Form]s Lv.5, changes to [Ghostly Blade]",
+                "If [Ghostly Blade] is applied, changes to [Naraka - Ghost]",
+                "[PC] In [Naraka Form] state, Skill ATK increases in proportion to extra [AGI](Max 300%)",
+                "[Monster] Increase Skill ATK by 2 times + (6% of extra [AGI]) if [Naraka Form] is active"
+              ]
             }
           ],
           "special": []
@@ -336,14 +432,36 @@
           "sp_cost": "950",
           "aggro": "159",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 3",
+          "soft_armor_atk": "125%",
+          "heavy_armor_atk": "75%",
+          "light_armor_atk": "150%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": [
+                "Ignores enemys DEF by 75",
+                "With skill accuracy, [Naraka Form]s Lv.+1",
+                "Reaching [Naraka Form]s Lv.5, changes to [Ghostly Blade]",
+                "If [Ghostly Blade] is applied, changes to [Naraka - Ghost]",
+                "[PC] In [Naraka Form] state, Skill ATK increases in proportion to extra [AGI](Max 300%)",
+                "[Monster] Increase Skill ATK by 2 times + (6% of extra [AGI]) if [Naraka Form] is active",
+                "75% chance to inflict [Control] on enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3600%"
+              "value": "АТК: 3600%",
+              "effects": [
+                "Ignores enemys DEF by 75",
+                "With skill accuracy, [Naraka Form]s Lv.+1",
+                "Reaching [Naraka Form]s Lv.5, changes to [Ghostly Blade]",
+                "If [Ghostly Blade] is applied, changes to [Naraka - Ghost]",
+                "[PC] In [Naraka Form] state, Skill ATK increases in proportion to extra [AGI](Max 300%)",
+                "[Monster] Increase Skill ATK by 2 times + (6% of extra [AGI]) if [Naraka Form] is active",
+                "75% chance to inflict [Control] on enemy"
+              ]
             }
           ],
           "special": []
@@ -361,14 +479,36 @@
           "sp_cost": "1050",
           "aggro": "260",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 2",
+          "soft_armor_atk": "175%",
+          "heavy_armor_atk": "30%",
+          "light_armor_atk": "150%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "Ignores enemys DEF by 80",
+                "Ignores Evasion",
+                "With skill accuracy, [Naraka Form]s Lv.+1",
+                "Reaching [Naraka Form]s Lv.5, changes to [Ghostly Blade]",
+                "If [Ghostly Blade] is applied, changes to [Naraka - Ghost]",
+                "[PC] In [Naraka Form] state, Skill ATK increases in proportion to extra [AGI](Max 300%)",
+                "[Monster] Increase Skill ATK by 2 times + (6% of extra [AGI]) if [Naraka Form] is active"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 6000%"
+              "value": "АТК: 6000%",
+              "effects": [
+                "Ignores enemys DEF by 80",
+                "Ignores Evasion",
+                "With skill accuracy, [Naraka Form]s Lv.+1",
+                "Reaching [Naraka Form]s Lv.5, changes to [Ghostly Blade]",
+                "If [Ghostly Blade] is applied, changes to [Naraka - Ghost]",
+                "[PC] In [Naraka Form] state, Skill ATK increases in proportion to extra [AGI](Max 300%)",
+                "[Monster] Increase Skill ATK by 2 times + (6% of extra [AGI]) if [Naraka Form] is active"
+              ]
             }
           ],
           "special": []
@@ -404,7 +544,7 @@
       },
       "stats": {
         "ASPD": "260",
-        "Bonus ATK": "300%",
+        "Bonus ATK": "330%",
         "MSPD": "1",
         "MSPD Limit": "8.50",
         "ACC": "30",
@@ -421,6 +561,7 @@
         "Penetration": "5+25",
         "Immunity": "5+10"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Naraka Form II: Demon",
@@ -435,14 +576,36 @@
           "sp_cost": "560",
           "aggro": "260",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "150%",
+          "heavy_armor_atk": "50%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": [
+                "Ignores enemys DEF by 75",
+                "Ignores Block",
+                "Ignores 1/2 of enemy shields DEF",
+                "With skill accuracy, [Ghostly Blade]s level -1",
+                "[PC] Skill ATK increases in proportion to enemys lost HP(Max 250%)",
+                "[Monster] Increase Skill ATK by 2 times + (5% of extra [AGI]) if [Ghostly Blade] is active",
+                "[Monster] Ignore enemys DEF by (50% of extra [AGI]) if [Ghostly Blade] is active"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3600%"
+              "value": "АТК: 3600%",
+              "effects": [
+                "Ignores enemys DEF by 75",
+                "Ignores Block",
+                "Ignores 1/2 of enemy shields DEF",
+                "With skill accuracy, [Ghostly Blade]s level -1",
+                "[PC] Skill ATK increases in proportion to enemys lost HP(Max 250%)",
+                "[Monster] Increase Skill ATK by 2 times + (5% of extra [AGI]) if [Ghostly Blade] is active",
+                "[Monster] Ignore enemys DEF by (50% of extra [AGI]) if [Ghostly Blade] is active"
+              ]
             }
           ],
           "special": []
@@ -460,14 +623,36 @@
           "sp_cost": "920",
           "aggro": "352",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 1",
+          "soft_armor_atk": "125%",
+          "heavy_armor_atk": "50%",
+          "light_armor_atk": "150%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2500%"
+              "value": "АТК: 2500%",
+              "effects": [
+                "Ignores enemys DEF by 75",
+                "Ignores Block",
+                "Ignores 1/2 of enemy shields DEF",
+                "With skill accuracy, [Ghostly Blade]s level -1",
+                "[PC] Skill ATK increases in proportion to enemys lost HP(Max 250%)",
+                "[Monster] Increase Skill ATK by 2 times + (5% of extra [AGI]) if [Ghostly Blade] is active",
+                "[Monster] Ignore enemys DEF by (50% of extra [AGI]) if [Ghostly Blade] is active"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5000%"
+              "value": "АТК: 5000%",
+              "effects": [
+                "Ignores enemys DEF by 75",
+                "Ignores Block",
+                "Ignores 1/2 of enemy shields DEF",
+                "With skill accuracy, [Ghostly Blade]s level -1",
+                "[PC] Skill ATK increases in proportion to enemys lost HP(Max 250%)",
+                "[Monster] Increase Skill ATK by 2 times + (5% of extra [AGI]) if [Ghostly Blade] is active",
+                "[Monster] Ignore enemys DEF by (50% of extra [AGI]) if [Ghostly Blade] is active"
+              ]
             }
           ],
           "special": []
@@ -485,14 +670,38 @@
           "sp_cost": "950",
           "aggro": "250",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 3",
+          "soft_armor_atk": "125%",
+          "heavy_armor_atk": "75%",
+          "light_armor_atk": "150%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2600%"
+              "value": "АТК: 2600%",
+              "effects": [
+                "Ignores enemys DEF by 75",
+                "Ignores Block",
+                "50% chance to impose [Silence]",
+                "Ignores enemy shields DEF by 1/2",
+                "With skill accuracy, [Ghostly Blade]s level -1",
+                "[PC] Skill ATK increases in proportion to enemys lost HP(Max 250%)",
+                "[Monster] Increase Skill ATK by 2 times + (5% of extra [AGI]) if [Ghostly Blade] is active",
+                "[Monster] Ignore enemys DEF by (50% of extra [AGI]) if [Ghostly Blade] is active"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5200%"
+              "value": "АТК: 5200%",
+              "effects": [
+                "Ignores enemys DEF by 75",
+                "Ignores Block",
+                "50% chance to impose [Silence]",
+                "Ignores enemy shields DEF by 1/2",
+                "With skill accuracy, [Ghostly Blade]s level -1",
+                "[PC] Skill ATK increases in proportion to enemys lost HP(Max 250%)",
+                "[Monster] Increase Skill ATK by 2 times + (5% of extra [AGI]) if [Ghostly Blade] is active",
+                "[Monster] Ignore enemys DEF by (50% of extra [AGI]) if [Ghostly Blade] is active"
+              ]
             }
           ],
           "special": []
@@ -510,14 +719,32 @@
           "sp_cost": "1350",
           "aggro": "200",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "Ignores enemys DEF by 75",
+                "With skill accuracy, [Ghostly Blade]s level -1",
+                "[PC] Skill ATK increases in proportion to enemys lost HP(Max 250%)",
+                "[Monster] Increase Skill ATK by 2 times + (5% of extra [AGI]) if [Ghostly Blade] is active",
+                "[Monster] Ignore enemys DEF by (50% of extra [AGI]) if [Ghostly Blade] is active"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 6000%"
+              "value": "АТК: 6000%",
+              "effects": [
+                "Ignores enemys DEF by 75",
+                "With skill accuracy, [Ghostly Blade]s level -1",
+                "[PC] Skill ATK increases in proportion to enemys lost HP(Max 250%)",
+                "[Monster] Increase Skill ATK by 2 times + (5% of extra [AGI]) if [Ghostly Blade] is active",
+                "[Monster] Ignore enemys DEF by (50% of extra [AGI]) if [Ghostly Blade] is active"
+              ]
             }
           ],
           "special": []

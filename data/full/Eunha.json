@@ -2,7 +2,7 @@
   "slug": "Eunha",
   "equipment": {
     "category": "Usable Equipment",
-    "medal": "Astrologer of Dongye Country Do you want to know the future?",
+    "medal": "Astrologer of Dongye Country Do you want to know the future? 20th Anniversary with Linden",
     "head": "None",
     "earring": "Earring",
     "face": "None",
@@ -101,6 +101,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -144,6 +145,7 @@
         "Penetration": "20+10",
         "Immunity": "5+10"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Saturday - Star",
@@ -158,14 +160,40 @@
           "sp_cost": "250",
           "aggro": "50",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 7",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1000%"
+              "value": "АТК: 1000%",
+              "effects": [
+                "When cast, [Unhittable]",
+                "When hit, 60% chance to [Armor Crusher] enemy PC",
+                "[Heavenly Field - Blue]",
+                "4x skill damage to monsters",
+                "[Heavenly Field - Black]",
+                "When cast, gain 30% of max HP [Skill Shield]",
+                "[Heavenly Field - Red]",
+                "1.5x skill damage to enemy PC",
+                "Ignores abnormal status resistance for enemy PCs"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2000%"
+              "value": "АТК: 2000%",
+              "effects": [
+                "When cast, [Unhittable]",
+                "When hit, 60% chance to [Armor Crusher] enemy PC",
+                "[Heavenly Field - Blue]",
+                "4x skill damage to monsters",
+                "[Heavenly Field - Black]",
+                "When cast, gain 30% of max HP [Skill Shield]",
+                "[Heavenly Field - Red]",
+                "1.5x skill damage to enemy PC",
+                "Ignores abnormal status resistance for enemy PCs"
+              ]
             }
           ],
           "special": []
@@ -183,14 +211,42 @@
           "sp_cost": "300",
           "aggro": "70",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 7",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1070%"
+              "value": "АТК: 1070%",
+              "effects": [
+                "When casting, [Unhittable]",
+                "When hitting, 70% chance to [Armor Break] enemy PC",
+                "[Heavenly Field - Blue]",
+                "4x skill damage to monsters",
+                "The fewer people hit, the more skill damage is dealt",
+                "[Heavenly Field - Black]",
+                "When casting, gain [Skill Shield] equal to 30% of max HP",
+                "[Heavenly Field - Red]",
+                "1.5x skill damage to enemy PC",
+                "Ignores abnormal status resistance for enemy PC"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2140%"
+              "value": "АТК: 2140%",
+              "effects": [
+                "When casting, [Unhittable]",
+                "When hitting, 70% chance to [Armor Break] enemy PC",
+                "[Heavenly Field - Blue]",
+                "4x skill damage to monsters",
+                "The fewer people hit, the more skill damage is dealt",
+                "[Heavenly Field - Black]",
+                "When casting, gain [Skill Shield] equal to 30% of max HP",
+                "[Heavenly Field - Red]",
+                "1.5x skill damage to enemy PC",
+                "Ignores abnormal status resistance for enemy PC"
+              ]
             }
           ],
           "special": []
@@ -208,14 +264,40 @@
           "sp_cost": "450",
           "aggro": "90",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1150%"
+              "value": "АТК: 1150%",
+              "effects": [
+                "When hitting, 30% chance to [Drain] enemy PC",
+                "[Heavenly Field - Blue]",
+                "4x skill damage to monsters",
+                "The fewer people hit, the more skill damage is doubled",
+                "[Heavenly Field - Black]",
+                "When casting, gain 30% of max HP [Skill Shield]",
+                "[Heavenly Field - Red]",
+                "Double skill damage to enemy PC",
+                "Ignores status resistance for enemy PC"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2300%"
+              "value": "АТК: 2300%",
+              "effects": [
+                "When hitting, 30% chance to [Drain] enemy PC",
+                "[Heavenly Field - Blue]",
+                "4x skill damage to monsters",
+                "The fewer people hit, the more skill damage is doubled",
+                "[Heavenly Field - Black]",
+                "When casting, gain 30% of max HP [Skill Shield]",
+                "[Heavenly Field - Red]",
+                "Double skill damage to enemy PC",
+                "Ignores status resistance for enemy PC"
+              ]
             }
           ],
           "special": []
@@ -233,14 +315,42 @@
           "sp_cost": "650",
           "aggro": "110",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 13",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1250%"
+              "value": "АТК: 1250%",
+              "effects": [
+                "[Cheoncha Field - Blue]",
+                "10x skill damage to monsters",
+                "Ignore additional defense of monsters equal to [Strength] (max 150 ignored)",
+                "[Cheoncha Field - Black]",
+                "When casting, gain [Skill Shield] equal to 50% of max HP",
+                "[Cheoncha Field - Red]",
+                "Remove enemy stealth",
+                "Ignore blocking",
+                "Ignore enemy PC shield defense and defense rating",
+                "Double skill damage to enemy PCs"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2500%"
+              "value": "АТК: 2500%",
+              "effects": [
+                "[Cheoncha Field - Blue]",
+                "10x skill damage to monsters",
+                "Ignore additional defense of monsters equal to [Strength] (max 150 ignored)",
+                "[Cheoncha Field - Black]",
+                "When casting, gain [Skill Shield] equal to 50% of max HP",
+                "[Cheoncha Field - Red]",
+                "Remove enemy stealth",
+                "Ignore blocking",
+                "Ignore enemy PC shield defense and defense rating",
+                "Double skill damage to enemy PCs"
+              ]
             }
           ],
           "special": []
@@ -258,14 +368,44 @@
           "sp_cost": "750",
           "aggro": "130",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 15",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1110%"
+              "value": "АТК: 1110%",
+              "effects": [
+                "[Cheoncha Field - Blue]",
+                "10x skill damage to monsters",
+                "Ignore additional defense of monsters equal to [Strength] (max 150 ignored)",
+                "[Cheoncha Field - Black]",
+                "When cast, [Unable to be hit]",
+                "When cast, gain [Skill Shield] equal to 50% of maximum HP",
+                "[Cheoncha Field - Red]",
+                "Ignore enemy PC evasion",
+                "Ignore blocking",
+                "Ignore enemy PC shield defense and defense rating",
+                "Double skill damage to enemy PCs"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2220%"
+              "value": "АТК: 2220%",
+              "effects": [
+                "[Cheoncha Field - Blue]",
+                "10x skill damage to monsters",
+                "Ignore additional defense of monsters equal to [Strength] (max 150 ignored)",
+                "[Cheoncha Field - Black]",
+                "When cast, [Unable to be hit]",
+                "When cast, gain [Skill Shield] equal to 50% of maximum HP",
+                "[Cheoncha Field - Red]",
+                "Ignore enemy PC evasion",
+                "Ignore blocking",
+                "Ignore enemy PC shield defense and defense rating",
+                "Double skill damage to enemy PCs"
+              ]
             }
           ],
           "special": []

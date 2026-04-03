@@ -96,6 +96,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -140,6 +141,7 @@
         "Penetration": "10+5",
         "Immunity": "10+20"
       },
+      "consume": "",
       "skills": [
         {
           "name": "ANE",
@@ -154,26 +156,60 @@
           "sp_cost": "150",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration : 20 seconds"
+              "value": "",
+              "effects": [
+                "Duration : 20 seconds",
+                "Ally DEF +2, All RES +1, Nullify enhanced value of normal, skill ATK when hit by enemy during [Anesthesia], Max. HP -50%",
+                "Cannot re-apply [Anesthesia] for 30 seconds after effect duration is over",
+                "30% chance to inflict [Sleep] on enemy, Increase in chance proportional to [STR] or [HP] of Tom"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration : 200 seconds"
+              "value": "",
+              "effects": [
+                "Duration : 200 seconds",
+                "Ally DEF +20, All RES +15, IMM +5, Nullify enhanced value of normal, skill ATK when hit by enemy during [Anesthesia], Max. HP -50%",
+                "Cannot re-apply [Anesthesia] for 30 seconds after effect duration is over",
+                "30% chance to inflict [Sleep] on enemy, Increase in chance proportional to [STR] or [HP] of Tom"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration : 220 seconds"
+              "value": "",
+              "effects": [
+                "Duration : 220 seconds",
+                "Ally DEF +27, All RES +18, IMM +9, Nullify enhanced value of normal, skill ATK when hit by enemy during [Anesthesia], Max. HP -50%",
+                "Cannot re-apply [Anesthesia] for 30 seconds after effect duration is over",
+                "30% chance to inflict [Sleep] on enemy, Increase in chance proportional to [STR] or [HP] of Tom"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration : 240 seconds"
+              "value": "",
+              "effects": [
+                "Duration : 240 seconds",
+                "Ally DEF +30, All RES +20, IMM +10, Nullify enhanced value of normal, skill ATK when hit by enemy during [Anesthesia], Max. HP -50%",
+                "Cannot re-apply [Anesthesia] for 30 seconds after effect duration is over",
+                "30% chance to inflict [Sleep] on enemy, Increase in chance proportional to [STR] or [HP] of Tom"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration : 260 seconds"
+              "value": "",
+              "effects": [
+                "Duration : 260 seconds",
+                "Ally DEF +32, All RES +22, IMM +11, Nullify enhanced value of normal, skill ATK when hit by enemy during [Anesthesia], Max. HP -50%",
+                "Cannot re-apply [Anesthesia] for 30 seconds after effect duration is over",
+                "30% chance to inflict [Sleep] on enemy, Increase in chance proportional to [STR] or [HP] of Tom"
+              ]
             }
           ],
           "special": []
@@ -191,14 +227,28 @@
           "sp_cost": "200",
           "aggro": "50",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2000%"
+              "value": "АТК: 2000%",
+              "effects": [
+                "Ignore enemy DEF by 65",
+                "60% chance to inflict [Bleeding]",
+                "Damage x2 when [Decision] is used to enemies under [Sleep]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4000%"
+              "value": "АТК: 4000%",
+              "effects": [
+                "Ignore enemy DEF by 65",
+                "60% chance to inflict [Bleeding]",
+                "Damage x2 when [Decision] is used to enemies under [Sleep]"
+              ]
             }
           ],
           "special": []
@@ -216,14 +266,32 @@
           "sp_cost": "250",
           "aggro": "50",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2500%"
+              "value": "АТК: 2500%",
+              "effects": [
+                "Ignore enemy DEF by 50",
+                "Duration : 120 seconds",
+                "Ally ATK +30%, ATK against monsters +20%, Critical Rate +20%, All Penetration +10, Additional effect is applied according to the weapon equipped",
+                "[Attack Reaction] is applied after [Excision] is over",
+                "30% chance to inflict [Excision] on enemy, increase in chance proportional to [STR] or [HP] of Tom."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5000%"
+              "value": "АТК: 5000%",
+              "effects": [
+                "Ignore enemy DEF by 50",
+                "Duration : 120 seconds",
+                "Ally ATK +30%, ATK against monsters +20%, Critical Rate +20%, All Penetration +10, Additional effect is applied according to the weapon equipped",
+                "[Attack Reaction] is applied after [Excision] is over",
+                "30% chance to inflict [Excision] on enemy, increase in chance proportional to [STR] or [HP] of Tom."
+              ]
             }
           ],
           "special": []
@@ -241,14 +309,32 @@
           "sp_cost": "300",
           "aggro": "50",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "Ignore enemy DEF by 50",
+                "Duration : 120 seconds",
+                "Ally DEF +20, All RES +15, IMM +10, Additional effect is applied according to the armor equipped",
+                "[Defense Reaction] is applied after [Stitch] is over",
+                "30% chance to inflict [Stitch] on enemy, Increase in chance proportional to [STR] or [HP] of Tom."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 6000%"
+              "value": "АТК: 6000%",
+              "effects": [
+                "Ignore enemy DEF by 50",
+                "Duration : 120 seconds",
+                "Ally DEF +20, All RES +15, IMM +10, Additional effect is applied according to the armor equipped",
+                "[Defense Reaction] is applied after [Stitch] is over",
+                "30% chance to inflict [Stitch] on enemy, Increase in chance proportional to [STR] or [HP] of Tom."
+              ]
             }
           ],
           "special": []
@@ -266,14 +352,24 @@
           "sp_cost": "500",
           "aggro": "0",
           "skill_type": "Build",
+          "consume_item": "High Quality Wood x 3",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Ally HP recovery increased within the range"
+              "value": "",
+              "effects": [
+                "Ally HP recovery increased within the range"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Ally HP recovery increased within the range"
+              "value": "",
+              "effects": [
+                "Ally HP recovery increased within the range"
+              ]
             }
           ],
           "special": []
@@ -328,6 +424,7 @@
         "Penetration": "10+20",
         "Immunity": "10+5"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Hyperbolemic Shock",
@@ -342,14 +439,40 @@
           "sp_cost": "100",
           "aggro": "105",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": [
+                "Ignores enemy DEF by 75",
+                "[Delight of Slaughter] Lv +1 when skill hits enemy",
+                "[Delight of Slaughter Lv 3] changes to [Tom - Reckless]",
+                "Ignores Damage exceeding current HP twice and resets level",
+                "[Artery Amputation] Lv +1 to enemy when skill hits enemy",
+                "[Artery Amputation Lv 3] stops renewal",
+                "[Monster] with [Artery Amputation Lv 3] receives additional Damage and 50~100% Critical Damage from normal attack of Tom",
+                "[PC] with [Artery Amputation Lv 3] receives additional Damage and 1~7% Damage proportion to Max HP from normal attack of Tom",
+                "[Artery Amputation] not applicable to same target for 30 seconds."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3600%"
+              "value": "АТК: 3600%",
+              "effects": [
+                "Ignores enemy DEF by 75",
+                "[Delight of Slaughter] Lv +1 when skill hits enemy",
+                "[Delight of Slaughter Lv 3] changes to [Tom - Reckless]",
+                "Ignores Damage exceeding current HP twice and resets level",
+                "[Artery Amputation] Lv +1 to enemy when skill hits enemy",
+                "[Artery Amputation Lv 3] stops renewal",
+                "[Monster] with [Artery Amputation Lv 3] receives additional Damage and 50~100% Critical Damage from normal attack of Tom",
+                "[PC] with [Artery Amputation Lv 3] receives additional Damage and 1~7% Damage proportion to Max HP from normal attack of Tom",
+                "[Artery Amputation] not applicable to same target for 30 seconds."
+              ]
             }
           ],
           "special": []
@@ -367,14 +490,28 @@
           "sp_cost": "300",
           "aggro": "200",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2500%"
+              "value": "АТК: 2500%",
+              "effects": [
+                "Ignores enemy DEF by 70",
+                "40% chance to inflict [Fire] on enemy with skill",
+                "Increased Damage against farther target."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5000%"
+              "value": "АТК: 5000%",
+              "effects": [
+                "Ignores enemy DEF by 70",
+                "40% chance to inflict [Fire] on enemy with skill",
+                "Increased Damage against farther target."
+              ]
             }
           ],
           "special": []
@@ -392,14 +529,40 @@
           "sp_cost": "150",
           "aggro": "130",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "Ignores enemy DEF by 65",
+                "[Delight of Slaughter] Lv +1 when skill hits enemy",
+                "[Delight of Slaughter Lv 3] changes to [Tom - Reckless]",
+                "Ignores Damage exceeding current HP twice and resets level",
+                "[Artery Amputation] Lv +1 to enemy when skill hits enemy",
+                "[Artery Amputation Lv 3] stops renewal",
+                "[Monster] with [Artery Amputation Lv 3] receives additional Damage and 50~100% Critical Damage from normal attack of Tom",
+                "[PC] with [Artery Amputation Lv 3] receives additional Damage and 1~7% Damage proportion to Max HP from normal attack of Tom",
+                "[Artery Amputation] not applicable to same target for 30 seconds."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4400%"
+              "value": "АТК: 4400%",
+              "effects": [
+                "Ignores enemy DEF by 65",
+                "[Delight of Slaughter] Lv +1 when skill hits enemy",
+                "[Delight of Slaughter Lv 3] changes to [Tom - Reckless]",
+                "Ignores Damage exceeding current HP twice and resets level",
+                "[Artery Amputation] Lv +1 to enemy when skill hits enemy",
+                "[Artery Amputation Lv 3] stops renewal",
+                "[Monster] with [Artery Amputation Lv 3] receives additional Damage and 50~100% Critical Damage from normal attack of Tom",
+                "[PC] with [Artery Amputation Lv 3] receives additional Damage and 1~7% Damage proportion to Max HP from normal attack of Tom",
+                "[Artery Amputation] not applicable to same target for 30 seconds."
+              ]
             }
           ],
           "special": []
@@ -417,14 +580,42 @@
           "sp_cost": "200",
           "aggro": "280",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "Ignores enemy DEF by 60",
+                "[Delight of Slaughter] Lv +1 when skill hits enemy",
+                "[Delight of Slaughter Lv 3] changes to [Tom - Reckless]",
+                "Ignores Damage exceeding current HP twice and resets level",
+                "[Artery Amputation] Lv +1 to enemy when skill hits enemy",
+                "[Artery Amputation Lv 3] stops renewal",
+                "[Monster] with [Artery Amputation Lv 3] receives additional Damage and 50~100% Critical Damage from normal attack of Tom",
+                "[PC] with [Artery Amputation Lv 3] receives additional Damage and 1~7% Damage proportion to Max HP from normal attack of Tom",
+                "[Artery Amputation] not applicable to same target for 30 seconds",
+                "Damage increased proportion to the number of battings."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 6000%"
+              "value": "АТК: 6000%",
+              "effects": [
+                "Ignores enemy DEF by 60",
+                "[Delight of Slaughter] Lv +1 when skill hits enemy",
+                "[Delight of Slaughter Lv 3] changes to [Tom - Reckless]",
+                "Ignores Damage exceeding current HP twice and resets level",
+                "[Artery Amputation] Lv +1 to enemy when skill hits enemy",
+                "[Artery Amputation Lv 3] stops renewal",
+                "[Monster] with [Artery Amputation Lv 3] receives additional Damage and 50~100% Critical Damage from normal attack of Tom",
+                "[PC] with [Artery Amputation Lv 3] receives additional Damage and 1~7% Damage proportion to Max HP from normal attack of Tom",
+                "[Artery Amputation] not applicable to same target for 30 seconds",
+                "Damage increased proportion to the number of battings."
+              ]
             }
           ],
           "special": []

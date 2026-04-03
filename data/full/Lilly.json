@@ -2,7 +2,7 @@
   "slug": "Lilly",
   "equipment": {
     "category": "Usable Equipment",
-    "medal": "Pure Lamb Brothers and sisters, rise again...",
+    "medal": "Pure Lamb Brothers and sisters, rise again... 20th Anniversary with Linden",
     "head": "None",
     "earring": "Earring",
     "face": "None",
@@ -87,6 +87,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -128,6 +129,7 @@
         "Penetration": "15+15",
         "Immunity": "10+5"
       },
+      "consume": "Psychic Sphere x 2",
       "skills": [
         {
           "name": "Heretic Interrogation",
@@ -142,14 +144,30 @@
           "sp_cost": "250",
           "aggro": "50",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "120%",
+          "heavy_armor_atk": "90%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 700%"
+              "value": "АТК: 700%",
+              "effects": [
+                "50% chance of [Answer to Prayer] when used while under the effect of [Tender Lambs Prayer]",
+                "Skill damage x5 while under the effect of [Tender Lambs Prayer] (x3 for PCs)",
+                "Inflicts [Torment] +1 level on the enemy when a skill hits a monster",
+                "Inflicts [Sin] +1 level on the enemy when a skill hits"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1400%"
+              "value": "АТК: 1400%",
+              "effects": [
+                "50% chance of [Answer to Prayer] when used while under the effect of [Tender Lambs Prayer]",
+                "Skill damage x5 while under the effect of [Tender Lambs Prayer] (x3 for PCs)",
+                "Inflicts [Torment] +1 level on the enemy when a skill hits a monster",
+                "Inflicts [Sin] +1 level on the enemy when a skill hits"
+              ]
             }
           ],
           "special": []
@@ -167,14 +185,28 @@
           "sp_cost": "300",
           "aggro": "50",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 12",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "105%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 800%"
+              "value": "АТК: 800%",
+              "effects": [
+                "50% chance of [Answer to Prayer] when used while under the effect of [Tender Lambs Prayer]",
+                "Skill damage x5 while under the effect of [Tender Lambs Prayer] (x3 for PCs)",
+                "Inflicts [Sin] +1 level on the enemy when a skill hits"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1600%"
+              "value": "АТК: 1600%",
+              "effects": [
+                "50% chance of [Answer to Prayer] when used while under the effect of [Tender Lambs Prayer]",
+                "Skill damage x5 while under the effect of [Tender Lambs Prayer] (x3 for PCs)",
+                "Inflicts [Sin] +1 level on the enemy when a skill hits"
+              ]
             }
           ],
           "special": []
@@ -192,14 +224,38 @@
           "sp_cost": "1720",
           "aggro": "0",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 23",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "105%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1180%"
+              "value": "АТК: 1180%",
+              "effects": [
+                "50% chance of [Answer to Prayer] when used while under the effect of [Tender Lambs Prayer]",
+                "Skill damage x5 while under the effect of [Tender Lambs Prayer] (x3 for PCs)",
+                "Inflicts [Sin] +1 level on the enemy when a skill hits",
+                "Creates a [Thorny Path of Suffering] centered on the designated ground",
+                "[Thorny Path of Suffering]",
+                "Duration: 6 seconds",
+                "Inflicts [Torment] +1 level on enemy monsters every second while on the [Thorny Path of Suffering]",
+                "Inflicts [Sin] +1 level on enemies every second"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2360%"
+              "value": "АТК: 2360%",
+              "effects": [
+                "50% chance of [Answer to Prayer] when used while under the effect of [Tender Lambs Prayer]",
+                "Skill damage x5 while under the effect of [Tender Lambs Prayer] (x3 for PCs)",
+                "Inflicts [Sin] +1 level on the enemy when a skill hits",
+                "Creates a [Thorny Path of Suffering] centered on the designated ground",
+                "[Thorny Path of Suffering]",
+                "Duration: 6 seconds",
+                "Inflicts [Torment] +1 level on enemy monsters every second while on the [Thorny Path of Suffering]",
+                "Inflicts [Sin] +1 level on enemies every second"
+              ]
             }
           ],
           "special": []
@@ -217,14 +273,36 @@
           "sp_cost": "1210",
           "aggro": "0",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 14",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 150%"
+              "value": "АТК: 150%",
+              "effects": [
+                "Up to 10 attacks during cast time",
+                "Casting is stopped if used again during casting.",
+                "Skill damage applied to each attack.",
+                "The last attack inflicts much stronger damage.",
+                "50% chance of [Answer to Prayer] when used under [Prayer of the Gentle Lamb]",
+                "Skill damage x5 under [Prayer of the Gentle Lamb] (x3 against PCs)",
+                "Enemy [Sinner] level +1 when skill hits."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 300%"
+              "value": "АТК: 300%",
+              "effects": [
+                "Up to 10 attacks during cast time",
+                "Casting is stopped if used again during casting.",
+                "Skill damage applied to each attack.",
+                "The last attack inflicts much stronger damage.",
+                "50% chance of [Answer to Prayer] when used under [Prayer of the Gentle Lamb]",
+                "Skill damage x5 under [Prayer of the Gentle Lamb] (x3 against PCs)",
+                "Enemy [Sinner] level +1 when skill hits."
+              ]
             }
           ],
           "special": []
@@ -242,14 +320,28 @@
           "sp_cost": "1980",
           "aggro": "150",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 32",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "120%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1320%"
+              "value": "АТК: 1320%",
+              "effects": [
+                "Skill damage up to x10 based on enemy [Sinner] level (up to x5 against PCs)",
+                "Skill cooldown resets when hitting an enemy with [Sinner] level 10",
+                "Removes enemy [Sinner] status when hit."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2640%"
+              "value": "АТК: 2640%",
+              "effects": [
+                "Skill damage up to x10 based on enemy [Sinner] level (up to x5 against PCs)",
+                "Skill cooldown resets when hitting an enemy with [Sinner] level 10",
+                "Removes enemy [Sinner] status when hit."
+              ]
             }
           ],
           "special": []

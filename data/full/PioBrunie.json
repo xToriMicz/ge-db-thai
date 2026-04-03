@@ -89,6 +89,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -134,6 +135,7 @@
         "Penetration": "5+20",
         "Immunity": "5+10"
       },
+      "consume": "Large Caliber Bullet x 3",
       "skills": [
         {
           "name": "Wanted Road",
@@ -148,26 +150,83 @@
           "sp_cost": "550",
           "aggro": "0",
           "skill_type": "",
+          "consume_item": "Ancient Star Orb x 15",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 180 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 180 seconds",
+                "Attack Power against PCs +1%",
+                "Movement Speed +6%",
+                "Attack Speed +6%",
+                "If [Hunter Brunie]:",
+                "Critical +1",
+                "Evasion +2",
+                "Normal attack damage doubled"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 180 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 180 seconds",
+                "Attack Power against PCs +10%",
+                "Movement Speed +15%",
+                "Attack Speed +15%",
+                "If [Hunter Brunie]:",
+                "Critical +10",
+                "Evasion +20",
+                "Normal attack damage doubled"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 180 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 180 seconds",
+                "Attack Power against PCs +11%",
+                "Casting Time -6%",
+                "Movement Speed +16%",
+                "Attack Speed +16%",
+                "If [Hunter Brunie]:",
+                "Critical +11",
+                "Evasion +22",
+                "Normal attack damage doubled"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 180 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 180 seconds",
+                "Attack Power against PCs +12%",
+                "Casting Time -7%",
+                "Movement Speed +17%",
+                "Attack Speed +17%",
+                "If [Hunter Brunie]:",
+                "Critical +12",
+                "Evasion +24",
+                "Normal attack damage doubled"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 180 seconds"
+              "value": "",
+              "effects": [
+                "Duration: 180 seconds",
+                "Attack Power against PCs +13%",
+                "Casting Time -8%",
+                "Movement Speed +18%",
+                "Attack Speed +18%",
+                "If [Hunter Brunie]:",
+                "Critical +13",
+                "Evasion +26",
+                "Normal attack damage doubled"
+              ]
             }
           ],
           "special": []
@@ -185,14 +244,34 @@
           "sp_cost": "210",
           "aggro": "35",
           "skill_type": "",
+          "consume_item": "Large Caliber Bullet x 4",
+          "soft_armor_atk": "110%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 382%"
+              "value": "АТК: 382%",
+              "effects": [
+                "100% chance to inflict [Critical Wound] on the enemy.",
+                "On enemy cast: [Bullet Penetration] +1 level (max 3 levels).",
+                "Skill damage doubled against enemies under [Critical Wound].",
+                "Recharge time: 10 seconds.",
+                "Maximum of 2 uses.",
+                "Recharges after 1 use."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 764%"
+              "value": "АТК: 764%",
+              "effects": [
+                "100% chance to inflict [Critical Wound] on the enemy.",
+                "On enemy cast: [Bullet Penetration] +1 level (max 3 levels).",
+                "Skill damage doubled against enemies under [Critical Wound].",
+                "Recharge time: 10 seconds.",
+                "Maximum of 2 uses.",
+                "Recharges after 1 use."
+              ]
             }
           ],
           "special": []
@@ -201,7 +280,7 @@
           "name": "Slider Raid",
           "image": "wtdult_slidershot.jpg",
           "description": "Slides forward, subduing enemies.",
-          "target": "",
+          "target": "Max Range 2m - 10m / Radius 5m / Max 6 targets",
           "casting_time": "0.782 sec.",
           "cooldown": "15 sec.",
           "duration": "3.9 sec.",
@@ -210,14 +289,28 @@
           "sp_cost": "340",
           "aggro": "75",
           "skill_type": "",
+          "consume_item": "Large Caliber Bullet x 6",
+          "soft_armor_atk": "120%",
+          "heavy_armor_atk": "90%",
+          "light_armor_atk": "95%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 724%"
+              "value": "АТК: 724%",
+              "effects": [
+                "On enemy cast: [Bullet Penetration] +1 level (max 3 levels).",
+                "Skill damage doubled against enemies under [Critical Wound].",
+                "Skill damage increases up to 4x based on [Bullet Penetration] level."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1448%"
+              "value": "АТК: 1448%",
+              "effects": [
+                "On enemy cast: [Bullet Penetration] +1 level (max 3 levels).",
+                "Skill damage doubled against enemies under [Critical Wound].",
+                "Skill damage increases up to 4x based on [Bullet Penetration] level."
+              ]
             }
           ],
           "special": []
@@ -226,7 +319,7 @@
           "name": "Escape Trench",
           "image": "wtdult_escapeshot.jpg",
           "description": "Leaps backward, removing the invincibility of nearby enemies while delivering consecutive attacks.",
-          "target": "",
+          "target": "Max Range 5m / Radius 5m / Max 8 targets",
           "casting_time": "0.782 sec.",
           "cooldown": "40 sec.",
           "duration": "5 sec.",
@@ -235,14 +328,36 @@
           "sp_cost": "540",
           "aggro": "100",
           "skill_type": "",
+          "consume_item": "Ancient Star Orb x 12",
+          "soft_armor_atk": "120%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1101%"
+              "value": "АТК: 1101%",
+              "effects": [
+                "75% chance to inflict [Slow] on the enemy.",
+                "Ignores status ailment resistance.",
+                "Applies [Unattackable] on cast.",
+                "On enemy cast: [Bullet Penetration] +1 level (max 3 levels).",
+                "Skill damage doubled against enemies under [Critical Wound].",
+                "Skill damage increases up to 2x with more targets hit.",
+                "Removes enemy invincible skills."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2202%"
+              "value": "АТК: 2202%",
+              "effects": [
+                "75% chance to inflict [Slow] on the enemy.",
+                "Ignores status ailment resistance.",
+                "Applies [Unattackable] on cast.",
+                "On enemy cast: [Bullet Penetration] +1 level (max 3 levels).",
+                "Skill damage doubled against enemies under [Critical Wound].",
+                "Skill damage increases up to 2x with more targets hit.",
+                "Removes enemy invincible skills."
+              ]
             }
           ],
           "special": []
@@ -251,7 +366,7 @@
           "name": "Life Sentry",
           "image": "wtdult_menaceshot.jpg",
           "description": "Concentrates the bodys power to deliver an overwhelming shot.",
-          "target": "",
+          "target": "Max Range within 15m of 1 designated enemy",
           "casting_time": "1.433 sec.",
           "cooldown": "22 sec.",
           "duration": "3 sec.",
@@ -260,14 +375,30 @@
           "sp_cost": "470",
           "aggro": "150",
           "skill_type": "",
+          "consume_item": "Large Caliber Bullet x 10",
+          "soft_armor_atk": "125%",
+          "heavy_armor_atk": "90%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1387%"
+              "value": "АТК: 1387%",
+              "effects": [
+                "65% chance to inflict [Stun] on the enemy.",
+                "On enemy cast: [Bullet Penetration] +1 level (max 3 levels).",
+                "Skill damage doubled against enemies under [Critical Wound].",
+                "Skill damage increases up to 4x based on [Bullet Penetration] level."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2774%"
+              "value": "АТК: 2774%",
+              "effects": [
+                "65% chance to inflict [Stun] on the enemy.",
+                "On enemy cast: [Bullet Penetration] +1 level (max 3 levels).",
+                "Skill damage doubled against enemies under [Critical Wound].",
+                "Skill damage increases up to 4x based on [Bullet Penetration] level."
+              ]
             }
           ],
           "special": []

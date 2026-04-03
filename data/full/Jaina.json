@@ -90,6 +90,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -132,6 +133,7 @@
         "Penetration": "5+20",
         "Immunity": "10"
       },
+      "consume": "Metal Shell Ammo x 3",
       "skills": [
         {
           "name": "Dust Cleaner",
@@ -146,14 +148,34 @@
           "sp_cost": "350",
           "aggro": "128",
           "skill_type": "Shooting",
+          "consume_item": "Metal Shell Ammo x 3",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "125%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1400%"
+              "value": "АТК: 1400%",
+              "effects": [
+                "Ignores DEF of enemy by 30",
+                "Damage +50% in proportion to Enemys [Cleaning] Level",
+                "[Suppression] self-buff level +5",
+                "[Cleaning] enemy debuff level +1",
+                "While [Cleaning], ignore DEF by (4% of extra [DEX]) against monsters",
+                "Skill Damage increases additionally according to 7% of extra [DEX]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2800%"
+              "value": "АТК: 2800%",
+              "effects": [
+                "Ignores DEF of enemy by 30",
+                "Damage +50% in proportion to Enemys [Cleaning] Level",
+                "[Suppression] self-buff level +5",
+                "[Cleaning] enemy debuff level +1",
+                "While [Cleaning], ignore DEF by (4% of extra [DEX]) against monsters",
+                "Skill Damage increases additionally according to 7% of extra [DEX]"
+              ]
             }
           ],
           "special": []
@@ -171,14 +193,34 @@
           "sp_cost": "450",
           "aggro": "162",
           "skill_type": "Shooting",
+          "consume_item": "Metal Shell Ammo x 1",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "120%",
+          "light_armor_atk": "150%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1600%"
+              "value": "АТК: 1600%",
+              "effects": [
+                "Ignores DEF of enemy by 50",
+                "Ignores Block",
+                "[Suppression] self-buff level +5",
+                "[Cleaning] enemy debuff level +1",
+                "While [Cleaning], ignore DEF by (4% of extra [DEX]) against monsters",
+                "Skill Damage increases additionally according to 7% of extra [DEX]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3200%"
+              "value": "АТК: 3200%",
+              "effects": [
+                "Ignores DEF of enemy by 50",
+                "Ignores Block",
+                "[Suppression] self-buff level +5",
+                "[Cleaning] enemy debuff level +1",
+                "While [Cleaning], ignore DEF by (4% of extra [DEX]) against monsters",
+                "Skill Damage increases additionally according to 7% of extra [DEX]"
+              ]
             }
           ],
           "special": []
@@ -196,14 +238,34 @@
           "sp_cost": "580",
           "aggro": "166",
           "skill_type": "Shooting",
+          "consume_item": "Metal Shell Ammo x 5",
+          "soft_armor_atk": "75%",
+          "heavy_armor_atk": "125%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": [
+                "Ignores DEF of enemy by 50",
+                "Damage +50% in proportion to Enemys [Cleaning] Level",
+                "[Suppression] self-buff level +5",
+                "[Cleaning] enemy debuff level +1",
+                "While [Cleaning], ignore DEF by (4% of extra [DEX]) against monsters",
+                "Skill Damage increases additionally according to 7% of extra [DEX]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3600%"
+              "value": "АТК: 3600%",
+              "effects": [
+                "Ignores DEF of enemy by 50",
+                "Damage +50% in proportion to Enemys [Cleaning] Level",
+                "[Suppression] self-buff level +5",
+                "[Cleaning] enemy debuff level +1",
+                "While [Cleaning], ignore DEF by (4% of extra [DEX]) against monsters",
+                "Skill Damage increases additionally according to 7% of extra [DEX]"
+              ]
             }
           ],
           "special": []
@@ -221,14 +283,32 @@
           "sp_cost": "750",
           "aggro": "166",
           "skill_type": "Shooting",
+          "consume_item": "Metal Shell Ammo x 10",
+          "soft_armor_atk": "75%",
+          "heavy_armor_atk": "125%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2300%"
+              "value": "АТК: 2300%",
+              "effects": [
+                "Ignores DEF of enemy by 60",
+                "100% chance to [Stun] on enemy",
+                "Damage +50% in proportion to Enemys [Cleaning] Level",
+                "While [Cleaning], ignore DEF by (4% of extra [DEX]) against monsters",
+                "Skill Damage increases additionally according to 7% of extra [DEX]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4600%"
+              "value": "АТК: 4600%",
+              "effects": [
+                "Ignores DEF of enemy by 60",
+                "100% chance to [Stun] on enemy",
+                "Damage +50% in proportion to Enemys [Cleaning] Level",
+                "While [Cleaning], ignore DEF by (4% of extra [DEX]) against monsters",
+                "Skill Damage increases additionally according to 7% of extra [DEX]"
+              ]
             }
           ],
           "special": []
@@ -246,14 +326,32 @@
           "sp_cost": "500",
           "aggro": "220",
           "skill_type": "Shooting",
+          "consume_item": "Metal Shell Ammo x 21",
+          "soft_armor_atk": "75%",
+          "heavy_armor_atk": "125%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2700%"
+              "value": "АТК: 2700%",
+              "effects": [
+                "Ignores DEF of enemy by 60",
+                "Ignores Block",
+                "Damage increases in proportion to own [Suppression] Lv.",
+                "While [Cleaning], ignore DEF by (4% of extra [DEX]) against monsters",
+                "Skill Damage increases additionally according to 7% of extra [DEX]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5400%"
+              "value": "АТК: 5400%",
+              "effects": [
+                "Ignores DEF of enemy by 60",
+                "Ignores Block",
+                "Damage increases in proportion to own [Suppression] Lv.",
+                "While [Cleaning], ignore DEF by (4% of extra [DEX]) against monsters",
+                "Skill Damage increases additionally according to 7% of extra [DEX]"
+              ]
             }
           ],
           "special": []

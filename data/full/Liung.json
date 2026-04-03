@@ -114,6 +114,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -153,6 +154,7 @@
         "Block": "+10",
         "Critical": "+10"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Blazing Uppercut",
@@ -167,14 +169,20 @@
           "sp_cost": "150",
           "aggro": "82",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 341%"
+              "value": "АТК: 341%",
+              "effects": []
             },
             {
               "level": "Level 10",
-              "value": "АТК: 682%"
+              "value": "АТК: 682%",
+              "effects": []
             }
           ],
           "special": []
@@ -192,14 +200,24 @@
           "sp_cost": "250",
           "aggro": "76",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 319%"
+              "value": "АТК: 319%",
+              "effects": [
+                "25% Chance to [Fear] Enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 638%"
+              "value": "АТК: 638%",
+              "effects": [
+                "25% Chance to [Fear] Enemy"
+              ]
             }
           ],
           "special": []
@@ -217,14 +235,24 @@
           "sp_cost": "300",
           "aggro": "222",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1011%"
+              "value": "АТК: 1011%",
+              "effects": [
+                "25% Chance of causing [Enervation]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2022%"
+              "value": "АТК: 2022%",
+              "effects": [
+                "25% Chance of causing [Enervation]"
+              ]
             }
           ],
           "special": []
@@ -274,6 +302,7 @@
         "Penetration": "20",
         "Immunity": "5+15"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Lightning Spear",
@@ -288,14 +317,24 @@
           "sp_cost": "150",
           "aggro": "50",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 3",
+          "soft_armor_atk": "120%",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "120%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 850%"
+              "value": "АТК: 850%",
+              "effects": [
+                "50% chance to inflict [Mortal Wound] on enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1700%"
+              "value": "АТК: 1700%",
+              "effects": [
+                "50% chance to inflict [Mortal Wound] on enemy"
+              ]
             }
           ],
           "special": []
@@ -313,26 +352,68 @@
           "sp_cost": "50",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration : 5 Minutes."
+              "value": "",
+              "effects": [
+                "Duration : 5 Minutes.",
+                "Enforces [Charging Lightning] buff on the operator.",
+                "ATK +25%",
+                "Lightning ATK +30",
+                "Lightning Penetration +2"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration : 5 Minutes."
+              "value": "",
+              "effects": [
+                "Duration : 5 Minutes.",
+                "Enforces [Charging Lightning] buff on the operator.",
+                "ATK +25%",
+                "Lightning ATK +300",
+                "Lightning Penetration +20"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration : 5 Minutes."
+              "value": "",
+              "effects": [
+                "Duration : 5 Minutes.",
+                "Enforces [Charging Lightning] buff on the operator.",
+                "ATK +25%",
+                "Lightning ATK +330",
+                "Lightning Penetration +22",
+                "A.R. +1"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration : 5 Minutes."
+              "value": "",
+              "effects": [
+                "Duration : 5 Minutes.",
+                "Enforces [Charging Lightning] buff on the operator.",
+                "ATK +25%",
+                "Lightning ATK +360",
+                "Lightning Penetration +24",
+                "A.R. +1"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration : 5 Minutes."
+              "value": "",
+              "effects": [
+                "Duration : 5 Minutes.",
+                "Enforces [Charging Lightning] buff on the operator.",
+                "ATK +25%",
+                "Lightning ATK +390",
+                "Lightning Penetration +26",
+                "A.R. +1"
+              ]
             }
           ],
           "special": []
@@ -350,26 +431,55 @@
           "sp_cost": "450",
           "aggro": "245",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 8",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "120%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1300%"
+              "value": "АТК: 1300%",
+              "effects": [
+                "70% chance to impose [Gravitation] on enemy",
+                "Movement Speed -50%",
+                "DEF -1%"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2600%"
+              "value": "АТК: 2600%",
+              "effects": [
+                "70% chance to impose [Gravitation] on enemy",
+                "Move SPD -50%",
+                "DEF -10%"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "АТК: 2860%"
+              "value": "АТК: 2860%",
+              "effects": [
+                "70% chance to impose [Gravitation] on enemy",
+                "Move SPD -50%",
+                "DEF -11%"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "АТК: 3120%"
+              "value": "АТК: 3120%",
+              "effects": [
+                "70% chance to impose [Gravitation] on enemy",
+                "Move SPD -50%",
+                "DEF -12%"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "АТК: 3120%"
+              "value": "АТК: 3120%",
+              "effects": [
+                "70% chance to impose [Gravitation] on enemy",
+                "Move SPD -50%",
+                "DEF -13%"
+              ]
             }
           ],
           "special": []
@@ -387,14 +497,26 @@
           "sp_cost": "500",
           "aggro": "96",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 10",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "120%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2300%"
+              "value": "АТК: 2300%",
+              "effects": [
+                "For a killed enemy, the coo ldown of all skills except Faction Thunder Wave -1sec.",
+                "50% chance to inflict [Electric Shock] on enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4600%"
+              "value": "АТК: 4600%",
+              "effects": [
+                "For a killed enemy, the coo ldown of all skills except Faction Thunder Wave -1sec.",
+                "50% chance to inflict [Electric Shock] on enemy"
+              ]
             }
           ],
           "special": []
@@ -403,7 +525,7 @@
           "name": "Lightning Bomb",
           "image": "nrn_lightningwolf.jpg",
           "description": "Plants lightning ball to enemy then detonates with strong strike.",
-          "target": "",
+          "target": "Max Range 2m / Up to 8 enemies within 8m",
           "casting_time": "Instant",
           "cooldown": "22 sec.",
           "duration": "4 sec.",
@@ -412,14 +534,24 @@
           "sp_cost": "600",
           "aggro": "177",
           "skill_type": "Magic",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "120%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2600%"
+              "value": "АТК: 2600%",
+              "effects": [
+                "70% chance to inflict [Electrical Field]"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5200%"
+              "value": "АТК: 5200%",
+              "effects": [
+                "70% chance to inflict [Electrical Field]"
+              ]
             }
           ],
           "special": []
@@ -463,6 +595,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [
         {
           "name": "Lightning",
@@ -477,14 +610,24 @@
           "sp_cost": "60",
           "aggro": "61",
           "skill_type": "Magic",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1100%"
+              "value": "АТК: 1100%",
+              "effects": [
+                "15% chance to inflict [Shock] on enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2200%"
+              "value": "АТК: 2200%",
+              "effects": [
+                "15% chance to inflict [Shock] on enemy"
+              ]
             }
           ],
           "special": []
@@ -502,26 +645,55 @@
           "sp_cost": "90",
           "aggro": "0",
           "skill_type": "Buff",
+          "consume_item": "Elemental Orb x 1",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "Duration: 110 sec."
+              "value": "",
+              "effects": [
+                "Duration: 110 sec.",
+                "Lightning RES+15",
+                "Extra Lightning ATK+13"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "Duration: 200 sec."
+              "value": "",
+              "effects": [
+                "Duration: 200 sec.",
+                "Lightning RES+15",
+                "Extra Lightning ATK+40"
+              ]
             },
             {
               "level": "Level 11",
-              "value": "Duration: 210 sec."
+              "value": "",
+              "effects": [
+                "Duration: 210 sec.",
+                "Lightning RES+15",
+                "Extra Lightning ATK+43"
+              ]
             },
             {
               "level": "Level 12",
-              "value": "Duration: 220 sec."
+              "value": "",
+              "effects": [
+                "Duration: 220 sec.",
+                "Lightning RES+15",
+                "Extra Lightning ATK+46"
+              ]
             },
             {
               "level": "Level 13",
-              "value": "Duration: 230 sec."
+              "value": "",
+              "effects": [
+                "Duration: 230 sec.",
+                "Lightning RES+15",
+                "Extra Lightning ATK+49"
+              ]
             }
           ],
           "special": []
@@ -539,26 +711,45 @@
           "sp_cost": "120",
           "aggro": "0",
           "skill_type": "Magic",
+          "consume_item": "",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "100% chance to inflict ["
+              "value": "",
+              "effects": [
+                "100% chance to inflict [Shock] on enemy for 10.5 sec."
+              ]
             },
             {
               "level": "Level 10",
-              "value": "100% chance to inflict ["
+              "value": "",
+              "effects": [
+                "100% chance to inflict [Shock] on enemy for 15 sec."
+              ]
             },
             {
               "level": "Level 11",
-              "value": "100% chance to inflict ["
+              "value": "",
+              "effects": [
+                "100% chance to inflict [Shock] on enemy for 15.5 sec."
+              ]
             },
             {
               "level": "Level 12",
-              "value": "100% chance to inflict ["
+              "value": "",
+              "effects": [
+                "100% chance to inflict [Shock] on enemy for 16 sec."
+              ]
             },
             {
               "level": "Level 13",
-              "value": "100% chance to inflict ["
+              "value": "",
+              "effects": [
+                "100% chance to inflict [Shock] on enemy for 16.5 sec."
+              ]
             }
           ],
           "special": []
@@ -576,14 +767,24 @@
           "sp_cost": "180",
           "aggro": "186",
           "skill_type": "Magic",
+          "consume_item": "Elemental Orb x 1",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1200%"
+              "value": "АТК: 1200%",
+              "effects": [
+                "Summon Tornado Holding"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "Summon Tornado Holding"
+              ]
             }
           ],
           "special": []

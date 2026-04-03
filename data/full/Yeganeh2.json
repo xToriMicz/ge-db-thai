@@ -97,6 +97,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -140,6 +141,7 @@
         "Penetration": "10+20",
         "Immunity": "5+10"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Voar",
@@ -154,14 +156,30 @@
           "sp_cost": "200",
           "aggro": "242",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 2",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "175%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 800%"
+              "value": "АТК: 800%",
+              "effects": [
+                "Ignores enemy DEF by 50",
+                "Ignores Block",
+                "Ignores DEF of enemys shield by 1/2",
+                "80% chance to inflict [Armor Crasher] on enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1600%"
+              "value": "АТК: 1600%",
+              "effects": [
+                "Ignores enemy DEF by 50",
+                "Ignores Block",
+                "Ignores DEF of enemys shield by 1/2",
+                "80% chance to inflict [Armor Crasher] on enemy"
+              ]
             }
           ],
           "special": []
@@ -179,14 +197,32 @@
           "sp_cost": "300",
           "aggro": "172",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 3",
+          "soft_armor_atk": "",
+          "heavy_armor_atk": "175%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1200%"
+              "value": "АТК: 1200%",
+              "effects": [
+                "Ignores enemy DEF by 75",
+                "Recharging time 20 sec.",
+                "Possible to use max 3 times",
+                "Recharging when use it over 1 time",
+                "35% chance to inflict [Hold] on enemy"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 2400%"
+              "value": "АТК: 2400%",
+              "effects": [
+                "Ignores enemy DEF by 75",
+                "Recharging time 20 sec.",
+                "Possible to use max 3 times",
+                "Recharging when use it over 1 time",
+                "35% chance to inflict [Hold] on enemy"
+              ]
             }
           ],
           "special": []
@@ -204,14 +240,30 @@
           "sp_cost": "400",
           "aggro": "34",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 8",
+          "soft_armor_atk": "90%",
+          "heavy_armor_atk": "210%",
+          "light_armor_atk": "130%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 700%"
+              "value": "АТК: 700%",
+              "effects": [
+                "Ignores enemys DEF by 75",
+                "When reusing the skill during casting, the skill activates",
+                "Knockback range and time increases in proportion to casting time",
+                "Skill Damage increases according to cast time"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1400%"
+              "value": "АТК: 1400%",
+              "effects": [
+                "Ignores enemys DEF by 75",
+                "When reusing the skill during casting, the skill activates",
+                "Knockback range and time increases in proportion to casting time",
+                "Skill Damage increases according to cast time"
+              ]
             }
           ],
           "special": []
@@ -229,14 +281,32 @@
           "sp_cost": "500",
           "aggro": "30",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 12",
+          "soft_armor_atk": "15%",
+          "heavy_armor_atk": "25%",
+          "light_armor_atk": "20%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 500%"
+              "value": "АТК: 500%",
+              "effects": [
+                "Ignores enemy DEF by 50",
+                "6 times attack during the casting time",
+                "Skill finish attack when reuse during the casting time",
+                "Skill damage in every attack.",
+                "100% chance to inflict [Death Sentence] in every attack"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 1000%"
+              "value": "АТК: 1000%",
+              "effects": [
+                "Ignores enemy DEF by 50",
+                "6 times attack during the casting time",
+                "Skill finish attack when reuse during the casting time",
+                "Skill damage in every attack.",
+                "100% chance to inflict [Death Sentence] in every attack"
+              ]
             }
           ],
           "special": []
@@ -254,14 +324,32 @@
           "sp_cost": "600",
           "aggro": "200",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "80%",
+          "heavy_armor_atk": "250%",
+          "light_armor_atk": "150%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2000%"
+              "value": "АТК: 2000%",
+              "effects": [
+                "Ignores enemy DEF by 75",
+                "Ignores Block",
+                "Enemys shield DEF reduced by 1/2",
+                "20% chance to inflict [Requiem]",
+                "Ignores status ailment RES"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 4000%"
+              "value": "АТК: 4000%",
+              "effects": [
+                "Ignores enemy DEF by 75",
+                "Ignores Block",
+                "Enemys shield DEF reduced by 1/2",
+                "20% chance to inflict [Requiem]",
+                "Ignores status ailment RES"
+              ]
             }
           ],
           "special": []

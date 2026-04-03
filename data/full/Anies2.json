@@ -26,7 +26,7 @@
     "description": "Fall into uncontrollable madness to enter [Berserker] state.",
     "target": "Self-buff",
     "casting_time": "0 sec.",
-    "cooldown": "70 sec.",
+    "cooldown": "25 sec.",
     "duration": "1.83 sec.",
     "sp_cost": "120",
     "consume_item": "Ancient Star Orb × 10",
@@ -104,6 +104,7 @@
         "Abnormal RES": "0"
       },
       "lv25_bonus": {},
+      "consume": "",
       "skills": [],
       "lv25_bonus_extra": [
         "None"
@@ -146,6 +147,7 @@
         "Penetration": "5+25",
         "Immunity": "5+10"
       },
+      "consume": "",
       "skills": [
         {
           "name": "Confidibus",
@@ -160,14 +162,36 @@
           "sp_cost": "450",
           "aggro": "342",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "50%",
+          "heavy_armor_atk": "145%",
+          "light_armor_atk": "125%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1800%"
+              "value": "АТК: 1800%",
+              "effects": [
+                "Ignores 75 DEF",
+                "Ignore Block",
+                "50% chance to inflict [Mortal Wound]",
+                "Apply [Mark of Madness] on self while casting",
+                "Damage to block type enemies +1% per 1 block",
+                "Skill Damage increases according to enemys Max HP",
+                "Bypasses a percentage of enemy [PC]s DEF proportional to enemys Max HP"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3600%"
+              "value": "АТК: 3600%",
+              "effects": [
+                "Ignores 75 DEF",
+                "Ignore Block",
+                "50% chance to inflict [Mortal Wound]",
+                "Apply [Mark of Madness] on self while casting",
+                "Damage to block type enemies +1% per 1 block",
+                "Skill Damage increases according to enemys Max HP",
+                "Bypasses a percentage of enemy [PC]s DEF proportional to enemys Max HP"
+              ]
             }
           ],
           "special": []
@@ -185,14 +209,38 @@
           "sp_cost": "500",
           "aggro": "30",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 12",
+          "soft_armor_atk": "10%",
+          "heavy_armor_atk": "25%",
+          "light_armor_atk": "20%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1500%"
+              "value": "АТК: 1500%",
+              "effects": [
+                "Ignores 75 DEF",
+                "Ignore Block",
+                "10% chance to inflict [Slow]",
+                "Apply [Mark of Madness] on self while casting",
+                "Can attack up to 10 times during casting",
+                "Damage to block type enemies +1% per 1 block",
+                "Skill Damage increases according to enemys Max HP",
+                "Bypasses a percentage of enemy [PC]s DEF proportional to enemys Max HP"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "Ignores 75 DEF",
+                "Ignore Block",
+                "10% chance to inflict [Slow]",
+                "Apply [Mark of Madness] on self while casting",
+                "Can attack up to 10 times during casting",
+                "Damage to block type enemies +1% per 1 block",
+                "Skill Damage increases according to enemys Max HP",
+                "Bypasses a percentage of enemy [PC]s DEF proportional to enemys Max HP"
+              ]
             }
           ],
           "special": []
@@ -210,14 +258,34 @@
           "sp_cost": "450",
           "aggro": "200",
           "skill_type": "Melee",
+          "consume_item": "Ancient Star Orb x 5",
+          "soft_armor_atk": "60%",
+          "heavy_armor_atk": "110%",
+          "light_armor_atk": "90%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 1500%"
+              "value": "АТК: 1500%",
+              "effects": [
+                "Ignores 75 DEF",
+                "Ignore Block",
+                "Apply [Mark of Madness] on self while casting",
+                "Damage to block type enemies +1% per 1 block",
+                "Skill Damage increases according to enemys Max HP",
+                "Bypasses a percentage of enemy [PC]s DEF proportional to enemys Max HP"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "Ignores 75 DEF",
+                "Ignore Block",
+                "Apply [Mark of Madness] on self while casting",
+                "Damage to block type enemies +1% per 1 block",
+                "Skill Damage increases according to enemys Max HP",
+                "Bypasses a percentage of enemy [PC]s DEF proportional to enemys Max HP"
+              ]
             }
           ],
           "special": []
@@ -235,14 +303,36 @@
           "sp_cost": "540",
           "aggro": "204",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "50%",
+          "heavy_armor_atk": "90%",
+          "light_armor_atk": "115%",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 2700%"
+              "value": "АТК: 2700%",
+              "effects": [
+                "Ignores 75 DEF",
+                "Ignores 50% shield DEF",
+                "Ignore Block",
+                "Apply [Mark of Madness] on self while casting",
+                "Damage to block type enemies +1% per 1 block",
+                "Skill Damage increases according to enemys Max HP",
+                "Bypasses a percentage of enemy [PC]s DEF proportional to enemys Max HP"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 5400%"
+              "value": "АТК: 5400%",
+              "effects": [
+                "Ignores 75 DEF",
+                "Ignores 50% shield DEF",
+                "Ignore Block",
+                "Apply [Mark of Madness] on self while casting",
+                "Damage to block type enemies +1% per 1 block",
+                "Skill Damage increases according to enemys Max HP",
+                "Bypasses a percentage of enemy [PC]s DEF proportional to enemys Max HP"
+              ]
             }
           ],
           "special": []
@@ -260,14 +350,36 @@
           "sp_cost": "560",
           "aggro": "342",
           "skill_type": "Melee",
+          "consume_item": "",
+          "soft_armor_atk": "50%",
+          "heavy_armor_atk": "145%",
+          "light_armor_atk": "",
           "levels": [
             {
               "level": "Level 1",
-              "value": "АТК: 3000%"
+              "value": "АТК: 3000%",
+              "effects": [
+                "Ignores 75 DEF",
+                "Ignores 50% shield DEF",
+                "Ignore Block",
+                "Apply [Mark of Madness] on self while casting",
+                "Damage to block type enemies +1% per 1 block",
+                "Skill Damage increases according to enemys Max HP",
+                "Bypasses a percentage of enemy [PC]s DEF proportional to enemys Max HP"
+              ]
             },
             {
               "level": "Level 10",
-              "value": "АТК: 6000%"
+              "value": "АТК: 6000%",
+              "effects": [
+                "Ignores 75 DEF",
+                "Ignores 50% shield DEF",
+                "Ignore Block",
+                "Apply [Mark of Madness] on self while casting",
+                "Damage to block type enemies +1% per 1 block",
+                "Skill Damage increases according to enemys Max HP",
+                "Bypasses a percentage of enemy [PC]s DEF proportional to enemys Max HP"
+              ]
             }
           ],
           "special": []
